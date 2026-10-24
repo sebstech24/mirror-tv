@@ -71,6 +71,7 @@ fun WaitingContent(
         Text(
             text = tvName,
             style = MaterialTheme.typography.displayMedium,
+            color = MaterialTheme.colorScheme.onBackground,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             maxLines = 2,
