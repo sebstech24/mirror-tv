@@ -1,0 +1,4 @@
+Create a 1280x720 PNG Android TV home-screen banner for an app named "Screenbridge" (screen mirroring from a Mac laptop to a TV).
+Layout: deep navy-to-indigo gradient background filling the whole image. Left third: the app symbol — a simple white TV/monitor outline containing a smaller laptop silhouette linked to the TV by a gentle arched cyan bridge of light. Right two-thirds: the word "Screenbridge" in a bold, clean, geometric sans-serif, white, large and perfectly spelled (S-c-r-e-e-n-b-r-i-d-g-e), with a small subtitle under it in light cyan: "Screen Mirroring Receiver".
+Keep all content inside the central 90% (TV overscan). Do NOT draw Apple's AirPlay symbol (no triangle into rectangle), no Apple logo. Flat, premium, high contrast.
+Save it as banner.png in the current folder.

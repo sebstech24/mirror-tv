@@ -16,8 +16,7 @@ work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.
   needs a real Android TV/phone on the same Wi-Fi.
 
 ## Open
-- Name (proposed: Screenbridge TV / Glassline TV — Sebastian to trademark-check) → then rebrand: package id
-  (com.sebstech.<name>), app_name, icon/banner, Play listing.
+- Name DECIDED (25 Oct): app "Screenbridge", Play title "Screenbridge: Screen Mirroring", Play ID com.sebstech.screenbridge (done in code). Sebastian still to trademark-check. App icon completed at `design/icon.png`; Android TV home banner completed at `design/banner.png` (1280×720). Remaining rebrand: Play listing.
 - Paywall (Play Billing one-time unlock, 20-min free sessions) — see docs/business/SALES-PLAN.md.
 - USE_FULL_SCREEN_INTENT may need a Play declaration (restricted to calling/alarm apps on Android 14+).
 - Settings opens scrolled to the middle (focus lands on "Ask for a PIN") — small polish.

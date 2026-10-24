@@ -1,0 +1,5 @@
+Create a square 1024x1024 PNG app icon for an Android TV app called "Screenbridge" that mirrors a laptop screen onto a TV.
+Style: modern, flat, bold, premium; deep navy-to-indigo background gradient filling the whole square (no rounded corners, no transparency — Android masks it).
+Symbol, centered, occupying the middle ~55% only (safe zone): a simple white TV/monitor outline, and inside it a smaller laptop silhouette, linked to the TV by a gentle arched cyan bridge of light (suggesting a wireless link). 
+Do NOT draw Apple's AirPlay symbol (no triangle pointing into a rectangle), no Apple logo, no text, no letters. Clean vector look, high contrast, readable at small sizes.
+Save it as icon.png in the current folder.

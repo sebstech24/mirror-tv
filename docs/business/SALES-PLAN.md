@@ -58,7 +58,7 @@ Recommendation: **Screenbridge TV** (14 characters). Fallback: **Glassline TV**.
 
 Package id: `com.sebstech.screenbridgetv` (changed from upstream `io.github.jqssun...` so it is never confused with it; cannot change after release, so pick once).
 
-Listing title (Play, max 30): `Screenbridge TV` (add `: Screen Mirroring` only if it fits, 30 chars: "Screenbridge TV: Mirror to TV" is 29).
+Listing title (Play, max 30) — **DECIDED by Sebastian 25 Oct 2026: `Screenbridge: Screen Mirroring` (30 chars); app name on the TV: `Screenbridge`; Play ID `com.sebstech.screenbridge`.** Trademark check still to do by Sebastian.
 
 Short description (80 chars max): `Mirror your Mac screen to your TV from Screen Mirroring. No ads, no subscription.` Count it in the Console; if over 80 use PLAY-STORE.md's version: `Show your Mac's Screen Mirroring on your TV. No ads, no subscription.` (68).
 
