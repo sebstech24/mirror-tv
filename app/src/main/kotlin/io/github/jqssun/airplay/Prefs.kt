@@ -1,5 +1,6 @@
 package io.github.jqssun.airplay
 
+import android.content.Context
 import android.content.SharedPreferences
 import android.media.MediaFormat
 import androidx.core.content.edit
@@ -40,6 +41,11 @@ class StrPref(key: String, def: String, restart: Boolean, private val check: (St
     override fun SharedPreferences.Editor.store(v: String) { putString(key, v) }
 }
 
+// receiver name shown on the Mac: the TV's own name ("Living Room TV"), else its model
+fun Context.defaultServerName(): String =
+    android.provider.Settings.Global.getString(contentResolver, "device_name")?.takeIf { it.isNotBlank() }
+        ?: android.os.Build.MODEL.ifBlank { "TV" }
+
 operator fun <T : Any> SharedPreferences.get(p: Pref<T>): T = p.read(this)
 
 fun SharedPreferences.changes(): Flow<String> = callbackFlow {
@@ -72,7 +78,8 @@ object Prefs {
 
     fun forced(v: String) = when (v) { ON -> true; OFF -> false; else -> null }
 
-    val SERVER_NAME = str("server_name", "Android AirPlay", restart = true)
+    // blank = the TV's own device name (Context.defaultServerName)
+    val SERVER_NAME = str("server_name", "", restart = true)
     val SERVER_PORT = int("server_port", 7000, 1..65535, restart = true)
     val AUTO_START = bool("auto_start", true)
     val BOOT_AUTO_START = bool("boot_auto_start", true)
@@ -111,7 +118,10 @@ object Prefs {
     val KEEP_SCREEN_ON = bool("keep_screen_on", true)
     val ADVERTISE_VIDEO = bool("advertise_video", true, restart = true)
     val ADVERTISE_MIRRORING = bool("advertise_mirroring", true, restart = true)
-    val ADVERTISE_AUDIO = bool("advertise_audio", true, restart = true)
+    // ignored: audio is always advertised, turning it off ended Mac sessions after 64 s (upstream #54)
+    val ADVERTISE_AUDIO = bool("advertise_audio", true)
     val LAUNCH_ON_CONNECT = bool("launch_on_connect", true)
+    // one switch: lowest safe audio cushion, low-latency audio output, unscheduled video release
+    val LOWEST_LATENCY = bool("lowest_latency", false, restart = true)
     val USB_ONLY = bool("usb_only", false, restart = true)
 }

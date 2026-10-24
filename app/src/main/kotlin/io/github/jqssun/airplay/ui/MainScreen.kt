@@ -16,12 +16,13 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.Article
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.rounded.VolumeUp
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.rounded.BrightnessHigh
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -49,7 +50,9 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import io.github.jqssun.airplay.Prefs
+import io.github.jqssun.airplay.defaultServerName
 import io.github.jqssun.airplay.R
+import io.github.jqssun.airplay.service.AirPlayService.DisconnectReason
 import io.github.jqssun.airplay.service.AirPlayService.ServerState
 import io.github.jqssun.airplay.ui.gestures.BrightnessState
 import io.github.jqssun.airplay.ui.gestures.DoubleTapIndicator
@@ -81,10 +84,19 @@ import kotlin.math.abs
 import kotlin.math.roundToInt
 import kotlinx.coroutines.delay
 
-private enum class Tab(val labelRes: Int, val icon: ImageVector) {
-    OVERVIEW(R.string.tab_overview, Icons.Default.Cast),
-    LOGS(R.string.tab_logs, Icons.AutoMirrored.Filled.Article),
-    SETTINGS(R.string.tab_settings, Icons.Default.Settings)
+// Home + Settings only; About, license and logs hang off Settings
+private enum class Screen(val titleRes: Int) {
+    HOME(R.string.app_name),
+    SETTINGS(R.string.tab_settings),
+    ABOUT(R.string.setting_about),
+    LICENSE(R.string.about_license_title),
+    LOGS(R.string.tab_logs);
+
+    val parent: Screen get() = when (this) {
+        HOME, SETTINGS -> HOME
+        ABOUT, LOGS -> SETTINGS
+        LICENSE -> ABOUT
+    }
 }
 
 @Composable
@@ -96,7 +108,7 @@ fun MainScreen(
     onPip: () -> Unit = {},
     onLocalNetwork: () -> Unit = {}
 ) {
-    var tab by remember { mutableStateOf(Tab.OVERVIEW) }
+    var screen by rememberSaveable { mutableStateOf(Screen.HOME) }
     var fullscreen by remember { mutableStateOf(false) }
     val pin by viewModel.pinCode.collectAsState()
     val connections by viewModel.connectionCount.collectAsState()
@@ -126,9 +138,23 @@ fun MainScreen(
         }
     }
 
-    // manual fullscreen over the idle preview is deliberate; only undo on disconnect
+    // manual fullscreen over the idle preview is deliberate; only undo on disconnect.
+    // A dropped session shows a short "Mirroring stopped" notice instead of silently resetting.
+    var prevConnections by remember { mutableIntStateOf(0) }
+    var stoppedNotice by remember { mutableStateOf(false) }
     LaunchedEffect(connections) {
+        val ended = prevConnections > 0 && connections == 0
+        prevConnections = connections
         if (connections == 0) fullscreen = false
+        if (connections > 0) {
+            stoppedNotice = false
+            screen = Screen.HOME
+        }
+        if (ended) {
+            stoppedNotice = true
+            delay(STOPPED_NOTICE_MS)
+            stoppedNotice = false
+        }
     }
 
     // leaving video playback must not fall through to a stale mirroring fullscreen
@@ -172,19 +198,17 @@ fun MainScreen(
         val positionMs by viewModel.videoPositionMs.collectAsState()
         val durationMs by viewModel.videoDurationMs.collectAsState()
         val scrubPositionMs by viewModel.videoScrubPositionMs.collectAsState()
-        val downloadProgress by viewModel.videoDownloadProgress.collectAsState()
         val scrubbing = scrubPositionMs != null
-        val downloading = downloadProgress != null
         var overlayVisible by remember { mutableStateOf(false) }
-        LaunchedEffect(overlayTick, playing, scrubbing, downloading, videoPlaybackActive) {
-            // tick 0 = fresh session; a pending session or a running download pins the overlay
+        LaunchedEffect(overlayTick, playing, scrubbing, videoPlaybackActive) {
+            // tick 0 = fresh session; a pending session pins the overlay
             if (!videoPlaybackActive) {
                 overlayVisible = true
             } else if (overlayTick == 0L) {
                 overlayVisible = false
             } else {
                 overlayVisible = true
-                if (playing && !scrubbing && !downloading) {
+                if (playing && !scrubbing) {
                     delay(VIDEO_OVERLAY_HIDE_MS)
                     overlayVisible = false
                 }
@@ -413,14 +437,11 @@ fun MainScreen(
                     VideoControlsTop(
                         title = videoTitle,
                         videoUrl = videoLocation,
-                        downloadProgress = downloadProgress,
-                        showDownload = durationMs > 0,
                         onBackClick = { viewModel.stopVideoPlayback() },
                         onSpeedClick = {
                             overlayVisible = false
                             showSpeedSelector = true
-                        },
-                        onDownloadClick = { viewModel.toggleVideoDownload() }
+                        }
                     )
                 }
                 androidx.compose.animation.AnimatedVisibility(
@@ -515,34 +536,45 @@ fun MainScreen(
             onExitFullscreen = { fullscreen = false },
             onPip = onPip
         )
+    } else if (screen == Screen.HOME) {
+        HomeContent(
+            viewModel, video,
+            onFullscreen = { fullscreen = true }, onPip = onPip, onLocalNetwork = onLocalNetwork,
+            onSettings = { screen = Screen.SETTINGS },
+            showAudioMode = audioOnly,
+            stoppedNotice = stoppedNotice
+        )
     } else {
-        Scaffold(
-            bottomBar = {
-                Column {
-                    AudioMiniController(
-                        viewModel,
-                        visible = audioOnly && connections > 0 && tab != Tab.OVERVIEW,
-                        onClick = { tab = Tab.OVERVIEW }
-                    )
-                    NavigationBar {
-                        Tab.entries.forEach { t ->
-                            NavigationBarItem(
-                                selected = tab == t,
-                                onClick = { tab = t },
-                                icon = { Icon(t.icon, null) },
-                                label = { Text(stringResource(t.labelRes)) },
-                                modifier = Modifier.dpadFocus()
-                            )
-                        }
+        BackHandler { screen = screen.parent }
+        Surface(modifier = Modifier.fillMaxSize()) {
+            Column(modifier = Modifier.fillMaxSize().safeDrawingPadding()) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.padding(start = 24.dp, end = 24.dp, top = 12.dp)
+                ) {
+                    IconButton(onClick = { screen = screen.parent }, modifier = Modifier.dpadFocus(CircleShape)) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(R.string.cd_back))
+                    }
+                    Spacer(Modifier.width(8.dp))
+                    Text(stringResource(screen.titleRes), style = MaterialTheme.typography.headlineMedium)
+                }
+                Box(modifier = Modifier.weight(1f)) {
+                    when (screen) {
+                        Screen.SETTINGS -> SettingsScreen(
+                            viewModel,
+                            onOpenAbout = { screen = Screen.ABOUT },
+                            onOpenLogs = { screen = Screen.LOGS }
+                        )
+                        Screen.ABOUT -> AboutScreen(onViewLicense = { screen = Screen.LICENSE })
+                        Screen.LICENSE -> LicenseScreen()
+                        Screen.LOGS -> LogsScreen(viewModel)
+                        Screen.HOME -> Unit
                     }
                 }
-            }
-        ) { padding ->
-            Box(modifier = Modifier.padding(padding).consumeWindowInsets(padding)) {
-                TabContent(
-                    tab, viewModel, video,
-                    onFullscreen = { fullscreen = true }, onPip = onPip, onLocalNetwork = onLocalNetwork,
-                    showAudioMode = audioOnly
+                AudioMiniController(
+                    viewModel,
+                    visible = audioOnly && connections > 0,
+                    onClick = { screen = Screen.HOME }
                 )
             }
         }
@@ -570,201 +602,134 @@ fun MainScreen(
 }
 
 @Composable
-private fun TabContent(
-    tab: Tab,
+private fun HomeContent(
     viewModel: MainViewModel,
     video: @Composable () -> Unit,
     onFullscreen: () -> Unit,
     onPip: () -> Unit,
     onLocalNetwork: () -> Unit,
-    showAudioMode: Boolean
-) {
-    when (tab) {
-        Tab.OVERVIEW -> OverviewContent(
-            viewModel, video,
-            onFullscreen = onFullscreen, onPip = onPip, onLocalNetwork = onLocalNetwork, showAudioMode = showAudioMode
-        )
-        Tab.LOGS -> LogsScreen(viewModel)
-        Tab.SETTINGS -> SettingsScreen(viewModel)
-    }
-}
-
-@Composable
-private fun OverviewContent(
-    viewModel: MainViewModel,
-    video: @Composable () -> Unit,
-    onFullscreen: () -> Unit,
-    onPip: () -> Unit,
-    onLocalNetwork: () -> Unit,
-    showAudioMode: Boolean = false
+    onSettings: () -> Unit,
+    showAudioMode: Boolean,
+    stoppedNotice: Boolean
 ) {
     val state by viewModel.serverState.collectAsState()
     val localNetwork by viewModel.localNetwork.collectAsState()
-    val grant = state != ServerState.RUNNING && localNetwork != LocalNetworkAccess.GRANTED
+    val running = state == ServerState.RUNNING
+    val clientName by viewModel.clientName.collectAsState()
+    val lastDisconnect by viewModel.lastDisconnect.collectAsState()
+    val grant = !running && localNetwork != LocalNetworkAccess.GRANTED
     val connections by viewModel.connectionCount.collectAsState()
     val serverName by viewModel.pref(Prefs.SERVER_NAME).collectAsState()
     val videoResolution by viewModel.videoResolution.collectAsState()
     val idlePreview by viewModel.pref(Prefs.IDLE_PREVIEW).collectAsState()
     val mirroringActive by viewModel.mirroringActive.collectAsState()
-    val videoPlaybackActive by viewModel.videoPlaybackActive.collectAsState()
     val debugEnabled by viewModel.pref(Prefs.DEBUG_ENABLED).collectAsState()
     val debugInfo by viewModel.debugInfo.collectAsState()
+    val context = LocalContext.current
+    val address = remember(state) { context.tvIpv4() }
+    // blank pref = the TV's own device name
+    val deviceName = remember { context.defaultServerName() }
+    val tvName = serverName.ifBlank { deviceName }
+
+    val status = when {
+        grant -> HomeStatus.NEEDS_ACCESS
+        running -> HomeStatus.READY
+        state == ServerState.ERROR -> HomeStatus.ERROR
+        else -> HomeStatus.OFF
+    }
+    // the only button on the home screen ever turns things ON; switching off lives in Settings → Advanced
+    val actionLabel = when (status) {
+        HomeStatus.NEEDS_ACCESS -> stringResource(
+            if (localNetwork == LocalNetworkAccess.SETTINGS) R.string.btn_open_settings else R.string.btn_allow
+        )
+        HomeStatus.OFF -> stringResource(R.string.btn_turn_on)
+        HomeStatus.ERROR -> stringResource(R.string.btn_try_again)
+        HomeStatus.READY -> null
+    }
+    val onAction = if (grant) onLocalNetwork else viewModel::startServer
+
     val tv = isTv()
-    val startFocus = remember { FocusRequester() }
-    LaunchedEffect(Unit) {
-        if (tv) startFocus.requestFocus()
+    val gearFocus = remember { FocusRequester() }
+    val actionFocus = remember { FocusRequester() }
+    val audioMode = showAudioMode && running && connections > 0
+    val waiting = !audioMode && !(running && connections > 0)
+    LaunchedEffect(tv, actionLabel != null, waiting) {
+        if (tv) (if (waiting && actionLabel != null) actionFocus else gearFocus).requestFocusUntilLanded()
     }
 
-    Column(modifier = Modifier.fillMaxSize()) {
-        // content area
-        Box(
-            modifier = Modifier
-                .fillMaxWidth()
-                .weight(1f)
-                .padding(16.dp)
-                .clip(RoundedCornerShape(16.dp))
-                .background(MaterialTheme.colorScheme.surfaceVariant),
-            contentAlignment = Alignment.Center
-        ) {
-            val connecting = state == ServerState.RUNNING && connections > 0 &&
-                !mirroringActive && !videoPlaybackActive
-            if (showAudioMode && state == ServerState.RUNNING && connections > 0) {
+    Box(modifier = Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) {
+        if (!audioMode && running && (mirroringActive || idlePreview)) {
+            Box(Modifier.fillMaxSize().background(Color.Black), contentAlignment = Alignment.Center) { video() }
+        }
+        when {
+            audioMode -> Box(Modifier.fillMaxSize().safeDrawingPadding().padding(horizontal = 48.dp, vertical = 24.dp)) {
                 NowPlayingContent(viewModel)
-            } else {
-                if (state == ServerState.RUNNING && (mirroringActive || idlePreview)) {
-                    video()
-                }
-                if (state != ServerState.RUNNING || connections == 0) {
-                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Icon(
-                            imageVector = if (connections > 0) Icons.Default.CastConnected else Icons.Default.Cast,
-                            contentDescription = null,
-                            modifier = Modifier.size(64.dp),
-                            tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f)
-                        )
-                        Spacer(Modifier.height(12.dp))
-                        Text(
-                            text = if (grant) stringResource(R.string.local_network_desc) else when (state) {
-                                ServerState.STOPPED -> stringResource(R.string.server_stopped)
-                                ServerState.RUNNING -> stringResource(R.string.waiting_for_connection)
-                                ServerState.ERROR -> stringResource(R.string.error_starting_server)
-                            },
-                            style = MaterialTheme.typography.bodyLarge,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
-                            textAlign = TextAlign.Center,
-                            modifier = Modifier.padding(horizontal = 24.dp)
-                        )
-                    }
-                } else if (connecting) {
-                    Text(
-                        text = stringResource(R.string.waiting_for_playback),
-                        style = MaterialTheme.typography.bodyLarge,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
-                    )
-                }
-                if (state == ServerState.RUNNING && mirroringActive) {
-                    Row(modifier = Modifier.align(Alignment.TopEnd).padding(4.dp)) {
-                        IconButton(onClick = onPip, modifier = Modifier.dpadFocus()) {
-                            Icon(
-                                painterResource(R.drawable.ic_pip), contentDescription = stringResource(R.string.cd_pip),
-                                tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
-                            )
-                        }
-                        IconButton(onClick = onFullscreen, modifier = Modifier.dpadFocus()) {
-                            Icon(
-                                Icons.Default.Fullscreen, contentDescription = stringResource(R.string.cd_fullscreen),
-                                tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
-                            )
-                        }
-                    }
-                }
             }
-            if (debugEnabled && connections > 0) {
-                DebugOverlay(debugInfo, Modifier.align(Alignment.TopStart).padding(8.dp))
+            running && mirroringActive -> Unit
+            running && connections > 0 -> ConnectingContent(clientName, takingOver = lastDisconnect == DisconnectReason.REPLACED)
+            else -> WaitingContent(
+                tvName = tvName,
+                status = status,
+                address = address,
+                // read live: the reason may land a poll after the connection count drops
+                noticeTitle = if (!stoppedNotice) null else stringResource(when (lastDisconnect) {
+                    DisconnectReason.SENDER_STOPPED -> R.string.home_stopped_mac_title
+                    DisconnectReason.CONNECTION_LOST -> R.string.home_lost_title
+                    DisconnectReason.NETWORK_CHANGED -> R.string.home_network_title
+                    else -> R.string.home_stopped_title
+                }),
+                noticeText = if (!stoppedNotice) null else stringResource(when (lastDisconnect) {
+                    DisconnectReason.SENDER_STOPPED -> R.string.home_stopped_mac_desc
+                    DisconnectReason.CONNECTION_LOST -> R.string.home_lost_desc
+                    DisconnectReason.NETWORK_CHANGED -> R.string.home_network_desc
+                    else -> R.string.home_stopped_desc
+                }, tvName),
+                actionLabel = actionLabel,
+                onAction = onAction,
+                actionFocus = actionFocus,
+                modifier = Modifier.safeDrawingPadding()
+            )
+        }
+
+        if (debugEnabled && connections > 0) {
+            DebugOverlay(debugInfo, Modifier.align(Alignment.TopStart).safeDrawingPadding().padding(8.dp))
+        }
+        var showRes by remember { mutableStateOf(false) }
+        LaunchedEffect(videoResolution) {
+            if (videoResolution.isNotEmpty() && !showAudioMode) {
+                showRes = true
+                delay(5000)
+                showRes = false
             }
-            var showRes by remember { mutableStateOf(false) }
-            LaunchedEffect(videoResolution) {
-                if (videoResolution.isNotEmpty() && !showAudioMode) {
-                    showRes = true
-                    delay(5000)
-                    showRes = false
-                }
-            }
-            if (!showAudioMode) {
-                androidx.compose.animation.AnimatedVisibility(
-                    visible = showRes && connections > 0,
-                    modifier = Modifier.align(Alignment.BottomEnd).padding(8.dp)
-                ) {
-                    Text(
-                        text = videoResolution,
-                        style = MaterialTheme.typography.labelSmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.6f)
-                    )
-                }
+        }
+        if (!showAudioMode) {
+            androidx.compose.animation.AnimatedVisibility(
+                visible = showRes && connections > 0,
+                modifier = Modifier.align(Alignment.BottomEnd).safeDrawingPadding().padding(8.dp)
+            ) {
+                Text(
+                    text = videoResolution,
+                    style = MaterialTheme.typography.labelSmall,
+                    color = Color.White.copy(alpha = 0.6f)
+                )
             }
         }
 
-        // controls
-        Card(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(16.dp),
-            shape = RoundedCornerShape(16.dp)
-        ) {
-            Column(modifier = Modifier.padding(20.dp)) {
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Column {
-                        Text(
-                            text = serverName,
-                            style = MaterialTheme.typography.titleMedium,
-                            fontWeight = FontWeight.SemiBold
-                        )
-                        Spacer(Modifier.height(2.dp))
-                        val statusColor by animateColorAsState(
-                            if (grant) MaterialTheme.colorScheme.error else when (state) {
-                                ServerState.RUNNING -> MaterialTheme.colorScheme.primary
-                                ServerState.ERROR -> MaterialTheme.colorScheme.error
-                                ServerState.STOPPED -> MaterialTheme.colorScheme.onSurfaceVariant
-                            }, label = "status"
-                        )
-                        Text(
-                            text = if (grant) stringResource(R.string.local_network_label) else when (state) {
-                                ServerState.RUNNING -> stringResource(R.string.connected_count, connections)
-                                ServerState.ERROR -> stringResource(R.string.error_label)
-                                ServerState.STOPPED -> stringResource(R.string.stopped_label)
-                            },
-                            style = MaterialTheme.typography.bodySmall,
-                            color = statusColor
-                        )
-                    }
-
-                    val settings = localNetwork == LocalNetworkAccess.SETTINGS
-                    val (icon, label, action) = when {
-                        grant -> Triple(
-                            if (settings) Icons.Default.Settings else Icons.Default.LockOpen,
-                            if (settings) R.string.btn_open_settings else R.string.btn_allow,
-                            onLocalNetwork
-                        )
-                        state == ServerState.RUNNING -> Triple(Icons.Default.Stop, R.string.btn_stop, viewModel::stopServer)
-                        else -> Triple(Icons.Default.PlayArrow, R.string.btn_start, viewModel::startServer)
-                    }
-                    FilledTonalButton(
-                        onClick = action,
-                        modifier = Modifier.dpadFocus().focusRequester(startFocus)
-                    ) {
-                        Icon(
-                            imageVector = icon,
-                            contentDescription = null,
-                            modifier = Modifier.size(20.dp)
-                        )
-                        Spacer(Modifier.width(6.dp))
-                        Text(stringResource(label))
-                    }
+        Row(modifier = Modifier.align(Alignment.TopEnd).safeDrawingPadding().padding(horizontal = 32.dp, vertical = 16.dp)) {
+            val tint = if (mirroringActive) Color.White.copy(alpha = 0.7f) else MaterialTheme.colorScheme.onSurfaceVariant
+            if (running && mirroringActive && !audioMode) {
+                IconButton(onClick = onPip, modifier = Modifier.dpadFocus(CircleShape)) {
+                    Icon(painterResource(R.drawable.ic_pip), contentDescription = stringResource(R.string.cd_pip), tint = tint)
                 }
+                IconButton(onClick = onFullscreen, modifier = Modifier.dpadFocus(CircleShape)) {
+                    Icon(Icons.Default.Fullscreen, contentDescription = stringResource(R.string.cd_fullscreen), tint = tint)
+                }
+            }
+            IconButton(
+                onClick = onSettings,
+                modifier = Modifier.size(56.dp).focusRequester(gearFocus).dpadFocus(CircleShape)
+            ) {
+                Icon(Icons.Default.Settings, contentDescription = stringResource(R.string.cd_settings), tint = tint, modifier = Modifier.size(32.dp))
             }
         }
     }
@@ -789,6 +754,14 @@ private fun FullscreenVideo(
         controlsVisible = false
     }
 
+    val clientName by viewModel.clientName.collectAsState()
+    val lastDisconnect by viewModel.lastDisconnect.collectAsState()
+    var toastVisible by remember { mutableStateOf(true) }
+    LaunchedEffect(Unit) {
+        delay(MIRRORING_TOAST_MS)
+        toastVisible = false
+    }
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -797,6 +770,25 @@ private fun FullscreenVideo(
         contentAlignment = Alignment.Center
     ) {
         video()
+        androidx.compose.animation.AnimatedVisibility(
+            visible = toastVisible,
+            enter = androidx.compose.animation.fadeIn(),
+            exit = androidx.compose.animation.fadeOut(),
+            modifier = Modifier.align(Alignment.TopCenter).padding(top = 32.dp)
+        ) {
+            Text(
+                text = when {
+                    clientName == null -> stringResource(R.string.toast_mirroring)
+                    lastDisconnect == DisconnectReason.REPLACED -> stringResource(R.string.toast_took_over, clientName!!)
+                    else -> stringResource(R.string.toast_mirroring_from, clientName!!)
+                },
+                style = MaterialTheme.typography.titleLarge,
+                color = Color.White,
+                modifier = Modifier
+                    .background(Color.Black.copy(alpha = 0.6f), CircleShape)
+                    .padding(horizontal = 24.dp, vertical = 12.dp)
+            )
+        }
         androidx.compose.animation.AnimatedVisibility(
             visible = controlsVisible,
             modifier = Modifier.align(Alignment.TopEnd)
@@ -1064,6 +1056,8 @@ private fun VolumeSlider(
 private const val CLIENT_VOLUME_STEP = 1f / 16
 
 private const val VIDEO_OVERLAY_HIDE_MS = 4000L
+private const val STOPPED_NOTICE_MS = 8000L
+private const val MIRRORING_TOAST_MS = 3000L
 
 @Composable
 private fun DebugOverlay(info: DebugInfo, modifier: Modifier = Modifier) {

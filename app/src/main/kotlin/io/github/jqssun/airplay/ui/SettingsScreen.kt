@@ -6,7 +6,16 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.ExpandLess
+import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.focus.FocusRequester
+import androidx.compose.ui.focus.focusRequester
+import io.github.jqssun.airplay.service.AirPlayService.ServerState
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.foundation.text.KeyboardActions
@@ -30,13 +39,14 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import io.github.jqssun.airplay.Prefs
 import io.github.jqssun.airplay.R
 import io.github.jqssun.airplay.appSettingsIntent
+import io.github.jqssun.airplay.defaultServerName
 import io.github.jqssun.airplay.viewmodel.MainViewModel
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import kotlin.math.roundToInt
 
 @Composable
-fun SettingsScreen(viewModel: MainViewModel) {
+fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs: () -> Unit) {
     val serverName by viewModel.pref(Prefs.SERVER_NAME).collectAsState()
     val h265 by viewModel.pref(Prefs.H265).collectAsState()
     val enforceSdr by viewModel.pref(Prefs.ENFORCE_SDR).collectAsState()
@@ -48,7 +58,6 @@ fun SettingsScreen(viewModel: MainViewModel) {
     val keepScreenOn by viewModel.pref(Prefs.KEEP_SCREEN_ON).collectAsState()
     val advertiseVideo by viewModel.pref(Prefs.ADVERTISE_VIDEO).collectAsState()
     val advertiseMirroring by viewModel.pref(Prefs.ADVERTISE_MIRRORING).collectAsState()
-    val advertiseAudio by viewModel.pref(Prefs.ADVERTISE_AUDIO).collectAsState()
     val launchOnConnect by viewModel.pref(Prefs.LAUNCH_ON_CONNECT).collectAsState()
     val maxFps by viewModel.pref(Prefs.MAX_FPS).collectAsState()
     val overscanned by viewModel.pref(Prefs.OVERSCANNED).collectAsState()
@@ -67,7 +76,6 @@ fun SettingsScreen(viewModel: MainViewModel) {
     val developerOptions by viewModel.pref(Prefs.DEVELOPER_OPTIONS).collectAsState()
     val keyAllowFrameDrop by viewModel.pref(Prefs.KEY_ALLOW_FRAME_DROP).collectAsState()
     val realtimeDecoderPriority by viewModel.pref(Prefs.KEY_PRIORITY).collectAsState()
-    val lowLatency by viewModel.pref(Prefs.LOW_LATENCY).collectAsState()
     val operatingRate by viewModel.pref(Prefs.OPERATING_RATE).collectAsState()
     val scheduledOutputBufferRelease by viewModel.pref(Prefs.SCHEDULED_OUTPUT_BUFFER_RELEASE).collectAsState()
     val benchmarkLog by viewModel.pref(Prefs.BENCHMARK_LOG).collectAsState()
@@ -81,19 +89,84 @@ fun SettingsScreen(viewModel: MainViewModel) {
         Prefs.OFF to stringResource(R.string.chip_off),
     )
 
+    val serverState by viewModel.serverState.collectAsState()
+    val ctx = LocalContext.current
+    var advanced by rememberSaveable { mutableStateOf(false) }
+    var confirmStop by remember { mutableStateOf(false) }
+    val firstFocus = remember { FocusRequester() }
+    LaunchedEffect(Unit) { firstFocus.requestFocusUntilLanded() }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .verticalScroll(rememberScrollState())
             .padding(vertical = 8.dp)
     ) {
-        SectionHeader(stringResource(R.string.section_server))
-
+        // everyday settings; everything technical lives under Advanced
         SettingTextField(
-            label = stringResource(R.string.setting_server_name),
+            label = stringResource(R.string.setting_tv_name),
             value = serverName,
-            onCommit = { viewModel.set(Prefs.SERVER_NAME, it) }
+            onCommit = { viewModel.set(Prefs.SERVER_NAME, it) },
+            description = stringResource(R.string.setting_tv_name_desc, ctx.defaultServerName())
         )
+
+        SettingResolution(
+            title = stringResource(R.string.setting_picture_quality),
+            description = stringResource(R.string.setting_picture_quality_desc),
+            value = resolution,
+            onValueChange = { viewModel.set(Prefs.RESOLUTION, it) }
+        )
+
+        val lowestLatency by viewModel.pref(Prefs.LOWEST_LATENCY).collectAsState()
+        SettingSwitch(
+            title = stringResource(R.string.setting_lowest_latency),
+            description = stringResource(R.string.setting_lowest_latency_desc),
+            checked = lowestLatency,
+            onCheckedChange = { viewModel.set(Prefs.LOWEST_LATENCY, it) }
+        )
+
+        SettingSwitch(
+            title = stringResource(R.string.setting_pin_simple),
+            description = stringResource(R.string.setting_pin_simple_desc),
+            checked = requirePin,
+            onCheckedChange = { viewModel.set(Prefs.REQUIRE_PIN, it) },
+            // not the name field: focusing a text field would pop the keyboard on a TV
+            modifier = Modifier.focusRequester(firstFocus)
+        )
+
+        SettingRow(
+            title = stringResource(R.string.setting_about),
+            description = stringResource(R.string.setting_about_desc),
+            onClick = onOpenAbout
+        )
+
+        ListItem(
+            modifier = Modifier
+                .dpadFocus(RectangleShape)
+                .toggleable(value = advanced, role = Role.Switch, onValueChange = { advanced = it }),
+            headlineContent = { Text(stringResource(R.string.setting_advanced)) },
+            supportingContent = { Text(stringResource(R.string.setting_advanced_desc)) },
+            trailingContent = {
+                Icon(if (advanced) Icons.Default.ExpandLess else Icons.Default.ExpandMore, contentDescription = null)
+            }
+        )
+
+        if (!advanced) return@Column
+
+        val running = serverState == ServerState.RUNNING
+        SettingRow(
+            title = stringResource(if (running) R.string.setting_receiver_power else R.string.setting_receiver_power_on),
+            description = stringResource(if (running) R.string.setting_receiver_power_desc else R.string.setting_receiver_power_on_desc),
+            onClick = { if (running) confirmStop = true else viewModel.startServer() }
+        )
+
+        SettingRow(
+            title = stringResource(R.string.setting_logs),
+            description = stringResource(R.string.setting_logs_desc),
+            onClick = onOpenLogs
+        )
+
+        SectionHeader(stringResource(R.string.section_server))
 
         SettingTextField(
             label = stringResource(R.string.setting_server_port),
@@ -130,20 +203,12 @@ fun SettingsScreen(viewModel: MainViewModel) {
         )
 
         SettingSwitch(
-            title = stringResource(R.string.setting_require_pin),
-            description = stringResource(R.string.setting_require_pin_desc),
-            checked = requirePin,
-            onCheckedChange = { viewModel.set(Prefs.REQUIRE_PIN, it) }
-        )
-
-        SettingSwitch(
             title = stringResource(R.string.setting_allow_new_conn),
             description = stringResource(R.string.setting_allow_new_conn_desc),
             checked = allowNewConn,
             onCheckedChange = { viewModel.set(Prefs.ALLOW_NEW_CONN, it) }
         )
 
-        val ctx = LocalContext.current
         val lifecycleOwner = LocalLifecycleOwner.current
         var hasOverlayPermission by remember { mutableStateOf(canAutoLaunch(ctx)) }
         DisposableEffect(lifecycleOwner) {
@@ -185,11 +250,6 @@ fun SettingsScreen(viewModel: MainViewModel) {
             description = stringResource(R.string.setting_auto_fullscreen_desc),
             checked = autoFullscreen,
             onCheckedChange = { viewModel.set(Prefs.AUTO_FULLSCREEN, it) }
-        )
-
-        SettingResolution(
-            value = resolution,
-            onValueChange = { viewModel.set(Prefs.RESOLUTION, it) }
         )
 
         SettingChipField(
@@ -286,13 +346,6 @@ fun SettingsScreen(viewModel: MainViewModel) {
             )
 
             SettingSwitch(
-                title = stringResource(R.string.setting_advertise_audio),
-                description = stringResource(R.string.setting_advertise_audio_desc),
-                checked = advertiseAudio,
-                onCheckedChange = { viewModel.set(Prefs.ADVERTISE_AUDIO, it) }
-            )
-
-            SettingSwitch(
                 title = stringResource(R.string.setting_alac),
                 description = stringResource(R.string.setting_alac_desc),
                 checked = alacEnabled,
@@ -333,13 +386,6 @@ fun SettingsScreen(viewModel: MainViewModel) {
                 value = operatingRate,
                 options = tri,
                 onValueChange = { viewModel.set(Prefs.OPERATING_RATE, it) }
-            )
-
-            SettingSwitch(
-                title = stringResource(R.string.setting_low_latency),
-                description = stringResource(R.string.setting_low_latency_desc),
-                checked = lowLatency,
-                onCheckedChange = { viewModel.set(Prefs.LOW_LATENCY, it) }
             )
 
             SettingSwitch(
@@ -441,6 +487,37 @@ fun SettingsScreen(viewModel: MainViewModel) {
             )
         }
     }
+
+    if (confirmStop) {
+        AlertDialog(
+            onDismissRequest = { confirmStop = false },
+            title = { Text(stringResource(R.string.dialog_stop_title)) },
+            text = { Text(stringResource(R.string.dialog_stop_text)) },
+            // Cancel is the safe default: it gets focus, so a stray OK press does nothing harmful
+            dismissButton = {
+                val cancelFocus = remember { FocusRequester() }
+                LaunchedEffect(Unit) { cancelFocus.requestFocusUntilLanded() }
+                TextButton(onClick = { confirmStop = false }, modifier = Modifier.focusRequester(cancelFocus)) {
+                    Text(stringResource(R.string.btn_cancel))
+                }
+            },
+            confirmButton = {
+                TextButton(onClick = { confirmStop = false; viewModel.stopServer() }) {
+                    Text(stringResource(R.string.btn_turn_off))
+                }
+            }
+        )
+    }
+}
+
+@Composable
+private fun SettingRow(title: String, description: String, onClick: () -> Unit) {
+    ListItem(
+        modifier = Modifier.dpadFocus(RectangleShape).clickable(onClick = onClick),
+        headlineContent = { Text(title) },
+        supportingContent = { Text(description) },
+        trailingContent = { Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null) }
+    )
 }
 
 private fun canAutoLaunch(ctx: Context): Boolean =
@@ -469,6 +546,8 @@ private fun SectionHeader(title: String) {
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun SettingResolution(
+    title: String,
+    description: String,
     value: String,
     onValueChange: (String) -> Unit
 ) {
@@ -489,10 +568,10 @@ private fun SettingResolution(
     var height by remember(value) { mutableStateOf(if (isPreset) "" else parts.getOrElse(1) { "" }) }
 
     ListItem(
-        headlineContent = { Text(stringResource(R.string.setting_resolution)) },
+        headlineContent = { Text(title) },
         supportingContent = {
             Column {
-                Text(stringResource(R.string.setting_resolution_desc))
+                Text(description)
                 Spacer(Modifier.height(8.dp))
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     @Composable
@@ -725,10 +804,11 @@ private fun SettingSwitch(
     title: String,
     description: String,
     checked: Boolean,
-    onCheckedChange: (Boolean) -> Unit
+    onCheckedChange: (Boolean) -> Unit,
+    modifier: Modifier = Modifier
 ) {
     ListItem(
-        modifier = Modifier
+        modifier = modifier
             .dpadFocus(RectangleShape)
             .toggleable(value = checked, role = Role.Switch, onValueChange = onCheckedChange),
         headlineContent = { Text(title) },

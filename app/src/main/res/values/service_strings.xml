@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- strings owned by the receiver service (kept apart from strings.xml, which the UI owns) -->
+<resources>
+    <string name="svc_alert_channel">Mirroring requests</string>
+    <string name="svc_alert_title">Your Mac wants to show its screen</string>
+    <string name="svc_alert_title_named">%1$s wants to show its screen</string>
+    <string name="svc_alert_text">Select to show it on the TV</string>
+</resources>

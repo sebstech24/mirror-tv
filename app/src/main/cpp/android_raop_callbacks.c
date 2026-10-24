@@ -69,6 +69,7 @@ void android_callbacks_init(android_callback_ctx_t *ctx, JNIEnv *env, jobject ca
     ctx->on_video_rate = (*env)->GetMethodID(env, cls, "onVideoRate", "(F)V");
     ctx->on_video_stop = (*env)->GetMethodID(env, cls, "onVideoStop", "()V");
     ctx->on_video_session_poll = (*env)->GetMethodID(env, cls, "onVideoSessionPoll", "()V");
+    ctx->on_client_request = (*env)->GetMethodID(env, cls, "onClientRequest", "([B[B)V");
     (*env)->DeleteLocalRef(env, cls);
 }
 
@@ -156,6 +157,26 @@ static void _conn_reset(void *cls, int reason) {
     (*env)->CallVoidMethod(env, ctx->callback_obj, ctx->on_conn_reset, (jint)reason);
 }
 
+/* raw utf-8 bytes: NewStringUTF aborts on 4-byte sequences (emoji in device names) */
+static jbyteArray _utf8_bytes(JNIEnv *env, const char *s) {
+    if (!s) return NULL;
+    jsize len = (jsize)strlen(s);
+    jbyteArray arr = (*env)->NewByteArray(env, len);
+    if (arr) (*env)->SetByteArrayRegion(env, arr, 0, len, (const jbyte *)s);
+    return arr;
+}
+
+static void _report_client_request(void *cls, char *deviceid, char *model, char *name, bool *admit) {
+    (void)deviceid; (void)admit;
+    android_callback_ctx_t *ctx = (android_callback_ctx_t *)cls;
+    JNIEnv *env = _get_env(ctx);
+    if (!env) return;
+    jbyteArray n = _utf8_bytes(env, name), m = _utf8_bytes(env, model);
+    (*env)->CallVoidMethod(env, ctx->callback_obj, ctx->on_client_request, n, m);
+    if (n) (*env)->DeleteLocalRef(env, n);
+    if (m) (*env)->DeleteLocalRef(env, m);
+}
+
 static void _audio_set_volume(void *cls, float volume) {
     android_callback_ctx_t *ctx = (android_callback_ctx_t *)cls;
     JNIEnv *env = _get_env(ctx);
@@ -202,6 +223,8 @@ static void _video_stop(void *cls);
 static void _video_reset(void *cls, reset_type_t t) {
     android_callback_ctx_t *ctx = (android_callback_ctx_t *)cls;
     LOGI("video_reset %d", t);
+    /* another sender took over: tell java so the ui can say why the old one stopped */
+    if (t == RESET_TYPE_NOHOLD) _conn_reset(cls, 2);
     if (t == RESET_TYPE_HLS_SHUTDOWN || t == RESET_TYPE_HLS_EOS) {
         _video_stop(cls);
     }
@@ -413,6 +436,7 @@ void android_callbacks_fill(raop_callbacks_t *cbs, android_callback_ctx_t *ctx) 
     cbs->video_report_size = _video_report_size;
     cbs->mirror_video_running = _mirror_video_running;
     cbs->display_pin = _display_pin;
+    cbs->report_client_request = _report_client_request;
     cbs->video_set_codec = _video_set_codec;
     cbs->on_video_play = _video_play;
     cbs->on_video_wait_ready = _video_wait_ready;

@@ -38,7 +38,6 @@ import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.rounded.AspectRatio
 import androidx.compose.material.icons.rounded.ContentCopy
 import androidx.compose.material.icons.rounded.CropLandscape
-import androidx.compose.material.icons.rounded.Download
 import androidx.compose.material.icons.rounded.FastForward
 import androidx.compose.material.icons.rounded.FitScreen
 import androidx.compose.material.icons.rounded.Lock
@@ -173,11 +172,8 @@ fun PlayPauseButton(playing: Boolean, onClick: () -> Unit, modifier: Modifier = 
 fun VideoControlsTop(
     title: String,
     videoUrl: String?,
-    downloadProgress: Int?,
-    showDownload: Boolean,
     onBackClick: () -> Unit,
     onSpeedClick: () -> Unit,
-    onDownloadClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val insets = WindowInsets.systemBars.union(WindowInsets.displayCutout).asPaddingValues()
@@ -218,28 +214,6 @@ fun VideoControlsTop(
                 val clipboard = LocalClipboardManager.current
                 PlayerButton(onClick = { clipboard.setText(AnnotatedString(videoUrl)) }) {
                     Icon(Icons.Rounded.ContentCopy, contentDescription = stringResource(R.string.cd_copy_url))
-                }
-            }
-            if (showDownload) {
-                PlayerButton(onClick = onDownloadClick) {
-                    when {
-                        downloadProgress == null -> Icon(
-                            Icons.Rounded.Download,
-                            contentDescription = stringResource(R.string.cd_download)
-                        )
-                        downloadProgress < 0 -> CircularProgressIndicator(
-                            color = Color.White,
-                            strokeWidth = 3.dp,
-                            modifier = Modifier.size(24.dp)
-                        )
-                        else -> CircularProgressIndicator(
-                            progress = { downloadProgress / 100f },
-                            color = Color.White,
-                            trackColor = Color.White.copy(alpha = 0.3f),
-                            strokeWidth = 3.dp,
-                            modifier = Modifier.size(24.dp)
-                        )
-                    }
                 }
             }
         }

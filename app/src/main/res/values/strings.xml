@@ -3,10 +3,10 @@
     <string name="app_name">AirPlay Server</string>
 
     <!-- Notification -->
-    <string name="notification_channel">AirPlay Service</string>
-    <string name="notification_title">AirPlay Server Running</string>
-    <string name="notification_text">Accepting AirPlay connections</string>
-    <string name="notification_pin_title">AirPlay PIN Required</string>
+    <string name="notification_channel">Screen mirroring receiver</string>
+    <string name="notification_title">Ready for Screen Mirroring</string>
+    <string name="notification_text">Your Mac can find this TV in Screen Mirroring</string>
+    <string name="notification_pin_title">PIN required</string>
     <string name="notification_pin_text">PIN: %1$s</string>
     <string name="stop_service">Stop</string>
 
@@ -68,7 +68,7 @@
     <string name="scale_hundred_percent">100%</string>
 
     <!-- Dialogs -->
-    <string name="dialog_pin_title">AirPlay PIN</string>
+    <string name="dialog_pin_title">Enter this PIN on your device</string>
     <string name="btn_ok">OK</string>
 
     <!-- Logs screen -->
@@ -201,4 +201,69 @@
     <string name="debug_audio_glitch">Glitch: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
     <string name="debug_audio_decode">Decode: %1$s</string>
     <string name="debug_clients">Senders: %1$d</string>
+    <!-- TV home (waiting) -->
+    <string name="cd_settings">Settings</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_starting">Starting…</string>
+    <string name="status_off">Receiver is off</string>
+    <string name="status_error">Couldn\'t start the receiver</string>
+    <string name="btn_turn_on">Turn on</string>
+    <string name="btn_try_again">Try again</string>
+    <string name="home_mac_title">To mirror your Mac</string>
+    <string name="home_step1">Click the Control Center icon in the Mac\'s menu bar (top right)</string>
+    <string name="home_step2">Click Screen Mirroring</string>
+    <string name="home_step3">Choose “%1$s”</string>
+    <string name="home_iphone">On iPhone or iPad: open Control Center, tap Screen Mirroring, choose “%1$s”.</string>
+    <string name="home_same_wifi">Mac and TV must be on the same Wi‑Fi</string>
+    <string name="home_tv_address">TV address: %1$s</string>
+    <string name="home_connecting">Your Mac is connecting…</string>
+    <string name="home_connecting_named">%1$s is connecting…</string>
+    <string name="home_taking_over">%1$s is taking over…</string>
+    <string name="home_connecting_hint">If nothing appears in a few seconds, choose this TV again in Screen Mirroring on the Mac.</string>
+    <string name="home_stopped_title">Mirroring stopped</string>
+    <string name="home_stopped_desc">It was stopped on the Mac, or the Wi‑Fi connection dropped. To mirror again, choose “%1$s” in Screen Mirroring.</string>
+    <string name="toast_mirroring">Mirroring started</string>
+    <string name="toast_took_over">%1$s took over the TV</string>
+    <string name="home_stopped_mac_title">Mirroring stopped on the Mac</string>
+    <string name="home_stopped_mac_desc">To mirror again, choose “%1$s” in Screen Mirroring.</string>
+    <string name="home_lost_title">Connection lost — check Wi‑Fi</string>
+    <string name="home_lost_desc">Make sure the Mac and TV are on the same Wi‑Fi, then choose “%1$s” again.</string>
+    <string name="home_network_title">The TV\'s network changed</string>
+    <string name="home_network_desc">Put the Mac on the TV\'s Wi‑Fi, then choose “%1$s” again.</string>
+    <string name="toast_mirroring_from">Mirroring from %1$s</string>
+
+    <!-- Simplified settings -->
+    <string name="setting_tv_name">TV name</string>
+    <string name="setting_tv_name_desc">The name your Mac shows in Screen Mirroring. Leave empty to use “%1$s”.</string>
+    <string name="setting_picture_quality">Picture quality</string>
+    <string name="setting_picture_quality_desc">Screen size offered to your Mac</string>
+    <string name="setting_pin_simple">Ask for a PIN</string>
+    <string name="setting_pin_simple_desc">Show a 4-digit code on the TV before a new device can mirror</string>
+    <string name="setting_lowest_latency">Lowest latency</string>
+    <string name="setting_lowest_latency_desc">Less delay for typing and mouse. Turn off if the picture or sound stutters.</string>
+    <string name="setting_about">About</string>
+    <string name="setting_about_desc">Version, licenses and source code</string>
+    <string name="setting_advanced">Advanced</string>
+    <string name="setting_advanced_desc">Technical options. Most people never need these.</string>
+    <string name="setting_logs">Show logs</string>
+    <string name="setting_logs_desc">Technical log for troubleshooting</string>
+    <string name="setting_receiver_power">Turn off receiver</string>
+    <string name="setting_receiver_power_desc">Your Mac won\'t see this TV until you turn it back on</string>
+    <string name="setting_receiver_power_on">Turn on receiver</string>
+    <string name="setting_receiver_power_on_desc">Let your Mac find this TV again</string>
+    <string name="dialog_stop_title">Turn off the receiver?</string>
+    <string name="dialog_stop_text">Your Mac won\'t be able to find this TV until you turn it back on.</string>
+    <string name="btn_turn_off">Turn off</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- About -->
+    <string name="about_version">Version %1$s</string>
+    <string name="about_credits">Based on AirPlay Receiver by jqssun (GPL-3.0) and UxPlay. Uses FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">This software uses code of FFmpeg (https://ffmpeg.org) licensed under the LGPLv2.1. Only its ALAC and AAC audio decoders are built in; its source code is included in this app\'s source repository.</string>
+    <string name="about_license_note">This app is free software under the GNU General Public License v3.0. You can get, change and share its source code.</string>
+    <string name="about_source">Source code: %1$s</string>
+    <string name="about_source_url" translatable="false">https://github.com/sebstech24/mirror-tv</string>
+    <string name="about_view_license">View license (GPL-3.0)</string>
+    <string name="about_trademark">Not affiliated with Apple. AirPlay and Mac are trademarks of Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
 </resources>

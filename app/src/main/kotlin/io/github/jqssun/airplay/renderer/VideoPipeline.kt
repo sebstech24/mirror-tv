@@ -19,6 +19,8 @@ class VideoPipeline {
     private val lock = Object()
     private var thread: Thread? = null
     @Volatile private var running = false
+    // gl path broke on this device (e.g. mediatek tvs whose driver is denied /dev/ashmem, upstream #50)
+    @Volatile var failed = false; private set
 
     private var egl: EglCore? = null
     private var window: EGLSurface = EGL14.EGL_NO_SURFACE
@@ -43,7 +45,7 @@ class VideoPipeline {
     @Volatile private var videoH = 0
 
     fun start() = synchronized(lock) {
-        if (running) return@synchronized
+        if (running || failed) return@synchronized
         running = true
         thread = Thread({ _loop() }, "VideoPipeline").also { it.start() }
         while (inputSurface == null && running) lock.wait()
@@ -77,6 +79,7 @@ class VideoPipeline {
             _initGl()
         } catch (e: Exception) {
             Log.e(TAG, "GL init failed", e)
+            failed = true
             synchronized(lock) { running = false; lock.notifyAll() }
             return
         }
@@ -85,6 +88,16 @@ class VideoPipeline {
             inputSurface = Surface(surfaceTexture)
             lock.notifyAll()
         }
+        try { _run() } catch (e: Exception) {
+            // an uncaught throw here would take the whole app down mid-session
+            Log.e(TAG, "GL pipeline failed", e)
+            failed = true
+            synchronized(lock) { running = false }
+        }
+        _releaseGl()
+    }
+
+    private fun _run() {
         while (true) {
             var newDisplay: Surface? = null
             var displayChanged = false
@@ -105,7 +118,6 @@ class VideoPipeline {
             if (displayChanged) _bindDisplay(newDisplay)
             if (doFrame) _consumeAndDraw()
         }
-        _releaseGl()
     }
 
     private fun _bindDisplay(surface: Surface?) {

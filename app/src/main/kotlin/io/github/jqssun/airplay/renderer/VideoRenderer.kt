@@ -22,6 +22,14 @@ class VideoRenderer(ctx: Context) {
     private var videoWidth = 0
     private var videoHeight = 0
     private var firstFrameQueued = false
+    // direct mode: decoder renders straight to the display surface, used when the gl pipeline
+    // fails or never produces a frame on this device. sticky for the process
+    private var direct = false
+    private var firstQueuedAtNs = 0L
+    private var gotOutput = false
+    // keyframe that started this session's codec: replayed to restart it in direct mode
+    private var sessionKey: ByteArray? = null
+    private var sessionKeyH265 = false
 
     // stats
     @Volatile var fps = 0; private set
@@ -52,19 +60,23 @@ class VideoRenderer(ctx: Context) {
         videoWidth = w
         videoHeight = h
         pipeline.setVideoSize(w, h)
+        sessionKey = null
         stopCodec()
     }
 
     // doesn't restart codec; decoder renders into pipeline's own persistent surface
     fun setSurface(surface: Surface) = synchronized(lock) {
         displaySurface = surface
-        pipeline.setDisplaySurface(surface)
+        if (!direct) { pipeline.setDisplaySurface(surface); return@synchronized }
+        val c = codec ?: return@synchronized
+        try { c.setOutputSurface(surface) } catch (e: Exception) { stopCodec() }
     }
 
     fun clearSurface(surface: Surface) = synchronized(lock) {
         if (displaySurface !== surface) return@synchronized
         displaySurface = null
-        pipeline.setDisplaySurface(null)
+        // direct: the codec can't outlive its surface; restarts from sessionKey when a new one arrives
+        if (direct) stopCodec() else pipeline.setDisplaySurface(null)
     }
 
     fun selectDecoders(w: Int, h: Int, fps: Int, h265: Boolean?): Boolean = synchronized(lock) {
@@ -87,7 +99,7 @@ class VideoRenderer(ctx: Context) {
     // codec per mirror session; pipeline persists across sessions
     fun startSession() = synchronized(lock) { _resetStats() }
 
-    fun stopSession() = synchronized(lock) { stopCodec() }
+    fun stopSession() = synchronized(lock) { sessionKey = null; stopCodec() }
 
     private fun _resetStats() {
         fps = 0; bitrateBps = 0; frameCount = 0; codecName = ""
@@ -125,17 +137,28 @@ class VideoRenderer(ctx: Context) {
             _updateStats(data.size)
             if (videoWidth == 0 || videoHeight == 0) return
 
+            _checkFallback()
+            var replay: ByteArray? = null
             if (codec == null || isH265 != currentH265) {
                 // a stale reference frame decodes to corruption, so wait for a keyframe to (re)start
-                if (!_isKeyframe(data, isH265)) {
-                    if (codec != null) stopCodec()
-                    return
+                if (_isKeyframe(data, isH265)) {
+                    sessionKey = data; sessionKeyH265 = isH265
+                } else {
+                    // direct mode restarts mid-session (surface swap, fallback): the sender won't
+                    // send another keyframe, so replay the session's one; a glitch beats black
+                    replay = sessionKey?.takeIf { direct && sessionKeyH265 == isH265 }
+                    if (replay == null) {
+                        if (codec != null) stopCodec()
+                        return
+                    }
                 }
                 stopCodec()
             }
 
             try {
                 if (codec == null) startCodec(isH265)
+                if (codec == null) return
+                replay?.let { _feedToCodec(it, ntpTimeNs) }
                 _feedToCodec(data, ntpTimeNs)
                 drainOutput()
             } catch (e: Exception) {
@@ -156,6 +179,7 @@ class VideoRenderer(ctx: Context) {
                 buf.clear()
                 buf.put(data)
                 c.queueInputBuffer(idx, 0, data.size, ntpTimeNs / 1000, 0)
+                if (!firstFrameQueued) firstQueuedAtNs = System.nanoTime()
                 firstFrameQueued = true
                 return
             }
@@ -185,10 +209,37 @@ class VideoRenderer(ctx: Context) {
         return false
     }
 
+    // switch to direct mode when the gl pipeline died or decoded nothing for a while
+    private fun _checkFallback() {
+        if (direct || codec == null) return
+        val stalled = firstQueuedAtNs != 0L && !gotOutput &&
+            System.nanoTime() - firstQueuedAtNs > NO_OUTPUT_FALLBACK_NS
+        if (!pipeline.failed && !stalled) return
+        Log.w(TAG, "video pipeline ${if (stalled) "produced no frames" else "failed"}; rendering directly")
+        _goDirect()
+    }
+
+    private fun _goDirect() {
+        direct = true
+        directForProcess = true
+        stopCodec()
+        pipeline.release()
+    }
+
+    private fun _surfaceForCodec(): Surface? {
+        if (!direct) {
+            pipeline.start()
+            pipeline.setVideoSize(videoWidth, videoHeight)
+            pipeline.inputSurface?.let { return it }
+            Log.w(TAG, "video pipeline unavailable; rendering directly")
+            _goDirect()
+        }
+        return displaySurface?.takeIf { it.isValid }
+    }
+
     private fun startCodec(h265: Boolean) {
-        pipeline.start()
-        pipeline.setVideoSize(videoWidth, videoHeight)
-        val s = pipeline.inputSurface ?: return
+        if (directForProcess) direct = true
+        val s = _surfaceForCodec() ?: return
         currentH265 = h265
         val mime = if (h265) DecoderSelector.HEVC else DecoderSelector.AVC
         val info = (if (h265) hevcDecoder else avcDecoder) ?: error("no decoder selected for $mime")
@@ -256,6 +307,8 @@ class VideoRenderer(ctx: Context) {
         _lastOutputFrameNs = 0L
         _ptsBaseUs = Long.MIN_VALUE
         _wallBaseNs = 0L
+        firstQueuedAtNs = 0L
+        gotOutput = false
         codec?.let {
             try {
                 it.stop()
@@ -271,6 +324,7 @@ class VideoRenderer(ctx: Context) {
         while (true) {
             val idx = c.dequeueOutputBuffer(info, 0)
             if (idx < 0) break
+            gotOutput = true
             _recordOutputFrameTime()
             if (scheduledOutputBufferRelease) {
                 // schedule frame at VSYNC matching its NTP presentation time
@@ -324,5 +378,8 @@ class VideoRenderer(ctx: Context) {
         private const val FEED_WAIT_US = 20_000L
         private const val FEED_RETRIES = 10
         private const val FIRST_FEED_RETRIES = 50
+        private const val NO_OUTPUT_FALLBACK_NS = 3_000_000_000L
+        // once the gl path fails it fails again on the same device
+        @Volatile private var directForProcess = false
     }
 }

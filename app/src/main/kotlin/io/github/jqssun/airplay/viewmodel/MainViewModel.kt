@@ -185,6 +185,12 @@ class MainViewModel @Inject constructor(app: Application) : AndroidViewModel(app
     private var _scrubJob: Job? = null
     private var _lastVideoPlaySeq = 0L
 
+    // sender's own name ("Seb's MacBook Air"), null until SETUP arrives
+    private val _clientName = MutableStateFlow<String?>(null)
+    val clientName: StateFlow<String?> = _clientName.asStateFlow()
+    private val _lastDisconnect = MutableStateFlow<AirPlayService.DisconnectReason?>(null)
+    val lastDisconnect: StateFlow<AirPlayService.DisconnectReason?> = _lastDisconnect.asStateFlow()
+
     private val _mirroringActive = MutableStateFlow(false)
     val mirroringActive: StateFlow<Boolean> = _mirroringActive.asStateFlow()
 
@@ -360,12 +366,6 @@ class MainViewModel @Inject constructor(app: Application) : AndroidViewModel(app
         service?.seekVideoBy(deltaMs)
     }
 
-    fun toggleVideoDownload() {
-        val svc = service ?: return
-        if (_videoDownloadProgress.value != null) svc.videoDownloader.cancel() else svc.downloadVideo()
-        showVideoOverlay()
-    }
-
     fun dismissPin() {
         _pinCode.value = null
     }
@@ -421,6 +421,8 @@ class MainViewModel @Inject constructor(app: Application) : AndroidViewModel(app
                 _videoBuffering.value = false
             }
             _mirroringActive.value = it.mirroringActive.value
+            _clientName.value = it.clientName.value
+            _lastDisconnect.value = it.lastDisconnect.value
             _trackInfo.value = it.trackInfo.value
             _clientVolume.value = it.clientVolume()
             _clientVolumeAdjustable.value = it.dacpController?.ready == true
