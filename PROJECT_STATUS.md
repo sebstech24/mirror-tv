@@ -33,3 +33,23 @@ work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.
 ## Docs
 docs/business/: PLAY-STORE.md (market + rules), IMPROVEMENTS.md (audit), SALES-PLAN.md (price/name/launch),
 SERVICE-STATE.md / UX-NEEDS-FROM-SERVICE.md (UI ↔ service state).
+
+## PAUSED 25 Oct 2026 (Sebastian is using the TV)
+Done since last notes (commit 799fe03): auto-rename when the TV's name is taken (verified on the Philips TV:
+"Living Room TV" -> "Living Room TV (2)", Mac sees it); paywall built (20-min free sessions, one-time
+`screenbridge_unlimited`, Play Billing 9.1, 8 unit tests pass) — NOT yet verified on the TV.
+Next, in order:
+1. Screensaver: Sebastian saw the TV go to screensaver during the paywall test — check whether it happened
+   while mirroring (keep-screen-on missing) or after the 1-min test session ended (normal on Home).
+2. Finish the paywall test on the TV (debug_short_session=true is still set in the debug app on the TV):
+   notice at 30 s, paywall at 60 s, Mac drops, can reconnect; then debug_fake_unlocked.
+3. Name polish: the Mac lists the receiver by the name the native server reports ("Living Room TV"), not the
+   renamed mDNS name "(2)" — set the native name to the renamed one too; remember the last name that worked
+   so the next start uses it immediately (no 5-s clash window).
+4. Responsiveness + picture quality (Sebastian's request): measure lag with a ms clock on the Mac + camera
+   (Photo Booth) view of the TV; compare Lowest latency on/off, 1080p vs 4K, H.264 vs H.265; check TV panel
+   resolution; pick the best defaults.
+5. "How to mirror instead of extend" hint on the TV (Mac defaults to extended display).
+Play Console setup for Sebastian (when publishing): product id `screenbridge_unlimited` ($7.99, one-time),
+license testers, internal test track. Note new rule (24 Oct): his app pricing standard is Monthly $4.99 with
+7-day trial — ask him whether that overrides the one-time $7.99 plan before setting up Play.
