@@ -50,7 +50,6 @@ import io.github.jqssun.airplay.audio.DacpPlayer
 import io.github.jqssun.airplay.audio.DmapParser
 import io.github.jqssun.airplay.audio.TrackInfo
 import io.github.jqssun.airplay.audio.VolumeBroadcast
-import io.github.jqssun.airplay.billing.FreeSession
 import io.github.jqssun.airplay.bridge.LogListener
 import io.github.jqssun.airplay.bridge.NativeBridge
 import io.github.jqssun.airplay.bridge.RaopCallbackHandler
@@ -373,8 +372,6 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
                 .debounce(SERVER_RESTART_DEBOUNCE_MS)
                 .collect { _restartServer() }
         }
-        // free tier: 20-minute sessions; restarting the receiver is what drops the sender
-        FreeSession.watch(lifecycleScope, this, _connectionCount, _mirroringActive, endSession = ::_restartServer)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
