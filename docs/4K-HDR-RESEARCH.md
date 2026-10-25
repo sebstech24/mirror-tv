@@ -20,3 +20,8 @@ Comparable products: Moonlight+Sunshine (Sunshine on Mac is weak: no system audi
 Licensing: a separate Mac sender app talking over the network can stay closed-source (GPL covers the TV app only).
 
 Sources: see the two research reports summarised in the chat of 25 Oct 2026 (UxPlay README.md:1108/1471/1366/2116, issue FDH2/UxPlay#233, Apple Community 255477555, WWDC22/24 ScreenCaptureKit, moonlight-qt streamingpreferences.cpp, AOSP low-latency + HDR docs).
+
+## C. Measured on Sebastian's MacBook Air M4 (25 Oct 2026, quiet Mac)
+4K60 HEVC 8-bit and 10-bit: 60 fps, ~10 ms/frame, nothing dropped. Real screen capture → 4K60 encode: ~58 fps,
+~19 ms/frame. 4K120: encoder ceiling ~95 fps → not possible on this Mac. Apple's low-latency rate-control mode
+drops frames → use normal real-time mode. Details: ~/Coding/ScreenbridgeMac/PROJECT_STATUS.md (private).
