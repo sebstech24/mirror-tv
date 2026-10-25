@@ -12,8 +12,15 @@ work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.
   sender name + disconnect reasons, no accidental Stop, download button removed, audio always advertised
   (fixes 64 s Mac drop), re-advertise on network change, lowest-latency mode, MediaTek video fallback,
   full-screen-intent pop-up when a Mac connects in the background.
-- NOT verified: real Mac → Android mirroring (emulator NAT can't take the receiver's random ports) —
-  needs a real Android TV/phone on the same Wi-Fi.
+- REAL-DEVICE TEST PASSED (25 Oct 2026, Philips Google TV TA1, Android 14, MediaTek): Mac (macOS 27) found
+  "Screenbridge TV", connected as extended display at 1080p, live video (Photo Booth feedback loop seen on
+  camera + TV screencap), AAC-ELD audio stream received (not listened to), "Mirroring stopped on the Mac" card
+  shown after stopping. Screens: docs/screens/real-tv-*.
+- BUG found: this TV has its own built-in AirPlay (com.mediatek.airplaydaemon) + AirScreen installed; both
+  claim the TV's name, so Android blocked our _airplay._tcp registration (NameConflictException, no failure
+  callback) and the Mac couldn't see the TV. Worked around by renaming to "Screenbridge TV" over adb.
+  Fix needed: default name that can't clash (e.g. "<TV name> · Screenbridge") + detect conflict and retry.
+- Market note: many MediaTek/Philips Google TVs ship with AirPlay built in.
 
 ## Open
 - Name DECIDED (25 Oct): app "Screenbridge", Play title "Screenbridge: Screen Mirroring", Play ID com.sebstech.screenbridge (done in code). Sebastian still to trademark-check. App icon completed at `design/icon.png`; Android TV home banner completed at `design/banner.png` (1280×720). Remaining rebrand: Play listing.
