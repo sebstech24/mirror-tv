@@ -266,4 +266,28 @@
     <string name="about_view_license">View license (GPL-3.0)</string>
     <string name="about_trademark">Not affiliated with Apple. AirPlay and Mac are trademarks of Apple Inc.</string>
     <string name="about_license_title">GNU General Public License v3.0</string>
+    <!-- Screenbridge Unlimited (one-time purchase) and the free 20-minute session -->
+    <plurals name="free_session_left">
+        <item quantity="one">%d minute left in your free session</item>
+        <item quantity="other">%d minutes left in your free session</item>
+    </plurals>
+    <string name="paywall_title">Your free 20 minutes are up</string>
+    <string name="paywall_subtitle">Reconnect from your Mac for another free session, or unlock Screenbridge for good.</string>
+    <string name="paywall_benefit_unlimited">Unlimited mirroring, no time limit</string>
+    <string name="paywall_benefit_support">Supports the developer</string>
+    <string name="paywall_benefit_updates">All future updates included</string>
+    <string name="paywall_unlock">Unlock forever — %1$s</string>
+    <string name="paywall_unlock_no_price">Unlock forever</string>
+    <string name="paywall_one_time">One-time purchase. No subscription.</string>
+    <string name="paywall_not_now">Not now</string>
+    <string name="unlimited_badge">Unlimited</string>
+    <string name="unlimited_title">Screenbridge Unlimited</string>
+    <string name="unlimited_owned_desc">Unlocked. Thank you for supporting Screenbridge!</string>
+    <string name="unlimited_free_desc">Free version: mirroring sessions last 20 minutes. Unlock unlimited mirroring once, forever.</string>
+    <string name="unlimited_pending_desc">Payment pending. Screenbridge unlocks as soon as Google Play confirms it.</string>
+    <string name="unlimited_restore">Restore purchases</string>
+    <string name="unlimited_restore_desc">Already bought Screenbridge Unlimited on this Google account? Check again with Google Play.</string>
+    <string name="unlimited_restored">Screenbridge Unlimited is unlocked.</string>
+    <string name="unlimited_not_found">No purchase found on this Google account.</string>
+    <string name="unlimited_play_unavailable">Google Play isn\'t reachable right now. Try again in a moment.</string>
 </resources>

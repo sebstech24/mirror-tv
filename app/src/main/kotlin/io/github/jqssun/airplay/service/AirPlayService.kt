@@ -50,6 +50,7 @@ import io.github.jqssun.airplay.audio.DacpPlayer
 import io.github.jqssun.airplay.audio.DmapParser
 import io.github.jqssun.airplay.audio.TrackInfo
 import io.github.jqssun.airplay.audio.VolumeBroadcast
+import io.github.jqssun.airplay.billing.FreeSession
 import io.github.jqssun.airplay.bridge.LogListener
 import io.github.jqssun.airplay.bridge.NativeBridge
 import io.github.jqssun.airplay.bridge.RaopCallbackHandler
@@ -372,6 +373,8 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
                 .debounce(SERVER_RESTART_DEBOUNCE_MS)
                 .collect { _restartServer() }
         }
+        // free tier: 20-minute sessions; restarting the receiver is what drops the sender
+        FreeSession.watch(lifecycleScope, this, _connectionCount, _mirroringActive, endSession = ::_restartServer)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -400,7 +403,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         val pm = getSystemService(Context.POWER_SERVICE) as PowerManager
         wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "airplay:server").apply { acquire() }
 
-        nsdManager = NsdServiceManager(this).apply { acquireMulticastLock() }
+        nsdManager = NsdServiceManager(this).apply { acquireMulticastLock(); onRenamed = ::_onRenamed }
 
         val hwAddr = getHwAddr()
         val keyFile = filesDir.resolve("airplay.pem").absolutePath
@@ -1292,12 +1295,17 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
     private fun _addrs(lp: LinkProperties): Set<InetAddress> =
         lp.linkAddresses.map { it.address }.filterNot { it.isLinkLocalAddress || it.isLoopbackAddress }.toSet()
 
+    private fun _onRenamed(type: String, newName: String) {
+        log("Name taken on this network, advertising as \"$newName\" ($type)")
+        if (type == "_airplay._tcp") _serverName.value = newName
+    }
+
     private fun _readvertise() {
         if (_serverState.value != ServerState.RUNNING || prefs[Prefs.USB_ONLY] || _advertised.isEmpty()) return
         if (_connectionCount.value > 0) _pendingDisconnect = DisconnectReason.NETWORK_CHANGED
         log("Network changed, advertising again")
         nsdManager?.release()
-        nsdManager = NsdServiceManager(this).apply { acquireMulticastLock(); register(_advertised) }
+        nsdManager = NsdServiceManager(this).apply { acquireMulticastLock(); onRenamed = ::_onRenamed; register(_advertised) }
     }
 
     private fun _mediaAction(action: String): PendingIntent {

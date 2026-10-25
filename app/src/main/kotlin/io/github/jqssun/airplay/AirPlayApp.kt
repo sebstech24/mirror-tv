@@ -4,4 +4,9 @@ import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class AirPlayApp : Application()
+class AirPlayApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        io.github.jqssun.airplay.billing.Billing.init(this)
+    }
+}

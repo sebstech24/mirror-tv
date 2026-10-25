@@ -1,5 +1,6 @@
 package io.github.jqssun.airplay.ui
 
+import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
@@ -39,6 +40,7 @@ import androidx.lifecycle.compose.LocalLifecycleOwner
 import io.github.jqssun.airplay.Prefs
 import io.github.jqssun.airplay.R
 import io.github.jqssun.airplay.appSettingsIntent
+import io.github.jqssun.airplay.billing.Billing
 import io.github.jqssun.airplay.defaultServerName
 import io.github.jqssun.airplay.viewmodel.MainViewModel
 import androidx.compose.ui.res.stringArrayResource
@@ -133,6 +135,29 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             // not the name field: focusing a text field would pop the keyboard on a TV
             modifier = Modifier.focusRequester(firstFocus)
         )
+
+        val unlimited by Billing.unlocked.collectAsState()
+        val pending by Billing.pending.collectAsState()
+        val price by Billing.price.collectAsState()
+        val activity = ctx as? Activity
+        SectionHeader(stringResource(R.string.unlimited_title))
+        if (unlimited) {
+            ListItem(
+                headlineContent = { Text(stringResource(R.string.unlimited_badge)) },
+                supportingContent = { Text(stringResource(R.string.unlimited_owned_desc)) }
+            )
+        } else {
+            SettingRow(
+                title = price?.let { stringResource(R.string.paywall_unlock, it) } ?: stringResource(R.string.paywall_unlock_no_price),
+                description = stringResource(if (pending) R.string.unlimited_pending_desc else R.string.unlimited_free_desc),
+                onClick = { activity?.let(Billing::buy) }
+            )
+            SettingRow(
+                title = stringResource(R.string.unlimited_restore),
+                description = stringResource(R.string.unlimited_restore_desc),
+                onClick = { activity?.let(Billing::restore) }
+            )
+        }
 
         SettingRow(
             title = stringResource(R.string.setting_about),

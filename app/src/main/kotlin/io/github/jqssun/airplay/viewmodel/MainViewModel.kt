@@ -186,6 +186,10 @@ class MainViewModel @Inject constructor(app: Application) : AndroidViewModel(app
     private var _lastVideoPlaySeq = 0L
 
     // sender's own name ("Seb's MacBook Air"), null until SETUP arrives
+    // name actually advertised on the network (may be "Name (2)" if the TV's own name was taken)
+    private val _advertisedName = MutableStateFlow("")
+    val advertisedName: StateFlow<String> = _advertisedName.asStateFlow()
+
     private val _clientName = MutableStateFlow<String?>(null)
     val clientName: StateFlow<String?> = _clientName.asStateFlow()
     private val _lastDisconnect = MutableStateFlow<AirPlayService.DisconnectReason?>(null)
@@ -422,6 +426,7 @@ class MainViewModel @Inject constructor(app: Application) : AndroidViewModel(app
             }
             _mirroringActive.value = it.mirroringActive.value
             _clientName.value = it.clientName.value
+            _advertisedName.value = it.serverName.value
             _lastDisconnect.value = it.lastDisconnect.value
             _trackInfo.value = it.trackInfo.value
             _clientVolume.value = it.clientVolume()

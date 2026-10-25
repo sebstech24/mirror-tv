@@ -124,4 +124,7 @@ object Prefs {
     // one switch: lowest safe audio cushion, low-latency audio output, unscheduled video release
     val LOWEST_LATENCY = bool("lowest_latency", false, restart = true)
     val USB_ONLY = bool("usb_only", false, restart = true)
+    // paywall testing over adb; debug builds only, release builds ignore them (see billing/)
+    val DEBUG_FAKE_UNLOCKED = bool("debug_fake_unlocked", false)
+    val DEBUG_SHORT_SESSION = bool("debug_short_session", false)
 }

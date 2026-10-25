@@ -629,7 +629,8 @@ private fun HomeContent(
     val address = remember(state) { context.tvIpv4() }
     // blank pref = the TV's own device name
     val deviceName = remember { context.defaultServerName() }
-    val tvName = serverName.ifBlank { deviceName }
+    val advertisedName by viewModel.advertisedName.collectAsState()
+    val tvName = advertisedName.takeIf { running && it.isNotBlank() } ?: serverName.ifBlank { deviceName }
 
     val status = when {
         grant -> HomeStatus.NEEDS_ACCESS
