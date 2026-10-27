@@ -215,6 +215,7 @@
     <string name="home_step3">Choose “%1$s”</string>
     <string name="home_iphone">On iPhone or iPad: open Control Center, tap Screen Mirroring, choose “%1$s”.</string>
     <string name="home_mirror_hint">Empty desktop on the TV instead of your Mac\'s screen? On the Mac: System Settings → Displays → “When connected to TV” → Mirror Entire Screen.</string>
+    <string name="home_screensaver_hint">Picture hidden by the screensaver? Press any button on your remote.</string>
     <string name="home_same_wifi">Mac and TV must be on the same Wi‑Fi</string>
     <string name="home_tv_address">TV address: %1$s</string>
     <string name="home_connecting">Your Mac is connecting…</string>

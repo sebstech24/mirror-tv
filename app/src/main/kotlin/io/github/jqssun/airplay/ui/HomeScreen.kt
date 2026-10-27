@@ -115,7 +115,7 @@ fun WaitingContent(
         }
 
         if (status == HomeStatus.READY) {
-            Spacer(Modifier.height(24.dp))
+            Spacer(Modifier.height(16.dp))
             Text(stringResource(R.string.home_mac_title), style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             Spacer(Modifier.height(16.dp))
             MacSteps(tvName)
@@ -128,14 +128,14 @@ fun WaitingContent(
             )
             Spacer(Modifier.height(8.dp))
             Text(
-                stringResource(R.string.home_mirror_hint),
+                stringResource(R.string.home_mirror_hint) + "\n" + stringResource(R.string.home_screensaver_hint),
                 style = MaterialTheme.typography.bodyLarge,
                 textAlign = TextAlign.Center,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
 
-        Spacer(Modifier.height(20.dp))
+        Spacer(Modifier.height(12.dp))
         Text(
             text = listOfNotNull(
                 stringResource(R.string.home_same_wifi),

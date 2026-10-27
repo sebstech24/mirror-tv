@@ -41,11 +41,13 @@ Results, in the order of the 25 Oct list:
    a) Google's screensaver: Android blocks our "come to front". Fix added: wake the screen on connect
       (wake lock with ACQUIRE_CAUSES_WAKEUP). Verified it wakes straight into the mirrored picture, BUT only
       when the app holds the TURN_SCREEN_ON permission. That is off by default and this TV has no settings page
-      for it (granted over adb for the test, then reset). LEFT: decide how to handle this for real users.
+      for it (granted over adb for the test, then reset). DECIDED (Sebastian, 27 Oct): no permission setup flow;
+      the wake code stays in (works where the permission happens to be allowed).
    b) Philips' logo screensaver (OLED burn-in protection, drawn by the TV system over every app, after ~2.3 min
       of a still screen with no Mac connected). It goes away only on a remote button press or when a DIFFERENT
       app comes to the front; its stop signal is system-only. Tried a tiny invisible screen inside our app:
-      did not work, removed. LEFT: no app-side fix found; users press any remote button.
+      did not work, removed. DECIDED (Sebastian, 27 Oct): a tip on the TV home screen under the mirror hint,
+      "Picture hidden by the screensaver? Press any button on your remote." (checked in the emulator).
 2. Paywall: verified on the TV with the 25 Oct build (the paywall is out of tv-edition, kept on paywall-later):
    "1 minute left" notice at 30 s, paywall screen at 60 s (docs/screens/night-paywall-at-60s.png), Mac
    dropped, reconnect worked; debug_fake_unlocked mirrored 2.5 min uncut.
@@ -59,8 +61,8 @@ Results, in the order of the 25 Oct list:
    319 ms, 1080p 275 ms. Differences are within the noise, so the defaults stay (Auto/4K, Lowest latency off).
    Not done: absolute lag with the iPhone 240 fps camera.
 5. Mirror hint: added to the TV home screen, using the Mac's exact wording ("System Settings → Displays →
-   When connected to TV → Mirror Entire Screen"). docs/screens/night-home-hint.png. The bottom Wi-Fi line now
-   sits right at the screen edge (minor).
+   When connected to TV → Mirror Entire Screen"). docs/screens/night-home-hint.png. Spacing tightened so the
+   bottom Wi-Fi line still fits with the screensaver tip added (docs/screens/home-screensaver-tip.png).
 Also: Settings now opens at the top (docs/screens/night-settings-top.png).
 Found: "Mac volume drives TV volume" (sync_client_volume, default on) raised the TV to 6/60 during mirroring
 tests. Worth a thought before launch (a surprise for people mirroring at night).
