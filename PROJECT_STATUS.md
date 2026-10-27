@@ -26,13 +26,45 @@ work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.
 - Name DECIDED (25 Oct): app "Screenbridge", Play title "Screenbridge: Screen Mirroring", Play ID com.sebstech.screenbridge (done in code). Sebastian still to trademark-check. App icon completed at `design/icon.png`; Android TV home banner completed at `design/banner.png` (1280×720). Remaining rebrand: Play listing.
 - Paywall (Play Billing one-time unlock, 20-min free sessions) — see docs/business/SALES-PLAN.md.
 - USE_FULL_SCREEN_INTENT may need a Play declaration (restricted to calling/alarm apps on Android 14+).
-- Settings opens scrolled to the middle (focus lands on "Ask for a PIN") — small polish.
 - Sebastian: Play developer account type/age (12 testers × 14 days if personal & newer than Nov 2023);
   lawyer check before charging.
 
 ## Docs
 docs/business/: PLAY-STORE.md (market + rules), IMPROVEMENTS.md (audit), SALES-PLAN.md (price/name/launch),
 SERVICE-STATE.md / UX-NEEDS-FROM-SERVICE.md (UI ↔ service state).
+
+## Night test 27 Oct 2026 (real Philips TV, Mac in front of it; all TV work ended by 04:50)
+Results, in the order of the 25 Oct list:
+1. Screensaver: NOT a keep-screen-on bug. While mirroring with our app in front the TV stays awake (2.5 min with
+   a 1-min timeout; Philips' own burn-in watcher also stops counting). The real bug: if a screensaver is
+   ALREADY up when the Mac connects, the picture plays unseen behind it. Two kinds on this TV:
+   a) Google's screensaver: Android blocks our "come to front". Fix added: wake the screen on connect
+      (wake lock with ACQUIRE_CAUSES_WAKEUP). Verified it wakes straight into the mirrored picture, BUT only
+      when the app holds the TURN_SCREEN_ON permission. That is off by default and this TV has no settings page
+      for it (granted over adb for the test, then reset). LEFT: decide how to handle this for real users.
+   b) Philips' logo screensaver (OLED burn-in protection, drawn by the TV system over every app, after ~2.3 min
+      of a still screen with no Mac connected). It goes away only on a remote button press or when a DIFFERENT
+      app comes to the front; its stop signal is system-only. Tried a tiny invisible screen inside our app:
+      did not work, removed. LEFT: no app-side fix found; users press any remote button.
+2. Paywall: verified on the TV with the 25 Oct build (the paywall is out of tv-edition, kept on paywall-later):
+   "1 minute left" notice at 30 s, paywall screen at 60 s (docs/screens/night-paywall-at-60s.png), Mac
+   dropped, reconnect worked; debug_fake_unlocked mirrored 2.5 min uncut.
+3. Name: fixed and verified. After a clash the native server reports the new name too, so the Mac's display
+   tile now says "Living Room TV (2)". The working name is remembered (pref working_name), so the next start
+   registers "(2)" in ~1 s instead of a 6-s timeout first. Small leftover: macOS's "+" menu in Displays still
+   listed "Living Room TV" while the tile said "(2)".
+4. Lag + quality: TV panel is 4K 60 Hz; "Auto" already asks the Mac for 3840x2160. The Mac sent H.264 every
+   time even with H.265 offered, so the codec is the Mac's choice. Lag measured with a ms clock on the Mac and
+   the MacBook camera on the TV (camera delay included, 6 readings each): 4K default 294 ms, Lowest latency on
+   319 ms, 1080p 275 ms. Differences are within the noise, so the defaults stay (Auto/4K, Lowest latency off).
+   Not done: absolute lag with the iPhone 240 fps camera.
+5. Mirror hint: added to the TV home screen, using the Mac's exact wording ("System Settings → Displays →
+   When connected to TV → Mirror Entire Screen"). docs/screens/night-home-hint.png. The bottom Wi-Fi line now
+   sits right at the screen edge (minor).
+Also: Settings now opens at the top (docs/screens/night-settings-top.png).
+Found: "Mac volume drives TV volume" (sync_client_volume, default on) raised the TV to 6/60 during mirroring
+tests. Worth a thought before launch (a surprise for people mirroring at night).
+Privacy note: screenshots taken while mirroring show the Mac's screen; keep them out of this public repo.
 
 ## PAUSED 25 Oct 2026 (Sebastian is using the TV)
 Done since last notes (commit 799fe03): auto-rename when the TV's name is taken (verified on the Philips TV:

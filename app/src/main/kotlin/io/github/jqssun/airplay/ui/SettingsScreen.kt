@@ -44,6 +44,7 @@ import io.github.jqssun.airplay.viewmodel.MainViewModel
 import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.res.stringResource
 import kotlin.math.roundToInt
+import kotlinx.coroutines.delay
 
 @Composable
 fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs: () -> Unit) {
@@ -94,12 +95,14 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
     var advanced by rememberSaveable { mutableStateOf(false) }
     var confirmStop by remember { mutableStateOf(false) }
     val firstFocus = remember { FocusRequester() }
-    LaunchedEffect(Unit) { firstFocus.requestFocusUntilLanded() }
+    val scroll = rememberScrollState()
+    // focusing the PIN row nudges the list down and cuts off "TV name"; the top still shows the PIN row
+    LaunchedEffect(Unit) { firstFocus.requestFocusUntilLanded(); delay(400); scroll.scrollTo(0) }
 
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .verticalScroll(rememberScrollState())
+            .verticalScroll(scroll)
             .padding(vertical = 8.dp)
     ) {
         // everyday settings; everything technical lives under Advanced

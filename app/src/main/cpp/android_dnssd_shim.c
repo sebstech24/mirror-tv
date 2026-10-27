@@ -278,3 +278,12 @@ void android_dnssd_set_codecs(dnssd_t *dnssd, int alac, int aac) {
 const char *android_dnssd_get_raop_servname(dnssd_t *dnssd) {
     return dnssd->raop_servname;
 }
+
+/* name the Mac sees in /info, after Kotlin had to advertise under "Name (2)" */
+void android_dnssd_set_name(dnssd_t *dnssd, const char *name) {
+    char *n = strdup(name);
+    if (!n) return;
+    /* shortcut: the old name leaks (a few bytes per rename) so a concurrent /info reader never sees freed memory */
+    dnssd->name_len = (int) strlen(n);
+    dnssd->name = n;
+}

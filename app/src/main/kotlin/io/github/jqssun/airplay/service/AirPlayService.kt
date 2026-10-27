@@ -126,6 +126,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
     @Volatile private var _pendingDisconnect: DisconnectReason? = null
 
     private var _advertised: List<MdnsService> = emptyList()
+    private var _nameAttempt = 1
     private var _netCallback: ConnectivityManager.NetworkCallback? = null
     private var _lastAddrs: Set<InetAddress> = emptySet()
     private val _readvertiseTask = Runnable { _readvertise() }
@@ -484,12 +485,13 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         }
         _advertised = services
         _serverName.value = resolvedName
+        _nameAttempt = NsdServiceManager.attemptOf(resolvedName, prefs[Prefs.WORKING_NAME])
         if (prefs[Prefs.USB_ONLY]) {
             usbAdvertiser = UsbMdnsAdvertiser(services) { iface, addr ->
                 log(if (iface == null) "USB link down" else "USB link up on $iface (${addr?.hostAddress})")
             }.apply { start() }
         } else {
-            nsdManager?.register(services)
+            nsdManager?.register(services, _nameAttempt)
         }
 
         _serverState.value = ServerState.RUNNING
@@ -1209,6 +1211,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
     private fun launchMainActivity() {
         _mainHandler.post {
             if (_appVisible()) return@post
+            _wakeScreen()
             try {
                 startActivity(_mirrorIntent())
             } catch (e: Exception) {
@@ -1217,6 +1220,16 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             // a blocked start fails silently, so without the overlay grant also raise the alert
             if (!_canOverlay()) _postLaunchAlert()
         }
+    }
+
+    // a Mac connecting while the TV shows its screensaver: the start below is blocked and the picture
+    // plays unseen behind it (seen on the Philips TV). Waking the screen ends the screensaver.
+    @Suppress("DEPRECATION")
+    private fun _wakeScreen() {
+        (getSystemService(Context.POWER_SERVICE) as PowerManager).newWakeLock(
+            PowerManager.SCREEN_BRIGHT_WAKE_LOCK or PowerManager.ACQUIRE_CAUSES_WAKEUP or PowerManager.ON_AFTER_RELEASE,
+            "airplay:connect"
+        ).acquire(3_000)
     }
 
     private fun _appVisible() = ActivityManager.RunningAppProcessInfo()
@@ -1294,7 +1307,12 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
 
     private fun _onRenamed(type: String, newName: String) {
         log("Name taken on this network, advertising as \"$newName\" ($type)")
-        if (type == "_airplay._tcp") _serverName.value = newName
+        if (type != "_airplay._tcp") return
+        _serverName.value = newName
+        // the Mac lists the receiver by the name in /info, not the mDNS name
+        if (nativeHandle != 0L) NativeBridge.nativeSetServerName(nativeHandle, newName)
+        _advertised.firstOrNull { it.type == type }?.let { _nameAttempt = NsdServiceManager.attemptOf(it.name, newName) }
+        Prefs.WORKING_NAME.write(prefs, newName)
     }
 
     private fun _readvertise() {
@@ -1302,7 +1320,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         if (_connectionCount.value > 0) _pendingDisconnect = DisconnectReason.NETWORK_CHANGED
         log("Network changed, advertising again")
         nsdManager?.release()
-        nsdManager = NsdServiceManager(this).apply { acquireMulticastLock(); onRenamed = ::_onRenamed; register(_advertised) }
+        nsdManager = NsdServiceManager(this).apply { acquireMulticastLock(); onRenamed = ::_onRenamed; register(_advertised, _nameAttempt) }
     }
 
     private fun _mediaAction(action: String): PendingIntent {

@@ -80,6 +80,8 @@ object Prefs {
 
     // blank = the TV's own device name (Context.defaultServerName)
     val SERVER_NAME = str("server_name", "", restart = true)
+    // last name that registered after a clash ("Living Room TV (2)"), so the next start uses it at once
+    val WORKING_NAME = str("working_name", "")
     val SERVER_PORT = int("server_port", 7000, 1..65535, restart = true)
     val AUTO_START = bool("auto_start", true)
     val BOOT_AUTO_START = bool("boot_auto_start", true)

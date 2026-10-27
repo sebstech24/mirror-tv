@@ -272,6 +272,19 @@ Java_io_github_jqssun_airplay_bridge_NativeBridge_nativeGetServerName(
 
 extern "C"
 JNIEXPORT void JNICALL
+Java_io_github_jqssun_airplay_bridge_NativeBridge_nativeSetServerName(
+        JNIEnv *env, jobject thiz, jlong handle, jstring name) {
+
+    server_ctx_t *ctx = (server_ctx_t *)(intptr_t)handle;
+    if (!ctx || !ctx->dnssd || !name) return;
+    const char *name_c = env->GetStringUTFChars(name, NULL);
+    if (!name_c) return;
+    android_dnssd_set_name(ctx->dnssd, name_c);
+    env->ReleaseStringUTFChars(name, name_c);
+}
+
+extern "C"
+JNIEXPORT void JNICALL
 Java_io_github_jqssun_airplay_bridge_NativeBridge_nativeSetPlist(
         JNIEnv *env, jobject thiz, jlong handle, jstring key, jint value) {
 

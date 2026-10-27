@@ -26,7 +26,8 @@ class NsdServiceManager(private val ctx: Context) {
     /** Called (main thread) when a service had to take a new name because another device or app on this TV holds it. */
     var onRenamed: ((type: String, newName: String) -> Unit)? = null
 
-    fun register(services: List<MdnsService>) = services.forEach { _register(it, 1) }
+    /** [startAttempt] > 1 starts at "Name (n)" right away, e.g. the name that worked last time. */
+    fun register(services: List<MdnsService>, startAttempt: Int = 1) = services.forEach { _register(it, startAttempt) }
 
     // Some TVs (e.g. MediaTek with built-in AirPlay, or with AirScreen installed) already advertise the TV's name.
     // Android then silently drops our registration (NameConflictException, often no failure callback),
@@ -87,10 +88,14 @@ class NsdServiceManager(private val ctx: Context) {
 
     companion object {
         private const val TAG = "NsdServiceManager"
-        private const val MAX_ATTEMPTS = 5
+        const val MAX_ATTEMPTS = 5
         private const val REGISTER_TIMEOUT_MS = 6_000L
 
         /** "Living Room TV" -> "Living Room TV (2)" on the 2nd attempt; keeps a raop "HW@" prefix intact. */
         fun nameForAttempt(base: String, attempt: Int): String = if (attempt <= 1) base else "$base ($attempt)"
+
+        /** Which attempt produced [saved] from [base] ("Living Room TV (2)" -> 2); 1 when it didn't come from [base]. */
+        fun attemptOf(base: String, saved: String): Int =
+            (2..MAX_ATTEMPTS).firstOrNull { nameForAttempt(base, it) == saved } ?: 1
     }
 }

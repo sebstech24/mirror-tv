@@ -36,6 +36,7 @@ object NativeBridge {
     external fun nativeGetAirplayTxtRecords(handle: Long): Map<String, String>?
     external fun nativeGetRaopServiceName(handle: Long): String?
     external fun nativeGetServerName(handle: Long): String?
+    external fun nativeSetServerName(handle: Long, name: String)
 
     external fun nativeSetDefaultStreamValues(sampleRate: Int, framesPerBurst: Int)
     external fun nativeServerAudioConfigure(handle: Long, cushionMs: Int, percentilePct: Int,
