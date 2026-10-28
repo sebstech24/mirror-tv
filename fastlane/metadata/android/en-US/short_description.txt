@@ -1,1 +1,1 @@
-AirPlay receiver implementation for Android with video and audio support.
+Mirror your Mac to Google TV or Android TV with Screen Mirroring. No ads.
