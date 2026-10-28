@@ -1,0 +1,323 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: Inter, sans-serif; }
+    #d-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 70% at 50% 55%, #18205A 0%, #0B1030 70%); }
+    #d-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    .abs { position: absolute; }
+
+    /* ---------- laptop (generic, drawn) ---------- */
+    #d-lap-bezel { left: 90px; top: 330px; width: 800px; height: 512px; background: #0C0D10; border-radius: 22px 22px 6px 6px;
+      box-shadow: 0 0 0 2px #3A3D45, 0 40px 90px rgba(0,0,0,0.55); }
+    #d-lap-screen { left: 16px; top: 16px; width: 768px; height: 480px; overflow: hidden; border-radius: 4px; }
+    #d-lap-base { left: 40px; top: 842px; width: 900px; height: 26px; border-radius: 0 0 20px 20px;
+      background: linear-gradient(#D3D6DC, #8E929B); }
+    #d-lap-groove { left: 430px; top: 842px; width: 120px; height: 8px; border-radius: 0 0 8px 8px; background: #9DA1A9; }
+
+    /* ---------- TV (generic, drawn) ---------- */
+    #d-tv-bezel { left: 990px; top: 250px; width: 860px; height: 500px; background: #09090A; border-radius: 10px;
+      box-shadow: 0 0 0 2px #2A2B30, 0 40px 90px rgba(0,0,0,0.55); }
+    #d-tv-screen { left: 14px; top: 14px; width: 832px; height: 468px; overflow: hidden; background: #000; }
+    #d-tv-neck { left: 1405px; top: 750px; width: 30px; height: 36px; background: #1B1C20; }
+    #d-tv-foot { left: 1290px; top: 784px; width: 260px; height: 12px; border-radius: 6px; background: #26272C; }
+
+    /* ---------- Screenbridge home screen, rebuilt from docs/screens/home-screensaver-tip.png ---------- */
+    .home { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform: scale(0.433333); transform-origin: 0 0;
+      background: #1B1C21; font-family: Roboto, sans-serif; color: #ECECF0; text-align: center; }
+    .home .ready { position: absolute; left: 855px; top: 48px; width: 210px; height: 80px; border-radius: 40px; background: #3A3B42;
+      font-size: 34px; line-height: 80px; color: #F2F2F5; padding-left: 40px; }
+    .home .ready::before { content: ""; position: absolute; left: 36px; top: 26px; width: 28px; height: 28px; border-radius: 50%; background: #2FCB55; }
+    .home .gear { position: absolute; left: 1746px; top: 34px; width: 108px; height: 108px; border-radius: 50%; border: 3px solid #A9C1FF; }
+    .home .gear svg { position: absolute; left: 27px; top: 27px; }
+    .home .name { position: absolute; left: 0; right: 0; top: 150px; font-size: 96px; font-weight: 700; }
+    .home .sub { position: absolute; left: 0; right: 0; top: 292px; font-size: 46px; color: #D8D8DE; }
+    .home .card { position: absolute; top: 386px; width: 550px; height: 358px; border-radius: 40px; background: #2C2D33; }
+    .home .num { position: absolute; top: 44px; width: 80px; height: 80px; border-radius: 50%; background: #A9C1FF; color: #1F2A5A;
+      font-size: 44px; font-weight: 700; line-height: 80px; }
+    .home .card svg { position: absolute; top: 46px; }
+    .home .ctext { position: absolute; left: 30px; right: 30px; top: 150px; font-size: 44px; line-height: 56px; }
+    .home .line { position: absolute; left: 0; right: 0; font-size: 31px; color: #CBCBD1; }
+
+    /* ---------- the Mac desktop (internal 1152x720 points, shown at 2/3) ---------- */
+    .desk { position: absolute; left: 0; top: 0; width: 1152px; height: 720px; transform: scale(0.666667); transform-origin: 0 0;
+      background: linear-gradient(135deg, #56688C 0%, #7489A3 45%, #A3B5A8 100%); overflow: hidden; }
+    .menubar { position: absolute; left: 0; top: 0; width: 1152px; height: 26px; background: rgba(240,242,246,0.78);
+      font-size: 15px; line-height: 26px; color: #1D1F24; font-weight: 500; }
+    .menubar .items { position: absolute; left: 18px; top: 0; white-space: nowrap; }
+    .menubar .items span { margin-right: 20px; }
+    .menubar .items b { margin-right: 22px; font-weight: 700; }
+    .menubar svg { position: absolute; }
+    .menubar .clock { position: absolute; right: 12px; top: 0; }
+    .win { position: absolute; left: 176px; top: 84px; width: 800px; height: 540px; border-radius: 12px; overflow: hidden;
+      background: #F4F5F7; box-shadow: 0 24px 60px rgba(0,0,0,0.35); }
+    .win-bar { position: absolute; left: 0; top: 0; width: 800px; height: 34px; background: #E4E6EA; font-size: 14px; line-height: 34px;
+      color: #4A4D55; text-align: center; font-weight: 600; }
+    .win-bar i { position: absolute; top: 11px; width: 12px; height: 12px; border-radius: 50%; background: #BFC3CA; }
+    .slide { position: absolute; left: 24px; top: 58px; width: 752px; height: 458px; border-radius: 6px; background: #FFFFFF;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.12); overflow: hidden; }
+    .slide h2 { position: absolute; left: 40px; top: 34px; font-size: 44px; font-weight: 800; color: #1B2240; letter-spacing: -0.01em; }
+    .slide p { position: absolute; left: 42px; top: 96px; font-size: 20px; color: #6A7086; }
+    .slide .ph { position: absolute; top: 160px; width: 214px; height: 250px; border-radius: 10px; }
+    .p1 { left: 40px; background: linear-gradient(160deg, #FFB36B 0%, #F0657A 55%, #7A4B9A 100%); }
+    .p2 { left: 269px; background: linear-gradient(170deg, #9FE3F2 0%, #3A9BD0 55%, #1C5C8E 100%); }
+    .p3 { left: 498px; background: linear-gradient(160deg, #FFE27A 0%, #F3B33D 50%, #C9692E 100%); }
+    .s2 { opacity: 0; }
+    .s2 .wide { position: absolute; left: 40px; top: 40px; width: 672px; height: 300px; border-radius: 10px;
+      background: linear-gradient(180deg, #8FD3F4 0%, #5BB4E0 45%, #2E7DB5 60%, #E9D7A8 61%, #D9B97A 100%); }
+    .s2 h3 { position: absolute; left: 40px; top: 362px; font-size: 38px; font-weight: 800; color: #1B2240; }
+
+    /* ---------- Control Center panel (generic, light) ---------- */
+    .panel { position: absolute; left: 842px; top: 32px; width: 300px; border-radius: 16px; background: rgba(236,238,242,0.97);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.35), 0 0 0 1px rgba(0,0,0,0.08); color: #1D1F24; font-size: 13px; opacity: 0; }
+    #d-panelA { height: 284px; }
+    #d-panelB { height: 168px; }
+    .tile { position: absolute; border-radius: 12px; background: #FFFFFF; }
+    .tile .t { font-weight: 600; font-size: 13px; }
+    .tile .s { font-size: 12px; color: #6B6F78; }
+    .dot { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #2F7BF6; }
+    .slider { position: absolute; left: 12px; top: 26px; width: 256px; height: 18px; border-radius: 9px; background: #DCDFE5; overflow: hidden; }
+    .slider b { position: absolute; left: 0; top: 0; height: 18px; background: #FFFFFF; border-right: 1px solid #C9CDD4; }
+    #d-tileB-hl { position: absolute; left: 154px; top: 10px; width: 136px; height: 76px; border-radius: 12px; background: rgba(47,123,246,0.22); opacity: 0; }
+    .row { position: absolute; left: 6px; top: 52px; width: 288px; height: 44px; border-radius: 8px; }
+    #d-row-hl { background: #DCE4F3; opacity: 0; }
+    .rdot { position: absolute; left: 10px; top: 8px; width: 28px; height: 28px; border-radius: 50%; background: #D4D8DF; }
+    #d-rdot-on { background: #2F7BF6; opacity: 0; }
+    .divider { position: absolute; left: 14px; width: 272px; height: 1px; background: #CED2D9; }
+
+    /* ---------- overlays in frame space ---------- */
+    .cap { position: absolute; left: 0; right: 0; top: 64px; text-align: center; font-size: 62px; font-weight: 700; color: #FFFFFF;
+      letter-spacing: -0.015em; white-space: nowrap; }
+    .cap .w { display: inline-block; opacity: 0; }
+    .cap .acc { color: #4BE3F2; }
+    .step { position: absolute; left: 0; right: 0; top: 70px; text-align: center; opacity: 0; white-space: nowrap; }
+    .step .in { display: inline-flex; align-items: center; gap: 26px; font-size: 56px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em; }
+    .step .n { width: 72px; height: 72px; border-radius: 50%; background: #A9C1FF; color: #18234F; font-size: 40px; line-height: 72px; text-align: center; }
+    .badge { position: absolute; width: 76px; height: 76px; border-radius: 50%; background: #A9C1FF; color: #18234F;
+      font-size: 42px; font-weight: 800; line-height: 76px; text-align: center; box-shadow: 0 0 0 5px rgba(11,16,48,0.85), 0 10px 30px rgba(0,0,0,0.4); opacity: 0; }
+    #d-cursor { position: absolute; left: 0; top: 0; width: 46px; height: 66px; opacity: 0; }
+    #d-flood { position: absolute; inset: 0; background: #0D1440; opacity: 0; }
+  </style>
+
+  <div id="root" data-composition-id="demo" data-width="1920" data-height="1080" data-layout-allow-overflow data-layout-allow-overlap>
+    <div id="d-bg"></div>
+
+    <!-- camera: everything on the stage moves together -->
+    <div id="d-cam">
+      <!-- laptop -->
+      <div id="d-lap" class="abs" style="left:0;top:0;width:1920px;height:1080px;opacity:0;">
+        <div id="d-lap-base" class="abs"></div>
+        <div id="d-lap-groove" class="abs"></div>
+        <div id="d-lap-bezel" class="abs">
+          <div id="d-lap-screen" class="abs">
+            <div class="desk">
+              <div class="win">
+                <div class="win-bar"><i style="left:14px"></i><i style="left:34px"></i><i style="left:54px"></i>Weekend in Lisbon</div>
+                <div class="slide s1"><h2>Weekend in Lisbon</h2><p>Friday – Sunday · 214 photos</p>
+                  <div class="ph p1"></div><div class="ph p2"></div><div class="ph p3"></div></div>
+                <div class="slide s2"><div class="wide"></div><h3>Day 2 · The coast</h3></div>
+              </div>
+              <div class="menubar">
+                <div class="items"><b>Slides</b><span>File</span><span>Edit</span><span>View</span><span>Window</span><span>Help</span></div>
+                <svg style="left:926px;top:7px" width="30" height="13" viewBox="0 0 30 13"><rect x="0.8" y="0.8" width="24" height="11.4" rx="3" fill="none" stroke="#1D1F24" stroke-width="1.4"/><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#1D1F24"/><rect x="26.4" y="4" width="2.2" height="5" rx="1" fill="#1D1F24"/></svg>
+                <svg style="left:972px;top:6px" width="20" height="15" viewBox="0 0 20 15"><path d="M2 5.5 Q10 -1.5 18 5.5" fill="none" stroke="#1D1F24" stroke-width="1.8" stroke-linecap="round"/><path d="M5 8.6 Q10 4.3 15 8.6" fill="none" stroke="#1D1F24" stroke-width="1.8" stroke-linecap="round"/><circle cx="10" cy="12" r="1.9" fill="#1D1F24"/></svg>
+                <div id="d-cc-hl" style="position:absolute;left:1004px;top:2px;width:36px;height:22px;border-radius:6px;background:rgba(0,0,0,0.16);opacity:0"></div>
+                <svg style="left:1008px;top:5px" width="28" height="16" viewBox="0 0 28 16"><rect x="5" y="0.8" width="18" height="6.2" rx="3.1" fill="none" stroke="#1D1F24" stroke-width="1.5"/><circle cx="9" cy="3.9" r="1.9" fill="#1D1F24"/><rect x="5" y="9" width="18" height="6.2" rx="3.1" fill="none" stroke="#1D1F24" stroke-width="1.5"/><circle cx="19" cy="12.1" r="1.9" fill="#1D1F24"/></svg>
+                <span class="clock">Tue 10:24</span>
+              </div>
+
+              <!-- click 1 opens this -->
+              <div id="d-panelA" class="panel">
+                <div class="tile" style="left:10px;top:10px;width:136px;height:76px;">
+                  <div class="dot" style="left:10px;top:10px"></div><div style="position:absolute;left:44px;top:9px"><div class="t">Wi‑Fi</div><div class="s">Home</div></div>
+                  <div class="dot" style="left:10px;top:42px;background:#2F7BF6"></div><div style="position:absolute;left:44px;top:41px"><div class="t">Bluetooth</div><div class="s">On</div></div>
+                </div>
+                <div class="tile" style="left:154px;top:10px;width:136px;height:76px;">
+                  <svg style="position:absolute;left:50px;top:8px" width="36" height="30" viewBox="0 0 36 30"><rect x="3" y="2" width="30" height="19" rx="2.5" fill="none" stroke="#1D1F24" stroke-width="2"/><path d="M1 25 H35" stroke="#1D1F24" stroke-width="2.4" stroke-linecap="round"/><path d="M12 15 Q14 8 22 8 M19 5 L22.5 8 L19 11" fill="none" stroke="#1D1F24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <div class="t" style="position:absolute;left:0;right:0;top:46px;text-align:center">Screen Mirroring</div>
+                </div>
+                <div id="d-tileB-hl"></div>
+                <div class="tile" style="left:10px;top:94px;width:280px;height:52px;"><div class="t" style="position:absolute;left:12px;top:6px">Display</div><div class="slider"><b style="width:180px"></b></div></div>
+                <div class="tile" style="left:10px;top:154px;width:280px;height:52px;"><div class="t" style="position:absolute;left:12px;top:6px">Sound</div><div class="slider"><b style="width:120px"></b></div></div>
+                <div class="tile" style="left:10px;top:214px;width:280px;height:60px;"><div class="t" style="position:absolute;left:12px;top:12px">Now Playing</div><div class="s" style="position:absolute;left:12px;top:30px">Not Playing</div></div>
+              </div>
+
+              <!-- click 2 opens this -->
+              <div id="d-panelB" class="panel">
+                <div style="position:absolute;left:14px;top:12px;font-size:15px;font-weight:700">Screen Mirroring</div>
+                <div class="divider" style="top:44px"></div>
+                <div id="d-row-hl" class="row"></div>
+                <div class="row">
+                  <div class="rdot"></div>
+                  <div id="d-rdot-on" class="rdot"></div>
+                  <svg style="position:absolute;left:16px;top:15px" width="16" height="14" viewBox="0 0 16 14"><rect x="1" y="1" width="14" height="9" rx="1.5" fill="none" stroke="#FFFFFF" stroke-width="1.6"/><path d="M5 13 H11" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  <div style="position:absolute;left:50px;top:12px;font-size:15px;font-weight:600">Screenbridge TV</div>
+                </div>
+                <div class="divider" style="top:104px"></div>
+                <div style="position:absolute;left:14px;top:118px;font-size:14px;color:#5A5E66">Display Settings…</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TV -->
+      <div id="d-tv" class="abs" style="left:0;top:0;width:1920px;height:1080px;">
+        <div id="d-tv-neck" class="abs"></div>
+        <div id="d-tv-foot" class="abs"></div>
+        <div id="d-tv-bezel" class="abs">
+          <div id="d-tv-screen" class="abs">
+            <div id="d-home" class="home">
+              <div class="ready">Ready</div>
+              <div class="gear"><svg width="54" height="54" viewBox="0 0 24 24"><path fill="#C9CBD3" d="M19.4 13a7.5 7.5 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.3 7.3 0 0 0-1.7-1L15 3.3h-4l-.4 2.6a7.3 7.3 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.5 7.5 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.3 7.3 0 0 0 1.7 1l.4 2.6h4l.4-2.6a7.3 7.3 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg></div>
+              <div class="name">Screenbridge TV</div>
+              <div class="sub">To mirror your Mac</div>
+              <div class="card" style="left:96px">
+                <div class="num" style="left:175px">1</div>
+                <svg style="left:296px" width="72" height="76" viewBox="0 0 72 76"><rect x="4" y="4" width="64" height="30" rx="15" fill="none" stroke="#ECECF0" stroke-width="6"/><circle cx="19" cy="19" r="9" fill="#ECECF0"/><rect x="4" y="42" width="64" height="30" rx="15" fill="none" stroke="#ECECF0" stroke-width="6"/><circle cx="53" cy="57" r="9" fill="#ECECF0"/></svg>
+                <div class="ctext">Click the Control Center icon in the Mac's menu bar (top right)</div>
+              </div>
+              <div class="card" style="left:686px">
+                <div class="num" style="left:175px">2</div>
+                <svg style="left:288px" width="90" height="66" viewBox="0 0 90 66"><path d="M10 4 H80 V54 H10 Z" fill="#ECECF0"/><rect x="2" y="56" width="86" height="8" rx="2" fill="#ECECF0"/><path d="M34 40 Q36 24 52 24 M47 17 L54 24 L47 31" fill="none" stroke="#2C2D33" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div class="ctext">Click Screen Mirroring</div>
+              </div>
+              <div class="card" style="left:1274px">
+                <div class="num" style="left:175px">3</div>
+                <svg style="left:290px" width="82" height="68" viewBox="0 0 82 68"><rect x="4" y="4" width="74" height="50" rx="3" fill="none" stroke="#ECECF0" stroke-width="7"/><rect x="28" y="58" width="26" height="7" fill="#ECECF0"/></svg>
+                <div class="ctext">Choose “Screenbridge TV”</div>
+              </div>
+              <div class="line" style="top:782px;font-weight:500;color:#E6E6EA">On iPhone or iPad: open Control Center, tap Screen Mirroring, choose “Screenbridge TV”.</div>
+              <div class="line" style="top:848px;left:150px;right:150px;line-height:48px">Empty desktop on the TV instead of your Mac's screen? On the Mac: System Settings → Displays → “When connected to TV” → Mirror Entire Screen.</div>
+              <div class="line" style="top:944px">Picture hidden by the screensaver? Press any button on your remote.</div>
+              <div class="line" style="top:1014px;color:#9A9AA2">Mac and TV must be on the same Wi‑Fi · TV address: 192.168.1.42</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- the Mac's picture flying onto the TV (same desktop, panel closed) -->
+      <div id="d-fly" class="abs" style="left:106px;top:346px;width:768px;height:480px;overflow:hidden;opacity:0;">
+        <div class="desk">
+          <div class="win">
+            <div class="win-bar"><i style="left:14px"></i><i style="left:34px"></i><i style="left:54px"></i>Weekend in Lisbon</div>
+            <div class="slide s1"><h2>Weekend in Lisbon</h2><p>Friday – Sunday · 214 photos</p>
+              <div class="ph p1"></div><div class="ph p2"></div><div class="ph p3"></div></div>
+            <div class="slide s2"><div class="wide"></div><h3>Day 2 · The coast</h3></div>
+          </div>
+          <div class="menubar">
+            <div class="items"><b>Slides</b><span>File</span><span>Edit</span><span>View</span><span>Window</span><span>Help</span></div>
+            <span class="clock">Tue 10:24</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- captions and click markers (frame space) -->
+    <div id="d-cap1" class="cap"><span class="w">Mirror</span> <span class="w">your</span> <span class="w">Mac</span> <span class="w">to</span> <span class="w">your</span> <span class="w acc">Google</span> <span class="w acc">TV</span></div>
+    <div id="d-step1" class="step"><div class="in"><span class="n">1</span>Click Control Center</div></div>
+    <div id="d-step2" class="step"><div class="in"><span class="n">2</span>Click Screen Mirroring</div></div>
+    <div id="d-step3" class="step"><div class="in"><span class="n">3</span>Choose “Screenbridge TV”</div></div>
+    <div id="d-cap2" class="cap"><span class="w acc">That's</span> <span class="w acc">it.</span> <span class="w">No</span> <span class="w">Apple</span> <span class="w">TV,</span> <span class="w">no</span> <span class="w">cables.</span></div>
+
+    <div id="d-b1" class="badge" style="left:1617px;top:160px">1</div>
+    <div id="d-b2" class="badge" style="left:1248px;top:362px">2</div>
+    <div id="d-b3" class="badge" style="left:1248px;top:423px">3</div>
+
+    <svg id="d-cursor" viewBox="0 0 46 66"><path d="M3 3 L3 52 L15 41 L23 61 L32 57 L24 38 L41 38 Z" fill="#111317" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/></svg>
+
+    <div id="d-flood"></div>
+  </div>
+
+  <script>
+    (() => {
+      const root = document.querySelector('[data-composition-id="demo"]');
+      const q = (s) => root.querySelector(s);
+      const qa = (s) => root.querySelectorAll(s);
+      // later tweens must not stamp their start values at build time (several tweens share one property)
+      const tl = gsap.timeline({ paused: true, defaults: { immediateRender: false } });
+
+      // camera framings (stage -> frame: frame = scale * stage + x/y)
+      const A = { x: -1170, y: -160, scale: 1.5 };   // TV close
+      const B = { x: -392, y: -622, scale: 2.6 };    // Mac menu bar, top right
+      const C = { x: 15, y: 40, scale: 1 };          // both devices
+      const Z = { x: -6140, y: -1950, scale: 5 };    // into the TV picture
+      const cam = q("#d-cam");
+      const move = (from, to, t, d, ease, blur) => {
+        tl.fromTo(cam, { ...from, transformOrigin: "0 0" }, { ...to, transformOrigin: "0 0", duration: d, ease }, t);
+        tl.fromTo(cam, { filter: "blur(0px)" }, { filter: `blur(${blur}px)`, duration: d / 2, ease: "power2.in" }, t);
+        tl.fromTo(cam, { filter: `blur(${blur}px)` }, { filter: "blur(0px)", duration: d / 2, ease: "power2.out" }, t + d / 2);
+      };
+      tl.set(cam, { ...A, transformOrigin: "0 0", immediateRender: true }, 0);
+
+      // words: blur in, one after another
+      const wordsIn = (sel, t, gap) => tl.fromTo(qa(sel + " .w"), { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power2.out", stagger: gap }, t);
+      const fadeOut = (sel, t) => tl.fromTo(q(sel), { opacity: 1, filter: "blur(0px)" }, { opacity: 0, filter: "blur(8px)", duration: 0.16, ease: "power2.in" }, t);
+      const stepIn = (sel, t) => tl.fromTo(q(sel), { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power2.out" }, t);
+      const badge = (sel, t) => tl.fromTo(q(sel), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(1.6)" }, t);
+      const click = (t) => tl.fromTo(q("#d-cursor"), { scale: 1 }, { scale: 0.86, duration: 0.06, ease: "power2.in", yoyo: true, repeat: 1, transformOrigin: "0 0" }, t - 0.06);
+      const cursorTo = (from, to, t, d) => tl.fromTo(q("#d-cursor"), { x: from[0], y: from[1] }, { x: to[0], y: to[1], duration: d, ease: "power3.out" }, t);
+
+      // 1. the TV home screen, caption
+                  wordsIn("#d-cap1", 0.35, 0.08);
+      fadeOut("#d-cap1", 3.62);
+
+      // 2. to the Mac: three clicks
+      tl.fromTo(q("#d-lap"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 3.8);
+      move(A, B, 3.8, 0.8, "power2.inOut", 10);
+
+      const CC = [1655, 300], TILE = [1728, 398], ROW = [1544, 461];
+      tl.set(q("#d-cursor"), { opacity: 1 }, 4.5);
+      cursorTo([1080, 1140], CC, 4.5, 0.8);
+      // click 1: Control Center
+      click(5.5);
+      tl.fromTo(q("#d-cc-hl"), { opacity: 0 }, { opacity: 1, duration: 0.05 }, 5.5);
+      badge("#d-b1", 5.5);
+      stepIn("#d-step1", 4.75);
+      tl.fromTo(q("#d-panelA"), { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.24, ease: "expo.out", transformOrigin: "100% 0" }, 5.56);
+
+      // click 2: Screen Mirroring
+      cursorTo(CC, TILE, 6.5, 0.6);
+      fadeOut("#d-step1", 7.15);
+      click(7.3);
+      tl.fromTo(q("#d-tileB-hl"), { opacity: 0 }, { opacity: 1, duration: 0.05 }, 7.3);
+      badge("#d-b2", 7.3);
+      stepIn("#d-step2", 7.32);
+      tl.fromTo(q("#d-panelA"), { opacity: 1 }, { opacity: 0, duration: 0.12, ease: "power2.in" }, 7.38);
+      tl.fromTo(q("#d-panelB"), { opacity: 0, scale: 0.97 }, { opacity: 1, scale: 1, duration: 0.22, ease: "expo.out", transformOrigin: "100% 0" }, 7.4);
+      tl.fromTo(q("#d-b2"), { opacity: 1 }, { opacity: 0, duration: 0.2 }, 8.1);
+
+      // click 3: Screenbridge TV
+      cursorTo(TILE, ROW, 8.3, 0.6);
+      fadeOut("#d-step2", 8.95);
+      click(9.1);
+      tl.fromTo(q("#d-row-hl"), { opacity: 0 }, { opacity: 1, duration: 0.05 }, 9.1);
+      tl.fromTo(q("#d-rdot-on"), { opacity: 0 }, { opacity: 1, duration: 0.15 }, 9.12);
+      badge("#d-b3", 9.1);
+      stepIn("#d-step3", 9.12);
+
+      // panel closes, pull back to both devices
+      tl.fromTo([q("#d-cursor"), q("#d-b1"), q("#d-b3")], { opacity: 1 }, { opacity: 0, duration: 0.2, ease: "power2.in" }, 10.0);
+      tl.fromTo(q("#d-panelB"), { opacity: 1 }, { opacity: 0, duration: 0.18, ease: "power2.in" }, 10.1);
+      tl.fromTo(q("#d-cc-hl"), { opacity: 1 }, { opacity: 0, duration: 0.1 }, 10.1);
+      fadeOut("#d-step3", 10.2);
+      move(B, C, 10.3, 0.9, "power2.inOut", 8);
+
+      // 3. the Mac's picture flies onto the TV (16:10 into 16:9, so it lands pillarboxed)
+      tl.set(q("#d-fly"), { opacity: 1 }, 11.4);
+      tl.fromTo(q("#d-fly"), { x: 0, y: 0, scale: 1, transformOrigin: "0 0" }, { x: 939.6, y: -82, scale: 0.975, transformOrigin: "0 0", duration: 0.75, ease: "power3.inOut" }, 11.4);
+      tl.fromTo(q("#d-fly"), { filter: "blur(0px)" }, { filter: "blur(6px)", duration: 0.37, ease: "power2.in" }, 11.4);
+      tl.fromTo(q("#d-fly"), { filter: "blur(6px)" }, { filter: "blur(0px)", duration: 0.38, ease: "power2.out" }, 11.77);
+      tl.fromTo(q("#d-home"), { opacity: 1 }, { opacity: 0, duration: 0.25, ease: "power2.in" }, 11.9);
+      wordsIn("#d-cap2", 12.35, 0.09);
+
+      // live: the next slide shows on the Mac and the TV at the same moment
+      tl.fromTo(qa(".s2"), { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 14.4);
+
+      // into the TV picture, which becomes the end card's ground
+      fadeOut("#d-cap2", 16.15);
+      tl.fromTo(cam, { ...C, transformOrigin: "0 0" }, { ...Z, transformOrigin: "0 0", duration: 0.55, ease: "power3.in" }, 16.25);
+      tl.fromTo(q("#d-flood"), { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.in" }, 16.48);
+
+      window.__timelines["demo"] = tl;
+    })();
+  </script>
+</template>
