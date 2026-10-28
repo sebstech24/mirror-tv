@@ -11,7 +11,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AllInclusive
-import androidx.compose.material.icons.rounded.Favorite
+import androidx.compose.material.icons.rounded.Tv
 import androidx.compose.material.icons.rounded.Update
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -37,16 +37,14 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import io.github.jqssun.airplay.R
 import io.github.jqssun.airplay.billing.Billing
-import io.github.jqssun.airplay.billing.SessionLimiter
+import io.github.jqssun.airplay.billing.Entitlement
 
 /**
- * Screenbridge Unlimited: Monthly (with Play's free trial when this account may use it) or Lifetime.
- * [expired] = the free 20 minutes just ran out; otherwise opened from Settings. Monthly has D-pad focus;
- * Back or "Not now" closes it.
+ * Shown up front until Monthly (with Play's free trial when this account may use it) or Lifetime is active;
+ * there is no free tier. Monthly has D-pad focus; Back or "Not now" leaves the app.
  */
 @Composable
 fun PaywallScreen(
-    expired: Boolean,
     monthly: Billing.MonthlyOffer?,
     lifetimePrice: String?,
     pending: Boolean,
@@ -83,19 +81,19 @@ fun PaywallScreen(
                     }
                     Spacer(Modifier.height(20.dp))
                     Text(
-                        stringResource(if (expired) R.string.paywall_title else R.string.paywall_title_plans),
+                        stringResource(R.string.paywall_title),
                         style = MaterialTheme.typography.displaySmall, fontWeight = FontWeight.Bold,
                     )
                     Spacer(Modifier.height(12.dp))
                     Text(
-                        stringResource(if (expired) R.string.paywall_subtitle else R.string.paywall_subtitle_plans),
+                        stringResource(R.string.paywall_subtitle),
                         style = MaterialTheme.typography.titleMedium, color = c.onSurfaceVariant,
                     )
                     Spacer(Modifier.height(28.dp))
                     Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                        Benefit(Icons.Rounded.Tv, stringResource(R.string.paywall_benefit_quality))
                         Benefit(Icons.Rounded.AllInclusive, stringResource(R.string.paywall_benefit_unlimited))
                         Benefit(Icons.Rounded.Update, stringResource(R.string.paywall_benefit_updates))
-                        Benefit(Icons.Rounded.Favorite, stringResource(R.string.paywall_benefit_support))
                     }
                 }
 
@@ -111,7 +109,7 @@ fun PaywallScreen(
                         },
                         price = if (trial != null) stringResource(R.string.plan_free) else monthly?.price,
                         unit = if (trial != null) pluralStringResource(R.plurals.plan_for_days, trial, trial) else stringResource(R.string.plan_per_month),
-                        onClick = { onBuy(SessionLimiter.MONTHLY_ID) },
+                        onClick = { onBuy(Entitlement.MONTHLY_ID) },
                         modifier = Modifier.focusRequester(firstFocus),
                     )
                     Spacer(Modifier.height(16.dp))
@@ -121,7 +119,7 @@ fun PaywallScreen(
                         detail = stringResource(if (lifetimePrice == null) R.string.plan_price_from_play else R.string.plan_lifetime_detail),
                         price = lifetimePrice,
                         unit = stringResource(R.string.plan_one_time),
-                        onClick = { onBuy(SessionLimiter.LIFETIME_ID) },
+                        onClick = { onBuy(Entitlement.LIFETIME_ID) },
                     )
                     Spacer(Modifier.height(20.dp))
                     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -139,6 +137,11 @@ fun PaywallScreen(
                             monthly != null -> stringResource(R.string.paywall_terms, monthly.price)
                             else -> stringResource(R.string.paywall_terms_no_price)
                         },
+                        style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant,
+                    )
+                    // the privacy policy must be reachable in the app; About is behind the paywall
+                    Text(
+                        stringResource(R.string.about_privacy, stringResource(R.string.about_privacy_url)),
                         style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant,
                     )
                 }
@@ -211,21 +214,4 @@ private fun PlanCard(
             }
         }
     }
-}
-
-/** Small, non-focusable notice near the end of a free session. */
-@Composable
-fun FreeSessionNotice(remainingMs: Long?, modifier: Modifier = Modifier) {
-    if (remainingMs == null) return
-    val minutes = ((remainingMs + 59_999) / 60_000).toInt()
-    Text(
-        pluralStringResource(R.plurals.free_session_left, minutes, minutes),
-        style = MaterialTheme.typography.titleMedium,
-        color = Color.White,
-        modifier = modifier
-            .safeDrawingPadding()
-            .padding(bottom = 32.dp)
-            .background(Color.Black.copy(alpha = 0.6f), CircleShape)
-            .padding(horizontal = 24.dp, vertical = 12.dp),
-    )
 }

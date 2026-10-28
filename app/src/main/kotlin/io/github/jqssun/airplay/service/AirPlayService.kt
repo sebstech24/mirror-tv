@@ -50,7 +50,7 @@ import io.github.jqssun.airplay.audio.DacpPlayer
 import io.github.jqssun.airplay.audio.DmapParser
 import io.github.jqssun.airplay.audio.TrackInfo
 import io.github.jqssun.airplay.audio.VolumeBroadcast
-import io.github.jqssun.airplay.billing.FreeSession
+import io.github.jqssun.airplay.billing.Billing
 import io.github.jqssun.airplay.bridge.LogListener
 import io.github.jqssun.airplay.bridge.NativeBridge
 import io.github.jqssun.airplay.bridge.RaopCallbackHandler
@@ -374,8 +374,10 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
                 .debounce(SERVER_RESTART_DEBOUNCE_MS)
                 .collect { _restartServer() }
         }
-        // free tier: 20-minute sessions; restarting the receiver is what drops the sender
-        FreeSession.watch(lifecycleScope, this, _connectionCount, _mirroringActive, endSession = ::_restartServer)
+        // paid app: a subscription that ends (or a refund) turns the receiver off; the TV then shows the paywall
+        lifecycleScope.launch {
+            Billing.unlocked.collect { if (!it && _serverState.value == ServerState.RUNNING) stopServer() }
+        }
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -393,6 +395,11 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
 
     private fun _startServer(ensureServiceStarted: Boolean) {
         if (_serverState.value == ServerState.RUNNING) return
+        // no Monthly or Lifetime: don't advertise, so the Mac never lists a TV it can't use
+        if (!Billing.unlocked.value) {
+            log("Locked: needs Monthly or Lifetime")
+            return
+        }
         if (!hasLocalNetwork()) {
             log("Local network permission denied")
             _failStart()

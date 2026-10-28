@@ -27,9 +27,9 @@ import com.android.billingclient.api.queryProductDetails
 import com.android.billingclient.api.queryPurchasesAsync
 import io.github.jqssun.airplay.Prefs
 import io.github.jqssun.airplay.R
-import io.github.jqssun.airplay.billing.SessionLimiter.Companion.LIFETIME_ID
-import io.github.jqssun.airplay.billing.SessionLimiter.Companion.MONTHLY_BASE_PLAN
-import io.github.jqssun.airplay.billing.SessionLimiter.Companion.MONTHLY_ID
+import io.github.jqssun.airplay.billing.Entitlement.LIFETIME_ID
+import io.github.jqssun.airplay.billing.Entitlement.MONTHLY_BASE_PLAN
+import io.github.jqssun.airplay.billing.Entitlement.MONTHLY_ID
 import io.github.jqssun.airplay.get
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -94,7 +94,7 @@ object Billing : PurchasesUpdatedListener {
 
     private fun _recompute() {
         val fake = debuggable(_app) && _prefs[Prefs.DEBUG_FAKE_UNLOCKED]
-        _unlocked.value = SessionLimiter.unlocked(_playOwned, _prefs.getBoolean(CACHE_KEY, false), fake)
+        _unlocked.value = Entitlement.unlocked(_playOwned, _prefs.getBoolean(CACHE_KEY, false), fake)
     }
 
     /** Ask Play what this account owns (app start, every resume, Restore). [onDone] gets null if Play is unreachable. */
@@ -131,7 +131,7 @@ object Billing : PurchasesUpdatedListener {
             val phases = o.pricingPhases.pricingPhaseList
             MonthlyOffer(
                 price = phases.last().formattedPrice,
-                trialDays = phases.firstOrNull { it.priceAmountMicros == 0L }?.let { SessionLimiter.trialDays(it.billingPeriod) },
+                trialDays = phases.firstOrNull { it.priceAmountMicros == 0L }?.let { Entitlement.trialDays(it.billingPeriod) },
             )
         }
         _lifetimePrice.value = _lifetimeDetails?.oneTimePurchaseOfferDetails?.formattedPrice
@@ -167,7 +167,7 @@ object Billing : PurchasesUpdatedListener {
         _pending.value = mine.any { it.purchaseState == Purchase.PurchaseState.PENDING }
         if (authoritative || bought.isNotEmpty()) {
             val wasUnlocked = _unlocked.value
-            _playOwned = SessionLimiter.unlocks(ids)
+            _playOwned = Entitlement.unlocks(ids)
             _plan.value = if (LIFETIME_ID in ids) LIFETIME_ID else if (MONTHLY_ID in ids) MONTHLY_ID else null
             _prefs.edit { putBoolean(CACHE_KEY, _playOwned!!) }
             _recompute()

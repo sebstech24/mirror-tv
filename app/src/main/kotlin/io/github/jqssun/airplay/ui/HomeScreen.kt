@@ -31,7 +31,6 @@ import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import io.github.jqssun.airplay.R
-import io.github.jqssun.airplay.billing.Billing
 import java.net.Inet4Address
 
 // IPv4 of the active network; needs only ACCESS_NETWORK_STATE (Wi-Fi name would need location, so it's skipped)
@@ -69,21 +68,7 @@ fun WaitingContent(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        val unlimited by Billing.unlocked.collectAsState()
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            StatusPill(status)
-            if (unlimited) {
-                Spacer(Modifier.width(12.dp))
-                Text(
-                    stringResource(R.string.unlimited_badge),
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.onPrimaryContainer,
-                    modifier = Modifier
-                        .background(MaterialTheme.colorScheme.primaryContainer, CircleShape)
-                        .padding(horizontal = 18.dp, vertical = 8.dp),
-                )
-            }
-        }
+        StatusPill(status)
         Spacer(Modifier.height(12.dp))
         Text(
             text = tvName,

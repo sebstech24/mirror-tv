@@ -22,17 +22,10 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
 import io.github.jqssun.airplay.billing.Billing
-import io.github.jqssun.airplay.billing.FreeSession
-import io.github.jqssun.airplay.billing.SessionLimiter
 import io.github.jqssun.airplay.service.AirPlayService
-import io.github.jqssun.airplay.ui.FreeSessionNotice
 import io.github.jqssun.airplay.ui.PaywallScreen
 import io.github.jqssun.airplay.ui.MainScreen
 import io.github.jqssun.airplay.ui.theme.AirPlayTheme
@@ -119,37 +112,35 @@ class MainActivity : ComponentActivity() {
             }
         }
 
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                Billing.unlocked.collect { if (it) _autoStart() }
+            }
+        }
+
         setContent {
             AirPlayTheme {
-                val paywall by FreeSession.paywall.collectAsState()
-                val session by FreeSession.state.collectAsState()
-                Box(Modifier.fillMaxSize()) {
-                    MainScreen(
-                        viewModel = viewModel,
-                        isInPip = isInPip.value,
-                        onSurfaceAvailable = { viewModel.onSurfaceAvailable(it) },
-                        onSurfaceDestroyed = { viewModel.onSurfaceDestroyed(it) },
-                        onPip = { enterPip() },
-                        onLocalNetwork = ::_requestLocalNetwork
-                    )
-                    if (!isInPip.value) FreeSessionNotice(
-                        (session as? SessionLimiter.State.Warning)?.remainingMs,
-                        Modifier.align(Alignment.BottomCenter)
-                    )
-                }
-                // a dialog keeps Home/Settings underneath as they were and keeps D-pad focus inside the paywall
-                if (paywall != null && !isInPip.value) {
+                val unlocked by Billing.unlocked.collectAsState()
+                MainScreen(
+                    viewModel = viewModel,
+                    isInPip = isInPip.value,
+                    onSurfaceAvailable = { viewModel.onSurfaceAvailable(it) },
+                    onSurfaceDestroyed = { viewModel.onSurfaceDestroyed(it) },
+                    onPip = { enterPip() },
+                    onLocalNetwork = ::_requestLocalNetwork
+                )
+                // no free tier: without Monthly or Lifetime the paywall is the app (a dialog keeps D-pad focus in it)
+                if (!unlocked && !isInPip.value) {
                     val monthly by Billing.monthly.collectAsState()
                     val lifetime by Billing.lifetimePrice.collectAsState()
                     val pending by Billing.pending.collectAsState()
                     PaywallScreen(
-                        expired = paywall == FreeSession.Paywall.EXPIRED,
                         monthly = monthly,
                         lifetimePrice = lifetime,
                         pending = pending,
                         onBuy = { Billing.buy(this, it) },
                         onRestore = { Billing.restore(this) },
-                        onClose = FreeSession::dismissPaywall,
+                        onClose = ::finish,
                     )
                 }
             }

@@ -128,6 +128,5 @@ object Prefs {
     val USB_ONLY = bool("usb_only", false, restart = true)
     // paywall testing over adb; debug builds only, release builds ignore them (see billing/)
     val DEBUG_FAKE_UNLOCKED = bool("debug_fake_unlocked", false)
-    val DEBUG_SHORT_SESSION = bool("debug_short_session", false)
     val DEBUG_SAMPLE_PRICES = bool("debug_sample_prices", false)
 }

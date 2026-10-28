@@ -270,18 +270,12 @@
     <string name="about_privacy_button">Privacy policy</string>
     <string name="about_trademark">Not affiliated with Apple. AirPlay and Mac are trademarks of Apple Inc.</string>
     <string name="about_license_title">GNU General Public License v3.0</string>
-    <!-- Screenbridge Unlimited (Monthly or Lifetime) and the free 20-minute session; prices always come from Google Play -->
-    <plurals name="free_session_left">
-        <item quantity="one">%d minute left in your free session</item>
-        <item quantity="other">%d minutes left in your free session</item>
-    </plurals>
-    <string name="paywall_title">Your free 20 minutes are up</string>
-    <string name="paywall_subtitle">Reconnect from your Mac for another free session, or go Unlimited and never get cut off.</string>
-    <string name="paywall_title_plans">Mirror without limits</string>
-    <string name="paywall_subtitle_plans">Free sessions last 20 minutes. Go Unlimited and mirror for as long as you like.</string>
-    <string name="paywall_benefit_unlimited">No time limit: movies, meetings, whole evenings</string>
+    <!-- Screenbridge Unlimited (Monthly or Lifetime; no free tier); prices always come from Google Play -->
+    <string name="paywall_title">Mirror your Mac on this TV</string>
+    <string name="paywall_subtitle">Pick a plan to start. Your Mac finds this TV as soon as it\'s unlocked.</string>
+    <string name="paywall_benefit_quality">Your Mac\'s screen on the big screen, up to 4K</string>
+    <string name="paywall_benefit_unlimited">No time limits, no ads</string>
     <string name="paywall_benefit_updates">All future updates included</string>
-    <string name="paywall_benefit_support">Supports an independent developer</string>
     <string name="paywall_not_now">Not now</string>
     <string name="paywall_terms">Monthly renews at %1$s/month until you cancel in Google Play. Charged to your Google account.</string>
     <string name="paywall_terms_no_price">Payment is handled by Google Play and charged to your Google account.</string>
@@ -303,21 +297,17 @@
     <string name="plan_free">Free</string>
     <string name="plan_per_month">per month</string>
     <string name="plan_lifetime_badge">PAY ONCE</string>
-    <string name="plan_lifetime_detail">Yours forever, no subscription.</string>
+    <string name="plan_lifetime_detail">Unlocks instantly. Yours forever, no subscription.</string>
     <string name="plan_one_time">one time</string>
     <string name="plan_price_from_play">Price shown by Google Play</string>
     <string name="unlimited_title">Screenbridge Unlimited</string>
-    <string name="unlimited_badge">Unlimited</string>
-    <string name="unlimited_see_plans">See plans</string>
-    <string name="unlimited_free_title">Free plan · 20-minute sessions</string>
-    <string name="unlimited_free_desc">Go Unlimited: Monthly or Lifetime</string>
-    <string name="unlimited_owned_title">Unlimited · no time limit</string>
+    <string name="unlimited_owned_title">Screenbridge Unlimited is on</string>
     <string name="unlimited_owned_monthly">Monthly plan. Select to manage or cancel in Google Play.</string>
+    <string name="unlimited_owned_generic">Thank you for supporting Screenbridge!</string>
     <string name="unlimited_owned_lifetime">Lifetime. Thank you for supporting Screenbridge!</string>
     <string name="unlimited_thanks">Screenbridge Unlimited is on. Thank you!</string>
     <string name="unlimited_pending_desc">Payment pending. Screenbridge unlocks as soon as Google Play confirms it.</string>
     <string name="unlimited_restore">Restore purchases</string>
-    <string name="unlimited_restore_desc">Subscribed or bought Lifetime on this Google account? Check again with Google Play.</string>
     <string name="unlimited_restored">Screenbridge Unlimited is unlocked.</string>
     <string name="unlimited_not_found">No purchase found on this Google account.</string>
     <string name="unlimited_play_unavailable">Google Play isn\'t reachable right now. Try again in a moment.</string>

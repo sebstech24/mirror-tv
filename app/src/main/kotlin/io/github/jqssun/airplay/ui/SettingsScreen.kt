@@ -31,8 +31,7 @@ import androidx.compose.ui.unit.dp
 import io.github.jqssun.airplay.Prefs
 import io.github.jqssun.airplay.R
 import io.github.jqssun.airplay.billing.Billing
-import io.github.jqssun.airplay.billing.FreeSession
-import io.github.jqssun.airplay.billing.SessionLimiter
+import io.github.jqssun.airplay.billing.Entitlement
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.shape.CircleShape
@@ -106,33 +105,22 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             .verticalScroll(scroll)
             .padding(vertical = 8.dp)
     ) {
-        val unlimited by Billing.unlocked.collectAsState()
+        // Settings sits behind the paywall, so only paying users get here
         val plan by Billing.plan.collectAsState()
-        val pending by Billing.pending.collectAsState()
         val activity = ctx as? Activity
-        val monthlyOwner = unlimited && plan == SessionLimiter.MONTHLY_ID
+        val monthlyOwner = plan == Entitlement.MONTHLY_ID
         // the plan card takes first focus when it does something; a Lifetime owner starts on the PIN row
-        val planFocusable = !unlimited || monthlyOwner
+        val planFocusable = monthlyOwner
         PlanStatusCard(
-            title = stringResource(if (unlimited) R.string.unlimited_owned_title else R.string.unlimited_free_title),
-            description = stringResource(when {
-                pending -> R.string.unlimited_pending_desc
-                monthlyOwner -> R.string.unlimited_owned_monthly
-                unlimited -> R.string.unlimited_owned_lifetime
-                else -> R.string.unlimited_free_desc
+            title = stringResource(R.string.unlimited_owned_title),
+            description = stringResource(when (plan) {
+                Entitlement.MONTHLY_ID -> R.string.unlimited_owned_monthly
+                Entitlement.LIFETIME_ID -> R.string.unlimited_owned_lifetime
+                // Play not reached yet: unlocked from the saved answer
+                else -> R.string.unlimited_owned_generic
             }),
-            free = !unlimited,
-            onClick = when {
-                !unlimited -> FreeSession::showPlans
-                monthlyOwner -> { { if (activity != null) Billing.manageSubscription(activity) } }
-                else -> null
-            },
+            onClick = if (monthlyOwner) { { if (activity != null) Billing.manageSubscription(activity) } } else null,
             modifier = Modifier.thenIf(planFocusable) { focusRequester(firstFocus) }
-        )
-        if (!unlimited) SettingRow(
-            title = stringResource(R.string.unlimited_restore),
-            description = stringResource(R.string.unlimited_restore_desc),
-            onClick = { activity?.let(Billing::restore) }
         )
 
         // everyday settings; everything technical lives under Advanced
@@ -528,9 +516,9 @@ private fun SettingRow(title: String, description: String, onClick: () -> Unit) 
     )
 }
 
-/** The plan at the top of Settings: an invitation on the free plan, a quiet status once Unlimited. */
+/** The plan at the top of Settings: Monthly opens Play to manage it, Lifetime is a thank-you. */
 @Composable
-private fun PlanStatusCard(title: String, description: String, free: Boolean, onClick: (() -> Unit)?, modifier: Modifier = Modifier) {
+private fun PlanStatusCard(title: String, description: String, onClick: (() -> Unit)?, modifier: Modifier = Modifier) {
     val c = MaterialTheme.colorScheme
     val shape = RoundedCornerShape(20.dp)
     val content = @Composable {
@@ -542,15 +530,11 @@ private fun PlanStatusCard(title: String, description: String, free: Boolean, on
                 Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                 Text(description, style = MaterialTheme.typography.bodyMedium)
             }
-            if (free) Text(
-                stringResource(R.string.unlimited_see_plans), style = MaterialTheme.typography.labelLarge,
-                fontWeight = FontWeight.Bold, color = c.onPrimary,
-                modifier = Modifier.background(c.primary, CircleShape).padding(horizontal = 16.dp, vertical = 8.dp)
-            ) else if (onClick != null) Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+            if (onClick != null) Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
         }
     }
     val m = modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)
-    val color = if (free) c.primaryContainer else c.surfaceContainerHigh
+    val color = c.surfaceContainerHigh
     if (onClick != null) Surface(onClick = onClick, shape = shape, color = color, modifier = m.dpadFocus(shape)) { content() }
     else Surface(shape = shape, color = color, modifier = m) { content() }
 }
