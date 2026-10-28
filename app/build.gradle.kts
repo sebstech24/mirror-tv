@@ -33,8 +33,8 @@ android {
         applicationId = "com.sebstech.screenbridge"
         minSdk = 23
         targetSdk = 37
-        versionCode = 36
-        versionName = "0.0.36"
+        versionCode = 100
+        versionName = "1.0.0"
 
         externalNativeBuild {
             cmake {
@@ -125,6 +125,8 @@ dependencies {
     implementation(libs.media3.transformer)
     implementation(libs.kotlinx.coroutines)
     implementation(libs.oboe)
+    implementation(libs.billing.ktx)
+    testImplementation(libs.junit)
 
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)

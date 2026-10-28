@@ -50,6 +50,7 @@ import io.github.jqssun.airplay.audio.DacpPlayer
 import io.github.jqssun.airplay.audio.DmapParser
 import io.github.jqssun.airplay.audio.TrackInfo
 import io.github.jqssun.airplay.audio.VolumeBroadcast
+import io.github.jqssun.airplay.billing.FreeSession
 import io.github.jqssun.airplay.bridge.LogListener
 import io.github.jqssun.airplay.bridge.NativeBridge
 import io.github.jqssun.airplay.bridge.RaopCallbackHandler
@@ -373,6 +374,8 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
                 .debounce(SERVER_RESTART_DEBOUNCE_MS)
                 .collect { _restartServer() }
         }
+        // free tier: 20-minute sessions; restarting the receiver is what drops the sender
+        FreeSession.watch(lifecycleScope, this, _connectionCount, _mirroringActive, endSession = ::_restartServer)
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -1206,8 +1209,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         .putExtra(EXTRA_FROM_CONNECT, true)
 
     // android 10+ blocks background activity starts; a foreground service is not an exemption.
-    // what does work: our window already visible, "display over other apps" granted, or the
-    // system launching a notification's full-screen intent (TV builds differ on that one)
+    // Play limits the overlay and full-screen-intent permissions, so a blocked start falls back to a heads-up notice
     private fun launchMainActivity() {
         _mainHandler.post {
             if (_appVisible()) return@post
@@ -1217,13 +1219,15 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             } catch (e: Exception) {
                 Log.w(TAG, "Failed to launch activity", e)
             }
-            // a blocked start fails silently, so without the overlay grant also raise the alert
-            if (!_canOverlay()) _postLaunchAlert()
+            // a blocked start fails silently: raise the notice only if we're still not in front
+            _mainHandler.postDelayed({ if (!_appVisible()) _postLaunchAlert() }, 1_500)
         }
     }
 
     // a Mac connecting while the TV shows its screensaver: the start below is blocked and the picture
-    // plays unseen behind it (seen on the Philips TV). Waking the screen ends the screensaver.
+    // plays unseen behind it (seen on the Philips TV). Waking the screen ends the screensaver. Works without
+    // any permission up to Android 13; Android 14+ ignores the wake-up flag without TURN_SCREEN_ON (dropped
+    // for Play), which is why Home shows the "press a remote button" tip.
     @Suppress("DEPRECATION")
     private fun _wakeScreen() {
         (getSystemService(Context.POWER_SERVICE) as PowerManager).newWakeLock(
@@ -1234,9 +1238,6 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
 
     private fun _appVisible() = ActivityManager.RunningAppProcessInfo()
         .also(ActivityManager::getMyMemoryState).importance <= ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND
-
-    private fun _canOverlay() =
-        Build.VERSION.SDK_INT < Build.VERSION_CODES.Q || android.provider.Settings.canDrawOverlays(this)
 
     private fun _postLaunchAlert() {
         val nm = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
@@ -1252,8 +1253,6 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             .setContentIntent(pi)
             .setAutoCancel(true)
             .setTimeoutAfter(LAUNCH_ALERT_TIMEOUT_MS)
-        // android 14+: only granted when the user/Play allows it; otherwise it's a plain heads-up
-        if (Build.VERSION.SDK_INT < 34 || nm.canUseFullScreenIntent()) n.setFullScreenIntent(pi, true)
         try {
             nm.notify(ALERT_NOTIFICATION_ID, n.build())
         } catch (e: SecurityException) {

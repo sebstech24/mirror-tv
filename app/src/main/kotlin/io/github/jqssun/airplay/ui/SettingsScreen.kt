@@ -1,11 +1,6 @@
 package io.github.jqssun.airplay.ui
 
-import android.content.ActivityNotFoundException
-import android.content.Context
-import android.content.Intent
-import android.net.Uri
-import android.os.Build
-import android.provider.Settings
+import android.app.Activity
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -33,12 +28,18 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import io.github.jqssun.airplay.Prefs
 import io.github.jqssun.airplay.R
-import io.github.jqssun.airplay.appSettingsIntent
+import io.github.jqssun.airplay.billing.Billing
+import io.github.jqssun.airplay.billing.FreeSession
+import io.github.jqssun.airplay.billing.SessionLimiter
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import io.github.jqssun.airplay.defaultServerName
 import io.github.jqssun.airplay.viewmodel.MainViewModel
 import androidx.compose.ui.res.stringArrayResource
@@ -105,7 +106,37 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             .verticalScroll(scroll)
             .padding(vertical = 8.dp)
     ) {
+        val unlimited by Billing.unlocked.collectAsState()
+        val plan by Billing.plan.collectAsState()
+        val pending by Billing.pending.collectAsState()
+        val activity = ctx as? Activity
+        val monthlyOwner = unlimited && plan == SessionLimiter.MONTHLY_ID
+        // the plan card takes first focus when it does something; a Lifetime owner starts on the PIN row
+        val planFocusable = !unlimited || monthlyOwner
+        PlanStatusCard(
+            title = stringResource(if (unlimited) R.string.unlimited_owned_title else R.string.unlimited_free_title),
+            description = stringResource(when {
+                pending -> R.string.unlimited_pending_desc
+                monthlyOwner -> R.string.unlimited_owned_monthly
+                unlimited -> R.string.unlimited_owned_lifetime
+                else -> R.string.unlimited_free_desc
+            }),
+            free = !unlimited,
+            onClick = when {
+                !unlimited -> FreeSession::showPlans
+                monthlyOwner -> { { if (activity != null) Billing.manageSubscription(activity) } }
+                else -> null
+            },
+            modifier = Modifier.thenIf(planFocusable) { focusRequester(firstFocus) }
+        )
+        if (!unlimited) SettingRow(
+            title = stringResource(R.string.unlimited_restore),
+            description = stringResource(R.string.unlimited_restore_desc),
+            onClick = { activity?.let(Billing::restore) }
+        )
+
         // everyday settings; everything technical lives under Advanced
+        SectionHeader(stringResource(R.string.section_mirroring))
         SettingTextField(
             label = stringResource(R.string.setting_tv_name),
             value = serverName,
@@ -117,6 +148,7 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             title = stringResource(R.string.setting_picture_quality),
             description = stringResource(R.string.setting_picture_quality_desc),
             value = resolution,
+            showExtras = advanced,
             onValueChange = { viewModel.set(Prefs.RESOLUTION, it) }
         )
 
@@ -134,7 +166,14 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             checked = requirePin,
             onCheckedChange = { viewModel.set(Prefs.REQUIRE_PIN, it) },
             // not the name field: focusing a text field would pop the keyboard on a TV
-            modifier = Modifier.focusRequester(firstFocus)
+            modifier = Modifier.thenIf(!planFocusable) { focusRequester(firstFocus) }
+        )
+
+        SettingSwitch(
+            title = stringResource(R.string.setting_sync_client_volume),
+            description = stringResource(R.string.setting_sync_client_volume_desc),
+            checked = syncClientVolume,
+            onCheckedChange = { viewModel.set(Prefs.SYNC_CLIENT_VOLUME, it) }
         )
 
         SettingRow(
@@ -212,38 +251,11 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             onCheckedChange = { viewModel.set(Prefs.ALLOW_NEW_CONN, it) }
         )
 
-        val lifecycleOwner = LocalLifecycleOwner.current
-        var hasOverlayPermission by remember { mutableStateOf(canAutoLaunch(ctx)) }
-        DisposableEffect(lifecycleOwner) {
-            val observer = LifecycleEventObserver { _, event ->
-                if (event == Lifecycle.Event.ON_RESUME) hasOverlayPermission = canAutoLaunch(ctx)
-            }
-            lifecycleOwner.lifecycle.addObserver(observer)
-            onDispose { lifecycleOwner.lifecycle.removeObserver(observer) }
-        }
-        val needsOverlayPermission = launchOnConnect && !hasOverlayPermission
-        val autoLaunch = launchOnConnect && hasOverlayPermission
-        ListItem(
-            modifier = Modifier
-                .dpadFocus(RectangleShape)
-                .toggleable(
-                    value = autoLaunch,
-                    role = Role.Switch,
-                    onValueChange = {
-                        viewModel.set(Prefs.LAUNCH_ON_CONNECT, it)
-                        if (it && !canAutoLaunch(ctx)) _openOverlaySettings(ctx)
-                    }
-                ),
-            headlineContent = { Text(stringResource(R.string.setting_launch_on_connect)) },
-            supportingContent = {
-                Text(stringResource(
-                    if (needsOverlayPermission) R.string.setting_launch_on_connect_no_permission
-                    else R.string.setting_launch_on_connect_desc
-                ))
-            },
-            trailingContent = {
-                Switch(checked = autoLaunch, onCheckedChange = null)
-            }
+        SettingSwitch(
+            title = stringResource(R.string.setting_launch_on_connect),
+            description = stringResource(R.string.setting_launch_on_connect_desc),
+            checked = launchOnConnect,
+            onCheckedChange = { viewModel.set(Prefs.LAUNCH_ON_CONNECT, it) }
         )
 
         SectionHeader(stringResource(R.string.section_display))
@@ -294,13 +306,6 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             description = stringResource(R.string.setting_sw_aac_desc),
             checked = forceSwAac,
             onCheckedChange = { viewModel.set(Prefs.FORCE_SW_AAC, it) }
-        )
-
-        SettingSwitch(
-            title = stringResource(R.string.setting_sync_client_volume),
-            description = stringResource(R.string.setting_sync_client_volume_desc),
-            checked = syncClientVolume,
-            onCheckedChange = { viewModel.set(Prefs.SYNC_CLIENT_VOLUME, it) }
         )
 
         SectionHeader(stringResource(R.string.section_developer))
@@ -523,17 +528,31 @@ private fun SettingRow(title: String, description: String, onClick: () -> Unit) 
     )
 }
 
-private fun canAutoLaunch(ctx: Context): Boolean =
-    Build.VERSION.SDK_INT < Build.VERSION_CODES.Q || Settings.canDrawOverlays(ctx)
-
-// overlay settings screen may not exist on some builds
-private fun _openOverlaySettings(ctx: Context) {
-    val overlay = Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:${ctx.packageName}"))
-    try {
-        ctx.startActivity(overlay.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
-    } catch (_: ActivityNotFoundException) {
-        ctx.startActivity(ctx.appSettingsIntent().addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+/** The plan at the top of Settings: an invitation on the free plan, a quiet status once Unlimited. */
+@Composable
+private fun PlanStatusCard(title: String, description: String, free: Boolean, onClick: (() -> Unit)?, modifier: Modifier = Modifier) {
+    val c = MaterialTheme.colorScheme
+    val shape = RoundedCornerShape(20.dp)
+    val content = @Composable {
+        Row(Modifier.padding(horizontal = 20.dp, vertical = 16.dp), verticalAlignment = Alignment.CenterVertically) {
+            Image(painterResource(R.drawable.ic_launcher_art), contentDescription = null,
+                modifier = Modifier.size(44.dp).clip(RoundedCornerShape(11.dp)))
+            Spacer(Modifier.width(16.dp))
+            Column(Modifier.weight(1f)) {
+                Text(title, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+                Text(description, style = MaterialTheme.typography.bodyMedium)
+            }
+            if (free) Text(
+                stringResource(R.string.unlimited_see_plans), style = MaterialTheme.typography.labelLarge,
+                fontWeight = FontWeight.Bold, color = c.onPrimary,
+                modifier = Modifier.background(c.primary, CircleShape).padding(horizontal = 16.dp, vertical = 8.dp)
+            ) else if (onClick != null) Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+        }
     }
+    val m = modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp)
+    val color = if (free) c.primaryContainer else c.surfaceContainerHigh
+    if (onClick != null) Surface(onClick = onClick, shape = shape, color = color, modifier = m.dpadFocus(shape)) { content() }
+    else Surface(shape = shape, color = color, modifier = m) { content() }
 }
 
 @Composable
@@ -552,13 +571,14 @@ private fun SettingResolution(
     title: String,
     description: String,
     value: String,
+    showExtras: Boolean,
     onValueChange: (String) -> Unit
 ) {
     val presets = listOf(
         Prefs.AUTO to stringResource(R.string.chip_auto),
-        "1280x720" to "1280x720",
-        "1920x1080" to "1920x1080",
-        "3840x2160" to "3840x2160"
+        "1280x720" to "720p",
+        "1920x1080" to "1080p",
+        "3840x2160" to "4K"
     )
     val devicePresets = listOf(
         Prefs.PORTRAIT to stringResource(R.string.chip_device_portrait),
@@ -589,13 +609,13 @@ private fun SettingResolution(
                         modifier = Modifier.dpadFocus()
                     )
                     presets.forEach { (key, label) -> presetChip(key, label) }
-                    FilterChip(
+                    if (showExtras || presets.none { it.first == value }) FilterChip(
                         selected = !isPreset || editing,
                         onClick = { editing = true },
                         label = { Text(stringResource(R.string.chip_custom)) },
                         modifier = Modifier.dpadFocus()
                     )
-                    devicePresets.forEach { (key, label) -> presetChip(key, label) }
+                    if (showExtras || presets.none { it.first == value }) devicePresets.forEach { (key, label) -> presetChip(key, label) }
                 }
                 if (editing || !isPreset) {
                     Spacer(Modifier.height(8.dp))

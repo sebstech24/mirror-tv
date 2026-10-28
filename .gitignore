@@ -13,3 +13,4 @@
 # local build outputs
 build-debug.log
 emulator.log
+/dist/

@@ -116,9 +116,8 @@
     <string name="setting_alac_desc">Offer ALAC in the mDNS record; used for music streaming</string>
     <string name="setting_aac">Advertise AAC codec</string>
     <string name="setting_aac_desc">Offer AAC-ELD/AAC-LC in the mDNS record; used for screen mirroring audio</string>
-    <string name="setting_launch_on_connect">Open this application on connect</string>
-    <string name="setting_launch_on_connect_desc">Show the screen when a sender connects</string>
-    <string name="setting_launch_on_connect_no_permission">Tap to grant Display over other apps permission</string>
+    <string name="setting_launch_on_connect">Show Screenbridge when a Mac connects</string>
+    <string name="setting_launch_on_connect_desc">Brings the picture to the front. If the TV blocks that, a notice appears instead.</string>
     <string name="setting_discovery">Discoverable over</string>
     <string name="setting_discovery_all_desc">Advertise on all usable interfaces. Uses NsdManager.</string>
     <string name="setting_discovery_usb_desc">Only advertise over USB tethering to enforce wired connection. Uses custom mDNS responder.</string>
@@ -147,8 +146,8 @@
     <string name="setting_sw_alac_desc">Always use software ALAC decoder instead of system decoder, may affect latency</string>
     <string name="setting_sw_aac">Force software AAC decoder</string>
     <string name="setting_sw_aac_desc">Always use software AAC decoder instead of system decoder, may affect latency</string>
-    <string name="setting_sync_client_volume">Sync sender volume</string>
-    <string name="setting_sync_client_volume_desc">Use sender volume for receiver volume automatically</string>
+    <string name="setting_sync_client_volume">Mac controls TV volume</string>
+    <string name="setting_sync_client_volume_desc">The Mac\'s volume keys change the TV\'s volume while mirroring. Turn off to use only the TV remote.</string>
 
     <!-- Settings: Developer -->
     <string name="setting_developer_options">Developer options</string>
@@ -238,7 +237,7 @@
     <string name="setting_tv_name">TV name</string>
     <string name="setting_tv_name_desc">The name your Mac shows in Screen Mirroring. Leave empty to use “%1$s”.</string>
     <string name="setting_picture_quality">Picture quality</string>
-    <string name="setting_picture_quality_desc">Screen size offered to your Mac</string>
+    <string name="setting_picture_quality_desc">Auto matches your TV. Pick a lower size if the picture stutters.</string>
     <string name="setting_pin_simple">Ask for a PIN</string>
     <string name="setting_pin_simple_desc">Show a 4-digit code on the TV before a new device can mirror</string>
     <string name="setting_lowest_latency">Lowest latency</string>
@@ -266,6 +265,62 @@
     <string name="about_source">Source code: %1$s</string>
     <string name="about_source_url" translatable="false">https://github.com/sebstech24/mirror-tv</string>
     <string name="about_view_license">View license (GPL-3.0)</string>
+    <string name="about_privacy">Privacy policy: %1$s</string>
+    <string name="about_privacy_url" translatable="false">https://sebstech24.github.io/mirror-tv/privacy.html</string>
+    <string name="about_privacy_button">Privacy policy</string>
     <string name="about_trademark">Not affiliated with Apple. AirPlay and Mac are trademarks of Apple Inc.</string>
     <string name="about_license_title">GNU General Public License v3.0</string>
+    <!-- Screenbridge Unlimited (Monthly or Lifetime) and the free 20-minute session; prices always come from Google Play -->
+    <plurals name="free_session_left">
+        <item quantity="one">%d minute left in your free session</item>
+        <item quantity="other">%d minutes left in your free session</item>
+    </plurals>
+    <string name="paywall_title">Your free 20 minutes are up</string>
+    <string name="paywall_subtitle">Reconnect from your Mac for another free session, or go Unlimited and never get cut off.</string>
+    <string name="paywall_title_plans">Mirror without limits</string>
+    <string name="paywall_subtitle_plans">Free sessions last 20 minutes. Go Unlimited and mirror for as long as you like.</string>
+    <string name="paywall_benefit_unlimited">No time limit: movies, meetings, whole evenings</string>
+    <string name="paywall_benefit_updates">All future updates included</string>
+    <string name="paywall_benefit_support">Supports an independent developer</string>
+    <string name="paywall_not_now">Not now</string>
+    <string name="paywall_terms">Monthly renews at %1$s/month until you cancel in Google Play. Charged to your Google account.</string>
+    <string name="paywall_terms_no_price">Payment is handled by Google Play and charged to your Google account.</string>
+    <string name="plan_monthly">Monthly</string>
+    <string name="plan_lifetime">Lifetime</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d DAY FREE</item>
+        <item quantity="other">%d DAYS FREE</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d day free, then %2$s/month. Cancel anytime.</item>
+        <item quantity="other">%1$d days free, then %2$s/month. Cancel anytime.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">for %d day</item>
+        <item quantity="other">for %d days</item>
+    </plurals>
+    <string name="plan_monthly_detail">Cancel anytime in Google Play.</string>
+    <string name="plan_free">Free</string>
+    <string name="plan_per_month">per month</string>
+    <string name="plan_lifetime_badge">PAY ONCE</string>
+    <string name="plan_lifetime_detail">Yours forever, no subscription.</string>
+    <string name="plan_one_time">one time</string>
+    <string name="plan_price_from_play">Price shown by Google Play</string>
+    <string name="unlimited_title">Screenbridge Unlimited</string>
+    <string name="unlimited_badge">Unlimited</string>
+    <string name="unlimited_see_plans">See plans</string>
+    <string name="unlimited_free_title">Free plan · 20-minute sessions</string>
+    <string name="unlimited_free_desc">Go Unlimited: Monthly or Lifetime</string>
+    <string name="unlimited_owned_title">Unlimited · no time limit</string>
+    <string name="unlimited_owned_monthly">Monthly plan. Select to manage or cancel in Google Play.</string>
+    <string name="unlimited_owned_lifetime">Lifetime. Thank you for supporting Screenbridge!</string>
+    <string name="unlimited_thanks">Screenbridge Unlimited is on. Thank you!</string>
+    <string name="unlimited_pending_desc">Payment pending. Screenbridge unlocks as soon as Google Play confirms it.</string>
+    <string name="unlimited_restore">Restore purchases</string>
+    <string name="unlimited_restore_desc">Subscribed or bought Lifetime on this Google account? Check again with Google Play.</string>
+    <string name="unlimited_restored">Screenbridge Unlimited is unlocked.</string>
+    <string name="unlimited_not_found">No purchase found on this Google account.</string>
+    <string name="unlimited_play_unavailable">Google Play isn\'t reachable right now. Try again in a moment.</string>
+    <string name="unlimited_manage_in_play">Open Google Play → Payments &amp; subscriptions to manage your plan.</string>
+    <string name="section_mirroring">Mirroring</string>
 </resources>

@@ -60,6 +60,12 @@ fun AboutScreen(onViewLicense: () -> Unit) {
                 modifier = Modifier.dpadFocus(CircleShape),
             ) { Text(url) }
         }
+        val privacy = stringResource(R.string.about_privacy_url)
+        Text(stringResource(R.string.about_privacy, privacy), style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.primary)
+        OutlinedButton(
+            onClick = { runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(privacy)).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)) } },
+            modifier = Modifier.dpadFocus(CircleShape),
+        ) { Text(stringResource(R.string.about_privacy_button)) }
         Text(
             stringResource(R.string.about_trademark),
             style = MaterialTheme.typography.bodyMedium,

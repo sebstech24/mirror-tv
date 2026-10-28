@@ -18,6 +18,8 @@ Why pay when a free GPL version exists (be honest in the listing and README):
 
 ## 2. Pricing and paywall
 
+> SUPERSEDED 28 Oct 2026 (Sebastian): Monthly $4.99 with 7-day free trial + Lifetime $49.99; free 20-min sessions stay. The one-time $7.99 plan below is history.
+
 Google's fee (verified today on [Google's service fees page](https://support.google.com/googleplay/android-developer/answer/112622)):
 - US, UK, EEA: since 30 June 2026, one-time purchases cost 20% plus a 5% billing fee on new installs (first $1M a year), so 25% total. Subscriptions 10% plus 5%.
 - Australia and Japan: same structure from 30 Sept 2026.

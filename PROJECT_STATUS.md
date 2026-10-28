@@ -4,6 +4,38 @@ Paid, Mac-focused Android TV / Google TV screen-mirroring receiver (Mac's built-
 Fork of jqssun/android-airplay-server (GPL-3.0, based on UxPlay). Public repo: github.com/sebstech24/mirror-tv,
 work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.
 
+## PRICING DECIDED (Sebastian, 28 Oct 2026: "make lifetime 50$ and monthly 5$")
+- Free: full-quality mirroring in 20-minute sessions, reconnect for another (unchanged).
+- Monthly: $4.99 subscription with a 7-day free trial (introductory offer), Family Sharing OFF.
+- Lifetime: $49.99 one-time, Family Sharing OFF.
+- Replaces the 25 Oct one-time $7.99 / $4.99 launch-price plan in docs/business/SALES-PLAN.md.
+- Sebastian asked to publish once ready (28 Oct). Release work: see "Play release" chats.
+
+## FIRST PLAY RELEASE BUILT (28 Oct 2026): 1.0.0, versionCode 100
+- Signed AAB: `dist/screenbridge-1.0.0-100.aab` (not in git; rebuild with `./gradlew bundleRelease`).
+- Upload key: `~/.secrets/screenbridge-upload.jks` (alias `upload`), password in vault `SCREENBRIDGE_UPLOAD_KEY_PASSWORD`,
+  the key file itself backed up as vault `SCREENBRIDGE_UPLOAD_KEY`. `local.properties` points at it (git-ignored).
+  Play App Signing holds the real app key.
+- Paywall back in tv-edition (reverted 158314e) and switched to the new pricing: `screenbridge_monthly` (subscription,
+  base plan `monthly`, 7-day trial offer) and `screenbridge_lifetime` (one-time). Either unlocks; restore runs on every
+  app start/resume and from "Restore purchases". Prices and trial length always come from Play (never hard-coded).
+  The retired `screenbridge_unlimited` no longer unlocks anything.
+- New paywall design (docs/screens/paywall-plans.png): pitch on the left, two D-pad cards on the right (Monthly focused
+  first), Not now / Restore, renewal terms line. Opens when the free 20 minutes end or from Settings → "See plans".
+- Settings refined (docs/screens/settings-plan-card.png): plan card on top (free: "See plans"; Monthly: manage in Play;
+  Lifetime: thank-you), "Mirroring" section, 720p/1080p/4K labels (Custom/Portrait/Landscape only under Advanced),
+  "Mac controls TV volume" moved out of Advanced, "Show Screenbridge when a Mac connects" no longer needs a permission.
+- About shows the privacy policy (https://sebstech24.github.io/mirror-tv/privacy.html), as Play requires.
+- Removed for Play: USE_FULL_SCREEN_INTENT, SYSTEM_ALERT_WINDOW, TURN_SCREEN_ON. A blocked "come to front" now shows a
+  heads-up notice. Wake-on-connect stays but only works up to Android 13 (14+ needs TURN_SCREEN_ON); the Home tip covers it.
+- TV-only on Play now (leanback required=true), touchscreen not required, banner 320x180, target SDK 37,
+  64-bit native libs 16 KB aligned, BILLING permission present.
+- Debug-only switches (ignored in release, settable only over adb): debug_fake_unlocked, debug_short_session,
+  debug_sample_prices (shows $4.99 / $49.99 sample prices when Play has none, for layout checks).
+- Checked: 11 unit tests pass; emulator (MirrorTV_API34): Settings plan card, paywall with sample prices and without,
+  D-pad between cards, Back returns to Settings. Not checked: the "free 20 minutes are up" variant (needs a Mac) and a
+  real purchase (needs the Play-signed install from a test track).
+
 ## State (24 Oct 2026)
 - Builds on the Mac (`./gradlew assembleDebug`, NDK 27.3.13750724, platform android-37.0; first build ~15 min).
 - Runs in the Android TV emulator (AVD `MirrorTV_API34`): new Home screen with Mac steps, Settings, About,
@@ -25,7 +57,6 @@ work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.
 ## Open
 - Name DECIDED (25 Oct): app "Screenbridge", Play title "Screenbridge: Screen Mirroring", Play ID com.sebstech.screenbridge (done in code). Sebastian still to trademark-check. App icon completed at `design/icon.png`; Android TV home banner completed at `design/banner.png` (1280×720). Remaining rebrand: Play listing.
 - Paywall (Play Billing one-time unlock, 20-min free sessions) — see docs/business/SALES-PLAN.md.
-- USE_FULL_SCREEN_INTENT may need a Play declaration (restricted to calling/alarm apps on Android 14+).
 - Sebastian: Play developer account type/age (12 testers × 14 days if personal & newer than Nov 2023);
   lawyer check before charging.
 
