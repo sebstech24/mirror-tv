@@ -16,7 +16,7 @@ Sebastian fills these in himself (Claude's browser is blocked on these forms, an
 - **Name:** Telebeam · **Tagline (60):** Mirror your Mac to Google TV and Android TV, no Apple TV
 - **Categories:** Screen Mirroring, Remote Desktop / Screen Sharing, Media Streaming
 - **Competitors:** AirScreen, AirServer, Reflector, AirBeamTV, Mirroring360
-- **Website:** https://www.controlmymac.com/telebeam · Verify with support@telebeamapp.com (own domain)
+- **Website:** https://www.controlmymac.com/telebeam · Verify with telebeam@controlmymac.com
 - **Description:** same as AlternativeTo. After approval add the Google Play link: https://play.google.com/store/apps/details?id=com.sebstech.telebeam&referrer=utm_source%3Dsaashub%26utm_medium%3Ddirectory%26utm_campaign%3Dlaunch
 
 ## Product Hunt

@@ -1,6 +1,6 @@
 # Launch marketing (Telebeam, formerly Screenbridge)
 
-Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). Every batch of posts, emails or public replies needs his yes. **Nothing is public yet:** the app isn't live on Play (release waits for receiver fixes). **Renamed 29 Oct 2026 to Telebeam** (Play title "Telebeam: Screen Mirroring TV", package `com.sebstech.telebeam`), because "Screenbridge" is already used by a connected-TV ad agency (screenbridge.tv); shortlist and checks in `NAME-SHORTLIST.md`. App email: support@telebeamapp.com once Sebastian has bought telebeamapp.com (until then the listing still says support@controlmymac.com).
+Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). Every batch of posts, emails or public replies needs his yes. **Nothing is public yet:** the app isn't live on Play (release waits for receiver fixes). **Renamed 29 Oct 2026 to Telebeam** (Play title "Telebeam: Screen Mirroring TV", package `com.sebstech.telebeam`), because "Screenbridge" is already used by a connected-TV ad agency (screenbridge.tv); shortlist and checks in `NAME-SHORTLIST.md`. App email (decided 29 Oct): **telebeam@controlmymac.com** on the existing controlmymac.com setup, no new domain or website; until it works, the texts still say support@controlmymac.com (`marketing/email-setup.md`).
 
 ## Where everything is
 
