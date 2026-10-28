@@ -1,4 +1,4 @@
-# Screenbridge press pitches
+# Telebeam press pitches
 
 *Prepared 28 Oct 2026. Nothing has been sent or drafted in Gmail. Every batch needs Sebastian's yes. Targets and contacts: `press-targets.csv` (same folder).*
 
@@ -28,7 +28,7 @@ Hi {{name}},
 
 Click Screen Mirroring in a Mac's Control Center and a Google TV isn't there. The list shows Apple TVs and AirPlay TVs only.
 
-I've built Screenbridge, an open-source (GPL-3.0) receiver for Google TV and Android TV. Open it on the TV and the TV appears in the Mac's own Screen Mirroring list. No Apple TV, nothing to install on the Mac, just the same Wi-Fi. Up to 4K with sound and low delay, and iPhone and iPad mirroring works too. It builds on jqssun's android-airplay-server and UxPlay. So far I've tested it on a Philips Google TV with macOS.
+I've built Telebeam, an open-source (GPL-3.0) receiver for Google TV and Android TV. Open it on the TV and the TV appears in the Mac's own Screen Mirroring list. No Apple TV, nothing to install on the Mac, just the same Wi-Fi. Up to 4K with sound and low delay, and iPhone and iPad mirroring works too. It builds on jqssun's android-airplay-server and UxPlay. So far I've tested it on a Philips Google TV with macOS.
 
 It's a paid app (Monthly with a 7-day trial, or Lifetime), with no ads and no data collected.
 
@@ -40,7 +40,7 @@ Would a Lifetime promo code for testing help?
 I found your address {{address_source}}. Not for you? Just say so and I won't write again.
 
 Sebastian Škoić
-Developer of Screenbridge and Control My Mac (Slovenia)
+Developer of Telebeam and Control My Mac (Slovenia)
 Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Slovenia
 ```
 
@@ -50,7 +50,7 @@ Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Slovenia
 Hi {{name}},
 
 Here's your Lifetime code: [PROMO CODE]
-Redeem it in the Play Store app on the TV or your phone (Menu → Payments & subscriptions → Redeem code), then open Screenbridge on the TV and pick it under Control Center → Screen Mirroring on the Mac.
+Redeem it in the Play Store app on the TV or your phone (Menu → Payments & subscriptions → Redeem code), then open Telebeam on the TV and pick it under Control Center → Screen Mirroring on the Mac.
 
 If anything doesn't work, just reply here.
 
@@ -83,7 +83,7 @@ Hallo {{name}},
 
 Wer am Mac im Kontrollzentrum auf „Bildschirmsynchronisierung“ klickt, findet dort Apple TVs und AirPlay-Fernseher, aber keinen Google TV.
 
-Genau dafür habe ich Screenbridge gebaut, einen Open-Source-Empfänger (GPL-3.0) für Google TV und Android TV. App auf dem Fernseher öffnen, und schon steht der Fernseher in der Liste am Mac. Kein Apple TV, keine Software auf dem Mac, nur dasselbe WLAN. Bis 4K mit Ton und kaum Verzögerung, iPhone und iPad klappen auch. Die Grundlage sind jqssuns android-airplay-server und UxPlay. Getestet habe ich bisher mit einem Philips Google TV und macOS.
+Genau dafür habe ich Telebeam gebaut, einen Open-Source-Empfänger (GPL-3.0) für Google TV und Android TV. App auf dem Fernseher öffnen, und schon steht der Fernseher in der Liste am Mac. Kein Apple TV, keine Software auf dem Mac, nur dasselbe WLAN. Bis 4K mit Ton und kaum Verzögerung, iPhone und iPad klappen auch. Die Grundlage sind jqssuns android-airplay-server und UxPlay. Getestet habe ich bisher mit einem Philips Google TV und macOS.
 
 Die App ist kostenpflichtig (Monatsabo mit 7-tägiger Testphase oder einmalig Lifetime), ohne Werbung und ohne Datenerhebung.
 
@@ -96,7 +96,7 @@ Eure Adresse habe ich {{address_source}} gefunden. Nichts für euch? Ein kurzes 
 
 Viele Grüße
 Sebastian Škoić
-Entwickler von Screenbridge und Control My Mac (Slowenien)
+Entwickler von Telebeam und Control My Mac (Slowenien)
 Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Slowenien
 ```
 
@@ -110,7 +110,7 @@ Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Slowenien
 Hallo {{name}},
 
 hier ist euer Lifetime-Code: [PROMO CODE]
-Einlösen geht in der Play-Store-App auf dem Fernseher oder am Handy (Menü → Zahlungen und Abos → Code einlösen). Danach Screenbridge auf dem Fernseher öffnen und am Mac unter Kontrollzentrum → Bildschirmsynchronisierung den Fernseher wählen.
+Einlösen geht in der Play-Store-App auf dem Fernseher oder am Handy (Menü → Zahlungen und Abos → Code einlösen). Danach Telebeam auf dem Fernseher öffnen und am Mac unter Kontrollzentrum → Bildschirmsynchronisierung den Fernseher wählen.
 
 Falls etwas hakt, einfach hier antworten.
 
@@ -127,7 +127,7 @@ Sebastian
 | mobiFlip | ihr habt über den Projectivy Launcher für Google TV geschrieben, deshalb dachte ich, diese neue Google-TV-App passt zu euch. |
 | Macerkopf | ihr berichtet regelmäßig über AirPlay-Empfänger wie den Eve Play. Das hier ist einer für den Google-TV-Fernseher. |
 
-(iphone-ticker: honest reference only. They covered Control My Mac, not Screenbridge; their readers asked about the subscription price back then, so don't mention prices.)
+(iphone-ticker: honest reference only. They covered Control My Mac, not Telebeam; their readers asked about the subscription price back then, so don't mention prices.)
 
 ---
 
@@ -144,7 +144,7 @@ Bonjour {{name}},
 
 Dans le Centre de contrôle du Mac, « Recopie de l'écran » affiche les Apple TV et les téléviseurs AirPlay, mais aucun Google TV.
 
-J'ai donc créé Screenbridge, un récepteur open source (GPL-3.0) pour Google TV et Android TV. On ouvre l'app sur le téléviseur, et il apparaît dans cette liste. Sans Apple TV, rien à installer sur le Mac, le même Wi-Fi suffit. Jusqu'à la 4K avec le son, peu de latence, et ça marche aussi avec l'iPhone et l'iPad. L'app s'appuie sur android-airplay-server de jqssun et sur UxPlay. Testée pour l'instant sur un téléviseur Philips sous Google TV, avec macOS.
+J'ai donc créé Telebeam, un récepteur open source (GPL-3.0) pour Google TV et Android TV. On ouvre l'app sur le téléviseur, et il apparaît dans cette liste. Sans Apple TV, rien à installer sur le Mac, le même Wi-Fi suffit. Jusqu'à la 4K avec le son, peu de latence, et ça marche aussi avec l'iPhone et l'iPad. L'app s'appuie sur android-airplay-server de jqssun et sur UxPlay. Testée pour l'instant sur un téléviseur Philips sous Google TV, avec macOS.
 
 L'app est payante (abonnement mensuel avec 7 jours d'essai, ou achat unique à vie), sans publicité et sans collecte de données.
 
@@ -156,7 +156,7 @@ Voulez-vous un code « à vie » pour la tester ?
 J'ai trouvé votre adresse {{address_source}}. Ce n'est pas pour vous ? Dites-le-moi et je ne vous écrirai plus.
 
 Sebastian Škoić
-Développeur de Screenbridge et de Control My Mac (Slovénie)
+Développeur de Telebeam et de Control My Mac (Slovénie)
 Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Slovénie
 ```
 
@@ -179,7 +179,7 @@ Hola, equipo de {{name}}:
 
 En el Centro de control del Mac, «Duplicar pantalla» muestra los Apple TV y las teles con AirPlay, pero ningún Google TV.
 
-Por eso he creado Screenbridge, un receptor de código abierto (GPL-3.0) para Google TV y Android TV. Abres la app en la tele y la tele aparece en esa lista. Sin Apple TV, sin instalar nada en el Mac, solo con la misma wifi. Hasta 4K con sonido y poco retardo; también con iPhone y iPad. Se basa en android-airplay-server de jqssun y en UxPlay. De momento la he probado en una tele Philips con Google TV y macOS.
+Por eso he creado Telebeam, un receptor de código abierto (GPL-3.0) para Google TV y Android TV. Abres la app en la tele y la tele aparece en esa lista. Sin Apple TV, sin instalar nada en el Mac, solo con la misma wifi. Hasta 4K con sonido y poco retardo; también con iPhone y iPad. Se basa en android-airplay-server de jqssun y en UxPlay. De momento la he probado en una tele Philips con Google TV y macOS.
 
 Es de pago (suscripción mensual con 7 días de prueba o pago único de por vida), sin anuncios ni recogida de datos.
 
@@ -191,7 +191,7 @@ Es de pago (suscripción mensual con 7 días de prueba o pago único de por vida
 Encontré vuestra dirección {{address_source}}. ¿No os interesa? Decídmelo y no volveré a escribiros.
 
 Sebastian Škoić
-Desarrollador de Screenbridge y Control My Mac (Eslovenia)
+Desarrollador de Telebeam y Control My Mac (Eslovenia)
 Sebastian Škoić s.p., Šturmova ulica 7A, Liubliana, Eslovenia
 ```
 
@@ -210,7 +210,7 @@ Ciao redazione di {{name}},
 
 Nel Centro di Controllo del Mac, «Duplicazione Schermo» mostra le Apple TV e i televisori AirPlay, ma nessuna Google TV.
 
-Per questo ho creato Screenbridge, un ricevitore open source (GPL-3.0) per Google TV e Android TV. Si apre l'app sul televisore e il televisore compare in quell'elenco. Niente Apple TV, niente da installare sul Mac, basta la stessa rete Wi-Fi. Fino al 4K con l'audio e poca latenza, e funziona anche con iPhone e iPad. Si basa su android-airplay-server di jqssun e su UxPlay. Finora l'ho provata su un televisore Philips con Google TV e macOS.
+Per questo ho creato Telebeam, un ricevitore open source (GPL-3.0) per Google TV e Android TV. Si apre l'app sul televisore e il televisore compare in quell'elenco. Niente Apple TV, niente da installare sul Mac, basta la stessa rete Wi-Fi. Fino al 4K con l'audio e poca latenza, e funziona anche con iPhone e iPad. Si basa su android-airplay-server di jqssun e su UxPlay. Finora l'ho provata su un televisore Philips con Google TV e macOS.
 
 L'app è a pagamento (abbonamento mensile con 7 giorni di prova, oppure Lifetime una tantum), senza pubblicità e senza raccolta di dati.
 
@@ -222,7 +222,7 @@ Volete un codice Lifetime per provarla?
 Ho trovato il vostro indirizzo {{address_source}}. Non vi interessa? Ditemelo e non vi scriverò più.
 
 Sebastian Škoić
-Sviluppatore di Screenbridge e Control My Mac (Slovenia)
+Sviluppatore di Telebeam e Control My Mac (Slovenia)
 Sebastian Škoić s.p., Šturmova ulica 7A, Lubiana, Slovenia
 ```
 
@@ -241,7 +241,7 @@ Hoi {{name}},
 
 Klik je op een Mac in het Bedieningspaneel op 'Synchrone weergave', dan zie je Apple TV's en AirPlay-tv's, maar geen Google TV.
 
-Daarom heb ik Screenbridge gemaakt, een opensource-ontvanger (GPL-3.0) voor Google TV en Android TV. Open de app op de tv en de tv staat in die lijst. Geen Apple TV, niets installeren op de Mac, alleen hetzelfde wifi-netwerk. Tot 4K met geluid en weinig vertraging, en het werkt ook met iPhone en iPad. De basis is android-airplay-server van jqssun en UxPlay. Tot nu toe heb ik het getest op een Philips Google TV met macOS.
+Daarom heb ik Telebeam gemaakt, een opensource-ontvanger (GPL-3.0) voor Google TV en Android TV. Open de app op de tv en de tv staat in die lijst. Geen Apple TV, niets installeren op de Mac, alleen hetzelfde wifi-netwerk. Tot 4K met geluid en weinig vertraging, en het werkt ook met iPhone en iPad. De basis is android-airplay-server van jqssun en UxPlay. Tot nu toe heb ik het getest op een Philips Google TV met macOS.
 
 De app is betaald (maandabonnement met 7 dagen proefperiode, of eenmalig Lifetime), zonder advertenties en zonder dataverzameling.
 
@@ -254,7 +254,7 @@ Jullie adres vond ik {{address_source}}. Niets voor jullie? Laat het weten, dan 
 
 Groeten,
 Sebastian Škoić
-Ontwikkelaar van Screenbridge en Control My Mac (Slovenië)
+Ontwikkelaar van Telebeam en Control My Mac (Slovenië)
 Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Slovenië
 ```
 
@@ -273,7 +273,7 @@ Dzień dobry,
 
 Po kliknięciu „Synchronizacja ekranu” w Centrum sterowania na Macu widać Apple TV i telewizory z AirPlay, ale żadnego Google TV.
 
-Dlatego zrobiłem Screenbridge, odbiornik open source (GPL-3.0) dla Google TV i Android TV. Wystarczy otworzyć aplikację na telewizorze, a telewizor pojawi się na liście Synchronizacji ekranu na Macu. Bez Apple TV, bez instalowania czegokolwiek na Macu, wystarczy ta sama sieć Wi-Fi. Do 4K z dźwiękiem i z małym opóźnieniem, działa też z iPhone'em i iPadem. Bazuje na android-airplay-server autorstwa jqssun i na UxPlay. Na razie testowałem na telewizorze Philips z Google TV i macOS.
+Dlatego zrobiłem Telebeam, odbiornik open source (GPL-3.0) dla Google TV i Android TV. Wystarczy otworzyć aplikację na telewizorze, a telewizor pojawi się na liście Synchronizacji ekranu na Macu. Bez Apple TV, bez instalowania czegokolwiek na Macu, wystarczy ta sama sieć Wi-Fi. Do 4K z dźwiękiem i z małym opóźnieniem, działa też z iPhone'em i iPadem. Bazuje na android-airplay-server autorstwa jqssun i na UxPlay. Na razie testowałem na telewizorze Philips z Google TV i macOS.
 
 Aplikacja jest płatna (abonament miesięczny z 7-dniowym okresem próbnym albo jednorazowo Lifetime), bez reklam i bez zbierania danych.
 
@@ -286,7 +286,7 @@ Adres znalazłem {{address_source}}. Jeśli to nie dla Państwa, proszę dać zn
 
 Pozdrawiam
 Sebastian Škoić
-Twórca Screenbridge i Control My Mac (Słowenia)
+Twórca Telebeam i Control My Mac (Słowenia)
 Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Słowenia
 ```
 
@@ -297,7 +297,7 @@ Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Słowenia
 ## Send plan
 
 **Gates (all must be true before batch 1):**
-1. Screenbridge is live on Google Play and the tracking link opens the listing (check one `play_link` from the CSV).
+1. Telebeam is live on Google Play and the tracking link opens the listing (check one `play_link` from the CSV).
 2. The demo video exists (30–45 s: Control Center → Screen Mirroring → pick the TV → Mac on the TV, with sound) and its link replaces `[DEMO VIDEO LINK]`.
 3. Lifetime promo codes are generated in the Play Console (enough for about 15 replies).
 4. Each `UNVERIFIED` contact in `press-targets.csv` is re-checked in Chrome on send day, or dropped from the batch.
@@ -313,9 +313,9 @@ Sebastian Škoić s.p., Šturmova ulica 7A, Ljubljana, Słowenia
 
 **Follow-up rule:** at most one nudge, 7 days after the first email, as a reply in the same thread, no links, only if there's no reply. Never nudge anyone who replied, covered it, or is iMagazine. Outlets with an open Control My Mac conversation are NOT held back (Sebastian, 28 Oct).
 
-**How it's sent (later, not by this chat):** from Screenbridge's own address (Sebastian, 28 Oct: "each app should have its own email"; domain choice pending: support@screenbridgeapp.com or screenbridge@controlmymac.com), name "Sebastian Škoić", sent through Brevo with the domain authenticated (SPF/DKIM/DMARC), not through Gmail. One plain-text email per outlet through Brevo's SMTP relay, so it's signed by the app's own domain; replies arrive in that address's inbox. Forms (Caschy, Macerkopf, Mac & i, Android Police, XDA, Cord Cutters, Frandroid, iGeneration, Macitynet and others) are filled in by hand in Chrome, each with Sebastian's yes. Log every send, reply and nudge in a Screenbridge send log next to this file (same columns as `_Marketing/07-outreach/send-log.csv`).
+**How it's sent (later, not by this chat):** from Telebeam's own address (Sebastian, 28 Oct: "each app should have its own email"; support@telebeamapp.com, once the domain is bought and set up), name "Sebastian Škoić", sent through Brevo with the domain authenticated (SPF/DKIM/DMARC), not through Gmail. One plain-text email per outlet through Brevo's SMTP relay, so it's signed by the app's own domain; replies arrive in that address's inbox. Forms (Caschy, Macerkopf, Mac & i, Android Police, XDA, Cord Cutters, Frandroid, iGeneration, Macitynet and others) are filled in by hand in Chrome, each with Sebastian's yes. Log every send, reply and nudge in a Telebeam send log next to this file (same columns as `_Marketing/07-outreach/send-log.csv`).
 
 **What Sebastian must approve:**
 - Each batch (recipients, final text, send day) and each form submission.
-- Decided 28 Oct: pitch everyone relevant, including 9to5Mac and iDownloadBlog; Screenbridge gets its own sender address.
+- Decided 28 Oct: pitch everyone relevant, including 9to5Mac and iDownloadBlog; Telebeam gets its own sender address.
 - The demo video link and the number of Lifetime promo codes.

@@ -1,1 +1,1 @@
-Screenbridge：画面ミラーリング
+Telebeam：画面ミラーリング

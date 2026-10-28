@@ -1,7 +1,7 @@
-Zrcadlete obrazovku Macu na televizi, bez další krabičky. Screenbridge udělá z vaší Google TV nebo Android TV přijímač pro Zrcadlení obrazovky, které už máte v Macu.
+Zrcadlete obrazovku Macu na televizi, bez další krabičky. Telebeam udělá z vaší Google TV nebo Android TV přijímač pro Zrcadlení obrazovky, které už máte v Macu.
 
 JAK TO FUNGUJE: 3 KLIKNUTÍ NA MACU
-1. Na televizi otevřete Screenbridge.
+1. Na televizi otevřete Telebeam.
 2. Na Macu klikněte na řádku nabídek na Ovládací centrum a pak na Zrcadlení obrazovky.
 3. Vyberte svou televizi. Obraz z Macu se objeví na velké obrazovce.
 
@@ -19,7 +19,7 @@ NAVRŽENO PRO TELEVIZI
 Velké, jednoduché obrazovky, které ovládáte dálkovým ovladačem. Televizi pojmenujte, jak chcete, ať ji snadno najdete v seznamu Zrcadlení obrazovky na Macu. Když se něco nepovede, televize vám srozumitelně řekne, co dělat: připojit se ke stejné Wi-Fi, vybrat televizi znovu, nebo na Macu nastavit zrcadlení celé obrazovky.
 
 KDE TO FUNGUJE
-Určeno pro Google TV a Android TV, například televize Sony, TCL, Hisense a Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield a boxy s Android TV. Vyzkoušeno na televizi Philips s Google TV; pokud na té vaší nepoběží dobře, napište nám během bezplatné zkušební doby. Zrcadlení obrazovky je součástí macOS a využívá technologii AirPlay od společnosti Apple; Screenbridge je přijímač na straně televize.
+Určeno pro Google TV a Android TV, například televize Sony, TCL, Hisense a Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield a boxy s Android TV. Vyzkoušeno na televizi Philips s Google TV; pokud na té vaší nepoběží dobře, napište nám během bezplatné zkušební doby. Zrcadlení obrazovky je součástí macOS a využívá technologii AirPlay od společnosti Apple; Telebeam je přijímač na straně televize.
 
 SOUKROMÍ
 Vše zůstává ve vaší domácí síti. Žádné reklamy, žádné sledování, žádný účet, nesbíráme žádná data.
@@ -28,12 +28,12 @@ PŘEDPLATNÉ NEBO JEDNORÁZOVÝ NÁKUP
 Začněte 7denní zkušební verzí zdarma u měsíčního předplatného, nebo si jednou kupte doživotní licenci a máte ji navždy. Obě možnosti odemknou vše: bez časových omezení, včetně všech budoucích aktualizací. Platby a zrušení vyřídíte přes svůj účet Google Play.
 
 OTEVŘENÝ ZDROJOVÝ KÓD
-Screenbridge je open source (GPL-3.0). Zdrojový kód: https://github.com/sebstech24/mirror-tv . Vychází z projektů AirPlay Receiver od jqssun a UxPlay; používá FFmpeg (LGPL).
+Telebeam je open source (GPL-3.0). Zdrojový kód: https://github.com/sebstech24/mirror-tv . Vychází z projektů AirPlay Receiver od jqssun a UxPlay; používá FFmpeg (LGPL).
 
 DOBRÉ VĚDĚT
 • Chráněné video (například ze streamovacích služeb, které blokují nahrávání obrazovky) se zobrazí jako černá obrazovka. O tom rozhoduje Mac a streamovací služba, ne televize.
-• Pokud má vaše televize vlastní přijímač pro zrcadlení, Screenbridge si zvolí jiný název, aby se zobrazily oba.
+• Pokud má vaše televize vlastní přijímač pro zrcadlení, Telebeam si zvolí jiný název, aby se zobrazily oba.
 • Podpora: support@controlmymac.com
 • Zásady ochrany osobních údajů: https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge je nezávislá aplikace a společnost Apple Inc. ji nevytvořila, nesponzoruje ani neschválila. Mac, macOS, iPhone, iPad a AirPlay jsou ochranné známky společnosti Apple Inc. registrované v USA a dalších zemích. Google TV a Android TV jsou ochranné známky společnosti Google LLC.
+Telebeam je nezávislá aplikace a společnost Apple Inc. ji nevytvořila, nesponzoruje ani neschválila. Mac, macOS, iPhone, iPad a AirPlay jsou ochranné známky společnosti Apple Inc. registrované v USA a dalších zemích. Google TV a Android TV jsou ochranné známky společnosti Google LLC.

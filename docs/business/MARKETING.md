@@ -1,6 +1,6 @@
-# Launch marketing (Screenbridge, being renamed)
+# Launch marketing (Telebeam, formerly Screenbridge)
 
-Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). Every batch of posts, emails or public replies needs his yes. **Nothing is public yet:** the app isn't live on Play (release waits for receiver fixes), and on 28 Oct Sebastian asked for a **new app name** because "Screenbridge" is already used by a connected-TV ad agency (screenbridge.tv, run by Filmkraft.tv, since Dec 2024). All texts below still say "Screenbridge" and get a find-and-replace once he picks the name. The Play package id `com.sebstech.screenbridge` stays.
+Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). Every batch of posts, emails or public replies needs his yes. **Nothing is public yet:** the app isn't live on Play (release waits for receiver fixes). **Renamed 29 Oct 2026 to Telebeam** (Play title "Telebeam: Screen Mirroring TV", package `com.sebstech.telebeam`), because "Screenbridge" is already used by a connected-TV ad agency (screenbridge.tv); shortlist and checks in `NAME-SHORTLIST.md`. App email: support@telebeamapp.com once Sebastian has bought telebeamapp.com (until then the listing still says support@controlmymac.com).
 
 ## Where everything is
 
@@ -8,9 +8,9 @@ Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). 
 |---|---|---|
 | 1. Play listing for search | **Done, 25 languages** (commits d04c240, 4ede2b4). The Play chat is pasting en-US into the Console before the first submission | `fastlane/metadata/android/<locale>/` |
 | 1. Demo video (Mac → TV in 3 clicks, 22 s) | **Written, not rendered.** The hub render (#1325) was cancelled because the name changes; re-render after the rename | `design/demo-video/` (PC copy: `Y:\Vibe Coding\Screenbridge demo video\`) |
-| 2. Help pages on controlmymac.com | **Built, not deployed** (branch `screenbridge-pages`, commits 5a5d909 + 48e2402, worktree `Fable stuff/controlmymac-site-screenbridge`). 7 EN + 3 DE pages, homepage spot, sitemap, hreflang | see "Deploy" below |
+| 2. Help pages on controlmymac.com | **Built, not deployed** (branch `screenbridge-pages`, commits 5a5d909, 48e2402, 5e8bd81 (renamed to /telebeam), worktree `Fable stuff/controlmymac-site-screenbridge`). 7 EN + 3 DE pages, homepage spot, sitemap, hreflang | see "Deploy" below |
 | 3. In-app review prompt (1.0.1) | **Spec sent to the release-build chat**, which owns the code; to be built after the 1.0.0 submission | message of 28 Oct |
-| 4. Cross-sell | CMM website spot: in the help-pages branch. Newsletter: **written, not in Brevo yet** (needs his yes). Brevo list "Control My Mac Updates" has **7 subscribers**. "More apps" spot inside the CMM iPhone app: not started (CMM's own code; next CMM version) | `docs/business/marketing/newsletter-screenbridge.html` |
+| 4. Cross-sell | CMM website spot: in the help-pages branch. Newsletter: **written, not in Brevo yet** (needs his yes). Brevo list "Control My Mac Updates" has **7 subscribers**. "More apps" spot inside the CMM iPhone app: not started (CMM's own code; next CMM version) | `docs/business/marketing/newsletter-telebeam.html` |
 | 5. Communities | **Drafts done:** 13 thread replies, 2 self-post drafts, 2 modmails, Show HN | `docs/business/marketing/community-drafts.md` |
 | 6. Press | **Drafts done:** 44 targets (34 contacts verified), pitches in en, de, fr, es, it, nl, pl, send plan | `press-targets.csv`, `press-pitches.md` |
 | 7. Tracking | **Done:** one UTM-tagged Play link per channel | `docs/business/marketing/tracking-links.md` |
@@ -27,8 +27,8 @@ Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). 
 
 ## Deploy at launch (in this order)
 
-1. Rename: replace "Screenbridge" in the listing files, help pages, drafts and demo video; re-render the video through the job hub; upload it to YouTube (his yes) and put the link in the Play listing.
-2. Website: merge `screenbridge-pages` into main in `controlmymac-site`, set `PLAY_LIVE = True` in `scripts/build-screenbridge.py`, rebuild, push (a push publishes). Then ping IndexNow with the 12 URLs listed in the branch's commit/deploy note.
+1. Re-render the demo video through the job hub (after the in-app rename, so the TV screen matches); upload it to YouTube (his yes) and put the link in the Play listing.
+2. Website: merge `screenbridge-pages` into main in `controlmymac-site`, set `PLAY_LIVE = True` in `scripts/build-telebeam.py`, rebuild, push (a push publishes). Then ping IndexNow with the 12 URLs listed in the branch's commit/deploy note.
 3. Newsletter: create the Brevo draft (account "Sebastian Škoić s.p.", list 3, sender to match the new address) → test to him → he sends from Brevo.
 4. Communities, press and directories, in batches, each with his yes.
 5. GitHub: make `tv-edition` the default branch (or merge to main), new README intro and repo description, before Show HN.

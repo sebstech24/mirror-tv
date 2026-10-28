@@ -1,1 +1,1 @@
-Screenbridge: TV 화면 미러링
+Telebeam: TV 화면 미러링

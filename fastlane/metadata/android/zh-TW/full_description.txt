@@ -1,7 +1,7 @@
-不需要額外的機上盒，就能把 Mac 畫面投影到電視上。Screenbridge 讓你的 Google TV 或 Android TV 成為 Mac 內建「螢幕鏡像輸出」的接收端。
+不需要額外的機上盒，就能把 Mac 畫面投影到電視上。Telebeam 讓你的 Google TV 或 Android TV 成為 Mac 內建「螢幕鏡像輸出」的接收端。
 
 使用方式：在 Mac 上按 3 下
-1. 在電視上開啟 Screenbridge。
+1. 在電視上開啟 Telebeam。
 2. 在 Mac 上按一下選單列中的「控制中心」，再按一下「螢幕鏡像輸出」。
 3. 選擇你的電視，Mac 的畫面就會出現在大螢幕上。
 
@@ -19,7 +19,7 @@ Mac 不必安裝任何東西，不需要帳號，也不用接線。只要 Mac �
 大而簡單的畫面，用遙控器就能操作。電視名稱可以自由設定，在 Mac 的「螢幕鏡像輸出」清單中一眼就能找到。如果出了問題，電視會用淺顯的文字告訴你該怎麼做：連上同一個 Wi-Fi、重新選擇電視，或將 Mac 設為鏡像輸出整個螢幕。
 
 支援裝置
-為 Google TV 和 Android TV 打造，例如 Sony、TCL、Hisense、Philips 等品牌的電視，以及 Chromecast with Google TV、Google TV Streamer、Nvidia Shield 和 Android TV 機上盒。已在 Philips Google TV 上測試；如果在你的裝置上執行得不順，請在免費試用期間與我們聯絡。Mac 的螢幕鏡像輸出是 macOS 的內建功能，採用 Apple 的 AirPlay 技術；Screenbridge 則是電視端的接收器。
+為 Google TV 和 Android TV 打造，例如 Sony、TCL、Hisense、Philips 等品牌的電視，以及 Chromecast with Google TV、Google TV Streamer、Nvidia Shield 和 Android TV 機上盒。已在 Philips Google TV 上測試；如果在你的裝置上執行得不順，請在免費試用期間與我們聯絡。Mac 的螢幕鏡像輸出是 macOS 的內建功能，採用 Apple 的 AirPlay 技術；Telebeam 則是電視端的接收器。
 
 隱私
 所有內容都只在你家的網路中傳輸。沒有廣告、不追蹤、不需帳號、不蒐集任何資料。
@@ -28,12 +28,12 @@ Mac 不必安裝任何東西，不需要帳號，也不用接線。只要 Mac �
 月訂閱方案可先免費試用 7 天；終身版只要購買一次就能一直使用。兩種方案都能解鎖所有功能：沒有時間限制，並包含未來所有更新。付款和取消都透過你的 Google Play 帳號處理。
 
 開放原始碼
-Screenbridge 是開放原始碼軟體（GPL-3.0），以 jqssun 的 AirPlay Receiver 和 UxPlay 為基礎，並使用 FFmpeg（LGPL）。原始碼：https://github.com/sebstech24/mirror-tv
+Telebeam 是開放原始碼軟體（GPL-3.0），以 jqssun 的 AirPlay Receiver 和 UxPlay 為基礎，並使用 FFmpeg（LGPL）。原始碼：https://github.com/sebstech24/mirror-tv
 
 注意事項
 • 受保護的影片（例如禁止螢幕錄影的串流服務中的影片）會顯示為黑畫面。這是由 Mac 和串流服務決定的，並非電視造成。
-• 如果你的電視本身已有鏡像接收功能，Screenbridge 會改用不同的名稱，讓兩者都出現在清單中。
+• 如果你的電視本身已有鏡像接收功能，Telebeam 會改用不同的名稱，讓兩者都出現在清單中。
 • 客服信箱：support@controlmymac.com
 • 隱私權政策：https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge 是獨立開發的 App，並非由 Apple Inc. 製作、贊助或認可。Mac、macOS、iPhone、iPad 和 AirPlay 是 Apple Inc. 在美國及其他國家/地區註冊的商標。Google TV 和 Android TV 是 Google LLC 的商標。
+Telebeam 是獨立開發的 App，並非由 Apple Inc. 製作、贊助或認可。Mac、macOS、iPhone、iPad 和 AirPlay 是 Apple Inc. 在美國及其他國家/地區註冊的商標。Google TV 和 Android TV 是 Google LLC 的商標。

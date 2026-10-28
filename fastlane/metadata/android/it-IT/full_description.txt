@@ -1,7 +1,7 @@
-Porta lo schermo del Mac sulla TV, senza nessun dispositivo in più. Screenbridge trasforma la tua Google TV o Android TV in un ricevitore per la funzione Duplica schermo già presente nel Mac.
+Porta lo schermo del Mac sulla TV, senza nessun dispositivo in più. Telebeam trasforma la tua Google TV o Android TV in un ricevitore per la funzione Duplica schermo già presente nel Mac.
 
 COME FUNZIONA: 3 CLIC SUL MAC
-1. Apri Screenbridge sulla TV.
+1. Apri Telebeam sulla TV.
 2. Sul Mac, fai clic su “Centro di Controllo” nella barra dei menu, poi su “Duplica schermo”.
 3. Scegli la tua TV. Lo schermo del Mac compare in grande.
 
@@ -19,7 +19,7 @@ PENSATA PER LA TV
 Schermate grandi e semplici, da usare con il telecomando. Dai alla TV il nome che preferisci, così la trovi subito nell'elenco di Duplica schermo sul Mac. Se qualcosa non va, la TV ti spiega in parole semplici cosa fare: stessa rete Wi-Fi, scegliere di nuovo la TV o impostare il Mac per duplicare l'intero schermo.
 
 FUNZIONA SU
-Fatta per Google TV e Android TV, come le TV di Sony, TCL, Hisense e Philips, Chromecast con Google TV, Google TV Streamer, Nvidia Shield e i box Android TV. Testata su una TV Philips con Google TV. Se sulla tua non funziona bene, scrivici durante la prova gratuita. Duplica schermo del Mac fa parte di macOS e usa la tecnologia AirPlay di Apple; Screenbridge è il ricevitore lato TV.
+Fatta per Google TV e Android TV, come le TV di Sony, TCL, Hisense e Philips, Chromecast con Google TV, Google TV Streamer, Nvidia Shield e i box Android TV. Testata su una TV Philips con Google TV. Se sulla tua non funziona bene, scrivici durante la prova gratuita. Duplica schermo del Mac fa parte di macOS e usa la tecnologia AirPlay di Apple; Telebeam è il ricevitore lato TV.
 
 PRIVACY
 Tutto resta nella tua rete di casa. Niente pubblicità, niente tracciamento, nessun account, nessun dato raccolto.
@@ -28,12 +28,12 @@ PIANI
 Inizia con 7 giorni di prova gratuita con il piano mensile, oppure acquista Lifetime una volta sola e tienilo per sempre. Entrambi sbloccano tutto: nessun limite di tempo e tutti gli aggiornamenti futuri. Pagamento e disdetta passano dal tuo account Google Play.
 
 OPEN SOURCE
-Screenbridge è open source (GPL-3.0). Codice sorgente: https://github.com/sebstech24/mirror-tv . Basata su AirPlay Receiver di jqssun e su UxPlay; usa FFmpeg (LGPL).
+Telebeam è open source (GPL-3.0). Codice sorgente: https://github.com/sebstech24/mirror-tv . Basata su AirPlay Receiver di jqssun e su UxPlay; usa FFmpeg (LGPL).
 
 BUONO A SAPERSI
 • I video protetti (per esempio quelli dei servizi di streaming che bloccano la registrazione dello schermo) appaiono neri. Lo decidono il Mac e il servizio di streaming, non la TV.
-• Se la tua TV ha già un proprio ricevitore per duplicare lo schermo, Screenbridge sceglie un nome diverso così compaiono entrambi.
+• Se la tua TV ha già un proprio ricevitore per duplicare lo schermo, Telebeam sceglie un nome diverso così compaiono entrambi.
 • Assistenza: support@controlmymac.com
 • Informativa sulla privacy: https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge è un'app indipendente e non è realizzata, sponsorizzata né approvata da Apple Inc. Mac, macOS, iPhone, iPad e AirPlay sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi. Google TV e Android TV sono marchi di Google LLC.
+Telebeam è un'app indipendente e non è realizzata, sponsorizzata né approvata da Apple Inc. Mac, macOS, iPhone, iPad e AirPlay sono marchi di Apple Inc., registrati negli Stati Uniti e in altri Paesi. Google TV e Android TV sono marchi di Google LLC.

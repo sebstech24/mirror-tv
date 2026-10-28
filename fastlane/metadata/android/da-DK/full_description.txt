@@ -1,7 +1,7 @@
-Spejl din Mac til dit tv, uden en ekstra boks. Screenbridge gør dit Google TV eller Android TV til en modtager for funktionen Dubler skærm, der allerede er indbygget i din Mac.
+Spejl din Mac til dit tv, uden en ekstra boks. Telebeam gør dit Google TV eller Android TV til en modtager for funktionen Dubler skærm, der allerede er indbygget i din Mac.
 
 SÅDAN VIRKER DET: 3 KLIK PÅ MAC'EN
-1. Åbn Screenbridge på dit tv.
+1. Åbn Telebeam på dit tv.
 2. Klik på Kontrolcenter på menulinjen på din Mac, og klik derefter på Dubler skærm.
 3. Vælg dit tv. Billedet fra din Mac vises på den store skærm.
 
@@ -19,7 +19,7 @@ LAVET TIL TV'ET
 Store, enkle skærmbilleder, som du styrer med fjernbetjeningen. Giv dit tv det navn, du vil, så det er nemt at finde på listen under Dubler skærm på Mac'en. Hvis noget går galt, fortæller tv'et dig i et klart sprog, hvad du skal gøre: brug samme Wi-Fi, vælg tv'et igen, eller indstil Mac'en til at spejle hele skærmen.
 
 VIRKER PÅ
-Beregnet til Google TV og Android TV, for eksempel tv fra Sony, TCL, Hisense og Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield og Android TV-bokse. Testet på et Philips Google TV; hvis appen ikke kører godt på dit, så skriv til os i din gratis prøveperiode. Skærmspejling på din Mac er en del af macOS og bruger Apples AirPlay-teknologi; Screenbridge er modtageren på tv-siden.
+Beregnet til Google TV og Android TV, for eksempel tv fra Sony, TCL, Hisense og Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield og Android TV-bokse. Testet på et Philips Google TV; hvis appen ikke kører godt på dit, så skriv til os i din gratis prøveperiode. Skærmspejling på din Mac er en del af macOS og bruger Apples AirPlay-teknologi; Telebeam er modtageren på tv-siden.
 
 PRIVATLIV
 Alt bliver på dit hjemmenetværk. Ingen reklamer, ingen sporing, ingen konto, og vi indsamler ingen data.
@@ -28,12 +28,12 @@ ABONNEMENT ELLER ENGANGSKØB
 Start med 7 dages gratis prøveperiode på månedsabonnementet, eller køb livstidsadgang én gang, så er den din. Begge dele låser op for alt: ingen tidsbegrænsning og alle fremtidige opdateringer. Betaling og opsigelse foregår via din Google Play-konto.
 
 OPEN SOURCE
-Screenbridge er open source (GPL-3.0). Kildekode: https://github.com/sebstech24/mirror-tv . Bygger på AirPlay Receiver af jqssun og UxPlay; bruger FFmpeg (LGPL).
+Telebeam er open source (GPL-3.0). Kildekode: https://github.com/sebstech24/mirror-tv . Bygger på AirPlay Receiver af jqssun og UxPlay; bruger FFmpeg (LGPL).
 
 GODT AT VIDE
 • Beskyttet video (for eksempel fra streamingtjenester, der blokerer skærmoptagelse) vises som en sort skærm. Det er Mac'en og streamingtjenesten, der bestemmer det, ikke tv'et.
-• Hvis dit tv allerede har sin egen modtager til spejling, vælger Screenbridge et andet navn, så begge vises.
+• Hvis dit tv allerede har sin egen modtager til spejling, vælger Telebeam et andet navn, så begge vises.
 • Support: support@controlmymac.com
 • Privatlivspolitik: https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge er en uafhængig app og er ikke lavet, sponsoreret eller godkendt af Apple Inc. Mac, macOS, iPhone, iPad og AirPlay er varemærker tilhørende Apple Inc., registreret i USA og andre lande. Google TV og Android TV er varemærker tilhørende Google LLC.
+Telebeam er en uafhængig app og er ikke lavet, sponsoreret eller godkendt af Apple Inc. Mac, macOS, iPhone, iPad og AirPlay er varemærker tilhørende Apple Inc., registreret i USA og andre lande. Google TV og Android TV er varemærker tilhørende Google LLC.

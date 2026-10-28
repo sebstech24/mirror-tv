@@ -1,7 +1,7 @@
-无需额外的盒子，就能把 Mac 画面投到电视上。Screenbridge 让你的 Google TV 或 Android TV 成为 Mac 自带“屏幕镜像”功能的接收端。
+无需额外的盒子，就能把 Mac 画面投到电视上。Telebeam 让你的 Google TV 或 Android TV 成为 Mac 自带“屏幕镜像”功能的接收端。
 
 使用方法：在 Mac 上点 3 下
-1. 在电视上打开 Screenbridge。
+1. 在电视上打开 Telebeam。
 2. 在 Mac 上点按菜单栏中的“控制中心”，然后点按“屏幕镜像”。
 3. 选择你的电视，Mac 的画面就会出现在大屏幕上。
 
@@ -19,7 +19,7 @@ Mac 上无需安装任何软件，无需账户，也不用接线。只要 Mac �
 大而简洁的界面，用遥控器就能操作。电视名称可以随意设置，方便在 Mac 的“屏幕镜像”列表中找到。如果出现问题，电视会用通俗易懂的话告诉你该怎么做：连接同一个 Wi-Fi、重新选择电视，或将 Mac 设为镜像整个屏幕。
 
 适用设备
-专为 Google TV 和 Android TV 打造，例如 Sony、TCL、Hisense、Philips 等品牌的电视，以及 Chromecast with Google TV、Google TV Streamer、Nvidia Shield 和 Android TV 盒子。已在 Philips Google TV 上测试；如果在你的设备上运行不顺畅，请在免费试用期内联系我们。Mac 的屏幕镜像是 macOS 的内置功能，采用 Apple 的 AirPlay 技术；Screenbridge 是电视端的接收器。
+专为 Google TV 和 Android TV 打造，例如 Sony、TCL、Hisense、Philips 等品牌的电视，以及 Chromecast with Google TV、Google TV Streamer、Nvidia Shield 和 Android TV 盒子。已在 Philips Google TV 上测试；如果在你的设备上运行不顺畅，请在免费试用期内联系我们。Mac 的屏幕镜像是 macOS 的内置功能，采用 Apple 的 AirPlay 技术；Telebeam 是电视端的接收器。
 
 隐私
 所有内容都只在你的家庭网络中传输。无广告、无跟踪、无需账户、不收集任何数据。
@@ -28,12 +28,12 @@ Mac 上无需安装任何软件，无需账户，也不用接线。只要 Mac �
 月度方案可先免费试用 7 天；终身版只需购买一次，即可一直使用。两种方案都解锁全部功能：没有时间限制，包含今后所有更新。付款和取消均通过你的 Google Play 账户进行。
 
 开源
-Screenbridge 是开源软件（GPL-3.0），基于 jqssun 的 AirPlay Receiver 和 UxPlay 开发，并使用 FFmpeg（LGPL）。源代码：https://github.com/sebstech24/mirror-tv
+Telebeam 是开源软件（GPL-3.0），基于 jqssun 的 AirPlay Receiver 和 UxPlay 开发，并使用 FFmpeg（LGPL）。源代码：https://github.com/sebstech24/mirror-tv
 
 须知
 • 受保护的视频（例如禁止录屏的流媒体服务中的视频）会显示为黑屏。这是由 Mac 和流媒体服务决定的，而不是电视。
-• 如果你的电视自带镜像接收功能，Screenbridge 会使用不同的名称，让两者都出现在列表中。
+• 如果你的电视自带镜像接收功能，Telebeam 会使用不同的名称，让两者都出现在列表中。
 • 客服支持：support@controlmymac.com
 • 隐私政策：https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge 是一款独立应用，并非由 Apple Inc. 制作、赞助或认可。Mac、macOS、iPhone、iPad 和 AirPlay 是 Apple Inc. 在美国和其他国家/地区的注册商标。Google TV 和 Android TV 是 Google LLC 的商标。
+Telebeam 是一款独立应用，并非由 Apple Inc. 制作、赞助或认可。Mac、macOS、iPhone、iPad 和 AirPlay 是 Apple Inc. 在美国和其他国家/地区的注册商标。Google TV 和 Android TV 是 Google LLC 的商标。

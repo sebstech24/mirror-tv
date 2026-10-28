@@ -1,7 +1,7 @@
-Zrcalite zaslon Maca na televizor, brez dodatne škatlice. Screenbridge spremeni vaš Google TV ali Android TV v sprejemnik za zrcaljenje zaslona, ki ga ima Mac že vgrajenega (v macOS se imenuje „Screen Mirroring“).
+Zrcalite zaslon Maca na televizor, brez dodatne škatlice. Telebeam spremeni vaš Google TV ali Android TV v sprejemnik za zrcaljenje zaslona, ki ga ima Mac že vgrajenega (v macOS se imenuje „Screen Mirroring“).
 
 KAKO DELUJE: 3 KLIKI NA MACU
-1. Na televizorju odprite Screenbridge.
+1. Na televizorju odprite Telebeam.
 2. Na Macu v menijski vrstici kliknite „Control Center“ (nadzorno središče) in nato „Screen Mirroring“ (zrcaljenje zaslona).
 3. Izberite svoj televizor. Slika z Maca se prikaže na velikem zaslonu.
 
@@ -19,7 +19,7 @@ NAREJENO ZA TELEVIZOR
 Velik, pregleden vmesnik, ki ga upravljate z daljinskim upravljalnikom. Televizor poimenujte po svoje, da ga boste na Macu hitro našli na seznamu „Screen Mirroring“. Če kaj ne gre, vam televizor z enostavnimi besedami pove, kaj storiti: preverite, ali sta napravi v istem omrežju Wi-Fi, znova izberite televizor ali na Macu nastavite zrcaljenje celotnega zaslona.
 
 KJE DELUJE
-Primerno za Google TV in Android TV, na primer za televizorje Sony, TCL, Hisense in Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield in predvajalnike z Android TV. Preizkušeno na televizorju Philips z Google TV; če na vašem ne deluje dobro, nam pišite med brezplačnim preizkusom. Funkcija „Screen Mirroring“ je del sistema macOS in uporablja tehnologijo AirPlay podjetja Apple; Screenbridge je sprejemnik na strani televizorja.
+Primerno za Google TV in Android TV, na primer za televizorje Sony, TCL, Hisense in Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield in predvajalnike z Android TV. Preizkušeno na televizorju Philips z Google TV; če na vašem ne deluje dobro, nam pišite med brezplačnim preizkusom. Funkcija „Screen Mirroring“ je del sistema macOS in uporablja tehnologijo AirPlay podjetja Apple; Telebeam je sprejemnik na strani televizorja.
 
 ZASEBNOST
 Vse ostane v vašem domačem omrežju. Brez oglasov, brez sledenja, brez računa, ne zbiramo nobenih podatkov.
@@ -28,12 +28,12 @@ NAROČNINA ALI ENKRATNI NAKUP
 Začnite s 7-dnevnim brezplačnim preizkusom mesečne naročnine ali pa enkrat kupite trajno licenco, ki vam ostane za vedno. Obe možnosti odkleneta vse: brez časovnih omejitev, z vsemi prihodnjimi posodobitvami. Plačilo in preklic urejate prek svojega računa Google Play.
 
 ODPRTA KODA
-Screenbridge je odprtokodna aplikacija (GPL-3.0). Izvorna koda: https://github.com/sebstech24/mirror-tv . Temelji na projektih AirPlay Receiver (avtor jqssun) in UxPlay; uporablja FFmpeg (LGPL).
+Telebeam je odprtokodna aplikacija (GPL-3.0). Izvorna koda: https://github.com/sebstech24/mirror-tv . Temelji na projektih AirPlay Receiver (avtor jqssun) in UxPlay; uporablja FFmpeg (LGPL).
 
 DOBRO JE VEDETI
 • Zaščiteni videoposnetki (na primer iz pretočnih storitev, ki preprečujejo snemanje zaslona) se prikažejo kot črn zaslon. O tem odločata Mac in pretočna storitev, ne televizor.
-• Če ima vaš televizor že lasten sprejemnik za zrcaljenje, si Screenbridge izbere drugo ime, da se prikažeta oba.
+• Če ima vaš televizor že lasten sprejemnik za zrcaljenje, si Telebeam izbere drugo ime, da se prikažeta oba.
 • Podpora: support@controlmymac.com
 • Politika zasebnosti: https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge je neodvisna aplikacija, ki je ni izdelalo, sponzoriralo ali odobrilo podjetje Apple Inc. Mac, macOS, iPhone, iPad in AirPlay so blagovne znamke podjetja Apple Inc., registrirane v ZDA in drugih državah. Google TV in Android TV sta blagovni znamki podjetja Google LLC.
+Telebeam je neodvisna aplikacija, ki je ni izdelalo, sponzoriralo ali odobrilo podjetje Apple Inc. Mac, macOS, iPhone, iPad in AirPlay so blagovne znamke podjetja Apple Inc., registrirane v ZDA in drugih državah. Google TV in Android TV sta blagovni znamki podjetja Google LLC.

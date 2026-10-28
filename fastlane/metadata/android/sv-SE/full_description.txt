@@ -1,7 +1,7 @@
-Visa din Mac på tv:n utan någon extra box. Screenbridge gör din Google TV eller Android TV till en mottagare för funktionen Skärmdubblering, som redan är inbyggd i din Mac.
+Visa din Mac på tv:n utan någon extra box. Telebeam gör din Google TV eller Android TV till en mottagare för funktionen Skärmdubblering, som redan är inbyggd i din Mac.
 
 SÅ FUNGERAR DET: 3 KLICK PÅ MACEN
-1. Öppna Screenbridge på tv:n.
+1. Öppna Telebeam på tv:n.
 2. Klicka på Kontrollcenter i menyraden på Macen och sedan på Skärmdubblering.
 3. Välj din tv. Macens skärm visas stort på tv:n.
 
@@ -19,7 +19,7 @@ GJORD FÖR TV:N
 Stora, enkla skärmar som du styr med fjärrkontrollen. Ge tv:n vilket namn du vill, så hittar du den lätt i listan för Skärmdubblering på Macen. Om något går fel berättar tv:n med enkla ord vad du ska göra: samma wifi, välja tv:n igen eller ställa in Macen så att den speglar hela skärmen.
 
 FUNGERAR PÅ
-Avsedd för Google TV och Android TV, till exempel tv-apparater från Sony, TCL, Hisense och Philips, Chromecast med Google TV, Google TV Streamer, Nvidia Shield och Android TV-boxar. Testad på en Philips Google TV. Om den inte fungerar bra på din, skriv till oss under din gratis provperiod. Skärmdubblering på Macen är en del av macOS och använder Apples AirPlay-teknik; Screenbridge är mottagaren på tv-sidan.
+Avsedd för Google TV och Android TV, till exempel tv-apparater från Sony, TCL, Hisense och Philips, Chromecast med Google TV, Google TV Streamer, Nvidia Shield och Android TV-boxar. Testad på en Philips Google TV. Om den inte fungerar bra på din, skriv till oss under din gratis provperiod. Skärmdubblering på Macen är en del av macOS och använder Apples AirPlay-teknik; Telebeam är mottagaren på tv-sidan.
 
 PRIVAT
 Allt stannar i ditt hemnätverk. Inga annonser, ingen spårning, inget konto, inga uppgifter samlas in.
@@ -28,12 +28,12 @@ ALTERNATIV
 Börja med 7 dagars gratis provperiod på månadsabonnemanget, eller köp Lifetime en gång och behåll det. Båda låser upp allt: ingen tidsgräns och alla framtida uppdateringar. Betalning och uppsägning sköts via ditt Google Play-konto.
 
 ÖPPEN KÄLLKOD
-Screenbridge är öppen källkod (GPL-3.0). Källkod: https://github.com/sebstech24/mirror-tv . Bygger på AirPlay Receiver av jqssun och UxPlay; använder FFmpeg (LGPL).
+Telebeam är öppen källkod (GPL-3.0). Källkod: https://github.com/sebstech24/mirror-tv . Bygger på AirPlay Receiver av jqssun och UxPlay; använder FFmpeg (LGPL).
 
 BRA ATT VETA
 • Skyddad video (till exempel från streamingtjänster som blockerar skärminspelning) visas som en svart bild. Det bestäms av Macen och streamingtjänsten, inte av tv:n.
-• Om tv:n redan har en egen mottagare för skärmdubblering väljer Screenbridge ett annat namn så att båda syns.
+• Om tv:n redan har en egen mottagare för skärmdubblering väljer Telebeam ett annat namn så att båda syns.
 • Support: support@controlmymac.com
 • Integritetspolicy: https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge är en fristående app och är inte gjord, sponsrad eller godkänd av Apple Inc. Mac, macOS, iPhone, iPad och AirPlay är varumärken som tillhör Apple Inc. och är registrerade i USA och andra länder. Google TV och Android TV är varumärken som tillhör Google LLC.
+Telebeam är en fristående app och är inte gjord, sponsrad eller godkänd av Apple Inc. Mac, macOS, iPhone, iPad och AirPlay är varumärken som tillhör Apple Inc. och är registrerade i USA och andra länder. Google TV och Android TV är varumärken som tillhör Google LLC.

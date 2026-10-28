@@ -1,7 +1,7 @@
-Zet je Mac op je tv, zonder extra kastje. Screenbridge maakt van je Google TV of Android TV een ontvanger voor de functie Synchrone weergave die al in je Mac zit.
+Zet je Mac op je tv, zonder extra kastje. Telebeam maakt van je Google TV of Android TV een ontvanger voor de functie Synchrone weergave die al in je Mac zit.
 
 ZO WERKT HET: 3 KLIKKEN OP DE MAC
-1. Open Screenbridge op je tv.
+1. Open Telebeam op je tv.
 2. Klik op je Mac in de menubalk op 'Bedieningspaneel' en daarna op 'Synchrone weergave'.
 3. Kies je tv. Het scherm van je Mac verschijnt groot op de tv.
 
@@ -19,7 +19,7 @@ GEMAAKT VOOR DE TV
 Grote, eenvoudige schermen die je met de afstandsbediening bedient. Geef je tv de naam die je wilt, zodat je hem makkelijk terugvindt in de lijst van Synchrone weergave op de Mac. Gaat er iets mis, dan vertelt de tv in gewone woorden wat je moet doen: hetzelfde wifinetwerk, de tv opnieuw kiezen of de Mac het hele scherm laten spiegelen.
 
 WERKT OP
-Geschikt voor Google TV en Android TV, zoals tv's van Sony, TCL, Hisense en Philips, Chromecast met Google TV, Google TV Streamer, Nvidia Shield en Android TV-boxen. Getest op een Philips Google TV. Werkt het niet goed op die van jou? Mail ons tijdens je gratis proefperiode. Synchrone weergave op je Mac is onderdeel van macOS en gebruikt de AirPlay-technologie van Apple; Screenbridge is de ontvanger aan de kant van de tv.
+Geschikt voor Google TV en Android TV, zoals tv's van Sony, TCL, Hisense en Philips, Chromecast met Google TV, Google TV Streamer, Nvidia Shield en Android TV-boxen. Getest op een Philips Google TV. Werkt het niet goed op die van jou? Mail ons tijdens je gratis proefperiode. Synchrone weergave op je Mac is onderdeel van macOS en gebruikt de AirPlay-technologie van Apple; Telebeam is de ontvanger aan de kant van de tv.
 
 PRIVÉ
 Alles blijft op je thuisnetwerk. Geen advertenties, geen tracking, geen account, er worden geen gegevens verzameld.
@@ -28,12 +28,12 @@ PAKKETTEN
 Begin met 7 dagen gratis proberen met het maandabonnement, of koop Lifetime één keer en houd het voorgoed. Allebei ontgrendelen ze alles: geen tijdslimiet en alle toekomstige updates. Betalen en opzeggen gaat via je Google Play-account.
 
 OPEN SOURCE
-Screenbridge is open source (GPL-3.0). Broncode: https://github.com/sebstech24/mirror-tv . Gebaseerd op AirPlay Receiver van jqssun en UxPlay; gebruikt FFmpeg (LGPL).
+Telebeam is open source (GPL-3.0). Broncode: https://github.com/sebstech24/mirror-tv . Gebaseerd op AirPlay Receiver van jqssun en UxPlay; gebruikt FFmpeg (LGPL).
 
 GOED OM TE WETEN
 • Beveiligde video (bijvoorbeeld van streamingdiensten die schermopnames blokkeren) verschijnt als zwart beeld. Dat bepalen de Mac en de streamingdienst, niet de tv.
-• Heeft je tv al een eigen ontvanger voor schermspiegeling, dan kiest Screenbridge een andere naam zodat ze allebei verschijnen.
+• Heeft je tv al een eigen ontvanger voor schermspiegeling, dan kiest Telebeam een andere naam zodat ze allebei verschijnen.
 • Support: support@controlmymac.com
 • Privacybeleid: https://sebstech24.github.io/mirror-tv/privacy.html
 
-Screenbridge is een onafhankelijke app en is niet gemaakt, gesponsord of goedgekeurd door Apple Inc. Mac, macOS, iPhone, iPad en AirPlay zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen. Google TV en Android TV zijn handelsmerken van Google LLC.
+Telebeam is een onafhankelijke app en is niet gemaakt, gesponsord of goedgekeurd door Apple Inc. Mac, macOS, iPhone, iPad en AirPlay zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen. Google TV en Android TV zijn handelsmerken van Google LLC.
