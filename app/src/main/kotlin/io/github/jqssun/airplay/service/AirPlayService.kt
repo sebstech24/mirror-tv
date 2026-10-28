@@ -456,7 +456,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
 
         // apply settings from preferences
         // hard cap: TV panels here run 60 Hz to Android; more than 60 only adds uneven frames
-        val maxFps = prefs[Prefs.MAX_FPS].coerceAtMost(MAX_FPS_CAP)
+        val maxFps = _fpsCap()
         val overscanned = prefs[Prefs.OVERSCANNED]
         val audioLatencyMs = prefs[Prefs.AUDIO_LATENCY_MS]
         val (reqW, reqH) = _displaySize(clamp = false)
@@ -576,7 +576,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         if (nativeHandle == 0L || _serverState.value != ServerState.RUNNING) return
         if (!_orientationFollowsDevice()) return
         val (w, h) = _displaySize()
-        NativeBridge.nativeSetDisplaySize(nativeHandle, w, h, prefs[Prefs.MAX_FPS].coerceAtMost(MAX_FPS_CAP))
+        NativeBridge.nativeSetDisplaySize(nativeHandle, w, h, _fpsCap())
         log("Advertising ${w}x${h} from next session")
     }
 
@@ -626,6 +626,9 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             }
         }
     }
+
+    // 60 unless the user picked the 120 fps beta (only a Mac with a 120 Hz ProMotion display sends that)
+    private fun _fpsCap() = prefs[Prefs.MAX_FPS].let { if (it >= BETA_FPS) BETA_FPS else it.coerceAtMost(MAX_FPS_CAP) }
 
     private fun _restartServer() {
         if (_serverState.value != ServerState.RUNNING) return
@@ -1435,6 +1438,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         const val ACTION_PREV = "io.github.jqssun.airplay.PREV"
         const val ACTION_START_SERVER = "io.github.jqssun.airplay.START_SERVER"
         const val MAX_FPS_CAP = 60
+        const val BETA_FPS = 120
         private const val AUTO_MAX_LONG = 1920
         private const val AUTO_MAX_SHORT = 1080
         private const val GLITCH_POLL_MS = 2_000L

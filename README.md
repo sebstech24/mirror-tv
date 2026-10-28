@@ -1,3 +1,18 @@
+# Telebeam: Screen Mirroring TV
+
+Telebeam turns an Android TV or Google TV into a receiver for the Mac's built-in Screen Mirroring (and iPhone/iPad
+Screen Mirroring). The Google Play app (`com.sebstech.telebeam`) is built from the `tv-edition` branch of this
+repository. It is free software under the GNU General Public License v3.0, a fork of
+[jqssun/android-airplay-server](https://github.com/jqssun/android-airplay-server), which is based on
+[UxPlay](https://github.com/FDH2/UxPlay). It uses FFmpeg's ALAC and AAC decoders (LGPL v2.1).
+
+Telebeam is independent and is not made, sponsored or approved by Apple Inc. Mac, macOS, iPhone, iPad and AirPlay
+are trademarks of Apple Inc.
+
+The original project's README follows.
+
+---
+
 # AirPlay Receiver for Android
 
 [![Stars](https://img.shields.io/github/stars/jqssun/android-airplay-server)](https://github.com/jqssun/android-airplay-server)

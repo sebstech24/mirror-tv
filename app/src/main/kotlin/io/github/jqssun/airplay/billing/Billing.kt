@@ -37,7 +37,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 /**
- * Screenbridge Unlimited: the Monthly subscription or the Lifetime one-time product, either one unlocks.
+ * Telebeam Unlimited: the Monthly subscription or the Lifetime one-time product, either one unlocks.
  * A plain "does this Google account own it" check, no obfuscation or DRM (the code is GPL; anyone may
  * build it without the limit).
  */

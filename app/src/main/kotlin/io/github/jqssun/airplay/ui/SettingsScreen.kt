@@ -139,6 +139,14 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             onValueChange = { viewModel.set(Prefs.RESOLUTION, it) }
         )
 
+        SettingSegmented(
+            title = stringResource(R.string.setting_frame_rate),
+            summary = stringResource(R.string.setting_frame_rate_desc),
+            value = if (maxFps >= 120) 120 else 60,
+            options = listOf(60 to "60", 120 to stringResource(R.string.chip_120_beta)),
+            onValueChange = { viewModel.set(Prefs.MAX_FPS, it) }
+        )
+
         val lowestLatency by viewModel.pref(Prefs.LOWEST_LATENCY).collectAsState()
         SettingSwitch(
             title = stringResource(R.string.setting_lowest_latency),
@@ -579,7 +587,7 @@ private fun SettingResolution(
         Prefs.AUTO to stringResource(R.string.chip_auto),
         "1280x720" to "720p",
         "1920x1080" to "1080p",
-        "3840x2160" to "4K"
+        "3840x2160" to stringResource(R.string.chip_4k_beta)
     )
     val devicePresets = listOf(
         Prefs.PORTRAIT to stringResource(R.string.chip_device_portrait),

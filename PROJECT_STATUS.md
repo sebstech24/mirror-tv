@@ -1,5 +1,12 @@
 # Mirror TV — project status
 
+## NAME DECIDED: Telebeam (Sebastian, 29 Oct 2026; "Screenbridge" clashed with an existing TV company)
+- App name on the TV "Telebeam"; Play title "Telebeam: Screen Mirroring TV"; package `com.sebstech.telebeam`
+  (was com.sebstech.screenbridge; changed before any Play upload). Products: `telebeam_monthly` (base plan
+  `monthly`, 7-day trial) and `telebeam_lifetime`. Repo stays sebstech24/mirror-tv. New TV banner (text swapped,
+  same art): design/banner.png, design/play-tv-banner-1280x720.png, res/drawable-xhdpi/banner.png.
+- Older "Screenbridge" mentions below are history.
+
 Paid, Mac-focused Android TV / Google TV screen-mirroring receiver (Mac's built-in Screen Mirroring → TV).
 Fork of jqssun/android-airplay-server (GPL-3.0, based on UxPlay). Public repo: github.com/sebstech24/mirror-tv,
 work branch `tv-edition` (main = untouched upstream). Owner: Sebastian.

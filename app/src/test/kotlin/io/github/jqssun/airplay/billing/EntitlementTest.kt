@@ -14,7 +14,7 @@ class EntitlementTest {
         // no free tier: nothing bought means the paywall and no receiver
         assertFalse(Entitlement.unlocks(emptySet()))
         // the retired one-time product and unknown ids don't unlock
-        assertFalse(Entitlement.unlocks(setOf("screenbridge_unlimited")))
+        assertFalse(Entitlement.unlocks(setOf("screenbridge_unlimited", "screenbridge_monthly", "screenbridge_lifetime")))
         assertFalse(Entitlement.unlocked(playOwned = Entitlement.unlocks(emptySet()), cached = false, debugFake = false))
     }
 

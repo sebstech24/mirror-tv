@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Screenbridge</string>
+    <string name="app_name">Telebeam</string>
 
     <!-- Notification -->
     <string name="notification_channel">Screen mirroring receiver</string>
@@ -116,7 +116,7 @@
     <string name="setting_alac_desc">Offer ALAC in the mDNS record; used for music streaming</string>
     <string name="setting_aac">Advertise AAC codec</string>
     <string name="setting_aac_desc">Offer AAC-ELD/AAC-LC in the mDNS record; used for screen mirroring audio</string>
-    <string name="setting_launch_on_connect">Show Screenbridge when a Mac connects</string>
+    <string name="setting_launch_on_connect">Show Telebeam when a Mac connects</string>
     <string name="setting_launch_on_connect_desc">Brings the picture to the front. If the TV blocks that, a notice appears instead.</string>
     <string name="setting_discovery">Discoverable over</string>
     <string name="setting_discovery_all_desc">Advertise on all usable interfaces. Uses NsdManager.</string>
@@ -159,6 +159,10 @@
     <string name="setting_operating_rate">MediaFormat.KEY_OPERATING_RATE</string>
     <string name="setting_operating_rate_desc">Request maximum operating rate from decoder</string>
     <string name="chip_auto">Auto</string>
+    <string name="chip_4k_beta">4K · Beta</string>
+    <string name="chip_120_beta">120 · Beta</string>
+    <string name="setting_frame_rate">Frame rate</string>
+    <string name="setting_frame_rate_desc">60 fps works with every Mac. 120 (beta) needs a Mac with a 120 Hz ProMotion display.</string>
     <string name="chip_on">On</string>
     <string name="chip_off">Off</string>
     <string name="setting_low_latency">Low latency</string>
@@ -241,11 +245,11 @@
     <string name="setting_tv_name">TV name</string>
     <string name="setting_tv_name_desc">The name your Mac shows in Screen Mirroring. Leave empty to use “%1$s”.</string>
     <string name="setting_picture_quality">Picture quality</string>
-    <string name="setting_picture_quality_desc">Auto uses 1080p, the smoothest from a Mac. 4K is sharper but may stutter.</string>
+    <string name="setting_picture_quality_desc">Auto uses 1080p, the smoothest from a Mac. 4K (beta) is sharper but may stutter.</string>
     <string name="setting_pin_simple">Ask for a PIN</string>
     <string name="setting_pin_simple_desc">Show a 4-digit code on the TV before a new device can mirror</string>
     <string name="setting_lowest_latency">Lowest latency</string>
-    <string name="setting_lowest_latency_desc">A little less delay for typing and mouse, but the picture may stutter slightly. Off is smoothest.</string>
+    <string name="setting_lowest_latency_desc">Less delay for typing and mouse. The picture may stutter slightly on some TVs; turn it off for the steadiest picture.</string>
     <string name="setting_about">About</string>
     <string name="setting_about_desc">Version, licenses and source code</string>
     <string name="setting_advanced">Advanced</string>
@@ -262,7 +266,7 @@
     <string name="btn_cancel">Cancel</string>
     <string name="btn_reset">Reset</string>
     <string name="setting_reset_all">Reset all settings</string>
-    <string name="setting_reset_all_desc">Back to how Screenbridge came. Your purchase stays.</string>
+    <string name="setting_reset_all_desc">Back to how Telebeam came. Your purchase stays.</string>
     <string name="dialog_reset_title">Reset all settings?</string>
     <string name="dialog_reset_text">Every setting, including the TV name, goes back to its default. Your purchase is kept, and a Mac that is mirroring stays connected.</string>
     <string name="setting_reset_done">Settings reset.</string>
@@ -280,7 +284,7 @@
     <string name="about_privacy_button">Privacy policy</string>
     <string name="about_trademark">Not affiliated with Apple. AirPlay and Mac are trademarks of Apple Inc.</string>
     <string name="about_license_title">GNU General Public License v3.0</string>
-    <!-- Screenbridge Unlimited (Monthly or Lifetime; no free tier); prices always come from Google Play -->
+    <!-- Telebeam Unlimited (Monthly or Lifetime; no free tier); prices always come from Google Play -->
     <string name="paywall_title">Mirror your Mac on this TV</string>
     <string name="paywall_subtitle">Pick a plan to start. Your Mac finds this TV as soon as it\'s unlocked.</string>
     <string name="paywall_benefit_quality">Your Mac\'s screen on the big screen, up to 4K</string>
@@ -310,15 +314,15 @@
     <string name="plan_lifetime_detail">Unlocks instantly. Yours forever, no subscription.</string>
     <string name="plan_one_time">one time</string>
     <string name="plan_price_from_play">Price shown by Google Play</string>
-    <string name="unlimited_title">Screenbridge Unlimited</string>
-    <string name="unlimited_owned_title">Screenbridge Unlimited is on</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited is on</string>
     <string name="unlimited_owned_monthly">Monthly plan. Select to manage or cancel in Google Play.</string>
-    <string name="unlimited_owned_generic">Thank you for supporting Screenbridge!</string>
-    <string name="unlimited_owned_lifetime">Lifetime. Thank you for supporting Screenbridge!</string>
-    <string name="unlimited_thanks">Screenbridge Unlimited is on. Thank you!</string>
-    <string name="unlimited_pending_desc">Payment pending. Screenbridge unlocks as soon as Google Play confirms it.</string>
+    <string name="unlimited_owned_generic">Thank you for supporting Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Lifetime. Thank you for supporting Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited is on. Thank you!</string>
+    <string name="unlimited_pending_desc">Payment pending. Telebeam unlocks as soon as Google Play confirms it.</string>
     <string name="unlimited_restore">Restore purchases</string>
-    <string name="unlimited_restored">Screenbridge Unlimited is unlocked.</string>
+    <string name="unlimited_restored">Telebeam Unlimited is unlocked.</string>
     <string name="unlimited_not_found">No purchase found on this Google account.</string>
     <string name="unlimited_play_unavailable">Google Play isn\'t reachable right now. Try again in a moment.</string>
     <string name="unlimited_manage_in_play">Open Google Play → Payments &amp; subscriptions to manage your plan.</string>

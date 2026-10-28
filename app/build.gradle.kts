@@ -30,10 +30,10 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.sebstech.screenbridge"
+        applicationId = "com.sebstech.telebeam"
         minSdk = 23
         targetSdk = 37
-        versionCode = 102
+        versionCode = 103
         versionName = "1.0.0"
 
         externalNativeBuild {

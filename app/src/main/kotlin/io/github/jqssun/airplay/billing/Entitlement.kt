@@ -6,9 +6,9 @@ package io.github.jqssun.airplay.billing
  */
 object Entitlement {
     // Play Console product ids: Monthly $4.99 with a 7-day trial, Lifetime $49.99
-    const val MONTHLY_ID = "screenbridge_monthly"
+    const val MONTHLY_ID = "telebeam_monthly"
     const val MONTHLY_BASE_PLAN = "monthly"
-    const val LIFETIME_ID = "screenbridge_lifetime"
+    const val LIFETIME_ID = "telebeam_lifetime"
 
     /** Either an active Monthly subscription or Lifetime unlocks; nothing else does. */
     fun unlocks(boughtProductIds: Collection<String>) = MONTHLY_ID in boughtProductIds || LIFETIME_ID in boughtProductIds
