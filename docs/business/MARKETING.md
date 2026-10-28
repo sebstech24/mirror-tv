@@ -6,7 +6,7 @@ Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). 
 
 | Step | State | Files |
 |---|---|---|
-| 1. Play listing for search | **Done, 25 languages** (commits d04c240, 4ede2b4). The Play chat is pasting en-US into the Console before the first submission | `fastlane/metadata/android/<locale>/` |
+| 1. Play listing for search | **Done, 25 languages** (fastlane files). New Play app com.sebstech.telebeam (app id 4972999395680958705): en-US is in the Console draft; the other 24 languages and the video go in after the first submission, when the Play chat hands the listing over | `fastlane/metadata/android/<locale>/` |
 | 1. Demo video (Mac → TV in 3 clicks, 22 s) | **Renamed to Telebeam, render queued** (hub job #1331 on the MAIN PC; https://laptop-nas-2.tail9dc957.ts.net/#job=1331). Re-render once more if the in-app TV screen or icon changes | `design/demo-video/` (PC copy: `Y:\Vibe Coding\Telebeam demo video\`, output `renders\telebeam-demo-3-clicks.mp4`) |
 | 2. Help pages on controlmymac.com | **Built, not deployed** (branch `screenbridge-pages`, commits 5a5d909, 48e2402, 5e8bd81 (renamed to /telebeam), worktree `Fable stuff/controlmymac-site-screenbridge`). 7 EN + 3 DE pages, homepage spot, sitemap, hreflang | see "Deploy" below |
 | 3. In-app review prompt (1.0.1) | **Spec sent to the release-build chat**, which owns the code; to be built after the 1.0.0 submission | message of 28 Oct |
