@@ -7,6 +7,11 @@
   same art): design/banner.png, design/play-tv-banner-1280x720.png, res/drawable-xhdpi/banner.png.
 - Release file: dist/telebeam-1.0.0-104.aab (versionCode 104). minSdk raised 23 -> 24 (Android 7) because Play's
   automatic protection (anti-piracy for paid apps) requires it; drops only ~2016 Android 6 TVs.
+- 1.0.1 PREPARED (29 Oct, not uploaded): dist/telebeam-1.0.1-105.aab (versionCode 105). Adds "Redeem code" on the
+  paywall and in Settings (opens Play's redeem page / Play Store app with the code; purchases re-checked on return, so a
+  redeemed Lifetime or free subscription period unlocks by itself) and Google's In-App Review card (after a session the
+  Mac stopped, 10+ min of picture, never the first session, once per version, never on the paywall or while mirroring;
+  billing/ReviewPolicy.kt + ui/ReviewPrompt.kt). 15 unit tests. R8 needs -dontwarn for a gms annotation (proguard-rules).
 - Older "Screenbridge" mentions below are history.
 
 Paid, Mac-focused Android TV / Google TV screen-mirroring receiver (Mac's built-in Screen Mirroring → TV).

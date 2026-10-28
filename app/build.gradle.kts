@@ -33,8 +33,8 @@ android {
         applicationId = "com.sebstech.telebeam"
         minSdk = 24
         targetSdk = 37
-        versionCode = 104
-        versionName = "1.0.0"
+        versionCode = 105
+        versionName = "1.0.1"
 
         externalNativeBuild {
             cmake {
@@ -126,6 +126,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines)
     implementation(libs.oboe)
     implementation(libs.billing.ktx)
+    implementation(libs.play.review.ktx)
     testImplementation(libs.junit)
 
     implementation(platform(libs.compose.bom))

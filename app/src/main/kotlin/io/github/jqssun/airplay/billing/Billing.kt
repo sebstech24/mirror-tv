@@ -163,12 +163,14 @@ object Billing : PurchasesUpdatedListener {
     private suspend fun _handle(purchases: List<Purchase>, authoritative: Boolean) {
         val mine = purchases.filter { p -> p.products.any { it == MONTHLY_ID || it == LIFETIME_ID } }
         val bought = mine.filter { it.purchaseState == Purchase.PurchaseState.PURCHASED }
-        val ids = bought.flatMap { it.products }.toSet()
-        _pending.value = mine.any { it.purchaseState == Purchase.PurchaseState.PENDING }
+        val state = Entitlement.evaluate(mine.map {
+            Entitlement.Owned(it.products, it.purchaseState == Purchase.PurchaseState.PURCHASED, it.purchaseState == Purchase.PurchaseState.PENDING)
+        })
+        _pending.value = state.pending
         if (authoritative || bought.isNotEmpty()) {
             val wasUnlocked = _unlocked.value
-            _playOwned = Entitlement.unlocks(ids)
-            _plan.value = if (LIFETIME_ID in ids) LIFETIME_ID else if (MONTHLY_ID in ids) MONTHLY_ID else null
+            _playOwned = state.unlocked
+            _plan.value = state.plan
             _prefs.edit { putBoolean(CACHE_KEY, _playOwned!!) }
             _recompute()
             if (!authoritative && !wasUnlocked && _unlocked.value) Toast.makeText(_app, R.string.unlimited_thanks, Toast.LENGTH_LONG).show()
@@ -206,6 +208,19 @@ object Billing : PurchasesUpdatedListener {
             null -> R.string.unlimited_play_unavailable
         }
         Toast.makeText(activity, msg, Toast.LENGTH_LONG).show()
+    }
+
+    /**
+     * Opens Google Play's redeem page (with [code] filled in when given). The app re-checks purchases when it comes
+     * back to the front (MainActivity.onStart), so a redeemed Lifetime or free subscription period unlocks by itself.
+     * Many TVs have no browser: then the Play Store app, else a note to redeem on a phone or computer.
+     */
+    fun redeem(activity: Activity, code: String?) {
+        val uri = Uri.parse(Entitlement.redeemUri(code))
+        val intents = listOf(Intent(Intent.ACTION_VIEW, uri).setPackage("com.android.vending"), Intent(Intent.ACTION_VIEW, uri))
+        if (intents.none { runCatching { activity.startActivity(it) }.isSuccess }) {
+            Toast.makeText(activity, R.string.redeem_elsewhere, Toast.LENGTH_LONG).show()
+        }
     }
 
     /** Google Play's page for cancelling or changing the Monthly subscription. */

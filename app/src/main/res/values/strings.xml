@@ -322,6 +322,13 @@
     <string name="unlimited_thanks">Telebeam Unlimited is on. Thank you!</string>
     <string name="unlimited_pending_desc">Payment pending. Telebeam unlocks as soon as Google Play confirms it.</string>
     <string name="unlimited_restore">Restore purchases</string>
+    <string name="redeem_code">Redeem code</string>
+    <string name="redeem_title">Redeem a Google Play code</string>
+    <string name="redeem_text">Type your code (optional) and Google Play opens to redeem it. Telebeam unlocks by itself when you come back.</string>
+    <string name="redeem_field">Code</string>
+    <string name="redeem_open_play">Open Google Play</string>
+    <string name="redeem_settings_desc">Have a promo or gift code? Redeem it with Google Play.</string>
+    <string name="redeem_elsewhere">Redeem the code at play.google.com/redeem on a phone or computer, then come back here.</string>
     <string name="unlimited_restored">Telebeam Unlimited is unlocked.</string>
     <string name="unlimited_not_found">No purchase found on this Google account.</string>
     <string name="unlimited_play_unavailable">Google Play isn\'t reachable right now. Try again in a moment.</string>

@@ -34,6 +34,8 @@ import io.github.jqssun.airplay.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.collectLatest
+import io.github.jqssun.airplay.ui.ReviewPrompt
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -117,6 +119,19 @@ class MainActivity : ComponentActivity() {
                 Billing.unlocked.collect { if (it) _autoStart() }
             }
         }
+        // review card: only on a visible, unlocked screen with nothing mirroring (never on the paywall)
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.RESUMED) {
+                combine(ReviewPrompt.due, Billing.unlocked, viewModel.connectionCount) { due, unlocked, conns ->
+                    due && unlocked && conns == 0
+                }.collectLatest { ready ->
+                    // collectLatest: a Mac connecting during the pause cancels it
+                    if (!ready || isInPip.value) return@collectLatest
+                    delay(REVIEW_DELAY_MS)
+                    ReviewPrompt.show(this@MainActivity)
+                }
+            }
+        }
 
         setContent {
             AirPlayTheme {
@@ -140,6 +155,7 @@ class MainActivity : ComponentActivity() {
                         pending = pending,
                         onBuy = { Billing.buy(this, it) },
                         onRestore = { Billing.restore(this) },
+                        onRedeem = { Billing.redeem(this, it) },
                         onClose = ::finish,
                     )
                 }
@@ -243,3 +259,6 @@ class MainActivity : ComponentActivity() {
         super.onDestroy()
     }
 }
+
+// a short pause after the "Mirroring stopped" screen appears, so the card doesn't jump in at once
+private const val REVIEW_DELAY_MS = 2_000L

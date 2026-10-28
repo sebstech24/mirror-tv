@@ -122,6 +122,17 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             modifier = Modifier.thenIf(planFocusable) { focusRequester(firstFocus) }
         )
 
+        var redeemOpen by remember { mutableStateOf(false) }
+        if (redeemOpen) RedeemDialog(
+            onRedeem = { code -> redeemOpen = false; activity?.let { Billing.redeem(it, code) } },
+            onDismiss = { redeemOpen = false }
+        )
+        SettingRow(
+            title = stringResource(R.string.redeem_code),
+            description = stringResource(R.string.redeem_settings_desc),
+            onClick = { redeemOpen = true }
+        )
+
         // everyday settings; everything technical lives under Advanced
         SectionHeader(stringResource(R.string.section_mirroring))
         SettingTextField(

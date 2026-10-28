@@ -51,6 +51,7 @@ import io.github.jqssun.airplay.audio.DmapParser
 import io.github.jqssun.airplay.audio.TrackInfo
 import io.github.jqssun.airplay.audio.VolumeBroadcast
 import io.github.jqssun.airplay.billing.Billing
+import io.github.jqssun.airplay.ui.ReviewPrompt
 import io.github.jqssun.airplay.bridge.LogListener
 import io.github.jqssun.airplay.bridge.NativeBridge
 import io.github.jqssun.airplay.bridge.RaopCallbackHandler
@@ -135,6 +136,8 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
     private var _lastAddrs: Set<InetAddress> = emptySet()
     private val _readvertiseTask = Runnable { _readvertise() }
     private val _latencyFallback = MutableStateFlow(false)
+    // when the current mirroring session first showed a picture (for the review prompt's 10-minute rule)
+    @Volatile private var _mirrorStartedAt = 0L
     // a setting that needs a receiver restart changed while a sender was connected
     @Volatile private var _restartPending = false
     private val _cancelLaunchAlert = Runnable { _clearLaunchAlert() }
@@ -805,6 +808,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             _videoAspect.value = w / h
             _videoResolution.value = "${w.toInt()}x${h.toInt()}"
             videoRenderer.setResolution(w.toInt(), h.toInt())
+            if (_mirrorStartedAt == 0L) _mirrorStartedAt = SystemClock.elapsedRealtime()
             _mirroringActive.value = true
         }
         log("Video size: ${srcW}x${srcH} -> ${w}x${h}")
@@ -919,6 +923,9 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             if (_restartPending) _mainHandler.post { _restartPending = false; _restartServer() }
             _lastDisconnect.value = _pendingDisconnect ?: DisconnectReason.SENDER_STOPPED
             _pendingDisconnect = null
+            val mirroredMs = if (_mirrorStartedAt > 0) SystemClock.elapsedRealtime() - _mirrorStartedAt else 0L
+            _mirrorStartedAt = 0L
+            ReviewPrompt.onSessionEnded(this, mirroredMs, _lastDisconnect.value == DisconnectReason.SENDER_STOPPED)
             _clientName.value = null
             _clientModel.value = null
             _mainHandler.post(_cancelLaunchAlert)

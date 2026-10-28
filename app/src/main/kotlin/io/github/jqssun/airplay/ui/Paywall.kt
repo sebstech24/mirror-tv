@@ -17,7 +17,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -50,8 +52,11 @@ fun PaywallScreen(
     pending: Boolean,
     onBuy: (productId: String) -> Unit,
     onRestore: () -> Unit,
+    onRedeem: (code: String?) -> Unit,
     onClose: () -> Unit,
 ) {
+    var redeemOpen by remember { mutableStateOf(false) }
+    if (redeemOpen) RedeemDialog(onRedeem = { redeemOpen = false; onRedeem(it) }, onDismiss = { redeemOpen = false })
     Dialog(onDismissRequest = onClose, properties = DialogProperties(usePlatformDefaultWidth = false, decorFitsSystemWindows = false)) {
         val c = MaterialTheme.colorScheme
         val firstFocus = remember { FocusRequester() }
@@ -129,6 +134,9 @@ fun PaywallScreen(
                         TextButton(onClick = onRestore, modifier = Modifier.dpadFocus(CircleShape)) {
                             Text(stringResource(R.string.unlimited_restore), style = MaterialTheme.typography.titleSmall)
                         }
+                        TextButton(onClick = { redeemOpen = true }, modifier = Modifier.dpadFocus(CircleShape)) {
+                            Text(stringResource(R.string.redeem_code), style = MaterialTheme.typography.titleSmall)
+                        }
                     }
                     Spacer(Modifier.height(12.dp))
                     Text(
@@ -148,6 +156,39 @@ fun PaywallScreen(
             }
         } }
     }
+}
+
+/** Type a Google Play promo/gift code (optional) and open Play's redeem page; Cancel has focus first. */
+@Composable
+fun RedeemDialog(onRedeem: (String?) -> Unit, onDismiss: () -> Unit) {
+    var code by remember { mutableStateOf("") }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.redeem_title)) },
+        text = {
+            Column {
+                Text(stringResource(R.string.redeem_text))
+                Spacer(Modifier.height(12.dp))
+                OutlinedTextField(
+                    value = code, onValueChange = { code = it.take(40) }, singleLine = true,
+                    label = { Text(stringResource(R.string.redeem_field)) },
+                    modifier = Modifier.fillMaxWidth(),
+                )
+            }
+        },
+        dismissButton = {
+            val cancelFocus = remember { FocusRequester() }
+            LaunchedEffect(Unit) { cancelFocus.requestFocusUntilLanded() }
+            TextButton(onClick = onDismiss, modifier = Modifier.focusRequester(cancelFocus).dpadFocus(CircleShape)) {
+                Text(stringResource(R.string.btn_cancel))
+            }
+        },
+        confirmButton = {
+            TextButton(onClick = { onRedeem(code.ifBlank { null }) }, modifier = Modifier.dpadFocus(CircleShape)) {
+                Text(stringResource(R.string.redeem_open_play))
+            }
+        },
+    )
 }
 
 @Composable

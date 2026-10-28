@@ -13,6 +13,7 @@ coroutines = "1.9.0"
 media3 = "1.11.1"
 oboe = "1.9.3"
 billing = "9.1.0"
+play-review = "2.0.2"
 junit = "4.13.2"
 
 [libraries]
@@ -46,6 +47,7 @@ kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutin
 oboe = { group = "com.google.oboe", name = "oboe", version.ref = "oboe" }
 
 billing-ktx = { group = "com.android.billingclient", name = "billing-ktx", version.ref = "billing" }
+play-review-ktx = { group = "com.google.android.play", name = "review-ktx", version.ref = "play-review" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 
 [plugins]
