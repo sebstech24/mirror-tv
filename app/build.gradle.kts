@@ -31,9 +31,9 @@ android {
 
     defaultConfig {
         applicationId = "com.sebstech.telebeam"
-        minSdk = 23
+        minSdk = 24
         targetSdk = 37
-        versionCode = 103
+        versionCode = 104
         versionName = "1.0.0"
 
         externalNativeBuild {

@@ -5,6 +5,8 @@
   (was com.sebstech.screenbridge; changed before any Play upload). Products: `telebeam_monthly` (base plan
   `monthly`, 7-day trial) and `telebeam_lifetime`. Repo stays sebstech24/mirror-tv. New TV banner (text swapped,
   same art): design/banner.png, design/play-tv-banner-1280x720.png, res/drawable-xhdpi/banner.png.
+- Release file: dist/telebeam-1.0.0-104.aab (versionCode 104). minSdk raised 23 -> 24 (Android 7) because Play's
+  automatic protection (anti-piracy for paid apps) requires it; drops only ~2016 Android 6 TVs.
 - Older "Screenbridge" mentions below are history.
 
 Paid, Mac-focused Android TV / Google TV screen-mirroring receiver (Mac's built-in Screen Mirroring → TV).
