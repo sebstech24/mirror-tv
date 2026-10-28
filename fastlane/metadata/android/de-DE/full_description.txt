@@ -33,7 +33,7 @@ Telebeam ist Open Source (GPL-3.0). Quellcode: https://github.com/sebstech24/mir
 GUT ZU WISSEN
 • Geschützte Videos (zum Beispiel von Streamingdiensten, die Bildschirmaufnahmen sperren) erscheinen als schwarzes Bild. Das entscheiden der Mac und der Streamingdienst, nicht der Fernseher.
 • Hat dein Fernseher schon einen eigenen Empfänger für Bildschirmspiegelung, wählt Telebeam einen anderen Namen, damit beide angezeigt werden.
-• Support: support@controlmymac.com
+• Support: telebeam@controlmymac.com
 • Datenschutzerklärung: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam ist eine unabhängige App und wird nicht von Apple Inc. hergestellt, gesponsert oder genehmigt. Mac, macOS, iPhone, iPad und AirPlay sind Marken der Apple Inc., die in den USA und weiteren Ländern eingetragen sind. Google TV und Android TV sind Marken der Google LLC.

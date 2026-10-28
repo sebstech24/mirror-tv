@@ -33,7 +33,7 @@ Telebeam açık kaynaklıdır (GPL-3.0). jqssun'un AirPlay Receiver projesi ile 
 BİLMENİZDE FAYDA VAR
 • Korumalı videolar (örneğin ekran kaydını engelleyen yayın hizmetlerinden gelenler) siyah ekran olarak görünür. Bunu televizyon değil, Mac ve yayın hizmeti belirler.
 • Televizyonunuzun kendi yansıtma alıcısı varsa Telebeam farklı bir ad seçer, böylece ikisi de listede görünür.
-• Destek: support@controlmymac.com
+• Destek: telebeam@controlmymac.com
 • Gizlilik politikası: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam bağımsız bir uygulamadır; Apple Inc. tarafından yapılmamış, desteklenmemiş veya onaylanmamıştır. Mac, macOS, iPhone, iPad ve AirPlay, Apple Inc.'in ABD'de ve diğer ülkelerde tescilli ticari markalarıdır. Google TV ve Android TV, Google LLC'nin ticari markalarıdır.

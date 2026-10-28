@@ -33,7 +33,7 @@ Telebeam은 오픈소스(GPL-3.0)입니다. jqssun의 AirPlay Receiver와 UxPlay
 알아 두세요
 • 보호된 동영상(예: 화면 녹화를 막는 스트리밍 서비스의 동영상)은 검은 화면으로 표시됩니다. 이는 TV가 아니라 Mac과 스트리밍 서비스가 정하는 부분입니다.
 • TV에 자체 미러링 수신 기능이 있으면 Telebeam가 다른 이름을 사용하므로 둘 다 목록에 나타납니다.
-• 지원: support@controlmymac.com
+• 지원: telebeam@controlmymac.com
 • 개인정보처리방침: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam은 독립 앱이며 Apple Inc.가 제작, 후원 또는 승인하지 않았습니다. Mac, macOS, iPhone, iPad 및 AirPlay는 미국 및 기타 국가에서 등록된 Apple Inc.의 상표입니다. Google TV 및 Android TV는 Google LLC의 상표입니다.

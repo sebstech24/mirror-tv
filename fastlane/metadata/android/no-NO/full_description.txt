@@ -33,7 +33,7 @@ Telebeam er åpen kildekode (GPL-3.0). Kildekode: https://github.com/sebstech24/
 GODT Å VITE
 • Beskyttet video (for eksempel fra strømmetjenester som blokkerer skjermopptak) vises som svart skjerm. Det er Macen og strømmetjenesten som bestemmer dette, ikke TV-en.
 • Hvis TV-en allerede har sin egen speilingsmottaker, velger Telebeam et annet navn, slik at begge vises.
-• Kundestøtte: support@controlmymac.com
+• Kundestøtte: telebeam@controlmymac.com
 • Personvernerklæring: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam er en uavhengig app og er ikke laget, sponset eller godkjent av Apple Inc. Mac, macOS, iPhone, iPad og AirPlay er varemerker som tilhører Apple Inc., registrert i USA og andre land. Google TV og Android TV er varemerker som tilhører Google LLC.

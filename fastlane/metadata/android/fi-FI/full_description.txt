@@ -33,7 +33,7 @@ Telebeam on avointa lähdekoodia (GPL-3.0). Lähdekoodi: https://github.com/sebs
 HYVÄ TIETÄÄ
 • Suojattu video (esimerkiksi suoratoistopalveluista, jotka estävät näytön tallennuksen) näkyy mustana ruutuna. Tästä päättävät Mac ja suoratoistopalvelu, eivät televisio.
 • Jos televisiossasi on jo oma peilausvastaanotin, Telebeam valitsee toisen nimen, jotta molemmat näkyvät.
-• Tuki: support@controlmymac.com
+• Tuki: telebeam@controlmymac.com
 • Tietosuojakäytäntö: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam on itsenäinen sovellus, eikä se ole Apple Inc:n tekemä, sponsoroima tai hyväksymä. Mac, macOS, iPhone, iPad ja AirPlay ovat Apple Inc:n tavaramerkkejä, jotka on rekisteröity Yhdysvalloissa ja muissa maissa. Google TV ja Android TV ovat Google LLC:n tavaramerkkejä.

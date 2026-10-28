@@ -33,7 +33,7 @@ Telebeam es de código abierto (GPL-3.0). Código fuente: https://github.com/seb
 CONVIENE SABER
 • Los vídeos protegidos (por ejemplo, de servicios de streaming que bloquean la grabación de pantalla) se ven en negro. Eso lo deciden el Mac y el servicio de streaming, no la tele.
 • Si tu tele ya tiene su propio receptor para duplicar la pantalla, Telebeam usa otro nombre para que aparezcan los dos.
-• Soporte: support@controlmymac.com
+• Soporte: telebeam@controlmymac.com
 • Política de privacidad: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam es una app independiente y no ha sido creada, patrocinada ni aprobada por Apple Inc. Mac, macOS, iPhone, iPad y AirPlay son marcas comerciales de Apple Inc., registradas en EE. UU. y en otros países. Google TV y Android TV son marcas comerciales de Google LLC.

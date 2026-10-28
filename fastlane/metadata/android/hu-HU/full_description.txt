@@ -33,7 +33,7 @@ A Telebeam nyílt forráskódú (GPL-3.0). Forráskód: https://github.com/sebst
 JÓ TUDNI
 • A védett videók (például a képernyőfelvételt tiltó streamingszolgáltatásokból) fekete képként jelennek meg. Erről a Mac és a streamingszolgáltatás dönt, nem a tévé.
 • Ha a tévédnek már van saját tükrözési vevője, a Telebeam más nevet választ, hogy mindkettő megjelenjen.
-• Támogatás: support@controlmymac.com
+• Támogatás: telebeam@controlmymac.com
 • Adatvédelmi irányelvek: https://sebstech24.github.io/mirror-tv/privacy.html
 
 A Telebeam független alkalmazás, amelyet nem az Apple Inc. készített, szponzorált vagy hagyott jóvá. A Mac, a macOS, az iPhone, az iPad és az AirPlay az Apple Inc. védjegyei, az Egyesült Államokban és más országokban bejegyezve. A Google TV és az Android TV a Google LLC védjegyei.

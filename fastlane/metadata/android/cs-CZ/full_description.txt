@@ -33,7 +33,7 @@ Telebeam je open source (GPL-3.0). Zdrojový kód: https://github.com/sebstech24
 DOBRÉ VĚDĚT
 • Chráněné video (například ze streamovacích služeb, které blokují nahrávání obrazovky) se zobrazí jako černá obrazovka. O tom rozhoduje Mac a streamovací služba, ne televize.
 • Pokud má vaše televize vlastní přijímač pro zrcadlení, Telebeam si zvolí jiný název, aby se zobrazily oba.
-• Podpora: support@controlmymac.com
+• Podpora: telebeam@controlmymac.com
 • Zásady ochrany osobních údajů: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam je nezávislá aplikace a společnost Apple Inc. ji nevytvořila, nesponzoruje ani neschválila. Mac, macOS, iPhone, iPad a AirPlay jsou ochranné známky společnosti Apple Inc. registrované v USA a dalších zemích. Google TV a Android TV jsou ochranné známky společnosti Google LLC.

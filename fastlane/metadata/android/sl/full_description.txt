@@ -33,7 +33,7 @@ Telebeam je odprtokodna aplikacija (GPL-3.0). Izvorna koda: https://github.com/s
 DOBRO JE VEDETI
 • Zaščiteni videoposnetki (na primer iz pretočnih storitev, ki preprečujejo snemanje zaslona) se prikažejo kot črn zaslon. O tem odločata Mac in pretočna storitev, ne televizor.
 • Če ima vaš televizor že lasten sprejemnik za zrcaljenje, si Telebeam izbere drugo ime, da se prikažeta oba.
-• Podpora: support@controlmymac.com
+• Podpora: telebeam@controlmymac.com
 • Politika zasebnosti: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam je neodvisna aplikacija, ki je ni izdelalo, sponzoriralo ali odobrilo podjetje Apple Inc. Mac, macOS, iPhone, iPad in AirPlay so blagovne znamke podjetja Apple Inc., registrirane v ZDA in drugih državah. Google TV in Android TV sta blagovni znamki podjetja Google LLC.

@@ -33,7 +33,7 @@ Telebeam 是開放原始碼軟體（GPL-3.0），以 jqssun 的 AirPlay Receiver
 注意事項
 • 受保護的影片（例如禁止螢幕錄影的串流服務中的影片）會顯示為黑畫面。這是由 Mac 和串流服務決定的，並非電視造成。
 • 如果你的電視本身已有鏡像接收功能，Telebeam 會改用不同的名稱，讓兩者都出現在清單中。
-• 客服信箱：support@controlmymac.com
+• 客服信箱：telebeam@controlmymac.com
 • 隱私權政策：https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam 是獨立開發的 App，並非由 Apple Inc. 製作、贊助或認可。Mac、macOS、iPhone、iPad 和 AirPlay 是 Apple Inc. 在美國及其他國家/地區註冊的商標。Google TV 和 Android TV 是 Google LLC 的商標。

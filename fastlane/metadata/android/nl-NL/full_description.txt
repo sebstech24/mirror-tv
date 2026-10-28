@@ -33,7 +33,7 @@ Telebeam is open source (GPL-3.0). Broncode: https://github.com/sebstech24/mirro
 GOED OM TE WETEN
 • Beveiligde video (bijvoorbeeld van streamingdiensten die schermopnames blokkeren) verschijnt als zwart beeld. Dat bepalen de Mac en de streamingdienst, niet de tv.
 • Heeft je tv al een eigen ontvanger voor schermspiegeling, dan kiest Telebeam een andere naam zodat ze allebei verschijnen.
-• Support: support@controlmymac.com
+• Support: telebeam@controlmymac.com
 • Privacybeleid: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam is een onafhankelijke app en is niet gemaakt, gesponsord of goedgekeurd door Apple Inc. Mac, macOS, iPhone, iPad en AirPlay zijn handelsmerken van Apple Inc., gedeponeerd in de VS en andere landen. Google TV en Android TV zijn handelsmerken van Google LLC.

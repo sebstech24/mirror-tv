@@ -33,7 +33,7 @@ Telebeam är öppen källkod (GPL-3.0). Källkod: https://github.com/sebstech24/
 BRA ATT VETA
 • Skyddad video (till exempel från streamingtjänster som blockerar skärminspelning) visas som en svart bild. Det bestäms av Macen och streamingtjänsten, inte av tv:n.
 • Om tv:n redan har en egen mottagare för skärmdubblering väljer Telebeam ett annat namn så att båda syns.
-• Support: support@controlmymac.com
+• Support: telebeam@controlmymac.com
 • Integritetspolicy: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam är en fristående app och är inte gjord, sponsrad eller godkänd av Apple Inc. Mac, macOS, iPhone, iPad och AirPlay är varumärken som tillhör Apple Inc. och är registrerade i USA och andra länder. Google TV och Android TV är varumärken som tillhör Google LLC.

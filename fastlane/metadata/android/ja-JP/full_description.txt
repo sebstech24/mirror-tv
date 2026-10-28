@@ -33,7 +33,7 @@ Telebeamはオープンソース（GPL-3.0）です。jqssun氏のAirPlay Receiv
 ご注意
 • 保護された動画（画面収録をブロックしている動画配信サービスなど）は黒い画面になります。これはMacと配信サービス側が決めていることで、テレビ側では変えられません。
 • テレビにもともとミラーリングの受信機能がある場合、Telebeamは別の名前を使うため、両方が一覧に表示されます。
-• サポート：support@controlmymac.com
+• サポート：telebeam@controlmymac.com
 • プライバシーポリシー：https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeamは独立したアプリであり、Apple Inc.が製造、後援、または承認したものではありません。Mac、macOS、iPhone、iPad、AirPlayは、米国およびその他の国で登録されたApple Inc.の商標です。Google TVおよびAndroid TVはGoogle LLCの商標です。

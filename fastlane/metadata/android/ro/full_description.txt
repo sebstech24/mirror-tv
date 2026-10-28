@@ -33,7 +33,7 @@ Telebeam este open source (GPL-3.0). Cod sursă: https://github.com/sebstech24/m
 BINE DE ȘTIUT
 • Videoclipurile protejate (de exemplu, de la serviciile de streaming care blochează înregistrarea ecranului) apar ca ecran negru. Asta decid Mac-ul și serviciul de streaming, nu televizorul.
 • Dacă televizorul tău are deja propriul receptor de oglindire, Telebeam își alege alt nume, ca să apară amândouă.
-• Asistență: support@controlmymac.com
+• Asistență: telebeam@controlmymac.com
 • Politica de confidențialitate: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam este o aplicație independentă și nu este creată, sponsorizată sau aprobată de Apple Inc. Mac, macOS, iPhone, iPad și AirPlay sunt mărci comerciale ale Apple Inc., înregistrate în SUA și în alte țări. Google TV și Android TV sunt mărci comerciale ale Google LLC.
