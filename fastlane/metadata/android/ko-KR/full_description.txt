@@ -1,0 +1,39 @@
+별도 장치 없이 Mac 화면을 TV에 띄우세요. Screenbridge는 Google TV나 Android TV를 Mac에 기본으로 들어 있는 화면 미러링의 수신기로 바꿔 줍니다.
+
+사용 방법: Mac에서 3번 클릭
+1. TV에서 Screenbridge를 엽니다.
+2. Mac의 메뉴 막대에서 제어 센터를 클릭한 다음 화면 미러링을 클릭합니다.
+3. TV를 선택하면 Mac 화면이 큰 화면에 나타납니다.
+
+Mac에 따로 설치할 것도, 계정도, 케이블도 필요 없습니다. Mac과 TV가 같은 Wi-Fi에 연결되어 있기만 하면 됩니다. TV에도 이 단계가 표시되니 가족 누구나 쉽게 사용할 수 있습니다.
+
+할 수 있는 일
+• MacBook이나 iMac 화면을 TV로 미러링하거나, TV를 큰 보조 디스플레이로 사용
+• 회의실이나 교실에서 슬라이드와 스프레드시트로 발표
+• 내 동영상, 사진, 웹 페이지를 소리와 함께 큰 화면으로 감상
+• 최대 4K의 선명한 화질과 짧은 지연 시간으로 TV에서도 마우스가 자연스럽게 움직임
+• Mac의 음량 키로 TV 음량 조절
+• iPhone과 iPad의 화면 미러링도 지원
+
+TV에 맞춘 디자인
+리모컨으로 조작하는 크고 단순한 화면. TV 이름을 원하는 대로 정할 수 있어 Mac의 화면 미러링 목록에서 쉽게 찾을 수 있습니다. 문제가 생기면 무엇을 하면 되는지 TV가 쉬운 말로 알려 줍니다. 같은 Wi-Fi에 연결하기, TV를 다시 선택하기, Mac에서 전체 화면을 미러링하도록 설정하기 등입니다.
+
+지원 기기
+Google TV와 Android TV용으로 만들었습니다. Sony, TCL, Hisense, Philips 등의 TV, Chromecast with Google TV, Google TV Streamer, Nvidia Shield, Android TV 박스에서 사용할 수 있습니다. Philips Google TV에서 테스트했으며, 사용 중인 기기에서 잘 작동하지 않으면 무료 체험 기간에 알려 주세요. Mac의 화면 미러링은 macOS에 포함된 기능으로 Apple의 AirPlay 기술을 사용하며, Screenbridge는 TV 쪽의 수신기입니다.
+
+개인정보 보호
+모든 것이 집 안 네트워크 안에서만 이루어집니다. 광고, 추적, 계정, 데이터 수집이 모두 없습니다.
+
+요금제
+월간 요금제는 7일 무료 체험으로 시작할 수 있고, 평생 이용권은 한 번만 구매하면 계속 사용할 수 있습니다. 두 요금제 모두 모든 기능을 이용할 수 있으며 기간 제한이 없고 향후 업데이트도 모두 포함됩니다. 결제와 해지는 Google Play 계정에서 관리합니다.
+
+오픈소스
+Screenbridge는 오픈소스(GPL-3.0)입니다. jqssun의 AirPlay Receiver와 UxPlay를 기반으로 하며 FFmpeg(LGPL)를 사용합니다. 소스 코드: https://github.com/sebstech24/mirror-tv
+
+알아 두세요
+• 보호된 동영상(예: 화면 녹화를 막는 스트리밍 서비스의 동영상)은 검은 화면으로 표시됩니다. 이는 TV가 아니라 Mac과 스트리밍 서비스가 정하는 부분입니다.
+• TV에 자체 미러링 수신 기능이 있으면 Screenbridge가 다른 이름을 사용하므로 둘 다 목록에 나타납니다.
+• 지원: support@controlmymac.com
+• 개인정보처리방침: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Screenbridge는 독립 앱이며 Apple Inc.가 제작, 후원 또는 승인하지 않았습니다. Mac, macOS, iPhone, iPad 및 AirPlay는 미국 및 기타 국가에서 등록된 Apple Inc.의 상표입니다. Google TV 및 Android TV는 Google LLC의 상표입니다.

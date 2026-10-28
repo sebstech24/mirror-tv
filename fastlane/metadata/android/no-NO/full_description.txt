@@ -1,0 +1,39 @@
+Speil Macen din til TV-en, uten ekstra boks. Screenbridge gjør Google TV eller Android TV om til en mottaker for Skjermdeling, som allerede er innebygd i Macen din.
+
+SLIK FUNGERER DET: 3 KLIKK PÅ MACEN
+1. Åpne Screenbridge på TV-en.
+2. På Macen klikker du på Kontrollsenter i menylinjen og deretter på Skjermdeling.
+3. Velg TV-en din. Bildet fra Macen vises på storskjermen.
+
+Ingenting å installere på Macen, ingen konto, ingen kabler. Macen og TV-en må bare være på samme Wi-Fi. TV-en viser stegene selv, så alle i huset får det til.
+
+DETTE KAN DU GJØRE
+• Speil skjermen på MacBook eller iMac til TV-en, eller bruk TV-en som en stor ekstraskjerm
+• Vis presentasjoner og regneark på møterommet eller i klasserommet
+• Se egne videoer, bilder og nettsider på storskjerm, med lyd
+• Skarpt bilde i opptil 4K og lav forsinkelse, så musen føles naturlig på TV-en
+• Volumtastene på Macen kan styre volumet på TV-en
+• Fungerer også med skjermspeiling fra iPhone og iPad
+
+LAGET FOR TV-EN
+Store, enkle skjermbilder du styrer med fjernkontrollen. Gi TV-en det navnet du vil, så den er lett å finne i Skjermdeling-listen på Macen. Hvis noe går galt, forteller TV-en deg med enkle ord hva du skal gjøre: bruk samme Wi-Fi, velg TV-en på nytt, eller still inn Macen til å speile hele skjermen.
+
+FUNGERER PÅ
+Beregnet på Google TV og Android TV, for eksempel TV-er fra Sony, TCL, Hisense og Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield og Android TV-bokser. Testet på en Philips Google TV; hvis appen ikke fungerer godt på din, kan du skrive til oss i den gratis prøveperioden. Skjermspeiling på Macen er en del av macOS og bruker Apples AirPlay-teknologi; Screenbridge er mottakeren på TV-siden.
+
+PERSONVERN
+Alt blir værende på hjemmenettverket ditt. Ingen reklame, ingen sporing, ingen konto, ingen datainnsamling.
+
+ABONNEMENT ELLER ENGANGSKJØP
+Start med 7 dagers gratis prøveperiode på månedsabonnementet, eller kjøp livstidstilgang én gang og behold den. Begge deler låser opp alt: ingen tidsbegrensning og alle fremtidige oppdateringer. Betaling og oppsigelse skjer via Google Play-kontoen din.
+
+ÅPEN KILDEKODE
+Screenbridge er åpen kildekode (GPL-3.0). Kildekode: https://github.com/sebstech24/mirror-tv . Bygger på AirPlay Receiver av jqssun og UxPlay; bruker FFmpeg (LGPL).
+
+GODT Å VITE
+• Beskyttet video (for eksempel fra strømmetjenester som blokkerer skjermopptak) vises som svart skjerm. Det er Macen og strømmetjenesten som bestemmer dette, ikke TV-en.
+• Hvis TV-en allerede har sin egen speilingsmottaker, velger Screenbridge et annet navn, slik at begge vises.
+• Kundestøtte: support@controlmymac.com
+• Personvernerklæring: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Screenbridge er en uavhengig app og er ikke laget, sponset eller godkjent av Apple Inc. Mac, macOS, iPhone, iPad og AirPlay er varemerker som tilhører Apple Inc., registrert i USA og andre land. Google TV og Android TV er varemerker som tilhører Google LLC.

@@ -19,7 +19,7 @@ MADE FOR THE TV
 Big, simple screens you control with the remote. Name your TV the way you like, so it's easy to find in the Mac's Screen Mirroring list. If something goes wrong, the TV tells you in plain words what to do: same Wi-Fi, choose the TV again, or set the Mac to mirror the whole screen.
 
 WORKS ON
-Google TV and Android TV: TVs from Sony, TCL, Hisense, Philips and others, Chromecast with Google TV, Google TV Streamer, Nvidia Shield and Android TV boxes. Your Mac's Screen Mirroring is part of macOS and uses Apple's AirPlay technology; Screenbridge is the receiver on the TV side.
+Made for Google TV and Android TV, such as TVs from Sony, TCL, Hisense and Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield and Android TV boxes. Tested on a Philips Google TV; if it doesn't run well on yours, write to us during your free trial. Your Mac's Screen Mirroring is part of macOS and uses Apple's AirPlay technology; Screenbridge is the receiver on the TV side.
 
 PRIVATE
 Everything stays on your home network. No ads, no tracking, no account, no data collected.

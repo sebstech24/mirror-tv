@@ -1,0 +1,39 @@
+Peilaa Macin näyttö televisioon ilman erillistä laitetta. Screenbridge tekee Google TV:stä tai Android TV:stä vastaanottimen Macin sisäänrakennetulle Näytön peilaus -toiminnolle.
+
+NÄIN SE TOIMII: 3 KLIKKAUSTA MACILLA
+1. Avaa Screenbridge televisiossa.
+2. Klikkaa Macin valikkorivillä Ohjauskeskus ja sitten Näytön peilaus.
+3. Valitse televisiosi. Macin kuva tulee näkyviin isolle ruudulle.
+
+Macille ei tarvitse asentaa mitään, eikä tiliä tai johtoja tarvita. Macin ja television pitää vain olla samassa Wi-Fi-verkossa. Televisio näyttää ohjeet itse, joten kuka tahansa kotona osaa käyttää sitä.
+
+MITÄ VOIT TEHDÄ
+• Peilaa MacBookin tai iMacin näyttö televisioon tai käytä televisiota isona lisänäyttönä
+• Esitä dioja ja taulukoita neuvotteluhuoneessa tai luokassa
+• Katso omia videoita, kuvia ja verkkosivuja isolta ruudulta äänen kera
+• Terävä kuva jopa 4K-tarkkuudella ja pieni viive, joten hiiri tuntuu televisiossa luontevalta
+• Macin äänenvoimakkuusnäppäimillä voi säätää myös television äänenvoimakkuutta
+• Toimii myös iPhonen ja iPadin Näytön peilauksen kanssa
+
+TEHTY TELEVISIOON
+Isot, selkeät näkymät, joita ohjaat kaukosäätimellä. Nimeä televisio haluamallasi tavalla, niin löydät sen helposti Macin Näytön peilaus -luettelosta. Jos jokin menee pieleen, televisio kertoo selkeästi, mitä tehdä: käytä samaa Wi-Fi-verkkoa, valitse televisio uudelleen tai aseta Mac peilaamaan koko näyttö.
+
+MISSÄ SE TOIMII
+Suunniteltu Google TV:lle ja Android TV:lle, esimerkiksi: Sony-, TCL-, Hisense- ja Philips-televisiot, Chromecast with Google TV, Google TV Streamer, Nvidia Shield ja Android TV -boksit. Testattu Philipsin Google TV -televisiossa; jos sovellus ei toimi hyvin omassasi, kirjoita meille ilmaisen kokeilujaksosi aikana. Macin Näytön peilaus on osa macOS:ää ja käyttää Applen AirPlay-tekniikkaa; Screenbridge on vastaanotin television päässä.
+
+YKSITYISYYS
+Kaikki pysyy kotiverkossasi. Ei mainoksia, ei seurantaa, ei tiliä, ei tiedonkeruuta.
+
+TILAUS TAI KERTAOSTO
+Aloita kuukausitilauksen 7 päivän ilmaisella kokeilujaksolla tai osta elinikäinen käyttöoikeus kerralla, niin se on sinun. Molemmat avaavat kaiken: ei aikarajoja, ja kaikki tulevat päivitykset sisältyvät. Maksu ja peruutus hoidetaan Google Play -tilisi kautta.
+
+AVOIN LÄHDEKOODI
+Screenbridge on avointa lähdekoodia (GPL-3.0). Lähdekoodi: https://github.com/sebstech24/mirror-tv . Pohjana ovat jqssunin AirPlay Receiver ja UxPlay; käyttää FFmpeg-kirjastoa (LGPL).
+
+HYVÄ TIETÄÄ
+• Suojattu video (esimerkiksi suoratoistopalveluista, jotka estävät näytön tallennuksen) näkyy mustana ruutuna. Tästä päättävät Mac ja suoratoistopalvelu, eivät televisio.
+• Jos televisiossasi on jo oma peilausvastaanotin, Screenbridge valitsee toisen nimen, jotta molemmat näkyvät.
+• Tuki: support@controlmymac.com
+• Tietosuojakäytäntö: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Screenbridge on itsenäinen sovellus, eikä se ole Apple Inc:n tekemä, sponsoroima tai hyväksymä. Mac, macOS, iPhone, iPad ja AirPlay ovat Apple Inc:n tavaramerkkejä, jotka on rekisteröity Yhdysvalloissa ja muissa maissa. Google TV ja Android TV ovat Google LLC:n tavaramerkkejä.

@@ -1,0 +1,39 @@
+Wyświetl ekran Maca na telewizorze, bez dodatkowego urządzenia. Screenbridge zamienia Google TV lub Android TV w odbiornik dla funkcji Klonowanie ekranu, którą Twój Mac ma już wbudowaną.
+
+JAK TO DZIAŁA: 3 KLIKNIĘCIA NA MACU
+1. Otwórz Screenbridge na telewizorze.
+2. Na Macu kliknij „Centrum sterowania” na pasku menu, a potem „Klonowanie ekranu”.
+3. Wybierz swój telewizor. Ekran Maca pojawi się na dużym ekranie.
+
+Nic nie instalujesz na Macu, nie potrzebujesz konta ani kabli. Mac i telewizor muszą tylko być w tej samej sieci Wi-Fi. Telewizor sam pokazuje te kroki, więc poradzi sobie każdy domownik.
+
+CO MOŻESZ ROBIĆ
+• Klonować ekran MacBooka lub iMaca na telewizor albo używać telewizora jako dużego drugiego ekranu
+• Pokazywać prezentacje i arkusze kalkulacyjne w sali konferencyjnej lub w klasie
+• Oglądać własne filmy, zdjęcia i strony internetowe na dużym ekranie, z dźwiękiem
+• Ostry obraz do 4K i małe opóźnienie, więc mysz na telewizorze reaguje naturalnie
+• Klawisze głośności Maca mogą sterować głośnością telewizora
+• Działa też z klonowaniem ekranu na iPhonie i iPadzie
+
+STWORZONE DLA TELEWIZORA
+Duże, proste ekrany obsługiwane pilotem. Nadaj telewizorowi dowolną nazwę, żeby łatwo znaleźć go na liście „Klonowanie ekranu” na Macu. Gdy coś pójdzie nie tak, telewizor prostymi słowami podpowie, co zrobić: ta sama sieć Wi-Fi, ponowny wybór telewizora albo ustawienie Maca tak, by klonował cały ekran.
+
+DZIAŁA NA
+Przeznaczone dla Google TV i Android TV, np. telewizorów Sony, TCL, Hisense i Philips, Chromecasta z Google TV, Google TV Streamer, Nvidia Shield oraz przystawek z Android TV. Testowane na telewizorze Philips z Google TV. Jeśli na Twoim nie działa dobrze, napisz do nas w trakcie bezpłatnego okresu próbnego. Klonowanie ekranu na Macu jest częścią systemu macOS i korzysta z technologii AirPlay firmy Apple; Screenbridge to odbiornik po stronie telewizora.
+
+PRYWATNOŚĆ
+Wszystko zostaje w Twojej sieci domowej. Bez reklam, bez śledzenia, bez konta. Nie zbieramy żadnych danych.
+
+PLANY
+Zacznij od 7-dniowego bezpłatnego okresu próbnego w planie miesięcznym albo kup Lifetime raz i korzystaj bez końca. Oba plany odblokowują wszystko: bez limitu czasu i ze wszystkimi przyszłymi aktualizacjami. Płatności i anulowanie obsługujesz przez swoje konto Google Play.
+
+OPEN SOURCE
+Screenbridge to oprogramowanie open source (GPL-3.0). Kod źródłowy: https://github.com/sebstech24/mirror-tv . Na bazie AirPlay Receiver autorstwa jqssun oraz UxPlay; korzysta z FFmpeg (LGPL).
+
+WARTO WIEDZIEĆ
+• Chronione filmy (np. z serwisów streamingowych, które blokują nagrywanie ekranu) wyświetlają się jako czarny ekran. Decydują o tym Mac i serwis streamingowy, nie telewizor.
+• Jeśli telewizor ma już własny odbiornik do klonowania ekranu, Screenbridge wybierze inną nazwę, aby oba były widoczne.
+• Pomoc: support@controlmymac.com
+• Polityka prywatności: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Screenbridge to niezależna aplikacja, która nie została stworzona, sponsorowana ani zatwierdzona przez Apple Inc. Mac, macOS, iPhone, iPad i AirPlay są znakami towarowymi Apple Inc., zastrzeżonymi w USA i innych krajach. Google TV i Android TV są znakami towarowymi Google LLC.

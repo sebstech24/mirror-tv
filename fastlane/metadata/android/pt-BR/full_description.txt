@@ -1,0 +1,39 @@
+Leve a tela do seu Mac para a TV, sem nenhum aparelho extra. O Screenbridge transforma seu Google TV ou Android TV em um receptor para o Espelhamento de Tela que já vem no seu Mac.
+
+COMO FUNCIONA: 3 CLIQUES NO MAC
+1. Abra o Screenbridge na TV.
+2. No Mac, clique em “Central de Controle” na barra de menus e depois em “Espelhamento de Tela”.
+3. Escolha sua TV. A tela do Mac aparece na telona.
+
+Nada para instalar no Mac, sem conta, sem cabos. O Mac e a TV só precisam estar na mesma rede Wi-Fi. A própria TV mostra esses passos, então qualquer pessoa da casa consegue.
+
+O QUE VOCÊ PODE FAZER
+• Espelhar a tela do seu MacBook ou iMac na TV, ou usar a TV como uma grande segunda tela
+• Apresentar slides e planilhas em salas de reunião ou de aula
+• Ver seus vídeos, fotos e sites na telona, com som
+• Imagem nítida em até 4K e pouco atraso, para o mouse responder bem na TV
+• As teclas de volume do Mac podem controlar o volume da TV
+• Também funciona com o Espelhamento de Tela do iPhone e do iPad
+
+FEITO PARA A TV
+Telas grandes e simples, que você controla pelo controle remoto. Dê à sua TV o nome que quiser, para encontrá-la facilmente na lista de Espelhamento de Tela do Mac. Se algo der errado, a TV explica em palavras simples o que fazer: mesma rede Wi-Fi, escolher a TV de novo ou ajustar o Mac para espelhar a tela inteira.
+
+FUNCIONA EM
+Desenvolvido para Google TV e Android TV, como TVs da Sony, TCL, Hisense e Philips, Chromecast com Google TV, Google TV Streamer, Nvidia Shield e TV boxes Android TV. Testado em uma TV Philips com Google TV. Se não funcionar bem na sua, escreva para nós durante o teste grátis. O Espelhamento de Tela do Mac faz parte do macOS e usa a tecnologia AirPlay da Apple; o Screenbridge é o receptor do lado da TV.
+
+PRIVACIDADE
+Tudo fica na sua rede de casa. Sem anúncios, sem rastreamento, sem conta, nenhum dado coletado.
+
+PLANOS
+Comece com 7 dias grátis no plano mensal ou compre o Lifetime uma única vez e ele é seu para sempre. Os dois liberam tudo: sem limite de tempo e com todas as atualizações futuras. O pagamento e o cancelamento são feitos pela sua conta do Google Play.
+
+CÓDIGO ABERTO
+O Screenbridge é de código aberto (GPL-3.0). Código-fonte: https://github.com/sebstech24/mirror-tv . Baseado no AirPlay Receiver de jqssun e no UxPlay; usa FFmpeg (LGPL).
+
+BOM SABER
+• Vídeos protegidos (por exemplo, de serviços de streaming que bloqueiam a gravação de tela) aparecem como tela preta. Quem decide isso são o Mac e o serviço de streaming, não a TV.
+• Se a sua TV já tem um receptor de espelhamento próprio, o Screenbridge escolhe outro nome para que os dois apareçam.
+• Suporte: support@controlmymac.com
+• Política de privacidade: https://sebstech24.github.io/mirror-tv/privacy.html
+
+O Screenbridge é um app independente e não é feito, patrocinado nem aprovado pela Apple Inc. Mac, macOS, iPhone, iPad e AirPlay são marcas da Apple Inc., registradas nos EUA e em outros países. Google TV e Android TV são marcas da Google LLC.

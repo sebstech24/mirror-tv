@@ -1,0 +1,39 @@
+Oglindește ecranul Mac-ului pe televizor, fără alt dispozitiv. Screenbridge transformă televizorul tău cu Google TV sau Android TV într-un receptor pentru Oglindire ecran, funcția deja integrată în Mac.
+
+CUM FUNCȚIONEAZĂ: 3 CLICURI PE MAC
+1. Deschide Screenbridge pe televizor.
+2. Pe Mac, fă clic pe „Centru de control” din bara de meniu, apoi pe Oglindire ecran.
+3. Alege televizorul. Imaginea de pe Mac apare pe ecranul mare.
+
+Nu instalezi nimic pe Mac, nu ai nevoie de cont sau de cabluri. Mac-ul și televizorul trebuie doar să fie în aceeași rețea Wi-Fi. Televizorul îți arată singur acești pași, așa că se descurcă oricine din casă.
+
+CE POȚI FACE
+• Oglindești ecranul MacBook-ului sau al iMac-ului pe televizor ori folosești televizorul ca al doilea ecran, mai mare
+• Prezinți slide-uri și foi de calcul într-o sală de ședințe sau într-o clasă
+• Te uiți la propriile videoclipuri, fotografii și pagini web pe ecranul mare, cu sunet
+• Imagine clară, până la 4K, cu întârziere mică, așa că mouse-ul se mișcă natural pe televizor
+• Tastele de volum ale Mac-ului pot controla volumul televizorului
+• Funcționează și cu Oglindire ecran de pe iPhone și iPad
+
+GÂNDIT PENTRU TELEVIZOR
+Ecrane mari și simple, pe care le controlezi cu telecomanda. Dă-i televizorului ce nume vrei, ca să-l găsești ușor în lista Oglindire ecran de pe Mac. Dacă ceva nu merge, televizorul îți spune clar ce ai de făcut: să folosești aceeași rețea Wi-Fi, să alegi din nou televizorul sau să setezi Mac-ul să oglindească tot ecranul.
+
+UNDE FUNCȚIONEAZĂ
+Creat pentru Google TV și Android TV, de exemplu televizoare Sony, TCL, Hisense și Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield și TV box-uri cu Android TV. Testat pe un televizor Philips cu Google TV; dacă pe al tău nu merge bine, scrie-ne în perioada de probă gratuită. Funcția Oglindire ecran a Mac-ului face parte din macOS și folosește tehnologia AirPlay de la Apple; Screenbridge este receptorul de pe partea televizorului.
+
+CONFIDENȚIALITATE
+Totul rămâne în rețeaua ta de acasă. Fără reclame, fără urmărire, fără cont, nu colectăm date.
+
+ABONAMENT SAU PLATĂ UNICĂ
+Începe cu o perioadă de probă gratuită de 7 zile la abonamentul lunar sau cumpără o singură dată licența pe viață și rămâne a ta. Ambele deblochează tot: fără limite de timp, cu toate actualizările viitoare. Plata și anularea se fac prin contul tău Google Play.
+
+COD SURSĂ DESCHIS
+Screenbridge este open source (GPL-3.0). Cod sursă: https://github.com/sebstech24/mirror-tv . Se bazează pe AirPlay Receiver de jqssun și pe UxPlay; folosește FFmpeg (LGPL).
+
+BINE DE ȘTIUT
+• Videoclipurile protejate (de exemplu, de la serviciile de streaming care blochează înregistrarea ecranului) apar ca ecran negru. Asta decid Mac-ul și serviciul de streaming, nu televizorul.
+• Dacă televizorul tău are deja propriul receptor de oglindire, Screenbridge își alege alt nume, ca să apară amândouă.
+• Asistență: support@controlmymac.com
+• Politica de confidențialitate: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Screenbridge este o aplicație independentă și nu este creată, sponsorizată sau aprobată de Apple Inc. Mac, macOS, iPhone, iPad și AirPlay sunt mărci comerciale ale Apple Inc., înregistrate în SUA și în alte țări. Google TV și Android TV sunt mărci comerciale ale Google LLC.

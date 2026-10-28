@@ -1,0 +1,39 @@
+Spiegle deinen Mac auf den Fernseher, ganz ohne zusätzliche Box. Screenbridge macht dein Google TV oder Android TV zum Empfänger für die Bildschirmsynchronisierung, die schon in deinem Mac steckt.
+
+SO GEHT'S: 3 KLICKS AM MAC
+1. Öffne Screenbridge auf deinem Fernseher.
+2. Klicke am Mac in der Menüleiste auf „Kontrollzentrum“ und dann auf „Bildschirmsynchronisierung“.
+3. Wähle deinen Fernseher. Der Bildschirm deines Macs erscheint groß auf dem Fernseher.
+
+Auf dem Mac musst du nichts installieren, kein Konto, keine Kabel. Mac und Fernseher müssen nur im selben WLAN sein. Der Fernseher zeigt diese Schritte selbst an, so klappt es bei allen im Haushalt.
+
+DAS KANNST DU DAMIT MACHEN
+• Den Bildschirm deines MacBook oder iMac auf den Fernseher spiegeln oder den Fernseher als großen zweiten Bildschirm nutzen
+• Folien und Tabellen im Besprechungsraum oder Klassenzimmer zeigen
+• Eigene Videos, Fotos und Webseiten groß ansehen, mit Ton
+• Scharfes Bild bis 4K und geringe Verzögerung: Die Maus fühlt sich auch auf dem Fernseher richtig an
+• Die Lautstärketasten deines Macs können die Lautstärke des Fernsehers steuern
+• Funktioniert auch mit der Bildschirmsynchronisierung von iPhone und iPad
+
+GEMACHT FÜR DEN FERNSEHER
+Große, übersichtliche Bildschirme, die du mit der Fernbedienung steuerst. Gib deinem Fernseher einen eigenen Namen, damit du ihn in der Liste der Bildschirmsynchronisierung am Mac sofort findest. Wenn etwas nicht klappt, sagt dir der Fernseher in einfachen Worten, was zu tun ist: selbes WLAN, den Fernseher erneut auswählen oder am Mac den ganzen Bildschirm spiegeln.
+
+LÄUFT AUF
+Entwickelt für Google TV und Android TV, etwa Fernseher von Sony, TCL, Hisense und Philips, Chromecast mit Google TV, Google TV Streamer, Nvidia Shield und Android-TV-Boxen. Getestet auf einem Philips Google TV. Läuft es auf deinem Gerät nicht rund, schreib uns während deines kostenlosen Testzeitraums. Die Bildschirmsynchronisierung deines Macs ist Teil von macOS und nutzt die AirPlay-Technologie von Apple; Screenbridge ist der Empfänger auf der Seite des Fernsehers.
+
+PRIVAT
+Alles bleibt in deinem Heimnetz. Keine Werbung, kein Tracking, kein Konto, es werden keine Daten erfasst.
+
+TARIFE
+Starte mit 7 Tagen gratis im Monatsabo oder kaufe Lifetime einmal und behalte es dauerhaft. Beide schalten alles frei: ohne Zeitlimit, mit allen künftigen Updates. Zahlung und Kündigung laufen über dein Google-Play-Konto.
+
+OPEN SOURCE
+Screenbridge ist Open Source (GPL-3.0). Quellcode: https://github.com/sebstech24/mirror-tv . Basiert auf AirPlay Receiver von jqssun und UxPlay; nutzt FFmpeg (LGPL).
+
+GUT ZU WISSEN
+• Geschützte Videos (zum Beispiel von Streamingdiensten, die Bildschirmaufnahmen sperren) erscheinen als schwarzes Bild. Das entscheiden der Mac und der Streamingdienst, nicht der Fernseher.
+• Hat dein Fernseher schon einen eigenen Empfänger für Bildschirmspiegelung, wählt Screenbridge einen anderen Namen, damit beide angezeigt werden.
+• Support: support@controlmymac.com
+• Datenschutzerklärung: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Screenbridge ist eine unabhängige App und wird nicht von Apple Inc. hergestellt, gesponsert oder genehmigt. Mac, macOS, iPhone, iPad und AirPlay sind Marken der Apple Inc., die in den USA und weiteren Ländern eingetragen sind. Google TV und Android TV sind Marken der Google LLC.

@@ -1,0 +1,39 @@
+Tükrözd a Mac képernyőjét a tévére, külön eszköz nélkül. A Screenbridge a Google TV-s vagy Android TV-s készülékedet vevővé alakítja a Macbe már beépített Képernyő tükrözése funkcióhoz.
+
+ÍGY MŰKÖDIK: 3 KATTINTÁS A MACEN
+1. Nyisd meg a Screenbridge-et a tévén.
+2. A Macen kattints a menüsorban a Vezérlőközpontra, majd a Képernyő tükrözése elemre.
+3. Válaszd ki a tévédet. A Mac képe megjelenik a nagy képernyőn.
+
+A Macre semmit sem kell telepíteni, nem kell fiók, és kábel sem. A Macnek és a tévének csak ugyanazon a Wi-Fi-hálózaton kell lennie. A tévé maga is megmutatja ezeket a lépéseket, így otthon bárki boldogul vele.
+
+MIRE HASZNÁLHATOD
+• A MacBook vagy az iMac képernyőjét tükrözheted a tévére, vagy nagy második kijelzőként használhatod a tévét
+• Diákat és táblázatokat mutathatsz be tárgyalóban vagy tanteremben
+• Saját videóidat, fotóidat és weboldalakat nézhetsz a nagy képernyőn, hanggal együtt
+• Éles kép akár 4K-ban, kis késleltetéssel, így az egér természetesen mozog a tévén
+• A Mac hangerőgombjaival a tévé hangereje is szabályozható
+• iPhone-ról és iPadről is működik a képernyőtükrözés
+
+A TÉVÉRE TERVEZVE
+Nagy, egyszerű képernyők, amelyeket a távirányítóval kezelsz. Nevezd el a tévét tetszés szerint, hogy könnyen megtaláld a Mac Képernyő tükrözése listájában. Ha valami nem sikerül, a tévé érthetően elmondja, mi a teendő: ugyanarra a Wi-Fi-re csatlakozni, újra kiválasztani a tévét, vagy a Macen a teljes képernyő tükrözését beállítani.
+
+HOL MŰKÖDIK
+Google TV-hez és Android TV-hez készült, például: Sony, TCL, Hisense és Philips tévék, Chromecast with Google TV, Google TV Streamer, Nvidia Shield és Android TV-s set-top boxok. Philips Google TV-n teszteltük; ha a tiéden nem működik jól, írj nekünk az ingyenes próbaidőszak alatt. A Mac Képernyőtükrözés funkciója a macOS része, és az Apple AirPlay technológiáját használja; a Screenbridge a vevő a tévé oldalán.
+
+ADATVÉDELEM
+Minden az otthoni hálózatodon marad. Nincs reklám, nincs követés, nincs fiók, semmilyen adatot nem gyűjtünk.
+
+ELŐFIZETÉS VAGY EGYSZERI VÁSÁRLÁS
+Kezdd a havi előfizetés 7 napos ingyenes próbaidőszakával, vagy vásárold meg egyszer az örökös licencet, és a tiéd marad. Mindkettő mindent felold: nincs időkorlát, és minden jövőbeli frissítés jár hozzá. A fizetés és a lemondás a Google Play-fiókodon keresztül történik.
+
+NYÍLT FORRÁSKÓD
+A Screenbridge nyílt forráskódú (GPL-3.0). Forráskód: https://github.com/sebstech24/mirror-tv . A jqssun-féle AirPlay Receiver és az UxPlay alapján készült; az FFmpeg-et (LGPL) használja.
+
+JÓ TUDNI
+• A védett videók (például a képernyőfelvételt tiltó streamingszolgáltatásokból) fekete képként jelennek meg. Erről a Mac és a streamingszolgáltatás dönt, nem a tévé.
+• Ha a tévédnek már van saját tükrözési vevője, a Screenbridge más nevet választ, hogy mindkettő megjelenjen.
+• Támogatás: support@controlmymac.com
+• Adatvédelmi irányelvek: https://sebstech24.github.io/mirror-tv/privacy.html
+
+A Screenbridge független alkalmazás, amelyet nem az Apple Inc. készített, szponzorált vagy hagyott jóvá. A Mac, a macOS, az iPhone, az iPad és az AirPlay az Apple Inc. védjegyei, az Egyesült Államokban és más országokban bejegyezve. A Google TV és az Android TV a Google LLC védjegyei.
