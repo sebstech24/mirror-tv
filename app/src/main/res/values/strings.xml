@@ -224,6 +224,10 @@
     <string name="home_stopped_title">Mirroring stopped</string>
     <string name="home_stopped_desc">It was stopped on the Mac, or the Wi‑Fi connection dropped. To mirror again, choose “%1$s” in Screen Mirroring.</string>
     <string name="toast_mirroring">Mirroring started</string>
+    <string name="controls_hint">Press OK for options</string>
+    <string name="controls_back_hides">Press Back to hide</string>
+    <string name="controls_hide">Hide</string>
+    <string name="setting_applies_next_connection">Saved. It takes effect the next time your Mac connects.</string>
     <string name="toast_took_over">%1$s took over the TV</string>
     <string name="home_stopped_mac_title">Mirroring stopped on the Mac</string>
     <string name="home_stopped_mac_desc">To mirror again, choose “%1$s” in Screen Mirroring.</string>
@@ -237,11 +241,11 @@
     <string name="setting_tv_name">TV name</string>
     <string name="setting_tv_name_desc">The name your Mac shows in Screen Mirroring. Leave empty to use “%1$s”.</string>
     <string name="setting_picture_quality">Picture quality</string>
-    <string name="setting_picture_quality_desc">Auto matches your TV. Pick a lower size if the picture stutters.</string>
+    <string name="setting_picture_quality_desc">Auto uses 1080p, the smoothest from a Mac. 4K is sharper but may stutter.</string>
     <string name="setting_pin_simple">Ask for a PIN</string>
     <string name="setting_pin_simple_desc">Show a 4-digit code on the TV before a new device can mirror</string>
     <string name="setting_lowest_latency">Lowest latency</string>
-    <string name="setting_lowest_latency_desc">Less delay for typing and mouse. Turn off if the picture or sound stutters.</string>
+    <string name="setting_lowest_latency_desc">A little less delay for typing and mouse, but the picture may stutter slightly. Off is smoothest.</string>
     <string name="setting_about">About</string>
     <string name="setting_about_desc">Version, licenses and source code</string>
     <string name="setting_advanced">Advanced</string>
@@ -256,6 +260,12 @@
     <string name="dialog_stop_text">Your Mac won\'t be able to find this TV until you turn it back on.</string>
     <string name="btn_turn_off">Turn off</string>
     <string name="btn_cancel">Cancel</string>
+    <string name="btn_reset">Reset</string>
+    <string name="setting_reset_all">Reset all settings</string>
+    <string name="setting_reset_all_desc">Back to how Screenbridge came. Your purchase stays.</string>
+    <string name="dialog_reset_title">Reset all settings?</string>
+    <string name="dialog_reset_text">Every setting, including the TV name, goes back to its default. Your purchase is kept, and a Mac that is mirroring stays connected.</string>
+    <string name="setting_reset_done">Settings reset.</string>
 
     <!-- About -->
     <string name="about_version">Version %1$s</string>

@@ -50,7 +50,6 @@ import kotlinx.coroutines.delay
 fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs: () -> Unit) {
     val serverName by viewModel.pref(Prefs.SERVER_NAME).collectAsState()
     val h265 by viewModel.pref(Prefs.H265).collectAsState()
-    val enforceSdr by viewModel.pref(Prefs.ENFORCE_SDR).collectAsState()
     val alacEnabled by viewModel.pref(Prefs.ALAC_ENABLED).collectAsState()
     val aacEnabled by viewModel.pref(Prefs.AAC_ENABLED).collectAsState()
     val resolution by viewModel.pref(Prefs.RESOLUTION).collectAsState()
@@ -78,7 +77,6 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
     val keyAllowFrameDrop by viewModel.pref(Prefs.KEY_ALLOW_FRAME_DROP).collectAsState()
     val realtimeDecoderPriority by viewModel.pref(Prefs.KEY_PRIORITY).collectAsState()
     val operatingRate by viewModel.pref(Prefs.OPERATING_RATE).collectAsState()
-    val scheduledOutputBufferRelease by viewModel.pref(Prefs.SCHEDULED_OUTPUT_BUFFER_RELEASE).collectAsState()
     val benchmarkLog by viewModel.pref(Prefs.BENCHMARK_LOG).collectAsState()
     val audioAutoBuffer by viewModel.pref(Prefs.AUDIO_AUTO_BUFFER).collectAsState()
     val audioCushionMs by viewModel.pref(Prefs.AUDIO_CUSHION_MS).collectAsState()
@@ -94,6 +92,7 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
     val ctx = LocalContext.current
     var advanced by rememberSaveable { mutableStateOf(false) }
     var confirmStop by remember { mutableStateOf(false) }
+    var confirmReset by remember { mutableStateOf(false) }
     val firstFocus = remember { FocusRequester() }
     val scroll = rememberScrollState()
     // focusing the PIN row nudges the list down and cuts off "TV name"; the top still shows the PIN row
@@ -181,6 +180,12 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             }
         )
 
+        SettingRow(
+            title = stringResource(R.string.setting_reset_all),
+            description = stringResource(R.string.setting_reset_all_desc),
+            onClick = { confirmReset = true }
+        )
+
         if (!advanced) return@Column
 
         val running = serverState == ServerState.RUNNING
@@ -259,7 +264,7 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             title = stringResource(R.string.setting_max_fps),
             description = stringResource(R.string.setting_max_fps_desc),
             value = maxFps.toString(),
-            presets = listOf("24" to "24", "30" to "30", "60" to "60", "120" to "120"),
+            presets = listOf("24" to "24", "30" to "30", "60" to "60"),
             placeholder = stringResource(R.string.setting_max_fps_placeholder),
             keyboardType = KeyboardType.Number,
             onValueChange = { it.toIntOrNull()?.let { v -> viewModel.set(Prefs.MAX_FPS, v) } }
@@ -363,13 +368,6 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
             )
 
             SettingSwitch(
-                title = stringResource(R.string.setting_enforce_sdr),
-                description = stringResource(R.string.setting_enforce_sdr_desc),
-                checked = enforceSdr,
-                onCheckedChange = { viewModel.set(Prefs.ENFORCE_SDR, it) }
-            )
-
-            SettingSwitch(
                 title = stringResource(R.string.setting_realtime_decoder_priority),
                 description = stringResource(R.string.setting_realtime_decoder_priority_desc),
                 checked = realtimeDecoderPriority,
@@ -382,13 +380,6 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
                 value = operatingRate,
                 options = tri,
                 onValueChange = { viewModel.set(Prefs.OPERATING_RATE, it) }
-            )
-
-            SettingSwitch(
-                title = stringResource(R.string.setting_scheduled_output_buffer_release),
-                description = stringResource(R.string.setting_scheduled_output_buffer_release_desc),
-                checked = scheduledOutputBufferRelease,
-                onCheckedChange = { viewModel.set(Prefs.SCHEDULED_OUTPUT_BUFFER_RELEASE, it) }
             )
 
             SettingSwitch(
@@ -482,6 +473,32 @@ fun SettingsScreen(viewModel: MainViewModel, onOpenAbout: () -> Unit, onOpenLogs
                 onCheckedChange = { viewModel.set(Prefs.BENCHMARK_LOG, it) }
             )
         }
+    }
+
+    if (confirmReset) {
+        AlertDialog(
+            onDismissRequest = { confirmReset = false },
+            title = { Text(stringResource(R.string.dialog_reset_title)) },
+            text = { Text(stringResource(R.string.dialog_reset_text)) },
+            // Cancel gets focus, so a stray OK press changes nothing
+            dismissButton = {
+                val cancelFocus = remember { FocusRequester() }
+                LaunchedEffect(Unit) { cancelFocus.requestFocusUntilLanded() }
+                TextButton(onClick = { confirmReset = false }, modifier = Modifier.focusRequester(cancelFocus).dpadFocus(CircleShape)) {
+                    Text(stringResource(R.string.btn_cancel))
+                }
+            },
+            confirmButton = {
+                TextButton(
+                    onClick = {
+                        confirmReset = false
+                        viewModel.resetAllSettings()
+                        android.widget.Toast.makeText(ctx, R.string.setting_reset_done, android.widget.Toast.LENGTH_LONG).show()
+                    },
+                    modifier = Modifier.dpadFocus(CircleShape)
+                ) { Text(stringResource(R.string.btn_reset)) }
+            }
+        )
     }
 
     if (confirmStop) {

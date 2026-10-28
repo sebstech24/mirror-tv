@@ -4,10 +4,8 @@ import android.content.Context
 import android.net.ConnectivityManager
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ScreenShare
 import androidx.compose.material.icons.filled.Tv
@@ -30,6 +28,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.layout.Layout
+import androidx.compose.ui.unit.Constraints
 import io.github.jqssun.airplay.R
 import java.net.Inet4Address
 
@@ -57,26 +57,21 @@ fun WaitingContent(
     actionFocus: FocusRequester,
     modifier: Modifier = Modifier,
 ) {
-    BoxWithConstraints(modifier.fillMaxSize()) {
+    // TVs crop a few percent off every edge (overscan): keep ~6% clear, and never let the block run off screen
+    FitToScreen(modifier.fillMaxSize().padding(horizontal = 60.dp, vertical = 32.dp)) {
     Column(
-        modifier = Modifier
-            .verticalScroll(rememberScrollState())
-            .heightIn(min = maxHeight)
-            .fillMaxWidth()
-            // ~5% TV overscan-safe margins
-            .padding(horizontal = 48.dp, vertical = 24.dp),
+        modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
     ) {
         StatusPill(status)
         Spacer(Modifier.height(12.dp))
         Text(
             text = tvName,
-            style = MaterialTheme.typography.displayMedium,
+            style = MaterialTheme.typography.displaySmall,
             color = MaterialTheme.colorScheme.onBackground,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
-            maxLines = 2,
+            maxLines = 1,
             overflow = TextOverflow.Ellipsis,
         )
 
@@ -131,7 +126,7 @@ fun WaitingContent(
             Spacer(Modifier.height(8.dp))
             Text(
                 stringResource(R.string.home_mirror_hint) + "\n" + stringResource(R.string.home_screensaver_hint),
-                style = MaterialTheme.typography.bodyLarge,
+                style = MaterialTheme.typography.bodyMedium,
                 textAlign = TextAlign.Center,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -143,11 +138,24 @@ fun WaitingContent(
                 stringResource(R.string.home_same_wifi),
                 address?.let { stringResource(R.string.home_tv_address, it) },
             ).joinToString("  ·  "),
-            style = MaterialTheme.typography.bodyLarge,
+            style = MaterialTheme.typography.bodyMedium,
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f),
         )
     }
+    }
+}
+
+/** Centers [content]; if it is taller or wider than the space (big fonts, long names, a notice), shrinks it to fit. */
+@Composable
+private fun FitToScreen(modifier: Modifier, content: @Composable () -> Unit) {
+    Layout(content, modifier) { measurables, c ->
+        val p = measurables.first().measure(c.copy(minWidth = 0, minHeight = 0, maxHeight = Constraints.Infinity))
+        val scale = minOf(1f, c.maxHeight.toFloat() / p.height, c.maxWidth.toFloat() / p.width)
+        layout(c.maxWidth, c.maxHeight) {
+            // the layer scales around its own center, so centering the unscaled box centers the result
+            p.placeWithLayer((c.maxWidth - p.width) / 2, (c.maxHeight - p.height) / 2) { scaleX = scale; scaleY = scale }
+        }
     }
 }
 
@@ -199,7 +207,7 @@ private fun MacSteps(tvName: String) {
 private fun StepCard(number: Int, icon: Painter, text: String, modifier: Modifier) {
     Card(modifier = modifier, shape = RoundedCornerShape(20.dp)) {
         Column(
-            modifier = Modifier.fillMaxWidth().padding(20.dp),
+            modifier = Modifier.fillMaxWidth().padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
@@ -210,10 +218,10 @@ private fun StepCard(number: Int, icon: Painter, text: String, modifier: Modifie
                     Text("$number", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onPrimary, fontWeight = FontWeight.Bold)
                 }
                 Spacer(Modifier.width(16.dp))
-                Icon(icon, contentDescription = null, modifier = Modifier.size(44.dp), tint = MaterialTheme.colorScheme.onSurface)
+                Icon(icon, contentDescription = null, modifier = Modifier.size(36.dp), tint = MaterialTheme.colorScheme.onSurface)
             }
-            Spacer(Modifier.height(12.dp))
-            Text(text, style = MaterialTheme.typography.titleLarge, textAlign = TextAlign.Center)
+            Spacer(Modifier.height(10.dp))
+            Text(text, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
         }
     }
 }

@@ -124,7 +124,9 @@ object Prefs {
     val ADVERTISE_AUDIO = bool("advertise_audio", true)
     val LAUNCH_ON_CONNECT = bool("launch_on_connect", true)
     // one switch: lowest safe audio cushion, low-latency audio output, unscheduled video release
-    val LOWEST_LATENCY = bool("lowest_latency", false, restart = true)
+    // off by default: on a Philips TV it let the decoder skip late pictures (small stutters), while off was smooth
+    // (Sebastian, 28 Oct 2026). Applied live; with it on, a session falls back to normal audio buffering if sound glitches.
+    val LOWEST_LATENCY = bool("lowest_latency", false)
     val USB_ONLY = bool("usb_only", false, restart = true)
     // paywall testing over adb; debug builds only, release builds ignore them (see billing/)
     val DEBUG_FAKE_UNLOCKED = bool("debug_fake_unlocked", false)

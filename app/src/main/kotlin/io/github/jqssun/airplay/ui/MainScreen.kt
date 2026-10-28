@@ -31,6 +31,11 @@ import androidx.compose.ui.focus.focusProperties
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.input.key.onPreviewKeyEvent
+import androidx.compose.foundation.interaction.collectIsFocusedAsState
+import androidx.compose.ui.input.key.Key
+import androidx.compose.ui.input.key.KeyEventType
+import androidx.compose.ui.input.key.key
+import androidx.compose.ui.input.key.type
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
@@ -528,12 +533,18 @@ fun MainScreen(
         if (pin != null) fullscreen = false
     }
 
+    // back from Settings while a Mac is still mirroring goes straight back to the full-screen picture
+    LaunchedEffect(screen, mirroringActive) {
+        if (screen == Screen.HOME && mirroringActive && autoFullscreen && !audioOnly && !videoPlaybackActive && pin == null) {
+            fullscreen = true
+        }
+    }
+
     if (fullscreen) {
-        BackHandler { fullscreen = false }
         FullscreenVideo(
             viewModel = viewModel,
             video = video,
-            onExitFullscreen = { fullscreen = false },
+            onSettings = { fullscreen = false; screen = Screen.SETTINGS },
             onPip = onPip
         )
     } else if (screen == Screen.HOME) {
@@ -740,19 +751,24 @@ private fun HomeContent(
 private fun FullscreenVideo(
     viewModel: MainViewModel,
     video: @Composable () -> Unit,
-    onExitFullscreen: () -> Unit,
+    onSettings: () -> Unit,
     onPip: () -> Unit
 ) {
     val videoResolution by viewModel.videoResolution.collectAsState()
     val debugEnabled by viewModel.pref(Prefs.DEBUG_ENABLED).collectAsState()
     val debugInfo by viewModel.debugInfo.collectAsState()
 
-    var controlsVisible by remember { mutableStateOf(true) }
+    // OK and Back both open the same control bar; Back again (or 10 s without a key) hides it
+    var controlsVisible by remember { mutableStateOf(false) }
     var tapTick by remember { mutableStateOf(0) }
-    LaunchedEffect(tapTick) {
-        controlsVisible = true
-        delay(8000)
-        controlsVisible = false
+    LaunchedEffect(tapTick, controlsVisible) {
+        if (controlsVisible) { delay(CONTROLS_HIDE_MS); controlsVisible = false }
+    }
+    BackHandler { if (controlsVisible) controlsVisible = false else { controlsVisible = true; tapTick++ } }
+    val rootFocus = remember { FocusRequester() }
+    val firstButton = remember { FocusRequester() }
+    LaunchedEffect(controlsVisible) {
+        if (controlsVisible) firstButton.requestFocusUntilLanded() else rootFocus.requestFocusUntilLanded()
     }
 
     val clientName by viewModel.clientName.collectAsState()
@@ -767,12 +783,20 @@ private fun FullscreenVideo(
         modifier = Modifier
             .fillMaxSize()
             .background(Color.Black)
-            .pointerInput(Unit) { detectTapGestures { tapTick++ } },
+            .focusRequester(rootFocus)
+            .onPreviewKeyEvent { e ->
+                if (e.type != KeyEventType.KeyDown) return@onPreviewKeyEvent false
+                // any key keeps the bar up; OK/Enter opens it
+                tapTick++
+                if (!controlsVisible && e.key in OPEN_KEYS) { controlsVisible = true; true } else false
+            }
+            .focusable()
+            .pointerInput(Unit) { detectTapGestures { controlsVisible = true; tapTick++ } },
         contentAlignment = Alignment.Center
     ) {
         video()
         androidx.compose.animation.AnimatedVisibility(
-            visible = toastVisible,
+            visible = toastVisible && !controlsVisible,
             enter = androidx.compose.animation.fadeIn(),
             exit = androidx.compose.animation.fadeOut(),
             modifier = Modifier.align(Alignment.TopCenter).padding(top = 32.dp)
@@ -782,7 +806,7 @@ private fun FullscreenVideo(
                     clientName == null -> stringResource(R.string.toast_mirroring)
                     lastDisconnect == DisconnectReason.REPLACED -> stringResource(R.string.toast_took_over, clientName!!)
                     else -> stringResource(R.string.toast_mirroring_from, clientName!!)
-                },
+                } + "  ·  " + stringResource(R.string.controls_hint),
                 style = MaterialTheme.typography.titleLarge,
                 color = Color.White,
                 modifier = Modifier
@@ -792,44 +816,100 @@ private fun FullscreenVideo(
         }
         androidx.compose.animation.AnimatedVisibility(
             visible = controlsVisible,
-            modifier = Modifier.align(Alignment.TopEnd)
+            enter = androidx.compose.animation.fadeIn() + androidx.compose.animation.slideInVertically { it / 2 },
+            exit = androidx.compose.animation.fadeOut() + androidx.compose.animation.slideOutVertically { it / 2 },
+            modifier = Modifier.align(Alignment.BottomCenter)
         ) {
-            Row(modifier = Modifier.padding(8.dp)) {
-                IconButton(onClick = onPip, modifier = Modifier.dpadFocus()) {
-                    Icon(
-                        painterResource(R.drawable.ic_pip), contentDescription = stringResource(R.string.cd_pip),
-                        tint = Color.White.copy(alpha = 0.7f)
-                    )
-                }
-                IconButton(onClick = onExitFullscreen, modifier = Modifier.dpadFocus()) {
-                    Icon(
-                        Icons.Default.FullscreenExit, contentDescription = stringResource(R.string.cd_exit_fullscreen),
-                        tint = Color.White.copy(alpha = 0.7f)
-                    )
-                }
-            }
+            MirrorControlBar(
+                clientName = clientName,
+                resolution = videoResolution,
+                firstButton = firstButton,
+                onSettings = onSettings,
+                onPip = onPip,
+                onHide = { controlsVisible = false },
+            )
         }
         if (debugEnabled) {
             DebugOverlay(debugInfo, Modifier.align(Alignment.TopStart).padding(8.dp))
         }
-        var showRes by remember { mutableStateOf(false) }
-        LaunchedEffect(videoResolution) {
-            if (videoResolution.isNotEmpty()) {
-                showRes = true
-                delay(5000)
-                showRes = false
-            }
-        }
-        androidx.compose.animation.AnimatedVisibility(
-            visible = showRes,
-            modifier = Modifier.align(Alignment.BottomEnd).padding(8.dp)
-        ) {
-            Text(
-                text = videoResolution,
-                style = MaterialTheme.typography.labelSmall,
-                color = Color.White.copy(alpha = 0.6f)
+    }
+}
+
+/** The bar OK/Back opens while mirroring: who is mirroring, the picture size, and big labelled buttons. */
+@Composable
+private fun MirrorControlBar(
+    clientName: String?,
+    resolution: String,
+    firstButton: FocusRequester,
+    onSettings: () -> Unit,
+    onPip: () -> Unit,
+    onHide: () -> Unit,
+) {
+    val ctx = LocalContext.current
+    val canPip = remember { ctx.packageManager.hasSystemFeature(PackageManager.FEATURE_PICTURE_IN_PICTURE) }
+    Surface(
+        shape = RoundedCornerShape(28.dp),
+        color = Color(0xF0181B22),
+        contentColor = Color.White,
+        tonalElevation = 6.dp,
+        modifier = Modifier
+            .safeDrawingPadding()
+            // overscan-safe, and wide enough to read from the couch
+            .padding(start = 60.dp, end = 60.dp, bottom = 36.dp)
+            .widthIn(max = 1100.dp)
+            .fillMaxWidth()
+    ) {
+        Row(Modifier.padding(horizontal = 28.dp, vertical = 20.dp), verticalAlignment = Alignment.CenterVertically) {
+            Image(
+                painterResource(R.drawable.ic_launcher_art), contentDescription = null,
+                modifier = Modifier.size(52.dp).clip(RoundedCornerShape(13.dp))
             )
+            Spacer(Modifier.width(18.dp))
+            Column(Modifier.weight(1f)) {
+                Text(
+                    stringResource(R.string.app_name), style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.primary, fontWeight = FontWeight.SemiBold
+                )
+                Text(
+                    clientName?.let { stringResource(R.string.toast_mirroring_from, it) } ?: stringResource(R.string.toast_mirroring),
+                    style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold,
+                    maxLines = 1, overflow = TextOverflow.Ellipsis
+                )
+                Text(
+                    listOfNotNull(resolution.ifBlank { null }, stringResource(R.string.controls_back_hides)).joinToString("  ·  "),
+                    style = MaterialTheme.typography.bodyMedium, color = Color.White.copy(alpha = 0.7f)
+                )
+            }
+            Spacer(Modifier.width(16.dp))
+            BarButton(Icons.Default.Settings, stringResource(R.string.cd_settings), onSettings, Modifier.focusRequester(firstButton))
+            if (canPip) {
+                Spacer(Modifier.width(12.dp))
+                BarButton(Icons.Default.PictureInPictureAlt, stringResource(R.string.cd_pip), onPip)
+            }
+            Spacer(Modifier.width(12.dp))
+            BarButton(Icons.Default.KeyboardArrowDown, stringResource(R.string.controls_hide), onHide)
         }
+    }
+}
+
+@Composable
+private fun BarButton(icon: ImageVector, label: String, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val source = remember { androidx.compose.foundation.interaction.MutableInteractionSource() }
+    val focused by source.collectIsFocusedAsState()
+    Button(
+        onClick = onClick,
+        interactionSource = source,
+        shape = RoundedCornerShape(16.dp),
+        colors = ButtonDefaults.buttonColors(
+            containerColor = if (focused) MaterialTheme.colorScheme.primary else Color.White.copy(alpha = 0.12f),
+            contentColor = if (focused) MaterialTheme.colorScheme.onPrimary else Color.White,
+        ),
+        contentPadding = PaddingValues(horizontal = 20.dp, vertical = 14.dp),
+        modifier = modifier.dpadFocus(RoundedCornerShape(16.dp))
+    ) {
+        Icon(icon, contentDescription = null, modifier = Modifier.size(24.dp))
+        Spacer(Modifier.width(10.dp))
+        Text(label, style = MaterialTheme.typography.titleMedium)
     }
 }
 
@@ -1058,7 +1138,10 @@ private const val CLIENT_VOLUME_STEP = 1f / 16
 
 private const val VIDEO_OVERLAY_HIDE_MS = 4000L
 private const val STOPPED_NOTICE_MS = 8000L
-private const val MIRRORING_TOAST_MS = 3000L
+private const val MIRRORING_TOAST_MS = 4000L
+private const val CONTROLS_HIDE_MS = 10_000L
+// remote keys that open the control bar while mirroring
+private val OPEN_KEYS = setOf(Key.DirectionCenter, Key.Enter, Key.NumPadEnter, Key.Menu)
 
 @Composable
 private fun DebugOverlay(info: DebugInfo, modifier: Modifier = Modifier) {

@@ -282,6 +282,13 @@ class MainViewModel @Inject constructor(app: Application) : AndroidViewModel(app
         service?.startServer()
     }
 
+    /** Every setting back to its default. Purchases (and the debug test switches) are not settings and stay. */
+    fun resetAllSettings() {
+        val e = prefs.edit()
+        Prefs.all.keys.filter { it != Prefs.WORKING_NAME.key && !it.startsWith("debug_") }.forEach { e.remove(it) }
+        e.apply()
+    }
+
     fun stopServer() {
         service?.stopServer()
     }

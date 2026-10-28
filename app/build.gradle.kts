@@ -33,7 +33,7 @@ android {
         applicationId = "com.sebstech.screenbridge"
         minSdk = 23
         targetSdk = 37
-        versionCode = 101
+        versionCode = 102
         versionName = "1.0.0"
 
         externalNativeBuild {

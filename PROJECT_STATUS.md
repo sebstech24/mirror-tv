@@ -12,6 +12,30 @@ the 20-minute counter before the paywall. Give them two options, A monthly with 
 - Replaces the 25 Oct one-time $7.99 / $4.99 launch-price plan in docs/business/SALES-PLAN.md.
 - Sebastian asked to publish once ready (28 Oct). Release work: see "Play release" chats.
 
+## RECEIVER FIXES, real-TV night 28 Oct 2026 (Philips TV, MacBook Air; versionCode 102)
+Sebastian's report: Mac mirroring stuttered (iPhone smooth); changing a setting dropped the Mac; OK showed faint icons;
+Home text ran off screen. Measured with the benchmark log (benchmark_log=true: per second fps/out/drawn, decode wait,
+input gaps, arrival jitter vs the Mac's timestamps, smoothing delay). Findings and fixes:
+- Decoded pictures were only taken out when the NEXT frame arrived. The Mac sends unevenly, so pictures waited (A/B on
+  the TV: wait 133 -> 70 ms avg, worst 554 -> 162 ms, frame-timing spread 50 -> 11 ms). Now a dedicated output thread.
+- The GL loop merged "frame available" signals and left frames queued; now it latches every queued frame.
+- The Mac's frames arrive bunched about once a second (~100 ms off their own timing; our own waiting was 1-6 ms, so
+  it's Mac/Wi-Fi). Adaptive smoothing: hold pictures to the Mac's clock plus the measured spread (max 66 ms = what
+  the decoder's ~6 output buffers allow), rises fast, falls slowly; switches itself on per session.
+- SPS rewrite (max_num_reorder_frames=0, H264SpsFixer + 4 tests) and an access unit delimiter after each frame, so
+  the decoder doesn't hold pictures waiting for more input.
+- MediaTek vendor keys "game-mode"/"low-latency-mode" route pictures to a hidden video plane: BLACK SCREEN. Never set.
+- Lowest latency (now OFF by default) also enabled decoder frame-drop = small skips; off was smooth to Sebastian's eye.
+- 4K: the Mac only sends ~48 uneven fps over H.264 at 4K (0.55 Mbps, decode fine). Auto now = max 1080p; 4K stays an
+  explicit choice ("may stutter"). Fps hard-capped at 60 everywhere; HDR never (decoder pinned to SDR BT.709).
+- Settings never drop a connected Mac: restart-type settings wait for the disconnect ("takes effect the next time your
+  Mac connects"); Lowest latency applies live. "Reset all settings" at the bottom of Settings (keeps purchases).
+- OK and Back open one control bar while mirroring (who's mirroring, size, Settings / Picture-in-picture / Hide).
+- Home: overscan-safe margins and shrink-to-fit (the TV draws text bold/outlined, which made it overflow).
+- The TV itself runs its panel at 100/120 Hz with its own motion processing; the Mac never sends more than 60.
+Still open: some residual hitches when the Mac pauses >0.2 s (Mac side); Philips "long-press Home" TV-settings
+case not tested yet; In-App Review prompt for 1.0.1 (marketing chat's spec, after submission); app rename pending.
+
 ## FIRST PLAY RELEASE BUILT (28 Oct 2026): 1.0.0, versionCode 101
 - Signed AAB: `dist/screenbridge-1.0.0-101.aab` (not in git; rebuild with `./gradlew bundleRelease`). 100 was the
   earlier build that still had free sessions; don't upload it.

@@ -38,7 +38,13 @@ class VideoPipeline {
     private var surfaceTexture: SurfaceTexture? = null
     var inputSurface: Surface? = null; private set
 
-    @Volatile private var frameAvailable = false
+    // frames the decoder has queued but we haven't latched yet. A plain "frame available" flag merged
+    // frames that arrived close together, leaving the rest queued behind: added lag and uneven motion
+    private var pendingFrames = 0
+    @Volatile private var _drawn = 0
+    @Volatile private var _skipped = 0
+    fun takeDrawn() = _drawn.also { _drawn = 0 }
+    fun takeSkipped() = _skipped.also { _skipped = 0 }
     private var pendingDisplay: Surface? = null
     private var displayDirty = false
     @Volatile private var videoW = 0
@@ -102,21 +108,23 @@ class VideoPipeline {
             var newDisplay: Surface? = null
             var displayChanged = false
             var doFrame = false
+            var latch = 0
             synchronized(lock) {
-                while (running && !frameAvailable && !displayDirty) lock.wait()
+                while (running && pendingFrames == 0 && !displayDirty) lock.wait()
                 if (running && displayDirty) {
                     newDisplay = pendingDisplay
                     displayChanged = true
                     displayDirty = false
                 }
-                if (running && frameAvailable) {
-                    frameAvailable = false
+                if (running && pendingFrames > 0) {
+                    latch = pendingFrames
+                    pendingFrames = 0
                     doFrame = true
                 }
             }
             if (!running) break
             if (displayChanged) _bindDisplay(newDisplay)
-            if (doFrame) _consumeAndDraw()
+            if (doFrame) _consumeAndDraw(latch)
         }
     }
 
@@ -140,18 +148,21 @@ class VideoPipeline {
         if (hasFrame) _render()
     }
 
-    private fun _consumeAndDraw() {
+    // latches every queued frame (each one frees a decoder buffer) and draws the newest once
+    private fun _consumeAndDraw(latch: Int) {
         val st = surfaceTexture ?: return
         val egl = egl ?: return
         if (window == EGL14.EGL_NO_SURFACE) {
             // no display: keep consuming so decoder doesn't stall
             egl.makeCurrent()
-            st.updateTexImage()
+            repeat(latch) { st.updateTexImage() }
             hasFrame = true
             return
         }
         egl.makeCurrent(window)
-        st.updateTexImage()
+        repeat(latch) { st.updateTexImage() }
+        _skipped += latch - 1
+        _drawn++
         st.getTransformMatrix(texMatrix)
         hasFrame = true
         _render()
@@ -190,7 +201,7 @@ class VideoPipeline {
         surfaceTexture = SurfaceTexture(oesTex).also {
             if (videoW > 0 && videoH > 0) it.setDefaultBufferSize(videoW, videoH)
             it.setOnFrameAvailableListener {
-                synchronized(lock) { frameAvailable = true; lock.notifyAll() }
+                synchronized(lock) { pendingFrames++; lock.notifyAll() }
             }
         }
     }

@@ -69,6 +69,9 @@ import kotlin.math.abs
 import kotlin.math.pow
 import kotlin.math.roundToInt
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.delay
+import android.widget.Toast
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.filter
@@ -131,6 +134,9 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
     private var _netCallback: ConnectivityManager.NetworkCallback? = null
     private var _lastAddrs: Set<InetAddress> = emptySet()
     private val _readvertiseTask = Runnable { _readvertise() }
+    private val _latencyFallback = MutableStateFlow(false)
+    // a setting that needs a receiver restart changed while a sender was connected
+    @Volatile private var _restartPending = false
     private val _cancelLaunchAlert = Runnable { _clearLaunchAlert() }
 
     private val _videoAspect = MutableStateFlow(16f / 9f)
@@ -358,9 +364,17 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         }
         lifecycleScope.launch {
             prefs.audioConfigFlow()
+                .combine(_latencyFallback) { cfg, fallback -> if (fallback) readAudioConfig(prefs, fastest = false) else cfg }
                 .debounce(AUDIO_CONFIG_DEBOUNCE_MS)
                 .collect { audioRenderer.updateConfig(it) }
         }
+        lifecycleScope.launch {
+            prefs.observe { this[Prefs.LOWEST_LATENCY] }.collect { fastest ->
+                // frame-drop takes effect with the next decoder start, release timing at once
+                videoRenderer.keyAllowFrameDrop = fastest || prefs[Prefs.KEY_ALLOW_FRAME_DROP]
+            }
+        }
+        _watchLatencyGlitches()
         lifecycleScope.launch {
             prefs.observe { this[Prefs.SYNC_CLIENT_VOLUME] }.collect {
                 _syncClientVol = it
@@ -372,7 +386,13 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
             prefs.changes()
                 .filter { Prefs.all[it]?.restart == true }
                 .debounce(SERVER_RESTART_DEBOUNCE_MS)
-                .collect { _restartServer() }
+                .collect {
+                    // never drop a Mac that is mirroring: apply once it disconnects
+                    if (_connectionCount.value > 0) {
+                        _restartPending = true
+                        Toast.makeText(this@AirPlayService, R.string.setting_applies_next_connection, Toast.LENGTH_LONG).show()
+                    } else _restartServer()
+                }
         }
         // paid app: a subscription that ends (or a refund) turns the receiver off; the TV then shows the paywall
         lifecycleScope.launch {
@@ -435,7 +455,8 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         audioRenderer.attachEngine(nativeHandle)
 
         // apply settings from preferences
-        val maxFps = prefs[Prefs.MAX_FPS]
+        // hard cap: TV panels here run 60 Hz to Android; more than 60 only adds uneven frames
+        val maxFps = prefs[Prefs.MAX_FPS].coerceAtMost(MAX_FPS_CAP)
         val overscanned = prefs[Prefs.OVERSCANNED]
         val audioLatencyMs = prefs[Prefs.AUDIO_LATENCY_MS]
         val (reqW, reqH) = _displaySize(clamp = false)
@@ -443,14 +464,18 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         val alac = prefs[Prefs.ALAC_ENABLED]
         val aac = prefs[Prefs.AAC_ENABLED]
 
-        videoRenderer.enforceSdr = prefs[Prefs.ENFORCE_SDR]
+        // never HDR: the receiver doesn't advertise it, and the decoder is pinned to SDR BT.709 too
+        videoRenderer.enforceSdr = true
         val fastest = prefs[Prefs.LOWEST_LATENCY]
         videoRenderer.keyAllowFrameDrop = fastest || prefs[Prefs.KEY_ALLOW_FRAME_DROP]
         videoRenderer.selector.maxOperatingRate = Prefs.forced(prefs[Prefs.OPERATING_RATE])
         videoRenderer.benchmarkLog = prefs[Prefs.BENCHMARK_LOG]
         videoRenderer.benchmarkLogCallback = { msg -> logCallback?.invoke(msg) }
-        // lowest latency: show each frame as soon as it's decoded, no pts scheduling
-        videoRenderer.scheduledOutputBufferRelease = !fastest && prefs[Prefs.SCHEDULED_OUTPUT_BUFFER_RELEASE]
+        // pacing is the renderer's smoothing buffer now (see LOWEST_LATENCY above); the old fixed pts schedule is off
+        videoRenderer.scheduledOutputBufferRelease = false
+        // smoothing switches itself on per session when frames arrive unevenly, in both modes (28 Oct test:
+        // forcing it on with Lowest latency off was no smoother); Lowest latency now only trims audio buffering
+        videoRenderer.smoothing = false
         NativeBridge.nativeSetH265Enabled(nativeHandle, h265)
         NativeBridge.nativeSetCodecs(nativeHandle, alac, aac)
         val advertiseVideo = prefs[Prefs.ADVERTISE_VIDEO]
@@ -528,11 +553,20 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         if (res == Prefs.PORTRAIT || res == Prefs.LANDSCAPE) return device
         val (w, h) = if (res.contains("x")) {
             res.split("x").let { it[0].toInt() to it[1].toInt() }
-        } else device
+        } else _autoSize(device)
         if (!clamp) return w to h
         // strict decoders black-screen past their limits; advertised size is only upper bound for senders
         val (maxW, maxH) = videoRenderer.maxResolution()
         return w.coerceAtMost(maxW) to h.coerceAtMost(maxH)
+    }
+
+    // Auto = the screen, but at most 1080p: at 4K a Mac sends only ~48 uneven fps over H.264 (measured on a
+    // Philips 4K TV, 28 Oct 2026), which stutters; 4K stays available as an explicit choice
+    private fun _autoSize(device: Pair<Int, Int>): Pair<Int, Int> {
+        val (w, h) = device
+        val scale = minOf(1.0, AUTO_MAX_LONG / maxOf(w, h).toDouble(), AUTO_MAX_SHORT / minOf(w, h).toDouble())
+        // even sizes: decoders want them
+        return ((w * scale).toInt() and 1.inv()) to ((h * scale).toInt() and 1.inv())
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
@@ -542,7 +576,7 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         if (nativeHandle == 0L || _serverState.value != ServerState.RUNNING) return
         if (!_orientationFollowsDevice()) return
         val (w, h) = _displaySize()
-        NativeBridge.nativeSetDisplaySize(nativeHandle, w, h, prefs[Prefs.MAX_FPS])
+        NativeBridge.nativeSetDisplaySize(nativeHandle, w, h, prefs[Prefs.MAX_FPS].coerceAtMost(MAX_FPS_CAP))
         log("Advertising ${w}x${h} from next session")
     }
 
@@ -569,6 +603,28 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         ServiceCompat.stopForeground(this, ServiceCompat.STOP_FOREGROUND_REMOVE)
         foregroundStarted = false
         stopSelf()
+    }
+
+    // lowest latency keeps the audio cushion minimal; if a session's sound glitches, give it normal buffering
+    // for the rest of that session (no reconnect). 3+ glitches within ~10 s counts as glitching.
+    private fun _watchLatencyGlitches() = lifecycleScope.launch {
+        val window = ArrayDeque<Int>()
+        var last = -1
+        while (true) {
+            delay(GLITCH_POLL_MS)
+            val active = _connectionCount.value > 0 && prefs[Prefs.LOWEST_LATENCY] && !_latencyFallback.value
+            val a = if (active) audioRenderer.audioDebug() else null
+            if (a == null) { window.clear(); last = -1; continue }
+            val total = a.underruns + a.silences + a.xrun
+            if (last >= 0) window.addLast((total - last).coerceAtLeast(0))
+            last = total
+            while (window.size > GLITCH_WINDOW_POLLS) window.removeFirst()
+            if (window.sum() >= GLITCH_LIMIT) {
+                log("Sound glitching with lowest latency: normal audio buffering for this session")
+                _latencyFallback.value = true
+                window.clear(); last = -1
+            }
+        }
     }
 
     private fun _restartServer() {
@@ -856,6 +912,8 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
     override fun onConnectionDestroy() {
         _connectionCount.value = (_connectionCount.value - 1).coerceAtLeast(0)
         if (_connectionCount.value == 0) {
+            _latencyFallback.value = false
+            if (_restartPending) _mainHandler.post { _restartPending = false; _restartServer() }
             _lastDisconnect.value = _pendingDisconnect ?: DisconnectReason.SENDER_STOPPED
             _pendingDisconnect = null
             _clientName.value = null
@@ -1376,6 +1434,12 @@ class AirPlayService : LifecycleService(), RaopCallbackHandler, LogListener {
         const val ACTION_NEXT = "io.github.jqssun.airplay.NEXT"
         const val ACTION_PREV = "io.github.jqssun.airplay.PREV"
         const val ACTION_START_SERVER = "io.github.jqssun.airplay.START_SERVER"
+        const val MAX_FPS_CAP = 60
+        private const val AUTO_MAX_LONG = 1920
+        private const val AUTO_MAX_SHORT = 1080
+        private const val GLITCH_POLL_MS = 2_000L
+        private const val GLITCH_WINDOW_POLLS = 5
+        private const val GLITCH_LIMIT = 3
         // shared with dpad/double-tap seeks
         const val VIDEO_SEEK_STEP_MS = 10_000L
         const val VIDEO_POLL_PENDING_TIMEOUT_MS = 3_000L
