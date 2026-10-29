@@ -1,5 +1,13 @@
 # Mirror TV — project status
 
+## GOOGLE PLAY (29 Oct 2026): Telebeam app in Play Console
+- Play app "Telebeam: Screen Mirroring TV", package com.sebstech.telebeam, Console app id 4972999395680958705 (account: organization "Sebastian Skoic, s.p.", so no 12-tester rule). The old "Screenbridge" draft (com.sebstech.screenbridge) is left untouched; Sebastian can delete it.
+- Done: all App content forms (no ads, no data collected, 18+, content rating, reviewer access note), category Tools, contact telebeam@controlmymac.com, privacy policy https://sebstech24.github.io/mirror-tv/privacy.html (gh-pages branch), Android TV form factor, en-US listing (fastlane/metadata/android/en-US), icon 01, Telebeam feature graphic + TV banner, 3 real-TV screenshots (docs/screens/telebeam-tv-*.png).
+- SUBMITTED FOR REVIEW 29 Oct 2026: build 104 (1.0.0, minSdk 24), production, 178 countries, managed publishing OFF (goes live as soon as Google approves). Foreground service declaration uses the demo video https://sebstech24.github.io/mirror-tv/fgs-demo.mp4. AI asset labels: icon, feature graphic, TV banner = AI-made; screenshots = real. Play's automatic protection needs minSdk 24 (103 was rejected for minSdk 23).
+- Products (active): telebeam_lifetime $49.99 (purchase option `lifetime`); telebeam_monthly, base plan `monthly` $4.99, offer `free-trial-7d` (7 days free, new customers). Prices converted by Play (e.g. EUR 54.99 / 5.49 incl. VAT). Neither product type shows a Family Sharing setting in this Console.
+- AAB uploads over 10 MB can't go through the Chrome tool: Sebastian drags the .aab into the release's upload box.
+- Promo codes: Console → Telebeam → Monetize with Play → Promo codes (…/app/4972999395680958705/promotions) → Create promo code. First use asks to accept the Promo codes Terms of Service. Limit: 500 codes per quarter across all non-subscription promotions. First promotion (id 131599292, "Google Play review - Lifetime"): 2 Lifetime codes for Google reviewers, valid 29 Oct 2026 to 31 Jan 2027, only in the App access note. Hand out codes from a ledger like Control My Mac's (never reuse a code from old mail). The in-app "Enter code" button comes in 1.0.1; until then users redeem in the Play Store.
+
 ## NAME DECIDED: Telebeam (Sebastian, 29 Oct 2026; "Screenbridge" clashed with an existing TV company)
 - App name on the TV "Telebeam"; Play title "Telebeam: Screen Mirroring TV"; package `com.sebstech.telebeam`
   (was com.sebstech.screenbridge; changed before any Play upload). Products: `telebeam_monthly` (base plan
