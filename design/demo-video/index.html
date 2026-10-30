@@ -12,18 +12,20 @@
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="22" data-width="1920" data-height="1080">
-      <div id="demo" data-composition-id="demo" data-composition-src="compositions/demo.html" data-start="0" data-duration="16.8" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
-      <div id="endcard" data-composition-id="endcard" data-composition-src="compositions/endcard.html" data-start="16.8" data-duration="5.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="16.7" data-width="1920" data-height="1080">
+      <div id="demo" data-composition-id="demo" data-composition-src="compositions/demo.html" data-start="0" data-duration="12.5" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="endcard" data-composition-id="endcard" data-composition-src="compositions/endcard.html" data-start="12.5" data-duration="4.2" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
 
       <!-- sound on visible actions only: camera moves, the three clicks, the icon landing -->
-      <audio id="sfx-whoosh1" class="clip" src="assets/sfx/whoosh.wav" data-start="3.78" data-duration="0.5" data-track-index="2" data-volume="0.5"></audio>
-      <audio id="sfx-click1" class="clip" src="assets/sfx/click.wav" data-start="5.53" data-duration="0.14" data-track-index="3" data-volume="0.9"></audio>
-      <audio id="sfx-click2" class="clip" src="assets/sfx/click.wav" data-start="7.33" data-duration="0.14" data-track-index="3" data-volume="0.9"></audio>
-      <audio id="sfx-click3" class="clip" src="assets/sfx/click.wav" data-start="9.13" data-duration="0.14" data-track-index="3" data-volume="0.9"></audio>
-      <audio id="sfx-whoosh2" class="clip" src="assets/sfx/whoosh.wav" data-start="11.38" data-duration="0.5" data-track-index="2" data-volume="0.6" data-playback-rate="1.15"></audio>
-      <audio id="sfx-whoosh3" class="clip" src="assets/sfx/whoosh.wav" data-start="16.25" data-duration="0.5" data-track-index="2" data-volume="0.45" data-playback-rate="0.85"></audio>
-      <audio id="sfx-pop" class="clip" src="assets/sfx/pop.wav" data-start="17.12" data-duration="0.26" data-track-index="4" data-volume="0.7"></audio>
+      <audio id="sfx-whoosh1" class="clip" src="assets/sfx/whoosh.wav" data-start="2.58" data-duration="0.5" data-track-index="2" data-volume="0.5"></audio>
+      <audio id="sfx-click1" class="clip" src="assets/sfx/click.wav" data-start="4.03" data-duration="0.14" data-track-index="3" data-volume="0.9"></audio>
+      <audio id="sfx-click2" class="clip" src="assets/sfx/click.wav" data-start="5.23" data-duration="0.14" data-track-index="3" data-volume="0.9"></audio>
+      <audio id="sfx-click3" class="clip" src="assets/sfx/click.wav" data-start="6.43" data-duration="0.14" data-track-index="3" data-volume="0.9"></audio>
+      <audio id="sfx-whoosh2" class="clip" src="assets/sfx/whoosh.wav" data-start="8.28" data-duration="0.5" data-track-index="2" data-volume="0.6" data-playback-rate="1.15"></audio>
+      <audio id="sfx-whoosh3" class="clip" src="assets/sfx/whoosh.wav" data-start="12.0" data-duration="0.5" data-track-index="2" data-volume="0.45" data-playback-rate="0.85"></audio>
+      <!-- quiet music bed (MusicGen, made on the PC), faded in and out -->
+      <audio id="music" class="clip" src="assets/music/bed.wav" data-start="0" data-duration="16.7" data-track-index="5" data-volume="1"></audio>
+      <audio id="sfx-pop" class="clip" src="assets/sfx/pop.wav" data-start="12.77" data-duration="0.26" data-track-index="4" data-volume="0.7"></audio>
     </div>
     <script>
       window.__timelines["main"] = gsap.timeline({ paused: true });
