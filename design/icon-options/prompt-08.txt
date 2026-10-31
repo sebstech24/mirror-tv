@@ -1,0 +1,5 @@
+Square 1024x1024 PNG app icon for "Screenbridge", an Android TV / Google TV app that receives a computer or phone screen mirrored wirelessly onto the TV. Full-bleed: the background fills the entire square edge to edge, NO rounded corners, NO transparency, NO border. Keep the symbol inside the central ~60% (safe zone, Android masks the edges). No text, no letters, no words. Must stay clear and recognisable at 48 px: one bold simple symbol, high contrast. Hard rules: NO Apple logo, NO AirPlay symbol (no triangle pointing into a rectangle), no Apple-looking product renders (no MacBook or iPhone likenesses). Premium, polished, App-Store-featured quality.
+
+Concept: Neon. A wide TV outline drawn in glowing electric-blue neon tube, with a smaller hot-pink neon screen outline overlapping its lower left corner; a short neon arc links them. Background: dark brick-free deep purple-black with faint glow haze. Retro-futuristic synthwave, crisp neon glow, bold shapes.
+
+Use your built-in image generation tool. Save the final image as 08.png in the current folder (1024x1024). Do not create or edit any other files.

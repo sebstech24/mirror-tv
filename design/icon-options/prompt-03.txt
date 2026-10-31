@@ -1,0 +1,5 @@
+Square 1024x1024 PNG app icon for "Screenbridge", an Android TV / Google TV app that receives a computer or phone screen mirrored wirelessly onto the TV. Full-bleed: the background fills the entire square edge to edge, NO rounded corners, NO transparency, NO border. Keep the symbol inside the central ~60% (safe zone, Android masks the edges). No text, no letters, no words. Must stay clear and recognisable at 48 px: one bold simple symbol, high contrast. Hard rules: NO Apple logo, NO AirPlay symbol (no triangle pointing into a rectangle), no Apple-looking product renders (no MacBook or iPhone likenesses). Premium, polished, App-Store-featured quality.
+
+Concept: Bridge arc. An abstract modern suspension-bridge silhouette: one graceful glowing arc spanning between two rectangular screen-shaped pylons (small left, large right). The arc glows in a cyan-to-magenta gradient. Background: deep teal-navy gradient. Geometric, flat with a soft glow, very bold shapes.
+
+Use your built-in image generation tool. Save the final image as 03.png in the current folder (1024x1024). Do not create or edit any other files.
