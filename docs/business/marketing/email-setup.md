@@ -1,6 +1,6 @@
 # telebeam@controlmymac.com: the app's own address
 
-Decided 29 Oct 2026 (Sebastian: "do as you recommend"): no new domain, no separate website for now. Telebeam gets **telebeam@controlmymac.com** on the existing controlmymac.com setup. telebeamapp.com is dropped.
+Decided 29 Oct 2026 (Sebastian: "do as you recommend"): no new domain, no separate website for now (website part replaced 2 Nov 2026: Sebastian wants each app to have its own page; the email stays). Telebeam gets **telebeam@controlmymac.com** on the existing controlmymac.com setup. telebeamapp.com is dropped.
 
 How controlmymac.com mail works: iCloud+ Custom Email Domain receives (MX mx01/mx02.mail.icloud.com) and the mail reaches Sebastian's Gmail; Brevo sends, and the domain is already authenticated there (SPF includes icloud.com, Brevo DKIM, DMARC p=none with reports).
 
