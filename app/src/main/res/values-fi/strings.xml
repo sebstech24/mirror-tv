@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Näytön peilauksen vastaanotin</string>
+    <string name="notification_title">Valmis näytön peilaukseen</string>
+    <string name="notification_text">Macisi löytää tämän TV:n Näytön peilaus -valikosta</string>
+    <string name="notification_pin_title">PIN-koodi vaaditaan</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Lopeta</string>
+
+    <string name="tab_overview">Yleiskatsaus</string>
+    <string name="tab_logs">Lokit</string>
+    <string name="tab_settings">Asetukset</string>
+
+    <string name="server_stopped">Palvelin pysäytetty</string>
+    <string name="waiting_for_connection">Odotetaan yhteyttä…</string>
+    <string name="waiting_for_playback">Aloita toisto lähettävässä laitteessa…</string>
+    <string name="error_starting_server">Palvelimen käynnistys epäonnistui</string>
+    <string name="connected_count">%d yhdistetty</string>
+    <string name="error_label">Virhe</string>
+    <string name="stopped_label">Pysäytetty</string>
+    <string name="btn_start">Käynnistä</string>
+    <string name="btn_stop">Pysäytä</string>
+    <string name="btn_allow">Salli</string>
+    <string name="btn_open_settings">Avaa asetukset</string>
+    <string name="local_network_label">Tarvitaan lupa lähellä oleviin laitteisiin</string>
+    <string name="local_network_desc">Salli lähellä olevat laitteet, jotta Mac, iPhone tai iPad löytää tämän TV:n</string>
+    <string name="unknown_track">Tuntematon</string>
+
+    <string name="cd_pip">Kuva kuvassa</string>
+    <string name="cd_fullscreen">Koko näyttö</string>
+    <string name="cd_exit_fullscreen">Poistu koko näytöstä</string>
+    <string name="cd_cover_art">Kansikuva</string>
+    <string name="cd_play_pause">Toista/tauko</string>
+    <string name="cd_rewind">Kelaa taakse</string>
+    <string name="cd_fast_forward">Kelaa eteen</string>
+    <string name="volume_server">Vastaanottimen äänenvoimakkuus</string>
+    <string name="volume_client">Lähettäjän äänenvoimakkuus</string>
+    <string name="volume_value">%1$d %%</string>
+    <string name="cd_download">Lataa video</string>
+    <string name="cd_cancel_download">Peruuta lataus</string>
+
+    <string name="download_saved">Tallennettu: %1$s</string>
+    <string name="download_failed">Lataus epäonnistui</string>
+
+    <string name="gesture_seek_seconds">%1$d sekuntia</string>
+    <string name="seconds_short">%1$d s</string>
+    <string name="select_playback_speed">Toistonopeus</string>
+    <string name="cd_reset_speed">Palauta nopeus</string>
+    <string name="skip_silence">Ohita hiljaisuus</string>
+
+    <string name="cd_back">Takaisin</string>
+    <string name="cd_copy_url">Kopioi videon URL</string>
+    <string name="cd_rotate">Kierrä näyttöä</string>
+    <string name="cd_lock_controls">Lukitse säätimet</string>
+    <string name="cd_unlock_controls">Avaa säätimet</string>
+    <string name="scale_best_fit">Sovita</string>
+    <string name="scale_stretch">Venytä</string>
+    <string name="scale_crop">Rajaa</string>
+
+    <string name="dialog_pin_title">Syötä tämä PIN-koodi laitteeseesi</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Vie</string>
+    <string name="btn_clear">Tyhjennä</string>
+    <string name="export_logs_chooser_title">Vie lokit</string>
+
+    <string name="section_server">Palvelin</string>
+    <string name="section_connection">Yhteys</string>
+    <string name="section_display">Näyttö</string>
+    <string name="section_decode">Dekoodaus</string>
+    <string name="section_developer">Kehittäjä</string>
+
+    <string name="setting_server_name">Palvelimen nimi</string>
+    <string name="setting_server_port">Palvelimen portti</string>
+    <string name="setting_auto_start">Käynnistä palvelin automaattisesti</string>
+    <string name="setting_auto_start_desc">Käynnistä vastaanotin, kun sovellus avataan</string>
+    <string name="setting_boot_auto_start">Käynnistä palvelin TV:n käynnistyessä</string>
+    <string name="setting_boot_auto_start_desc">Käynnistä vastaanotin, kun TV menee päälle</string>
+    <string name="setting_run_in_background">Toimi taustalla</string>
+    <string name="setting_run_in_background_desc">Pidä palvelin käynnissä, kun poistut sovelluksesta</string>
+
+    <string name="setting_require_pin">Vaadi PIN-koodi (beta)</string>
+    <string name="setting_require_pin_desc">Vaadi 4-numeroinen PIN-koodi jokaiselle uudelle yhteydelle</string>
+    <string name="setting_allow_new_conn">Salli uudet yhteydet</string>
+    <string name="setting_allow_new_conn_desc">Katkaise nykyinen lähettäjä, kun uusi yhdistää</string>
+
+    <string name="setting_idle_preview">Esikatselu odottaessa</string>
+    <string name="setting_idle_preview_desc">Näytä videopinta yhteyttä odotettaessa</string>
+    <string name="setting_auto_fullscreen">Siirry koko näyttöön automaattisesti</string>
+    <string name="setting_auto_fullscreen_desc">Siirry koko näyttöön, kun lähettäjä yhdistää</string>
+    <string name="setting_keep_screen_on">Pidä näyttö päällä</string>
+    <string name="setting_keep_screen_on_desc">Estä lepotila, kun lähettäjä on yhdistetty</string>
+    <string name="setting_advertise_video">Tarjoa videotoisto</string>
+    <string name="setting_advertise_video_desc">Kun pois päältä, videot lähetetään pelkkänä äänenä</string>
+    <string name="setting_advertise_mirroring">Tarjoa näytön peilaus</string>
+    <string name="setting_advertise_mirroring_desc">Kun pois päältä, laite piilotetaan peilaukselta</string>
+    <string name="setting_advertise_audio">Ilmoita AirPlay-äänen tuki</string>
+    <string name="setting_advertise_audio_desc">Kun pois päältä, laitetta voi käyttää vain peilaukseen ja se piilotetaan mediasoittimilta</string>
+    <string name="setting_alac">Ilmoita ALAC-koodekki</string>
+    <string name="setting_alac_desc">Tarjoa ALAC mDNS-tietueessa; käytetään musiikin suoratoistoon</string>
+    <string name="setting_aac">Ilmoita AAC-koodekki</string>
+    <string name="setting_aac_desc">Tarjoa AAC-ELD/AAC-LC mDNS-tietueessa; käytetään näytön peilauksen ääneen</string>
+    <string name="setting_launch_on_connect">Näytä Telebeam, kun Mac yhdistää</string>
+    <string name="setting_launch_on_connect_desc">Tuo kuvan etualalle. Jos TV estää sen, näkyviin tulee ilmoitus.</string>
+    <string name="setting_discovery">Löydettävyys</string>
+    <string name="setting_discovery_all_desc">Ilmoita kaikissa käytettävissä olevissa liitännöissä. Käyttää NsdManager-palvelua.</string>
+    <string name="setting_discovery_usb_desc">Ilmoita vain USB-jaetun yhteyden kautta, jotta yhteys on langallinen. Käyttää omaa mDNS-vastaajaa.</string>
+    <string name="chip_all_networks">Kaikki verkot</string>
+    <string name="chip_usb_only">Vain USB</string>
+    <string name="setting_resolution">Resoluutio</string>
+    <string name="setting_resolution_desc">Lähettäjille ilmoitettu videon resoluutio</string>
+    <string name="setting_resolution_width">Leveys</string>
+    <string name="setting_resolution_height">Korkeus</string>
+    <string name="setting_max_fps">Suurin FPS</string>
+    <string name="setting_max_fps_desc">Lähettäjille ilmoitettu suurin kuvataajuus</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Yliskannaus</string>
+    <string name="setting_overscanned_desc">Lisää pikselireunus näytöille, joissa on yliskannaus</string>
+    <string name="chip_custom">Mukautettu</string>
+    <string name="chip_device_portrait">Pysty</string>
+    <string name="chip_device_landscape">Vaaka</string>
+
+    <string name="setting_h265_desc">Auto käyttää vain toimiviksi tiedettyjä H.265-dekoodereita</string>
+    <string name="setting_enforce_sdr_desc">Merkitse video rajoitetuksi SDR:ksi; poista käytöstä, jotta HDR-lähteet välitetään sellaisenaan</string>
+    <string name="setting_sw_alac">Pakota ohjelmistopohjainen ALAC-dekooderi</string>
+    <string name="setting_sw_alac_desc">Käytä aina ohjelmistopohjaista ALAC-dekooderia järjestelmän dekooderin sijaan; voi vaikuttaa viiveeseen</string>
+    <string name="setting_sw_aac">Pakota ohjelmistopohjainen AAC-dekooderi</string>
+    <string name="setting_sw_aac_desc">Käytä aina ohjelmistopohjaista AAC-dekooderia järjestelmän dekooderin sijaan; voi vaikuttaa viiveeseen</string>
+    <string name="setting_sync_client_volume">Mac säätää TV:n äänenvoimakkuutta</string>
+    <string name="setting_sync_client_volume_desc">Macin äänenvoimakkuusnäppäimet säätävät TV:n ääntä peilauksen aikana. Poista käytöstä, jos haluat käyttää vain TV:n kaukosäädintä.</string>
+
+    <string name="setting_developer_options">Kehittäjäasetukset</string>
+    <string name="setting_developer_options_desc">Näytä asetukset kokeneille käyttäjille</string>
+    <string name="setting_key_allow_frame_drop_desc">Salli videodekoodereiden pudottaa kehyksiä sisäisesti pysyäkseen tahdissa (Android 10+)</string>
+    <string name="setting_realtime_decoder_priority_desc">Pyydä äänidekooderille reaaliaikaista ajoitusta</string>
+    <string name="setting_operating_rate_desc">Pyydä dekooderilta suurinta toimintanopeutta</string>
+    <string name="chip_auto">Auto</string>
+    <string name="chip_4k_beta">4K · beta</string>
+    <string name="chip_120_beta">120 · beta</string>
+    <string name="setting_frame_rate">Kuvataajuus</string>
+    <string name="setting_frame_rate_desc">60 fps toimii jokaisella Macilla. 120 (beta) vaatii Macin, jossa on 120 Hz:n ProMotion-näyttö.</string>
+    <string name="chip_on">Päällä</string>
+    <string name="chip_off">Pois</string>
+    <string name="setting_low_latency">Matala viive</string>
+    <string name="setting_low_latency_desc">Käytä matalan viiveen äänidekoodausta; kuluttaa enemmän virtaa ja suoritinta</string>
+    <string name="setting_scheduled_output_buffer_release">Tahdistettu kuvien ajoitus</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Ajoita jokainen dekoodattu kehys esitysaikaleimaansa vastaavaan VSYNC-hetkeen</string>
+    <string name="setting_audio_delay">Mukautettu äänen viive</string>
+    <string name="setting_audio_delay_desc">Aseta oma äänen viive, joka ilmoitetaan lähettäjälle</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Automaattinen ohjelmistoäänipuskurin koko</string>
+    <string name="setting_audio_auto_buffer_desc">Säätää ohjelmistoäänipuskuria verkon ja laitteen suorituskyvyn mukaan; liukusäädin määrää, kuinka paljon jitteriä puskuri sietää</string>
+    <string name="audio_adaptive_value">%1$d %% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Pienin viive</item>
+        <item>Pieni viive</item>
+        <item>Tasapainoinen</item>
+        <item>Vakaampi</item>
+        <item>Vakain</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Ohjelmistoäänipuskuri (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Puskuri verkon ja dekooderin jitterille: lyhyempi tarkoittaa pienempää viivettä, pidempi vähemmän katkoja</string>
+    <string name="setting_oboe_buffer_frames">Laitteiston lähtöpuskuri (kehyksiä)</string>
+    <string name="setting_oboe_buffer_frames_desc">Puskuri tämän sovelluksen ja äänilaitteen välillä, vain suorittimen ajoitusjitterin tasaamiseen. Pidä arvossa 0, niin koko valitaan automaattisesti.</string>
+    <string name="setting_debug_overlay">Näytä virheenkorjauspeite</string>
+    <string name="setting_debug_overlay_desc">Näytä striimin tilastot videon päällä: koodekki, FPS, bittinopeus, jitter, kehykset, pudotukset</string>
+    <string name="setting_benchmark_log">Ota virheenkorjausloki käyttöön</string>
+    <string name="setting_benchmark_log_desc">Kirjaa striimin tilastot logcat-lokiin: koodekki, FPS, bittinopeus, jitter, kehykset, pudotukset</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Ääni</string>
+    <string name="debug_section_network">Verkko</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bittinopeus: %2$s</string>
+    <string name="debug_frames_drops">Kehykset: %1$d  Pudotetut: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Vastaanotin: %2$d %%  Lähettäjä: %3$d %%</string>
+    <string name="debug_audio_buffer">Puskuri: %1$d ms (tavoite: %2$d ms)</string>
+    <string name="debug_audio_glitch">Katkot: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Dekoodaus: %1$s</string>
+    <string name="debug_clients">Lähettäjät: %1$d</string>
+
+    <string name="cd_settings">Asetukset</string>
+    <string name="status_ready">Valmis</string>
+    <string name="status_starting">Käynnistyy…</string>
+    <string name="status_off">Vastaanotin on pois päältä</string>
+    <string name="status_error">Vastaanottimen käynnistys epäonnistui</string>
+    <string name="btn_turn_on">Laita päälle</string>
+    <string name="btn_try_again">Yritä uudelleen</string>
+    <string name="home_mac_title">Näin peilaat Macisi</string>
+    <string name="home_step1">Klikkaa Ohjauskeskus-kuvaketta Macin valikkorivillä (oikealla ylhäällä)</string>
+    <string name="home_step2">Klikkaa kohtaa Näytön peilaus</string>
+    <string name="home_step3">Valitse ”%1$s”</string>
+    <string name="home_iphone">iPhonessa tai iPadissa: avaa Ohjauskeskus, napauta kohtaa Näytön peilaus ja valitse ”%1$s”.</string>
+    <string name="home_mirror_hint">Näkyykö TV:ssä tyhjä työpöytä Macin näytön sijaan? Macissa: Järjestelmäasetukset → Näytöt → ”Kun yhdistetty TV:hen” → Peilaa koko näyttö.</string>
+    <string name="home_screensaver_hint">Peittääkö näytönsäästäjä kuvan? Paina mitä tahansa kaukosäätimen painiketta.</string>
+    <string name="home_same_wifi">Macin ja TV:n on oltava samassa Wi‑Fi-verkossa</string>
+    <string name="home_tv_address">TV:n osoite: %1$s</string>
+    <string name="home_connecting">Macisi yhdistää…</string>
+    <string name="home_connecting_named">%1$s yhdistää…</string>
+    <string name="home_taking_over">%1$s ottaa ohjat…</string>
+    <string name="home_connecting_hint">Jos mitään ei näy muutamassa sekunnissa, valitse tämä TV uudelleen Macin Näytön peilaus -valikosta.</string>
+    <string name="home_stopped_title">Peilaus pysähtyi</string>
+    <string name="home_stopped_desc">Se lopetettiin Macista tai Wi‑Fi-yhteys katkesi. Peilaa uudelleen valitsemalla ”%1$s” Näytön peilaus -valikosta.</string>
+    <string name="toast_mirroring">Peilaus alkoi</string>
+    <string name="controls_hint">Paina OK nähdäksesi valinnat</string>
+    <string name="controls_back_hides">Piilota painamalla Takaisin</string>
+    <string name="controls_hide">Piilota</string>
+    <string name="setting_applies_next_connection">Tallennettu. Muutos tulee voimaan, kun Mac yhdistää seuraavan kerran.</string>
+    <string name="toast_took_over">%1$s otti TV:n käyttöön</string>
+    <string name="home_stopped_mac_title">Peilaus lopetettiin Macista</string>
+    <string name="home_stopped_mac_desc">Peilaa uudelleen valitsemalla ”%1$s” Näytön peilaus -valikosta.</string>
+    <string name="home_lost_title">Yhteys katkesi – tarkista Wi‑Fi</string>
+    <string name="home_lost_desc">Varmista, että Mac ja TV ovat samassa Wi‑Fi-verkossa, ja valitse sitten ”%1$s” uudelleen.</string>
+    <string name="home_network_title">TV:n verkko vaihtui</string>
+    <string name="home_network_desc">Yhdistä Mac TV:n Wi‑Fi-verkkoon ja valitse sitten ”%1$s” uudelleen.</string>
+    <string name="toast_mirroring_from">Peilaus: %1$s</string>
+
+    <string name="setting_tv_name">TV:n nimi</string>
+    <string name="setting_tv_name_desc">Nimi, jonka Mac näyttää Näytön peilaus -valikossa. Jos jätät tämän tyhjäksi, nimi on ”%1$s”.</string>
+    <string name="setting_picture_quality">Kuvanlaatu</string>
+    <string name="setting_picture_quality_desc">Auto käyttää tarkkuutta 1080p, joka on Macilta sujuvin. 4K (beta) on terävämpi, mutta kuva voi nykiä.</string>
+    <string name="setting_pin_simple">Kysy PIN-koodia</string>
+    <string name="setting_pin_simple_desc">Näytä TV:ssä 4-numeroinen koodi, ennen kuin uusi laite voi peilata</string>
+    <string name="setting_lowest_latency">Pienin viive</string>
+    <string name="setting_lowest_latency_desc">Vähemmän viivettä kirjoittaessa ja hiirtä käytettäessä. Kuva voi nykiä hieman joissain TV:issä; poista käytöstä, niin kuva on vakain.</string>
+    <string name="setting_about">Tietoja</string>
+    <string name="setting_about_desc">Versio, lisenssit ja lähdekoodi</string>
+    <string name="setting_advanced">Lisäasetukset</string>
+    <string name="setting_advanced_desc">Tekniset asetukset. Useimmat eivät koskaan tarvitse näitä.</string>
+    <string name="setting_logs">Näytä lokit</string>
+    <string name="setting_logs_desc">Tekninen loki vianmääritykseen</string>
+    <string name="setting_receiver_power">Sammuta vastaanotin</string>
+    <string name="setting_receiver_power_desc">Macisi ei näe tätä TV:tä, ennen kuin laitat vastaanottimen taas päälle</string>
+    <string name="setting_receiver_power_on">Laita vastaanotin päälle</string>
+    <string name="setting_receiver_power_on_desc">Anna Macin löytää tämä TV taas</string>
+    <string name="dialog_stop_title">Sammutetaanko vastaanotin?</string>
+    <string name="dialog_stop_text">Macisi ei löydä tätä TV:tä, ennen kuin laitat vastaanottimen taas päälle.</string>
+    <string name="btn_turn_off">Sammuta</string>
+    <string name="btn_cancel">Peruuta</string>
+    <string name="btn_reset">Palauta</string>
+    <string name="setting_reset_all">Palauta kaikki asetukset</string>
+    <string name="setting_reset_all_desc">Telebeam palaa alkuperäiseen tilaansa. Ostoksesi säilyy.</string>
+    <string name="dialog_reset_title">Palautetaanko kaikki asetukset?</string>
+    <string name="dialog_reset_text">Kaikki asetukset, myös TV:n nimi, palautetaan oletuksiin. Ostoksesi säilyy, ja peilaava Mac pysyy yhdistettynä.</string>
+    <string name="setting_reset_done">Asetukset palautettu.</string>
+
+    <string name="about_version">Versio %1$s</string>
+    <string name="about_credits">Perustuu AirPlay Receiver -sovellukseen (tekijä jqssun, GPL-3.0) ja UxPlay-projektiin. Käyttää FFmpeg-kirjastoa (LGPL).</string>
+    <string name="about_ffmpeg">Tämä ohjelmisto käyttää FFmpeg-koodia (https://ffmpeg.org), joka on lisensoitu LGPLv2.1-lisenssillä. Mukana ovat vain sen ALAC- ja AAC-äänidekooderit; sen lähdekoodi sisältyy tämän sovelluksen lähdekoodivarastoon.</string>
+    <string name="about_license_note">Tämä sovellus on vapaa ohjelmisto, jota koskee GNU General Public License v3.0. Voit hankkia, muuttaa ja jakaa sen lähdekoodia.</string>
+    <string name="about_source">Lähdekoodi: %1$s</string>
+    <string name="about_view_license">Näytä lisenssi (GPL-3.0)</string>
+    <string name="about_privacy">Tietosuojakäytäntö: %1$s</string>
+    <string name="about_privacy_button">Tietosuojakäytäntö</string>
+    <string name="about_trademark">Ei yhteydessä Appleen. AirPlay ja Mac ovat Apple Inc:n tavaramerkkejä.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Peilaa Macisi tähän TV:hen</string>
+    <string name="paywall_subtitle">Aloita valitsemalla vaihtoehto. Macisi löytää tämän TV:n heti, kun sovellus on avattu.</string>
+    <string name="paywall_benefit_quality">Macin näyttö isolla ruudulla, jopa 4K</string>
+    <string name="paywall_benefit_unlimited">Ei aikarajoja, ei mainoksia</string>
+    <string name="paywall_benefit_updates">Kaikki tulevat päivitykset sisältyvät</string>
+    <string name="paywall_not_now">Ei nyt</string>
+    <string name="paywall_terms">Kuukausitilaus uusiutuu hintaan %1$s/kk, kunnes peruutat sen Google Playssa. Veloitetaan Google-tililtäsi.</string>
+    <string name="paywall_terms_no_price">Maksun käsittelee Google Play, ja se veloitetaan Google-tililtäsi.</string>
+    <string name="plan_monthly">Kuukausi</string>
+    <string name="plan_lifetime">Elinikäinen</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d PÄIVÄ ILMAISEKSI</item>
+        <item quantity="other">%d PÄIVÄÄ ILMAISEKSI</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d päivä ilmaiseksi, sitten %2$s/kk. Peru milloin vain.</item>
+        <item quantity="other">%1$d päivää ilmaiseksi, sitten %2$s/kk. Peru milloin vain.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">%d päiväksi</item>
+        <item quantity="other">%d päiväksi</item>
+    </plurals>
+    <string name="plan_monthly_detail">Peru milloin vain Google Playssa.</string>
+    <string name="plan_free">Ilmainen</string>
+    <string name="plan_per_month">kuukaudessa</string>
+    <string name="plan_lifetime_badge">KERTAMAKSU</string>
+    <string name="plan_lifetime_detail">Avautuu heti. Sinun ikuisesti, ei tilausta.</string>
+    <string name="plan_one_time">kertamaksu</string>
+    <string name="plan_price_from_play">Hinta Google Playn mukaan</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited on käytössä</string>
+    <string name="unlimited_owned_monthly">Kuukausitilaus. Valitse, niin voit hallita tai perua sen Google Playssa.</string>
+    <string name="unlimited_owned_generic">Kiitos, että tuet Telebeamia!</string>
+    <string name="unlimited_owned_lifetime">Elinikäinen. Kiitos, että tuet Telebeamia!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited on käytössä. Kiitos!</string>
+    <string name="unlimited_pending_desc">Maksu odottaa. Telebeam avautuu heti, kun Google Play vahvistaa sen.</string>
+    <string name="unlimited_restore">Palauta ostot</string>
+    <string name="redeem_code">Lunasta koodi</string>
+    <string name="redeem_title">Lunasta Google Play -koodi</string>
+    <string name="redeem_text">Kirjoita koodi (valinnainen), niin Google Play avautuu lunastusta varten. Telebeam avautuu itsestään, kun palaat.</string>
+    <string name="redeem_field">Koodi</string>
+    <string name="redeem_open_play">Avaa Google Play</string>
+    <string name="redeem_settings_desc">Onko sinulla tarjous- tai lahjakoodi? Lunasta se Google Playssa.</string>
+    <string name="redeem_elsewhere">Lunasta koodi osoitteessa play.google.com/redeem puhelimella tai tietokoneella ja palaa sitten tänne.</string>
+    <string name="unlimited_restored">Telebeam Unlimited on avattu.</string>
+    <string name="unlimited_not_found">Tällä Google-tilillä ei löytynyt ostoja.</string>
+    <string name="unlimited_play_unavailable">Google Playhin ei juuri nyt saada yhteyttä. Yritä hetken päästä uudelleen.</string>
+    <string name="unlimited_manage_in_play">Hallitse tilaustasi: avaa Google Play → Maksut ja tilaukset.</string>
+    <string name="section_mirroring">Peilaus</string>
+</resources>

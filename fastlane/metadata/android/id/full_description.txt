@@ -1,0 +1,39 @@
+Tampilkan layar Mac Anda di TV, tanpa perangkat tambahan. Telebeam mengubah Google TV atau Android TV Anda menjadi penerima untuk Cerminan Layar (screen mirroring) yang sudah ada di Mac Anda.
+
+CARA KERJA: 3 KLIK DI MAC
+1. Buka Telebeam di TV.
+2. Di Mac, klik "Pusat Kontrol" di bar menu, lalu "Cerminan Layar".
+3. Pilih TV Anda. Layar Mac muncul di layar besar.
+
+Tidak perlu menginstal apa pun di Mac, tanpa akun, tanpa kabel. Mac dan TV cukup terhubung ke Wi-Fi yang sama. TV sendiri menampilkan langkah-langkah ini, jadi siapa pun di rumah bisa melakukannya.
+
+YANG BISA ANDA LAKUKAN
+• Cerminkan layar MacBook atau iMac ke TV, atau gunakan TV sebagai layar kedua yang besar
+• Presentasikan slide dan spreadsheet di ruang rapat atau kelas
+• Tonton video, foto, dan halaman web Anda sendiri di layar besar, lengkap dengan suara
+• Gambar tajam hingga 4K dengan jeda rendah, sehingga mouse terasa pas di TV
+• Tombol volume Mac bisa mengatur volume TV
+• Juga bisa dipakai dengan Cerminan Layar dari iPhone dan iPad
+
+DIBUAT UNTUK TV
+Layar besar dan sederhana yang Anda kendalikan dengan remote. Beri nama TV sesuka Anda agar mudah ditemukan di daftar Cerminan Layar di Mac. Jika ada masalah, TV memberi tahu Anda dengan kata-kata sederhana apa yang harus dilakukan: Wi-Fi yang sama, pilih TV lagi, atau atur Mac untuk mencerminkan seluruh layar.
+
+BERJALAN DI
+Dibuat untuk Google TV dan Android TV, seperti TV dari Sony, TCL, Hisense, dan Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield, dan Android TV box. Diuji di Philips Google TV; jika tidak berjalan lancar di perangkat Anda, kirimi kami pesan selama masa uji coba gratis. Cerminan Layar di Mac adalah bagian dari macOS dan menggunakan teknologi AirPlay dari Apple; Telebeam adalah penerimanya di sisi TV.
+
+PRIVASI
+Semuanya tetap di jaringan rumah Anda. Tanpa iklan, tanpa pelacakan, tanpa akun, tanpa pengumpulan data.
+
+PAKET
+Mulai dengan uji coba gratis 7 hari pada paket Bulanan, atau beli Lifetime sekali dan miliki selamanya. Keduanya membuka semua fitur: tanpa batas waktu, termasuk semua pembaruan mendatang. Pembayaran dan pembatalan dilakukan lewat akun Google Play Anda.
+
+OPEN SOURCE
+Telebeam adalah open source (GPL-3.0). Kode sumber: https://github.com/sebstech24/mirror-tv . Berbasis AirPlay Receiver karya jqssun dan UxPlay; menggunakan FFmpeg (LGPL).
+
+PERLU DIKETAHUI
+• Video yang dilindungi (misalnya dari layanan streaming yang memblokir perekaman layar) tampil sebagai layar hitam. Ini ditentukan oleh Mac dan layanan streaming, bukan oleh TV.
+• Jika TV Anda sudah punya penerima mirroring sendiri, Telebeam memilih nama lain agar keduanya muncul.
+• Dukungan: telebeam@controlmymac.com
+• Kebijakan privasi: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Telebeam adalah aplikasi independen dan tidak dibuat, disponsori, atau disetujui oleh Apple Inc. Mac, macOS, iPhone, iPad, dan AirPlay adalah merek dagang Apple Inc., terdaftar di AS dan negara lain. Google TV dan Android TV adalah merek dagang Google LLC.

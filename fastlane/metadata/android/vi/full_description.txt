@@ -1,0 +1,39 @@
+Đưa màn hình Mac lên TV mà không cần thêm thiết bị nào. Telebeam biến Google TV hoặc Android TV của bạn thành bộ nhận cho tính năng Phản chiếu màn hình có sẵn trên Mac.
+
+CÁCH HOẠT ĐỘNG: 3 CÚ NHẤP TRÊN MAC
+1. Mở Telebeam trên TV.
+2. Trên Mac, nhấp vào "Trung tâm điều khiển" trên thanh menu, rồi nhấp "Phản chiếu màn hình".
+3. Chọn TV của bạn. Màn hình Mac hiện lên màn hình lớn.
+
+Không cần cài gì trên Mac, không tài khoản, không dây cáp. Chỉ cần Mac và TV dùng chung một mạng Wi-Fi. TV tự hiển thị các bước này, nên ai trong nhà cũng làm được.
+
+BẠN CÓ THỂ LÀM GÌ
+• Phản chiếu màn hình MacBook hoặc iMac lên TV, hoặc dùng TV làm màn hình thứ hai cỡ lớn
+• Trình chiếu slide và bảng tính trong phòng họp hoặc lớp học
+• Xem video, ảnh và trang web của bạn trên màn hình lớn, có cả âm thanh
+• Hình ảnh sắc nét đến 4K, độ trễ thấp, nên chuột trên TV vẫn mượt
+• Phím âm lượng của Mac có thể điều chỉnh âm lượng TV
+• Cũng dùng được với Phản chiếu màn hình từ iPhone và iPad
+
+THIẾT KẾ CHO TV
+Màn hình lớn, đơn giản, điều khiển bằng remote. Đặt tên cho TV theo ý bạn để dễ tìm trong danh sách Phản chiếu màn hình trên Mac. Nếu có sự cố, TV sẽ nói rõ bằng lời đơn giản cần làm gì: dùng chung Wi-Fi, chọn lại TV, hoặc cài đặt Mac để phản chiếu toàn bộ màn hình.
+
+HOẠT ĐỘNG TRÊN
+Dành cho Google TV và Android TV, như TV của Sony, TCL, Hisense và Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield và các Android TV box. Đã thử nghiệm trên Philips Google TV; nếu ứng dụng chạy chưa tốt trên thiết bị của bạn, hãy viết cho chúng tôi trong thời gian dùng thử miễn phí. Phản chiếu màn hình trên Mac là một phần của macOS và dùng công nghệ AirPlay của Apple; Telebeam là bộ nhận ở phía TV.
+
+QUYỀN RIÊNG TƯ
+Mọi thứ ở lại trong mạng gia đình của bạn. Không quảng cáo, không theo dõi, không tài khoản, không thu thập dữ liệu.
+
+GÓI
+Bắt đầu với 7 ngày dùng thử miễn phí ở gói Hằng tháng, hoặc mua Lifetime một lần và dùng mãi mãi. Cả hai đều mở khóa mọi thứ: không giới hạn thời gian, bao gồm mọi bản cập nhật sau này. Thanh toán và hủy được thực hiện qua tài khoản Google Play của bạn.
+
+MÃ NGUỒN MỞ
+Telebeam là phần mềm mã nguồn mở (GPL-3.0). Mã nguồn: https://github.com/sebstech24/mirror-tv . Dựa trên AirPlay Receiver của jqssun và UxPlay; sử dụng FFmpeg (LGPL).
+
+NÊN BIẾT
+• Video được bảo vệ (ví dụ từ các dịch vụ streaming chặn ghi màn hình) sẽ hiện màn hình đen. Điều này do Mac và dịch vụ streaming quyết định, không phải TV.
+• Nếu TV của bạn đã có bộ nhận phản chiếu riêng, Telebeam sẽ dùng tên khác để cả hai cùng hiện ra.
+• Hỗ trợ: telebeam@controlmymac.com
+• Chính sách quyền riêng tư: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Telebeam là ứng dụng độc lập, không do Apple Inc. tạo ra, tài trợ hay phê duyệt. Mac, macOS, iPhone, iPad và AirPlay là nhãn hiệu của Apple Inc., đã đăng ký tại Hoa Kỳ và các quốc gia khác. Google TV và Android TV là nhãn hiệu của Google LLC.

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">مستقبِل محاكاة الشاشة</string>
+    <string name="notification_title">جاهز لمحاكاة الشاشة</string>
+    <string name="notification_text">يمكن لجهاز Mac العثور على هذا التلفزيون في «محاكاة الشاشة»</string>
+    <string name="notification_pin_title">مطلوب رمز PIN</string>
+    <string name="notification_pin_text">رمز PIN: %1$s</string>
+    <string name="stop_service">إيقاف</string>
+
+    <string name="tab_overview">نظرة عامة</string>
+    <string name="tab_logs">السجلات</string>
+    <string name="tab_settings">الإعدادات</string>
+
+    <string name="server_stopped">الخادم متوقف</string>
+    <string name="waiting_for_connection">في انتظار الاتصال...</string>
+    <string name="waiting_for_playback">اضغط على «بدء» في جهاز الإرسال...</string>
+    <string name="error_starting_server">خطأ في تشغيل الخادم</string>
+    <string name="connected_count">المتصلون: %d</string>
+    <string name="error_label">خطأ</string>
+    <string name="stopped_label">متوقف</string>
+    <string name="btn_start">بدء</string>
+    <string name="btn_stop">إيقاف</string>
+    <string name="btn_allow">سماح</string>
+    <string name="btn_open_settings">فتح الإعدادات</string>
+    <string name="local_network_label">يلزم الوصول إلى الأجهزة المجاورة</string>
+    <string name="local_network_desc">اسمح بالوصول إلى الأجهزة المجاورة حتى يتمكن Mac أو iPhone أو iPad من العثور على هذا التلفزيون</string>
+    <string name="unknown_track">غير معروف</string>
+
+    <string name="cd_pip">صورة داخل صورة</string>
+    <string name="cd_fullscreen">ملء الشاشة</string>
+    <string name="cd_exit_fullscreen">الخروج من ملء الشاشة</string>
+    <string name="cd_cover_art">صورة الغلاف</string>
+    <string name="cd_play_pause">تشغيل/إيقاف مؤقت</string>
+    <string name="cd_rewind">ترجيع</string>
+    <string name="cd_fast_forward">تقديم سريع</string>
+    <string name="volume_server">مستوى صوت المستقبِل</string>
+    <string name="volume_client">مستوى صوت المرسِل</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">تنزيل الفيديو</string>
+    <string name="cd_cancel_download">إلغاء التنزيل</string>
+
+    <string name="download_saved">تم الحفظ في %1$s</string>
+    <string name="download_failed">تعذّر التنزيل</string>
+
+    <string name="gesture_seek_seconds">%1$d ثانية</string>
+    <string name="seconds_short">%1$d ث</string>
+    <string name="select_playback_speed">سرعة التشغيل</string>
+    <string name="cd_reset_speed">إعادة ضبط السرعة</string>
+    <string name="skip_silence">تخطي فترات الصمت</string>
+
+    <string name="cd_back">رجوع</string>
+    <string name="cd_copy_url">نسخ رابط الفيديو</string>
+    <string name="cd_rotate">تدوير الشاشة</string>
+    <string name="cd_lock_controls">قفل عناصر التحكم</string>
+    <string name="cd_unlock_controls">إلغاء قفل عناصر التحكم</string>
+    <string name="scale_best_fit">أفضل ملاءمة</string>
+    <string name="scale_stretch">تمديد</string>
+    <string name="scale_crop">اقتصاص</string>
+
+    <string name="dialog_pin_title">أدخِل رمز PIN هذا على جهازك</string>
+    <string name="btn_ok">حسنًا</string>
+
+    <string name="btn_export">تصدير</string>
+    <string name="btn_clear">مسح</string>
+    <string name="export_logs_chooser_title">تصدير السجلات</string>
+
+    <string name="section_server">الخادم</string>
+    <string name="section_connection">الاتصال</string>
+    <string name="section_display">العرض</string>
+    <string name="section_decode">فك الترميز</string>
+    <string name="section_developer">المطوّر</string>
+
+    <string name="setting_server_name">اسم الخادم</string>
+    <string name="setting_server_port">منفذ الخادم</string>
+    <string name="setting_auto_start">تشغيل الخادم تلقائيًا</string>
+    <string name="setting_auto_start_desc">تشغيل المستقبِل عند فتح التطبيق</string>
+    <string name="setting_boot_auto_start">تشغيل الخادم عند بدء التشغيل</string>
+    <string name="setting_boot_auto_start_desc">تشغيل المستقبِل عند تشغيل التلفزيون</string>
+    <string name="setting_run_in_background">التشغيل في الخلفية</string>
+    <string name="setting_run_in_background_desc">إبقاء الخادم قيد التشغيل بعد مغادرة التطبيق</string>
+
+    <string name="setting_require_pin">طلب رمز PIN (تجريبي)</string>
+    <string name="setting_require_pin_desc">طلب رمز PIN من 4 أرقام لكل اتصال جديد</string>
+    <string name="setting_allow_new_conn">السماح بالاتصالات الجديدة</string>
+    <string name="setting_allow_new_conn_desc">فصل المرسِل الحالي عند اتصال مرسِل جديد</string>
+
+    <string name="setting_idle_preview">معاينة شاشة الانتظار</string>
+    <string name="setting_idle_preview_desc">عرض سطح الفيديو أثناء انتظار الاتصال</string>
+    <string name="setting_auto_fullscreen">الانتقال إلى ملء الشاشة تلقائيًا</string>
+    <string name="setting_auto_fullscreen_desc">الانتقال إلى ملء الشاشة عند اتصال مرسِل</string>
+    <string name="setting_keep_screen_on">إبقاء الشاشة قيد التشغيل</string>
+    <string name="setting_keep_screen_on_desc">منع السكون أثناء اتصال مرسِل</string>
+    <string name="setting_advertise_video">إتاحة تشغيل الفيديو</string>
+    <string name="setting_advertise_video_desc">عند الإيقاف، تُرسَل مقاطع الفيديو كبث صوتي فقط</string>
+    <string name="setting_advertise_mirroring">إتاحة محاكاة الشاشة</string>
+    <string name="setting_advertise_mirroring_desc">عند الإيقاف، يُخفى الجهاز من محاكاة الشاشة</string>
+    <string name="setting_advertise_audio">الإعلان عن دعم صوت AirPlay</string>
+    <string name="setting_advertise_audio_desc">عند الإيقاف، يمكن استخدام الجهاز لمحاكاة الشاشة فقط وسيُخفى من مشغلات الوسائط</string>
+    <string name="setting_alac">الإعلان عن ترميز ALAC</string>
+    <string name="setting_alac_desc">إتاحة ALAC في سجل mDNS؛ يُستخدم لبث الموسيقى</string>
+    <string name="setting_aac">الإعلان عن ترميز AAC</string>
+    <string name="setting_aac_desc">إتاحة AAC-ELD/AAC-LC في سجل mDNS؛ يُستخدم لصوت محاكاة الشاشة</string>
+    <string name="setting_launch_on_connect">عرض Telebeam عند اتصال Mac</string>
+    <string name="setting_launch_on_connect_desc">يُظهر الصورة في المقدمة. إذا منع التلفزيون ذلك، يظهر إشعار بدلاً منها.</string>
+    <string name="setting_discovery">قابل للاكتشاف عبر</string>
+    <string name="setting_discovery_all_desc">الإعلان على كل الواجهات المتاحة. يستخدم NsdManager.</string>
+    <string name="setting_discovery_usb_desc">الإعلان عبر ربط USB فقط لفرض الاتصال السلكي. يستخدم مستجيب mDNS مخصصًا.</string>
+    <string name="chip_all_networks">كل الشبكات</string>
+    <string name="chip_usb_only">USB فقط</string>
+    <string name="setting_resolution">الدقة</string>
+    <string name="setting_resolution_desc">دقة الفيديو المُعلنة للمرسِلين</string>
+    <string name="setting_resolution_width">العرض</string>
+    <string name="setting_resolution_height">الارتفاع</string>
+    <string name="setting_max_fps">الحد الأقصى لـ FPS</string>
+    <string name="setting_max_fps_desc">الحد الأقصى لمعدل الإطارات المُعلن للمرسِلين</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">تجاوز المسح (Overscan)</string>
+    <string name="setting_overscanned_desc">إضافة هامش من البكسلات للشاشات التي تقص أطراف الصورة في وضع ملء الشاشة</string>
+    <string name="chip_custom">مخصص</string>
+    <string name="chip_device_portrait">عمودي</string>
+    <string name="chip_device_landscape">أفقي</string>
+
+    <string name="setting_h265_desc">يستخدم الوضع التلقائي فقط وحدات فك ترميز H.265 المعروف أنها تعمل</string>
+    <string name="setting_enforce_sdr_desc">وسم الفيديو كـ SDR محدود؛ عطّله للسماح بتمرير مصادر HDR</string>
+    <string name="setting_sw_alac">فرض وحدة فك ترميز ALAC البرمجية</string>
+    <string name="setting_sw_alac_desc">استخدام وحدة فك ترميز ALAC البرمجية دائمًا بدلاً من وحدة النظام، وقد يؤثر ذلك في زمن الانتقال</string>
+    <string name="setting_sw_aac">فرض وحدة فك ترميز AAC البرمجية</string>
+    <string name="setting_sw_aac_desc">استخدام وحدة فك ترميز AAC البرمجية دائمًا بدلاً من وحدة النظام، وقد يؤثر ذلك في زمن الانتقال</string>
+    <string name="setting_sync_client_volume">Mac يتحكم في صوت التلفزيون</string>
+    <string name="setting_sync_client_volume_desc">تغيّر مفاتيح الصوت في Mac مستوى صوت التلفزيون أثناء محاكاة الشاشة. أوقفه لاستخدام جهاز التحكم عن بُعد للتلفزيون فقط.</string>
+
+    <string name="setting_developer_options">خيارات المطوّرين</string>
+    <string name="setting_developer_options_desc">عرض خيارات للمستخدمين المتقدمين</string>
+    <string name="setting_key_allow_frame_drop_desc">السماح لوحدات فك ترميز الفيديو بإسقاط الإطارات داخليًا لمواكبة العرض على Android 10 والإصدارات الأحدث</string>
+    <string name="setting_realtime_decoder_priority_desc">طلب جدولة في الوقت الفعلي لوحدة فك ترميز الصوت</string>
+    <string name="setting_operating_rate_desc">طلب أقصى معدل تشغيل من وحدة فك الترميز</string>
+    <string name="chip_auto">تلقائي</string>
+    <string name="chip_4k_beta">4K · تجريبي</string>
+    <string name="chip_120_beta">120 · تجريبي</string>
+    <string name="setting_frame_rate">معدل الإطارات</string>
+    <string name="setting_frame_rate_desc">يعمل 60 fps مع كل أجهزة Mac. ويتطلب 120 (تجريبي) جهاز Mac بشاشة ProMotion بتردد 120 هرتز.</string>
+    <string name="chip_on">تشغيل</string>
+    <string name="chip_off">إيقاف</string>
+    <string name="setting_low_latency">زمن انتقال منخفض</string>
+    <string name="setting_low_latency_desc">استخدام فك ترميز صوت منخفض زمن الانتقال للإخراج؛ يستهلك طاقة ومعالجًا أكثر</string>
+    <string name="setting_scheduled_output_buffer_release">توقيت إطارات متزامن</string>
+    <string name="setting_scheduled_output_buffer_release_desc">جدولة كل إطار مفكوك الترميز على VSYNC المطابق لطابعه الزمني للعرض</string>
+    <string name="setting_audio_delay">تجاوز تأخير الصوت</string>
+    <string name="setting_audio_delay_desc">تعيين زمن انتقال صوت مخصص يُبلَّغ إلى المرسِل</string>
+    <string name="audio_delay_value">%d مللي ثانية</string>
+    <string name="setting_audio_auto_buffer">حجم تلقائي للمخزن المؤقت البرمجي للصوت</string>
+    <string name="setting_audio_auto_buffer_desc">ضبط المخزن المؤقت البرمجي للصوت تكيفيًا حسب ظروف الشبكة وأداء الجهاز؛ يحدد شريط التمرير مقدار التذبذب (jitter) الذي يمكن للمخزن المؤقت استيعابه</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>أقل زمن انتقال</item>
+        <item>زمن انتقال أقل</item>
+        <item>متوازن</item>
+        <item>ثبات أفضل</item>
+        <item>أفضل ثبات</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">المخزن المؤقت البرمجي للصوت (مللي ثانية)</string>
+    <string name="setting_audio_cushion_ms_desc">مخزن مؤقت لاستيعاب تذبذب الشبكة ووحدة فك الترميز: المدة الأقصر تعني زمن انتقال أقل، والمدة الأطول تعني انقطاعات أقل</string>
+    <string name="setting_oboe_buffer_frames">المخزن المؤقت لإخراج الأجهزة (إطارات)</string>
+    <string name="setting_oboe_buffer_frames_desc">مخزن مؤقت للبث بين هذا التطبيق وجهاز الصوت لاستيعاب تذبذب جدولة المعالج فقط. اتركه على 0 لتحديد الحجم تلقائيًا.</string>
+    <string name="setting_debug_overlay">عرض طبقة تصحيح الأخطاء</string>
+    <string name="setting_debug_overlay_desc">عرض إحصاءات البث فوق الفيديو: الترميز وFPS ومعدل البت والتذبذب والإطارات والإطارات المُسقطة</string>
+    <string name="setting_benchmark_log">تفعيل سجلات تصحيح الأخطاء</string>
+    <string name="setting_benchmark_log_desc">تسجيل إحصاءات البث في logcat: الترميز وFPS ومعدل البت والتذبذب والإطارات والإطارات المُسقطة</string>
+
+    <string name="debug_section_video">فيديو</string>
+    <string name="debug_section_audio">صوت</string>
+    <string name="debug_section_network">الشبكة</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  معدل البت: %2$s</string>
+    <string name="debug_frames_drops">الإطارات: %1$d  المُسقطة: %2$d</string>
+    <string name="debug_jitter">التذبذب: %1$s</string>
+    <string name="debug_audio">%1$s  المستقبِل: %2$d%%  المرسِل: %3$d%%</string>
+    <string name="debug_audio_buffer">المخزن المؤقت: %1$d ms (الهدف: %2$d ms)</string>
+    <string name="debug_audio_glitch">الانقطاعات: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">فك الترميز: %1$s</string>
+    <string name="debug_clients">المرسِلون: %1$d</string>
+
+    <string name="cd_settings">الإعدادات</string>
+    <string name="status_ready">جاهز</string>
+    <string name="status_starting">جارٍ البدء…</string>
+    <string name="status_off">المستقبِل متوقف</string>
+    <string name="status_error">تعذّر تشغيل المستقبِل</string>
+    <string name="btn_turn_on">تشغيل</string>
+    <string name="btn_try_again">إعادة المحاولة</string>
+    <string name="home_mac_title">لمحاكاة شاشة Mac</string>
+    <string name="home_step1">انقر على أيقونة «مركز التحكم» في شريط القائمة أعلى شاشة Mac</string>
+    <string name="home_step2">انقر على «محاكاة الشاشة»</string>
+    <string name="home_step3">اختر «%1$s»</string>
+    <string name="home_iphone">على iPhone أو iPad: افتح «مركز التحكم»، واضغط على «محاكاة الشاشة»، ثم اختر «%1$s».</string>
+    <string name="home_mirror_hint">يظهر سطح مكتب فارغ على التلفزيون بدلاً من شاشة Mac؟ على Mac: إعدادات النظام ← شاشات العرض ← «عند الاتصال بالتلفزيون» ← محاكاة الشاشة بالكامل.</string>
+    <string name="home_screensaver_hint">هل تخفي شاشة التوقف الصورة؟ اضغط على أي زر في جهاز التحكم عن بُعد.</string>
+    <string name="home_same_wifi">يجب أن يكون Mac والتلفزيون على شبكة Wi‑Fi نفسها</string>
+    <string name="home_tv_address">عنوان التلفزيون: %1$s</string>
+    <string name="home_connecting">جارٍ اتصال Mac…</string>
+    <string name="home_connecting_named">جارٍ اتصال %1$s…</string>
+    <string name="home_taking_over">يتولى %1$s العرض…</string>
+    <string name="home_connecting_hint">إذا لم يظهر شيء خلال ثوانٍ، فاختر هذا التلفزيون مرة أخرى في «محاكاة الشاشة» على Mac.</string>
+    <string name="home_stopped_title">توقفت محاكاة الشاشة</string>
+    <string name="home_stopped_desc">أُوقفت على Mac، أو انقطع اتصال Wi‑Fi. لمحاكاة الشاشة مجددًا، اختر «%1$s» في «محاكاة الشاشة».</string>
+    <string name="toast_mirroring">بدأت محاكاة الشاشة</string>
+    <string name="controls_hint">اضغط على OK لعرض الخيارات</string>
+    <string name="controls_back_hides">اضغط على «رجوع» للإخفاء</string>
+    <string name="controls_hide">إخفاء</string>
+    <string name="setting_applies_next_connection">تم الحفظ. يسري التغيير عند اتصال Mac في المرة التالية.</string>
+    <string name="toast_took_over">تولّى %1$s التلفزيون</string>
+    <string name="home_stopped_mac_title">أُوقفت محاكاة الشاشة على Mac</string>
+    <string name="home_stopped_mac_desc">لمحاكاة الشاشة مجددًا، اختر «%1$s» في «محاكاة الشاشة».</string>
+    <string name="home_lost_title">انقطع الاتصال — تحقق من Wi‑Fi</string>
+    <string name="home_lost_desc">تأكد من أن Mac والتلفزيون على شبكة Wi‑Fi نفسها، ثم اختر «%1$s» مرة أخرى.</string>
+    <string name="home_network_title">تغيّرت شبكة التلفزيون</string>
+    <string name="home_network_desc">صِل Mac بشبكة Wi‑Fi الخاصة بالتلفزيون، ثم اختر «%1$s» مرة أخرى.</string>
+    <string name="toast_mirroring_from">محاكاة الشاشة من %1$s</string>
+
+    <string name="setting_tv_name">اسم التلفزيون</string>
+    <string name="setting_tv_name_desc">الاسم الذي يعرضه Mac في «محاكاة الشاشة». اتركه فارغًا لاستخدام «%1$s».</string>
+    <string name="setting_picture_quality">جودة الصورة</string>
+    <string name="setting_picture_quality_desc">يستخدم الوضع التلقائي دقة 1080p، وهي الأكثر سلاسة من Mac. أما 4K (تجريبي) فأوضح لكنها قد تتقطع.</string>
+    <string name="setting_pin_simple">طلب رمز PIN</string>
+    <string name="setting_pin_simple_desc">عرض رمز من 4 أرقام على التلفزيون قبل أن يتمكن جهاز جديد من محاكاة الشاشة</string>
+    <string name="setting_lowest_latency">أقل زمن انتقال</string>
+    <string name="setting_lowest_latency_desc">تأخير أقل للكتابة والماوس. قد تتقطع الصورة قليلاً على بعض أجهزة التلفزيون؛ أوقفه للحصول على أثبت صورة.</string>
+    <string name="setting_about">حول</string>
+    <string name="setting_about_desc">الإصدار والتراخيص والرمز المصدري</string>
+    <string name="setting_advanced">خيارات متقدمة</string>
+    <string name="setting_advanced_desc">خيارات تقنية لا يحتاجها معظم المستخدمين.</string>
+    <string name="setting_logs">عرض السجلات</string>
+    <string name="setting_logs_desc">سجل تقني لتحديد المشاكل وحلّها</string>
+    <string name="setting_receiver_power">إيقاف المستقبِل</string>
+    <string name="setting_receiver_power_desc">لن يرى Mac هذا التلفزيون حتى تعيد تشغيله</string>
+    <string name="setting_receiver_power_on">تشغيل المستقبِل</string>
+    <string name="setting_receiver_power_on_desc">السماح لجهاز Mac بالعثور على هذا التلفزيون مجددًا</string>
+    <string name="dialog_stop_title">هل تريد إيقاف المستقبِل؟</string>
+    <string name="dialog_stop_text">لن يتمكن Mac من العثور على هذا التلفزيون حتى تعيد تشغيله.</string>
+    <string name="btn_turn_off">إيقاف</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="btn_reset">إعادة الضبط</string>
+    <string name="setting_reset_all">إعادة ضبط كل الإعدادات</string>
+    <string name="setting_reset_all_desc">إعادة Telebeam إلى حالته الأصلية. يبقى الشراء محفوظًا.</string>
+    <string name="dialog_reset_title">هل تريد إعادة ضبط كل الإعدادات؟</string>
+    <string name="dialog_reset_text">ستعود كل الإعدادات، بما فيها اسم التلفزيون، إلى قيمها الافتراضية. يبقى الشراء محفوظًا، ويظل جهاز Mac الذي يحاكي الشاشة متصلاً.</string>
+    <string name="setting_reset_done">تمت إعادة ضبط الإعدادات.</string>
+
+    <string name="about_version">الإصدار %1$s</string>
+    <string name="about_credits">مبني على AirPlay Receiver من jqssun ‏(GPL-3.0) وعلى UxPlay. يستخدم FFmpeg ‏(LGPL).</string>
+    <string name="about_ffmpeg">يستخدم هذا البرنامج رمز FFmpeg ‏(https://ffmpeg.org) المرخّص بموجب LGPLv2.1. ولا يتضمن منه إلا وحدتي فك ترميز الصوت ALAC وAAC، ورمزه المصدري مُضمَّن في مستودع الرمز المصدري لهذا التطبيق.</string>
+    <string name="about_license_note">هذا التطبيق برنامج حر بموجب رخصة GNU العمومية العامة، الإصدار 3.0. يمكنك الحصول على رمزه المصدري وتعديله ومشاركته.</string>
+    <string name="about_source">الرمز المصدري: %1$s</string>
+    <string name="about_view_license">عرض الترخيص (GPL-3.0)</string>
+    <string name="about_privacy">سياسة الخصوصية: %1$s</string>
+    <string name="about_privacy_button">سياسة الخصوصية</string>
+    <string name="about_trademark">غير تابع لشركة Apple. إن AirPlay وMac علامتان تجاريتان لشركة Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+
+    <string name="paywall_title">اعرض شاشة Mac على هذا التلفزيون</string>
+    <string name="paywall_subtitle">اختر خطة للبدء. سيعثر Mac على هذا التلفزيون فور فتح القفل.</string>
+    <string name="paywall_benefit_quality">شاشة Mac على الشاشة الكبيرة، بدقة تصل إلى 4K</string>
+    <string name="paywall_benefit_unlimited">بلا حدود زمنية وبلا إعلانات</string>
+    <string name="paywall_benefit_updates">كل التحديثات المستقبلية مشمولة</string>
+    <string name="paywall_not_now">ليس الآن</string>
+    <string name="paywall_terms">يتجدد الاشتراك الشهري بسعر %1$s شهريًا إلى أن تلغيه في Google Play. يُحصَّل المبلغ من حسابك على Google.</string>
+    <string name="paywall_terms_no_price">تتم معالجة الدفع عبر Google Play ويُحصَّل المبلغ من حسابك على Google.</string>
+    <string name="plan_monthly">شهري</string>
+    <string name="plan_lifetime">مدى الحياة</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="zero">%d يوم مجانًا</item>
+        <item quantity="one">%d يوم مجانًا</item>
+        <item quantity="two">%d يوم مجانًا</item>
+        <item quantity="few">%d أيام مجانًا</item>
+        <item quantity="many">%d يومًا مجانًا</item>
+        <item quantity="other">%d يوم مجانًا</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="zero">%1$d يوم مجانًا، ثم %2$s شهريًا. يمكنك الإلغاء في أي وقت.</item>
+        <item quantity="one">%1$d يوم مجانًا، ثم %2$s شهريًا. يمكنك الإلغاء في أي وقت.</item>
+        <item quantity="two">%1$d يوم مجانًا، ثم %2$s شهريًا. يمكنك الإلغاء في أي وقت.</item>
+        <item quantity="few">%1$d أيام مجانًا، ثم %2$s شهريًا. يمكنك الإلغاء في أي وقت.</item>
+        <item quantity="many">%1$d يومًا مجانًا، ثم %2$s شهريًا. يمكنك الإلغاء في أي وقت.</item>
+        <item quantity="other">%1$d يوم مجانًا، ثم %2$s شهريًا. يمكنك الإلغاء في أي وقت.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="zero">لمدة %d يوم</item>
+        <item quantity="one">لمدة %d يوم</item>
+        <item quantity="two">لمدة %d يوم</item>
+        <item quantity="few">لمدة %d أيام</item>
+        <item quantity="many">لمدة %d يومًا</item>
+        <item quantity="other">لمدة %d يوم</item>
+    </plurals>
+    <string name="plan_monthly_detail">يمكنك الإلغاء في أي وقت من Google Play.</string>
+    <string name="plan_free">مجانًا</string>
+    <string name="plan_per_month">شهريًا</string>
+    <string name="plan_lifetime_badge">ادفع مرة واحدة</string>
+    <string name="plan_lifetime_detail">يُفتح فورًا. لك إلى الأبد، بلا اشتراك.</string>
+    <string name="plan_one_time">مرة واحدة</string>
+    <string name="plan_price_from_play">السعر كما يعرضه Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited مفعّل</string>
+    <string name="unlimited_owned_monthly">خطة شهرية. اختر للإدارة أو الإلغاء في Google Play.</string>
+    <string name="unlimited_owned_generic">شكرًا لدعمك Telebeam!</string>
+    <string name="unlimited_owned_lifetime">مدى الحياة. شكرًا لدعمك Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited مفعّل. شكرًا لك!</string>
+    <string name="unlimited_pending_desc">الدفع قيد الانتظار. سيُفتح Telebeam فور تأكيد Google Play.</string>
+    <string name="unlimited_restore">استعادة المشتريات</string>
+    <string name="redeem_code">استرداد رمز</string>
+    <string name="redeem_title">استرداد رمز Google Play</string>
+    <string name="redeem_text">اكتب الرمز (اختياري) وسيفتح Google Play لاسترداده. يُفتح Telebeam تلقائيًا عند عودتك.</string>
+    <string name="redeem_field">الرمز</string>
+    <string name="redeem_open_play">فتح Google Play</string>
+    <string name="redeem_settings_desc">هل لديك رمز ترويجي أو رمز هدية؟ استرده عبر Google Play.</string>
+    <string name="redeem_elsewhere">استرد الرمز على play.google.com/redeem من هاتف أو كمبيوتر، ثم عُد إلى هنا.</string>
+    <string name="unlimited_restored">تم فتح Telebeam Unlimited.</string>
+    <string name="unlimited_not_found">لم يتم العثور على أي عملية شراء في حساب Google هذا.</string>
+    <string name="unlimited_play_unavailable">يتعذّر الوصول إلى Google Play حاليًا. أعد المحاولة بعد قليل.</string>
+    <string name="unlimited_manage_in_play">افتح Google Play ← الدفعات والاشتراكات لإدارة خطتك.</string>
+    <string name="section_mirroring">محاكاة الشاشة</string>
+</resources>

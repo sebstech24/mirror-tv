@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Penerima pencerminan layar</string>
+    <string name="notification_title">Siap untuk Cerminan Layar</string>
+    <string name="notification_text">Mac Anda dapat menemukan TV ini di Cerminan Layar</string>
+    <string name="notification_pin_title">PIN diperlukan</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Hentikan</string>
+
+    <string name="tab_overview">Ringkasan</string>
+    <string name="tab_logs">Log</string>
+    <string name="tab_settings">Setelan</string>
+
+    <string name="server_stopped">Server dihentikan</string>
+    <string name="waiting_for_connection">Menunggu koneksi...</string>
+    <string name="waiting_for_playback">Tekan mulai di perangkat pengirim...</string>
+    <string name="error_starting_server">Gagal memulai server</string>
+    <string name="connected_count">%d terhubung</string>
+    <string name="error_label">Error</string>
+    <string name="stopped_label">Dihentikan</string>
+    <string name="btn_start">Mulai</string>
+    <string name="btn_stop">Hentikan</string>
+    <string name="btn_allow">Izinkan</string>
+    <string name="btn_open_settings">Buka setelan</string>
+    <string name="local_network_label">Perlu akses ke perangkat di sekitar</string>
+    <string name="local_network_desc">Izinkan akses ke perangkat di sekitar agar Mac, iPhone, atau iPad Anda dapat menemukan TV ini</string>
+    <string name="unknown_track">Tidak diketahui</string>
+
+    <string name="cd_pip">Picture-in-Picture</string>
+    <string name="cd_fullscreen">Layar penuh</string>
+    <string name="cd_exit_fullscreen">Keluar dari layar penuh</string>
+    <string name="cd_cover_art">Gambar sampul</string>
+    <string name="cd_play_pause">Putar/Jeda</string>
+    <string name="cd_rewind">Mundur</string>
+    <string name="cd_fast_forward">Maju cepat</string>
+    <string name="volume_server">Volume penerima</string>
+    <string name="volume_client">Volume pengirim</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">Download video</string>
+    <string name="cd_cancel_download">Batalkan download</string>
+
+    <string name="download_saved">Disimpan ke %1$s</string>
+    <string name="download_failed">Download gagal</string>
+
+    <string name="gesture_seek_seconds">%1$d detik</string>
+    <string name="seconds_short">%1$d dtk</string>
+    <string name="select_playback_speed">Kecepatan pemutaran</string>
+    <string name="cd_reset_speed">Reset kecepatan</string>
+    <string name="skip_silence">Lewati bagian senyap</string>
+
+    <string name="cd_back">Kembali</string>
+    <string name="cd_copy_url">Salin URL video</string>
+    <string name="cd_rotate">Putar layar</string>
+    <string name="cd_lock_controls">Kunci kontrol</string>
+    <string name="cd_unlock_controls">Buka kunci kontrol</string>
+    <string name="scale_best_fit">Paling pas</string>
+    <string name="scale_stretch">Regangkan</string>
+    <string name="scale_crop">Pangkas</string>
+
+    <string name="dialog_pin_title">Masukkan PIN ini di perangkat Anda</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Ekspor</string>
+    <string name="btn_clear">Hapus</string>
+    <string name="export_logs_chooser_title">Ekspor log</string>
+
+    <string name="section_server">Server</string>
+    <string name="section_connection">Koneksi</string>
+    <string name="section_display">Tampilan</string>
+    <string name="section_decode">Dekode</string>
+    <string name="section_developer">Developer</string>
+
+    <string name="setting_server_name">Nama server</string>
+    <string name="setting_server_port">Port server</string>
+    <string name="setting_auto_start">Mulai server otomatis</string>
+    <string name="setting_auto_start_desc">Mulai penerima saat aplikasi dibuka</string>
+    <string name="setting_boot_auto_start">Mulai server saat TV menyala</string>
+    <string name="setting_boot_auto_start_desc">Mulai penerima saat TV dinyalakan</string>
+    <string name="setting_run_in_background">Jalankan di latar belakang</string>
+    <string name="setting_run_in_background_desc">Server tetap berjalan setelah keluar dari aplikasi</string>
+
+    <string name="setting_require_pin">Wajibkan PIN (Beta)</string>
+    <string name="setting_require_pin_desc">Wajibkan PIN 4 digit untuk setiap koneksi baru</string>
+    <string name="setting_allow_new_conn">Izinkan koneksi baru</string>
+    <string name="setting_allow_new_conn_desc">Putuskan pengirim saat ini ketika pengirim baru terhubung</string>
+
+    <string name="setting_idle_preview">Pratinjau layar siaga</string>
+    <string name="setting_idle_preview_desc">Tampilkan permukaan video saat menunggu koneksi</string>
+    <string name="setting_auto_fullscreen">Layar penuh otomatis</string>
+    <string name="setting_auto_fullscreen_desc">Masuk ke layar penuh saat pengirim terhubung</string>
+    <string name="setting_keep_screen_on">Biarkan layar tetap menyala</string>
+    <string name="setting_keep_screen_on_desc">Cegah mode tidur selama pengirim terhubung</string>
+    <string name="setting_advertise_video">Tawarkan pemutaran video</string>
+    <string name="setting_advertise_video_desc">Jika nonaktif, video dikirim sebagai streaming audio saja</string>
+    <string name="setting_advertise_mirroring">Tawarkan pencerminan layar</string>
+    <string name="setting_advertise_mirroring_desc">Jika nonaktif, perangkat disembunyikan dari pencerminan</string>
+    <string name="setting_advertise_audio">Umumkan dukungan audio AirPlay</string>
+    <string name="setting_advertise_audio_desc">Jika nonaktif, perangkat hanya dapat digunakan untuk pencerminan dan disembunyikan dari pemutar media</string>
+    <string name="setting_alac">Umumkan codec ALAC</string>
+    <string name="setting_alac_desc">Tawarkan ALAC di data mDNS; digunakan untuk streaming musik</string>
+    <string name="setting_aac">Umumkan codec AAC</string>
+    <string name="setting_aac_desc">Tawarkan AAC-ELD/AAC-LC di data mDNS; digunakan untuk audio pencerminan layar</string>
+    <string name="setting_launch_on_connect">Tampilkan Telebeam saat Mac terhubung</string>
+    <string name="setting_launch_on_connect_desc">Membawa gambar ke depan. Jika TV memblokirnya, akan muncul pemberitahuan.</string>
+    <string name="setting_discovery">Dapat ditemukan melalui</string>
+    <string name="setting_discovery_all_desc">Umumkan di semua antarmuka yang tersedia. Menggunakan NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Hanya umumkan melalui tethering USB untuk memaksa koneksi kabel. Menggunakan responder mDNS khusus.</string>
+    <string name="chip_all_networks">Semua jaringan</string>
+    <string name="chip_usb_only">Hanya USB</string>
+    <string name="setting_resolution">Resolusi</string>
+    <string name="setting_resolution_desc">Resolusi video yang diumumkan ke pengirim</string>
+    <string name="setting_resolution_width">Lebar</string>
+    <string name="setting_resolution_height">Tinggi</string>
+    <string name="setting_max_fps">FPS maksimum</string>
+    <string name="setting_max_fps_desc">Kecepatan frame maksimum yang diumumkan ke pengirim</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Tambahkan batas piksel untuk layar dengan overscan</string>
+    <string name="chip_custom">Kustom</string>
+    <string name="chip_device_portrait">Potret</string>
+    <string name="chip_device_landscape">Lanskap</string>
+
+    <string name="setting_h265_desc">Otomatis hanya memakai decoder H.265 yang terbukti berfungsi</string>
+    <string name="setting_enforce_sdr_desc">Tandai video sebagai SDR terbatas; nonaktifkan agar sumber HDR dapat diteruskan</string>
+    <string name="setting_sw_alac">Paksa decoder ALAC software</string>
+    <string name="setting_sw_alac_desc">Selalu gunakan decoder ALAC software, bukan decoder sistem; dapat memengaruhi latensi</string>
+    <string name="setting_sw_aac">Paksa decoder AAC software</string>
+    <string name="setting_sw_aac_desc">Selalu gunakan decoder AAC software, bukan decoder sistem; dapat memengaruhi latensi</string>
+    <string name="setting_sync_client_volume">Mac mengatur volume TV</string>
+    <string name="setting_sync_client_volume_desc">Tombol volume Mac mengubah volume TV saat pencerminan. Nonaktifkan untuk hanya memakai remote TV.</string>
+
+    <string name="setting_developer_options">Opsi developer</string>
+    <string name="setting_developer_options_desc">Tampilkan opsi untuk pengguna mahir</string>
+    <string name="setting_key_allow_frame_drop_desc">Izinkan decoder video melewatkan frame secara internal agar tetap lancar di Android 10+</string>
+    <string name="setting_realtime_decoder_priority_desc">Minta penjadwalan real-time untuk decoder audio</string>
+    <string name="setting_operating_rate_desc">Minta kecepatan operasi maksimum dari decoder</string>
+    <string name="chip_auto">Otomatis</string>
+    <string name="chip_4k_beta">4K · Beta</string>
+    <string name="chip_120_beta">120 · Beta</string>
+    <string name="setting_frame_rate">Kecepatan frame</string>
+    <string name="setting_frame_rate_desc">60 fps berfungsi di semua Mac. 120 (beta) memerlukan Mac dengan layar ProMotion 120 Hz.</string>
+    <string name="chip_on">Aktif</string>
+    <string name="chip_off">Nonaktif</string>
+    <string name="setting_low_latency">Latensi rendah</string>
+    <string name="setting_low_latency_desc">Gunakan dekode audio latensi rendah untuk output; ini memakai lebih banyak daya dan CPU</string>
+    <string name="setting_scheduled_output_buffer_release">Ritme frame selaras</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Jadwalkan setiap frame yang didekode ke VSYNC yang sesuai dengan stempel waktu presentasinya</string>
+    <string name="setting_audio_delay">Ganti jeda audio</string>
+    <string name="setting_audio_delay_desc">Atur latensi audio kustom yang dilaporkan ke pengirim</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Ukuran buffer audio software otomatis</string>
+    <string name="setting_audio_auto_buffer_desc">Sesuaikan buffer audio software secara adaptif berdasarkan kondisi jaringan dan performa perangkat; slider mengatur seberapa banyak jitter yang dapat diserap buffer</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Latensi Terendah</item>
+        <item>Latensi Lebih Rendah</item>
+        <item>Seimbang</item>
+        <item>Lebih Stabil</item>
+        <item>Paling Stabil</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Buffer audio software (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Buffer untuk menyerap jitter jaringan dan decoder: durasi lebih pendek berarti latensi lebih rendah; durasi lebih panjang berarti lebih sedikit gangguan</string>
+    <string name="setting_oboe_buffer_frames">Buffer output hardware (frame)</string>
+    <string name="setting_oboe_buffer_frames_desc">Buffer stream antara aplikasi ini dan perangkat audio, hanya untuk menyerap jitter penjadwalan CPU. Biarkan 0 untuk ukuran otomatis.</string>
+    <string name="setting_debug_overlay">Tampilkan overlay debug</string>
+    <string name="setting_debug_overlay_desc">Tampilkan statistik stream di atas video: codec, FPS, bitrate, jitter, frame, drop</string>
+    <string name="setting_benchmark_log">Aktifkan log debug</string>
+    <string name="setting_benchmark_log_desc">Catat statistik stream ke logcat: codec, FPS, bitrate, jitter, frame, drop</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Audio</string>
+    <string name="debug_section_network">Jaringan</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
+    <string name="debug_frames_drops">Frame: %1$d  Drop: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Penerima: %2$d%%  Pengirim: %3$d%%</string>
+    <string name="debug_audio_buffer">Buffer: %1$d ms (target: %2$d ms)</string>
+    <string name="debug_audio_glitch">Gangguan: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Dekode: %1$s</string>
+    <string name="debug_clients">Pengirim: %1$d</string>
+
+    <string name="cd_settings">Setelan</string>
+    <string name="status_ready">Siap</string>
+    <string name="status_starting">Memulai…</string>
+    <string name="status_off">Penerima nonaktif</string>
+    <string name="status_error">Tidak dapat memulai penerima</string>
+    <string name="btn_turn_on">Aktifkan</string>
+    <string name="btn_try_again">Coba lagi</string>
+    <string name="home_mac_title">Untuk mencerminkan Mac Anda</string>
+    <string name="home_step1">Klik ikon Pusat Kontrol di bar menu Mac (kanan atas)</string>
+    <string name="home_step2">Klik Cerminan Layar</string>
+    <string name="home_step3">Pilih “%1$s”</string>
+    <string name="home_iphone">Di iPhone atau iPad: buka Pusat Kontrol, ketuk Cerminan Layar, lalu pilih “%1$s”.</string>
+    <string name="home_mirror_hint">TV menampilkan desktop kosong, bukan layar Mac Anda? Di Mac: Pengaturan Sistem → Layar → “Saat terhubung ke TV” → Cerminkan Seluruh Layar.</string>
+    <string name="home_screensaver_hint">Gambar tertutup screensaver? Tekan tombol apa saja di remote.</string>
+    <string name="home_same_wifi">Mac dan TV harus terhubung ke Wi‑Fi yang sama</string>
+    <string name="home_tv_address">Alamat TV: %1$s</string>
+    <string name="home_connecting">Mac Anda sedang terhubung…</string>
+    <string name="home_connecting_named">%1$s sedang terhubung…</string>
+    <string name="home_taking_over">%1$s sedang mengambil alih…</string>
+    <string name="home_connecting_hint">Jika tidak ada yang muncul dalam beberapa detik, pilih TV ini lagi di Cerminan Layar pada Mac.</string>
+    <string name="home_stopped_title">Pencerminan berhenti</string>
+    <string name="home_stopped_desc">Pencerminan dihentikan di Mac, atau koneksi Wi‑Fi terputus. Untuk mencerminkan lagi, pilih “%1$s” di Cerminan Layar.</string>
+    <string name="toast_mirroring">Pencerminan dimulai</string>
+    <string name="controls_hint">Tekan OK untuk opsi</string>
+    <string name="controls_back_hides">Tekan Kembali untuk menyembunyikan</string>
+    <string name="controls_hide">Sembunyikan</string>
+    <string name="setting_applies_next_connection">Tersimpan. Berlaku saat Mac Anda terhubung lagi.</string>
+    <string name="toast_took_over">%1$s mengambil alih TV</string>
+    <string name="home_stopped_mac_title">Pencerminan dihentikan di Mac</string>
+    <string name="home_stopped_mac_desc">Untuk mencerminkan lagi, pilih “%1$s” di Cerminan Layar.</string>
+    <string name="home_lost_title">Koneksi terputus — periksa Wi‑Fi</string>
+    <string name="home_lost_desc">Pastikan Mac dan TV terhubung ke Wi‑Fi yang sama, lalu pilih “%1$s” lagi.</string>
+    <string name="home_network_title">Jaringan TV berubah</string>
+    <string name="home_network_desc">Hubungkan Mac ke Wi‑Fi TV, lalu pilih “%1$s” lagi.</string>
+    <string name="toast_mirroring_from">Mencerminkan dari %1$s</string>
+
+    <string name="setting_tv_name">Nama TV</string>
+    <string name="setting_tv_name_desc">Nama yang ditampilkan Mac Anda di Cerminan Layar. Kosongkan untuk memakai “%1$s”.</string>
+    <string name="setting_picture_quality">Kualitas gambar</string>
+    <string name="setting_picture_quality_desc">Otomatis memakai 1080p, yang paling lancar dari Mac. 4K (beta) lebih tajam, tetapi bisa tersendat.</string>
+    <string name="setting_pin_simple">Minta PIN</string>
+    <string name="setting_pin_simple_desc">Tampilkan kode 4 digit di TV sebelum perangkat baru dapat mencerminkan</string>
+    <string name="setting_lowest_latency">Latensi terendah</string>
+    <string name="setting_lowest_latency_desc">Jeda lebih singkat saat mengetik dan memakai mouse. Di beberapa TV, gambar bisa sedikit tersendat; nonaktifkan untuk gambar paling stabil.</string>
+    <string name="setting_about">Tentang</string>
+    <string name="setting_about_desc">Versi, lisensi, dan kode sumber</string>
+    <string name="setting_advanced">Lanjutan</string>
+    <string name="setting_advanced_desc">Opsi teknis. Kebanyakan orang tidak pernah membutuhkannya.</string>
+    <string name="setting_logs">Tampilkan log</string>
+    <string name="setting_logs_desc">Log teknis untuk pemecahan masalah</string>
+    <string name="setting_receiver_power">Nonaktifkan penerima</string>
+    <string name="setting_receiver_power_desc">Mac Anda tidak akan melihat TV ini sampai Anda mengaktifkannya lagi</string>
+    <string name="setting_receiver_power_on">Aktifkan penerima</string>
+    <string name="setting_receiver_power_on_desc">Biarkan Mac Anda menemukan TV ini lagi</string>
+    <string name="dialog_stop_title">Nonaktifkan penerima?</string>
+    <string name="dialog_stop_text">Mac Anda tidak akan dapat menemukan TV ini sampai Anda mengaktifkannya lagi.</string>
+    <string name="btn_turn_off">Nonaktifkan</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="btn_reset">Reset</string>
+    <string name="setting_reset_all">Reset semua setelan</string>
+    <string name="setting_reset_all_desc">Kembalikan Telebeam seperti semula. Pembelian Anda tetap ada.</string>
+    <string name="dialog_reset_title">Reset semua setelan?</string>
+    <string name="dialog_reset_text">Semua setelan, termasuk nama TV, kembali ke default. Pembelian Anda tetap tersimpan, dan Mac yang sedang mencerminkan tetap terhubung.</string>
+    <string name="setting_reset_done">Setelan direset.</string>
+
+    <string name="about_version">Versi %1$s</string>
+    <string name="about_credits">Berdasarkan AirPlay Receiver oleh jqssun (GPL-3.0) dan UxPlay. Menggunakan FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Software ini menggunakan kode FFmpeg (https://ffmpeg.org) yang dilisensikan di bawah LGPLv2.1. Hanya decoder audio ALAC dan AAC-nya yang disertakan; kode sumbernya tersedia di repositori kode sumber aplikasi ini.</string>
+    <string name="about_license_note">Aplikasi ini adalah perangkat lunak bebas di bawah GNU General Public License v3.0. Anda dapat memperoleh, mengubah, dan membagikan kode sumbernya.</string>
+    <string name="about_source">Kode sumber: %1$s</string>
+    <string name="about_view_license">Lihat lisensi (GPL-3.0)</string>
+    <string name="about_privacy">Kebijakan privasi: %1$s</string>
+    <string name="about_privacy_button">Kebijakan privasi</string>
+    <string name="about_trademark">Tidak berafiliasi dengan Apple. AirPlay dan Mac adalah merek dagang Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Cerminkan Mac Anda di TV ini</string>
+    <string name="paywall_subtitle">Pilih paket untuk memulai. Mac Anda langsung menemukan TV ini begitu Telebeam aktif.</string>
+    <string name="paywall_benefit_quality">Layar Mac Anda di layar besar, hingga 4K</string>
+    <string name="paywall_benefit_unlimited">Tanpa batas waktu, tanpa iklan</string>
+    <string name="paywall_benefit_updates">Termasuk semua update mendatang</string>
+    <string name="paywall_not_now">Lain kali</string>
+    <string name="paywall_terms">Paket bulanan diperpanjang seharga %1$s/bulan hingga Anda membatalkannya di Google Play. Ditagihkan ke Akun Google Anda.</string>
+    <string name="paywall_terms_no_price">Pembayaran diproses oleh Google Play dan ditagihkan ke Akun Google Anda.</string>
+    <string name="plan_monthly">Bulanan</string>
+    <string name="plan_lifetime">Seumur hidup</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="other">GRATIS %d HARI</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="other">Gratis %1$d hari, lalu %2$s/bulan. Batalkan kapan saja.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="other">selama %d hari</item>
+    </plurals>
+    <string name="plan_monthly_detail">Batalkan kapan saja di Google Play.</string>
+    <string name="plan_free">Gratis</string>
+    <string name="plan_per_month">per bulan</string>
+    <string name="plan_lifetime_badge">BAYAR SEKALI</string>
+    <string name="plan_lifetime_detail">Langsung aktif. Milik Anda selamanya, tanpa langganan.</string>
+    <string name="plan_one_time">sekali bayar</string>
+    <string name="plan_price_from_play">Harga dari Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited aktif</string>
+    <string name="unlimited_owned_monthly">Paket bulanan. Pilih untuk mengelola atau membatalkan di Google Play.</string>
+    <string name="unlimited_owned_generic">Terima kasih telah mendukung Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Seumur hidup. Terima kasih telah mendukung Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited aktif. Terima kasih!</string>
+    <string name="unlimited_pending_desc">Pembayaran tertunda. Telebeam aktif begitu Google Play mengonfirmasinya.</string>
+    <string name="unlimited_restore">Pulihkan pembelian</string>
+    <string name="redeem_code">Tukarkan kode</string>
+    <string name="redeem_title">Tukarkan kode Google Play</string>
+    <string name="redeem_text">Ketik kode Anda (opsional), lalu Google Play terbuka untuk menukarkannya. Telebeam aktif sendiri saat Anda kembali.</string>
+    <string name="redeem_field">Kode</string>
+    <string name="redeem_open_play">Buka Google Play</string>
+    <string name="redeem_settings_desc">Punya kode promo atau kode hadiah? Tukarkan dengan Google Play.</string>
+    <string name="redeem_elsewhere">Tukarkan kode di play.google.com/redeem melalui ponsel atau komputer, lalu kembali ke sini.</string>
+    <string name="unlimited_restored">Telebeam Unlimited sudah aktif.</string>
+    <string name="unlimited_not_found">Tidak ada pembelian di Akun Google ini.</string>
+    <string name="unlimited_play_unavailable">Google Play tidak dapat dijangkau saat ini. Coba lagi sebentar lagi.</string>
+    <string name="unlimited_manage_in_play">Buka Google Play → Pembayaran &amp; langganan untuk mengelola paket Anda.</string>
+    <string name="section_mirroring">Pencerminan</string>
+</resources>

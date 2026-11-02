@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Mottaker for skjermdeling</string>
+    <string name="notification_title">Klar for Skjermdeling</string>
+    <string name="notification_text">Macen din finner denne TV-en i Skjermdeling</string>
+    <string name="notification_pin_title">PIN-kode kreves</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Stopp</string>
+
+    <string name="tab_overview">Oversikt</string>
+    <string name="tab_logs">Logger</string>
+    <string name="tab_settings">Innstillinger</string>
+
+    <string name="server_stopped">Serveren er stoppet</string>
+    <string name="waiting_for_connection">Venter på tilkobling …</string>
+    <string name="waiting_for_playback">Trykk på start på avsenderen …</string>
+    <string name="error_starting_server">Kunne ikke starte serveren</string>
+    <string name="connected_count">%d tilkoblet</string>
+    <string name="error_label">Feil</string>
+    <string name="stopped_label">Stoppet</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stopp</string>
+    <string name="btn_allow">Tillat</string>
+    <string name="btn_open_settings">Åpne innstillinger</string>
+    <string name="local_network_label">Trenger tilgang til enheter i nærheten</string>
+    <string name="local_network_desc">Gi tilgang til enheter i nærheten, så Macen, iPhonen eller iPaden din kan finne denne TV-en</string>
+    <string name="unknown_track">Ukjent</string>
+
+    <string name="cd_pip">Bilde-i-bilde</string>
+    <string name="cd_fullscreen">Fullskjerm</string>
+    <string name="cd_exit_fullscreen">Avslutt fullskjerm</string>
+    <string name="cd_cover_art">Omslagsbilde</string>
+    <string name="cd_play_pause">Spill av/pause</string>
+    <string name="cd_rewind">Spol tilbake</string>
+    <string name="cd_fast_forward">Spol fremover</string>
+    <string name="volume_server">Mottakervolum</string>
+    <string name="volume_client">Avsendervolum</string>
+    <string name="volume_value">%1$d %%</string>
+    <string name="cd_download">Last ned video</string>
+    <string name="cd_cancel_download">Avbryt nedlasting</string>
+
+    <string name="download_saved">Lagret i %1$s</string>
+    <string name="download_failed">Nedlastingen mislyktes</string>
+
+    <string name="gesture_seek_seconds">%1$d sekunder</string>
+    <string name="seconds_short">%1$d s</string>
+    <string name="select_playback_speed">Avspillingshastighet</string>
+    <string name="cd_reset_speed">Tilbakestill hastighet</string>
+    <string name="skip_silence">Hopp over stillhet</string>
+
+    <string name="cd_back">Tilbake</string>
+    <string name="cd_copy_url">Kopier video-URL</string>
+    <string name="cd_rotate">Roter skjermen</string>
+    <string name="cd_lock_controls">Lås kontrollene</string>
+    <string name="cd_unlock_controls">Lås opp kontrollene</string>
+    <string name="scale_best_fit">Tilpass</string>
+    <string name="scale_stretch">Strekk</string>
+    <string name="scale_crop">Beskjær</string>
+
+    <string name="dialog_pin_title">Skriv inn denne PIN-koden på enheten din</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Eksporter</string>
+    <string name="btn_clear">Tøm</string>
+    <string name="export_logs_chooser_title">Eksporter logger</string>
+
+    <string name="section_server">Server</string>
+    <string name="section_connection">Tilkobling</string>
+    <string name="section_display">Skjerm</string>
+    <string name="section_decode">Dekoding</string>
+    <string name="section_developer">Utvikler</string>
+
+    <string name="setting_server_name">Servernavn</string>
+    <string name="setting_server_port">Serverport</string>
+    <string name="setting_auto_start">Start serveren automatisk</string>
+    <string name="setting_auto_start_desc">Start mottakeren når appen åpnes</string>
+    <string name="setting_boot_auto_start">Start serveren ved oppstart</string>
+    <string name="setting_boot_auto_start_desc">Start mottakeren når TV-en slås på</string>
+    <string name="setting_run_in_background">Kjør i bakgrunnen</string>
+    <string name="setting_run_in_background_desc">Hold serveren i gang etter at du forlater appen</string>
+
+    <string name="setting_require_pin">Krev PIN-kode (beta)</string>
+    <string name="setting_require_pin_desc">Krev en firesifret PIN-kode for hver nye tilkobling</string>
+    <string name="setting_allow_new_conn">Tillat nye tilkoblinger</string>
+    <string name="setting_allow_new_conn_desc">Koble fra nåværende avsender når en ny kobler til</string>
+
+    <string name="setting_idle_preview">Forhåndsvisning i ventemodus</string>
+    <string name="setting_idle_preview_desc">Vis videoflaten mens du venter på tilkobling</string>
+    <string name="setting_auto_fullscreen">Gå til fullskjerm automatisk</string>
+    <string name="setting_auto_fullscreen_desc">Gå til fullskjerm når en avsender kobler til</string>
+    <string name="setting_keep_screen_on">Hold skjermen på</string>
+    <string name="setting_keep_screen_on_desc">Hindre dvale mens en avsender er tilkoblet</string>
+    <string name="setting_advertise_video">Tilby videoavspilling</string>
+    <string name="setting_advertise_video_desc">Når av, sendes videoer bare som lyd</string>
+    <string name="setting_advertise_mirroring">Tilby skjermdeling</string>
+    <string name="setting_advertise_mirroring_desc">Når av, skjules enheten for speiling</string>
+    <string name="setting_advertise_audio">Annonser støtte for AirPlay-lyd</string>
+    <string name="setting_advertise_audio_desc">Når av, kan enheten bare brukes til speiling og skjules for mediespillere</string>
+    <string name="setting_alac">Annonser ALAC-kodek</string>
+    <string name="setting_alac_desc">Tilby ALAC i mDNS-oppføringen; brukes til musikkstrømming</string>
+    <string name="setting_aac">Annonser AAC-kodek</string>
+    <string name="setting_aac_desc">Tilby AAC-ELD/AAC-LC i mDNS-oppføringen; brukes til lyd ved skjermdeling</string>
+    <string name="setting_launch_on_connect">Vis Telebeam når en Mac kobler til</string>
+    <string name="setting_launch_on_connect_desc">Henter bildet frem. Hvis TV-en blokkerer det, vises et varsel i stedet.</string>
+    <string name="setting_discovery">Synlig via</string>
+    <string name="setting_discovery_all_desc">Annonser på alle brukbare grensesnitt. Bruker NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Annonser bare via USB-tilknytning for å tvinge kablet tilkobling. Bruker egen mDNS-responder.</string>
+    <string name="chip_all_networks">Alle nettverk</string>
+    <string name="chip_usb_only">Bare USB</string>
+    <string name="setting_resolution">Oppløsning</string>
+    <string name="setting_resolution_desc">Videooppløsning som annonseres til avsendere</string>
+    <string name="setting_resolution_width">Bredde</string>
+    <string name="setting_resolution_height">Høyde</string>
+    <string name="setting_max_fps">Maks FPS</string>
+    <string name="setting_max_fps_desc">Maksimal bildefrekvens som annonseres til avsendere</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Legg til en pikselkant for skjermer med overscan</string>
+    <string name="chip_custom">Egendefinert</string>
+    <string name="chip_device_portrait">Stående</string>
+    <string name="chip_device_landscape">Liggende</string>
+
+    <string name="setting_h265_desc">Auto bruker bare H.265-dekodere som er kjent for å fungere</string>
+    <string name="setting_enforce_sdr_desc">Merk video som begrenset SDR; slå av for å slippe HDR-kilder gjennom</string>
+    <string name="setting_sw_alac">Tving programvaredekoder for ALAC</string>
+    <string name="setting_sw_alac_desc">Bruk alltid programvaredekoder for ALAC i stedet for systemdekoderen; kan påvirke forsinkelsen</string>
+    <string name="setting_sw_aac">Tving programvaredekoder for AAC</string>
+    <string name="setting_sw_aac_desc">Bruk alltid programvaredekoder for AAC i stedet for systemdekoderen; kan påvirke forsinkelsen</string>
+    <string name="setting_sync_client_volume">Macen styrer TV-volumet</string>
+    <string name="setting_sync_client_volume_desc">Volumtastene på Macen endrer TV-volumet under speiling. Slå av for å bare bruke TV-fjernkontrollen.</string>
+
+    <string name="setting_developer_options">Utvikleralternativer</string>
+    <string name="setting_developer_options_desc">Vis alternativer for avanserte brukere</string>
+    <string name="setting_key_allow_frame_drop_desc">La videodekodere droppe bilder internt for å holde tritt på Android 10+</string>
+    <string name="setting_realtime_decoder_priority_desc">Be om sanntidsplanlegging for lyddekoderen</string>
+    <string name="setting_operating_rate_desc">Be om maksimal driftshastighet fra dekoderen</string>
+    <string name="chip_auto">Auto</string>
+    <string name="chip_4k_beta">4K · beta</string>
+    <string name="chip_120_beta">120 · beta</string>
+    <string name="setting_frame_rate">Bildefrekvens</string>
+    <string name="setting_frame_rate_desc">60 fps fungerer med alle Mac-er. 120 (beta) krever en Mac med 120 Hz ProMotion-skjerm.</string>
+    <string name="chip_on">På</string>
+    <string name="chip_off">Av</string>
+    <string name="setting_low_latency">Lav forsinkelse</string>
+    <string name="setting_low_latency_desc">Bruk lyddekoding med lav forsinkelse; dette bruker mer strøm og CPU</string>
+    <string name="setting_scheduled_output_buffer_release">Justert bildetakt</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Planlegg hvert dekodet bilde til VSYNC som samsvarer med presentasjonstidsstempelet</string>
+    <string name="setting_audio_delay">Overstyr lydforsinkelse</string>
+    <string name="setting_audio_delay_desc">Angi en egen lydforsinkelse som rapporteres til avsenderen</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Automatisk størrelse på programvarelydbuffer</string>
+    <string name="setting_audio_auto_buffer_desc">Justerer programvarelydbufferen etter nettverksforhold og enhetsytelse; glidebryteren styrer hvor mye jitter bufferen kan absorbere</string>
+    <string name="audio_adaptive_value">%1$d %% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Lavest forsinkelse</item>
+        <item>Lavere forsinkelse</item>
+        <item>Balansert</item>
+        <item>Bedre stabilitet</item>
+        <item>Best stabilitet</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Programvarelydbuffer (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Buffer som absorberer jitter fra nettverk og dekoder: kortere gir lavere forsinkelse, lengre gir færre hakk</string>
+    <string name="setting_oboe_buffer_frames">Maskinvareutgangsbuffer (rammer)</string>
+    <string name="setting_oboe_buffer_frames_desc">Strømbuffer mellom denne appen og lydenheten som bare absorberer jitter fra CPU-planlegging. La stå på 0 for automatisk størrelse.</string>
+    <string name="setting_debug_overlay">Vis feilsøkingsoverlegg</string>
+    <string name="setting_debug_overlay_desc">Vis strømstatistikk over videoen: kodek, FPS, bithastighet, jitter, bilder, tapte bilder</string>
+    <string name="setting_benchmark_log">Slå på feilsøkingslogging</string>
+    <string name="setting_benchmark_log_desc">Logg strømstatistikk til logcat: kodek, FPS, bithastighet, jitter, bilder, tapte bilder</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Lyd</string>
+    <string name="debug_section_network">Nettverk</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bithastighet: %2$s</string>
+    <string name="debug_frames_drops">Bilder: %1$d  Tapt: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Mottaker: %2$d %%  Avsender: %3$d %%</string>
+    <string name="debug_audio_buffer">Buffer: %1$d ms (mål: %2$d ms)</string>
+    <string name="debug_audio_glitch">Hakk: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Dekoding: %1$s</string>
+    <string name="debug_clients">Avsendere: %1$d</string>
+
+    <string name="cd_settings">Innstillinger</string>
+    <string name="status_ready">Klar</string>
+    <string name="status_starting">Starter …</string>
+    <string name="status_off">Mottakeren er av</string>
+    <string name="status_error">Kunne ikke starte mottakeren</string>
+    <string name="btn_turn_on">Slå på</string>
+    <string name="btn_try_again">Prøv igjen</string>
+    <string name="home_mac_title">Slik speiler du Macen</string>
+    <string name="home_step1">Klikk på Kontrollsenter-symbolet i menylinjen på Macen (øverst til høyre)</string>
+    <string name="home_step2">Klikk på Skjermdeling</string>
+    <string name="home_step3">Velg «%1$s»</string>
+    <string name="home_iphone">På iPhone eller iPad: Åpne Kontrollsenter, trykk på Skjermdeling og velg «%1$s».</string>
+    <string name="home_mirror_hint">Tomt skrivebord på TV-en i stedet for Mac-skjermen? På Macen: Systeminnstillinger → Skjermer → «Når tilkoblet TV» → Speil hele skjermen.</string>
+    <string name="home_screensaver_hint">Er bildet skjult av skjermspareren? Trykk på en hvilken som helst knapp på fjernkontrollen.</string>
+    <string name="home_same_wifi">Mac og TV må være på samme Wi‑Fi</string>
+    <string name="home_tv_address">TV-adresse: %1$s</string>
+    <string name="home_connecting">Macen din kobler til …</string>
+    <string name="home_connecting_named">%1$s kobler til …</string>
+    <string name="home_taking_over">%1$s tar over …</string>
+    <string name="home_connecting_hint">Hvis ingenting vises i løpet av noen sekunder, velger du denne TV-en igjen i Skjermdeling på Macen.</string>
+    <string name="home_stopped_title">Speilingen stoppet</string>
+    <string name="home_stopped_desc">Den ble stoppet på Macen, eller Wi‑Fi-tilkoblingen falt ut. For å speile igjen velger du «%1$s» i Skjermdeling.</string>
+    <string name="toast_mirroring">Speilingen startet</string>
+    <string name="controls_hint">Trykk OK for alternativer</string>
+    <string name="controls_back_hides">Trykk Tilbake for å skjule</string>
+    <string name="controls_hide">Skjul</string>
+    <string name="setting_applies_next_connection">Lagret. Det gjelder neste gang Macen kobler til.</string>
+    <string name="toast_took_over">%1$s tok over TV-en</string>
+    <string name="home_stopped_mac_title">Speilingen ble stoppet på Macen</string>
+    <string name="home_stopped_mac_desc">For å speile igjen velger du «%1$s» i Skjermdeling.</string>
+    <string name="home_lost_title">Tilkoblingen ble brutt – sjekk Wi‑Fi</string>
+    <string name="home_lost_desc">Sørg for at Mac og TV er på samme Wi‑Fi, og velg «%1$s» igjen.</string>
+    <string name="home_network_title">TV-ens nettverk er endret</string>
+    <string name="home_network_desc">Koble Macen til TV-ens Wi‑Fi, og velg «%1$s» igjen.</string>
+    <string name="toast_mirroring_from">Speiler fra %1$s</string>
+
+    <string name="setting_tv_name">TV-navn</string>
+    <string name="setting_tv_name_desc">Navnet Macen viser i Skjermdeling. La stå tomt for å bruke «%1$s».</string>
+    <string name="setting_picture_quality">Bildekvalitet</string>
+    <string name="setting_picture_quality_desc">Auto bruker 1080p, det jevneste fra en Mac. 4K (beta) er skarpere, men kan hakke.</string>
+    <string name="setting_pin_simple">Be om PIN-kode</string>
+    <string name="setting_pin_simple_desc">Vis en firesifret kode på TV-en før en ny enhet kan speile</string>
+    <string name="setting_lowest_latency">Lavest forsinkelse</string>
+    <string name="setting_lowest_latency_desc">Mindre forsinkelse for skriving og mus. Bildet kan hakke litt på enkelte TV-er; slå av for det jevneste bildet.</string>
+    <string name="setting_about">Om</string>
+    <string name="setting_about_desc">Versjon, lisenser og kildekode</string>
+    <string name="setting_advanced">Avansert</string>
+    <string name="setting_advanced_desc">Tekniske alternativer. De fleste trenger aldri disse.</string>
+    <string name="setting_logs">Vis logger</string>
+    <string name="setting_logs_desc">Teknisk logg for feilsøking</string>
+    <string name="setting_receiver_power">Slå av mottakeren</string>
+    <string name="setting_receiver_power_desc">Macen din ser ikke denne TV-en før du slår den på igjen</string>
+    <string name="setting_receiver_power_on">Slå på mottakeren</string>
+    <string name="setting_receiver_power_on_desc">La Macen finne denne TV-en igjen</string>
+    <string name="dialog_stop_title">Vil du slå av mottakeren?</string>
+    <string name="dialog_stop_text">Macen din kan ikke finne denne TV-en før du slår mottakeren på igjen.</string>
+    <string name="btn_turn_off">Slå av</string>
+    <string name="btn_cancel">Avbryt</string>
+    <string name="btn_reset">Tilbakestill</string>
+    <string name="setting_reset_all">Tilbakestill alle innstillinger</string>
+    <string name="setting_reset_all_desc">Tilbake til slik Telebeam var fra start. Kjøpet ditt beholdes.</string>
+    <string name="dialog_reset_title">Vil du tilbakestille alle innstillinger?</string>
+    <string name="dialog_reset_text">Alle innstillinger, også TV-navnet, går tilbake til standard. Kjøpet ditt beholdes, og en Mac som speiler, forblir tilkoblet.</string>
+    <string name="setting_reset_done">Innstillingene er tilbakestilt.</string>
+
+    <string name="about_version">Versjon %1$s</string>
+    <string name="about_credits">Basert på AirPlay Receiver av jqssun (GPL-3.0) og UxPlay. Bruker FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Denne programvaren bruker kode fra FFmpeg (https://ffmpeg.org) lisensiert under LGPLv2.1. Bare lyddekoderne for ALAC og AAC er bygget inn; kildekoden er inkludert i kildekodelageret til denne appen.</string>
+    <string name="about_license_note">Denne appen er fri programvare under GNU General Public License v3.0. Du kan hente, endre og dele kildekoden.</string>
+    <string name="about_source">Kildekode: %1$s</string>
+    <string name="about_view_license">Vis lisens (GPL-3.0)</string>
+    <string name="about_privacy">Personvernerklæring: %1$s</string>
+    <string name="about_privacy_button">Personvernerklæring</string>
+    <string name="about_trademark">Ikke tilknyttet Apple. AirPlay og Mac er varemerker for Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Speil Macen på denne TV-en</string>
+    <string name="paywall_subtitle">Velg et alternativ for å starte. Macen finner denne TV-en så snart appen er låst opp.</string>
+    <string name="paywall_benefit_quality">Mac-skjermen på storskjerm, opptil 4K</string>
+    <string name="paywall_benefit_unlimited">Ingen tidsbegrensning, ingen reklame</string>
+    <string name="paywall_benefit_updates">Alle fremtidige oppdateringer inkludert</string>
+    <string name="paywall_not_now">Ikke nå</string>
+    <string name="paywall_terms">Månedsabonnementet fornyes for %1$s/mnd. til du sier det opp i Google Play. Belastes Google-kontoen din.</string>
+    <string name="paywall_terms_no_price">Betalingen håndteres av Google Play og belastes Google-kontoen din.</string>
+    <string name="plan_monthly">Månedlig</string>
+    <string name="plan_lifetime">Livstid</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d DAG GRATIS</item>
+        <item quantity="other">%d DAGER GRATIS</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d dag gratis, deretter %2$s/mnd. Si opp når som helst.</item>
+        <item quantity="other">%1$d dager gratis, deretter %2$s/mnd. Si opp når som helst.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">i %d dag</item>
+        <item quantity="other">i %d dager</item>
+    </plurals>
+    <string name="plan_monthly_detail">Si opp når som helst i Google Play.</string>
+    <string name="plan_free">Gratis</string>
+    <string name="plan_per_month">per måned</string>
+    <string name="plan_lifetime_badge">BETAL ÉN GANG</string>
+    <string name="plan_lifetime_detail">Låses opp med en gang. Din for alltid, uten abonnement.</string>
+    <string name="plan_one_time">én gang</string>
+    <string name="plan_price_from_play">Pris vist av Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited er på</string>
+    <string name="unlimited_owned_monthly">Månedsabonnement. Velg for å administrere eller si opp i Google Play.</string>
+    <string name="unlimited_owned_generic">Takk for at du støtter Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Livstid. Takk for at du støtter Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited er på. Takk!</string>
+    <string name="unlimited_pending_desc">Betalingen venter. Telebeam låses opp så snart Google Play bekrefter den.</string>
+    <string name="unlimited_restore">Gjenopprett kjøp</string>
+    <string name="redeem_code">Løs inn kode</string>
+    <string name="redeem_title">Løs inn en Google Play-kode</string>
+    <string name="redeem_text">Skriv inn koden (valgfritt), så åpnes Google Play for å løse den inn. Telebeam låses opp av seg selv når du kommer tilbake.</string>
+    <string name="redeem_field">Kode</string>
+    <string name="redeem_open_play">Åpne Google Play</string>
+    <string name="redeem_settings_desc">Har du en kampanje- eller gavekode? Løs den inn med Google Play.</string>
+    <string name="redeem_elsewhere">Løs inn koden på play.google.com/redeem på en telefon eller datamaskin, og kom tilbake hit.</string>
+    <string name="unlimited_restored">Telebeam Unlimited er låst opp.</string>
+    <string name="unlimited_not_found">Fant ingen kjøp på denne Google-kontoen.</string>
+    <string name="unlimited_play_unavailable">Får ikke kontakt med Google Play akkurat nå. Prøv igjen om litt.</string>
+    <string name="unlimited_manage_in_play">Åpne Google Play → Betalinger og abonnementer for å administrere abonnementet ditt.</string>
+    <string name="section_mirroring">Speiling</string>
+</resources>

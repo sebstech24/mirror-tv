@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Modtager til skærmdublering</string>
+    <string name="notification_title">Klar til skærmdublering</string>
+    <string name="notification_text">Din Mac kan finde dette tv under Dubler skærm</string>
+    <string name="notification_pin_title">PIN-kode påkrævet</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Stop</string>
+
+    <string name="tab_overview">Oversigt</string>
+    <string name="tab_logs">Logge</string>
+    <string name="tab_settings">Indstillinger</string>
+
+    <string name="server_stopped">Serveren er stoppet</string>
+    <string name="waiting_for_connection">Venter på forbindelse…</string>
+    <string name="waiting_for_playback">Tryk på start på afsenderen…</string>
+    <string name="error_starting_server">Serveren kunne ikke starte</string>
+    <string name="connected_count">%d forbundet</string>
+    <string name="error_label">Fejl</string>
+    <string name="stopped_label">Stoppet</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_allow">Tillad</string>
+    <string name="btn_open_settings">Åbn indstillinger</string>
+    <string name="local_network_label">Adgang til enheder i nærheden kræves</string>
+    <string name="local_network_desc">Giv adgang til enheder i nærheden, så din Mac, iPhone eller iPad kan finde dette tv</string>
+    <string name="unknown_track">Ukendt</string>
+
+    <string name="cd_pip">Billede-i-billede</string>
+    <string name="cd_fullscreen">Fuld skærm</string>
+    <string name="cd_exit_fullscreen">Afslut fuld skærm</string>
+    <string name="cd_cover_art">Omslag</string>
+    <string name="cd_play_pause">Afspil/pause</string>
+    <string name="cd_rewind">Spol tilbage</string>
+    <string name="cd_fast_forward">Spol frem</string>
+    <string name="volume_server">Modtagerens lydstyrke</string>
+    <string name="volume_client">Afsenderens lydstyrke</string>
+    <string name="volume_value">%1$d %%</string>
+    <string name="cd_download">Hent video</string>
+    <string name="cd_cancel_download">Annuller hentning</string>
+
+    <string name="download_saved">Gemt i %1$s</string>
+    <string name="download_failed">Hentningen mislykkedes</string>
+
+    <string name="gesture_seek_seconds">%1$d sekunder</string>
+    <string name="seconds_short">%1$d s</string>
+    <string name="select_playback_speed">Afspilningshastighed</string>
+    <string name="cd_reset_speed">Nulstil hastighed</string>
+    <string name="skip_silence">Spring stilhed over</string>
+
+    <string name="cd_back">Tilbage</string>
+    <string name="cd_copy_url">Kopiér videoens URL</string>
+    <string name="cd_rotate">Rotér skærmen</string>
+    <string name="cd_lock_controls">Lås betjeningen</string>
+    <string name="cd_unlock_controls">Lås betjeningen op</string>
+    <string name="scale_best_fit">Tilpas</string>
+    <string name="scale_stretch">Stræk</string>
+    <string name="scale_crop">Beskær</string>
+
+    <string name="dialog_pin_title">Indtast denne PIN-kode på din enhed</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Eksportér</string>
+    <string name="btn_clear">Ryd</string>
+    <string name="export_logs_chooser_title">Eksportér logge</string>
+
+    <string name="section_server">Server</string>
+    <string name="section_connection">Forbindelse</string>
+    <string name="section_display">Visning</string>
+    <string name="section_decode">Afkodning</string>
+    <string name="section_developer">Udvikler</string>
+
+    <string name="setting_server_name">Servernavn</string>
+    <string name="setting_server_port">Serverport</string>
+    <string name="setting_auto_start">Start serveren automatisk</string>
+    <string name="setting_auto_start_desc">Start modtageren, når appen åbnes</string>
+    <string name="setting_boot_auto_start">Start serveren ved opstart</string>
+    <string name="setting_boot_auto_start_desc">Start modtageren, når tv\'et tændes</string>
+    <string name="setting_run_in_background">Kør i baggrunden</string>
+    <string name="setting_run_in_background_desc">Lad serveren køre, når du forlader appen</string>
+
+    <string name="setting_require_pin">Kræv PIN-kode (beta)</string>
+    <string name="setting_require_pin_desc">Kræv en firecifret PIN-kode for hver ny forbindelse</string>
+    <string name="setting_allow_new_conn">Tillad nye forbindelser</string>
+    <string name="setting_allow_new_conn_desc">Afbryd den nuværende afsender, når en ny opretter forbindelse</string>
+
+    <string name="setting_idle_preview">Eksempel i dvaletilstand</string>
+    <string name="setting_idle_preview_desc">Vis videofladen, mens der ventes på en forbindelse</string>
+    <string name="setting_auto_fullscreen">Fuld skærm automatisk</string>
+    <string name="setting_auto_fullscreen_desc">Skift til fuld skærm, når en afsender opretter forbindelse</string>
+    <string name="setting_keep_screen_on">Hold skærmen tændt</string>
+    <string name="setting_keep_screen_on_desc">Forhindr dvale, mens en afsender er forbundet</string>
+    <string name="setting_advertise_video">Tilbyd videoafspilning</string>
+    <string name="setting_advertise_video_desc">Når den er slået fra, streames videoer kun som lyd</string>
+    <string name="setting_advertise_mirroring">Tilbyd skærmdublering</string>
+    <string name="setting_advertise_mirroring_desc">Når den er slået fra, er enheden skjult for dublering</string>
+    <string name="setting_advertise_audio">Tilbyd AirPlay-lyd</string>
+    <string name="setting_advertise_audio_desc">Når den er slået fra, kan enheden kun bruges til dublering og er skjult for medieafspillere</string>
+    <string name="setting_alac">Tilbyd ALAC-codec</string>
+    <string name="setting_alac_desc">Tilbyd ALAC i mDNS-posten; bruges til musikstreaming</string>
+    <string name="setting_aac">Tilbyd AAC-codec</string>
+    <string name="setting_aac_desc">Tilbyd AAC-ELD/AAC-LC i mDNS-posten; bruges til lyd ved skærmdublering</string>
+    <string name="setting_launch_on_connect">Vis Telebeam, når en Mac opretter forbindelse</string>
+    <string name="setting_launch_on_connect_desc">Henter billedet frem. Hvis tv\'et blokerer det, vises der en besked i stedet.</string>
+    <string name="setting_discovery">Synlig via</string>
+    <string name="setting_discovery_all_desc">Annoncér på alle brugbare grænseflader. Bruger NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Annoncér kun via USB-tethering for at kræve kablet forbindelse. Bruger egen mDNS-responder.</string>
+    <string name="chip_all_networks">Alle netværk</string>
+    <string name="chip_usb_only">Kun USB</string>
+    <string name="setting_resolution">Opløsning</string>
+    <string name="setting_resolution_desc">Videoopløsning, der tilbydes afsendere</string>
+    <string name="setting_resolution_width">Bredde</string>
+    <string name="setting_resolution_height">Højde</string>
+    <string name="setting_max_fps">Maks. FPS</string>
+    <string name="setting_max_fps_desc">Højeste billedfrekvens, der tilbydes afsendere</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Tilføj en pixelkant til skærme med overscan</string>
+    <string name="chip_custom">Tilpasset</string>
+    <string name="chip_device_portrait">Stående</string>
+    <string name="chip_device_landscape">Liggende</string>
+
+    <string name="setting_h265_desc">Auto bruger kun H.265-dekodere, der vides at virke</string>
+    <string name="setting_enforce_sdr_desc">Mærk video som begrænset SDR; slå fra for at lade HDR-kilder passere</string>
+    <string name="setting_sw_alac">Gennemtving software-ALAC-dekoder</string>
+    <string name="setting_sw_alac_desc">Brug altid software-ALAC-dekoderen i stedet for systemets dekoder; kan påvirke latensen</string>
+    <string name="setting_sw_aac">Gennemtving software-AAC-dekoder</string>
+    <string name="setting_sw_aac_desc">Brug altid software-AAC-dekoderen i stedet for systemets dekoder; kan påvirke latensen</string>
+    <string name="setting_sync_client_volume">Mac styrer tv\'ets lydstyrke</string>
+    <string name="setting_sync_client_volume_desc">Macens lydstyrketaster ændrer tv\'ets lydstyrke under dublering. Slå fra for kun at bruge tv\'ets fjernbetjening.</string>
+
+    <string name="setting_developer_options">Indstillinger for udviklere</string>
+    <string name="setting_developer_options_desc">Vis indstillinger for avancerede brugere</string>
+    <string name="setting_key_allow_frame_drop_desc">Lad videodekodere droppe billeder internt for at følge med på Android 10+</string>
+    <string name="setting_realtime_decoder_priority_desc">Anmod om realtidsplanlægning for lyddekoderen</string>
+    <string name="setting_operating_rate_desc">Anmod om højeste driftshastighed fra dekoderen</string>
+    <string name="chip_auto">Auto</string>
+    <string name="chip_4k_beta">4K · beta</string>
+    <string name="chip_120_beta">120 · beta</string>
+    <string name="setting_frame_rate">Billedfrekvens</string>
+    <string name="setting_frame_rate_desc">60 fps virker med alle Mac-computere. 120 (beta) kræver en Mac med en 120 Hz ProMotion-skærm.</string>
+    <string name="chip_on">Til</string>
+    <string name="chip_off">Fra</string>
+    <string name="setting_low_latency">Lav latens</string>
+    <string name="setting_low_latency_desc">Afkod lyd med lav latens; bruger mere strøm og CPU</string>
+    <string name="setting_scheduled_output_buffer_release">Synkroniseret billedtakt</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Planlæg hvert afkodet billede til den VSYNC, der passer til dets præsentationstidsstempel</string>
+    <string name="setting_audio_delay">Tilsidesæt lydforsinkelse</string>
+    <string name="setting_audio_delay_desc">Angiv en egen lydlatens, der rapporteres til afsenderen</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Automatisk lydbuffer (software)</string>
+    <string name="setting_audio_auto_buffer_desc">Tilpasser softwarens lydbuffer efter netværk og enhedens ydeevne; skyderen styrer, hvor meget jitter bufferen kan opfange</string>
+    <string name="audio_adaptive_value">%1$d %% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Lavest latens</item>
+        <item>Lavere latens</item>
+        <item>Balanceret</item>
+        <item>Mere stabil</item>
+        <item>Mest stabil</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Lydbuffer, software (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Buffer mod jitter fra netværk og dekoder: kortere giver lavere latens, længere giver færre udfald</string>
+    <string name="setting_oboe_buffer_frames">Outputbuffer, hardware (billeder)</string>
+    <string name="setting_oboe_buffer_frames_desc">Streambuffer mellem appen og lydenheden, der kun opfanger jitter fra CPU-planlægning. Lad den stå på 0 for automatisk størrelse.</string>
+    <string name="setting_debug_overlay">Vis fejlfindingsoverlay</string>
+    <string name="setting_debug_overlay_desc">Vis streamstatistik over videoen: codec, FPS, bitrate, jitter, billeder, tab</string>
+    <string name="setting_benchmark_log">Slå fejlfindingslog til</string>
+    <string name="setting_benchmark_log_desc">Log streamstatistik til logcat: codec, FPS, bitrate, jitter, billeder, tab</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Lyd</string>
+    <string name="debug_section_network">Netværk</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
+    <string name="debug_frames_drops">Billeder: %1$d  Tab: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Modtager: %2$d%%  Afsender: %3$d%%</string>
+    <string name="debug_audio_buffer">Buffer: %1$d ms (mål: %2$d ms)</string>
+    <string name="debug_audio_glitch">Udfald: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Afkodning: %1$s</string>
+    <string name="debug_clients">Afsendere: %1$d</string>
+
+    <string name="cd_settings">Indstillinger</string>
+    <string name="status_ready">Klar</string>
+    <string name="status_starting">Starter…</string>
+    <string name="status_off">Modtageren er slukket</string>
+    <string name="status_error">Modtageren kunne ikke starte</string>
+    <string name="btn_turn_on">Tænd</string>
+    <string name="btn_try_again">Prøv igen</string>
+    <string name="home_mac_title">Sådan dublerer du din Mac</string>
+    <string name="home_step1">Klik på symbolet for Kontrolcenter i Macens menulinje (øverst til højre)</string>
+    <string name="home_step2">Klik på Dubler skærm</string>
+    <string name="home_step3">Vælg »%1$s«</string>
+    <string name="home_iphone">På iPhone eller iPad: Åbn Kontrolcenter, tryk på Dubler skærm, og vælg »%1$s«.</string>
+    <string name="home_mirror_hint">Tomt skrivebord på tv\'et i stedet for din Macs skærm? På Macen: Systemindstillinger → Skærme → »Når sluttet til fjernsynet« → Dubler hele skærmen.</string>
+    <string name="home_screensaver_hint">Er billedet skjult af pauseskærmen? Tryk på en vilkårlig knap på fjernbetjeningen.</string>
+    <string name="home_same_wifi">Mac og tv skal være på samme Wi‑Fi</string>
+    <string name="home_tv_address">Tv-adresse: %1$s</string>
+    <string name="home_connecting">Din Mac opretter forbindelse…</string>
+    <string name="home_connecting_named">%1$s opretter forbindelse…</string>
+    <string name="home_taking_over">%1$s overtager…</string>
+    <string name="home_connecting_hint">Hvis der ikke vises noget efter et par sekunder, så vælg dette tv igen under Dubler skærm på Macen.</string>
+    <string name="home_stopped_title">Dubleringen er stoppet</string>
+    <string name="home_stopped_desc">Den blev stoppet på Macen, eller Wi‑Fi-forbindelsen blev afbrudt. Vælg »%1$s« under Dubler skærm for at dublere igen.</string>
+    <string name="toast_mirroring">Dubleringen er startet</string>
+    <string name="controls_hint">Tryk på OK for valgmuligheder</string>
+    <string name="controls_back_hides">Tryk på Tilbage for at skjule</string>
+    <string name="controls_hide">Skjul</string>
+    <string name="setting_applies_next_connection">Gemt. Gælder næste gang din Mac opretter forbindelse.</string>
+    <string name="toast_took_over">%1$s overtog tv\'et</string>
+    <string name="home_stopped_mac_title">Dubleringen blev stoppet på Macen</string>
+    <string name="home_stopped_mac_desc">Vælg »%1$s« under Dubler skærm for at dublere igen.</string>
+    <string name="home_lost_title">Forbindelsen blev afbrudt – tjek Wi‑Fi</string>
+    <string name="home_lost_desc">Sørg for, at Mac og tv er på samme Wi‑Fi, og vælg så »%1$s« igen.</string>
+    <string name="home_network_title">Tv\'ets netværk er ændret</string>
+    <string name="home_network_desc">Forbind Macen til tv\'ets Wi‑Fi, og vælg så »%1$s« igen.</string>
+    <string name="toast_mirroring_from">Dublerer fra %1$s</string>
+
+    <string name="setting_tv_name">Tv-navn</string>
+    <string name="setting_tv_name_desc">Det navn, din Mac viser under Dubler skærm. Lad feltet være tomt for at bruge »%1$s«.</string>
+    <string name="setting_picture_quality">Billedkvalitet</string>
+    <string name="setting_picture_quality_desc">Auto bruger 1080p, det mest flydende fra en Mac. 4K (beta) er skarpere, men kan hakke.</string>
+    <string name="setting_pin_simple">Spørg om PIN-kode</string>
+    <string name="setting_pin_simple_desc">Vis en firecifret kode på tv\'et, før en ny enhed kan dublere</string>
+    <string name="setting_lowest_latency">Laveste latens</string>
+    <string name="setting_lowest_latency_desc">Mindre forsinkelse ved skrivning og mus. Billedet kan hakke lidt på nogle tv; slå fra for det mest stabile billede.</string>
+    <string name="setting_about">Om</string>
+    <string name="setting_about_desc">Version, licenser og kildekode</string>
+    <string name="setting_advanced">Avanceret</string>
+    <string name="setting_advanced_desc">Tekniske indstillinger. De fleste får aldrig brug for dem.</string>
+    <string name="setting_logs">Vis logge</string>
+    <string name="setting_logs_desc">Teknisk log til fejlfinding</string>
+    <string name="setting_receiver_power">Sluk modtageren</string>
+    <string name="setting_receiver_power_desc">Din Mac kan ikke se dette tv, før du tænder den igen</string>
+    <string name="setting_receiver_power_on">Tænd modtageren</string>
+    <string name="setting_receiver_power_on_desc">Lad din Mac finde dette tv igen</string>
+    <string name="dialog_stop_title">Sluk modtageren?</string>
+    <string name="dialog_stop_text">Din Mac kan ikke finde dette tv, før du tænder den igen.</string>
+    <string name="btn_turn_off">Sluk</string>
+    <string name="btn_cancel">Annuller</string>
+    <string name="btn_reset">Nulstil</string>
+    <string name="setting_reset_all">Nulstil alle indstillinger</string>
+    <string name="setting_reset_all_desc">Tilbage til, som Telebeam var fra start. Dit køb bevares.</string>
+    <string name="dialog_reset_title">Nulstil alle indstillinger?</string>
+    <string name="dialog_reset_text">Alle indstillinger, også tv-navnet, går tilbage til standard. Dit køb bevares, og en Mac, der dublerer, forbliver forbundet.</string>
+    <string name="setting_reset_done">Indstillingerne er nulstillet.</string>
+
+    <string name="about_version">Version %1$s</string>
+    <string name="about_credits">Baseret på AirPlay Receiver af jqssun (GPL-3.0) og UxPlay. Bruger FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Denne software bruger kode fra FFmpeg (https://ffmpeg.org) under LGPLv2.1-licensen. Kun dens ALAC- og AAC-lyddekodere er indbygget; kildekoden findes i appens kildekodearkiv.</string>
+    <string name="about_license_note">Denne app er fri software under GNU General Public License v3.0. Du kan hente, ændre og dele dens kildekode.</string>
+    <string name="about_source">Kildekode: %1$s</string>
+    <string name="about_view_license">Vis licens (GPL-3.0)</string>
+    <string name="about_privacy">Privatlivspolitik: %1$s</string>
+    <string name="about_privacy_button">Privatlivspolitik</string>
+    <string name="about_trademark">Ikke tilknyttet Apple. AirPlay og Mac er varemærker tilhørende Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Dubler din Mac på dette tv</string>
+    <string name="paywall_subtitle">Vælg et abonnement for at starte. Din Mac finder dette tv, så snart det er låst op.</string>
+    <string name="paywall_benefit_quality">Din Macs skærm på den store skærm, op til 4K</string>
+    <string name="paywall_benefit_unlimited">Ingen tidsgrænse, ingen reklamer</string>
+    <string name="paywall_benefit_updates">Alle fremtidige opdateringer inkluderet</string>
+    <string name="paywall_not_now">Ikke nu</string>
+    <string name="paywall_terms">Månedlig fornyes til %1$s/måned, indtil du opsiger i Google Play. Trækkes på din Google-konto.</string>
+    <string name="paywall_terms_no_price">Betalingen håndteres af Google Play og trækkes på din Google-konto.</string>
+    <string name="plan_monthly">Månedlig</string>
+    <string name="plan_lifetime">Livstid</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d DAG GRATIS</item>
+        <item quantity="other">%d DAGE GRATIS</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d dag gratis, derefter %2$s/måned. Opsig når som helst.</item>
+        <item quantity="other">%1$d dage gratis, derefter %2$s/måned. Opsig når som helst.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">i %d dag</item>
+        <item quantity="other">i %d dage</item>
+    </plurals>
+    <string name="plan_monthly_detail">Opsig når som helst i Google Play.</string>
+    <string name="plan_free">Gratis</string>
+    <string name="plan_per_month">pr. måned</string>
+    <string name="plan_lifetime_badge">BETAL ÉN GANG</string>
+    <string name="plan_lifetime_detail">Låses op med det samme. Din for altid, intet abonnement.</string>
+    <string name="plan_one_time">engangskøb</string>
+    <string name="plan_price_from_play">Pris ifølge Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited er aktiv</string>
+    <string name="unlimited_owned_monthly">Månedsabonnement. Vælg for at administrere eller opsige i Google Play.</string>
+    <string name="unlimited_owned_generic">Tak, fordi du støtter Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Livstid. Tak, fordi du støtter Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited er aktiv. Tak!</string>
+    <string name="unlimited_pending_desc">Betalingen afventer. Telebeam låses op, så snart Google Play bekræfter den.</string>
+    <string name="unlimited_restore">Gendan køb</string>
+    <string name="redeem_code">Indløs kode</string>
+    <string name="redeem_title">Indløs en Google Play-kode</string>
+    <string name="redeem_text">Skriv din kode (valgfrit), så åbner Google Play for at indløse den. Telebeam låses op af sig selv, når du kommer tilbage.</string>
+    <string name="redeem_field">Kode</string>
+    <string name="redeem_open_play">Åbn Google Play</string>
+    <string name="redeem_settings_desc">Har du en kampagne- eller gavekode? Indløs den via Google Play.</string>
+    <string name="redeem_elsewhere">Indløs koden på play.google.com/redeem på en telefon eller computer, og kom så tilbage hertil.</string>
+    <string name="unlimited_restored">Telebeam Unlimited er låst op.</string>
+    <string name="unlimited_not_found">Der blev ikke fundet noget køb på denne Google-konto.</string>
+    <string name="unlimited_play_unavailable">Google Play kan ikke nås lige nu. Prøv igen om lidt.</string>
+    <string name="unlimited_manage_in_play">Åbn Google Play → Betalinger og abonnementer for at administrere dit abonnement.</string>
+    <string name="section_mirroring">Dublering</string>
+</resources>

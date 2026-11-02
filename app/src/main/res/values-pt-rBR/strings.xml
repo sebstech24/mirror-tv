@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Receptor de espelhamento de tela</string>
+    <string name="notification_title">Pronto para o Espelhamento de Tela</string>
+    <string name="notification_text">Seu Mac pode encontrar esta TV no Espelhamento de Tela</string>
+    <string name="notification_pin_title">PIN necessário</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Parar</string>
+
+    <string name="tab_overview">Visão geral</string>
+    <string name="tab_logs">Registros</string>
+    <string name="tab_settings">Configurações</string>
+
+    <string name="server_stopped">Servidor parado</string>
+    <string name="waiting_for_connection">Aguardando conexão...</string>
+    <string name="waiting_for_playback">Aperte iniciar no transmissor...</string>
+    <string name="error_starting_server">Erro ao iniciar o servidor</string>
+    <string name="connected_count">Conectados: %d</string>
+    <string name="error_label">Erro</string>
+    <string name="stopped_label">Parado</string>
+    <string name="btn_start">Iniciar</string>
+    <string name="btn_stop">Parar</string>
+    <string name="btn_allow">Permitir</string>
+    <string name="btn_open_settings">Abrir configurações</string>
+    <string name="local_network_label">Acesso a dispositivos próximos necessário</string>
+    <string name="local_network_desc">Permita o acesso a dispositivos próximos para que seu Mac, iPhone ou iPad encontre esta TV</string>
+    <string name="unknown_track">Desconhecido</string>
+
+    <string name="cd_pip">Picture-in-Picture</string>
+    <string name="cd_fullscreen">Tela cheia</string>
+    <string name="cd_exit_fullscreen">Sair da tela cheia</string>
+    <string name="cd_cover_art">Capa</string>
+    <string name="cd_play_pause">Reproduzir/Pausar</string>
+    <string name="cd_rewind">Retroceder</string>
+    <string name="cd_fast_forward">Avançar</string>
+    <string name="volume_server">Volume do receptor</string>
+    <string name="volume_client">Volume do transmissor</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">Baixar vídeo</string>
+    <string name="cd_cancel_download">Cancelar download</string>
+
+    <string name="download_saved">Salvo em %1$s</string>
+    <string name="download_failed">Falha no download</string>
+
+    <string name="gesture_seek_seconds">%1$d segundos</string>
+    <string name="seconds_short">%1$d s</string>
+    <string name="select_playback_speed">Velocidade de reprodução</string>
+    <string name="cd_reset_speed">Redefinir velocidade</string>
+    <string name="skip_silence">Pular silêncio</string>
+
+    <string name="cd_back">Voltar</string>
+    <string name="cd_copy_url">Copiar URL do vídeo</string>
+    <string name="cd_rotate">Girar tela</string>
+    <string name="cd_lock_controls">Bloquear controles</string>
+    <string name="cd_unlock_controls">Desbloquear controles</string>
+    <string name="scale_best_fit">Melhor ajuste</string>
+    <string name="scale_stretch">Esticar</string>
+    <string name="scale_crop">Cortar</string>
+
+    <string name="dialog_pin_title">Digite este PIN no seu dispositivo</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Exportar</string>
+    <string name="btn_clear">Limpar</string>
+    <string name="export_logs_chooser_title">Exportar registros</string>
+
+    <string name="section_server">Servidor</string>
+    <string name="section_connection">Conexão</string>
+    <string name="section_display">Tela</string>
+    <string name="section_decode">Decodificação</string>
+    <string name="section_developer">Desenvolvedor</string>
+
+    <string name="setting_server_name">Nome do servidor</string>
+    <string name="setting_server_port">Porta do servidor</string>
+    <string name="setting_auto_start">Iniciar servidor automaticamente</string>
+    <string name="setting_auto_start_desc">Inicia o receptor quando o app é aberto</string>
+    <string name="setting_boot_auto_start">Iniciar servidor ao ligar</string>
+    <string name="setting_boot_auto_start_desc">Inicia o receptor quando a TV é ligada</string>
+    <string name="setting_run_in_background">Executar em segundo plano</string>
+    <string name="setting_run_in_background_desc">Mantém o servidor ativo depois de sair do app</string>
+
+    <string name="setting_require_pin">Exigir PIN (Beta)</string>
+    <string name="setting_require_pin_desc">Exige um PIN de 4 dígitos para cada nova conexão</string>
+    <string name="setting_allow_new_conn">Permitir novas conexões</string>
+    <string name="setting_allow_new_conn_desc">Desconecta o transmissor atual quando um novo se conecta</string>
+
+    <string name="setting_idle_preview">Prévia da tela em espera</string>
+    <string name="setting_idle_preview_desc">Mostra a superfície de vídeo enquanto aguarda uma conexão</string>
+    <string name="setting_auto_fullscreen">Tela cheia automática</string>
+    <string name="setting_auto_fullscreen_desc">Entra em tela cheia quando um transmissor se conecta</string>
+    <string name="setting_keep_screen_on">Manter tela ligada</string>
+    <string name="setting_keep_screen_on_desc">Impede o modo de suspensão enquanto um transmissor está conectado</string>
+    <string name="setting_advertise_video">Oferecer reprodução de vídeo</string>
+    <string name="setting_advertise_video_desc">Quando desativado, os vídeos são transmitidos só como áudio</string>
+    <string name="setting_advertise_mirroring">Oferecer espelhamento de tela</string>
+    <string name="setting_advertise_mirroring_desc">Quando desativado, o dispositivo fica oculto para espelhamento</string>
+    <string name="setting_advertise_audio">Anunciar suporte a áudio AirPlay</string>
+    <string name="setting_advertise_audio_desc">Quando desativado, o dispositivo só pode ser usado para espelhamento e fica oculto nos players de mídia</string>
+    <string name="setting_alac">Anunciar codec ALAC</string>
+    <string name="setting_alac_desc">Oferece ALAC no registro mDNS; usado para streaming de música</string>
+    <string name="setting_aac">Anunciar codec AAC</string>
+    <string name="setting_aac_desc">Oferece AAC-ELD/AAC-LC no registro mDNS; usado para o áudio do espelhamento de tela</string>
+    <string name="setting_launch_on_connect">Mostrar o Telebeam quando um Mac se conectar</string>
+    <string name="setting_launch_on_connect_desc">Traz a imagem para a frente. Se a TV bloquear isso, aparece um aviso.</string>
+    <string name="setting_discovery">Visível via</string>
+    <string name="setting_discovery_all_desc">Anuncia em todas as interfaces disponíveis. Usa NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Anuncia só via ancoragem USB para forçar a conexão por cabo. Usa um respondedor mDNS próprio.</string>
+    <string name="chip_all_networks">Todas as redes</string>
+    <string name="chip_usb_only">Só USB</string>
+    <string name="setting_resolution">Resolução</string>
+    <string name="setting_resolution_desc">Resolução de vídeo anunciada aos transmissores</string>
+    <string name="setting_resolution_width">Largura</string>
+    <string name="setting_resolution_height">Altura</string>
+    <string name="setting_max_fps">FPS máximo</string>
+    <string name="setting_max_fps_desc">Taxa de quadros máxima anunciada aos transmissores</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Adiciona uma margem de pixels para telas com overscan</string>
+    <string name="chip_custom">Personalizado</string>
+    <string name="chip_device_portrait">Retrato</string>
+    <string name="chip_device_landscape">Paisagem</string>
+
+    <string name="setting_h265_desc">O modo Automático só usa decodificadores H.265 que comprovadamente funcionam</string>
+    <string name="setting_enforce_sdr_desc">Marca o vídeo como SDR limitado; desative para deixar passar fontes HDR</string>
+    <string name="setting_sw_alac">Forçar decodificador ALAC por software</string>
+    <string name="setting_sw_alac_desc">Sempre usa o decodificador ALAC por software em vez do decodificador do sistema; pode afetar a latência</string>
+    <string name="setting_sw_aac">Forçar decodificador AAC por software</string>
+    <string name="setting_sw_aac_desc">Sempre usa o decodificador AAC por software em vez do decodificador do sistema; pode afetar a latência</string>
+    <string name="setting_sync_client_volume">O Mac controla o volume da TV</string>
+    <string name="setting_sync_client_volume_desc">As teclas de volume do Mac mudam o volume da TV durante o espelhamento. Desative para usar só o controle remoto da TV.</string>
+
+    <string name="setting_developer_options">Opções do desenvolvedor</string>
+    <string name="setting_developer_options_desc">Mostra opções para usuários avançados</string>
+    <string name="setting_key_allow_frame_drop_desc">Permite que os decodificadores de vídeo descartem quadros internamente para acompanhar o ritmo no Android 10+</string>
+    <string name="setting_realtime_decoder_priority_desc">Solicita agendamento em tempo real para o decodificador de áudio</string>
+    <string name="setting_operating_rate_desc">Solicita a taxa de operação máxima do decodificador</string>
+    <string name="chip_auto">Automático</string>
+    <string name="chip_4k_beta">4K · Beta</string>
+    <string name="chip_120_beta">120 · Beta</string>
+    <string name="setting_frame_rate">Taxa de quadros</string>
+    <string name="setting_frame_rate_desc">60 fps funciona com qualquer Mac. 120 (beta) exige um Mac com tela ProMotion de 120 Hz.</string>
+    <string name="chip_on">Ativado</string>
+    <string name="chip_off">Desativado</string>
+    <string name="setting_low_latency">Baixa latência</string>
+    <string name="setting_low_latency_desc">Usa decodificação de áudio de baixa latência na saída; consome mais energia e CPU</string>
+    <string name="setting_scheduled_output_buffer_release">Ritmo de quadros alinhado</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Agenda cada quadro decodificado para o VSYNC correspondente ao seu carimbo de tempo de apresentação</string>
+    <string name="setting_audio_delay">Substituir atraso de áudio</string>
+    <string name="setting_audio_delay_desc">Define uma latência de áudio personalizada informada ao transmissor</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Tamanho automático do buffer de áudio por software</string>
+    <string name="setting_audio_auto_buffer_desc">Ajusta o buffer de áudio por software conforme as condições da rede e o desempenho do dispositivo; o controle deslizante define quanto jitter o buffer pode absorver</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Latência mínima</item>
+        <item>Latência menor</item>
+        <item>Equilibrado</item>
+        <item>Mais estabilidade</item>
+        <item>Estabilidade máxima</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Buffer de áudio por software (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Buffer para absorver o jitter da rede e do decodificador: duração menor significa menos latência; duração maior, menos falhas</string>
+    <string name="setting_oboe_buffer_frames">Buffer de saída de hardware (quadros)</string>
+    <string name="setting_oboe_buffer_frames_desc">Buffer de stream entre este app e o dispositivo de áudio, só para absorver o jitter de agendamento da CPU. Mantenha em 0 para tamanho automático.</string>
+    <string name="setting_debug_overlay">Mostrar sobreposição de depuração</string>
+    <string name="setting_debug_overlay_desc">Sobrepõe estatísticas do stream no vídeo: codec, FPS, taxa de bits, jitter, quadros, descartes</string>
+    <string name="setting_benchmark_log">Ativar registro de depuração</string>
+    <string name="setting_benchmark_log_desc">Registra estatísticas do stream no logcat: codec, FPS, taxa de bits, jitter, quadros, descartes</string>
+
+    <string name="debug_section_video">Vídeo</string>
+    <string name="debug_section_audio">Áudio</string>
+    <string name="debug_section_network">Rede</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
+    <string name="debug_frames_drops">Quadros: %1$d  Descartes: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Receptor: %2$d%%  Transmissor: %3$d%%</string>
+    <string name="debug_audio_buffer">Buffer: %1$d ms (alvo: %2$d ms)</string>
+    <string name="debug_audio_glitch">Falhas: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Decodificação: %1$s</string>
+    <string name="debug_clients">Transmissores: %1$d</string>
+
+    <string name="cd_settings">Configurações</string>
+    <string name="status_ready">Pronto</string>
+    <string name="status_starting">Iniciando…</string>
+    <string name="status_off">O receptor está desligado</string>
+    <string name="status_error">Não foi possível iniciar o receptor</string>
+    <string name="btn_turn_on">Ligar</string>
+    <string name="btn_try_again">Tentar de novo</string>
+    <string name="home_mac_title">Para espelhar seu Mac</string>
+    <string name="home_step1">Clique no ícone da Central de Controle na barra de menus do Mac (canto superior direito)</string>
+    <string name="home_step2">Clique em Espelhamento de Tela</string>
+    <string name="home_step3">Escolha “%1$s”</string>
+    <string name="home_iphone">No iPhone ou iPad: abra a Central de Controle, toque em Espelhamento de Tela e escolha “%1$s”.</string>
+    <string name="home_mirror_hint">A TV mostra uma mesa vazia em vez da tela do Mac? No Mac: Ajustes → Telas → “Quando conectado à TV” → Espelhar Tela Inteira.</string>
+    <string name="home_screensaver_hint">O protetor de tela escondeu a imagem? Aperte qualquer botão do controle remoto.</string>
+    <string name="home_same_wifi">O Mac e a TV precisam estar na mesma rede Wi‑Fi</string>
+    <string name="home_tv_address">Endereço da TV: %1$s</string>
+    <string name="home_connecting">Seu Mac está se conectando…</string>
+    <string name="home_connecting_named">%1$s está se conectando…</string>
+    <string name="home_taking_over">%1$s está assumindo o controle…</string>
+    <string name="home_connecting_hint">Se nada aparecer em alguns segundos, escolha esta TV de novo no Espelhamento de Tela do Mac.</string>
+    <string name="home_stopped_title">Espelhamento interrompido</string>
+    <string name="home_stopped_desc">Ele foi interrompido no Mac ou a conexão Wi‑Fi caiu. Para espelhar de novo, escolha “%1$s” no Espelhamento de Tela.</string>
+    <string name="toast_mirroring">Espelhamento iniciado</string>
+    <string name="controls_hint">Aperte OK para ver as opções</string>
+    <string name="controls_back_hides">Aperte Voltar para ocultar</string>
+    <string name="controls_hide">Ocultar</string>
+    <string name="setting_applies_next_connection">Salvo. Vale a partir da próxima vez que seu Mac se conectar.</string>
+    <string name="toast_took_over">%1$s assumiu a TV</string>
+    <string name="home_stopped_mac_title">Espelhamento interrompido no Mac</string>
+    <string name="home_stopped_mac_desc">Para espelhar de novo, escolha “%1$s” no Espelhamento de Tela.</string>
+    <string name="home_lost_title">Conexão perdida — verifique o Wi‑Fi</string>
+    <string name="home_lost_desc">Verifique se o Mac e a TV estão na mesma rede Wi‑Fi e escolha “%1$s” de novo.</string>
+    <string name="home_network_title">A rede da TV mudou</string>
+    <string name="home_network_desc">Conecte o Mac ao Wi‑Fi da TV e escolha “%1$s” de novo.</string>
+    <string name="toast_mirroring_from">Espelhando de %1$s</string>
+
+    <string name="setting_tv_name">Nome da TV</string>
+    <string name="setting_tv_name_desc">O nome que seu Mac mostra no Espelhamento de Tela. Deixe em branco para usar “%1$s”.</string>
+    <string name="setting_picture_quality">Qualidade de imagem</string>
+    <string name="setting_picture_quality_desc">Automático usa 1080p, o mais fluido a partir de um Mac. 4K (beta) é mais nítido, mas pode travar.</string>
+    <string name="setting_pin_simple">Pedir um PIN</string>
+    <string name="setting_pin_simple_desc">Mostra um código de 4 dígitos na TV antes que um novo dispositivo possa espelhar</string>
+    <string name="setting_lowest_latency">Latência mínima</string>
+    <string name="setting_lowest_latency_desc">Menos atraso ao digitar e usar o mouse. Em algumas TVs, a imagem pode travar um pouco; desative para a imagem mais estável.</string>
+    <string name="setting_about">Sobre</string>
+    <string name="setting_about_desc">Versão, licenças e código-fonte</string>
+    <string name="setting_advanced">Avançado</string>
+    <string name="setting_advanced_desc">Opções técnicas. A maioria das pessoas nunca precisa delas.</string>
+    <string name="setting_logs">Mostrar registros</string>
+    <string name="setting_logs_desc">Registro técnico para solução de problemas</string>
+    <string name="setting_receiver_power">Desligar receptor</string>
+    <string name="setting_receiver_power_desc">Seu Mac não verá esta TV até você ligar o receptor de novo</string>
+    <string name="setting_receiver_power_on">Ligar receptor</string>
+    <string name="setting_receiver_power_on_desc">Deixe seu Mac encontrar esta TV de novo</string>
+    <string name="dialog_stop_title">Desligar o receptor?</string>
+    <string name="dialog_stop_text">Seu Mac não conseguirá encontrar esta TV até você ligar o receptor de novo.</string>
+    <string name="btn_turn_off">Desligar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="btn_reset">Redefinir</string>
+    <string name="setting_reset_all">Redefinir todas as configurações</string>
+    <string name="setting_reset_all_desc">Deixa o Telebeam como veio. Sua compra é mantida.</string>
+    <string name="dialog_reset_title">Redefinir todas as configurações?</string>
+    <string name="dialog_reset_text">Todas as configurações, incluindo o nome da TV, voltam ao padrão. Sua compra é mantida, e um Mac que esteja espelhando continua conectado.</string>
+    <string name="setting_reset_done">Configurações redefinidas.</string>
+
+    <string name="about_version">Versão %1$s</string>
+    <string name="about_credits">Baseado no AirPlay Receiver de jqssun (GPL-3.0) e no UxPlay. Usa FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Este software usa código do FFmpeg (https://ffmpeg.org) licenciado sob a LGPLv2.1. Só os decodificadores de áudio ALAC e AAC dele estão incluídos; o código-fonte dele está no repositório de código-fonte deste app.</string>
+    <string name="about_license_note">Este app é software livre sob a Licença Pública Geral GNU v3.0. Você pode obter, modificar e compartilhar o código-fonte dele.</string>
+    <string name="about_source">Código-fonte: %1$s</string>
+    <string name="about_view_license">Ver licença (GPL-3.0)</string>
+    <string name="about_privacy">Política de privacidade: %1$s</string>
+    <string name="about_privacy_button">Política de privacidade</string>
+    <string name="about_trademark">Sem afiliação com a Apple. AirPlay e Mac são marcas comerciais da Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Espelhe seu Mac nesta TV</string>
+    <string name="paywall_subtitle">Escolha um plano para começar. Seu Mac encontra esta TV assim que o Telebeam for desbloqueado.</string>
+    <string name="paywall_benefit_quality">A tela do seu Mac na tela grande, em até 4K</string>
+    <string name="paywall_benefit_unlimited">Sem limite de tempo, sem anúncios</string>
+    <string name="paywall_benefit_updates">Todas as atualizações futuras incluídas</string>
+    <string name="paywall_not_now">Agora não</string>
+    <string name="paywall_terms">O plano mensal é renovado por %1$s/mês até você cancelar no Google Play. Cobrado na sua Conta do Google.</string>
+    <string name="paywall_terms_no_price">O pagamento é processado pelo Google Play e cobrado na sua Conta do Google.</string>
+    <string name="plan_monthly">Mensal</string>
+    <string name="plan_lifetime">Vitalício</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d DIA GRÁTIS</item>
+        <item quantity="many">%d DIAS GRÁTIS</item>
+        <item quantity="other">%d DIAS GRÁTIS</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d dia grátis, depois %2$s/mês. Cancele quando quiser.</item>
+        <item quantity="many">%1$d dias grátis, depois %2$s/mês. Cancele quando quiser.</item>
+        <item quantity="other">%1$d dias grátis, depois %2$s/mês. Cancele quando quiser.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">por %d dia</item>
+        <item quantity="many">por %d dias</item>
+        <item quantity="other">por %d dias</item>
+    </plurals>
+    <string name="plan_monthly_detail">Cancele quando quiser no Google Play.</string>
+    <string name="plan_free">Grátis</string>
+    <string name="plan_per_month">por mês</string>
+    <string name="plan_lifetime_badge">PAGUE UMA VEZ</string>
+    <string name="plan_lifetime_detail">Desbloqueia na hora. Seu para sempre, sem assinatura.</string>
+    <string name="plan_one_time">pagamento único</string>
+    <string name="plan_price_from_play">Preço informado pelo Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited está ativo</string>
+    <string name="unlimited_owned_monthly">Plano mensal. Selecione para gerenciar ou cancelar no Google Play.</string>
+    <string name="unlimited_owned_generic">Obrigado por apoiar o Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Vitalício. Obrigado por apoiar o Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited está ativo. Obrigado!</string>
+    <string name="unlimited_pending_desc">Pagamento pendente. O Telebeam é desbloqueado assim que o Google Play confirmar.</string>
+    <string name="unlimited_restore">Restaurar compras</string>
+    <string name="redeem_code">Resgatar código</string>
+    <string name="redeem_title">Resgatar um código do Google Play</string>
+    <string name="redeem_text">Digite seu código (opcional) e o Google Play abre para resgatá-lo. O Telebeam é desbloqueado sozinho quando você voltar.</string>
+    <string name="redeem_field">Código</string>
+    <string name="redeem_open_play">Abrir Google Play</string>
+    <string name="redeem_settings_desc">Tem um código promocional ou vale-presente? Resgate no Google Play.</string>
+    <string name="redeem_elsewhere">Resgate o código em play.google.com/redeem em um celular ou computador e depois volte aqui.</string>
+    <string name="unlimited_restored">Telebeam Unlimited desbloqueado.</string>
+    <string name="unlimited_not_found">Nenhuma compra encontrada nesta Conta do Google.</string>
+    <string name="unlimited_play_unavailable">Não foi possível acessar o Google Play agora. Tente de novo em instantes.</string>
+    <string name="unlimited_manage_in_play">Abra o Google Play → Pagamentos e assinaturas para gerenciar seu plano.</string>
+    <string name="section_mirroring">Espelhamento</string>
+</resources>

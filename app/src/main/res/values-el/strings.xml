@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Δέκτης κατοπτρισμού οθόνης</string>
+    <string name="notification_title">Έτοιμο για κατοπτρισμό οθόνης</string>
+    <string name="notification_text">Το Mac σας βρίσκει αυτήν την τηλεόραση στο «Κατοπτρισμός οθόνης»</string>
+    <string name="notification_pin_title">Απαιτείται PIN</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Διακοπή</string>
+
+    <string name="tab_overview">Επισκόπηση</string>
+    <string name="tab_logs">Καταγραφές</string>
+    <string name="tab_settings">Ρυθμίσεις</string>
+
+    <string name="server_stopped">Ο διακομιστής σταμάτησε</string>
+    <string name="waiting_for_connection">Αναμονή για σύνδεση…</string>
+    <string name="waiting_for_playback">Πατήστε έναρξη στον αποστολέα…</string>
+    <string name="error_starting_server">Σφάλμα εκκίνησης διακομιστή</string>
+    <string name="connected_count">%d συνδεδεμένα</string>
+    <string name="error_label">Σφάλμα</string>
+    <string name="stopped_label">Διακόπηκε</string>
+    <string name="btn_start">Έναρξη</string>
+    <string name="btn_stop">Διακοπή</string>
+    <string name="btn_allow">Να επιτρέπεται</string>
+    <string name="btn_open_settings">Άνοιγμα ρυθμίσεων</string>
+    <string name="local_network_label">Απαιτείται πρόσβαση σε κοντινές συσκευές</string>
+    <string name="local_network_desc">Επιτρέψτε την πρόσβαση σε κοντινές συσκευές, ώστε το Mac, το iPhone ή το iPad σας να βρίσκει αυτήν την τηλεόραση</string>
+    <string name="unknown_track">Άγνωστο</string>
+
+    <string name="cd_pip">Εικόνα σε εικόνα</string>
+    <string name="cd_fullscreen">Πλήρης οθόνη</string>
+    <string name="cd_exit_fullscreen">Έξοδος από πλήρη οθόνη</string>
+    <string name="cd_cover_art">Εξώφυλλο</string>
+    <string name="cd_play_pause">Αναπαραγωγή/Παύση</string>
+    <string name="cd_rewind">Γρήγορη επιστροφή</string>
+    <string name="cd_fast_forward">Γρήγορη προώθηση</string>
+    <string name="volume_server">Ένταση δέκτη</string>
+    <string name="volume_client">Ένταση αποστολέα</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">Λήψη βίντεο</string>
+    <string name="cd_cancel_download">Ακύρωση λήψης</string>
+
+    <string name="download_saved">Αποθηκεύτηκε: %1$s</string>
+    <string name="download_failed">Η λήψη απέτυχε</string>
+
+    <string name="gesture_seek_seconds">%1$d δευτερόλεπτα</string>
+    <string name="seconds_short">%1$d δευτ.</string>
+    <string name="select_playback_speed">Ταχύτητα αναπαραγωγής</string>
+    <string name="cd_reset_speed">Επαναφορά ταχύτητας</string>
+    <string name="skip_silence">Παράλειψη σιωπής</string>
+
+    <string name="cd_back">Πίσω</string>
+    <string name="cd_copy_url">Αντιγραφή URL βίντεο</string>
+    <string name="cd_rotate">Περιστροφή οθόνης</string>
+    <string name="cd_lock_controls">Κλείδωμα χειριστηρίων</string>
+    <string name="cd_unlock_controls">Ξεκλείδωμα χειριστηρίων</string>
+    <string name="scale_best_fit">Προσαρμογή</string>
+    <string name="scale_stretch">Τέντωμα</string>
+    <string name="scale_crop">Περικοπή</string>
+
+    <string name="dialog_pin_title">Εισαγάγετε αυτό το PIN στη συσκευή σας</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Εξαγωγή</string>
+    <string name="btn_clear">Εκκαθάριση</string>
+    <string name="export_logs_chooser_title">Εξαγωγή καταγραφών</string>
+
+    <string name="section_server">Διακομιστής</string>
+    <string name="section_connection">Σύνδεση</string>
+    <string name="section_display">Οθόνη</string>
+    <string name="section_decode">Αποκωδικοποίηση</string>
+    <string name="section_developer">Προγραμματιστές</string>
+
+    <string name="setting_server_name">Όνομα διακομιστή</string>
+    <string name="setting_server_port">Θύρα διακομιστή</string>
+    <string name="setting_auto_start">Αυτόματη εκκίνηση διακομιστή</string>
+    <string name="setting_auto_start_desc">Εκκίνηση του δέκτη όταν ανοίγει η εφαρμογή</string>
+    <string name="setting_boot_auto_start">Εκκίνηση διακομιστή με την τηλεόραση</string>
+    <string name="setting_boot_auto_start_desc">Εκκίνηση του δέκτη όταν ανοίγει η τηλεόραση</string>
+    <string name="setting_run_in_background">Εκτέλεση στο παρασκήνιο</string>
+    <string name="setting_run_in_background_desc">Ο διακομιστής συνεχίζει να εκτελείται μετά την έξοδο από την εφαρμογή</string>
+
+    <string name="setting_require_pin">Απαίτηση PIN (beta)</string>
+    <string name="setting_require_pin_desc">Απαίτηση τετραψήφιου PIN για κάθε νέα σύνδεση</string>
+    <string name="setting_allow_new_conn">Να επιτρέπονται νέες συνδέσεις</string>
+    <string name="setting_allow_new_conn_desc">Αποσύνδεση του τρέχοντος αποστολέα όταν συνδέεται νέος</string>
+
+    <string name="setting_idle_preview">Προεπισκόπηση σε αναμονή</string>
+    <string name="setting_idle_preview_desc">Εμφάνιση της επιφάνειας βίντεο κατά την αναμονή σύνδεσης</string>
+    <string name="setting_auto_fullscreen">Αυτόματη πλήρης οθόνη</string>
+    <string name="setting_auto_fullscreen_desc">Μετάβαση σε πλήρη οθόνη όταν συνδέεται αποστολέας</string>
+    <string name="setting_keep_screen_on">Οθόνη πάντα ενεργή</string>
+    <string name="setting_keep_screen_on_desc">Αποτροπή αναστολής λειτουργίας όσο είναι συνδεδεμένος αποστολέας</string>
+    <string name="setting_advertise_video">Προσφορά αναπαραγωγής βίντεο</string>
+    <string name="setting_advertise_video_desc">Όταν είναι ανενεργό, τα βίντεο μεταδίδονται μόνο ως ήχος</string>
+    <string name="setting_advertise_mirroring">Προσφορά κατοπτρισμού οθόνης</string>
+    <string name="setting_advertise_mirroring_desc">Όταν είναι ανενεργό, η συσκευή δεν εμφανίζεται για κατοπτρισμό</string>
+    <string name="setting_advertise_audio">Ανακοίνωση υποστήριξης ήχου AirPlay</string>
+    <string name="setting_advertise_audio_desc">Όταν είναι ανενεργό, η συσκευή χρησιμοποιείται μόνο για κατοπτρισμό και δεν εμφανίζεται στις εφαρμογές αναπαραγωγής</string>
+    <string name="setting_alac">Ανακοίνωση codec ALAC</string>
+    <string name="setting_alac_desc">Προσφορά ALAC στην εγγραφή mDNS· χρησιμοποιείται για ροή μουσικής</string>
+    <string name="setting_aac">Ανακοίνωση codec AAC</string>
+    <string name="setting_aac_desc">Προσφορά AAC-ELD/AAC-LC στην εγγραφή mDNS· χρησιμοποιείται για τον ήχο του κατοπτρισμού οθόνης</string>
+    <string name="setting_launch_on_connect">Εμφάνιση του Telebeam όταν συνδέεται Mac</string>
+    <string name="setting_launch_on_connect_desc">Φέρνει την εικόνα στο προσκήνιο. Αν η τηλεόραση το εμποδίσει, εμφανίζεται ειδοποίηση.</string>
+    <string name="setting_discovery">Ανιχνεύσιμο μέσω</string>
+    <string name="setting_discovery_all_desc">Ανακοίνωση σε όλες τις διαθέσιμες διεπαφές. Χρησιμοποιεί το NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Ανακοίνωση μόνο μέσω σύνδεσης USB (tethering) για υποχρεωτικά ενσύρματη σύνδεση. Χρησιμοποιεί προσαρμοσμένο mDNS responder.</string>
+    <string name="chip_all_networks">Όλα τα δίκτυα</string>
+    <string name="chip_usb_only">Μόνο USB</string>
+    <string name="setting_resolution">Ανάλυση</string>
+    <string name="setting_resolution_desc">Ανάλυση βίντεο που ανακοινώνεται στους αποστολείς</string>
+    <string name="setting_resolution_width">Πλάτος</string>
+    <string name="setting_resolution_height">Ύψος</string>
+    <string name="setting_max_fps">Μέγιστα FPS</string>
+    <string name="setting_max_fps_desc">Μέγιστος ρυθμός καρέ που ανακοινώνεται στους αποστολείς</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Προσθήκη περιθωρίου pixel για οθόνες με overscan</string>
+    <string name="chip_custom">Προσαρμοσμένο</string>
+    <string name="chip_device_portrait">Κατακόρυφο</string>
+    <string name="chip_device_landscape">Οριζόντιο</string>
+
+    <string name="setting_h265_desc">Το Αυτόματο χρησιμοποιεί μόνο αποκωδικοποιητές H.265 που είναι γνωστό ότι λειτουργούν</string>
+    <string name="setting_enforce_sdr_desc">Επισήμανση βίντεο ως περιορισμένου SDR· απενεργοποιήστε το για να περνούν αυτούσιες οι πηγές HDR</string>
+    <string name="setting_sw_alac">Επιβολή αποκωδικοποιητή λογισμικού ALAC</string>
+    <string name="setting_sw_alac_desc">Πάντα χρήση αποκωδικοποιητή λογισμικού ALAC αντί του αποκωδικοποιητή συστήματος· μπορεί να επηρεάσει την καθυστέρηση</string>
+    <string name="setting_sw_aac">Επιβολή αποκωδικοποιητή λογισμικού AAC</string>
+    <string name="setting_sw_aac_desc">Πάντα χρήση αποκωδικοποιητή λογισμικού AAC αντί του αποκωδικοποιητή συστήματος· μπορεί να επηρεάσει την καθυστέρηση</string>
+    <string name="setting_sync_client_volume">Το Mac ελέγχει την ένταση της τηλεόρασης</string>
+    <string name="setting_sync_client_volume_desc">Τα πλήκτρα έντασης του Mac αλλάζουν την ένταση της τηλεόρασης κατά τον κατοπτρισμό. Απενεργοποιήστε το για να χρησιμοποιείτε μόνο το τηλεχειριστήριο.</string>
+
+    <string name="setting_developer_options">Επιλογές για προγραμματιστές</string>
+    <string name="setting_developer_options_desc">Εμφάνιση επιλογών για προχωρημένους χρήστες</string>
+    <string name="setting_key_allow_frame_drop_desc">Να επιτρέπεται στους αποκωδικοποιητές βίντεο να απορρίπτουν καρέ εσωτερικά για να συμβαδίζουν, σε Android 10+</string>
+    <string name="setting_realtime_decoder_priority_desc">Αίτημα χρονοπρογραμματισμού πραγματικού χρόνου για τον αποκωδικοποιητή ήχου</string>
+    <string name="setting_operating_rate_desc">Αίτημα μέγιστου ρυθμού λειτουργίας από τον αποκωδικοποιητή</string>
+    <string name="chip_auto">Αυτόματο</string>
+    <string name="chip_4k_beta">4K · beta</string>
+    <string name="chip_120_beta">120 · beta</string>
+    <string name="setting_frame_rate">Ρυθμός καρέ</string>
+    <string name="setting_frame_rate_desc">Τα 60 fps λειτουργούν με κάθε Mac. Τα 120 (beta) απαιτούν Mac με οθόνη ProMotion 120 Hz.</string>
+    <string name="chip_on">Ενεργό</string>
+    <string name="chip_off">Ανενεργό</string>
+    <string name="setting_low_latency">Χαμηλή καθυστέρηση</string>
+    <string name="setting_low_latency_desc">Χρήση αποκωδικοποίησης ήχου χαμηλής καθυστέρησης· καταναλώνει περισσότερη ενέργεια και CPU</string>
+    <string name="setting_scheduled_output_buffer_release">Συγχρονισμένος ρυθμός καρέ</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Προγραμματισμός κάθε αποκωδικοποιημένου καρέ στο VSYNC που αντιστοιχεί στη χρονοσήμανση παρουσίασής του</string>
+    <string name="setting_audio_delay">Παράκαμψη καθυστέρησης ήχου</string>
+    <string name="setting_audio_delay_desc">Ορισμός προσαρμοσμένης καθυστέρησης ήχου που αναφέρεται στον αποστολέα</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Αυτόματο μέγεθος buffer ήχου λογισμικού</string>
+    <string name="setting_audio_auto_buffer_desc">Προσαρμόζει αυτόματα το buffer ήχου λογισμικού ανάλογα με το δίκτυο και την απόδοση της συσκευής· το ρυθμιστικό καθορίζει πόσο jitter μπορεί να απορροφήσει το buffer</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Ελάχιστη καθυστέρηση</item>
+        <item>Χαμηλότερη καθυστέρηση</item>
+        <item>Ισορροπημένο</item>
+        <item>Καλύτερη σταθερότητα</item>
+        <item>Μέγιστη σταθερότητα</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Buffer ήχου λογισμικού (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Buffer για την απορρόφηση jitter δικτύου και αποκωδικοποιητή: μικρότερη διάρκεια σημαίνει χαμηλότερη καθυστέρηση, μεγαλύτερη σημαίνει λιγότερα κολλήματα</string>
+    <string name="setting_oboe_buffer_frames">Buffer εξόδου υλικού (καρέ)</string>
+    <string name="setting_oboe_buffer_frames_desc">Buffer ροής ανάμεσα στην εφαρμογή και τη συσκευή ήχου, μόνο για το jitter χρονοπρογραμματισμού της CPU. Αφήστε το στο 0 για αυτόματο μέγεθος.</string>
+    <string name="setting_debug_overlay">Επικάλυψη εντοπισμού σφαλμάτων</string>
+    <string name="setting_debug_overlay_desc">Στατιστικά ροής πάνω στο βίντεο: codec, FPS, bitrate, jitter, καρέ, απορρίψεις</string>
+    <string name="setting_benchmark_log">Καταγραφή εντοπισμού σφαλμάτων</string>
+    <string name="setting_benchmark_log_desc">Καταγραφή στατιστικών ροής στο logcat: codec, FPS, bitrate, jitter, καρέ, απορρίψεις</string>
+
+    <string name="debug_section_video">Βίντεο</string>
+    <string name="debug_section_audio">Ήχος</string>
+    <string name="debug_section_network">Δίκτυο</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
+    <string name="debug_frames_drops">Καρέ: %1$d  Απορρίψεις: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Δέκτης: %2$d%%  Αποστολέας: %3$d%%</string>
+    <string name="debug_audio_buffer">Buffer: %1$d ms (στόχος: %2$d ms)</string>
+    <string name="debug_audio_glitch">Σφάλματα: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Αποκωδικοποίηση: %1$s</string>
+    <string name="debug_clients">Αποστολείς: %1$d</string>
+
+    <string name="cd_settings">Ρυθμίσεις</string>
+    <string name="status_ready">Έτοιμο</string>
+    <string name="status_starting">Εκκίνηση…</string>
+    <string name="status_off">Ο δέκτης είναι απενεργοποιημένος</string>
+    <string name="status_error">Δεν ήταν δυνατή η εκκίνηση του δέκτη</string>
+    <string name="btn_turn_on">Ενεργοποίηση</string>
+    <string name="btn_try_again">Δοκιμάστε ξανά</string>
+    <string name="home_mac_title">Για κατοπτρισμό του Mac σας</string>
+    <string name="home_step1">Κάντε κλικ στο εικονίδιο «Κέντρο ελέγχου» στη γραμμή μενού του Mac (πάνω δεξιά)</string>
+    <string name="home_step2">Κάντε κλικ στο «Κατοπτρισμός οθόνης»</string>
+    <string name="home_step3">Επιλέξτε «%1$s»</string>
+    <string name="home_iphone">Σε iPhone ή iPad: ανοίξτε το Κέντρο ελέγχου, αγγίξτε «Κατοπτρισμός οθόνης» και επιλέξτε «%1$s».</string>
+    <string name="home_mirror_hint">Βλέπετε άδειο γραφείο στην τηλεόραση αντί για την οθόνη του Mac; Στο Mac: Ρυθμίσεις συστήματος → Οθόνες → «Κατά τη σύνδεση στην τηλεόραση» → Κατοπτρισμός ολόκληρης οθόνης.</string>
+    <string name="home_screensaver_hint">Η προφύλαξη οθόνης κρύβει την εικόνα; Πατήστε οποιοδήποτε κουμπί στο τηλεχειριστήριο.</string>
+    <string name="home_same_wifi">Το Mac και η τηλεόραση πρέπει να είναι στο ίδιο Wi‑Fi</string>
+    <string name="home_tv_address">Διεύθυνση τηλεόρασης: %1$s</string>
+    <string name="home_connecting">Το Mac σας συνδέεται…</string>
+    <string name="home_connecting_named">Σύνδεση από %1$s…</string>
+    <string name="home_taking_over">Ανάληψη ελέγχου από %1$s…</string>
+    <string name="home_connecting_hint">Αν δεν εμφανιστεί τίποτα σε λίγα δευτερόλεπτα, επιλέξτε ξανά αυτήν την τηλεόραση στο «Κατοπτρισμός οθόνης» στο Mac.</string>
+    <string name="home_stopped_title">Ο κατοπτρισμός σταμάτησε</string>
+    <string name="home_stopped_desc">Διακόπηκε από το Mac ή χάθηκε η σύνδεση Wi‑Fi. Για νέο κατοπτρισμό, επιλέξτε «%1$s» στο «Κατοπτρισμός οθόνης».</string>
+    <string name="toast_mirroring">Ο κατοπτρισμός ξεκίνησε</string>
+    <string name="controls_hint">Πατήστε OK για επιλογές</string>
+    <string name="controls_back_hides">Πατήστε Πίσω για απόκρυψη</string>
+    <string name="controls_hide">Απόκρυψη</string>
+    <string name="setting_applies_next_connection">Αποθηκεύτηκε. Θα ισχύσει την επόμενη φορά που θα συνδεθεί το Mac σας.</string>
+    <string name="toast_took_over">Η τηλεόραση χρησιμοποιείται τώρα από %1$s</string>
+    <string name="home_stopped_mac_title">Ο κατοπτρισμός διακόπηκε από το Mac</string>
+    <string name="home_stopped_mac_desc">Για νέο κατοπτρισμό, επιλέξτε «%1$s» στο «Κατοπτρισμός οθόνης».</string>
+    <string name="home_lost_title">Η σύνδεση χάθηκε – ελέγξτε το Wi‑Fi</string>
+    <string name="home_lost_desc">Βεβαιωθείτε ότι το Mac και η τηλεόραση είναι στο ίδιο Wi‑Fi και επιλέξτε ξανά «%1$s».</string>
+    <string name="home_network_title">Το δίκτυο της τηλεόρασης άλλαξε</string>
+    <string name="home_network_desc">Συνδέστε το Mac στο Wi‑Fi της τηλεόρασης και επιλέξτε ξανά «%1$s».</string>
+    <string name="toast_mirroring_from">Κατοπτρισμός από %1$s</string>
+
+    <string name="setting_tv_name">Όνομα τηλεόρασης</string>
+    <string name="setting_tv_name_desc">Το όνομα που εμφανίζει το Mac στο «Κατοπτρισμός οθόνης». Αφήστε το κενό για να χρησιμοποιηθεί το «%1$s».</string>
+    <string name="setting_picture_quality">Ποιότητα εικόνας</string>
+    <string name="setting_picture_quality_desc">Το Αυτόματο χρησιμοποιεί 1080p, την πιο ομαλή επιλογή από Mac. Τα 4K (beta) είναι πιο ευκρινή, αλλά μπορεί να κολλάνε.</string>
+    <string name="setting_pin_simple">Ζήτηση PIN</string>
+    <string name="setting_pin_simple_desc">Εμφάνιση τετραψήφιου κωδικού στην τηλεόραση πριν μια νέα συσκευή κάνει κατοπτρισμό</string>
+    <string name="setting_lowest_latency">Ελάχιστη καθυστέρηση</string>
+    <string name="setting_lowest_latency_desc">Λιγότερη καθυστέρηση στην πληκτρολόγηση και στο ποντίκι. Η εικόνα μπορεί να κολλάει λίγο σε ορισμένες τηλεοράσεις· απενεργοποιήστε το για την πιο σταθερή εικόνα.</string>
+    <string name="setting_about">Πληροφορίες</string>
+    <string name="setting_about_desc">Έκδοση, άδειες και πηγαίος κώδικας</string>
+    <string name="setting_advanced">Για προχωρημένους</string>
+    <string name="setting_advanced_desc">Τεχνικές επιλογές. Οι περισσότεροι δεν τις χρειάζονται ποτέ.</string>
+    <string name="setting_logs">Εμφάνιση καταγραφών</string>
+    <string name="setting_logs_desc">Τεχνική καταγραφή για αντιμετώπιση προβλημάτων</string>
+    <string name="setting_receiver_power">Απενεργοποίηση δέκτη</string>
+    <string name="setting_receiver_power_desc">Το Mac σας δεν θα βλέπει αυτήν την τηλεόραση μέχρι να ενεργοποιήσετε ξανά τον δέκτη</string>
+    <string name="setting_receiver_power_on">Ενεργοποίηση δέκτη</string>
+    <string name="setting_receiver_power_on_desc">Το Mac σας θα μπορεί να βρει ξανά αυτήν την τηλεόραση</string>
+    <string name="dialog_stop_title">Απενεργοποίηση του δέκτη;</string>
+    <string name="dialog_stop_text">Το Mac σας δεν θα μπορεί να βρει αυτήν την τηλεόραση μέχρι να ενεργοποιήσετε ξανά τον δέκτη.</string>
+    <string name="btn_turn_off">Απενεργοποίηση</string>
+    <string name="btn_cancel">Ακύρωση</string>
+    <string name="btn_reset">Επαναφορά</string>
+    <string name="setting_reset_all">Επαναφορά όλων των ρυθμίσεων</string>
+    <string name="setting_reset_all_desc">Όπως ήταν αρχικά το Telebeam. Η αγορά σας διατηρείται.</string>
+    <string name="dialog_reset_title">Επαναφορά όλων των ρυθμίσεων;</string>
+    <string name="dialog_reset_text">Όλες οι ρυθμίσεις, μαζί και το όνομα της τηλεόρασης, επιστρέφουν στις προεπιλογές. Η αγορά σας διατηρείται και ένα Mac που κάνει κατοπτρισμό παραμένει συνδεδεμένο.</string>
+    <string name="setting_reset_done">Έγινε επαναφορά των ρυθμίσεων.</string>
+
+    <string name="about_version">Έκδοση %1$s</string>
+    <string name="about_credits">Βασίζεται στο AirPlay Receiver του jqssun (GPL-3.0) και στο UxPlay. Χρησιμοποιεί το FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Αυτό το λογισμικό χρησιμοποιεί κώδικα του FFmpeg (https://ffmpeg.org) με άδεια LGPLv2.1. Περιλαμβάνονται μόνο οι αποκωδικοποιητές ήχου ALAC και AAC του· ο πηγαίος κώδικάς του περιλαμβάνεται στο αποθετήριο πηγαίου κώδικα αυτής της εφαρμογής.</string>
+    <string name="about_license_note">Αυτή η εφαρμογή είναι ελεύθερο λογισμικό υπό την άδεια GNU General Public License v3.0. Μπορείτε να αποκτήσετε, να τροποποιήσετε και να μοιραστείτε τον πηγαίο κώδικά της.</string>
+    <string name="about_source">Πηγαίος κώδικας: %1$s</string>
+    <string name="about_view_license">Προβολή άδειας (GPL-3.0)</string>
+    <string name="about_privacy">Πολιτική απορρήτου: %1$s</string>
+    <string name="about_privacy_button">Πολιτική απορρήτου</string>
+    <string name="about_trademark">Δεν συνδέεται με την Apple. Τα AirPlay και Mac είναι εμπορικά σήματα της Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Κατοπτρισμός του Mac σας σε αυτήν την τηλεόραση</string>
+    <string name="paywall_subtitle">Επιλέξτε πρόγραμμα για να ξεκινήσετε. Το Mac σας βρίσκει αυτήν την τηλεόραση μόλις γίνει το ξεκλείδωμα.</string>
+    <string name="paywall_benefit_quality">Η οθόνη του Mac σας στη μεγάλη οθόνη, έως και 4K</string>
+    <string name="paywall_benefit_unlimited">Χωρίς χρονικά όρια, χωρίς διαφημίσεις</string>
+    <string name="paywall_benefit_updates">Όλες οι μελλοντικές ενημερώσεις περιλαμβάνονται</string>
+    <string name="paywall_not_now">Όχι τώρα</string>
+    <string name="paywall_terms">Η μηνιαία συνδρομή ανανεώνεται στα %1$s/μήνα μέχρι να την ακυρώσετε στο Google Play. Χρεώνεται στον λογαριασμό σας Google.</string>
+    <string name="paywall_terms_no_price">Την πληρωμή τη διαχειρίζεται το Google Play και χρεώνεται στον λογαριασμό σας Google.</string>
+    <string name="plan_monthly">Μηνιαία</string>
+    <string name="plan_lifetime">Εφ\' όρου ζωής</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d ΗΜΕΡΑ ΔΩΡΕΑΝ</item>
+        <item quantity="other">%d ΗΜΕΡΕΣ ΔΩΡΕΑΝ</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d ημέρα δωρεάν, μετά %2$s/μήνα. Ακύρωση οποτεδήποτε.</item>
+        <item quantity="other">%1$d ημέρες δωρεάν, μετά %2$s/μήνα. Ακύρωση οποτεδήποτε.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">για %d ημέρα</item>
+        <item quantity="other">για %d ημέρες</item>
+    </plurals>
+    <string name="plan_monthly_detail">Ακύρωση οποτεδήποτε στο Google Play.</string>
+    <string name="plan_free">Δωρεάν</string>
+    <string name="plan_per_month">ανά μήνα</string>
+    <string name="plan_lifetime_badge">ΕΦΑΠΑΞ ΠΛΗΡΩΜΗ</string>
+    <string name="plan_lifetime_detail">Ξεκλειδώνεται αμέσως. Δικό σας για πάντα, χωρίς συνδρομή.</string>
+    <string name="plan_one_time">εφάπαξ</string>
+    <string name="plan_price_from_play">Τιμή από το Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Το Telebeam Unlimited είναι ενεργό</string>
+    <string name="unlimited_owned_monthly">Μηνιαία συνδρομή. Επιλέξτε για διαχείριση ή ακύρωση στο Google Play.</string>
+    <string name="unlimited_owned_generic">Ευχαριστούμε που υποστηρίζετε το Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Εφ\' όρου ζωής. Ευχαριστούμε που υποστηρίζετε το Telebeam!</string>
+    <string name="unlimited_thanks">Το Telebeam Unlimited είναι ενεργό. Ευχαριστούμε!</string>
+    <string name="unlimited_pending_desc">Η πληρωμή εκκρεμεί. Το Telebeam ξεκλειδώνεται μόλις την επιβεβαιώσει το Google Play.</string>
+    <string name="unlimited_restore">Επαναφορά αγορών</string>
+    <string name="redeem_code">Εξαργύρωση κωδικού</string>
+    <string name="redeem_title">Εξαργύρωση κωδικού Google Play</string>
+    <string name="redeem_text">Πληκτρολογήστε τον κωδικό σας (προαιρετικά) και θα ανοίξει το Google Play για να τον εξαργυρώσετε. Το Telebeam ξεκλειδώνεται αυτόματα όταν επιστρέψετε.</string>
+    <string name="redeem_field">Κωδικός</string>
+    <string name="redeem_open_play">Άνοιγμα Google Play</string>
+    <string name="redeem_settings_desc">Έχετε κωδικό προσφοράς ή δώρου; Εξαργυρώστε τον στο Google Play.</string>
+    <string name="redeem_elsewhere">Εξαργυρώστε τον κωδικό στο play.google.com/redeem από τηλέφωνο ή υπολογιστή και μετά επιστρέψτε εδώ.</string>
+    <string name="unlimited_restored">Το Telebeam Unlimited ξεκλειδώθηκε.</string>
+    <string name="unlimited_not_found">Δεν βρέθηκε αγορά σε αυτόν τον λογαριασμό Google.</string>
+    <string name="unlimited_play_unavailable">Το Google Play δεν είναι διαθέσιμο αυτή τη στιγμή. Δοκιμάστε ξανά σε λίγο.</string>
+    <string name="unlimited_manage_in_play">Ανοίξτε το Google Play → Πληρωμές και συνδρομές για να διαχειριστείτε το πρόγραμμά σας.</string>
+    <string name="section_mirroring">Κατοπτρισμός</string>
+</resources>

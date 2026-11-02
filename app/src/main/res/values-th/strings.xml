@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">ตัวรับการสะท้อนภาพหน้าจอ</string>
+    <string name="notification_title">พร้อมสำหรับการสะท้อนภาพหน้าจอ</string>
+    <string name="notification_text">Mac ของคุณค้นหาทีวีเครื่องนี้ได้ในการสะท้อนภาพหน้าจอ</string>
+    <string name="notification_pin_title">ต้องใช้ PIN</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">หยุด</string>
+
+    <string name="tab_overview">ภาพรวม</string>
+    <string name="tab_logs">บันทึก</string>
+    <string name="tab_settings">การตั้งค่า</string>
+
+    <string name="server_stopped">เซิร์ฟเวอร์หยุดทำงาน</string>
+    <string name="waiting_for_connection">กำลังรอการเชื่อมต่อ...</string>
+    <string name="waiting_for_playback">กดเริ่มบนอุปกรณ์ที่ส่ง...</string>
+    <string name="error_starting_server">เริ่มเซิร์ฟเวอร์ไม่ได้</string>
+    <string name="connected_count">เชื่อมต่อแล้ว %d เครื่อง</string>
+    <string name="error_label">ข้อผิดพลาด</string>
+    <string name="stopped_label">หยุดแล้ว</string>
+    <string name="btn_start">เริ่ม</string>
+    <string name="btn_stop">หยุด</string>
+    <string name="btn_allow">อนุญาต</string>
+    <string name="btn_open_settings">เปิดการตั้งค่า</string>
+    <string name="local_network_label">ต้องเข้าถึงอุปกรณ์ที่อยู่ใกล้เคียง</string>
+    <string name="local_network_desc">อนุญาตให้เข้าถึงอุปกรณ์ที่อยู่ใกล้เคียง เพื่อให้ Mac, iPhone หรือ iPad ค้นหาทีวีเครื่องนี้ได้</string>
+    <string name="unknown_track">ไม่ทราบ</string>
+
+    <string name="cd_pip">การแสดงภาพซ้อนภาพ</string>
+    <string name="cd_fullscreen">เต็มหน้าจอ</string>
+    <string name="cd_exit_fullscreen">ออกจากโหมดเต็มหน้าจอ</string>
+    <string name="cd_cover_art">ภาพปก</string>
+    <string name="cd_play_pause">เล่น/หยุดชั่วคราว</string>
+    <string name="cd_rewind">ย้อนกลับ</string>
+    <string name="cd_fast_forward">กรอไปข้างหน้า</string>
+    <string name="volume_server">ระดับเสียงตัวรับ</string>
+    <string name="volume_client">ระดับเสียงผู้ส่ง</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">ดาวน์โหลดวิดีโอ</string>
+    <string name="cd_cancel_download">ยกเลิกการดาวน์โหลด</string>
+
+    <string name="download_saved">บันทึกไว้ที่ %1$s</string>
+    <string name="download_failed">ดาวน์โหลดไม่สำเร็จ</string>
+
+    <string name="gesture_seek_seconds">%1$d วินาที</string>
+    <string name="seconds_short">%1$d วิ</string>
+    <string name="select_playback_speed">ความเร็วในการเล่น</string>
+    <string name="cd_reset_speed">รีเซ็ตความเร็ว</string>
+    <string name="skip_silence">ข้ามช่วงที่เงียบ</string>
+
+    <string name="cd_back">กลับ</string>
+    <string name="cd_copy_url">คัดลอก URL ของวิดีโอ</string>
+    <string name="cd_rotate">หมุนหน้าจอ</string>
+    <string name="cd_lock_controls">ล็อกการควบคุม</string>
+    <string name="cd_unlock_controls">ปลดล็อกการควบคุม</string>
+    <string name="scale_best_fit">พอดีที่สุด</string>
+    <string name="scale_stretch">ยืด</string>
+    <string name="scale_crop">ครอบตัด</string>
+
+    <string name="dialog_pin_title">ป้อน PIN นี้ในอุปกรณ์ของคุณ</string>
+    <string name="btn_ok">ตกลง</string>
+
+    <string name="btn_export">ส่งออก</string>
+    <string name="btn_clear">ล้าง</string>
+    <string name="export_logs_chooser_title">ส่งออกบันทึก</string>
+
+    <string name="section_server">เซิร์ฟเวอร์</string>
+    <string name="section_connection">การเชื่อมต่อ</string>
+    <string name="section_display">การแสดงผล</string>
+    <string name="section_decode">การถอดรหัส</string>
+    <string name="section_developer">นักพัฒนาซอฟต์แวร์</string>
+
+    <string name="setting_server_name">ชื่อเซิร์ฟเวอร์</string>
+    <string name="setting_server_port">พอร์ตเซิร์ฟเวอร์</string>
+    <string name="setting_auto_start">เริ่มเซิร์ฟเวอร์อัตโนมัติ</string>
+    <string name="setting_auto_start_desc">เริ่มตัวรับเมื่อเปิดแอป</string>
+    <string name="setting_boot_auto_start">เริ่มเซิร์ฟเวอร์เมื่อเปิดเครื่อง</string>
+    <string name="setting_boot_auto_start_desc">เริ่มตัวรับเมื่อเปิดทีวี</string>
+    <string name="setting_run_in_background">ทำงานในเบื้องหลัง</string>
+    <string name="setting_run_in_background_desc">ให้เซิร์ฟเวอร์ทำงานต่อหลังจากออกจากแอป</string>
+
+    <string name="setting_require_pin">ต้องใช้ PIN (เบต้า)</string>
+    <string name="setting_require_pin_desc">ต้องใช้ PIN 4 หลักสำหรับการเชื่อมต่อใหม่ทุกครั้ง</string>
+    <string name="setting_allow_new_conn">อนุญาตการเชื่อมต่อใหม่</string>
+    <string name="setting_allow_new_conn_desc">ตัดการเชื่อมต่อผู้ส่งปัจจุบันเมื่อมีผู้ส่งใหม่เชื่อมต่อ</string>
+
+    <string name="setting_idle_preview">แสดงตัวอย่างหน้าจอขณะรอ</string>
+    <string name="setting_idle_preview_desc">แสดงพื้นผิววิดีโอขณะรอการเชื่อมต่อ</string>
+    <string name="setting_auto_fullscreen">เข้าสู่โหมดเต็มหน้าจออัตโนมัติ</string>
+    <string name="setting_auto_fullscreen_desc">เข้าสู่โหมดเต็มหน้าจอเมื่อผู้ส่งเชื่อมต่อ</string>
+    <string name="setting_keep_screen_on">เปิดหน้าจอค้างไว้</string>
+    <string name="setting_keep_screen_on_desc">ป้องกันการพักเครื่องขณะผู้ส่งเชื่อมต่ออยู่</string>
+    <string name="setting_advertise_video">เสนอการเล่นวิดีโอ</string>
+    <string name="setting_advertise_video_desc">เมื่อปิด วิดีโอจะถูกแคสต์เป็นสตรีมเสียงเท่านั้น</string>
+    <string name="setting_advertise_mirroring">เสนอการสะท้อนภาพหน้าจอ</string>
+    <string name="setting_advertise_mirroring_desc">เมื่อปิด อุปกรณ์จะไม่ปรากฏในการสะท้อนภาพหน้าจอ</string>
+    <string name="setting_advertise_audio">ประกาศการรองรับเสียง AirPlay</string>
+    <string name="setting_advertise_audio_desc">เมื่อปิด อุปกรณ์จะใช้ได้เฉพาะการสะท้อนภาพหน้าจอ และจะไม่ปรากฏในโปรแกรมเล่นสื่อ</string>
+    <string name="setting_alac">ประกาศตัวแปลงสัญญาณ ALAC</string>
+    <string name="setting_alac_desc">เสนอ ALAC ในระเบียน mDNS ใช้สำหรับสตรีมเพลง</string>
+    <string name="setting_aac">ประกาศตัวแปลงสัญญาณ AAC</string>
+    <string name="setting_aac_desc">เสนอ AAC-ELD/AAC-LC ในระเบียน mDNS ใช้สำหรับเสียงของการสะท้อนภาพหน้าจอ</string>
+    <string name="setting_launch_on_connect">แสดง Telebeam เมื่อ Mac เชื่อมต่อ</string>
+    <string name="setting_launch_on_connect_desc">นำภาพขึ้นมาด้านหน้า หากทีวีไม่อนุญาต จะแสดงการแจ้งเตือนแทน</string>
+    <string name="setting_discovery">ค้นพบได้ผ่าน</string>
+    <string name="setting_discovery_all_desc">ประกาศบนอินเทอร์เฟซที่ใช้งานได้ทั้งหมด ใช้ NsdManager</string>
+    <string name="setting_discovery_usb_desc">ประกาศผ่านการปล่อยสัญญาณทาง USB เท่านั้นเพื่อบังคับใช้การเชื่อมต่อแบบมีสาย ใช้ตัวตอบกลับ mDNS แบบกำหนดเอง</string>
+    <string name="chip_all_networks">ทุกเครือข่าย</string>
+    <string name="chip_usb_only">USB เท่านั้น</string>
+    <string name="setting_resolution">ความละเอียด</string>
+    <string name="setting_resolution_desc">ความละเอียดวิดีโอที่ประกาศให้ผู้ส่งทราบ</string>
+    <string name="setting_resolution_width">ความกว้าง</string>
+    <string name="setting_resolution_height">ความสูง</string>
+    <string name="setting_max_fps">FPS สูงสุด</string>
+    <string name="setting_max_fps_desc">อัตราเฟรมสูงสุดที่ประกาศให้ผู้ส่งทราบ</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">โอเวอร์สแกน</string>
+    <string name="setting_overscanned_desc">เพิ่มขอบพิกเซลสำหรับจอแสดงผลที่โอเวอร์สแกนแบบเต็มหน้าจอ</string>
+    <string name="chip_custom">กำหนดเอง</string>
+    <string name="chip_device_portrait">แนวตั้ง</string>
+    <string name="chip_device_landscape">แนวนอน</string>
+
+    <string name="setting_h265_desc">โหมดอัตโนมัติจะใช้เฉพาะตัวถอดรหัส H.265 ที่ทราบว่าใช้งานได้</string>
+    <string name="setting_enforce_sdr_desc">ติดแท็กวิดีโอเป็น SDR แบบจำกัด ปิดเพื่อให้แหล่ง HDR ผ่านไปได้</string>
+    <string name="setting_sw_alac">บังคับใช้ตัวถอดรหัส ALAC แบบซอฟต์แวร์</string>
+    <string name="setting_sw_alac_desc">ใช้ตัวถอดรหัส ALAC แบบซอฟต์แวร์เสมอแทนตัวถอดรหัสของระบบ อาจส่งผลต่อเวลาแฝง</string>
+    <string name="setting_sw_aac">บังคับใช้ตัวถอดรหัส AAC แบบซอฟต์แวร์</string>
+    <string name="setting_sw_aac_desc">ใช้ตัวถอดรหัส AAC แบบซอฟต์แวร์เสมอแทนตัวถอดรหัสของระบบ อาจส่งผลต่อเวลาแฝง</string>
+    <string name="setting_sync_client_volume">Mac ควบคุมระดับเสียงทีวี</string>
+    <string name="setting_sync_client_volume_desc">ปุ่มระดับเสียงของ Mac จะเปลี่ยนระดับเสียงทีวีขณะสะท้อนภาพหน้าจอ ปิดเพื่อใช้รีโมตทีวีเท่านั้น</string>
+
+    <string name="setting_developer_options">ตัวเลือกสำหรับนักพัฒนาซอฟต์แวร์</string>
+    <string name="setting_developer_options_desc">แสดงตัวเลือกสำหรับผู้ใช้ขั้นสูง</string>
+    <string name="setting_key_allow_frame_drop_desc">อนุญาตให้ตัวถอดรหัสวิดีโอทิ้งเฟรมภายในเพื่อให้ทันบน Android 10 ขึ้นไป</string>
+    <string name="setting_realtime_decoder_priority_desc">ขอการจัดกำหนดการแบบเรียลไทม์สำหรับตัวถอดรหัสเสียง</string>
+    <string name="setting_operating_rate_desc">ขออัตราการทำงานสูงสุดจากตัวถอดรหัส</string>
+    <string name="chip_auto">อัตโนมัติ</string>
+    <string name="chip_4k_beta">4K · เบต้า</string>
+    <string name="chip_120_beta">120 · เบต้า</string>
+    <string name="setting_frame_rate">อัตราเฟรม</string>
+    <string name="setting_frame_rate_desc">60 fps ใช้ได้กับ Mac ทุกเครื่อง ส่วน 120 (เบต้า) ต้องใช้ Mac ที่มีจอ ProMotion 120 Hz</string>
+    <string name="chip_on">เปิด</string>
+    <string name="chip_off">ปิด</string>
+    <string name="setting_low_latency">เวลาแฝงต่ำ</string>
+    <string name="setting_low_latency_desc">ใช้การถอดรหัสเสียงแบบเวลาแฝงต่ำสำหรับเอาต์พุต ซึ่งใช้พลังงานและ CPU มากขึ้น</string>
+    <string name="setting_scheduled_output_buffer_release">จังหวะเฟรมแบบตรงกัน</string>
+    <string name="setting_scheduled_output_buffer_release_desc">จัดกำหนดการแต่ละเฟรมที่ถอดรหัสแล้วให้ตรงกับ VSYNC ที่ตรงกับเวลาแสดงผลของเฟรมนั้น</string>
+    <string name="setting_audio_delay">กำหนดความหน่วงเสียงเอง</string>
+    <string name="setting_audio_delay_desc">ตั้งค่าเวลาแฝงเสียงที่กำหนดเองซึ่งรายงานไปยังผู้ส่ง</string>
+    <string name="audio_delay_value">%d มิลลิวินาที</string>
+    <string name="setting_audio_auto_buffer">ขนาดบัฟเฟอร์เสียงซอฟต์แวร์อัตโนมัติ</string>
+    <string name="setting_audio_auto_buffer_desc">ปรับบัฟเฟอร์เสียงซอฟต์แวร์ตามสภาพเครือข่ายและประสิทธิภาพของอุปกรณ์ แถบเลื่อนใช้ปรับว่าบัฟเฟอร์รองรับจิตเตอร์ได้มากเพียงใด</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>เวลาแฝงต่ำที่สุด</item>
+        <item>เวลาแฝงต่ำลง</item>
+        <item>สมดุล</item>
+        <item>เสถียรขึ้น</item>
+        <item>เสถียรที่สุด</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">บัฟเฟอร์เสียงซอฟต์แวร์ (มิลลิวินาที)</string>
+    <string name="setting_audio_cushion_ms_desc">บัฟเฟอร์สำหรับรองรับจิตเตอร์จากเครือข่ายและตัวถอดรหัส ระยะเวลาสั้นลงหมายถึงเวลาแฝงต่ำลง ระยะเวลานานขึ้นหมายถึงเสียงสะดุดน้อยลง</string>
+    <string name="setting_oboe_buffer_frames">บัฟเฟอร์เอาต์พุตฮาร์ดแวร์ (เฟรม)</string>
+    <string name="setting_oboe_buffer_frames_desc">บัฟเฟอร์สตรีมระหว่างแอปนี้กับอุปกรณ์เสียง ใช้รองรับจิตเตอร์จากการจัดกำหนดการ CPU เท่านั้น ตั้งไว้ที่ 0 เพื่อกำหนดขนาดอัตโนมัติ</string>
+    <string name="setting_debug_overlay">แสดงโอเวอร์เลย์ดีบัก</string>
+    <string name="setting_debug_overlay_desc">แสดงสถิติสตรีมบนวิดีโอ: ตัวแปลงสัญญาณ, FPS, บิตเรต, จิตเตอร์, เฟรม, เฟรมที่ทิ้ง</string>
+    <string name="setting_benchmark_log">เปิดใช้การบันทึกดีบัก</string>
+    <string name="setting_benchmark_log_desc">บันทึกสถิติสตรีมลงใน logcat: ตัวแปลงสัญญาณ, FPS, บิตเรต, จิตเตอร์, เฟรม, เฟรมที่ทิ้ง</string>
+
+    <string name="debug_section_video">วิดีโอ</string>
+    <string name="debug_section_audio">เสียง</string>
+    <string name="debug_section_network">เครือข่าย</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  บิตเรต: %2$s</string>
+    <string name="debug_frames_drops">เฟรม: %1$d  ทิ้ง: %2$d</string>
+    <string name="debug_jitter">จิตเตอร์: %1$s</string>
+    <string name="debug_audio">%1$s  ตัวรับ: %2$d%%  ผู้ส่ง: %3$d%%</string>
+    <string name="debug_audio_buffer">บัฟเฟอร์: %1$d ms (เป้าหมาย: %2$d ms)</string>
+    <string name="debug_audio_glitch">เสียงสะดุด: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">ถอดรหัส: %1$s</string>
+    <string name="debug_clients">ผู้ส่ง: %1$d</string>
+
+    <string name="cd_settings">การตั้งค่า</string>
+    <string name="status_ready">พร้อม</string>
+    <string name="status_starting">กำลังเริ่ม…</string>
+    <string name="status_off">ตัวรับปิดอยู่</string>
+    <string name="status_error">เริ่มตัวรับไม่ได้</string>
+    <string name="btn_turn_on">เปิด</string>
+    <string name="btn_try_again">ลองอีกครั้ง</string>
+    <string name="home_mac_title">วิธีสะท้อนภาพหน้าจอ Mac</string>
+    <string name="home_step1">คลิกไอคอนศูนย์ควบคุมในแถบเมนูของ Mac (มุมขวาบน)</string>
+    <string name="home_step2">คลิกการสะท้อนภาพหน้าจอ</string>
+    <string name="home_step3">เลือก “%1$s”</string>
+    <string name="home_iphone">บน iPhone หรือ iPad: เปิดศูนย์ควบคุม แตะการสะท้อนภาพหน้าจอ แล้วเลือก “%1$s”</string>
+    <string name="home_mirror_hint">ทีวีแสดงเดสก์ท็อปว่างแทนหน้าจอ Mac ใช่ไหม บน Mac: การตั้งค่าระบบ → จอภาพ → “เมื่อเชื่อมต่อกับทีวี” → สะท้อนทั้งหน้าจอ</string>
+    <string name="home_screensaver_hint">ภาพพักหน้าจอบังภาพอยู่ใช่ไหม กดปุ่มใดก็ได้บนรีโมต</string>
+    <string name="home_same_wifi">Mac และทีวีต้องใช้ Wi‑Fi เดียวกัน</string>
+    <string name="home_tv_address">ที่อยู่ทีวี: %1$s</string>
+    <string name="home_connecting">Mac ของคุณกำลังเชื่อมต่อ…</string>
+    <string name="home_connecting_named">%1$s กำลังเชื่อมต่อ…</string>
+    <string name="home_taking_over">%1$s กำลังเข้าควบคุม…</string>
+    <string name="home_connecting_hint">หากไม่มีอะไรปรากฏภายในไม่กี่วินาที ให้เลือกทีวีเครื่องนี้อีกครั้งในการสะท้อนภาพหน้าจอบน Mac</string>
+    <string name="home_stopped_title">หยุดสะท้อนภาพหน้าจอแล้ว</string>
+    <string name="home_stopped_desc">มีการหยุดบน Mac หรือการเชื่อมต่อ Wi‑Fi ขาดหาย หากต้องการสะท้อนอีกครั้ง ให้เลือก “%1$s” ในการสะท้อนภาพหน้าจอ</string>
+    <string name="toast_mirroring">เริ่มสะท้อนภาพหน้าจอแล้ว</string>
+    <string name="controls_hint">กด OK เพื่อดูตัวเลือก</string>
+    <string name="controls_back_hides">กดกลับเพื่อซ่อน</string>
+    <string name="controls_hide">ซ่อน</string>
+    <string name="setting_applies_next_connection">บันทึกแล้ว จะมีผลเมื่อ Mac เชื่อมต่อครั้งถัดไป</string>
+    <string name="toast_took_over">%1$s เข้าควบคุมทีวีแล้ว</string>
+    <string name="home_stopped_mac_title">หยุดสะท้อนภาพหน้าจอบน Mac แล้ว</string>
+    <string name="home_stopped_mac_desc">หากต้องการสะท้อนอีกครั้ง ให้เลือก “%1$s” ในการสะท้อนภาพหน้าจอ</string>
+    <string name="home_lost_title">การเชื่อมต่อขาดหาย — ตรวจสอบ Wi‑Fi</string>
+    <string name="home_lost_desc">ตรวจสอบว่า Mac และทีวีใช้ Wi‑Fi เดียวกัน แล้วเลือก “%1$s” อีกครั้ง</string>
+    <string name="home_network_title">เครือข่ายของทีวีเปลี่ยนไป</string>
+    <string name="home_network_desc">เชื่อมต่อ Mac กับ Wi‑Fi เดียวกับทีวี แล้วเลือก “%1$s” อีกครั้ง</string>
+    <string name="toast_mirroring_from">กำลังสะท้อนภาพหน้าจอจาก %1$s</string>
+
+    <string name="setting_tv_name">ชื่อทีวี</string>
+    <string name="setting_tv_name_desc">ชื่อที่ Mac แสดงในการสะท้อนภาพหน้าจอ เว้นว่างไว้เพื่อใช้ “%1$s”</string>
+    <string name="setting_picture_quality">คุณภาพของภาพ</string>
+    <string name="setting_picture_quality_desc">โหมดอัตโนมัติใช้ 1080p ซึ่งลื่นไหลที่สุดเมื่อส่งจาก Mac ส่วน 4K (เบต้า) คมชัดกว่าแต่อาจกระตุก</string>
+    <string name="setting_pin_simple">ขอ PIN</string>
+    <string name="setting_pin_simple_desc">แสดงรหัส 4 หลักบนทีวีก่อนที่อุปกรณ์ใหม่จะสะท้อนภาพหน้าจอได้</string>
+    <string name="setting_lowest_latency">เวลาแฝงต่ำที่สุด</string>
+    <string name="setting_lowest_latency_desc">ลดความหน่วงเวลาพิมพ์และใช้เมาส์ ภาพอาจกระตุกเล็กน้อยบนทีวีบางรุ่น ปิดไว้เพื่อให้ภาพนิ่งที่สุด</string>
+    <string name="setting_about">เกี่ยวกับ</string>
+    <string name="setting_about_desc">เวอร์ชัน ใบอนุญาต และซอร์สโค้ด</string>
+    <string name="setting_advanced">ขั้นสูง</string>
+    <string name="setting_advanced_desc">ตัวเลือกทางเทคนิค คนส่วนใหญ่ไม่จำเป็นต้องใช้</string>
+    <string name="setting_logs">แสดงบันทึก</string>
+    <string name="setting_logs_desc">บันทึกทางเทคนิคสำหรับการแก้ปัญหา</string>
+    <string name="setting_receiver_power">ปิดตัวรับ</string>
+    <string name="setting_receiver_power_desc">Mac ของคุณจะมองไม่เห็นทีวีเครื่องนี้จนกว่าคุณจะเปิดอีกครั้ง</string>
+    <string name="setting_receiver_power_on">เปิดตัวรับ</string>
+    <string name="setting_receiver_power_on_desc">ให้ Mac ค้นหาทีวีเครื่องนี้ได้อีกครั้ง</string>
+    <string name="dialog_stop_title">ปิดตัวรับใช่ไหม</string>
+    <string name="dialog_stop_text">Mac ของคุณจะค้นหาทีวีเครื่องนี้ไม่ได้จนกว่าคุณจะเปิดอีกครั้ง</string>
+    <string name="btn_turn_off">ปิด</string>
+    <string name="btn_cancel">ยกเลิก</string>
+    <string name="btn_reset">รีเซ็ต</string>
+    <string name="setting_reset_all">รีเซ็ตการตั้งค่าทั้งหมด</string>
+    <string name="setting_reset_all_desc">กลับเป็นค่าเริ่มต้นของ Telebeam การซื้อของคุณยังคงอยู่</string>
+    <string name="dialog_reset_title">รีเซ็ตการตั้งค่าทั้งหมดใช่ไหม</string>
+    <string name="dialog_reset_text">การตั้งค่าทุกอย่าง รวมถึงชื่อทีวี จะกลับเป็นค่าเริ่มต้น การซื้อของคุณยังคงอยู่ และ Mac ที่กำลังสะท้อนภาพหน้าจอจะยังเชื่อมต่ออยู่</string>
+    <string name="setting_reset_done">รีเซ็ตการตั้งค่าแล้ว</string>
+
+    <string name="about_version">เวอร์ชัน %1$s</string>
+    <string name="about_credits">พัฒนาต่อจาก AirPlay Receiver โดย jqssun (GPL-3.0) และ UxPlay ใช้ FFmpeg (LGPL)</string>
+    <string name="about_ffmpeg">ซอฟต์แวร์นี้ใช้โค้ดของ FFmpeg (https://ffmpeg.org) ซึ่งได้รับอนุญาตภายใต้ LGPLv2.1 โดยรวมไว้เฉพาะตัวถอดรหัสเสียง ALAC และ AAC เท่านั้น ซอร์สโค้ดของ FFmpeg อยู่ในคลังซอร์สโค้ดของแอปนี้</string>
+    <string name="about_license_note">แอปนี้เป็นซอฟต์แวร์เสรีภายใต้ GNU General Public License v3.0 คุณสามารถรับ แก้ไข และแชร์ซอร์สโค้ดได้</string>
+    <string name="about_source">ซอร์สโค้ด: %1$s</string>
+    <string name="about_view_license">ดูใบอนุญาต (GPL-3.0)</string>
+    <string name="about_privacy">นโยบายความเป็นส่วนตัว: %1$s</string>
+    <string name="about_privacy_button">นโยบายความเป็นส่วนตัว</string>
+    <string name="about_trademark">ไม่มีส่วนเกี่ยวข้องกับ Apple โดย AirPlay และ Mac เป็นเครื่องหมายการค้าของ Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+
+    <string name="paywall_title">สะท้อนภาพหน้าจอ Mac บนทีวีเครื่องนี้</string>
+    <string name="paywall_subtitle">เลือกแพ็กเกจเพื่อเริ่มต้น Mac ของคุณจะค้นพบทีวีเครื่องนี้ทันทีที่ปลดล็อก</string>
+    <string name="paywall_benefit_quality">หน้าจอ Mac บนจอใหญ่ สูงสุด 4K</string>
+    <string name="paywall_benefit_unlimited">ไม่จำกัดเวลา ไม่มีโฆษณา</string>
+    <string name="paywall_benefit_updates">รวมการอัปเดตในอนาคตทั้งหมด</string>
+    <string name="paywall_not_now">ไว้ทีหลัง</string>
+    <string name="paywall_terms">แพ็กเกจรายเดือนต่ออายุที่ %1$s/เดือนจนกว่าคุณจะยกเลิกใน Google Play เรียกเก็บเงินจากบัญชี Google ของคุณ</string>
+    <string name="paywall_terms_no_price">Google Play เป็นผู้ดำเนินการชำระเงินและเรียกเก็บเงินจากบัญชี Google ของคุณ</string>
+    <string name="plan_monthly">รายเดือน</string>
+    <string name="plan_lifetime">ตลอดชีพ</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="other">ฟรี %d วัน</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="other">ฟรี %1$d วัน จากนั้น %2$s/เดือน ยกเลิกได้ทุกเมื่อ</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="other">เป็นเวลา %d วัน</item>
+    </plurals>
+    <string name="plan_monthly_detail">ยกเลิกได้ทุกเมื่อใน Google Play</string>
+    <string name="plan_free">ฟรี</string>
+    <string name="plan_per_month">ต่อเดือน</string>
+    <string name="plan_lifetime_badge">จ่ายครั้งเดียว</string>
+    <string name="plan_lifetime_detail">ปลดล็อกทันที เป็นของคุณตลอดไป ไม่ต้องสมัครสมาชิก</string>
+    <string name="plan_one_time">ครั้งเดียว</string>
+    <string name="plan_price_from_play">ราคาตามที่ Google Play แสดง</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited เปิดใช้งานอยู่</string>
+    <string name="unlimited_owned_monthly">แพ็กเกจรายเดือน เลือกเพื่อจัดการหรือยกเลิกใน Google Play</string>
+    <string name="unlimited_owned_generic">ขอบคุณที่สนับสนุน Telebeam!</string>
+    <string name="unlimited_owned_lifetime">ตลอดชีพ ขอบคุณที่สนับสนุน Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited เปิดใช้งานแล้ว ขอบคุณ!</string>
+    <string name="unlimited_pending_desc">การชำระเงินรอดำเนินการ Telebeam จะปลดล็อกทันทีที่ Google Play ยืนยัน</string>
+    <string name="unlimited_restore">กู้คืนการซื้อ</string>
+    <string name="redeem_code">แลกรหัส</string>
+    <string name="redeem_title">แลกรหัส Google Play</string>
+    <string name="redeem_text">พิมพ์รหัสของคุณ (ไม่บังคับ) แล้ว Google Play จะเปิดขึ้นเพื่อแลกรหัส Telebeam จะปลดล็อกเองเมื่อคุณกลับมา</string>
+    <string name="redeem_field">รหัส</string>
+    <string name="redeem_open_play">เปิด Google Play</string>
+    <string name="redeem_settings_desc">มีรหัสโปรโมชันหรือรหัสของขวัญไหม แลกรหัสได้ใน Google Play</string>
+    <string name="redeem_elsewhere">แลกรหัสที่ play.google.com/redeem บนโทรศัพท์หรือคอมพิวเตอร์ แล้วกลับมาที่นี่</string>
+    <string name="unlimited_restored">ปลดล็อก Telebeam Unlimited แล้ว</string>
+    <string name="unlimited_not_found">ไม่พบการซื้อในบัญชี Google นี้</string>
+    <string name="unlimited_play_unavailable">ติดต่อ Google Play ไม่ได้ในขณะนี้ โปรดลองอีกครั้งในอีกสักครู่</string>
+    <string name="unlimited_manage_in_play">เปิด Google Play → การชำระเงินและการสมัครใช้บริการ เพื่อจัดการแพ็กเกจของคุณ</string>
+    <string name="section_mirroring">การสะท้อนภาพหน้าจอ</string>
+</resources>

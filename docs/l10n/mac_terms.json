@@ -1,0 +1,266 @@
+{
+ "de": {
+  "When connected to TV": "Wenn mit TV-Gerät verbunden",
+  "Displays": "Displays",
+  "Mirror Entire Screen": "Ganzen Bildschirm synchronisieren",
+  "Control Center": "Kontrollzentrum",
+  "Screen Mirroring": "Bildschirm­synchronisierung",
+  "System Settings": "Systemeinstellungen"
+ },
+ "fr": {
+  "When connected to TV": "Lors de la connexion au téléviseur",
+  "Displays": "Moniteurs",
+  "Mirror Entire Screen": "Recopier tout l’écran",
+  "Control Center": "Centre de contrôle",
+  "Screen Mirroring": "Recopie de l’écran",
+  "System Settings": "Réglages Système"
+ },
+ "es": {
+  "When connected to TV": "Al conectarse al televisor",
+  "Displays": "Pantallas",
+  "Mirror Entire Screen": "Duplicar pantalla entera",
+  "Control Center": "Centro de control",
+  "Screen Mirroring": "Duplicar pantalla",
+  "System Settings": "Ajustes del Sistema"
+ },
+ "es_419": {
+  "When connected to TV": "Al conectarse a la TV",
+  "Displays": "Pantallas",
+  "Mirror Entire Screen": "Duplicar toda la pantalla",
+  "Control Center": "Centro de control",
+  "Screen Mirroring": "Duplicar pantalla",
+  "System Settings": "Configuración del Sistema"
+ },
+ "it": {
+  "When connected to TV": "Quando connesso alla TV",
+  "Displays": "Schermi",
+  "Mirror Entire Screen": "Duplica l’intero schermo",
+  "Control Center": "Centro di Controllo",
+  "Screen Mirroring": "Duplica schermo",
+  "System Settings": "Impostazioni di Sistema"
+ },
+ "pt_BR": {
+  "When connected to TV": "Quando conectado à TV",
+  "Displays": "Telas",
+  "Mirror Entire Screen": "Espelhar Tela Inteira",
+  "Control Center": "Central de Controle",
+  "Screen Mirroring": "Espelhamento de Tela",
+  "System Settings": "Ajustes"
+ },
+ "nl": {
+  "When connected to TV": "Indien aangesloten op tv",
+  "Displays": "Beeldschermen",
+  "Mirror Entire Screen": "Geef hele scherm weer",
+  "Control Center": "Bedieningspaneel",
+  "Screen Mirroring": "Synchrone weergave",
+  "System Settings": "Systeeminstellingen"
+ },
+ "pl": {
+  "When connected to TV": "Po podłączeniu TV",
+  "Displays": "Wyświetlacze",
+  "Mirror Entire Screen": "Klonuj cały ekran",
+  "Control Center": "Centrum sterowania",
+  "Screen Mirroring": "Klonowanie ekranu",
+  "System Settings": "Ustawienia systemowe"
+ },
+ "ru": {
+  "When connected to TV": "При подключении к телевизору",
+  "Displays": "Дисплеи",
+  "Mirror Entire Screen": "Показывать весь экран",
+  "Control Center": "Пункт управления",
+  "Screen Mirroring": "Повтор экрана",
+  "System Settings": "Системные настройки"
+ },
+ "uk": {
+  "When connected to TV": "Коли підʼєднано до телевізора",
+  "Displays": "Дисплеї",
+  "Mirror Entire Screen": "Відеодублювати весь екран",
+  "Control Center": "Центр керування",
+  "Screen Mirroring": "Відеодублювання",
+  "System Settings": "Системні параметри"
+ },
+ "tr": {
+  "When connected to TV": "TV’ye bağlıyken",
+  "Displays": "Ekranlar",
+  "Mirror Entire Screen": "Tüm Ekranı Yansıt",
+  "Control Center": "Denetim Merkezi",
+  "Screen Mirroring": "Ekran Yansıtma",
+  "System Settings": "Sistem Ayarları"
+ },
+ "ja": {
+  "When connected to TV": "テレビに接続されているとき",
+  "Displays": "ディスプレイ",
+  "Mirror Entire Screen": "画面全体をミラーリング",
+  "Control Center": "コントロールセンター",
+  "Screen Mirroring": "画面ミラーリング",
+  "System Settings": "システム設定"
+ },
+ "ko": {
+  "When connected to TV": "TV에 연결될 때",
+  "Displays": "디스플레이",
+  "Mirror Entire Screen": "전체 화면 미러링",
+  "Control Center": "제어 센터",
+  "Screen Mirroring": "화면 미러링",
+  "System Settings": "시스템 설정"
+ },
+ "zh_CN": {
+  "When connected to TV": "连接电视时",
+  "Displays": "显示器",
+  "Mirror Entire Screen": "镜像整个屏幕",
+  "Control Center": "控制中心",
+  "Screen Mirroring": "屏幕镜像",
+  "System Settings": "系统设置"
+ },
+ "zh_TW": {
+  "When connected to TV": "當連接電視時",
+  "Displays": "顯示器",
+  "Mirror Entire Screen": "鏡像輸出整個螢幕",
+  "Control Center": "控制中心",
+  "Screen Mirroring": "螢幕鏡像輸出",
+  "System Settings": "系統設定"
+ },
+ "sv": {
+  "When connected to TV": "Vid anslutning till TV",
+  "Displays": "Bildskärmar",
+  "Mirror Entire Screen": "Dubblera hela skärmen",
+  "Control Center": "Kontrollcenter",
+  "Screen Mirroring": "Skärm­dubblering",
+  "System Settings": "System­inställningar"
+ },
+ "nb": {
+  "When connected to TV": "Når tilkoblet TV",
+  "Displays": "Skjermer",
+  "Mirror Entire Screen": "Speil hele skjermen",
+  "Control Center": "Kontrollsenter",
+  "Screen Mirroring": "Skjermdeling",
+  "System Settings": "System­innstillinger"
+ },
+ "no": {
+  "When connected to TV": "Når tilkoblet TV",
+  "Displays": "Skjermer",
+  "Mirror Entire Screen": "Speil hele skjermen",
+  "Control Center": "Kontrollsenter",
+  "Screen Mirroring": "Skjermdeling",
+  "System Settings": "System­innstillinger"
+ },
+ "da": {
+  "When connected to TV": "Når sluttet til fjernsynet",
+  "Displays": "Skærme",
+  "Mirror Entire Screen": "Dubler hele skærmen",
+  "Control Center": "Kontrolcenter",
+  "Screen Mirroring": "Dubler skærm",
+  "System Settings": "Systemindstillinger"
+ },
+ "fi": {
+  "When connected to TV": "Kun yhdistetty TV:hen",
+  "Displays": "Näytöt",
+  "Mirror Entire Screen": "Peilaa koko näyttö",
+  "Control Center": "Ohjauskeskus",
+  "Screen Mirroring": "Näytön peilaus",
+  "System Settings": "Järjestelmäasetukset"
+ },
+ "cs": {
+  "When connected to TV": "Při připojení k televizi",
+  "Displays": "Monitory",
+  "Mirror Entire Screen": "Zrcadlit celou obrazovku",
+  "Control Center": "Ovládací centrum",
+  "Screen Mirroring": "Zrcadlení obrazovky",
+  "System Settings": "Nastavení systému"
+ },
+ "sk": {
+  "When connected to TV": "Pri pripojení k televízoru",
+  "Displays": "Displeje",
+  "Mirror Entire Screen": "Zrkadliť celú obrazovku",
+  "Control Center": "Ovládacie centrum",
+  "Screen Mirroring": "Zrkadlenie obrazovky",
+  "System Settings": "Systémové nastavenia"
+ },
+ "sl": {
+  "When connected to TV": "Ob vzpostavljeni povezavi s televizorjem",
+  "Displays": "Zasloni",
+  "Mirror Entire Screen": "Zrcali celoten zaslon",
+  "Control Center": "Nadzorno središče",
+  "Screen Mirroring": "Zrcaljenje zaslona",
+  "System Settings": "Nastavitve sistema"
+ },
+ "hr": {
+  "When connected to TV": "Kad je spojen TV",
+  "Displays": "Zasloni",
+  "Mirror Entire Screen": "Zrcali cijeli zaslon",
+  "Control Center": "Kontrolni centar",
+  "Screen Mirroring": "Zrcaljenje zaslona",
+  "System Settings": "Postavke sustava"
+ },
+ "hu": {
+  "When connected to TV": "Amikor tv-hez csatlakozik",
+  "Displays": "Kijelzők",
+  "Mirror Entire Screen": "Teljes képernyő tükrözése",
+  "Control Center": "Vezérlőközpont",
+  "Screen Mirroring": "Képernyő tükrözése",
+  "System Settings": "Rendszerbeállítások"
+ },
+ "ro": {
+  "When connected to TV": "Când televizorul este conectat",
+  "Displays": "Afișaje",
+  "Mirror Entire Screen": "Oglindiți tot ecranul",
+  "Control Center": "Centru de control",
+  "Screen Mirroring": "Oglindire ecran",
+  "System Settings": "Configurări sistem"
+ },
+ "el": {
+  "When connected to TV": "Κατά τη σύνδεση στην τηλεόραση",
+  "Displays": "Οθόνες",
+  "Mirror Entire Screen": "Κατοπτρισμός ολόκληρης οθόνης",
+  "Control Center": "Κέντρο ελέγχου",
+  "Screen Mirroring": "Κατοπτρ. οθόνης",
+  "System Settings": "Ρυθμίσεις συστήματος"
+ },
+ "ar": {
+  "When connected to TV": "عند الاتصال بالتلفزيون",
+  "Displays": "شاشات العرض",
+  "Mirror Entire Screen": "محاكاة الشاشة بالكامل",
+  "Control Center": "مركز التحكم",
+  "Screen Mirroring": "محاكاة الشاشة",
+  "System Settings": "إعدادات النظام"
+ },
+ "hi": {
+  "When connected to TV": "TV से कनेक्टेड होने पर",
+  "Displays": "डिस्प्ले",
+  "Mirror Entire Screen": "पूरी स्क्रीन मिरर करें",
+  "Control Center": "कंट्रोल सेंटर",
+  "Screen Mirroring": "स्क्रीन मिररिंग",
+  "System Settings": "सिस्टम सेटिंग"
+ },
+ "id": {
+  "When connected to TV": "Saat terhubung ke TV",
+  "Displays": "Layar",
+  "Mirror Entire Screen": "Cerminkan Seluruh Layar",
+  "Control Center": "Pusat Kontrol",
+  "Screen Mirroring": "Cerminan Layar",
+  "System Settings": "Pengaturan Sistem"
+ },
+ "th": {
+  "When connected to TV": "เมื่อเชื่อมต่อกับทีวี",
+  "Displays": "จอภาพ",
+  "Mirror Entire Screen": "สะท้อนทั้งหน้าจอ",
+  "Control Center": "ศูนย์ควบคุม",
+  "Screen Mirroring": "การสะท้อนภาพหน้าจอ",
+  "System Settings": "การตั้งค่าระบบ"
+ },
+ "vi": {
+  "When connected to TV": "Khi được kết nối với TV",
+  "Displays": "Màn hình",
+  "Mirror Entire Screen": "Phản chiếu toàn bộ màn hình",
+  "Control Center": "Trung tâm điều khiển",
+  "Screen Mirroring": "Phản chiếu màn hình",
+  "System Settings": "Cài đặt hệ thống"
+ },
+ "en": {
+  "When connected to TV": "When connected to TV",
+  "Displays": "Displays",
+  "Mirror Entire Screen": "Mirror Entire Screen",
+  "Control Center": "Control Center",
+  "Screen Mirroring": "Screen Mirroring",
+  "System Settings": "System Settings"
+ }
+}

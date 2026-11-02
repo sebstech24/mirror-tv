@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">螢幕鏡像輸出接收</string>
+    <string name="notification_title">已可進行螢幕鏡像輸出</string>
+    <string name="notification_text">你的 Mac 可以在「螢幕鏡像輸出」中找到這台電視</string>
+    <string name="notification_pin_title">需要 PIN 碼</string>
+    <string name="notification_pin_text">PIN 碼：%1$s</string>
+    <string name="stop_service">停止</string>
+
+    <string name="tab_overview">總覽</string>
+    <string name="tab_logs">記錄</string>
+    <string name="tab_settings">設定</string>
+
+    <string name="server_stopped">伺服器已停止</string>
+    <string name="waiting_for_connection">正在等待連線…</string>
+    <string name="waiting_for_playback">請在傳送裝置上開始播放…</string>
+    <string name="error_starting_server">啟動伺服器時發生錯誤</string>
+    <string name="connected_count">已連線 %d 台</string>
+    <string name="error_label">錯誤</string>
+    <string name="stopped_label">已停止</string>
+    <string name="btn_start">開始</string>
+    <string name="btn_stop">停止</string>
+    <string name="btn_allow">允許</string>
+    <string name="btn_open_settings">開啟設定</string>
+    <string name="local_network_label">需要存取鄰近裝置</string>
+    <string name="local_network_desc">請允許存取鄰近裝置，讓你的 Mac、iPhone 或 iPad 能找到這台電視</string>
+    <string name="unknown_track">不明</string>
+
+    <string name="cd_pip">子母畫面</string>
+    <string name="cd_fullscreen">全螢幕</string>
+    <string name="cd_exit_fullscreen">結束全螢幕</string>
+    <string name="cd_cover_art">封面圖片</string>
+    <string name="cd_play_pause">播放/暫停</string>
+    <string name="cd_rewind">倒轉</string>
+    <string name="cd_fast_forward">快轉</string>
+    <string name="volume_server">接收端音量</string>
+    <string name="volume_client">傳送端音量</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">下載影片</string>
+    <string name="cd_cancel_download">取消下載</string>
+
+    <string name="download_saved">已儲存至 %1$s</string>
+    <string name="download_failed">下載失敗</string>
+
+    <string name="gesture_seek_seconds">%1$d 秒</string>
+    <string name="seconds_short">%1$d秒</string>
+    <string name="select_playback_speed">播放速度</string>
+    <string name="cd_reset_speed">重設速度</string>
+    <string name="skip_silence">略過靜音片段</string>
+
+    <string name="cd_back">返回</string>
+    <string name="cd_copy_url">複製影片網址</string>
+    <string name="cd_rotate">旋轉螢幕</string>
+    <string name="cd_lock_controls">鎖定控制項</string>
+    <string name="cd_unlock_controls">解除鎖定控制項</string>
+    <string name="scale_best_fit">最適大小</string>
+    <string name="scale_stretch">延展</string>
+    <string name="scale_crop">裁切</string>
+
+    <string name="dialog_pin_title">請在你的裝置上輸入這組 PIN 碼</string>
+    <string name="btn_ok">確定</string>
+
+    <string name="btn_export">匯出</string>
+    <string name="btn_clear">清除</string>
+    <string name="export_logs_chooser_title">匯出記錄</string>
+
+    <string name="section_server">伺服器</string>
+    <string name="section_connection">連線</string>
+    <string name="section_display">顯示</string>
+    <string name="section_decode">解碼</string>
+    <string name="section_developer">開發人員</string>
+
+    <string name="setting_server_name">伺服器名稱</string>
+    <string name="setting_server_port">伺服器連接埠</string>
+    <string name="setting_auto_start">自動啟動伺服器</string>
+    <string name="setting_auto_start_desc">開啟應用程式時啟動接收器</string>
+    <string name="setting_boot_auto_start">開機時啟動伺服器</string>
+    <string name="setting_boot_auto_start_desc">電視開機時啟動接收器</string>
+    <string name="setting_run_in_background">在背景執行</string>
+    <string name="setting_run_in_background_desc">離開應用程式後讓伺服器繼續執行</string>
+
+    <string name="setting_require_pin">需要 PIN 碼（測試版）</string>
+    <string name="setting_require_pin_desc">每次有新連線時都需要輸入 4 位數 PIN 碼</string>
+    <string name="setting_allow_new_conn">允許新連線</string>
+    <string name="setting_allow_new_conn_desc">有新裝置連線時，中斷目前的傳送裝置</string>
+
+    <string name="setting_idle_preview">待機畫面預覽</string>
+    <string name="setting_idle_preview_desc">等待連線時顯示影像區域</string>
+    <string name="setting_auto_fullscreen">自動進入全螢幕</string>
+    <string name="setting_auto_fullscreen_desc">傳送裝置連線時進入全螢幕</string>
+    <string name="setting_keep_screen_on">螢幕保持開啟</string>
+    <string name="setting_keep_screen_on_desc">傳送裝置連線期間不進入休眠</string>
+    <string name="setting_advertise_video">提供影片播放</string>
+    <string name="setting_advertise_video_desc">關閉時，影片只會以音訊串流投放</string>
+    <string name="setting_advertise_mirroring">提供螢幕鏡像輸出</string>
+    <string name="setting_advertise_mirroring_desc">關閉時，這台裝置不會出現在鏡像輸出清單中</string>
+    <string name="setting_advertise_audio">廣播 AirPlay 音訊支援</string>
+    <string name="setting_advertise_audio_desc">關閉時，這台裝置只能用於鏡像輸出，且不會出現在媒體播放器中</string>
+    <string name="setting_alac">廣播 ALAC 編解碼器</string>
+    <string name="setting_alac_desc">在 mDNS 記錄中提供 ALAC；用於音樂串流</string>
+    <string name="setting_aac">廣播 AAC 編解碼器</string>
+    <string name="setting_aac_desc">在 mDNS 記錄中提供 AAC-ELD/AAC-LC；用於螢幕鏡像輸出的音訊</string>
+    <string name="setting_launch_on_connect">Mac 連線時顯示 Telebeam</string>
+    <string name="setting_launch_on_connect_desc">將畫面帶到最前方。如果電視封鎖此動作，則會改為顯示通知。</string>
+    <string name="setting_discovery">探索方式</string>
+    <string name="setting_discovery_all_desc">在所有可用的介面上廣播。使用 NsdManager。</string>
+    <string name="setting_discovery_usb_desc">只透過 USB 網路共用廣播，以強制使用有線連線。使用自訂 mDNS 回應程式。</string>
+    <string name="chip_all_networks">所有網路</string>
+    <string name="chip_usb_only">僅限 USB</string>
+    <string name="setting_resolution">解析度</string>
+    <string name="setting_resolution_desc">向傳送裝置廣播的影片解析度</string>
+    <string name="setting_resolution_width">寬度</string>
+    <string name="setting_resolution_height">高度</string>
+    <string name="setting_max_fps">最高 FPS</string>
+    <string name="setting_max_fps_desc">向傳送裝置廣播的最高影格速率</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">過掃描</string>
+    <string name="setting_overscanned_desc">為過掃描的全螢幕顯示器加入像素邊界</string>
+    <string name="chip_custom">自訂</string>
+    <string name="chip_device_portrait">直向</string>
+    <string name="chip_device_landscape">橫向</string>
+
+    <string name="setting_h265_desc">「自動」只會使用已知可正常運作的 H.265 解碼器</string>
+    <string name="setting_enforce_sdr_desc">將影片標記為有限範圍 SDR；關閉後可讓 HDR 來源直接通過</string>
+    <string name="setting_sw_alac">強制使用軟體 ALAC 解碼器</string>
+    <string name="setting_sw_alac_desc">一律使用軟體 ALAC 解碼器而非系統解碼器，可能影響延遲</string>
+    <string name="setting_sw_aac">強制使用軟體 AAC 解碼器</string>
+    <string name="setting_sw_aac_desc">一律使用軟體 AAC 解碼器而非系統解碼器，可能影響延遲</string>
+    <string name="setting_sync_client_volume">用 Mac 控制電視音量</string>
+    <string name="setting_sync_client_volume_desc">鏡像輸出時，Mac 的音量鍵會調整電視音量。關閉後只用電視遙控器調整。</string>
+
+    <string name="setting_developer_options">開發人員選項</string>
+    <string name="setting_developer_options_desc">顯示進階使用者選項</string>
+    <string name="setting_key_allow_frame_drop_desc">在 Android 10 以上版本中，允許影片解碼器在內部捨棄影格以跟上進度</string>
+    <string name="setting_realtime_decoder_priority_desc">為音訊解碼器要求即時排程</string>
+    <string name="setting_operating_rate_desc">向解碼器要求最高運作速率</string>
+    <string name="chip_auto">自動</string>
+    <string name="chip_4k_beta">4K · 測試版</string>
+    <string name="chip_120_beta">120 · 測試版</string>
+    <string name="setting_frame_rate">影格速率</string>
+    <string name="setting_frame_rate_desc">60 fps 適用於所有 Mac。120（測試版）需要配備 120 Hz ProMotion 顯示器的 Mac。</string>
+    <string name="chip_on">開啟</string>
+    <string name="chip_off">關閉</string>
+    <string name="setting_low_latency">低延遲</string>
+    <string name="setting_low_latency_desc">輸出時使用低延遲音訊解碼；會耗用更多電力和 CPU</string>
+    <string name="setting_scheduled_output_buffer_release">對齊影格節奏</string>
+    <string name="setting_scheduled_output_buffer_release_desc">將每個解碼後的影格排定到符合其顯示時間戳記的 VSYNC</string>
+    <string name="setting_audio_delay">覆寫音訊延遲</string>
+    <string name="setting_audio_delay_desc">設定回報給傳送裝置的自訂音訊延遲</string>
+    <string name="audio_delay_value">%d 毫秒</string>
+    <string name="setting_audio_auto_buffer">自動調整軟體音訊緩衝區大小</string>
+    <string name="setting_audio_auto_buffer_desc">依網路狀況和裝置效能自動調整軟體音訊緩衝區；滑桿可調整緩衝區能吸收的抖動程度</string>
+    <string name="audio_adaptive_value">%1$d%%（%2$s）</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>最低延遲</item>
+        <item>較低延遲</item>
+        <item>平衡</item>
+        <item>較高穩定性</item>
+        <item>最高穩定性</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">軟體音訊緩衝區（毫秒）</string>
+    <string name="setting_audio_cushion_ms_desc">用來吸收網路和解碼器抖動的緩衝區：時間越短延遲越低；時間越長斷音越少</string>
+    <string name="setting_oboe_buffer_frames">硬體輸出緩衝區（影格）</string>
+    <string name="setting_oboe_buffer_frames_desc">這個應用程式與音訊裝置之間的串流緩衝區，只用於吸收 CPU 排程抖動。保持為 0 即可自動設定大小。</string>
+    <string name="setting_debug_overlay">顯示偵錯疊加層</string>
+    <string name="setting_debug_overlay_desc">在影片上疊加顯示串流統計資料：編解碼器、FPS、位元率、抖動、影格、捨棄影格</string>
+    <string name="setting_benchmark_log">啟用偵錯記錄</string>
+    <string name="setting_benchmark_log_desc">將串流統計資料記錄到 logcat：編解碼器、FPS、位元率、抖動、影格、捨棄影格</string>
+
+    <string name="debug_section_video">影片</string>
+    <string name="debug_section_audio">音訊</string>
+    <string name="debug_section_network">網路</string>
+    <string name="debug_fps_bitrate">FPS：%1$d  位元率：%2$s</string>
+    <string name="debug_frames_drops">影格：%1$d  捨棄：%2$d</string>
+    <string name="debug_jitter">抖動：%1$s</string>
+    <string name="debug_audio">%1$s  接收端：%2$d%%  傳送端：%3$d%%</string>
+    <string name="debug_audio_buffer">緩衝：%1$d ms（目標：%2$d ms）</string>
+    <string name="debug_audio_glitch">斷音：trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">解碼：%1$s</string>
+    <string name="debug_clients">傳送裝置：%1$d</string>
+
+    <string name="cd_settings">設定</string>
+    <string name="status_ready">就緒</string>
+    <string name="status_starting">正在啟動…</string>
+    <string name="status_off">接收器已關閉</string>
+    <string name="status_error">無法啟動接收器</string>
+    <string name="btn_turn_on">開啟</string>
+    <string name="btn_try_again">再試一次</string>
+    <string name="home_mac_title">鏡像輸出你的 Mac</string>
+    <string name="home_step1">按一下 Mac 選單列（右上角）中的「控制中心」圖像</string>
+    <string name="home_step2">按一下「螢幕鏡像輸出」</string>
+    <string name="home_step3">選擇「%1$s」</string>
+    <string name="home_iphone">在 iPhone 或 iPad 上：打開「控制中心」，點一下「螢幕鏡像輸出」，然後選擇「%1$s」。</string>
+    <string name="home_mirror_hint">電視上顯示空白桌面而不是 Mac 的螢幕？請在 Mac 上前往「系統設定」→「顯示器」→「當連接電視時」→「鏡像輸出整個螢幕」。</string>
+    <string name="home_screensaver_hint">畫面被螢幕保護程式擋住了嗎？按下遙控器上的任一按鈕即可。</string>
+    <string name="home_same_wifi">Mac 和電視必須連上同一個 Wi‑Fi</string>
+    <string name="home_tv_address">電視位址：%1$s</string>
+    <string name="home_connecting">你的 Mac 正在連線…</string>
+    <string name="home_connecting_named">%1$s 正在連線…</string>
+    <string name="home_taking_over">%1$s 正在接手…</string>
+    <string name="home_connecting_hint">如果幾秒後仍沒有出現畫面，請在 Mac 的「螢幕鏡像輸出」中再次選擇這台電視。</string>
+    <string name="home_stopped_title">鏡像輸出已停止</string>
+    <string name="home_stopped_desc">鏡像輸出已在 Mac 上停止，或 Wi‑Fi 連線已中斷。若要再次鏡像輸出，請在「螢幕鏡像輸出」中選擇「%1$s」。</string>
+    <string name="toast_mirroring">已開始鏡像輸出</string>
+    <string name="controls_hint">按下「確定」鍵查看選項</string>
+    <string name="controls_back_hides">按下「返回」鍵即可隱藏</string>
+    <string name="controls_hide">隱藏</string>
+    <string name="setting_applies_next_connection">已儲存。下次 Mac 連線時就會生效。</string>
+    <string name="toast_took_over">%1$s 已接手電視</string>
+    <string name="home_stopped_mac_title">已在 Mac 上停止鏡像輸出</string>
+    <string name="home_stopped_mac_desc">若要再次鏡像輸出，請在「螢幕鏡像輸出」中選擇「%1$s」。</string>
+    <string name="home_lost_title">連線中斷，請檢查 Wi‑Fi</string>
+    <string name="home_lost_desc">請確認 Mac 和電視連上同一個 Wi‑Fi，然後再次選擇「%1$s」。</string>
+    <string name="home_network_title">電視的網路已變更</string>
+    <string name="home_network_desc">請將 Mac 連上電視所用的 Wi‑Fi，然後再次選擇「%1$s」。</string>
+    <string name="toast_mirroring_from">正在鏡像輸出 %1$s</string>
+
+    <string name="setting_tv_name">電視名稱</string>
+    <string name="setting_tv_name_desc">Mac 在「螢幕鏡像輸出」中顯示的名稱。留空則使用「%1$s」。</string>
+    <string name="setting_picture_quality">畫質</string>
+    <string name="setting_picture_quality_desc">「自動」使用 1080p，這是 Mac 上最流暢的選項。4K（測試版）更清晰，但可能會卡頓。</string>
+    <string name="setting_pin_simple">要求輸入 PIN 碼</string>
+    <string name="setting_pin_simple_desc">新裝置鏡像輸出前，先在電視上顯示 4 位數驗證碼</string>
+    <string name="setting_lowest_latency">最低延遲</string>
+    <string name="setting_lowest_latency_desc">減少打字和滑鼠操作的延遲。部分電視上畫面可能會稍微卡頓；關閉即可獲得最穩定的畫面。</string>
+    <string name="setting_about">關於</string>
+    <string name="setting_about_desc">版本、授權和原始碼</string>
+    <string name="setting_advanced">進階</string>
+    <string name="setting_advanced_desc">技術選項。大多數人都不需要更改。</string>
+    <string name="setting_logs">顯示記錄</string>
+    <string name="setting_logs_desc">用於疑難排解的技術記錄</string>
+    <string name="setting_receiver_power">關閉接收器</string>
+    <string name="setting_receiver_power_desc">重新開啟之前，你的 Mac 將看不到這台電視</string>
+    <string name="setting_receiver_power_on">開啟接收器</string>
+    <string name="setting_receiver_power_on_desc">讓你的 Mac 再次找到這台電視</string>
+    <string name="dialog_stop_title">要關閉接收器嗎？</string>
+    <string name="dialog_stop_text">重新開啟之前，你的 Mac 將無法找到這台電視。</string>
+    <string name="btn_turn_off">關閉</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_reset">重設</string>
+    <string name="setting_reset_all">重設所有設定</string>
+    <string name="setting_reset_all_desc">讓 Telebeam 回到初始狀態。你的購買項目會保留。</string>
+    <string name="dialog_reset_title">要重設所有設定嗎？</string>
+    <string name="dialog_reset_text">所有設定（包括電視名稱）都會恢復為預設值。你的購買項目會保留，正在鏡像輸出的 Mac 也會維持連線。</string>
+    <string name="setting_reset_done">設定已重設。</string>
+
+    <string name="about_version">版本 %1$s</string>
+    <string name="about_credits">以 jqssun 的 AirPlay Receiver（GPL-3.0）和 UxPlay 為基礎。使用 FFmpeg（LGPL）。</string>
+    <string name="about_ffmpeg">本軟體使用依 LGPLv2.1 授權的 FFmpeg（https://ffmpeg.org）程式碼。僅內建其 ALAC 和 AAC 音訊解碼器；相關原始碼已包含在本應用程式的原始碼存放庫中。</string>
+    <string name="about_license_note">本應用程式是依 GNU General Public License v3.0 發布的自由軟體。你可以取得、修改及分享其原始碼。</string>
+    <string name="about_source">原始碼：%1$s</string>
+    <string name="about_view_license">查看授權（GPL-3.0）</string>
+    <string name="about_privacy">隱私權政策：%1$s</string>
+    <string name="about_privacy_button">隱私權政策</string>
+    <string name="about_trademark">與 Apple 無任何關聯。AirPlay 和 Mac 是 Apple Inc. 的商標。</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">在這台電視上鏡像輸出你的 Mac</string>
+    <string name="paywall_subtitle">選擇方案即可開始。解鎖後，你的 Mac 會立即找到這台電視。</string>
+    <string name="paywall_benefit_quality">在大螢幕上顯示 Mac 畫面，最高 4K</string>
+    <string name="paywall_benefit_unlimited">沒有時間限制，沒有廣告</string>
+    <string name="paywall_benefit_updates">包含未來所有更新</string>
+    <string name="paywall_not_now">稍後再說</string>
+    <string name="paywall_terms">月繳方案會以每月 %1$s 自動續訂，直到你在 Google Play 中取消為止。費用將向你的 Google 帳戶收取。</string>
+    <string name="paywall_terms_no_price">付款由 Google Play 處理，費用將向你的 Google 帳戶收取。</string>
+    <string name="plan_monthly">月繳</string>
+    <string name="plan_lifetime">終身</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="other">免費 %d 天</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="other">免費 %1$d 天，之後每月 %2$s。可隨時取消。</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="other">%d 天</item>
+    </plurals>
+    <string name="plan_monthly_detail">可隨時在 Google Play 中取消。</string>
+    <string name="plan_free">免費</string>
+    <string name="plan_per_month">每月</string>
+    <string name="plan_lifetime_badge">一次買斷</string>
+    <string name="plan_lifetime_detail">立即解鎖。永久擁有，無須訂閱。</string>
+    <string name="plan_one_time">一次性</string>
+    <string name="plan_price_from_play">價格以 Google Play 顯示為準</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited 已啟用</string>
+    <string name="unlimited_owned_monthly">月繳方案。選取即可在 Google Play 中管理或取消。</string>
+    <string name="unlimited_owned_generic">感謝你支持 Telebeam！</string>
+    <string name="unlimited_owned_lifetime">終身版。感謝你支持 Telebeam！</string>
+    <string name="unlimited_thanks">Telebeam Unlimited 已啟用。謝謝你！</string>
+    <string name="unlimited_pending_desc">付款處理中。Google Play 確認後，Telebeam 會立即解鎖。</string>
+    <string name="unlimited_restore">還原購買項目</string>
+    <string name="redeem_code">兌換代碼</string>
+    <string name="redeem_title">兌換 Google Play 代碼</string>
+    <string name="redeem_text">輸入代碼（選填）後會開啟 Google Play 進行兌換。返回後 Telebeam 會自動解鎖。</string>
+    <string name="redeem_field">代碼</string>
+    <string name="redeem_open_play">開啟 Google Play</string>
+    <string name="redeem_settings_desc">有優惠代碼或禮物卡代碼嗎？可透過 Google Play 兌換。</string>
+    <string name="redeem_elsewhere">請在手機或電腦上前往 play.google.com/redeem 兌換代碼，然後回到這裡。</string>
+    <string name="unlimited_restored">Telebeam Unlimited 已解鎖。</string>
+    <string name="unlimited_not_found">這個 Google 帳戶沒有找到購買記錄。</string>
+    <string name="unlimited_play_unavailable">目前無法連線到 Google Play。請稍後再試。</string>
+    <string name="unlimited_manage_in_play">開啟 Google Play →「付款與訂閱」即可管理你的方案。</string>
+    <string name="section_mirroring">鏡像輸出</string>
+</resources>

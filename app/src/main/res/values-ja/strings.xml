@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">画面ミラーリングの受信</string>
+    <string name="notification_title">画面ミラーリングの準備ができました</string>
+    <string name="notification_text">Mac の画面ミラーリングにこのテレビが表示されます</string>
+    <string name="notification_pin_title">PIN が必要です</string>
+    <string name="notification_pin_text">PIN：%1$s</string>
+    <string name="stop_service">停止</string>
+
+    <string name="tab_overview">概要</string>
+    <string name="tab_logs">ログ</string>
+    <string name="tab_settings">設定</string>
+
+    <string name="server_stopped">サーバーは停止しています</string>
+    <string name="waiting_for_connection">接続を待っています…</string>
+    <string name="waiting_for_playback">送信側で再生を開始してください…</string>
+    <string name="error_starting_server">サーバーを開始できませんでした</string>
+    <string name="connected_count">%d 台が接続中</string>
+    <string name="error_label">エラー</string>
+    <string name="stopped_label">停止中</string>
+    <string name="btn_start">開始</string>
+    <string name="btn_stop">停止</string>
+    <string name="btn_allow">許可</string>
+    <string name="btn_open_settings">設定を開く</string>
+    <string name="local_network_label">付近のデバイスへのアクセスが必要です</string>
+    <string name="local_network_desc">Mac、iPhone、iPad がこのテレビを見つけられるよう、付近のデバイスへのアクセスを許可してください</string>
+    <string name="unknown_track">不明</string>
+
+    <string name="cd_pip">ピクチャー・イン・ピクチャー</string>
+    <string name="cd_fullscreen">全画面表示</string>
+    <string name="cd_exit_fullscreen">全画面表示を終了</string>
+    <string name="cd_cover_art">カバーアート</string>
+    <string name="cd_play_pause">再生／一時停止</string>
+    <string name="cd_rewind">巻き戻し</string>
+    <string name="cd_fast_forward">早送り</string>
+    <string name="volume_server">受信側の音量</string>
+    <string name="volume_client">送信側の音量</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">動画をダウンロード</string>
+    <string name="cd_cancel_download">ダウンロードをキャンセル</string>
+
+    <string name="download_saved">%1$s に保存しました</string>
+    <string name="download_failed">ダウンロードに失敗しました</string>
+
+    <string name="gesture_seek_seconds">%1$d 秒</string>
+    <string name="seconds_short">%1$d秒</string>
+    <string name="select_playback_speed">再生速度</string>
+    <string name="cd_reset_speed">速度をリセット</string>
+    <string name="skip_silence">無音部分をスキップ</string>
+
+    <string name="cd_back">戻る</string>
+    <string name="cd_copy_url">動画の URL をコピー</string>
+    <string name="cd_rotate">画面を回転</string>
+    <string name="cd_lock_controls">操作をロック</string>
+    <string name="cd_unlock_controls">操作のロックを解除</string>
+    <string name="scale_best_fit">画面に合わせる</string>
+    <string name="scale_stretch">引き伸ばし</string>
+    <string name="scale_crop">切り取り</string>
+
+    <string name="dialog_pin_title">デバイスでこの PIN を入力してください</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">書き出す</string>
+    <string name="btn_clear">消去</string>
+    <string name="export_logs_chooser_title">ログを書き出す</string>
+
+    <string name="section_server">サーバー</string>
+    <string name="section_connection">接続</string>
+    <string name="section_display">表示</string>
+    <string name="section_decode">デコード</string>
+    <string name="section_developer">開発者</string>
+
+    <string name="setting_server_name">サーバー名</string>
+    <string name="setting_server_port">サーバーポート</string>
+    <string name="setting_auto_start">サーバーを自動で開始</string>
+    <string name="setting_auto_start_desc">アプリを開いたときに受信を開始します</string>
+    <string name="setting_boot_auto_start">起動時にサーバーを開始</string>
+    <string name="setting_boot_auto_start_desc">テレビの電源が入ったときに受信を開始します</string>
+    <string name="setting_run_in_background">バックグラウンドで実行</string>
+    <string name="setting_run_in_background_desc">アプリを閉じてもサーバーを動かし続けます</string>
+
+    <string name="setting_require_pin">PIN を必須にする（ベータ）</string>
+    <string name="setting_require_pin_desc">新しい接続のたびに 4 桁の PIN を求めます</string>
+    <string name="setting_allow_new_conn">新しい接続を許可</string>
+    <string name="setting_allow_new_conn_desc">新しい送信元が接続したら、今の送信元を切断します</string>
+
+    <string name="setting_idle_preview">待機中の画面プレビュー</string>
+    <string name="setting_idle_preview_desc">接続を待つ間も映像エリアを表示します</string>
+    <string name="setting_auto_fullscreen">自動で全画面表示</string>
+    <string name="setting_auto_fullscreen_desc">送信元が接続したら全画面表示にします</string>
+    <string name="setting_keep_screen_on">画面をオンのままにする</string>
+    <string name="setting_keep_screen_on_desc">送信元が接続している間はスリープしません</string>
+    <string name="setting_advertise_video">動画再生を提供</string>
+    <string name="setting_advertise_video_desc">オフにすると、動画は音声のみでキャストされます</string>
+    <string name="setting_advertise_mirroring">画面ミラーリングを提供</string>
+    <string name="setting_advertise_mirroring_desc">オフにすると、ミラーリングの一覧に表示されません</string>
+    <string name="setting_advertise_audio">AirPlay オーディオ対応を通知</string>
+    <string name="setting_advertise_audio_desc">オフにすると、ミラーリング専用になり、メディアプレーヤーには表示されません</string>
+    <string name="setting_alac">ALAC コーデックを通知</string>
+    <string name="setting_alac_desc">mDNS レコードで ALAC を提供します。音楽のストリーミングに使われます</string>
+    <string name="setting_aac">AAC コーデックを通知</string>
+    <string name="setting_aac_desc">mDNS レコードで AAC-ELD/AAC-LC を提供します。画面ミラーリングの音声に使われます</string>
+    <string name="setting_launch_on_connect">Mac の接続時に Telebeam を表示</string>
+    <string name="setting_launch_on_connect_desc">映像を前面に表示します。テレビがこれをブロックした場合は、代わりに通知が表示されます。</string>
+    <string name="setting_discovery">検出方法</string>
+    <string name="setting_discovery_all_desc">使用可能なすべてのインターフェイスで通知します。NsdManager を使用します。</string>
+    <string name="setting_discovery_usb_desc">USB テザリングでのみ通知し、有線接続に限定します。独自の mDNS レスポンダを使用します。</string>
+    <string name="chip_all_networks">すべてのネットワーク</string>
+    <string name="chip_usb_only">USB のみ</string>
+    <string name="setting_resolution">解像度</string>
+    <string name="setting_resolution_desc">送信元に通知する映像の解像度</string>
+    <string name="setting_resolution_width">幅</string>
+    <string name="setting_resolution_height">高さ</string>
+    <string name="setting_max_fps">最大 FPS</string>
+    <string name="setting_max_fps_desc">送信元に通知する最大フレームレート</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">オーバースキャン</string>
+    <string name="setting_overscanned_desc">オーバースキャンするディスプレイ向けに余白のピクセルを追加します</string>
+    <string name="chip_custom">カスタム</string>
+    <string name="chip_device_portrait">縦向き</string>
+    <string name="chip_device_landscape">横向き</string>
+
+    <string name="setting_h265_desc">自動では、動作が確認済みの H.265 デコーダのみを使います</string>
+    <string name="setting_enforce_sdr_desc">映像を限定範囲の SDR としてタグ付けします。HDR をそのまま通すにはオフにします</string>
+    <string name="setting_sw_alac">ALAC ソフトウェアデコーダを強制</string>
+    <string name="setting_sw_alac_desc">システムのデコーダではなく常にソフトウェアの ALAC デコーダを使います。遅延に影響することがあります</string>
+    <string name="setting_sw_aac">AAC ソフトウェアデコーダを強制</string>
+    <string name="setting_sw_aac_desc">システムのデコーダではなく常にソフトウェアの AAC デコーダを使います。遅延に影響することがあります</string>
+    <string name="setting_sync_client_volume">Mac でテレビの音量を操作</string>
+    <string name="setting_sync_client_volume_desc">ミラーリング中は Mac の音量キーでテレビの音量が変わります。テレビのリモコンだけで操作するにはオフにします。</string>
+
+    <string name="setting_developer_options">開発者向けオプション</string>
+    <string name="setting_developer_options_desc">上級者向けのオプションを表示します</string>
+    <string name="setting_key_allow_frame_drop_desc">Android 10 以降で、処理が追いつくよう動画デコーダ内部でのフレーム落ちを許可します</string>
+    <string name="setting_realtime_decoder_priority_desc">オーディオデコーダにリアルタイムのスケジューリングを要求します</string>
+    <string name="setting_operating_rate_desc">デコーダに最大の動作レートを要求します</string>
+    <string name="chip_auto">自動</string>
+    <string name="chip_4k_beta">4K · ベータ</string>
+    <string name="chip_120_beta">120 · ベータ</string>
+    <string name="setting_frame_rate">フレームレート</string>
+    <string name="setting_frame_rate_desc">60 fps はすべての Mac で使えます。120（ベータ）には 120 Hz の ProMotion ディスプレイを搭載した Mac が必要です。</string>
+    <string name="chip_on">オン</string>
+    <string name="chip_off">オフ</string>
+    <string name="setting_low_latency">低遅延</string>
+    <string name="setting_low_latency_desc">出力に低遅延のオーディオデコードを使います。電力と CPU の使用量が増えます</string>
+    <string name="setting_scheduled_output_buffer_release">フレームの表示タイミングを同期</string>
+    <string name="setting_scheduled_output_buffer_release_desc">デコードした各フレームを、表示タイムスタンプに合う VSYNC に合わせて表示します</string>
+    <string name="setting_audio_delay">音声の遅延を上書き</string>
+    <string name="setting_audio_delay_desc">送信元に通知する音声の遅延を指定します</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">ソフトウェア音声バッファを自動調整</string>
+    <string name="setting_audio_auto_buffer_desc">ネットワークの状況と端末の性能に応じてソフトウェア音声バッファを自動調整します。スライダーでバッファが吸収できるジッターの量を調整します</string>
+    <string name="audio_adaptive_value">%1$d%%（%2$s）</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>最低遅延</item>
+        <item>低遅延</item>
+        <item>バランス</item>
+        <item>安定性重視</item>
+        <item>最高の安定性</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">ソフトウェア音声バッファ（ms）</string>
+    <string name="setting_audio_cushion_ms_desc">ネットワークとデコーダのジッターを吸収するバッファです。短いほど遅延が小さく、長いほど音飛びが減ります</string>
+    <string name="setting_oboe_buffer_frames">ハードウェア出力バッファ（フレーム）</string>
+    <string name="setting_oboe_buffer_frames_desc">このアプリとオーディオデバイスの間のストリームバッファで、CPU スケジューリングのジッターのみを吸収します。自動サイズにするには 0 のままにしてください。</string>
+    <string name="setting_debug_overlay">デバッグ情報を重ねて表示</string>
+    <string name="setting_debug_overlay_desc">ストリームの統計を映像に重ねて表示します：コーデック、FPS、ビットレート、ジッター、フレーム数、ドロップ数</string>
+    <string name="setting_benchmark_log">デバッグログを有効にする</string>
+    <string name="setting_benchmark_log_desc">ストリームの統計を logcat に記録します：コーデック、FPS、ビットレート、ジッター、フレーム数、ドロップ数</string>
+
+    <string name="debug_section_video">映像</string>
+    <string name="debug_section_audio">音声</string>
+    <string name="debug_section_network">ネットワーク</string>
+    <string name="debug_fps_bitrate">FPS：%1$d  ビットレート：%2$s</string>
+    <string name="debug_frames_drops">フレーム：%1$d  ドロップ：%2$d</string>
+    <string name="debug_jitter">ジッター：%1$s</string>
+    <string name="debug_audio">%1$s  受信側：%2$d%%  送信側：%3$d%%</string>
+    <string name="debug_audio_buffer">バッファ：%1$d ms（目標：%2$d ms）</string>
+    <string name="debug_audio_glitch">音飛び：trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">デコード：%1$s</string>
+    <string name="debug_clients">送信元：%1$d</string>
+
+    <string name="cd_settings">設定</string>
+    <string name="status_ready">準備完了</string>
+    <string name="status_starting">開始しています…</string>
+    <string name="status_off">受信はオフです</string>
+    <string name="status_error">受信を開始できませんでした</string>
+    <string name="btn_turn_on">オンにする</string>
+    <string name="btn_try_again">もう一度試す</string>
+    <string name="home_mac_title">Mac をミラーリングするには</string>
+    <string name="home_step1">Mac のメニューバー（右上）にある「コントロールセンター」のアイコンをクリック</string>
+    <string name="home_step2">「画面ミラーリング」をクリック</string>
+    <string name="home_step3">「%1$s」を選択</string>
+    <string name="home_iphone">iPhone や iPad の場合：コントロールセンターを開き、「画面ミラーリング」をタップして「%1$s」を選択します。</string>
+    <string name="home_mirror_hint">Mac の画面ではなく空のデスクトップが表示される場合は、Mac で「システム設定」→「ディスプレイ」→「テレビに接続されているとき」→「画面全体をミラーリング」を選んでください。</string>
+    <string name="home_screensaver_hint">スクリーンセーバーで映像が隠れている場合は、リモコンのいずれかのボタンを押してください。</string>
+    <string name="home_same_wifi">Mac とテレビを同じ Wi‑Fi に接続してください</string>
+    <string name="home_tv_address">テレビのアドレス：%1$s</string>
+    <string name="home_connecting">Mac が接続しています…</string>
+    <string name="home_connecting_named">%1$s が接続しています…</string>
+    <string name="home_taking_over">%1$s に切り替えています…</string>
+    <string name="home_connecting_hint">数秒たっても何も表示されない場合は、Mac の「画面ミラーリング」でこのテレビをもう一度選んでください。</string>
+    <string name="home_stopped_title">ミラーリングが停止しました</string>
+    <string name="home_stopped_desc">Mac で停止されたか、Wi‑Fi の接続が切れました。もう一度ミラーリングするには、「画面ミラーリング」で「%1$s」を選んでください。</string>
+    <string name="toast_mirroring">ミラーリングを開始しました</string>
+    <string name="controls_hint">OK を押してオプションを表示</string>
+    <string name="controls_back_hides">「戻る」を押して非表示</string>
+    <string name="controls_hide">非表示</string>
+    <string name="setting_applies_next_connection">保存しました。次に Mac が接続したときに反映されます。</string>
+    <string name="toast_took_over">%1$s がミラーリングを引き継ぎました</string>
+    <string name="home_stopped_mac_title">Mac でミラーリングが停止されました</string>
+    <string name="home_stopped_mac_desc">もう一度ミラーリングするには、「画面ミラーリング」で「%1$s」を選んでください。</string>
+    <string name="home_lost_title">接続が切れました。Wi‑Fi を確認してください</string>
+    <string name="home_lost_desc">Mac とテレビが同じ Wi‑Fi に接続されていることを確認し、もう一度「%1$s」を選んでください。</string>
+    <string name="home_network_title">テレビのネットワークが変わりました</string>
+    <string name="home_network_desc">Mac をテレビと同じ Wi‑Fi に接続し、もう一度「%1$s」を選んでください。</string>
+    <string name="toast_mirroring_from">%1$s からミラーリング中</string>
+
+    <string name="setting_tv_name">テレビの名前</string>
+    <string name="setting_tv_name_desc">Mac の「画面ミラーリング」に表示される名前です。空欄にすると「%1$s」になります。</string>
+    <string name="setting_picture_quality">画質</string>
+    <string name="setting_picture_quality_desc">自動では、Mac から最もなめらかに映る 1080p を使います。4K（ベータ）はより鮮明ですが、カクつくことがあります。</string>
+    <string name="setting_pin_simple">PIN を求める</string>
+    <string name="setting_pin_simple_desc">新しいデバイスがミラーリングする前に、テレビに 4 桁のコードを表示します</string>
+    <string name="setting_lowest_latency">最低遅延</string>
+    <string name="setting_lowest_latency_desc">文字入力やマウス操作の遅れが減ります。一部のテレビでは映像が少しカクつくことがあります。最も安定した映像にするにはオフにしてください。</string>
+    <string name="setting_about">情報</string>
+    <string name="setting_about_desc">バージョン、ライセンス、ソースコード</string>
+    <string name="setting_advanced">詳細設定</string>
+    <string name="setting_advanced_desc">技術的なオプションです。ほとんどの方は変更する必要はありません。</string>
+    <string name="setting_logs">ログを表示</string>
+    <string name="setting_logs_desc">トラブルシューティング用の技術ログ</string>
+    <string name="setting_receiver_power">受信をオフにする</string>
+    <string name="setting_receiver_power_desc">オンに戻すまで、Mac からこのテレビは見えなくなります</string>
+    <string name="setting_receiver_power_on">受信をオンにする</string>
+    <string name="setting_receiver_power_on_desc">Mac からこのテレビを再び見つけられるようにします</string>
+    <string name="dialog_stop_title">受信をオフにしますか？</string>
+    <string name="dialog_stop_text">オンに戻すまで、Mac はこのテレビを見つけられなくなります。</string>
+    <string name="btn_turn_off">オフにする</string>
+    <string name="btn_cancel">キャンセル</string>
+    <string name="btn_reset">リセット</string>
+    <string name="setting_reset_all">すべての設定をリセット</string>
+    <string name="setting_reset_all_desc">Telebeam を最初の状態に戻します。購入はそのまま残ります。</string>
+    <string name="dialog_reset_title">すべての設定をリセットしますか？</string>
+    <string name="dialog_reset_text">テレビの名前を含むすべての設定が初期値に戻ります。購入はそのまま残り、ミラーリング中の Mac も接続されたままです。</string>
+    <string name="setting_reset_done">設定をリセットしました。</string>
+
+    <string name="about_version">バージョン %1$s</string>
+    <string name="about_credits">jqssun 氏の AirPlay Receiver（GPL-3.0）と UxPlay をもとにしています。FFmpeg（LGPL）を使用しています。</string>
+    <string name="about_ffmpeg">このソフトウェアは、LGPLv2.1 でライセンスされている FFmpeg（https://ffmpeg.org）のコードを使用しています。組み込まれているのは ALAC と AAC のオーディオデコーダのみで、そのソースコードはこのアプリのソースリポジトリに含まれています。</string>
+    <string name="about_license_note">このアプリは GNU General Public License v3.0 に基づくフリーソフトウェアです。ソースコードは自由に入手、変更、共有できます。</string>
+    <string name="about_source">ソースコード：%1$s</string>
+    <string name="about_view_license">ライセンスを表示（GPL-3.0）</string>
+    <string name="about_privacy">プライバシーポリシー：%1$s</string>
+    <string name="about_privacy_button">プライバシーポリシー</string>
+    <string name="about_trademark">Apple とは提携していません。AirPlay および Mac は Apple Inc. の商標です。</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Mac の画面をこのテレビに</string>
+    <string name="paywall_subtitle">プランを選んで始めましょう。ロックが解除されるとすぐに Mac がこのテレビを見つけます。</string>
+    <string name="paywall_benefit_quality">Mac の画面を大画面で。最大 4K</string>
+    <string name="paywall_benefit_unlimited">時間制限なし、広告なし</string>
+    <string name="paywall_benefit_updates">今後のアップデートもすべて含まれます</string>
+    <string name="paywall_not_now">今はしない</string>
+    <string name="paywall_terms">月額プランは Google Play で解約するまで %1$s／月で自動更新されます。料金は Google アカウントに請求されます。</string>
+    <string name="paywall_terms_no_price">お支払いは Google Play で処理され、Google アカウントに請求されます。</string>
+    <string name="plan_monthly">月額</string>
+    <string name="plan_lifetime">買い切り</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="other">%d日間無料</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="other">%1$d日間無料、その後 %2$s／月。いつでも解約できます。</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="other">%d日間</item>
+    </plurals>
+    <string name="plan_monthly_detail">Google Play でいつでも解約できます。</string>
+    <string name="plan_free">無料</string>
+    <string name="plan_per_month">月額</string>
+    <string name="plan_lifetime_badge">1回払い</string>
+    <string name="plan_lifetime_detail">すぐにロックが解除されます。サブスクリプションなしで、ずっと使えます。</string>
+    <string name="plan_one_time">1回のみ</string>
+    <string name="plan_price_from_play">価格は Google Play に表示されます</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited は有効です</string>
+    <string name="unlimited_owned_monthly">月額プランです。選択すると Google Play で管理または解約できます。</string>
+    <string name="unlimited_owned_generic">Telebeam をご支援いただきありがとうございます！</string>
+    <string name="unlimited_owned_lifetime">買い切りプランです。Telebeam をご支援いただきありがとうございます！</string>
+    <string name="unlimited_thanks">Telebeam Unlimited が有効になりました。ありがとうございます！</string>
+    <string name="unlimited_pending_desc">お支払いの処理中です。Google Play で確認されるとすぐに Telebeam のロックが解除されます。</string>
+    <string name="unlimited_restore">購入を復元</string>
+    <string name="redeem_code">コードを利用</string>
+    <string name="redeem_title">Google Play のコードを利用</string>
+    <string name="redeem_text">コードを入力すると（省略可）、Google Play が開いてコードを利用できます。戻ってくると Telebeam のロックが自動で解除されます。</string>
+    <string name="redeem_field">コード</string>
+    <string name="redeem_open_play">Google Play を開く</string>
+    <string name="redeem_settings_desc">プロモーションコードやギフトコードをお持ちですか？Google Play で利用できます。</string>
+    <string name="redeem_elsewhere">スマートフォンやパソコンで play.google.com/redeem からコードを利用してから、ここに戻ってきてください。</string>
+    <string name="unlimited_restored">Telebeam Unlimited のロックが解除されました。</string>
+    <string name="unlimited_not_found">この Google アカウントでは購入が見つかりません。</string>
+    <string name="unlimited_play_unavailable">現在 Google Play に接続できません。しばらくしてからもう一度お試しください。</string>
+    <string name="unlimited_manage_in_play">プランを管理するには、Google Play →「お支払いと定期購入」を開いてください。</string>
+    <string name="section_mirroring">ミラーリング</string>
+</resources>

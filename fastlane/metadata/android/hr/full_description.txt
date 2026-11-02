@@ -1,0 +1,39 @@
+Prikažite zaslon svog Maca na televizoru, bez dodatnog uređaja. Telebeam pretvara vaš Google TV ili Android TV u prijemnik za Zrcaljenje zaslona koje je već ugrađeno u vaš Mac.
+
+KAKO RADI: 3 KLIKA NA MACU
+1. Otvorite Telebeam na televizoru.
+2. Na Macu kliknite „Kontrolni centar” u traci izbornika, a zatim „Zrcaljenje zaslona”.
+3. Odaberite svoj televizor. Zaslon Maca pojavljuje se na velikom ekranu.
+
+Na Mac ne treba ništa instalirati, nema računa ni kabela. Mac i televizor samo trebaju biti na istoj Wi-Fi mreži. Televizor sam prikazuje ove korake, pa to može svatko u kući.
+
+ŠTO MOŽETE
+• Zrcaliti zaslon MacBooka ili iMaca na televizor ili ga koristiti kao veliki drugi zaslon
+• Prikazivati prezentacije i tablice u sali za sastanke ili u učionici
+• Gledati vlastite videozapise, fotografije i web-stranice na velikom ekranu, sa zvukom
+• Oštra slika do 4K i malo kašnjenje, pa se miš na televizoru ponaša prirodno
+• Tipke za glasnoću na Macu mogu upravljati glasnoćom televizora
+• Radi i sa Zrcaljenjem zaslona s iPhonea i iPada
+
+NAPRAVLJENO ZA TELEVIZOR
+Veliki, jednostavni ekrani kojima upravljate daljinskim upravljačem. Nazovite televizor kako želite da ga lako pronađete na popisu Zrcaljenja zaslona na Macu. Ako nešto ne radi, televizor vam jednostavnim riječima kaže što učiniti: ista Wi-Fi mreža, ponovno odaberite televizor ili postavite Mac da zrcali cijeli zaslon.
+
+RADI NA
+Napravljeno za Google TV i Android TV, poput televizora Sony, TCL, Hisense i Philips, Chromecasta s Google TV-om, Google TV Streamera, Nvidia Shielda i Android TV prijemnika. Testirano na Philips Google TV-u; ako na vašem ne radi dobro, pišite nam tijekom besplatnog probnog razdoblja. Zrcaljenje zaslona na Macu dio je macOS-a i koristi Appleovu tehnologiju AirPlay; Telebeam je prijemnik na strani televizora.
+
+PRIVATNOST
+Sve ostaje u vašoj kućnoj mreži. Bez oglasa, bez praćenja, bez računa, bez prikupljanja podataka.
+
+PLANOVI
+Počnite sa 7 dana besplatnog probnog razdoblja na mjesečnom planu ili jednom kupite Lifetime i zadržite ga zauvijek. Oba otključavaju sve: bez vremenskih ograničenja, sva buduća ažuriranja. Plaćanje i otkazivanje idu preko vašeg Google Play računa.
+
+OTVORENI KOD
+Telebeam je otvorenog koda (GPL-3.0). Izvorni kod: https://github.com/sebstech24/mirror-tv . Temelji se na AirPlay Receiveru autora jqssun i UxPlayu; koristi FFmpeg (LGPL).
+
+DOBRO JE ZNATI
+• Zaštićeni videozapisi (na primjer sa streaming servisa koji blokiraju snimanje zaslona) prikazuju se kao crni ekran. O tome odlučuju Mac i streaming servis, a ne televizor.
+• Ako vaš televizor već ima vlastiti prijemnik za zrcaljenje, Telebeam odabire drugo ime kako bi se pojavila oba.
+• Podrška: telebeam@controlmymac.com
+• Pravila o privatnosti: https://sebstech24.github.io/mirror-tv/privacy.html
+
+Telebeam je neovisna aplikacija koju Apple Inc. nije izradio, sponzorirao niti odobrio. Mac, macOS, iPhone, iPad i AirPlay zaštitni su znakovi tvrtke Apple Inc., registrirani u SAD-u i drugim zemljama. Google TV i Android TV zaštitni su znakovi tvrtke Google LLC.

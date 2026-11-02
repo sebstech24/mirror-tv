@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Ekran yansıtma alıcısı</string>
+    <string name="notification_title">Ekran yansıtma için hazır</string>
+    <string name="notification_text">Mac’iniz bu TV’yi Ekran Yansıtma menüsünde bulabilir</string>
+    <string name="notification_pin_title">PIN gerekli</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Durdur</string>
+
+    <string name="tab_overview">Genel Bakış</string>
+    <string name="tab_logs">Günlükler</string>
+    <string name="tab_settings">Ayarlar</string>
+
+    <string name="server_stopped">Sunucu durduruldu</string>
+    <string name="waiting_for_connection">Bağlantı bekleniyor…</string>
+    <string name="waiting_for_playback">Gönderen cihazda oynatmayı başlatın…</string>
+    <string name="error_starting_server">Sunucu başlatılırken hata oluştu</string>
+    <string name="connected_count">%d bağlı</string>
+    <string name="error_label">Hata</string>
+    <string name="stopped_label">Durduruldu</string>
+    <string name="btn_start">Başlat</string>
+    <string name="btn_stop">Durdur</string>
+    <string name="btn_allow">İzin ver</string>
+    <string name="btn_open_settings">Ayarları aç</string>
+    <string name="local_network_label">Yakındaki cihazlara erişim gerekli</string>
+    <string name="local_network_desc">Mac, iPhone veya iPad’inizin bu TV’yi bulabilmesi için yakındaki cihazlara erişime izin verin</string>
+    <string name="unknown_track">Bilinmiyor</string>
+
+    <string name="cd_pip">Pencere içinde pencere</string>
+    <string name="cd_fullscreen">Tam ekran</string>
+    <string name="cd_exit_fullscreen">Tam ekrandan çık</string>
+    <string name="cd_cover_art">Kapak resmi</string>
+    <string name="cd_play_pause">Oynat/Duraklat</string>
+    <string name="cd_rewind">Geri sar</string>
+    <string name="cd_fast_forward">İleri sar</string>
+    <string name="volume_server">Alıcı ses düzeyi</string>
+    <string name="volume_client">Gönderen ses düzeyi</string>
+    <string name="volume_value">%%%1$d</string>
+    <string name="cd_download">Videoyu indir</string>
+    <string name="cd_cancel_download">İndirmeyi iptal et</string>
+
+    <string name="download_saved">Kaydedildi: %1$s</string>
+    <string name="download_failed">İndirme başarısız</string>
+
+    <string name="gesture_seek_seconds">%1$d saniye</string>
+    <string name="seconds_short">%1$d sn</string>
+    <string name="select_playback_speed">Oynatma hızı</string>
+    <string name="cd_reset_speed">Hızı sıfırla</string>
+    <string name="skip_silence">Sessizliği atla</string>
+
+    <string name="cd_back">Geri</string>
+    <string name="cd_copy_url">Video URL’sini kopyala</string>
+    <string name="cd_rotate">Ekranı döndür</string>
+    <string name="cd_lock_controls">Kontrolleri kilitle</string>
+    <string name="cd_unlock_controls">Kontrollerin kilidini aç</string>
+    <string name="scale_best_fit">Sığdır</string>
+    <string name="scale_stretch">Uzat</string>
+    <string name="scale_crop">Kırp</string>
+
+    <string name="dialog_pin_title">Bu PIN’i cihazınıza girin</string>
+    <string name="btn_ok">Tamam</string>
+
+    <string name="btn_export">Dışa aktar</string>
+    <string name="btn_clear">Temizle</string>
+    <string name="export_logs_chooser_title">Günlükleri dışa aktar</string>
+
+    <string name="section_server">Sunucu</string>
+    <string name="section_connection">Bağlantı</string>
+    <string name="section_display">Ekran</string>
+    <string name="section_decode">Kod çözme</string>
+    <string name="section_developer">Geliştirici</string>
+
+    <string name="setting_server_name">Sunucu adı</string>
+    <string name="setting_server_port">Sunucu bağlantı noktası</string>
+    <string name="setting_auto_start">Sunucuyu otomatik başlat</string>
+    <string name="setting_auto_start_desc">Uygulama açıldığında alıcıyı başlat</string>
+    <string name="setting_boot_auto_start">Sunucuyu açılışta başlat</string>
+    <string name="setting_boot_auto_start_desc">TV açıldığında alıcıyı başlat</string>
+    <string name="setting_run_in_background">Arka planda çalıştır</string>
+    <string name="setting_run_in_background_desc">Uygulamadan çıktıktan sonra sunucuyu çalışır durumda tut</string>
+
+    <string name="setting_require_pin">PIN iste (Beta)</string>
+    <string name="setting_require_pin_desc">Her yeni bağlantı için 4 haneli PIN iste</string>
+    <string name="setting_allow_new_conn">Yeni bağlantılara izin ver</string>
+    <string name="setting_allow_new_conn_desc">Yeni bir gönderen bağlandığında mevcut göndereni bırak</string>
+
+    <string name="setting_idle_preview">Bekleme ekranı önizlemesi</string>
+    <string name="setting_idle_preview_desc">Bağlantı beklenirken video yüzeyini göster</string>
+    <string name="setting_auto_fullscreen">Otomatik tam ekran</string>
+    <string name="setting_auto_fullscreen_desc">Bir gönderen bağlandığında tam ekrana geç</string>
+    <string name="setting_keep_screen_on">Ekranı açık tut</string>
+    <string name="setting_keep_screen_on_desc">Bir gönderen bağlıyken uyku modunu engelle</string>
+    <string name="setting_advertise_video">Video oynatma sun</string>
+    <string name="setting_advertise_video_desc">Kapalıyken videolar yalnızca ses olarak aktarılır</string>
+    <string name="setting_advertise_mirroring">Ekran yansıtma sun</string>
+    <string name="setting_advertise_mirroring_desc">Kapalıyken cihaz yansıtmada görünmez</string>
+    <string name="setting_advertise_audio">AirPlay ses desteğini duyur</string>
+    <string name="setting_advertise_audio_desc">Kapalıyken cihaz yalnızca yansıtma için kullanılabilir ve medya oynatıcılarda görünmez</string>
+    <string name="setting_alac">ALAC kodeğini duyur</string>
+    <string name="setting_alac_desc">mDNS kaydında ALAC sun; müzik akışı için kullanılır</string>
+    <string name="setting_aac">AAC kodeğini duyur</string>
+    <string name="setting_aac_desc">mDNS kaydında AAC-ELD/AAC-LC sun; ekran yansıtma sesi için kullanılır</string>
+    <string name="setting_launch_on_connect">Bir Mac bağlandığında Telebeam’i göster</string>
+    <string name="setting_launch_on_connect_desc">Görüntüyü öne getirir. TV buna izin vermezse bunun yerine bir bildirim görünür.</string>
+    <string name="setting_discovery">Bulunabilirlik</string>
+    <string name="setting_discovery_all_desc">Tüm kullanılabilir arayüzlerde duyur. NsdManager kullanır.</string>
+    <string name="setting_discovery_usb_desc">Kablolu bağlantıyı zorunlu kılmak için yalnızca USB tethering üzerinden duyur. Özel mDNS yanıtlayıcı kullanır.</string>
+    <string name="chip_all_networks">Tüm ağlar</string>
+    <string name="chip_usb_only">Yalnızca USB</string>
+    <string name="setting_resolution">Çözünürlük</string>
+    <string name="setting_resolution_desc">Gönderenlere bildirilen video çözünürlüğü</string>
+    <string name="setting_resolution_width">Genişlik</string>
+    <string name="setting_resolution_height">Yükseklik</string>
+    <string name="setting_max_fps">Maksimum FPS</string>
+    <string name="setting_max_fps_desc">Gönderenlere bildirilen maksimum kare hızı</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Overscan yapan ekranlar için piksel kenarlığı ekle</string>
+    <string name="chip_custom">Özel</string>
+    <string name="chip_device_portrait">Dikey</string>
+    <string name="chip_device_landscape">Yatay</string>
+
+    <string name="setting_h265_desc">Otomatik, yalnızca çalıştığı bilinen H.265 kod çözücülerini kullanır</string>
+    <string name="setting_enforce_sdr_desc">Videoyu sınırlı SDR olarak etiketle; HDR kaynaklarının olduğu gibi geçmesi için kapatın</string>
+    <string name="setting_sw_alac">Yazılım ALAC kod çözücüsünü zorla</string>
+    <string name="setting_sw_alac_desc">Sistem kod çözücüsü yerine her zaman yazılım ALAC kod çözücüsünü kullan; gecikmeyi etkileyebilir</string>
+    <string name="setting_sw_aac">Yazılım AAC kod çözücüsünü zorla</string>
+    <string name="setting_sw_aac_desc">Sistem kod çözücüsü yerine her zaman yazılım AAC kod çözücüsünü kullan; gecikmeyi etkileyebilir</string>
+    <string name="setting_sync_client_volume">TV ses düzeyini Mac kontrol eder</string>
+    <string name="setting_sync_client_volume_desc">Yansıtma sırasında Mac’in ses tuşları TV’nin ses düzeyini değiştirir. Yalnızca TV kumandasını kullanmak için kapatın.</string>
+
+    <string name="setting_developer_options">Geliştirici seçenekleri</string>
+    <string name="setting_developer_options_desc">İleri düzey kullanıcılar için seçenekleri göster</string>
+    <string name="setting_key_allow_frame_drop_desc">Android 10+ sürümünde video kod çözücülerinin yetişebilmek için dahili olarak kare atlamasına izin ver</string>
+    <string name="setting_realtime_decoder_priority_desc">Ses kod çözücüsü için gerçek zamanlı zamanlama iste</string>
+    <string name="setting_operating_rate_desc">Kod çözücüden maksimum çalışma hızı iste</string>
+    <string name="chip_auto">Otomatik</string>
+    <string name="chip_4k_beta">4K · Beta</string>
+    <string name="chip_120_beta">120 · Beta</string>
+    <string name="setting_frame_rate">Kare hızı</string>
+    <string name="setting_frame_rate_desc">60 fps her Mac ile çalışır. 120 (beta) için 120 Hz ProMotion ekranlı bir Mac gerekir.</string>
+    <string name="chip_on">Açık</string>
+    <string name="chip_off">Kapalı</string>
+    <string name="setting_low_latency">Düşük gecikme</string>
+    <string name="setting_low_latency_desc">Çıkış için düşük gecikmeli ses kod çözme kullan; daha fazla güç ve CPU kullanır</string>
+    <string name="setting_scheduled_output_buffer_release">Hizalı kare zamanlaması</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Her çözülen kareyi sunum zaman damgasına uyan VSYNC anına göre zamanla</string>
+    <string name="setting_audio_delay">Ses gecikmesini geçersiz kıl</string>
+    <string name="setting_audio_delay_desc">Gönderene bildirilen özel bir ses gecikmesi ayarla</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Otomatik yazılım ses arabelleği boyutu</string>
+    <string name="setting_audio_auto_buffer_desc">Yazılım ses arabelleğini ağ koşullarına ve cihaz performansına göre uyarlar; kaydırıcı, arabelleğin ne kadar jitter emebileceğini ayarlar</string>
+    <string name="audio_adaptive_value">%%%1$d (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>En Düşük Gecikme</item>
+        <item>Daha Düşük Gecikme</item>
+        <item>Dengeli</item>
+        <item>Daha İyi Kararlılık</item>
+        <item>En İyi Kararlılık</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Yazılım ses arabelleği (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Ağ ve kod çözücü jitter’ını emen arabellek: kısa süre daha düşük gecikme, uzun süre daha az kesinti demektir</string>
+    <string name="setting_oboe_buffer_frames">Donanım çıkış arabelleği (kare)</string>
+    <string name="setting_oboe_buffer_frames_desc">Bu uygulama ile ses cihazı arasındaki akış arabelleği; yalnızca CPU zamanlama jitter’ını emer. Otomatik boyut için 0 olarak bırakın.</string>
+    <string name="setting_debug_overlay">Hata ayıklama katmanını göster</string>
+    <string name="setting_debug_overlay_desc">Akış istatistiklerini videonun üzerinde göster: codec, FPS, bit hızı, jitter, kareler, atlananlar</string>
+    <string name="setting_benchmark_log">Hata ayıklama günlüğünü etkinleştir</string>
+    <string name="setting_benchmark_log_desc">Akış istatistiklerini logcat günlüğüne yaz: codec, FPS, bit hızı, jitter, kareler, atlananlar</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Ses</string>
+    <string name="debug_section_network">Ağ</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bit hızı: %2$s</string>
+    <string name="debug_frames_drops">Kareler: %1$d  Atlanan: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Alıcı: %%%2$d  Gönderen: %%%3$d</string>
+    <string name="debug_audio_buffer">Arabellek: %1$d ms (hedef: %2$d ms)</string>
+    <string name="debug_audio_glitch">Kesinti: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Kod çözme: %1$s</string>
+    <string name="debug_clients">Gönderenler: %1$d</string>
+
+    <string name="cd_settings">Ayarlar</string>
+    <string name="status_ready">Hazır</string>
+    <string name="status_starting">Başlatılıyor…</string>
+    <string name="status_off">Alıcı kapalı</string>
+    <string name="status_error">Alıcı başlatılamadı</string>
+    <string name="btn_turn_on">Aç</string>
+    <string name="btn_try_again">Tekrar dene</string>
+    <string name="home_mac_title">Mac’inizi yansıtmak için</string>
+    <string name="home_step1">Mac’in menü çubuğundaki (sağ üst) Denetim Merkezi simgesini tıklayın</string>
+    <string name="home_step2">Ekran Yansıtma’yı tıklayın</string>
+    <string name="home_step3">“%1$s” öğesini seçin</string>
+    <string name="home_iphone">iPhone veya iPad’de: Denetim Merkezi’ni açın, Ekran Yansıtma’ya dokunun ve “%1$s” öğesini seçin.</string>
+    <string name="home_mirror_hint">TV’de Mac’inizin ekranı yerine boş bir masaüstü mü görünüyor? Mac’te: Sistem Ayarları → Ekranlar → “TV’ye bağlıyken” → Tüm Ekranı Yansıt.</string>
+    <string name="home_screensaver_hint">Görüntü ekran koruyucunun arkasında mı kaldı? Kumandada herhangi bir tuşa basın.</string>
+    <string name="home_same_wifi">Mac ve TV aynı Wi‑Fi ağında olmalı</string>
+    <string name="home_tv_address">TV adresi: %1$s</string>
+    <string name="home_connecting">Mac’iniz bağlanıyor…</string>
+    <string name="home_connecting_named">%1$s bağlanıyor…</string>
+    <string name="home_taking_over">%1$s devralıyor…</string>
+    <string name="home_connecting_hint">Birkaç saniye içinde hiçbir şey görünmezse Mac’te Ekran Yansıtma’dan bu TV’yi yeniden seçin.</string>
+    <string name="home_stopped_title">Yansıtma durdu</string>
+    <string name="home_stopped_desc">Mac’te durduruldu veya Wi‑Fi bağlantısı koptu. Yeniden yansıtmak için Ekran Yansıtma’da “%1$s” öğesini seçin.</string>
+    <string name="toast_mirroring">Yansıtma başladı</string>
+    <string name="controls_hint">Seçenekler için OK tuşuna basın</string>
+    <string name="controls_back_hides">Gizlemek için Geri tuşuna basın</string>
+    <string name="controls_hide">Gizle</string>
+    <string name="setting_applies_next_connection">Kaydedildi. Mac’iniz bir sonraki bağlanışında geçerli olur.</string>
+    <string name="toast_took_over">TV’yi %1$s devraldı</string>
+    <string name="home_stopped_mac_title">Yansıtma Mac’te durduruldu</string>
+    <string name="home_stopped_mac_desc">Yeniden yansıtmak için Ekran Yansıtma’da “%1$s” öğesini seçin.</string>
+    <string name="home_lost_title">Bağlantı koptu — Wi‑Fi’yi kontrol edin</string>
+    <string name="home_lost_desc">Mac ve TV’nin aynı Wi‑Fi ağında olduğundan emin olun, ardından “%1$s” öğesini yeniden seçin.</string>
+    <string name="home_network_title">TV’nin ağı değişti</string>
+    <string name="home_network_desc">Mac’i TV’nin Wi‑Fi ağına bağlayın, ardından “%1$s” öğesini yeniden seçin.</string>
+    <string name="toast_mirroring_from">Yansıtılıyor: %1$s</string>
+
+    <string name="setting_tv_name">TV adı</string>
+    <string name="setting_tv_name_desc">Mac’inizin Ekran Yansıtma’da gösterdiği ad. Boş bırakırsanız “%1$s” adı kullanılır.</string>
+    <string name="setting_picture_quality">Görüntü kalitesi</string>
+    <string name="setting_picture_quality_desc">Otomatik, Mac’ten en akıcı görüntüyü veren 1080p’yi kullanır. 4K (beta) daha nettir ama takılabilir.</string>
+    <string name="setting_pin_simple">PIN iste</string>
+    <string name="setting_pin_simple_desc">Yeni bir cihaz yansıtmadan önce TV’de 4 haneli bir kod göster</string>
+    <string name="setting_lowest_latency">En düşük gecikme</string>
+    <string name="setting_lowest_latency_desc">Yazarken ve fareyi kullanırken daha az gecikme. Bazı TV’lerde görüntü hafifçe takılabilir; en kararlı görüntü için kapatın.</string>
+    <string name="setting_about">Hakkında</string>
+    <string name="setting_about_desc">Sürüm, lisanslar ve kaynak kodu</string>
+    <string name="setting_advanced">Gelişmiş</string>
+    <string name="setting_advanced_desc">Teknik seçenekler. Çoğu kişinin bunlara hiç ihtiyacı olmaz.</string>
+    <string name="setting_logs">Günlükleri göster</string>
+    <string name="setting_logs_desc">Sorun giderme için teknik günlük</string>
+    <string name="setting_receiver_power">Alıcıyı kapat</string>
+    <string name="setting_receiver_power_desc">Siz yeniden açana kadar Mac’iniz bu TV’yi görmez</string>
+    <string name="setting_receiver_power_on">Alıcıyı aç</string>
+    <string name="setting_receiver_power_on_desc">Mac’iniz bu TV’yi yeniden bulabilsin</string>
+    <string name="dialog_stop_title">Alıcı kapatılsın mı?</string>
+    <string name="dialog_stop_text">Siz yeniden açana kadar Mac’iniz bu TV’yi bulamaz.</string>
+    <string name="btn_turn_off">Kapat</string>
+    <string name="btn_cancel">İptal</string>
+    <string name="btn_reset">Sıfırla</string>
+    <string name="setting_reset_all">Tüm ayarları sıfırla</string>
+    <string name="setting_reset_all_desc">Telebeam ilk haline döner. Satın alımınız korunur.</string>
+    <string name="dialog_reset_title">Tüm ayarlar sıfırlansın mı?</string>
+    <string name="dialog_reset_text">TV adı dahil tüm ayarlar varsayılana döner. Satın alımınız korunur ve yansıtma yapan bir Mac bağlı kalır.</string>
+    <string name="setting_reset_done">Ayarlar sıfırlandı.</string>
+
+    <string name="about_version">Sürüm %1$s</string>
+    <string name="about_credits">jqssun’un AirPlay Receiver projesini (GPL-3.0) ve UxPlay’i temel alır. FFmpeg (LGPL) kullanır.</string>
+    <string name="about_ffmpeg">Bu yazılım, LGPLv2.1 ile lisanslanan FFmpeg (https://ffmpeg.org) kodunu kullanır. Yalnızca ALAC ve AAC ses kod çözücüleri dahil edilmiştir; kaynak kodu bu uygulamanın kaynak deposunda yer alır.</string>
+    <string name="about_license_note">Bu uygulama, GNU General Public License v3.0 kapsamında özgür yazılımdır. Kaynak kodunu edinebilir, değiştirebilir ve paylaşabilirsiniz.</string>
+    <string name="about_source">Kaynak kodu: %1$s</string>
+    <string name="about_view_license">Lisansı görüntüle (GPL-3.0)</string>
+    <string name="about_privacy">Gizlilik politikası: %1$s</string>
+    <string name="about_privacy_button">Gizlilik politikası</string>
+    <string name="about_trademark">Apple ile bağlantılı değildir. AirPlay ve Mac, Apple Inc.’in ticari markalarıdır.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Mac’inizi bu TV’ye yansıtın</string>
+    <string name="paywall_subtitle">Başlamak için bir plan seçin. Kilit açılır açılmaz Mac’iniz bu TV’yi bulur.</string>
+    <string name="paywall_benefit_quality">Mac’inizin ekranı büyük ekranda, 4K’ya kadar</string>
+    <string name="paywall_benefit_unlimited">Süre sınırı yok, reklam yok</string>
+    <string name="paywall_benefit_updates">Gelecekteki tüm güncellemeler dahil</string>
+    <string name="paywall_not_now">Şimdi değil</string>
+    <string name="paywall_terms">Aylık plan, Google Play’de iptal edene kadar aylık %1$s ücretle yenilenir. Google hesabınızdan tahsil edilir.</string>
+    <string name="paywall_terms_no_price">Ödeme Google Play tarafından işlenir ve Google hesabınızdan tahsil edilir.</string>
+    <string name="plan_monthly">Aylık</string>
+    <string name="plan_lifetime">Ömür boyu</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d GÜN ÜCRETSİZ</item>
+        <item quantity="other">%d GÜN ÜCRETSİZ</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d gün ücretsiz, ardından aylık %2$s. İstediğiniz zaman iptal edin.</item>
+        <item quantity="other">%1$d gün ücretsiz, ardından aylık %2$s. İstediğiniz zaman iptal edin.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">%d gün boyunca</item>
+        <item quantity="other">%d gün boyunca</item>
+    </plurals>
+    <string name="plan_monthly_detail">Google Play’de istediğiniz zaman iptal edin.</string>
+    <string name="plan_free">Ücretsiz</string>
+    <string name="plan_per_month">aylık</string>
+    <string name="plan_lifetime_badge">TEK ÖDEME</string>
+    <string name="plan_lifetime_detail">Hemen açılır. Sonsuza dek sizin, abonelik yok.</string>
+    <string name="plan_one_time">tek seferlik</string>
+    <string name="plan_price_from_play">Fiyat Google Play’den alınır</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited etkin</string>
+    <string name="unlimited_owned_monthly">Aylık plan. Google Play’de yönetmek veya iptal etmek için seçin.</string>
+    <string name="unlimited_owned_generic">Telebeam’i desteklediğiniz için teşekkürler!</string>
+    <string name="unlimited_owned_lifetime">Ömür boyu. Telebeam’i desteklediğiniz için teşekkürler!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited etkin. Teşekkürler!</string>
+    <string name="unlimited_pending_desc">Ödeme bekleniyor. Google Play onaylar onaylamaz Telebeam’in kilidi açılır.</string>
+    <string name="unlimited_restore">Satın alımları geri yükle</string>
+    <string name="redeem_code">Kod kullan</string>
+    <string name="redeem_title">Google Play kodu kullan</string>
+    <string name="redeem_text">Kodunuzu yazın (isteğe bağlı); kodu kullanmanız için Google Play açılır. Geri döndüğünüzde Telebeam’in kilidi kendiliğinden açılır.</string>
+    <string name="redeem_field">Kod</string>
+    <string name="redeem_open_play">Google Play’i aç</string>
+    <string name="redeem_settings_desc">Promosyon veya hediye kodunuz mu var? Google Play ile kullanın.</string>
+    <string name="redeem_elsewhere">Kodu telefon veya bilgisayarda play.google.com/redeem adresinde kullanın, ardından buraya dönün.</string>
+    <string name="unlimited_restored">Telebeam Unlimited’in kilidi açıldı.</string>
+    <string name="unlimited_not_found">Bu Google hesabında satın alım bulunamadı.</string>
+    <string name="unlimited_play_unavailable">Google Play’e şu anda ulaşılamıyor. Biraz sonra tekrar deneyin.</string>
+    <string name="unlimited_manage_in_play">Planınızı yönetmek için Google Play → Ödemeler ve abonelikler bölümünü açın.</string>
+    <string name="section_mirroring">Yansıtma</string>
+</resources>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Bộ thu phản chiếu màn hình</string>
+    <string name="notification_title">Sẵn sàng cho Phản chiếu màn hình</string>
+    <string name="notification_text">Máy Mac của bạn có thể tìm thấy TV này trong Phản chiếu màn hình</string>
+    <string name="notification_pin_title">Cần mã PIN</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Dừng</string>
+
+    <string name="tab_overview">Tổng quan</string>
+    <string name="tab_logs">Nhật ký</string>
+    <string name="tab_settings">Cài đặt</string>
+
+    <string name="server_stopped">Máy chủ đã dừng</string>
+    <string name="waiting_for_connection">Đang chờ kết nối...</string>
+    <string name="waiting_for_playback">Hãy nhấn bắt đầu trên thiết bị gửi...</string>
+    <string name="error_starting_server">Lỗi khi khởi động máy chủ</string>
+    <string name="connected_count">%d đã kết nối</string>
+    <string name="error_label">Lỗi</string>
+    <string name="stopped_label">Đã dừng</string>
+    <string name="btn_start">Bắt đầu</string>
+    <string name="btn_stop">Dừng</string>
+    <string name="btn_allow">Cho phép</string>
+    <string name="btn_open_settings">Mở cài đặt</string>
+    <string name="local_network_label">Cần quyền truy cập thiết bị ở gần</string>
+    <string name="local_network_desc">Cho phép truy cập thiết bị ở gần để máy Mac, iPhone hoặc iPad của bạn tìm thấy TV này</string>
+    <string name="unknown_track">Không xác định</string>
+
+    <string name="cd_pip">Hình trong hình</string>
+    <string name="cd_fullscreen">Toàn màn hình</string>
+    <string name="cd_exit_fullscreen">Thoát toàn màn hình</string>
+    <string name="cd_cover_art">Ảnh bìa</string>
+    <string name="cd_play_pause">Phát/Tạm dừng</string>
+    <string name="cd_rewind">Tua lại</string>
+    <string name="cd_fast_forward">Tua nhanh</string>
+    <string name="volume_server">Âm lượng bộ thu</string>
+    <string name="volume_client">Âm lượng thiết bị gửi</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">Tải video xuống</string>
+    <string name="cd_cancel_download">Hủy tải xuống</string>
+
+    <string name="download_saved">Đã lưu vào %1$s</string>
+    <string name="download_failed">Tải xuống không thành công</string>
+
+    <string name="gesture_seek_seconds">%1$d giây</string>
+    <string name="seconds_short">%1$d giây</string>
+    <string name="select_playback_speed">Tốc độ phát</string>
+    <string name="cd_reset_speed">Đặt lại tốc độ</string>
+    <string name="skip_silence">Bỏ qua khoảng lặng</string>
+
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_copy_url">Sao chép URL video</string>
+    <string name="cd_rotate">Xoay màn hình</string>
+    <string name="cd_lock_controls">Khóa điều khiển</string>
+    <string name="cd_unlock_controls">Mở khóa điều khiển</string>
+    <string name="scale_best_fit">Vừa màn hình</string>
+    <string name="scale_stretch">Kéo giãn</string>
+    <string name="scale_crop">Cắt</string>
+
+    <string name="dialog_pin_title">Nhập mã PIN này trên thiết bị của bạn</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Xuất</string>
+    <string name="btn_clear">Xóa</string>
+    <string name="export_logs_chooser_title">Xuất nhật ký</string>
+
+    <string name="section_server">Máy chủ</string>
+    <string name="section_connection">Kết nối</string>
+    <string name="section_display">Hiển thị</string>
+    <string name="section_decode">Giải mã</string>
+    <string name="section_developer">Nhà phát triển</string>
+
+    <string name="setting_server_name">Tên máy chủ</string>
+    <string name="setting_server_port">Cổng máy chủ</string>
+    <string name="setting_auto_start">Tự động khởi động máy chủ</string>
+    <string name="setting_auto_start_desc">Khởi động bộ thu khi mở ứng dụng</string>
+    <string name="setting_boot_auto_start">Khởi động máy chủ khi bật TV</string>
+    <string name="setting_boot_auto_start_desc">Khởi động bộ thu khi TV bật lên</string>
+    <string name="setting_run_in_background">Chạy trong nền</string>
+    <string name="setting_run_in_background_desc">Giữ máy chủ chạy sau khi rời khỏi ứng dụng</string>
+
+    <string name="setting_require_pin">Yêu cầu mã PIN (Beta)</string>
+    <string name="setting_require_pin_desc">Yêu cầu mã PIN 4 chữ số cho mỗi kết nối mới</string>
+    <string name="setting_allow_new_conn">Cho phép kết nối mới</string>
+    <string name="setting_allow_new_conn_desc">Ngắt thiết bị gửi hiện tại khi có thiết bị mới kết nối</string>
+
+    <string name="setting_idle_preview">Xem trước màn hình chờ</string>
+    <string name="setting_idle_preview_desc">Hiển thị bề mặt video trong khi chờ kết nối</string>
+    <string name="setting_auto_fullscreen">Tự động vào toàn màn hình</string>
+    <string name="setting_auto_fullscreen_desc">Chuyển sang toàn màn hình khi thiết bị gửi kết nối</string>
+    <string name="setting_keep_screen_on">Giữ màn hình luôn bật</string>
+    <string name="setting_keep_screen_on_desc">Không cho TV ngủ khi thiết bị gửi đang kết nối</string>
+    <string name="setting_advertise_video">Cung cấp phát video</string>
+    <string name="setting_advertise_video_desc">Khi tắt, video sẽ được truyền dưới dạng luồng chỉ có âm thanh</string>
+    <string name="setting_advertise_mirroring">Cung cấp phản chiếu màn hình</string>
+    <string name="setting_advertise_mirroring_desc">Khi tắt, thiết bị sẽ bị ẩn khỏi tính năng phản chiếu</string>
+    <string name="setting_advertise_audio">Quảng bá hỗ trợ âm thanh AirPlay</string>
+    <string name="setting_advertise_audio_desc">Khi tắt, thiết bị chỉ dùng được để phản chiếu và sẽ bị ẩn khỏi các trình phát đa phương tiện</string>
+    <string name="setting_alac">Quảng bá codec ALAC</string>
+    <string name="setting_alac_desc">Cung cấp ALAC trong bản ghi mDNS; dùng để phát nhạc trực tuyến</string>
+    <string name="setting_aac">Quảng bá codec AAC</string>
+    <string name="setting_aac_desc">Cung cấp AAC-ELD/AAC-LC trong bản ghi mDNS; dùng cho âm thanh khi phản chiếu màn hình</string>
+    <string name="setting_launch_on_connect">Hiện Telebeam khi máy Mac kết nối</string>
+    <string name="setting_launch_on_connect_desc">Đưa hình ảnh lên phía trước. Nếu TV chặn việc này, một thông báo sẽ xuất hiện.</string>
+    <string name="setting_discovery">Có thể tìm thấy qua</string>
+    <string name="setting_discovery_all_desc">Quảng bá trên mọi giao diện khả dụng. Dùng NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Chỉ quảng bá qua chia sẻ kết nối USB để bắt buộc kết nối có dây. Dùng trình phản hồi mDNS riêng.</string>
+    <string name="chip_all_networks">Mọi mạng</string>
+    <string name="chip_usb_only">Chỉ USB</string>
+    <string name="setting_resolution">Độ phân giải</string>
+    <string name="setting_resolution_desc">Độ phân giải video quảng bá tới thiết bị gửi</string>
+    <string name="setting_resolution_width">Chiều rộng</string>
+    <string name="setting_resolution_height">Chiều cao</string>
+    <string name="setting_max_fps">FPS tối đa</string>
+    <string name="setting_max_fps_desc">Tốc độ khung hình tối đa quảng bá tới thiết bị gửi</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Thêm viền điểm ảnh cho màn hình có overscan</string>
+    <string name="chip_custom">Tùy chỉnh</string>
+    <string name="chip_device_portrait">Dọc</string>
+    <string name="chip_device_landscape">Ngang</string>
+
+    <string name="setting_h265_desc">Tự động chỉ dùng các bộ giải mã H.265 đã biết là hoạt động tốt</string>
+    <string name="setting_enforce_sdr_desc">Gắn thẻ video là SDR giới hạn; tắt để cho phép nguồn HDR đi qua</string>
+    <string name="setting_sw_alac">Buộc dùng bộ giải mã ALAC phần mềm</string>
+    <string name="setting_sw_alac_desc">Luôn dùng bộ giải mã ALAC phần mềm thay cho bộ giải mã hệ thống; có thể ảnh hưởng đến độ trễ</string>
+    <string name="setting_sw_aac">Buộc dùng bộ giải mã AAC phần mềm</string>
+    <string name="setting_sw_aac_desc">Luôn dùng bộ giải mã AAC phần mềm thay cho bộ giải mã hệ thống; có thể ảnh hưởng đến độ trễ</string>
+    <string name="setting_sync_client_volume">Mac điều khiển âm lượng TV</string>
+    <string name="setting_sync_client_volume_desc">Phím âm lượng của máy Mac thay đổi âm lượng TV khi phản chiếu. Tắt để chỉ dùng điều khiển từ xa của TV.</string>
+
+    <string name="setting_developer_options">Tùy chọn cho nhà phát triển</string>
+    <string name="setting_developer_options_desc">Hiện tùy chọn cho người dùng nâng cao</string>
+    <string name="setting_key_allow_frame_drop_desc">Cho phép bộ giải mã video bỏ khung hình nội bộ để theo kịp trên Android 10+</string>
+    <string name="setting_realtime_decoder_priority_desc">Yêu cầu lập lịch thời gian thực cho bộ giải mã âm thanh</string>
+    <string name="setting_operating_rate_desc">Yêu cầu tốc độ vận hành tối đa từ bộ giải mã</string>
+    <string name="chip_auto">Tự động</string>
+    <string name="chip_4k_beta">4K · Beta</string>
+    <string name="chip_120_beta">120 · Beta</string>
+    <string name="setting_frame_rate">Tốc độ khung hình</string>
+    <string name="setting_frame_rate_desc">60 fps hoạt động với mọi máy Mac. 120 (beta) cần máy Mac có màn hình ProMotion 120 Hz.</string>
+    <string name="chip_on">Bật</string>
+    <string name="chip_off">Tắt</string>
+    <string name="setting_low_latency">Độ trễ thấp</string>
+    <string name="setting_low_latency_desc">Dùng giải mã âm thanh độ trễ thấp cho đầu ra; tốn nhiều điện năng và CPU hơn</string>
+    <string name="setting_scheduled_output_buffer_release">Nhịp khung hình đồng bộ</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Lên lịch mỗi khung hình đã giải mã vào VSYNC khớp với dấu thời gian hiển thị của nó</string>
+    <string name="setting_audio_delay">Ghi đè độ trễ âm thanh</string>
+    <string name="setting_audio_delay_desc">Đặt độ trễ âm thanh tùy chỉnh báo cho thiết bị gửi</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Tự động chỉnh kích thước bộ đệm âm thanh phần mềm</string>
+    <string name="setting_audio_auto_buffer_desc">Tự điều chỉnh bộ đệm âm thanh phần mềm theo điều kiện mạng và hiệu năng thiết bị; thanh trượt quyết định lượng jitter mà bộ đệm có thể hấp thụ</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Độ trễ thấp nhất</item>
+        <item>Độ trễ thấp hơn</item>
+        <item>Cân bằng</item>
+        <item>Ổn định hơn</item>
+        <item>Ổn định nhất</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Bộ đệm âm thanh phần mềm (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Bộ đệm hấp thụ jitter của mạng và bộ giải mã: thời lượng ngắn hơn thì độ trễ thấp hơn; dài hơn thì ít bị giật hơn</string>
+    <string name="setting_oboe_buffer_frames">Bộ đệm đầu ra phần cứng (khung)</string>
+    <string name="setting_oboe_buffer_frames_desc">Bộ đệm luồng giữa ứng dụng này và thiết bị âm thanh, chỉ để hấp thụ jitter do lập lịch CPU. Giữ ở 0 để tự động chọn kích thước.</string>
+    <string name="setting_debug_overlay">Hiện lớp phủ gỡ lỗi</string>
+    <string name="setting_debug_overlay_desc">Phủ thông số luồng lên video: codec, FPS, bitrate, jitter, khung hình, khung bị bỏ</string>
+    <string name="setting_benchmark_log">Bật nhật ký gỡ lỗi</string>
+    <string name="setting_benchmark_log_desc">Ghi thông số luồng vào logcat: codec, FPS, bitrate, jitter, khung hình, khung bị bỏ</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Âm thanh</string>
+    <string name="debug_section_network">Mạng</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
+    <string name="debug_frames_drops">Khung: %1$d  Bỏ: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Bộ thu: %2$d%%  Thiết bị gửi: %3$d%%</string>
+    <string name="debug_audio_buffer">Bộ đệm: %1$d ms (mục tiêu: %2$d ms)</string>
+    <string name="debug_audio_glitch">Lỗi tiếng: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Giải mã: %1$s</string>
+    <string name="debug_clients">Thiết bị gửi: %1$d</string>
+
+    <string name="cd_settings">Cài đặt</string>
+    <string name="status_ready">Sẵn sàng</string>
+    <string name="status_starting">Đang khởi động…</string>
+    <string name="status_off">Bộ thu đang tắt</string>
+    <string name="status_error">Không thể khởi động bộ thu</string>
+    <string name="btn_turn_on">Bật</string>
+    <string name="btn_try_again">Thử lại</string>
+    <string name="home_mac_title">Để phản chiếu máy Mac của bạn</string>
+    <string name="home_step1">Nhấp vào biểu tượng Trung tâm điều khiển trên thanh menu của máy Mac (góc trên bên phải)</string>
+    <string name="home_step2">Nhấp vào Phản chiếu màn hình</string>
+    <string name="home_step3">Chọn “%1$s”</string>
+    <string name="home_iphone">Trên iPhone hoặc iPad: mở Trung tâm điều khiển, chạm vào Phản chiếu màn hình, chọn “%1$s”.</string>
+    <string name="home_mirror_hint">TV hiện màn hình nền trống thay vì màn hình Mac? Trên máy Mac: Cài đặt hệ thống → Màn hình → “Khi được kết nối với TV” → Phản chiếu toàn bộ màn hình.</string>
+    <string name="home_screensaver_hint">Hình bị trình bảo vệ màn hình che mất? Nhấn nút bất kỳ trên điều khiển từ xa.</string>
+    <string name="home_same_wifi">Mac và TV phải dùng cùng một mạng Wi‑Fi</string>
+    <string name="home_tv_address">Địa chỉ TV: %1$s</string>
+    <string name="home_connecting">Máy Mac của bạn đang kết nối…</string>
+    <string name="home_connecting_named">%1$s đang kết nối…</string>
+    <string name="home_taking_over">%1$s đang tiếp quản…</string>
+    <string name="home_connecting_hint">Nếu không có gì xuất hiện sau vài giây, hãy chọn lại TV này trong Phản chiếu màn hình trên máy Mac.</string>
+    <string name="home_stopped_title">Đã dừng phản chiếu</string>
+    <string name="home_stopped_desc">Phản chiếu đã bị dừng trên máy Mac hoặc kết nối Wi‑Fi bị mất. Để phản chiếu lại, hãy chọn “%1$s” trong Phản chiếu màn hình.</string>
+    <string name="toast_mirroring">Đã bắt đầu phản chiếu</string>
+    <string name="controls_hint">Nhấn OK để xem tùy chọn</string>
+    <string name="controls_back_hides">Nhấn Quay lại để ẩn</string>
+    <string name="controls_hide">Ẩn</string>
+    <string name="setting_applies_next_connection">Đã lưu. Thay đổi có hiệu lực vào lần tới máy Mac của bạn kết nối.</string>
+    <string name="toast_took_over">%1$s đã tiếp quản TV</string>
+    <string name="home_stopped_mac_title">Đã dừng phản chiếu trên máy Mac</string>
+    <string name="home_stopped_mac_desc">Để phản chiếu lại, hãy chọn “%1$s” trong Phản chiếu màn hình.</string>
+    <string name="home_lost_title">Mất kết nối — hãy kiểm tra Wi‑Fi</string>
+    <string name="home_lost_desc">Đảm bảo máy Mac và TV dùng cùng một mạng Wi‑Fi, rồi chọn lại “%1$s”.</string>
+    <string name="home_network_title">Mạng của TV đã thay đổi</string>
+    <string name="home_network_desc">Kết nối máy Mac với Wi‑Fi của TV, rồi chọn lại “%1$s”.</string>
+    <string name="toast_mirroring_from">Đang phản chiếu từ %1$s</string>
+
+    <string name="setting_tv_name">Tên TV</string>
+    <string name="setting_tv_name_desc">Tên mà máy Mac hiển thị trong Phản chiếu màn hình. Để trống để dùng “%1$s”.</string>
+    <string name="setting_picture_quality">Chất lượng hình ảnh</string>
+    <string name="setting_picture_quality_desc">Tự động dùng 1080p, mượt nhất khi phát từ máy Mac. 4K (beta) sắc nét hơn nhưng có thể bị giật.</string>
+    <string name="setting_pin_simple">Yêu cầu mã PIN</string>
+    <string name="setting_pin_simple_desc">Hiện mã 4 chữ số trên TV trước khi thiết bị mới có thể phản chiếu</string>
+    <string name="setting_lowest_latency">Độ trễ thấp nhất</string>
+    <string name="setting_lowest_latency_desc">Giảm độ trễ khi gõ phím và dùng chuột. Trên một số TV, hình có thể hơi giật; tắt đi để hình ổn định nhất.</string>
+    <string name="setting_about">Giới thiệu</string>
+    <string name="setting_about_desc">Phiên bản, giấy phép và mã nguồn</string>
+    <string name="setting_advanced">Nâng cao</string>
+    <string name="setting_advanced_desc">Tùy chọn kỹ thuật. Hầu hết mọi người không bao giờ cần đến.</string>
+    <string name="setting_logs">Hiện nhật ký</string>
+    <string name="setting_logs_desc">Nhật ký kỹ thuật để khắc phục sự cố</string>
+    <string name="setting_receiver_power">Tắt bộ thu</string>
+    <string name="setting_receiver_power_desc">Máy Mac sẽ không thấy TV này cho đến khi bạn bật lại</string>
+    <string name="setting_receiver_power_on">Bật bộ thu</string>
+    <string name="setting_receiver_power_on_desc">Cho phép máy Mac tìm thấy TV này lần nữa</string>
+    <string name="dialog_stop_title">Tắt bộ thu?</string>
+    <string name="dialog_stop_text">Máy Mac sẽ không thể tìm thấy TV này cho đến khi bạn bật lại.</string>
+    <string name="btn_turn_off">Tắt</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_reset">Đặt lại</string>
+    <string name="setting_reset_all">Đặt lại mọi cài đặt</string>
+    <string name="setting_reset_all_desc">Đưa Telebeam về như lúc mới cài. Giao dịch mua của bạn vẫn được giữ.</string>
+    <string name="dialog_reset_title">Đặt lại mọi cài đặt?</string>
+    <string name="dialog_reset_text">Mọi cài đặt, kể cả tên TV, sẽ trở về mặc định. Giao dịch mua của bạn vẫn được giữ và máy Mac đang phản chiếu vẫn kết nối.</string>
+    <string name="setting_reset_done">Đã đặt lại cài đặt.</string>
+
+    <string name="about_version">Phiên bản %1$s</string>
+    <string name="about_credits">Dựa trên AirPlay Receiver của jqssun (GPL-3.0) và UxPlay. Sử dụng FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Phần mềm này sử dụng mã của FFmpeg (https://ffmpeg.org) theo giấy phép LGPLv2.1. Chỉ các bộ giải mã âm thanh ALAC và AAC của FFmpeg được tích hợp; mã nguồn của chúng có trong kho mã nguồn của ứng dụng này.</string>
+    <string name="about_license_note">Ứng dụng này là phần mềm tự do theo Giấy phép Công cộng GNU v3.0. Bạn có thể lấy, sửa đổi và chia sẻ mã nguồn của ứng dụng.</string>
+    <string name="about_source">Mã nguồn: %1$s</string>
+    <string name="about_view_license">Xem giấy phép (GPL-3.0)</string>
+    <string name="about_privacy">Chính sách quyền riêng tư: %1$s</string>
+    <string name="about_privacy_button">Chính sách quyền riêng tư</string>
+    <string name="about_trademark">Không liên kết với Apple. AirPlay và Mac là nhãn hiệu của Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Phản chiếu máy Mac lên TV này</string>
+    <string name="paywall_subtitle">Chọn một gói để bắt đầu. Máy Mac sẽ tìm thấy TV này ngay khi Telebeam được mở khóa.</string>
+    <string name="paywall_benefit_quality">Màn hình Mac trên màn hình lớn, lên đến 4K</string>
+    <string name="paywall_benefit_unlimited">Không giới hạn thời gian, không quảng cáo</string>
+    <string name="paywall_benefit_updates">Bao gồm mọi bản cập nhật sau này</string>
+    <string name="paywall_not_now">Để sau</string>
+    <string name="paywall_terms">Gói tháng tự động gia hạn với giá %1$s/tháng cho đến khi bạn hủy trong Google Play. Tính phí vào Tài khoản Google của bạn.</string>
+    <string name="paywall_terms_no_price">Google Play xử lý thanh toán và tính phí vào Tài khoản Google của bạn.</string>
+    <string name="plan_monthly">Hằng tháng</string>
+    <string name="plan_lifetime">Trọn đời</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="other">MIỄN PHÍ %d NGÀY</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="other">Miễn phí %1$d ngày, sau đó %2$s/tháng. Hủy bất cứ lúc nào.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="other">trong %d ngày</item>
+    </plurals>
+    <string name="plan_monthly_detail">Hủy bất cứ lúc nào trong Google Play.</string>
+    <string name="plan_free">Miễn phí</string>
+    <string name="plan_per_month">mỗi tháng</string>
+    <string name="plan_lifetime_badge">TRẢ MỘT LẦN</string>
+    <string name="plan_lifetime_detail">Mở khóa ngay. Dùng mãi mãi, không cần gói thuê bao.</string>
+    <string name="plan_one_time">một lần</string>
+    <string name="plan_price_from_play">Giá do Google Play hiển thị</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited đang bật</string>
+    <string name="unlimited_owned_monthly">Gói tháng. Chọn để quản lý hoặc hủy trong Google Play.</string>
+    <string name="unlimited_owned_generic">Cảm ơn bạn đã ủng hộ Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Trọn đời. Cảm ơn bạn đã ủng hộ Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited đang bật. Cảm ơn bạn!</string>
+    <string name="unlimited_pending_desc">Thanh toán đang chờ xử lý. Telebeam sẽ mở khóa ngay khi Google Play xác nhận.</string>
+    <string name="unlimited_restore">Khôi phục giao dịch mua</string>
+    <string name="redeem_code">Đổi mã</string>
+    <string name="redeem_title">Đổi mã Google Play</string>
+    <string name="redeem_text">Nhập mã (không bắt buộc), Google Play sẽ mở ra để đổi mã. Telebeam tự mở khóa khi bạn quay lại.</string>
+    <string name="redeem_field">Mã</string>
+    <string name="redeem_open_play">Mở Google Play</string>
+    <string name="redeem_settings_desc">Bạn có mã khuyến mãi hoặc mã quà tặng? Đổi mã qua Google Play.</string>
+    <string name="redeem_elsewhere">Đổi mã tại play.google.com/redeem trên điện thoại hoặc máy tính, rồi quay lại đây.</string>
+    <string name="unlimited_restored">Telebeam Unlimited đã được mở khóa.</string>
+    <string name="unlimited_not_found">Không tìm thấy giao dịch mua nào trên Tài khoản Google này.</string>
+    <string name="unlimited_play_unavailable">Hiện không kết nối được với Google Play. Hãy thử lại sau giây lát.</string>
+    <string name="unlimited_manage_in_play">Mở Google Play → Thanh toán và gói thuê bao để quản lý gói của bạn.</string>
+    <string name="section_mirroring">Phản chiếu</string>
+</resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Telebeam</string>
+    <string name="app_name" translatable="false">Telebeam</string>
 
     <!-- Notification -->
     <string name="notification_channel">Screen mirroring receiver</string>
@@ -65,7 +65,7 @@
     <string name="scale_best_fit">Best fit</string>
     <string name="scale_stretch">Stretch</string>
     <string name="scale_crop">Crop</string>
-    <string name="scale_hundred_percent">100%</string>
+    <string name="scale_hundred_percent" translatable="false">100%</string>
 
     <!-- Dialogs -->
     <string name="dialog_pin_title">Enter this PIN on your device</string>
@@ -125,7 +125,7 @@
     <string name="chip_usb_only">USB only</string>
     <string name="setting_resolution">Resolution</string>
     <string name="setting_resolution_desc">Video resolution advertised to senders</string>
-    <string name="setting_resolution_placeholder">[W]x[H]</string>
+    <string name="setting_resolution_placeholder" translatable="false">[W]x[H]</string>
     <string name="setting_resolution_width">Width</string>
     <string name="setting_resolution_height">Height</string>
     <string name="setting_max_fps">Maximum FPS</string>
@@ -138,9 +138,9 @@
     <string name="chip_device_landscape">Landscape</string>
 
     <!-- Settings: Decode -->
-    <string name="setting_h265">H.265 (HEVC)</string>
+    <string name="setting_h265" translatable="false">H.265 (HEVC)</string>
     <string name="setting_h265_desc">Auto only uses H.265 decoders known to work</string>
-    <string name="setting_enforce_sdr">MediaFormat.KEY_COLOR_TRANSFER</string>
+    <string name="setting_enforce_sdr" translatable="false">MediaFormat.KEY_COLOR_TRANSFER</string>
     <string name="setting_enforce_sdr_desc">Tag video as limited SDR; disable to allow HDR sources to pass through</string>
     <string name="setting_sw_alac">Force software ALAC decoder</string>
     <string name="setting_sw_alac_desc">Always use software ALAC decoder instead of system decoder, may affect latency</string>
@@ -152,11 +152,11 @@
     <!-- Settings: Developer -->
     <string name="setting_developer_options">Developer options</string>
     <string name="setting_developer_options_desc">Show options for advanced users</string>
-    <string name="setting_key_allow_frame_drop">MediaFormat.KEY_ALLOW_FRAME_DROP</string>
+    <string name="setting_key_allow_frame_drop" translatable="false">MediaFormat.KEY_ALLOW_FRAME_DROP</string>
     <string name="setting_key_allow_frame_drop_desc">Allow video decoders to drop frames internally to keep up on Android 10+</string>
-    <string name="setting_realtime_decoder_priority">MediaFormat.KEY_PRIORITY</string>
+    <string name="setting_realtime_decoder_priority" translatable="false">MediaFormat.KEY_PRIORITY</string>
     <string name="setting_realtime_decoder_priority_desc">Request real-time scheduling for audio decoder</string>
-    <string name="setting_operating_rate">MediaFormat.KEY_OPERATING_RATE</string>
+    <string name="setting_operating_rate" translatable="false">MediaFormat.KEY_OPERATING_RATE</string>
     <string name="setting_operating_rate_desc">Request maximum operating rate from decoder</string>
     <string name="chip_auto">Auto</string>
     <string name="chip_4k_beta">4K · Beta</string>
@@ -195,7 +195,7 @@
     <string name="debug_section_video">Video</string>
     <string name="debug_section_audio">Audio</string>
     <string name="debug_section_network">Network</string>
-    <string name="debug_video">%1$s %2$s</string>
+    <string name="debug_video" translatable="false">%1$s %2$s</string>
     <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
     <string name="debug_frames_drops">Frames: %1$d  Drops: %2$d</string>
     <string name="debug_jitter">Jitter: %1$s</string>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_channel">Ontvanger voor synchrone weergave</string>
+    <string name="notification_title">Klaar voor synchrone weergave</string>
+    <string name="notification_text">Je Mac vindt deze tv via Synchrone weergave</string>
+    <string name="notification_pin_title">Pincode vereist</string>
+    <string name="notification_pin_text">PIN: %1$s</string>
+    <string name="stop_service">Stop</string>
+
+    <string name="tab_overview">Overzicht</string>
+    <string name="tab_logs">Logboek</string>
+    <string name="tab_settings">Instellingen</string>
+
+    <string name="server_stopped">Server gestopt</string>
+    <string name="waiting_for_connection">Wachten op verbinding…</string>
+    <string name="waiting_for_playback">Druk op start op de zender…</string>
+    <string name="error_starting_server">Fout bij starten van server</string>
+    <string name="connected_count">%d verbonden</string>
+    <string name="error_label">Fout</string>
+    <string name="stopped_label">Gestopt</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_allow">Sta toe</string>
+    <string name="btn_open_settings">Open instellingen</string>
+    <string name="local_network_label">Toegang tot apparaten in de buurt nodig</string>
+    <string name="local_network_desc">Sta toegang tot apparaten in de buurt toe zodat je Mac, iPhone of iPad deze tv kan vinden</string>
+    <string name="unknown_track">Onbekend</string>
+
+    <string name="cd_pip">Beeld-in-beeld</string>
+    <string name="cd_fullscreen">Volledig scherm</string>
+    <string name="cd_exit_fullscreen">Volledig scherm sluiten</string>
+    <string name="cd_cover_art">Albumhoes</string>
+    <string name="cd_play_pause">Afspelen/pauzeren</string>
+    <string name="cd_rewind">Terugspoelen</string>
+    <string name="cd_fast_forward">Vooruitspoelen</string>
+    <string name="volume_server">Volume ontvanger</string>
+    <string name="volume_client">Volume zender</string>
+    <string name="volume_value">%1$d%%</string>
+    <string name="cd_download">Download video</string>
+    <string name="cd_cancel_download">Annuleer download</string>
+
+    <string name="download_saved">Bewaard in %1$s</string>
+    <string name="download_failed">Download mislukt</string>
+
+    <string name="gesture_seek_seconds">%1$d seconden</string>
+    <string name="seconds_short">%1$d s</string>
+    <string name="select_playback_speed">Afspeelsnelheid</string>
+    <string name="cd_reset_speed">Snelheid herstellen</string>
+    <string name="skip_silence">Stiltes overslaan</string>
+
+    <string name="cd_back">Terug</string>
+    <string name="cd_copy_url">Kopieer video-URL</string>
+    <string name="cd_rotate">Draai scherm</string>
+    <string name="cd_lock_controls">Bediening vergrendelen</string>
+    <string name="cd_unlock_controls">Bediening ontgrendelen</string>
+    <string name="scale_best_fit">Passend</string>
+    <string name="scale_stretch">Uitrekken</string>
+    <string name="scale_crop">Bijsnijden</string>
+
+    <string name="dialog_pin_title">Voer deze pincode in op je apparaat</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="btn_export">Exporteer</string>
+    <string name="btn_clear">Wis</string>
+    <string name="export_logs_chooser_title">Exporteer logboek</string>
+
+    <string name="section_server">Server</string>
+    <string name="section_connection">Verbinding</string>
+    <string name="section_display">Weergave</string>
+    <string name="section_decode">Decoderen</string>
+    <string name="section_developer">Ontwikkelaar</string>
+
+    <string name="setting_server_name">Servernaam</string>
+    <string name="setting_server_port">Serverpoort</string>
+    <string name="setting_auto_start">Server automatisch starten</string>
+    <string name="setting_auto_start_desc">Start de ontvanger wanneer de app opent</string>
+    <string name="setting_boot_auto_start">Server starten bij opstarten</string>
+    <string name="setting_boot_auto_start_desc">Start de ontvanger wanneer de tv aangaat</string>
+    <string name="setting_run_in_background">Op de achtergrond draaien</string>
+    <string name="setting_run_in_background_desc">Laat de server draaien nadat je de app verlaat</string>
+
+    <string name="setting_require_pin">Pincode vereisen (bèta)</string>
+    <string name="setting_require_pin_desc">Vereis een pincode van 4 cijfers voor elke nieuwe verbinding</string>
+    <string name="setting_allow_new_conn">Nieuwe verbindingen toestaan</string>
+    <string name="setting_allow_new_conn_desc">Verbreek de huidige zender als een nieuwe verbinding maakt</string>
+
+    <string name="setting_idle_preview">Voorvertoning in rust</string>
+    <string name="setting_idle_preview_desc">Toon het videovlak tijdens het wachten op een verbinding</string>
+    <string name="setting_auto_fullscreen">Automatisch volledig scherm</string>
+    <string name="setting_auto_fullscreen_desc">Ga naar volledig scherm als een zender verbinding maakt</string>
+    <string name="setting_keep_screen_on">Scherm aan houden</string>
+    <string name="setting_keep_screen_on_desc">Voorkom slaapstand zolang er een zender verbonden is</string>
+    <string name="setting_advertise_video">Video afspelen aanbieden</string>
+    <string name="setting_advertise_video_desc">Indien uit, worden video’s alleen als audio gestreamd</string>
+    <string name="setting_advertise_mirroring">Synchrone weergave aanbieden</string>
+    <string name="setting_advertise_mirroring_desc">Indien uit, is het apparaat verborgen voor synchrone weergave</string>
+    <string name="setting_advertise_audio">AirPlay-audio aanbieden</string>
+    <string name="setting_advertise_audio_desc">Indien uit, werkt het apparaat alleen voor synchrone weergave en is het verborgen voor mediaspelers</string>
+    <string name="setting_alac">ALAC-codec aanbieden</string>
+    <string name="setting_alac_desc">Bied ALAC aan in het mDNS-record; gebruikt voor muziekstreaming</string>
+    <string name="setting_aac">AAC-codec aanbieden</string>
+    <string name="setting_aac_desc">Bied AAC-ELD/AAC-LC aan in het mDNS-record; gebruikt voor geluid bij synchrone weergave</string>
+    <string name="setting_launch_on_connect">Toon Telebeam als een Mac verbinding maakt</string>
+    <string name="setting_launch_on_connect_desc">Haalt het beeld naar voren. Als de tv dat blokkeert, verschijnt er een melding.</string>
+    <string name="setting_discovery">Vindbaar via</string>
+    <string name="setting_discovery_all_desc">Adverteer op alle bruikbare interfaces. Gebruikt NsdManager.</string>
+    <string name="setting_discovery_usb_desc">Adverteer alleen via USB-tethering om een bekabelde verbinding af te dwingen. Gebruikt een eigen mDNS-responder.</string>
+    <string name="chip_all_networks">Alle netwerken</string>
+    <string name="chip_usb_only">Alleen USB</string>
+    <string name="setting_resolution">Resolutie</string>
+    <string name="setting_resolution_desc">Videoresolutie die aan zenders wordt aangeboden</string>
+    <string name="setting_resolution_width">Breedte</string>
+    <string name="setting_resolution_height">Hoogte</string>
+    <string name="setting_max_fps">Maximale FPS</string>
+    <string name="setting_max_fps_desc">Maximale framerate die aan zenders wordt aangeboden</string>
+    <string name="setting_max_fps_placeholder">FPS</string>
+    <string name="setting_overscanned">Overscan</string>
+    <string name="setting_overscanned_desc">Voeg een pixelrand toe voor schermen met overscan</string>
+    <string name="chip_custom">Aangepast</string>
+    <string name="chip_device_portrait">Staand</string>
+    <string name="chip_device_landscape">Liggend</string>
+
+    <string name="setting_h265_desc">Automatisch gebruikt alleen H.265-decoders waarvan bekend is dat ze werken</string>
+    <string name="setting_enforce_sdr_desc">Markeer video als beperkte SDR; schakel uit om HDR-bronnen door te laten</string>
+    <string name="setting_sw_alac">Software-ALAC-decoder afdwingen</string>
+    <string name="setting_sw_alac_desc">Gebruik altijd de software-ALAC-decoder in plaats van de systeemdecoder; kan de latentie beïnvloeden</string>
+    <string name="setting_sw_aac">Software-AAC-decoder afdwingen</string>
+    <string name="setting_sw_aac_desc">Gebruik altijd de software-AAC-decoder in plaats van de systeemdecoder; kan de latentie beïnvloeden</string>
+    <string name="setting_sync_client_volume">Mac regelt tv-volume</string>
+    <string name="setting_sync_client_volume_desc">De volumetoetsen van de Mac regelen het tv-volume tijdens synchrone weergave. Zet uit om alleen de afstandsbediening te gebruiken.</string>
+
+    <string name="setting_developer_options">Opties voor ontwikkelaars</string>
+    <string name="setting_developer_options_desc">Toon opties voor gevorderde gebruikers</string>
+    <string name="setting_key_allow_frame_drop_desc">Laat videodecoders op Android 10+ intern frames overslaan om bij te blijven</string>
+    <string name="setting_realtime_decoder_priority_desc">Vraag realtime planning aan voor de audiodecoder</string>
+    <string name="setting_operating_rate_desc">Vraag de maximale verwerkingssnelheid van de decoder</string>
+    <string name="chip_auto">Auto</string>
+    <string name="chip_4k_beta">4K · bèta</string>
+    <string name="chip_120_beta">120 · bèta</string>
+    <string name="setting_frame_rate">Framerate</string>
+    <string name="setting_frame_rate_desc">60 fps werkt met elke Mac. 120 (bèta) vereist een Mac met een 120-Hz ProMotion-scherm.</string>
+    <string name="chip_on">Aan</string>
+    <string name="chip_off">Uit</string>
+    <string name="setting_low_latency">Lage latentie</string>
+    <string name="setting_low_latency_desc">Decodeer audio met lage latentie; dit kost meer stroom en CPU</string>
+    <string name="setting_scheduled_output_buffer_release">Uitgelijnde frametiming</string>
+    <string name="setting_scheduled_output_buffer_release_desc">Plan elk gedecodeerd frame op de VSYNC die past bij zijn presentatietijdstempel</string>
+    <string name="setting_audio_delay">Audiovertraging overschrijven</string>
+    <string name="setting_audio_delay_desc">Stel een eigen audiolatentie in die aan de zender wordt gemeld</string>
+    <string name="audio_delay_value">%d ms</string>
+    <string name="setting_audio_auto_buffer">Automatische softwareaudiobuffer</string>
+    <string name="setting_audio_auto_buffer_desc">Past de softwareaudiobuffer aan op netwerk en apparaatprestaties; de schuifregelaar bepaalt hoeveel jitter de buffer kan opvangen</string>
+    <string name="audio_adaptive_value">%1$d%% (%2$s)</string>
+    <string-array name="audio_adaptive_step_names">
+        <item>Laagste latentie</item>
+        <item>Lagere latentie</item>
+        <item>Gebalanceerd</item>
+        <item>Stabieler</item>
+        <item>Stabielst</item>
+    </string-array>
+    <string name="setting_audio_cushion_ms">Softwareaudiobuffer (ms)</string>
+    <string name="setting_audio_cushion_ms_desc">Buffer tegen netwerk- en decoderjitter: korter betekent minder latentie, langer betekent minder haperingen</string>
+    <string name="setting_oboe_buffer_frames">Hardware-uitvoerbuffer (frames)</string>
+    <string name="setting_oboe_buffer_frames_desc">Streambuffer tussen deze app en het audioapparaat, vangt alleen CPU-planningsjitter op. Laat op 0 voor automatische grootte.</string>
+    <string name="setting_debug_overlay">Debug-overlay tonen</string>
+    <string name="setting_debug_overlay_desc">Toon streamstatistieken over de video: codec, FPS, bitrate, jitter, frames, drops</string>
+    <string name="setting_benchmark_log">Debuglogboek inschakelen</string>
+    <string name="setting_benchmark_log_desc">Schrijf streamstatistieken naar logcat: codec, FPS, bitrate, jitter, frames, drops</string>
+
+    <string name="debug_section_video">Video</string>
+    <string name="debug_section_audio">Audio</string>
+    <string name="debug_section_network">Netwerk</string>
+    <string name="debug_fps_bitrate">FPS: %1$d  Bitrate: %2$s</string>
+    <string name="debug_frames_drops">Frames: %1$d  Drops: %2$d</string>
+    <string name="debug_jitter">Jitter: %1$s</string>
+    <string name="debug_audio">%1$s  Ontvanger: %2$d%%  Zender: %3$d%%</string>
+    <string name="debug_audio_buffer">Buffer: %1$d ms (doel: %2$d ms)</string>
+    <string name="debug_audio_glitch">Haperingen: trim=%1$d drop=%2$d sil=%3$d ur=%4$d xrun=%5$d</string>
+    <string name="debug_audio_decode">Decoderen: %1$s</string>
+    <string name="debug_clients">Zenders: %1$d</string>
+
+    <string name="cd_settings">Instellingen</string>
+    <string name="status_ready">Klaar</string>
+    <string name="status_starting">Starten…</string>
+    <string name="status_off">Ontvanger staat uit</string>
+    <string name="status_error">Kan de ontvanger niet starten</string>
+    <string name="btn_turn_on">Zet aan</string>
+    <string name="btn_try_again">Probeer opnieuw</string>
+    <string name="home_mac_title">Je Mac weergeven op de tv</string>
+    <string name="home_step1">Klik op het symbool van Bedieningspaneel in de menubalk van de Mac (rechtsboven)</string>
+    <string name="home_step2">Klik op Synchrone weergave</string>
+    <string name="home_step3">Kies “%1$s”</string>
+    <string name="home_iphone">Op iPhone of iPad: open Bedieningspaneel, tik op Synchrone weergave en kies “%1$s”.</string>
+    <string name="home_mirror_hint">Leeg bureaublad op de tv in plaats van het scherm van je Mac? Op de Mac: Systeeminstellingen → Beeldschermen → “Indien aangesloten op tv” → Geef hele scherm weer.</string>
+    <string name="home_screensaver_hint">Beeld verborgen door de schermbeveiliging? Druk op een willekeurige knop op je afstandsbediening.</string>
+    <string name="home_same_wifi">Mac en tv moeten op hetzelfde wifinetwerk zitten</string>
+    <string name="home_tv_address">Tv-adres: %1$s</string>
+    <string name="home_connecting">Je Mac maakt verbinding…</string>
+    <string name="home_connecting_named">%1$s maakt verbinding…</string>
+    <string name="home_taking_over">%1$s neemt het over…</string>
+    <string name="home_connecting_hint">Verschijnt er na een paar seconden niets? Kies deze tv dan opnieuw in Synchrone weergave op de Mac.</string>
+    <string name="home_stopped_title">Weergave gestopt</string>
+    <string name="home_stopped_desc">Hij is gestopt op de Mac, of de wifiverbinding is weggevallen. Kies “%1$s” in Synchrone weergave om opnieuw te beginnen.</string>
+    <string name="toast_mirroring">Weergave gestart</string>
+    <string name="controls_hint">Druk op OK voor opties</string>
+    <string name="controls_back_hides">Druk op Terug om te verbergen</string>
+    <string name="controls_hide">Verberg</string>
+    <string name="setting_applies_next_connection">Bewaard. Werkt vanaf de volgende keer dat je Mac verbinding maakt.</string>
+    <string name="toast_took_over">%1$s heeft de tv overgenomen</string>
+    <string name="home_stopped_mac_title">Weergave gestopt op de Mac</string>
+    <string name="home_stopped_mac_desc">Kies “%1$s” in Synchrone weergave om opnieuw te beginnen.</string>
+    <string name="home_lost_title">Verbinding verbroken – controleer wifi</string>
+    <string name="home_lost_desc">Zorg dat Mac en tv op hetzelfde wifinetwerk zitten en kies dan opnieuw “%1$s”.</string>
+    <string name="home_network_title">Het netwerk van de tv is gewijzigd</string>
+    <string name="home_network_desc">Verbind de Mac met het wifinetwerk van de tv en kies dan opnieuw “%1$s”.</string>
+    <string name="toast_mirroring_from">Weergave vanaf %1$s</string>
+
+    <string name="setting_tv_name">Tv-naam</string>
+    <string name="setting_tv_name_desc">De naam die je Mac toont in Synchrone weergave. Laat leeg om “%1$s” te gebruiken.</string>
+    <string name="setting_picture_quality">Beeldkwaliteit</string>
+    <string name="setting_picture_quality_desc">Auto gebruikt 1080p, het vloeiendst vanaf een Mac. 4K (bèta) is scherper maar kan haperen.</string>
+    <string name="setting_pin_simple">Vraag om pincode</string>
+    <string name="setting_pin_simple_desc">Toon een code van 4 cijfers op de tv voordat een nieuw apparaat kan verbinden</string>
+    <string name="setting_lowest_latency">Laagste latentie</string>
+    <string name="setting_lowest_latency_desc">Minder vertraging bij typen en muis. Op sommige tv’s kan het beeld licht haperen; zet uit voor het stabielste beeld.</string>
+    <string name="setting_about">Over</string>
+    <string name="setting_about_desc">Versie, licenties en broncode</string>
+    <string name="setting_advanced">Geavanceerd</string>
+    <string name="setting_advanced_desc">Technische opties. De meeste mensen hebben ze nooit nodig.</string>
+    <string name="setting_logs">Toon logboek</string>
+    <string name="setting_logs_desc">Technisch logboek voor probleemoplossing</string>
+    <string name="setting_receiver_power">Zet ontvanger uit</string>
+    <string name="setting_receiver_power_desc">Je Mac ziet deze tv pas weer als je hem aanzet</string>
+    <string name="setting_receiver_power_on">Zet ontvanger aan</string>
+    <string name="setting_receiver_power_on_desc">Laat je Mac deze tv weer vinden</string>
+    <string name="dialog_stop_title">Ontvanger uitzetten?</string>
+    <string name="dialog_stop_text">Je Mac kan deze tv pas weer vinden als je hem weer aanzet.</string>
+    <string name="btn_turn_off">Zet uit</string>
+    <string name="btn_cancel">Annuleer</string>
+    <string name="btn_reset">Herstel</string>
+    <string name="setting_reset_all">Herstel alle instellingen</string>
+    <string name="setting_reset_all_desc">Terug naar hoe Telebeam begon. Je aankoop blijft behouden.</string>
+    <string name="dialog_reset_title">Alle instellingen herstellen?</string>
+    <string name="dialog_reset_text">Alle instellingen, ook de tv-naam, gaan terug naar de standaardwaarde. Je aankoop blijft behouden en een Mac die weergeeft, blijft verbonden.</string>
+    <string name="setting_reset_done">Instellingen hersteld.</string>
+
+    <string name="about_version">Versie %1$s</string>
+    <string name="about_credits">Gebaseerd op AirPlay Receiver van jqssun (GPL-3.0) en UxPlay. Gebruikt FFmpeg (LGPL).</string>
+    <string name="about_ffmpeg">Deze software gebruikt code van FFmpeg (https://ffmpeg.org) onder de LGPLv2.1-licentie. Alleen de ALAC- en AAC-audiodecoders zijn ingebouwd; de broncode staat in de broncoderepository van deze app.</string>
+    <string name="about_license_note">Deze app is vrije software onder de GNU General Public License v3.0. Je mag de broncode verkrijgen, wijzigen en delen.</string>
+    <string name="about_source">Broncode: %1$s</string>
+    <string name="about_view_license">Bekijk licentie (GPL-3.0)</string>
+    <string name="about_privacy">Privacybeleid: %1$s</string>
+    <string name="about_privacy_button">Privacybeleid</string>
+    <string name="about_trademark">Niet verbonden aan Apple. AirPlay en Mac zijn handelsmerken van Apple Inc.</string>
+    <string name="about_license_title">GNU General Public License v3.0</string>
+    <string name="paywall_title">Toon je Mac op deze tv</string>
+    <string name="paywall_subtitle">Kies een abonnement om te beginnen. Je Mac vindt deze tv zodra hij ontgrendeld is.</string>
+    <string name="paywall_benefit_quality">Het scherm van je Mac op het grote scherm, tot 4K</string>
+    <string name="paywall_benefit_unlimited">Geen tijdslimiet, geen advertenties</string>
+    <string name="paywall_benefit_updates">Alle toekomstige updates inbegrepen</string>
+    <string name="paywall_not_now">Niet nu</string>
+    <string name="paywall_terms">Maandelijks wordt verlengd voor %1$s/maand tot je opzegt in Google Play. Wordt afgerekend via je Google-account.</string>
+    <string name="paywall_terms_no_price">De betaling loopt via Google Play en wordt afgerekend via je Google-account.</string>
+    <string name="plan_monthly">Maandelijks</string>
+    <string name="plan_lifetime">Lifetime</string>
+    <plurals name="plan_trial_badge">
+        <item quantity="one">%d DAG GRATIS</item>
+        <item quantity="other">%d DAGEN GRATIS</item>
+    </plurals>
+    <plurals name="plan_monthly_trial_detail">
+        <item quantity="one">%1$d dag gratis, daarna %2$s/maand. Altijd opzegbaar.</item>
+        <item quantity="other">%1$d dagen gratis, daarna %2$s/maand. Altijd opzegbaar.</item>
+    </plurals>
+    <plurals name="plan_for_days">
+        <item quantity="one">voor %d dag</item>
+        <item quantity="other">voor %d dagen</item>
+    </plurals>
+    <string name="plan_monthly_detail">Altijd opzegbaar in Google Play.</string>
+    <string name="plan_free">Gratis</string>
+    <string name="plan_per_month">per maand</string>
+    <string name="plan_lifetime_badge">EENMALIG</string>
+    <string name="plan_lifetime_detail">Direct ontgrendeld. Voor altijd van jou, geen abonnement.</string>
+    <string name="plan_one_time">eenmalig</string>
+    <string name="plan_price_from_play">Prijs volgens Google Play</string>
+    <string name="unlimited_title">Telebeam Unlimited</string>
+    <string name="unlimited_owned_title">Telebeam Unlimited is actief</string>
+    <string name="unlimited_owned_monthly">Maandabonnement. Selecteer om te beheren of op te zeggen in Google Play.</string>
+    <string name="unlimited_owned_generic">Bedankt voor je steun aan Telebeam!</string>
+    <string name="unlimited_owned_lifetime">Lifetime. Bedankt voor je steun aan Telebeam!</string>
+    <string name="unlimited_thanks">Telebeam Unlimited is actief. Bedankt!</string>
+    <string name="unlimited_pending_desc">Betaling in behandeling. Telebeam wordt ontgrendeld zodra Google Play hem bevestigt.</string>
+    <string name="unlimited_restore">Herstel aankopen</string>
+    <string name="redeem_code">Wissel code in</string>
+    <string name="redeem_title">Wissel een Google Play-code in</string>
+    <string name="redeem_text">Typ je code (optioneel) en Google Play opent om hem in te wisselen. Telebeam wordt vanzelf ontgrendeld als je terugkomt.</string>
+    <string name="redeem_field">Code</string>
+    <string name="redeem_open_play">Open Google Play</string>
+    <string name="redeem_settings_desc">Heb je een promo- of cadeaucode? Wissel hem in via Google Play.</string>
+    <string name="redeem_elsewhere">Wissel de code in op play.google.com/redeem op een telefoon of computer en kom dan hier terug.</string>
+    <string name="unlimited_restored">Telebeam Unlimited is ontgrendeld.</string>
+    <string name="unlimited_not_found">Geen aankoop gevonden op dit Google-account.</string>
+    <string name="unlimited_play_unavailable">Google Play is nu niet bereikbaar. Probeer het zo opnieuw.</string>
+    <string name="unlimited_manage_in_play">Open Google Play → Betalingen en abonnementen om je abonnement te beheren.</string>
+    <string name="section_mirroring">Synchrone weergave</string>
+</resources>

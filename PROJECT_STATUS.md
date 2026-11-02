@@ -1,5 +1,29 @@
 # Mirror TV — project status
 
+## 1.0.2 (build 106): 31 LANGUAGES (2 Nov 2026, translate side chat)
+- Sebastian asked (2 Nov) for the app and the Play listing in every major language, free methods only. Translated by
+  Claude (no paid APIs), not reviewed by native speakers.
+- App: `app/src/main/res/values-<lang>/strings.xml` for de, fr, es, es-419 (`values-b+es+419`), it, pt-BR, nl, pl, ru,
+  uk, tr, ja, ko, zh-CN, zh-TW, sv, nb, da, fi, cs, sk, sl, hr, hu, ro, el, ar, hi, id (`values-in`), th, vi. Code-only
+  strings (MediaFormat.KEY_*, H.265, 100%, app name…) are marked translatable="false" in `values/strings.xml`.
+- Mac menu names (Control Center, Screen Mirroring, System Settings, Displays, "When connected to TV", "Mirror Entire
+  Screen") come from macOS 27's own localization files: `docs/l10n/mac_terms.json`. Translator brief:
+  `docs/l10n/BRIEF.md`. Check after any edit: `python3 docs/l10n/check_strings.py values-de values-fr …` (names,
+  placeholders, apostrophe/quote escapes).
+- Checked on the TV emulator (MirrorTV_API34) in German, Finnish and Arabic: paywall, Home and Settings fit with no
+  cut-off text; Arabic mirrors right-to-left correctly. Other languages not looked at on screen.
+- Play listing: 7 new locales in `fastlane/metadata/android/` (es-419, hr, ar, hi-IN, id, th, vi; hi/id/th titles keep
+  English "Screen Mirroring" for search). Not in Play Console yet: the Telebeam owner chat adds them with the 24-locale
+  draft. Total 31 listing locales.
+- Release file: `dist/telebeam-1.0.2-106.aab`. Upload only after 1.0.1 (105) is approved; Sebastian drags it into
+  Play Console (over the Chrome tool's 10 MB limit).
+- Strings worth a native speaker's look: Lifetime plan name (kept "Lifetime" in de/nl/sv to match the listing; ja 買い切り,
+  fi Elinikäinen, el Εφ' όρου ζωής, sl Doživljenjsko), the "PAY ONCE" badge in every language, `setting_overscanned`
+  (often left as "Overscan"), Greek/Turkish/Finnish/Slavic lines that were reworded to keep the TV name in base form
+  (e.g. "took over the TV" → "the TV is now used by %1$s"), Arabic `home_step1` (says "top of the Mac's screen", no
+  left/right, because an Arabic Mac's menu bar is mirrored), Indonesian uses formal "Anda", German uses "spiegeln" for
+  mirroring (menu name stays "Bildschirmsynchronisierung"), Polish uses "klonowanie" (macOS's word).
+
 ## GOOGLE PLAY (29 Oct 2026): Telebeam app in Play Console
 - Play app "Telebeam: Screen Mirroring TV", package com.sebstech.telebeam, Console app id 4972999395680958705 (account: organization "Sebastian Skoic, s.p.", so no 12-tester rule). The old "Screenbridge" draft (com.sebstech.screenbridge) is left untouched; Sebastian can delete it.
 - Done: all App content forms (no ads, no data collected, 18+, content rating, reviewer access note), category Tools, contact telebeam@controlmymac.com, privacy policy https://sebstech24.github.io/mirror-tv/privacy.html (gh-pages branch), Android TV form factor, en-US listing (fastlane/metadata/android/en-US), icon 01, Telebeam feature graphic + TV banner, 3 real-TV screenshots (docs/screens/telebeam-tv-*.png).
