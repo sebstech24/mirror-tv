@@ -1,0 +1,87 @@
+/* telebeam.app guide pages: same look as index.html (its inline CSS). Built by _build/build-pages.py. */
+:root{--bg:#0b0e2a;--card:#151a42;--text:#eef0ff;--muted:#aab0d6;--accent:#7c8cff;--accent2:#c37bff;--line:rgba(255,255,255,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#2b1f7a 0,var(--bg) 60%) no-repeat,var(--bg);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;overflow-wrap:break-word}
+a{color:#c9cfff}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.skip-link{position:absolute;left:-9999px}
+.skip-link:focus{left:16px;top:16px;background:var(--card);padding:8px 12px;border-radius:8px;z-index:9}
+
+/* header */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;padding-bottom:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-weight:700;font-size:20px}
+.brand img{width:40px;height:40px;border-radius:10px}
+.nav-links{display:flex;align-items:center;gap:18px;font-size:15px}
+.nav-links a:not(.btn){color:var(--muted);text-decoration:none}
+.nav-links a:not(.btn):hover{color:var(--text)}
+
+/* buttons */
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600;padding:14px 22px;border-radius:12px}
+.btn-small{padding:8px 14px;font-size:15px;border-radius:10px}
+.btn-quiet{background:none;color:var(--text);box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.btn-ghost{background:var(--card);color:var(--muted)}
+
+/* hero */
+.hero{padding:40px 20px 48px}
+.pill{display:inline-block;margin:0 0 16px;padding:4px 12px;border-radius:999px;background:var(--card);color:var(--muted);font-size:14px}
+h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:0 0 16px;max-width:820px}
+.grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub,.lead{color:var(--muted);font-size:19px;margin:0 0 24px;max-width:760px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta-note,.price-note{color:var(--muted);font-size:14px;margin:12px 0 0}
+
+/* sections */
+section{padding:40px 0;border-top:1px solid var(--line)}
+.h2,h2{font-size:28px;line-height:1.25;margin:0 0 20px}
+h3{font-size:19px;margin:0 0 6px}
+.prose{max-width:760px}
+.prose h3{margin-top:28px}
+.prose h3:first-child{margin-top:0}
+.prose p{margin:0 0 14px}
+ul{padding-left:20px;margin:0 0 14px}
+li{margin:6px 0}
+
+/* cards and grids */
+.card,.step,.price{background:var(--card);border-radius:14px;padding:20px}
+.card p,.step p,.price p{margin:0;color:var(--muted)}
+.grid,.grid-uses{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid-2,.pricing{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.step::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);font-weight:700;margin-bottom:10px}
+.card.use{display:block;text-decoration:none;color:var(--text);transition:background .15s}
+.card.use:hover{background:#1d2357}
+.price.feat{box-shadow:inset 0 0 0 2px var(--accent)}
+.price ul{margin:10px 0 0;color:var(--muted)}
+.per{font-weight:600}
+
+/* FAQ */
+.faq details{background:var(--card);border-radius:12px;padding:14px 18px;margin:0 0 10px}
+.faq summary{cursor:pointer;font-weight:600}
+.faq details p{margin:10px 0 0;color:var(--muted)}
+
+/* closing call to action */
+.final{text-align:center}
+.final .lead{margin-left:auto;margin-right:auto}
+.final .cta{justify-content:center}
+
+/* drawing: Mac → Wi-Fi → TV */
+.sb-diagram{margin:0 auto 40px;max-width:520px;padding:0 20px;color:var(--muted)}
+.sb-diagram svg{width:100%;height:auto;display:block}
+.sb-diagram text{font:600 15px/1 system-ui,-apple-system,sans-serif}
+.sb-diagram .sb-wave{stroke:var(--accent)}
+.sb-diagram circle.sb-wave{fill:var(--accent)}
+
+/* footer */
+.site-footer{color:var(--muted);font-size:14px;padding:32px 0 48px;border-top:1px solid var(--line)}
+.flinks{display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:12px}
+.flinks b{color:var(--text)}
+.flangs{display:flex;gap:16px;margin-bottom:12px}
+.flangs [aria-current]{color:var(--text);text-decoration:none;font-weight:600}
+
+@media (max-width:760px){
+  .grid,.grid-uses,.grid-2,.pricing,.steps{grid-template-columns:1fr}
+  .nav-optional{display:none}
+  .hero{padding-top:16px}
+}
+@media (max-width:420px){.nav-links a:not(.btn){display:none}}
