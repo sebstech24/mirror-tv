@@ -1,4 +1,106 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Telebeam</title></head>
-<body style="font:17px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px">
-<h1>Telebeam</h1><p>Screen mirroring receiver for Android TV and Google TV.</p>
-<p><a href="privacy.html">Privacy policy</a> · <a href="https://github.com/sebstech24/mirror-tv">Source code (GPL-3.0)</a></p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telebeam: Screen Mirroring for your TV</title>
+<meta name="description" content="Mirror your Mac to Google TV or Android TV with the Screen Mirroring already built into macOS. No extra box, no cables, no ads.">
+<meta property="og:title" content="Telebeam: Screen Mirroring for your TV">
+<meta property="og:description" content="Mirror your Mac to Google TV or Android TV. 3 clicks, no extra box.">
+<meta property="og:image" content="https://telebeam.app/img/og.jpg">
+<meta property="og:url" content="https://telebeam.app/">
+<link rel="icon" href="img/icon.png">
+<style>
+:root{--bg:#0b0e2a;--card:#151a42;--text:#eef0ff;--muted:#aab0d6;--accent:#7c8cff;--accent2:#c37bff}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#2b1f7a 0,var(--bg) 60%);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:12px;padding:20px 0}
+header img{width:40px;height:40px;border-radius:10px}
+header b{font-size:20px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:40px 0 56px}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.08;margin:0 0 16px}
+.lead{color:var(--muted);font-size:19px;margin:0 0 28px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600;padding:14px 22px;border-radius:12px}
+.small{color:var(--muted);font-size:14px;margin-top:12px}
+.shot{width:100%;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+h2{font-size:28px;margin:0 0 20px}
+section{padding:40px 0;border-top:1px solid rgba(255,255,255,.08)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:s}
+.card{background:var(--card);border-radius:14px;padding:20px}
+.steps .card::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);font-weight:700;margin-bottom:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+ul{padding-left:20px;margin:0}
+li{margin:6px 0}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.price{font-size:30px;font-weight:700}
+footer{color:var(--muted);font-size:14px;padding:32px 0 48px;border-top:1px solid rgba(255,255,255,.08)}
+footer a,section a{color:#c9cfff}
+@media (max-width:760px){.hero,.grid2,.plans,.steps{grid-template-columns:1fr}.hero{padding-top:16px}}
+</style>
+</head>
+<body>
+<main>
+<header><img src="img/icon.png" alt=""><b>Telebeam</b></header>
+
+<div class="hero">
+  <div>
+    <h1>Your Mac on the big screen. No extra box.</h1>
+    <p class="lead">Telebeam turns your Google TV or Android TV into a receiver for the Screen Mirroring already built into your Mac. Also works with iPhone and iPad.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&amp;utm_source=telebeam.app&amp;utm_medium=web">Get it on Google Play</a>
+    <p class="small">7-day free trial on Monthly, or a one-time Lifetime unlock. No ads, no account.</p>
+  </div>
+  <img class="shot" src="img/home.jpg" alt="Telebeam home screen on a TV showing the three steps to mirror a Mac">
+</div>
+
+<section>
+  <h2>3 clicks on your Mac</h2>
+  <div class="steps">
+    <div class="card">Open Telebeam on your TV.</div>
+    <div class="card">On your Mac, click Control Center in the menu bar, then Screen Mirroring.</div>
+    <div class="card">Pick your TV. Your Mac's screen appears on the TV.</div>
+  </div>
+  <p class="small">Mac and TV just need to be on the same Wi-Fi. Nothing to install on the Mac.</p>
+</section>
+
+<section class="grid2">
+  <div>
+    <h2>What you can do</h2>
+    <ul>
+      <li>Mirror your MacBook or iMac, or use the TV as a big second display</li>
+      <li>Present slides and spreadsheets in a meeting room or classroom</li>
+      <li>Watch your own videos, photos and web pages with sound</li>
+      <li>Sharp picture with low delay, so the mouse feels right</li>
+      <li>Your Mac's volume keys can control the TV volume</li>
+    </ul>
+  </div>
+  <img class="shot" src="img/settings.jpg" alt="Telebeam settings on a TV: TV name, picture quality and frame rate">
+</section>
+
+<section>
+  <h2>Plans</h2>
+  <div class="plans">
+    <div class="card"><b>Monthly</b><div class="price">7 days free</div><p class="small">then billed monthly. Cancel anytime in Google Play.</p></div>
+    <div class="card"><b>Lifetime</b><div class="price">One payment</div><p class="small">Yours forever, all future updates included.</p></div>
+  </div>
+  <p class="small">Prices are shown in your local currency in Google Play.</p>
+</section>
+
+<section class="grid2">
+  <div>
+    <h2>Works on</h2>
+    <p>Google TV and Android TV: TVs from Sony, TCL, Hisense and Philips, Chromecast with Google TV, Google TV Streamer, Nvidia Shield and Android TV boxes. Tested on a Philips Google TV. If it doesn't run well on yours, write to us during your free trial.</p>
+  </div>
+  <div>
+    <h2>Private</h2>
+    <p>Everything stays on your home network. No ads, no tracking, no account, no data collected. Protected video from streaming services shows as a black screen; that is decided by the Mac and the service, not the TV.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Support: <a href="mailto:telebeam@controlmymac.com">telebeam@controlmymac.com</a> · <a href="privacy.html">Privacy policy</a> · <a href="https://github.com/sebstech24/mirror-tv">Source code (GPL-3.0)</a></p>
+  <p>Telebeam is an independent app and is not made, sponsored or approved by Apple Inc. Mac, macOS, iPhone, iPad and AirPlay are trademarks of Apple Inc. Google TV, Android TV and Google Play are trademarks of Google LLC. © 2026 Sebastian Skoic, s.p.</p>
+</footer>
+</main>
+</body>
+</html>
