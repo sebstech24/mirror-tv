@@ -33,7 +33,7 @@ Telebeam adalah open source (GPL-3.0). Kode sumber: https://github.com/sebstech2
 PERLU DIKETAHUI
 • Video yang dilindungi (misalnya dari layanan streaming yang memblokir perekaman layar) tampil sebagai layar hitam. Ini ditentukan oleh Mac dan layanan streaming, bukan oleh TV.
 • Jika TV Anda sudah punya penerima mirroring sendiri, Telebeam memilih nama lain agar keduanya muncul.
-• Dukungan: telebeam@controlmymac.com
+• Dukungan: support@telebeam.app
 • Kebijakan privasi: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam adalah aplikasi independen dan tidak dibuat, disponsori, atau disetujui oleh Apple Inc. Mac, macOS, iPhone, iPad, dan AirPlay adalah merek dagang Apple Inc., terdaftar di AS dan negara lain. Google TV dan Android TV adalah merek dagang Google LLC.

@@ -33,7 +33,7 @@ Telebeam là phần mềm mã nguồn mở (GPL-3.0). Mã nguồn: https://githu
 NÊN BIẾT
 • Video được bảo vệ (ví dụ từ các dịch vụ streaming chặn ghi màn hình) sẽ hiện màn hình đen. Điều này do Mac và dịch vụ streaming quyết định, không phải TV.
 • Nếu TV của bạn đã có bộ nhận phản chiếu riêng, Telebeam sẽ dùng tên khác để cả hai cùng hiện ra.
-• Hỗ trợ: telebeam@controlmymac.com
+• Hỗ trợ: support@telebeam.app
 • Chính sách quyền riêng tư: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam là ứng dụng độc lập, không do Apple Inc. tạo ra, tài trợ hay phê duyệt. Mac, macOS, iPhone, iPad và AirPlay là nhãn hiệu của Apple Inc., đã đăng ký tại Hoa Kỳ và các quốc gia khác. Google TV và Android TV là nhãn hiệu của Google LLC.

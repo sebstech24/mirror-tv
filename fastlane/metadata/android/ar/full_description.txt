@@ -33,7 +33,7 @@ Telebeam مفتوح المصدر (GPL-3.0). الشيفرة المصدرية: htt
 معلومات مفيدة
 • تظهر مقاطع الفيديو المحمية (مثل خدمات البث التي تمنع تسجيل الشاشة) كشاشة سوداء. يقرر ذلك Mac وخدمة البث، وليس التلفزيون.
 • إذا كان للتلفزيون مستقبِل محاكاة خاص به، يختار Telebeam اسمًا مختلفًا ليظهر الاثنان.
-• الدعم: telebeam@controlmymac.com
+• الدعم: support@telebeam.app
 • سياسة الخصوصية: https://sebstech24.github.io/mirror-tv/privacy.html
 
 Telebeam تطبيق مستقل، ولم تصنعه شركة Apple Inc. ولم ترعَه أو توافق عليه. إن Mac وmacOS وiPhone وiPad وAirPlay علامات تجارية لشركة Apple Inc. مسجّلة في الولايات المتحدة ودول أخرى. Google TV وAndroid TV علامتان تجاريتان لشركة Google LLC.

@@ -1,4 +1,8 @@
-# telebeam@controlmymac.com: the app's own address
+# support@telebeam.app: the app's own address
+
+**4 Nov 2026 (Sebastian: "yes to all"):** Telebeam now has **support@telebeam.app** on iCloud+ Custom Email Domain (telebeam.app, like diskbeam.app). DNS added through Cloudflare Domain Connect: MX mx01/mx02.mail.icloud.com, TXT apple-domain + `v=spf1 include:icloud.com ~all`, CNAME sig1._domainkey (the GitHub Pages A/www records untouched). Tested both ways: Gmail → support@ arrived in iCloud Mail; support@ → Gmail arrived in Primary with DKIM (telebeam.app) and SPF pass. Listings, website and privacy page switched. telebeam@controlmymac.com stays as an alias, so older links still reach him. Brevo still sends from telebeam@controlmymac.com (sender id 4) until telebeam.app is authenticated in Brevo.
+
+## Earlier: telebeam@controlmymac.com
 
 Decided 29 Oct 2026 (Sebastian: "do as you recommend"): no new domain, no separate website for now (website part replaced 2 Nov 2026: Sebastian wants each app to have its own page; the email stays). Telebeam gets **telebeam@controlmymac.com** on the existing controlmymac.com setup. telebeamapp.com is dropped.
 
