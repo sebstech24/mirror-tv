@@ -1,5 +1,19 @@
 # Mirror TV — project status
 
+## WEBSITE telebeam.app: help guides moved over (4 Nov 2026, guides side chat)
+- Live on https://telebeam.app (repo sebstech24/mirror-tv, branch `gh-pages`, commit 32cd73e): /mirror-mac-to-google-tv,
+  /mac-doesnt-see-my-tv, /mirror-mac-to-{sony,tcl,philips,hisense}-tv, German /de/ (home), /de/mirror-mac-to-google-tv,
+  /de/mac-doesnt-see-my-tv, plus sitemap.xml and robots.txt. Same navy/violet look as the landing page
+  (`assets/telebeam.css`); no Control My Mac header, footer or links. Landing page got a "Guides" footer row,
+  hreflang to /de/, app info for search engines, and the "(2)" name tip.
+- Edit the guides in `_build/build-pages.py` on `gh-pages` and run `python3 _build/build-pages.py` (not served:
+  Jekyll skips `_build`). index.html and privacy.html are hand-written.
+- Support address on every page: support@telebeam.app (live 4 Nov, iCloud+; old telebeam@controlmymac.com is an alias).
+  `MAIL` in the script matches.
+- Play links carry `referrer=utm_source=telebeam.app&utm_medium=website&utm_campaign=home|home-de|help-pages`.
+- The old pages in `Fable stuff/controlmymac-site-screenbridge` (branch `screenbridge-pages`) are superseded; don't publish them.
+- Not done: submit the sitemap in Google Search Console (needs telebeam.app verified there).
+
 ## 1.0.2 (build 106): 31 LANGUAGES (2 Nov 2026, translate side chat)
 - Sebastian asked (2 Nov) for the app and the Play listing in every major language, free methods only. Translated by
   Claude (no paid APIs), not reviewed by native speakers.
@@ -27,6 +41,7 @@
 ## GOOGLE PLAY (29 Oct 2026): Telebeam app in Play Console
 - Play app "Telebeam: Screen Mirroring TV", package com.sebstech.telebeam, Console app id 4972999395680958705 (account: organization "Sebastian Skoic, s.p.", so no 12-tester rule). The old "Screenbridge" draft (com.sebstech.screenbridge) is left untouched; Sebastian can delete it.
 - Done: all App content forms (no ads, no data collected, 18+, content rating, reviewer access note), category Tools, contact telebeam@controlmymac.com, privacy policy https://sebstech24.github.io/mirror-tv/privacy.html (gh-pages branch), Android TV form factor, en-US listing (fastlane/metadata/android/en-US), icon 01, Telebeam feature graphic + TV banner, 3 real-TV screenshots (docs/screens/telebeam-tv-*.png).
+- 4 Nov 2026: store listing in 31 languages + demo video published. 1.0.2 (106, app in 31 languages) sent for review. telebeam.app live (GitHub Pages from branch gh-pages, Cloudflare DNS-only A records + www CNAME, HTTPS enforced; recipe in ~/Coding/App Release/app-pages/README.md). Final site design waits for the shared site kit (~/Coding/App Release/site-kit/).
 - LIVE on Google Play since 2 Nov 2026 (1.0.0, build 104): https://play.google.com/store/apps/details?id=com.sebstech.telebeam . 1.0.1 (build 105, "Redeem code" + review prompt) sent for review 2 Nov 2026, 100% rollout, goes live on approval.
 - SUBMITTED FOR REVIEW 29 Oct 2026: build 104 (1.0.0, minSdk 24), production, 178 countries, managed publishing OFF (goes live as soon as Google approves). Foreground service declaration uses the demo video https://sebstech24.github.io/mirror-tv/fgs-demo.mp4. AI asset labels: icon, feature graphic, TV banner = AI-made; screenshots = real. Play's automatic protection needs minSdk 24 (103 was rejected for minSdk 23).
 - Products (active): telebeam_lifetime $49.99 (purchase option `lifetime`); telebeam_monthly, base plan `monthly` $4.99, offer `free-trial-7d` (7 days free, new customers). Prices converted by Play (e.g. EUR 54.99 / 5.49 incl. VAT). Neither product type shows a Family Sharing setting in this Console.
