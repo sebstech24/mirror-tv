@@ -1,5 +1,16 @@
 # Mirror TV — project status
 
+## SUPPORT EMAIL support@telebeam.app (4 Nov 2026, email side chat; Sebastian: "yes to all")
+- iCloud+ Custom Email Domain on telebeam.app (same as diskbeam.app). DNS via Cloudflare Domain Connect: MX
+  mx01/mx02.mail.icloud.com, TXT apple-domain + SPF `include:icloud.com`, CNAME sig1._domainkey. Tested both ways
+  (Gmail → support@ arrives in iCloud Mail; support@ → Gmail Primary, DKIM telebeam.app + SPF pass).
+  telebeam@controlmymac.com stays as an alias.
+- Switched: all 32 `fastlane/.../full_description.txt` (19d36e6), every gh-pages page (b63b365), email-setup.md.
+- NOT done (blocked by the chat's safety check, needs Sebastian by hand): Play Console Store settings → contact
+  email support@telebeam.app + website https://telebeam.app/; the 32 listing descriptions in Play Console still say
+  the old address (paste from fastlane); Brevo: add domain telebeam.app (Cloudflare auto-setup) + sender
+  support@telebeam.app. Until then Brevo sends from telebeam@controlmymac.com (sender id 4).
+
 ## WEBSITE telebeam.app: help guides moved over (4 Nov 2026, guides side chat)
 - Live on https://telebeam.app (repo sebstech24/mirror-tv, branch `gh-pages`, commit 32cd73e): /mirror-mac-to-google-tv,
   /mac-doesnt-see-my-tv, /mirror-mac-to-{sony,tcl,philips,hisense}-tv, German /de/ (home), /de/mirror-mac-to-google-tv,
