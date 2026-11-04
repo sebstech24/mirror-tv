@@ -6,10 +6,12 @@
   (Gmail → support@ arrives in iCloud Mail; support@ → Gmail Primary, DKIM telebeam.app + SPF pass).
   telebeam@controlmymac.com stays as an alias.
 - Switched: all 32 `fastlane/.../full_description.txt` (19d36e6), every gh-pages page (b63b365), email-setup.md.
-- NOT done (blocked by the chat's safety check, needs Sebastian by hand): Play Console Store settings → contact
-  email support@telebeam.app + website https://telebeam.app/; the 32 listing descriptions in Play Console still say
-  the old address (paste from fastlane); Brevo: add domain telebeam.app (Cloudflare auto-setup) + sender
-  support@telebeam.app. Until then Brevo sends from telebeam@controlmymac.com (sender id 4).
+- Play (Sebastian's yes, 4 Nov): contact email support@telebeam.app + website https://telebeam.app/ PUBLISHED.
+  All 32 listing descriptions changed and SAVED, not sent: sending now cancels and restarts the 1.0.2 review
+  (Publishing overview → "Submit 32 changes for review"). Send after 1.0.2 is approved, or now if Sebastian says so.
+- Brevo: domain telebeam.app started (branded subdomain mail.telebeam.app), waiting at "Sign in to your Cloudflare
+  account" (the pop-up needs Sebastian's click → Authorize). Then add sender support@telebeam.app. Until then Brevo
+  sends from telebeam@controlmymac.com (sender id 4).
 
 ## WEBSITE telebeam.app: help guides moved over (4 Nov 2026, guides side chat)
 - Live on https://telebeam.app (repo sebstech24/mirror-tv, branch `gh-pages`, commit 32cd73e): /mirror-mac-to-google-tv,
