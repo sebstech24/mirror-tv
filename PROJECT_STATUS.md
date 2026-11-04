@@ -4,7 +4,7 @@
 - iCloud+ Custom Email Domain on telebeam.app (same as diskbeam.app). DNS via Cloudflare Domain Connect: MX
   mx01/mx02.mail.icloud.com, TXT apple-domain + SPF `include:icloud.com`, CNAME sig1._domainkey. Tested both ways
   (Gmail → support@ arrives in iCloud Mail; support@ → Gmail Primary, DKIM telebeam.app + SPF pass).
-  telebeam@controlmymac.com stays as an alias.
+  telebeam@controlmymac.com is being retired (Sebastian, 4 Nov: "out of the picture"): Brevo sender 4 deleted; iCloud address removal pending.
 - Switched: all 32 `fastlane/.../full_description.txt` (19d36e6), every gh-pages page (b63b365), email-setup.md.
 - Play (Sebastian's yes, 4 Nov): contact email support@telebeam.app + website https://telebeam.app/ PUBLISHED.
   All 32 listing descriptions changed and SAVED, not sent: sending now cancels and restarts the 1.0.2 review
@@ -20,7 +20,7 @@
   hreflang to /de/, app info for search engines, and the "(2)" name tip.
 - Edit the guides in `_build/build-pages.py` on `gh-pages` and run `python3 _build/build-pages.py` (not served:
   Jekyll skips `_build`). index.html and privacy.html are hand-written.
-- Support address on every page: support@telebeam.app (live 4 Nov, iCloud+; old telebeam@controlmymac.com is an alias).
+- Support address on every page: support@telebeam.app (live 4 Nov, iCloud+; old telebeam@controlmymac.com retired).
   `MAIL` in the script matches.
 - Play links carry `referrer=utm_source=telebeam.app&utm_medium=website&utm_campaign=home|home-de|help-pages`.
 - The old pages in `Fable stuff/controlmymac-site-screenbridge` (branch `screenbridge-pages`) are superseded; don't publish them.
