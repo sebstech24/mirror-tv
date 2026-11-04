@@ -9,9 +9,8 @@
 - Play (Sebastian's yes, 4 Nov): contact email support@telebeam.app + website https://telebeam.app/ PUBLISHED.
   All 32 listing descriptions changed and SAVED, not sent: sending now cancels and restarts the 1.0.2 review
   (Publishing overview → "Submit 32 changes for review"). Send after 1.0.2 is approved, or now if Sebastian says so.
-- Brevo: domain telebeam.app started (branded subdomain mail.telebeam.app), waiting at "Sign in to your Cloudflare
-  account" (the pop-up needs Sebastian's click → Authorize). Then add sender support@telebeam.app. Until then Brevo
-  sends from telebeam@controlmymac.com (sender id 4).
+- Brevo DONE 4 Nov: telebeam.app authenticated + branded (records by hand in Cloudflare, DNS only), sender id 5
+  support@telebeam.app active. Use sender 5 for the newsletter and press mails. No Brevo test send done yet.
 
 ## WEBSITE telebeam.app: help guides moved over (4 Nov 2026, guides side chat)
 - Live on https://telebeam.app (repo sebstech24/mirror-tv, branch `gh-pages`, commit 32cd73e): /mirror-mac-to-google-tv,

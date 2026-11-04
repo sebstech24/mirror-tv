@@ -29,7 +29,7 @@ Started 28 Oct 2026, from Sebastian's approved 7-step plan ("Start all of it"). 
 
 1. Demo video: done (v3 unlisted on YouTube, link saved in the Play listing draft).
 2. Website: ON HOLD, Telebeam gets its own page (see step 2). Old plan: merge `screenbridge-pages` into main in `controlmymac-site`, set `PLAY_LIVE = True` in `scripts/build-telebeam.py`, rebuild, push (a push publishes). Then ping IndexNow with the 12 URLs listed in the branch's commit/deploy note.
-3. Newsletter: create the Brevo draft (account "Sebastian Škoić s.p.", list 3, sender id 4 telebeam@controlmymac.com) → test to him → he sends from Brevo.
+3. Newsletter: create the Brevo draft (account "Sebastian Škoić s.p.", list 3, sender id 5 support@telebeam.app (telebeam.app authenticated in Brevo 4 Nov)) → test to him → he sends from Brevo.
 4. Communities, press and directories, in batches, each with his yes.
 5. GitHub: make `tv-edition` the default branch (or merge to main), new README intro and repo description, before Show HN.
 
