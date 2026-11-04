@@ -8,7 +8,7 @@
 - Switched: all 32 `fastlane/.../full_description.txt` (19d36e6), every gh-pages page (b63b365), email-setup.md.
 - Play (Sebastian's yes, 4 Nov): contact email support@telebeam.app + website https://telebeam.app/ PUBLISHED.
   All 32 listing descriptions changed and SAVED, not sent: sending now cancels and restarts the 1.0.2 review
-  (Publishing overview → "Submit 32 changes for review"). Send after 1.0.2 is approved, or now if Sebastian says so.
+  (Publishing overview → "Submit 32 changes for review"). Sebastian (4 Nov): send them right AFTER 1.0.2 is approved (Telebeam owner chat does it: Publishing overview → "Submit 32 changes for review").
 - Brevo DONE 4 Nov: telebeam.app authenticated + branded (records by hand in Cloudflare, DNS only), sender id 5
   support@telebeam.app active. Use sender 5 for the newsletter and press mails. No Brevo test send done yet.
 
