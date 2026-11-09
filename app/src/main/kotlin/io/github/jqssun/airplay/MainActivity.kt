@@ -148,10 +148,14 @@ class MainActivity : ComponentActivity() {
                 if (!unlocked && !isInPip.value) {
                     val monthly by Billing.monthly.collectAsState()
                     val lifetime by Billing.lifetimePrice.collectAsState()
+                    val lifetimeWas by Billing.lifetimeWasPrice.collectAsState()
+                    val salePercent by Billing.lifetimeSalePercent.collectAsState()
                     val pending by Billing.pending.collectAsState()
                     PaywallScreen(
                         monthly = monthly,
                         lifetimePrice = lifetime,
+                        lifetimeWasPrice = lifetimeWas,
+                        lifetimeSalePercent = salePercent,
                         pending = pending,
                         onBuy = { Billing.buy(this, it) },
                         onRestore = { Billing.restore(this) },

@@ -45,6 +45,7 @@ object Billing : PurchasesUpdatedListener {
     private const val TAG = "Billing"
     // not in Prefs.all, so the adb settings receiver can't set it
     private const val CACHE_KEY = "unlimited_owned"
+    private const val SALE_TAG = "sale"
 
     /** Monthly as Play offers it to this account: [trialDays] only when the free trial applies. */
     data class MonthlyOffer(val price: String, val trialDays: Int?)
@@ -56,6 +57,8 @@ object Billing : PurchasesUpdatedListener {
     private var _monthlyDetails: ProductDetails? = null
     private var _monthlyToken: String? = null
     private var _lifetimeDetails: ProductDetails? = null
+    // a Play discount offer tagged "sale" (e.g. Black Friday); Play lists it only between its dates
+    private var _lifetimeSaleToken: String? = null
     private var _playOwned: Boolean? = null
 
     private val _unlocked = MutableStateFlow(false)
@@ -68,6 +71,11 @@ object Billing : PurchasesUpdatedListener {
     val monthly = _monthly.asStateFlow()
     private val _lifetimePrice = MutableStateFlow<String?>(null)
     val lifetimePrice = _lifetimePrice.asStateFlow()
+    // the regular Lifetime price while a sale runs (shown crossed out), else null
+    private val _lifetimeWasPrice = MutableStateFlow<String?>(null)
+    val lifetimeWasPrice = _lifetimeWasPrice.asStateFlow()
+    private val _lifetimeSalePercent = MutableStateFlow<Int?>(null)
+    val lifetimeSalePercent = _lifetimeSalePercent.asStateFlow()
     // bought with a slow payment method (cash, bank): unlocks once Play confirms
     private val _pending = MutableStateFlow(false)
     val pending = _pending.asStateFlow()
@@ -134,7 +142,14 @@ object Billing : PurchasesUpdatedListener {
                 trialDays = phases.firstOrNull { it.priceAmountMicros == 0L }?.let { Entitlement.trialDays(it.billingPeriod) },
             )
         }
-        _lifetimePrice.value = _lifetimeDetails?.oneTimePurchaseOfferDetails?.formattedPrice
+        val offers = _lifetimeDetails?.oneTimePurchaseOfferDetailsList.orEmpty()
+        val base = offers.firstOrNull { it.offerId == null } ?: _lifetimeDetails?.oneTimePurchaseOfferDetails
+        val sale = offers.firstOrNull { it.offerTags.orEmpty().contains(SALE_TAG) }
+            ?.takeIf { base != null && it.priceAmountMicros < base.priceAmountMicros }
+        _lifetimeSaleToken = sale?.offerToken
+        _lifetimePrice.value = (sale ?: base)?.formattedPrice
+        _lifetimeWasPrice.value = sale?.let { base?.formattedPrice }
+        _lifetimeSalePercent.value = sale?.let { Entitlement.percentOff(it.priceAmountMicros, base!!.priceAmountMicros) }
         if (_monthly.value == null && _lifetimePrice.value == null) _noPlay()
     }
 
@@ -185,7 +200,7 @@ object Billing : PurchasesUpdatedListener {
     /** Opens Google Play's purchase sheet for [productId] (Monthly or Lifetime). */
     fun buy(activity: Activity, productId: String) {
         val d = if (productId == MONTHLY_ID) _monthlyDetails else _lifetimeDetails
-        val token = if (productId == MONTHLY_ID) _monthlyToken else null
+        val token = if (productId == MONTHLY_ID) _monthlyToken else _lifetimeSaleToken
         if (d == null || !_client.isReady || (productId == MONTHLY_ID && token == null)) {
             Toast.makeText(activity, R.string.unlimited_play_unavailable, Toast.LENGTH_LONG).show()
             refresh()

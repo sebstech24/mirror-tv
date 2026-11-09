@@ -33,4 +33,9 @@ class EntitlementTest {
         assertEquals(7, Entitlement.trialDays("P1W"))
         assertEquals(null, Entitlement.trialDays("P1M"))
     }
+
+    @Test fun salePercent() {
+        assertEquals(47, Entitlement.percentOff(26_490_000, 49_990_000))
+        assertEquals(47, Entitlement.percentOff(26_990_000, 50_990_000)) // 47.07 after Play's local rounding
+    }
 }

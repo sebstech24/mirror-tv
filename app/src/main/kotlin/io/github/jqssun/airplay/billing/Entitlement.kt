@@ -42,4 +42,7 @@ object Entitlement {
         val n = m.groupValues[1].toInt()
         return if (m.groupValues[2] == "W") n * 7 else n
     }
+
+    /** "-47%" badge for a sale: Play rounds local prices, so round the percentage rather than truncate. */
+    fun percentOff(saleMicros: Long, fullMicros: Long): Int = Math.round(100.0 * (fullMicros - saleMicros) / fullMicros).toInt()
 }

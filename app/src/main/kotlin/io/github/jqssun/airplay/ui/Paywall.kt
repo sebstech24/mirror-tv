@@ -34,6 +34,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -49,6 +50,8 @@ import io.github.jqssun.airplay.billing.Entitlement
 fun PaywallScreen(
     monthly: Billing.MonthlyOffer?,
     lifetimePrice: String?,
+    lifetimeWasPrice: String?,
+    lifetimeSalePercent: Int?,
     pending: Boolean,
     onBuy: (productId: String) -> Unit,
     onRestore: () -> Unit,
@@ -120,9 +123,10 @@ fun PaywallScreen(
                     Spacer(Modifier.height(16.dp))
                     PlanCard(
                         name = stringResource(R.string.plan_lifetime),
-                        badge = stringResource(R.string.plan_lifetime_badge),
+                        badge = lifetimeSalePercent?.let { "−$it%" } ?: stringResource(R.string.plan_lifetime_badge),
                         detail = stringResource(if (lifetimePrice == null) R.string.plan_price_from_play else R.string.plan_lifetime_detail),
                         price = lifetimePrice,
+                        wasPrice = lifetimeWasPrice,
                         unit = stringResource(R.string.plan_one_time),
                         onClick = { onBuy(Entitlement.LIFETIME_ID) },
                     )
@@ -212,6 +216,7 @@ private fun PlanCard(
     unit: String,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    wasPrice: String? = null,
 ) {
     val c = MaterialTheme.colorScheme
     val source = remember { MutableInteractionSource() }
@@ -248,6 +253,9 @@ private fun PlanCard(
             if (price != null) {
                 Spacer(Modifier.width(16.dp))
                 Column(horizontalAlignment = Alignment.End) {
+                    if (wasPrice != null) Text(wasPrice, style = MaterialTheme.typography.bodyMedium,
+                        textDecoration = TextDecoration.LineThrough,
+                        color = if (focused) c.onPrimaryContainer else c.onSurfaceVariant)
                     Text(price, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
                     Text(unit, style = MaterialTheme.typography.bodySmall,
                         color = if (focused) c.onPrimaryContainer else c.onSurfaceVariant)

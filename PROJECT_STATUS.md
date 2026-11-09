@@ -1,5 +1,11 @@
 # Mirror TV — project status
 
+## BLACK FRIDAY SALE PRICE IN THE APP (9 Nov 2026, asked by the site-kit chat; Sebastian: Black Friday "from the end of this week till the end of the month")
+- Play Console (done by the site-kit chat): telebeam_lifetime › purchase option "lifetime" › discount offer black-friday-2026, tag "sale", 47% off, all regions, 13 Nov 00:00 UTC to 1 Dec 08:00 UTC. Play only charges the sale price when the app passes that offer's token.
+- Code (not released yet): `billing/Billing.kt` picks the Lifetime offer tagged "sale" when Play lists one (only inside its dates) and buys with its offer token; otherwise the regular offer as before. The paywall shows the regular price crossed out, the sale price, and a "−47%" badge (`ui/Paywall.kt`). Works for any later sale with the tag "sale".
+- Checked: unit test (percent) and the paywall on the TV emulator with a temporary sample sale (removed again). Not checked against a real Play sale (only possible once it starts on 13 Nov).
+- Needs a release (1.0.4) to reach buyers. telebeam.app's Black Friday banner stays off until that version is live; then tell the site-kit chat (it flips apps/telebeam/app.json "deal" on), and publishing the site copy to gh-pages is this chat's job.
+
 ## SITE + GIFT CODES LIVE (9 Nov 2026, Sebastian: "yes to publishing and creating")
 - telebeam.app now serves the site kit build (25 languages, 87 pages, Apple-style TV shots): gh-pages commit 11f8c0b. Kept on purpose: fgs-demo.mp4 (Play foreground-service declaration), the old img/ files and assets/telebeam.css. Republish: build + check in `~/Coding/App Release/site-kit/frontend`, then rsync dist/telebeam onto gh-pages with those excludes.
 - Play promotion 131686202 "telebeam.app gift - Monthly 30 days free": telebeam_monthly, 30-day free trial, 500 one-time codes, 9 Nov 2026 to 8 Nov 2027. Codes: `~/Coding/App Release/site-kit/code-service/private/telebeam-play-codes.csv` (git-ignored, never paste). Kit chat imported them (500 unused). api.telebeam.app, Turnstile and apps.json were already set up on 7 Nov; the gift link stays hidden only until Sebastian creates the Brevo sending key, then the kit chat switches Telebeam on.
