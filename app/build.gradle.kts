@@ -33,8 +33,8 @@ android {
         applicationId = "com.sebstech.telebeam"
         minSdk = 24
         targetSdk = 37
-        versionCode = 106
-        versionName = "1.0.2"
+        versionCode = 107
+        versionName = "1.0.3"
 
         externalNativeBuild {
             cmake {

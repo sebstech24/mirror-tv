@@ -3,7 +3,8 @@
 ## APPLE-STYLE LOOK (9 Nov 2026, Sebastian: "make it feel like apple made it")
 - TV Ready screen redesigned in `ui/HomeScreen.kt`: black with a soft blue glow, small "Ready" capsule, big TV name, the three Mac steps in one glass panel with arrows (step 3 in system blue), quieter grey hints. No text changed, so all 31 languages still fit the same strings.
 - `ui/theme/Theme.kt`: dark theme is now Apple's neutral greys + system blue (was Android's purple-tinted dynamic colours); letter spacing tightened app-wide; focused cards turn white like Apple TV tiles (paywall). Settings picks up the colours too.
-- Checked on the TV emulator (home, paywall, Settings). Not on a real TV yet. NOT released: needs a 1.0.3 build + Play upload (his yes).
+- Checked on the TV emulator (home, paywall, Settings). Not on a real TV yet.
+- 1.0.3 (build 107) BUILT 9 Nov (Sebastian: "Yes, build 1.0.3"): `dist/telebeam-1.0.3-107.aab`, same upload key as 1.0.2. Waiting for Sebastian to drag it into Play Console (Production → Create new release) and say yes to send for review. Release note (en-US): "A cleaner, Apple TV-style look for the Ready screen, paywall and Settings."
 - New screenshots: `docs/screens/telebeam-tv-{home,paywall,settings}.png` and the site kit's `apps/telebeam/img/shots/` (old ones kept in this chat's scratchpad). Play listing screenshots still show the old look.
 - Debug tricks: `debug_fake_unlocked` / `debug_sample_prices` via the SettingsReceiver broadcast skip the paywall / show sample prices on the emulator.
 
