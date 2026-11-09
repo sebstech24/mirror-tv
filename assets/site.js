@@ -1,0 +1,228 @@
+/* Site kit — tiny shared script (from controlmymac.com assets/site.js, c15ee24).
+   Kept: the Mac download hand-off, the Windows button swap, the donate seam,
+   the homepage video and the feature rail. Left out: Vercel analytics (sites
+   run on Cloudflare or GitHub Pages), the audience-page memory and the
+   disabled newsletter card (no such pages or service in the kit). */
+(function () {
+  "use strict";
+  var appName = document.body.getAttribute("data-app") || "";
+
+  // Platform-aware download CTAs ("[data-dl-cta]", only on apps with a Mac download).
+  // Default markup is a plain link, so no JS (or an unrecognised platform) keeps it.
+  // On a non-Mac the primary becomes a hand-off to the visitor's Mac: the share
+  // sheet where available (AirDrop / Messages / Mail), else copy-link with a brief
+  // inline confirmation. Quiet "[data-dl-alt]" links keep the raw file reachable,
+  // and "[data-dl-note]" helper text explains the two-device hand-off.
+  var platform =
+    (navigator.userAgentData && navigator.userAgentData.platform) ||
+    navigator.platform || "";
+  // On localhost, ?platform-preview=windows (or mac) shows the page the way that visitor gets it.
+  var previewAs = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) &&
+    /[?&]platform-preview=(\w+)/.exec(location.search);
+  if (previewAs) { platform = previewAs[1]; }
+  // Case-insensitive: Chromium reports "macOS", WebKit "MacIntel".
+  // maxTouchPoints guard: iPads masquerade as "MacIntel".
+  var isMac = platform.toLowerCase().indexOf("mac") === 0 &&
+    navigator.maxTouchPoints <= 1;
+  var canShare = typeof navigator.share === "function";
+  var canCopy = !!(navigator.clipboard && navigator.clipboard.writeText);
+  var dlCtas = document.querySelectorAll("[data-dl-cta]");
+  // Hand-off copy in the page's language (pages set <html lang>).
+  var DL_COPY = {
+    en: ["Send it to your Mac", "Copy link for your Mac", "Link copied — open it on your Mac", "You're on your iPhone — AirDrop or message this link to yourself, then open it on your Mac to download.", "Copy the link, then open it on your Mac to download the free app."],
+    de: ["An deinen Mac senden", "Link für deinen Mac kopieren", "Link kopiert – öffne ihn auf deinem Mac", "Du bist auf deinem iPhone – schick dir diesen Link per AirDrop oder Nachricht und öffne ihn dann auf deinem Mac, um die App zu laden.", "Kopiere den Link und öffne ihn auf deinem Mac, um die kostenlose App zu laden."],
+    fr: ["Envoyer à votre Mac", "Copier le lien pour votre Mac", "Lien copié — ouvrez-le sur votre Mac", "Vous êtes sur votre iPhone — envoyez-vous ce lien par AirDrop ou message, puis ouvrez-le sur votre Mac pour télécharger l’app.", "Copiez le lien, puis ouvrez-le sur votre Mac pour télécharger l’app gratuite."],
+    it: ["Invialo al tuo Mac", "Copia il link per il tuo Mac", "Link copiato — aprilo sul tuo Mac", "Sei su iPhone — inviati questo link con AirDrop o in un messaggio, poi aprilo sul Mac per scaricare l’app.", "Copia il link, poi aprilo sul Mac per scaricare l’app gratuita."],
+    es: ["Envíalo a tu Mac", "Copiar enlace para tu Mac", "Enlace copiado: ábrelo en tu Mac", "Estás en tu iPhone: envíate este enlace por AirDrop o mensaje y ábrelo en tu Mac para descargar la app.", "Copia el enlace y ábrelo en tu Mac para descargar la app gratuita."],
+    pt: ["Envie para seu Mac", "Copiar link para seu Mac", "Link copiado — abra no seu Mac", "Você está no iPhone — envie este link para você por AirDrop ou mensagem e abra no seu Mac para baixar o app.", "Copie o link e abra no seu Mac para baixar o app gratuito."],
+    nl: ["Stuur naar je Mac", "Kopieer link voor je Mac", "Link gekopieerd — open hem op je Mac", "Je zit op je iPhone — stuur jezelf deze link via AirDrop of een bericht en open hem op je Mac om te downloaden.", "Kopieer de link en open hem op je Mac om de gratis app te downloaden."],
+    ja: ["Macに送る", "Mac用のリンクをコピー", "リンクをコピーしました。Macで開いてください", "iPhoneで表示しています。AirDropやメッセージでこのリンクを自分に送り、Macで開いてダウンロードしてください。", "リンクをコピーしてMacで開くと、無料アプリをダウンロードできます。"],
+    zh: ["发送到你的 Mac", "复制 Mac 下载链接", "链接已复制——请在 Mac 上打开", "你正在使用 iPhone——通过隔空投送或信息把此链接发给自己，然后在 Mac 上打开以下载。", "复制链接，然后在 Mac 上打开以下载免费 App。"],
+    ko: ["Mac으로 보내기", "Mac용 링크 복사", "링크가 복사되었습니다. Mac에서 여세요", "지금 iPhone에서 보고 있습니다. AirDrop이나 메시지로 이 링크를 자신에게 보낸 다음 Mac에서 열어 다운로드하세요.", "링크를 복사한 다음 Mac에서 열어 무료 앱을 다운로드하세요."],
+    ru: ["Отправить на Mac", "Скопировать ссылку для Mac", "Ссылка скопирована — откройте её на Mac", "Вы на iPhone — отправьте себе эту ссылку через AirDrop или сообщение, затем откройте её на Mac, чтобы скачать приложение.", "Скопируйте ссылку и откройте её на Mac, чтобы скачать бесплатное приложение."],
+    pl: ["Wyślij na Maca", "Kopiuj link dla Maca", "Link skopiowany — otwórz go na Macu", "Jesteś na iPhonie — wyślij sobie ten link przez AirDrop lub wiadomość, a potem otwórz go na Macu, aby pobrać aplikację.", "Skopiuj link, a potem otwórz go na Macu, aby pobrać darmową aplikację."],
+    tr: ["Mac’ine gönder", "Mac’in için bağlantıyı kopyala", "Bağlantı kopyalandı — Mac’inde aç", "iPhone’dasın — bu bağlantıyı AirDrop veya mesajla kendine gönder, sonra indirmek için Mac’inde aç.", "Bağlantıyı kopyala, sonra ücretsiz uygulamayı indirmek için Mac’inde aç."],
+    "zh-hant": ["傳送到你的 Mac", "拷貝 Mac 下載連結", "已拷貝連結，請在 Mac 上打開", "你正在使用 iPhone：用 AirDrop 或訊息把這個連結傳給自己，然後在 Mac 上打開即可下載。", "拷貝連結，然後在 Mac 上打開，即可下載免費 App。"],
+    uk: ["Надіслати на Mac", "Скопіювати посилання для Mac", "Посилання скопійовано — відкрийте його на Mac", "Ви на iPhone — надішліть собі це посилання через AirDrop або в повідомленні, а потім відкрийте його на Mac, щоб завантажити програму.", "Скопіюйте посилання, а потім відкрийте його на Mac, щоб завантажити безкоштовну програму."],
+    sl: ["Pošljite na svoj Mac", "Kopirajte povezavo za svoj Mac", "Povezava je kopirana – odprite jo na Macu", "Ste na iPhonu – pošljite si to povezavo s funkcijo AirDrop ali v sporočilu in jo nato odprite na Macu, da prenesete aplikacijo.", "Kopirajte povezavo in jo nato odprite na Macu, da prenesete brezplačno aplikacijo."],
+    cs: ["Poslat na Mac", "Zkopírovat odkaz pro Mac", "Odkaz zkopírován – otevřete ho na Macu", "Jste na iPhonu – pošlete si tento odkaz přes AirDrop nebo zprávou a pak ho otevřete na Macu, kde si aplikaci stáhnete.", "Zkopírujte odkaz a otevřete ho na Macu, kde si bezplatnou aplikaci stáhnete."],
+    sk: ["Poslať do Macu", "Kopírovať odkaz pre Mac", "Odkaz je skopírovaný – otvorte ho na Macu", "Ste na iPhone – pošlite si tento odkaz cez AirDrop alebo správou a potom ho otvorte na Macu, kde si aplikáciu stiahnete.", "Skopírujte odkaz a potom ho otvorte na Macu, kde si bezplatnú aplikáciu stiahnete."],
+    sv: ["Skicka den till din Mac", "Kopiera länken till din Mac", "Länken kopierades – öppna den på din Mac", "Du använder din iPhone. Skicka länken till dig själv med AirDrop eller ett meddelande och öppna den sedan på din Mac för att hämta appen.", "Kopiera länken och öppna den sedan på din Mac för att hämta den kostnadsfria appen."],
+    no: ["Send den til Macen din", "Kopier lenken til Macen din", "Lenken er kopiert – åpne den på Macen din", "Du er på iPhone-en din – send lenken til deg selv med AirDrop eller melding, og åpne den på Macen din for å laste ned.", "Kopier lenken, og åpne den på Macen din for å laste ned den gratis appen."],
+    da: ["Send det til din Mac", "Kopiér link til din Mac", "Link kopieret. Åbn det på din Mac", "Du er på din iPhone. Send dig selv linket med AirDrop eller en besked, og åbn det derefter på din Mac for at hente appen.", "Kopiér linket, og åbn det derefter på din Mac for at hente den gratis app."],
+    fi: ["Lähetä se Macillesi", "Kopioi linkki Macillesi", "Linkki kopioitu – avaa se Macillasi", "Olet iPhonellasi – lähetä tämä linkki itsellesi AirDropilla tai viestinä ja avaa se sitten Macillasi ladataksesi sovelluksen.", "Kopioi linkki ja avaa se Macillasi ladataksesi ilmaisen sovelluksen."],
+    hu: ["Küldje át a Macre", "Hivatkozás másolása a Machez", "A hivatkozás kimásolva – nyissa meg a Macen", "iPhone-on van – küldje el magának ezt a hivatkozást AirDroppal vagy üzenetben, majd nyissa meg a Macen a letöltéshez.", "Másolja ki a hivatkozást, majd nyissa meg a Macen az ingyenes app letöltéséhez."],
+    ro: ["Trimiteți-l pe Mac", "Copiați linkul pentru Mac", "Link copiat – deschideți-l pe Mac", "Sunteți pe iPhone – trimiteți-vă linkul prin AirDrop sau printr-un mesaj, apoi deschideți-l pe Mac pentru a descărca.", "Copiați linkul, apoi deschideți-l pe Mac pentru a descărca aplicația gratuită."],
+    el: ["Αποστολή στο Mac", "Αντιγραφή συνδέσμου για το Mac σας", "Ο σύνδεσμος αντιγράφηκε — ανοίξτε τον στο Mac σας", "Βρίσκεστε στο iPhone σας — στείλτε αυτόν τον σύνδεσμο στον εαυτό σας με AirDrop ή μήνυμα και ανοίξτε τον στο Mac σας για λήψη.", "Αντιγράψτε τον σύνδεσμο και ανοίξτε τον στο Mac σας για να κατεβάσετε τη δωρεάν εφαρμογή."]
+  };
+  // <html lang> is "pl", "pt-BR", "zh-Hans", "zh-Hant", ...: try the full tag, then its language part.
+  var pageLang = (document.documentElement.lang || "en").toLowerCase();
+  var dlCopy = DL_COPY[pageLang] || DL_COPY[pageLang === "nb" ? "no" : pageLang.split("-")[0]] || DL_COPY.en;
+
+  function handoffClick(e) {
+    e.preventDefault();
+    var el = this;
+    // The page to open on the Mac is the button's own link (the app's download page).
+    var url = new URL(el.getAttribute("href"), location.href).href;
+    if (canShare) {
+      navigator.share({ title: appName, url: url })
+        .catch(function () { /* visitor closed the sheet — fine */ });
+    } else {
+      navigator.clipboard.writeText(url).then(function () {
+        if (el.getAttribute("data-dl-copied")) { return; }
+        el.setAttribute("data-dl-copied", "1");
+        var label = el.textContent;
+        el.textContent = dlCopy[2];
+        setTimeout(function () {
+          el.textContent = label;
+          el.removeAttribute("data-dl-copied");
+        }, 2000);
+      });
+    }
+  }
+
+  if (dlCtas.length && !isMac && (canShare || canCopy)) {
+    var mainLabel = canShare ? dlCopy[0] : dlCopy[1];
+    for (var k = 0; k < dlCtas.length; k++) {
+      dlCtas[k].textContent = dlCtas[k].getAttribute("data-dl-label") || mainLabel;
+      dlCtas[k].setAttribute("aria-live", "polite"); // announces "Link copied…"
+      dlCtas[k].addEventListener("click", handoffClick);
+    }
+    var dlAlts = document.querySelectorAll("[data-dl-alt]");
+    for (var a = 0; a < dlAlts.length; a++) { dlAlts[a].hidden = false; }
+    var dlNotes = document.querySelectorAll("[data-dl-note]");
+    var noteText = canShare ? dlCopy[3] : dlCopy[4];
+    for (var n = 0; n < dlNotes.length; n++) { dlNotes[n].textContent = noteText; }
+  }
+
+  // The Windows button in the download area ("[data-win-cta]", there once its link exists) downloads a
+  // Windows installer, so it is the main button only on a Windows PC, where the Mac button of the same
+  // area steps back. Everywhere else it keeps its quiet look.
+  var winCtas = document.querySelectorAll("[data-win-cta]");
+  if (winCtas.length && platform.toLowerCase().indexOf("win") === 0) {
+    for (var w = 0; w < winCtas.length; w++) { winCtas[w].className = "btn btn-primary"; }
+    var macInArea = document.querySelectorAll(".get [data-dl-cta]");
+    for (var m = 0; m < macInArea.length; m++) { macInArea[m].className = "btn btn-quiet"; }
+  }
+
+  // Donate seam. Buttons ship hidden with data-donate-url set to a placeholder;
+  // once the attribute holds a real URL they appear. No dead links, ever.
+  var donateEls = document.querySelectorAll("[data-donate-url]");
+  for (var dn = 0; dn < donateEls.length; dn++) {
+    var donateUrl = donateEls[dn].getAttribute("data-donate-url") || "";
+    if (/^https?:\/\//.test(donateUrl)) {
+      donateEls[dn].setAttribute("href", donateUrl);
+      donateEls[dn].setAttribute("target", "_blank");
+      donateEls[dn].setAttribute("rel", "noopener");
+      donateEls[dn].hidden = false;
+    }
+  }
+})();
+
+/* Homepage video: the YouTube player loads only after a press on the cover. */
+(function () {
+  var boxes = document.querySelectorAll(".hero-video[data-yt]");
+  for (var i = 0; i < boxes.length; i++) {
+    (function (box) {
+      var btn = box.querySelector(".hv-play");
+      if (!btn) { return; }
+      btn.addEventListener("click", function () {
+        var lang = (document.documentElement.lang || "en").toLowerCase();
+        var hl = lang.indexOf("zh-hant") === 0 ? "zh-TW" : (lang.indexOf("zh") === 0 ? "zh-CN" : lang);
+        var frame = document.createElement("iframe");
+        frame.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(box.getAttribute("data-yt")) +
+          "?autoplay=1&rel=0&playsinline=1&hl=" + encodeURIComponent(hl);
+        frame.title = btn.getAttribute("aria-label") || document.body.getAttribute("data-app") || "";
+        frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        frame.allowFullscreen = true;
+        frame.referrerPolicy = "strict-origin-when-cross-origin";
+        box.replaceChildren(frame);
+      });
+    })(boxes[i]);
+  }
+
+  // Feature rail: a side-scrolling row of slides. Native scroll + snap does the
+  // moving; this only wires the buttons, marks the slide in view (its animation
+  // plays, the others rest) and lets a mouse drag the row.
+  var rails = document.querySelectorAll("[data-rail]");
+  for (var r = 0; r < rails.length; r++) {
+    (function (rail) {
+      var track = rail.querySelector(".rail-track");
+      var slides = rail.querySelectorAll(".slide");
+      var dots = rail.querySelectorAll("[data-rail-to]");
+      var prev = rail.querySelector("[data-rail-prev]");
+      var next = rail.querySelector("[data-rail-next]");
+      if (!track || !slides.length || !("IntersectionObserver" in window)) { return; }
+      var active = 0;
+      var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      rail.classList.add("rail-js");
+
+      function mark(index) {
+        active = index;
+        for (var s = 0; s < slides.length; s++) {
+          slides[s].classList.toggle("is-active", s === index);
+          if (dots[s]) { dots[s].setAttribute("aria-current", s === index ? "true" : "false"); }
+        }
+        if (prev) { prev.disabled = index === 0; }
+        if (next) { next.disabled = index === slides.length - 1; }
+      }
+      function go(index) {
+        index = Math.max(0, Math.min(slides.length - 1, index));
+        var slide = slides[index];
+        track.scrollTo({
+          left: slide.offsetLeft - (track.clientWidth - slide.offsetWidth) / 2,
+          behavior: calm ? "auto" : "smooth"
+        });
+      }
+      mark(0);
+
+      var seen = new IntersectionObserver(function (entries) {
+        for (var e = 0; e < entries.length; e++) {
+          if (entries[e].isIntersecting) {
+            mark(Array.prototype.indexOf.call(slides, entries[e].target));
+          }
+        }
+      }, { root: track, threshold: 0.6 });
+      for (var s = 0; s < slides.length; s++) { seen.observe(slides[s]); }
+
+      if (prev) { prev.addEventListener("click", function () { go(active - 1); }); }
+      if (next) { next.addEventListener("click", function () { go(active + 1); }); }
+      for (var d2 = 0; d2 < dots.length; d2++) {
+        (function (index) {
+          dots[index].addEventListener("click", function () { go(index); });
+        })(d2);
+      }
+      track.addEventListener("keydown", function (e) {
+        var back = getComputedStyle(track).direction === "rtl" ? "ArrowRight" : "ArrowLeft";
+        if (e.key === "ArrowLeft" || e.key === "ArrowRight") {
+          e.preventDefault();
+          go(active + (e.key === back ? -1 : 1));
+        }
+      });
+
+      // Mouse drag (touch and trackpads already scroll natively).
+      var dragX = null, dragLeft = 0, moved = false;
+      track.addEventListener("pointerdown", function (e) {
+        if (e.pointerType !== "mouse" || e.button !== 0) { return; }
+        dragX = e.clientX; dragLeft = track.scrollLeft; moved = false;
+      });
+      window.addEventListener("pointermove", function (e) {
+        if (dragX === null) { return; }
+        var dx = e.clientX - dragX;
+        if (!moved && Math.abs(dx) < 6) { return; }
+        moved = true;
+        track.classList.add("is-dragging");
+        track.scrollLeft = dragLeft - dx;
+      });
+      window.addEventListener("pointerup", function (e) {
+        if (dragX === null) { return; }
+        var dx = e.clientX - dragX;
+        dragX = null;
+        if (!moved) { return; }
+        track.classList.remove("is-dragging");
+        go(active);
+      });
+      track.addEventListener("dragstart", function (e) { e.preventDefault(); });
+    })(rails[r]);
+  }
+})();

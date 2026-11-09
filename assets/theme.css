@@ -1,0 +1,44 @@
+/* Telebeam — the icon's night: deep navy and indigo, with a blue-violet light beam and a cyan edge.
+   Contrast checked (WCAG AA, tools/contrast.py) in both schemes, 4 Nov 2026:
+   dark: body text 14.7+ : 1, muted 7.9+ : 1, links/accent 6.9+ : 1, headline gradient 8.7+ : 1,
+         small footer text (muted at 80 %) 6.1 : 1;
+   light: body text 17.3 : 1, muted 8.5+ : 1, links/accent 7.2+ : 1, headline gradient 6.7+ : 1,
+         small footer text 5.0+ : 1;
+   white button text on the gradient (both ends) 6.0+ : 1.
+   Display font: the system sans (no Google Font). */
+:root{
+  --accent:#8fa0ff;             /* periwinkle: links, icons, tags (on the dark canvas) */
+  --accent-2:#c37bff;           /* violet */
+  --grad:linear-gradient(135deg,#3f4be0,#7a3fd6);                    /* indigo to violet: buttons (white text) */
+  --grad-text:linear-gradient(135deg,#7fd3ff,#b9a2ff);               /* cyan to lavender: headline words */
+  --ink-1:#7fd3ff; --ink-2:#b9a2ff;
+  --glow-1:rgba(63,75,224,.24);
+  --glow-2:rgba(122,63,214,.18);
+  --bg:#0b0e2a; --bg-2:#10143a; --card:#151a42; --line:#262c5e;
+  --text:#eef0ff; --muted:#aab0d6;
+  --glass-bg:rgba(16,20,58,.66);
+  --glass-line:rgba(143,160,255,.22);
+  --shadow-btn:0 6px 20px rgba(63,75,224,.40);
+  --font-body:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --font-display:var(--font-body);
+  --font-display-weight:800;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --accent:#3a3fc7;           /* deep indigo: AA on white */
+    --accent-2:#6a35c8;
+    --grad-text:linear-gradient(135deg,#2f45c9,#6a35c8);
+    --ink-1:#2f45c9; --ink-2:#6a35c8;
+    --glow-1:rgba(63,75,224,.10);
+    --glow-2:rgba(122,63,214,.08);
+    --bg:#f6f7ff; --bg-2:#ffffff; --card:#ffffff; --line:#e3e6f5;
+    --text:#0d1030; --muted:#41466a;
+    --glass-bg:rgba(255,255,255,.66);
+    --glass-line:rgba(13,16,48,.10);
+    --shadow-btn:0 6px 20px rgba(63,75,224,.26);
+  }
+}
+
+/* Added by build.py: the accessibility overrides from site.css win over the theme. */
+@media (prefers-reduced-transparency: reduce){:root{--glass-blur:none}}
+@media (prefers-contrast: more){:root{--line:color-mix(in srgb,var(--text) 35%,transparent)}}

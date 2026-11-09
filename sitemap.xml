@@ -4,8 +4,2419 @@
     <loc>https://telebeam.app/</loc>
     <lastmod>2026-11-04</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/cs/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/da/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/de/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/es/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/fr/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/it/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/hu/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/nl/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/no/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/pl/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/pt/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ro/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sk/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sl/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/fi/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sv/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/tr/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/el/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ru/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/uk/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ja/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ko/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/zh/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/zh-hant/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/privacy</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/cs/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/da/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/de/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/es/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/fr/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/it/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/hu/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/nl/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/no/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/pl/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/pt/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ro/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sk/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sl/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/fi/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sv/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/tr/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/el/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ru/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/uk/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ja/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ko/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/zh/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/zh-hant/privacy</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/privacy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/privacy"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/privacy"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/privacy"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/privacy"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/terms</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/terms"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/support</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/cs/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/da/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/de/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/es/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/fr/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/it/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/hu/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/nl/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/no/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/pl/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/pt/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ro/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sk/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sl/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/fi/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/sv/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/tr/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/el/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ru/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/uk/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ja/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/ko/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/zh/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/zh-hant/support</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
+    <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/support"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://telebeam.app/es/support"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/support"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://telebeam.app/it/support"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://telebeam.app/hu/support"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://telebeam.app/nl/support"/>
+    <xhtml:link rel="alternate" hreflang="nb" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="no" href="https://telebeam.app/no/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://telebeam.app/pl/support"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/support"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://telebeam.app/ro/support"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://telebeam.app/sk/support"/>
+    <xhtml:link rel="alternate" hreflang="sl" href="https://telebeam.app/sl/support"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://telebeam.app/fi/support"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://telebeam.app/sv/support"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://telebeam.app/tr/support"/>
+    <xhtml:link rel="alternate" hreflang="el" href="https://telebeam.app/el/support"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://telebeam.app/ru/support"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://telebeam.app/uk/support"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/support"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://telebeam.app/ko/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://telebeam.app/zh/support"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://telebeam.app/zh-hant/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/support"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/accessibility</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/accessibility"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/accessibility"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/press</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/press"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/press"/>
   </url>
   <url>
     <loc>https://telebeam.app/mirror-mac-to-google-tv</loc>
@@ -15,20 +2426,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-google-tv"/>
   </url>
   <url>
-    <loc>https://telebeam.app/mirror-mac-to-sony-tv</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://telebeam.app/mirror-mac-to-tcl-tv</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://telebeam.app/mirror-mac-to-philips-tv</loc>
-    <lastmod>2026-11-04</lastmod>
-  </url>
-  <url>
-    <loc>https://telebeam.app/mirror-mac-to-hisense-tv</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://telebeam.app/de/mirror-mac-to-google-tv</loc>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-google-tv"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mirror-mac-to-google-tv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-google-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/mac-doesnt-see-my-tv</loc>
@@ -38,28 +2440,34 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
   </url>
   <url>
-    <loc>https://telebeam.app/de/</loc>
-    <lastmod>2026-11-04</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/"/>
-  </url>
-  <url>
-    <loc>https://telebeam.app/de/mirror-mac-to-google-tv</loc>
-    <lastmod>2026-11-04</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-google-tv"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mirror-mac-to-google-tv"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-google-tv"/>
-  </url>
-  <url>
     <loc>https://telebeam.app/de/mac-doesnt-see-my-tv</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-07</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mac-doesnt-see-my-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
   </url>
   <url>
-    <loc>https://telebeam.app/privacy.html</loc>
+    <loc>https://telebeam.app/mirror-mac-to-sony-tv</loc>
     <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-sony-tv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-sony-tv"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/mirror-mac-to-tcl-tv</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-tcl-tv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-tcl-tv"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/mirror-mac-to-philips-tv</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-philips-tv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-philips-tv"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/mirror-mac-to-hisense-tv</loc>
+    <lastmod>2026-11-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-hisense-tv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-hisense-tv"/>
   </url>
 </urlset>
