@@ -3,10 +3,12 @@ package io.github.jqssun.airplay.ui
 import android.content.Context
 import android.net.ConnectivityManager
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.automirrored.filled.ScreenShare
 import androidx.compose.material.icons.filled.Tv
 import androidx.compose.material3.*
@@ -15,6 +17,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.graphics.Color
@@ -28,6 +34,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.layout.Layout
 import androidx.compose.ui.unit.Constraints
 import io.github.jqssun.airplay.R
@@ -44,6 +51,15 @@ fun Context.tvIpv4(): String? = runCatching {
 
 enum class HomeStatus { READY, OFF, ERROR, NEEDS_ACCESS }
 
+// tvOS-like palette for the waiting screen: pure black, white text at Apple's label opacities, system blue/green
+private val Label = Color.White
+private val Secondary = Color(0x99EBEBF5)
+private val Tertiary = Color(0x4DEBEBF5)
+private val Glass = Color.White.copy(alpha = 0.06f)
+private val GlassEdge = Color.White.copy(alpha = 0.10f)
+private val SystemBlue = Color(0xFF0A84FF)
+private val SystemGreen = Color(0xFF30D158)
+
 /** Full-screen, calm waiting screen: TV name, status, the exact clicks on a Mac. */
 @Composable
 fun WaitingContent(
@@ -57,93 +73,104 @@ fun WaitingContent(
     actionFocus: FocusRequester,
     modifier: Modifier = Modifier,
 ) {
+    // soft light from above, like the Apple TV home screen; drawn behind the whole screen
+    Box(Modifier.fillMaxSize().background(Color.Black).drawBehind {
+        drawRect(Brush.radialGradient(
+            listOf(Color(0xFF1C3460).copy(alpha = 0.6f), Color.Transparent),
+            center = Offset(size.width / 2, 0f),
+            radius = size.width * 0.65f,
+        ))
+    })
     // TVs crop a few percent off every edge (overscan): keep ~6% clear, and never let the block run off screen
-    FitToScreen(modifier.fillMaxSize().padding(horizontal = 60.dp, vertical = 32.dp)) {
+    FitToScreen(modifier.fillMaxSize().padding(horizontal = 80.dp, vertical = 40.dp)) {
     Column(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         StatusPill(status)
-        Spacer(Modifier.height(12.dp))
+        Spacer(Modifier.height(20.dp))
         Text(
             text = tvName,
-            style = MaterialTheme.typography.displaySmall,
-            color = MaterialTheme.colorScheme.onBackground,
-            fontWeight = FontWeight.Bold,
+            color = Label,
+            fontSize = 60.sp,
+            lineHeight = 64.sp,
+            letterSpacing = (-1.2).sp,
+            fontWeight = FontWeight.SemiBold,
             textAlign = TextAlign.Center,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
         )
 
         if (noticeTitle != null) {
-            Spacer(Modifier.height(20.dp))
-            Card(
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.secondaryContainer),
-                shape = RoundedCornerShape(16.dp),
-                modifier = Modifier.widthIn(max = 720.dp),
-            ) {
-                Column(Modifier.padding(20.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(noticeTitle, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.SemiBold)
-                    Spacer(Modifier.height(6.dp))
-                    if (noticeText != null) Text(
-                        noticeText,
-                        style = MaterialTheme.typography.titleMedium,
-                        textAlign = TextAlign.Center,
-                    )
+            Spacer(Modifier.height(28.dp))
+            GlassPanel(Modifier.widthIn(max = 760.dp)) {
+                Column(Modifier.padding(horizontal = 36.dp, vertical = 28.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(noticeTitle, color = Label, fontSize = 26.sp, fontWeight = FontWeight.SemiBold, letterSpacing = (-0.3).sp, textAlign = TextAlign.Center)
+                    if (noticeText != null) {
+                        Spacer(Modifier.height(8.dp))
+                        Text(noticeText, color = Secondary, fontSize = 19.sp, lineHeight = 26.sp, textAlign = TextAlign.Center)
+                    }
                 }
             }
         }
 
         if (actionLabel != null) {
-            Spacer(Modifier.height(24.dp))
-            Button(onClick = onAction, modifier = Modifier.focusRequester(actionFocus).dpadFocus(CircleShape)) {
-                Text(actionLabel, style = MaterialTheme.typography.titleMedium)
+            Spacer(Modifier.height(32.dp))
+            Button(
+                onClick = onAction,
+                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color.Black),
+                contentPadding = PaddingValues(horizontal = 40.dp, vertical = 14.dp),
+                modifier = Modifier.focusRequester(actionFocus).dpadFocus(CircleShape),
+            ) {
+                Text(actionLabel, fontSize = 20.sp, fontWeight = FontWeight.SemiBold)
             }
         }
 
         if (status == HomeStatus.NEEDS_ACCESS) {
-            Spacer(Modifier.height(16.dp))
+            Spacer(Modifier.height(20.dp))
             Text(
                 stringResource(R.string.local_network_desc),
-                style = MaterialTheme.typography.titleMedium,
-                textAlign = TextAlign.Center,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                color = Secondary, fontSize = 19.sp, lineHeight = 26.sp,
+                textAlign = TextAlign.Center, modifier = Modifier.widthIn(max = 760.dp),
             )
         }
 
         if (status == HomeStatus.READY) {
-            Spacer(Modifier.height(16.dp))
-            Text(stringResource(R.string.home_mac_title), style = MaterialTheme.typography.headlineSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-            Spacer(Modifier.height(16.dp))
+            Spacer(Modifier.height(10.dp))
+            Text(stringResource(R.string.home_mac_title), color = Secondary, fontSize = 24.sp, textAlign = TextAlign.Center)
+            Spacer(Modifier.height(36.dp))
             MacSteps(tvName)
-            Spacer(Modifier.height(16.dp))
+            Spacer(Modifier.height(32.dp))
             Text(
                 stringResource(R.string.home_iphone, tvName),
-                style = MaterialTheme.typography.titleMedium,
-                textAlign = TextAlign.Center,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                color = Secondary, fontSize = 19.sp, lineHeight = 26.sp,
+                textAlign = TextAlign.Center, modifier = Modifier.widthIn(max = 1000.dp),
             )
-            Spacer(Modifier.height(8.dp))
+            Spacer(Modifier.height(28.dp))
             Text(
                 stringResource(R.string.home_mirror_hint) + "\n" + stringResource(R.string.home_screensaver_hint),
-                style = MaterialTheme.typography.bodyMedium,
-                textAlign = TextAlign.Center,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                color = Tertiary, fontSize = 15.sp, lineHeight = 22.sp,
+                textAlign = TextAlign.Center, modifier = Modifier.widthIn(max = 1000.dp),
             )
         }
 
-        Spacer(Modifier.height(12.dp))
+        Spacer(Modifier.height(if (status == HomeStatus.READY) 8.dp else 28.dp))
         Text(
             text = listOfNotNull(
                 stringResource(R.string.home_same_wifi),
                 address?.let { stringResource(R.string.home_tv_address, it) },
             ).joinToString("  ·  "),
-            style = MaterialTheme.typography.bodyMedium,
+            color = Tertiary, fontSize = 15.sp, lineHeight = 22.sp,
             textAlign = TextAlign.Center,
-            color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.8f),
         )
     }
     }
+}
+
+@Composable
+private fun GlassPanel(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+    val shape = RoundedCornerShape(28.dp)
+    Box(modifier.clip(shape).background(Glass).border(1.dp, GlassEdge, shape)) { content() }
 }
 
 /** Centers [content]; if it is taller or wider than the space (big fonts, long names, a notice), shrinks it to fit. */
@@ -162,7 +189,7 @@ private fun FitToScreen(modifier: Modifier, content: @Composable () -> Unit) {
 @Composable
 private fun StatusPill(status: HomeStatus) {
     val ok = status == HomeStatus.READY
-    val dot = if (ok) Color(0xFF34C759) else MaterialTheme.colorScheme.error
+    val dot = if (ok) SystemGreen else Color(0xFFFF9F0A)
     val label = when (status) {
         HomeStatus.READY -> R.string.status_ready
         HomeStatus.OFF -> R.string.status_off
@@ -172,12 +199,15 @@ private fun StatusPill(status: HomeStatus) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
-            .background(MaterialTheme.colorScheme.surfaceVariant, CircleShape)
-            .padding(horizontal = 18.dp, vertical = 8.dp),
+            .background(Color.White.copy(alpha = 0.08f), CircleShape)
+            .padding(horizontal = 16.dp, vertical = 7.dp),
     ) {
-        Box(Modifier.size(14.dp).background(dot, CircleShape))
-        Spacer(Modifier.width(10.dp))
-        Text(stringResource(label), style = MaterialTheme.typography.titleMedium)
+        // a soft halo makes the dot read as a light, not a sticker
+        Box(Modifier.size(18.dp).background(dot.copy(alpha = 0.25f), CircleShape), contentAlignment = Alignment.Center) {
+            Box(Modifier.size(9.dp).background(dot, CircleShape))
+        }
+        Spacer(Modifier.width(8.dp))
+        Text(stringResource(label), color = Label.copy(alpha = 0.85f), fontSize = 17.sp, fontWeight = FontWeight.Medium)
     }
 }
 
@@ -188,41 +218,49 @@ private fun MacSteps(tvName: String) {
         rememberVectorPainter(Icons.AutoMirrored.Filled.ScreenShare) to stringResource(R.string.home_step2),
         rememberVectorPainter(Icons.Default.Tv) to stringResource(R.string.home_step3, tvName),
     )
-    BoxWithConstraints(Modifier.widthIn(max = 1100.dp)) {
+    BoxWithConstraints(Modifier.widthIn(max = 1120.dp)) {
         val wide = maxWidth >= 600.dp
-        val cards: @Composable (Modifier) -> Unit = { m ->
-            steps.forEachIndexed { i, (icon, text) -> StepCard(i + 1, icon, text, m) }
-        }
-        if (wide) {
-            Row(horizontalArrangement = Arrangement.spacedBy(20.dp), modifier = Modifier.height(IntrinsicSize.Max)) {
-                cards(Modifier.weight(1f).fillMaxHeight())
+        GlassPanel(Modifier.fillMaxWidth(if (wide) 0.86f else 1f)) {
+            if (wide) {
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier.height(IntrinsicSize.Max).padding(horizontal = 12.dp, vertical = 32.dp),
+                ) {
+                    steps.forEachIndexed { i, (icon, text) ->
+                        if (i > 0) Icon(
+                            Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null,
+                            tint = Tertiary, modifier = Modifier.size(32.dp),
+                        )
+                        Step(i + 1, icon, text, last = i == steps.lastIndex, Modifier.weight(1f).fillMaxHeight())
+                    }
+                }
+            } else {
+                Column(Modifier.padding(vertical = 20.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
+                    steps.forEachIndexed { i, (icon, text) -> Step(i + 1, icon, text, i == steps.lastIndex, Modifier.fillMaxWidth()) }
+                }
             }
-        } else {
-            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) { cards(Modifier.fillMaxWidth()) }
         }
     }
 }
 
 @Composable
-private fun StepCard(number: Int, icon: Painter, text: String, modifier: Modifier) {
-    Card(modifier = modifier, shape = RoundedCornerShape(20.dp)) {
-        Column(
-            modifier = Modifier.fillMaxWidth().padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally,
+private fun Step(number: Int, icon: Painter, text: String, last: Boolean, modifier: Modifier) {
+    Column(modifier.padding(horizontal = 16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
+        // the last step is the goal, so it gets the accent; the others stay quiet glass
+        val tile = RoundedCornerShape(18.dp)
+        Box(
+            Modifier.size(72.dp).clip(tile).background(
+                if (last) Brush.verticalGradient(listOf(Color(0xFF3B9BFF), SystemBlue))
+                else Brush.verticalGradient(listOf(Color.White.copy(alpha = 0.16f), Color.White.copy(alpha = 0.08f)))
+            ),
+            contentAlignment = Alignment.Center,
         ) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Box(
-                    Modifier.size(40.dp).background(MaterialTheme.colorScheme.primary, CircleShape),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Text("$number", style = MaterialTheme.typography.titleLarge, color = MaterialTheme.colorScheme.onPrimary, fontWeight = FontWeight.Bold)
-                }
-                Spacer(Modifier.width(16.dp))
-                Icon(icon, contentDescription = null, modifier = Modifier.size(36.dp), tint = MaterialTheme.colorScheme.onSurface)
-            }
-            Spacer(Modifier.height(10.dp))
-            Text(text, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+            Icon(icon, contentDescription = null, modifier = Modifier.size(36.dp), tint = Color.White)
         }
+        Spacer(Modifier.height(18.dp))
+        Text("$number", color = Tertiary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
+        Spacer(Modifier.height(4.dp))
+        Text(text, color = Label, fontSize = 20.sp, lineHeight = 26.sp, fontWeight = FontWeight.Medium, textAlign = TextAlign.Center)
     }
 }
 

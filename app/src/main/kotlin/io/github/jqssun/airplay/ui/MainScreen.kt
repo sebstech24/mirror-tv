@@ -728,7 +728,7 @@ private fun HomeContent(
         }
 
         Row(modifier = Modifier.align(Alignment.TopEnd).safeDrawingPadding().padding(horizontal = 32.dp, vertical = 16.dp)) {
-            val tint = if (mirroringActive) Color.White.copy(alpha = 0.7f) else MaterialTheme.colorScheme.onSurfaceVariant
+            val tint = Color.White.copy(alpha = if (mirroringActive) 0.7f else 0.55f)
             if (running && mirroringActive && !audioMode) {
                 IconButton(onClick = onPip, modifier = Modifier.dpadFocus(CircleShape)) {
                     Icon(painterResource(R.drawable.ic_pip), contentDescription = stringResource(R.string.cd_pip), tint = tint)
@@ -740,8 +740,9 @@ private fun HomeContent(
             IconButton(
                 onClick = onSettings,
                 modifier = Modifier.size(56.dp).focusRequester(gearFocus).dpadFocus(CircleShape)
+                    .thenIf(!mirroringActive) { background(Color.White.copy(alpha = 0.08f), CircleShape) }
             ) {
-                Icon(Icons.Default.Settings, contentDescription = stringResource(R.string.cd_settings), tint = tint, modifier = Modifier.size(32.dp))
+                Icon(Icons.Default.Settings, contentDescription = stringResource(R.string.cd_settings), tint = tint, modifier = Modifier.size(28.dp))
             }
         }
     }
