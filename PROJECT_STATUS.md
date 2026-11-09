@@ -1,5 +1,9 @@
 # Mirror TV — project status
 
+## SITE + GIFT CODES LIVE (9 Nov 2026, Sebastian: "yes to publishing and creating")
+- telebeam.app now serves the site kit build (25 languages, 87 pages, Apple-style TV shots): gh-pages commit 11f8c0b. Kept on purpose: fgs-demo.mp4 (Play foreground-service declaration), the old img/ files and assets/telebeam.css. Republish: build + check in `~/Coding/App Release/site-kit/frontend`, then rsync dist/telebeam onto gh-pages with those excludes.
+- Play promotion 131686202 "telebeam.app gift - Monthly 30 days free": telebeam_monthly, 30-day free trial, 500 one-time codes, 9 Nov 2026 to 8 Nov 2027. Codes: `~/Coding/App Release/site-kit/code-service/private/telebeam-play-codes.csv` (git-ignored, never paste). The kit chat was told. The site's gift link appears only once api.telebeam.app + Turnstile + apps.json are set up (needs his yes).
+
 ## APPLE-STYLE LOOK (9 Nov 2026, Sebastian: "make it feel like apple made it")
 - TV Ready screen redesigned in `ui/HomeScreen.kt`: black with a soft blue glow, small "Ready" capsule, big TV name, the three Mac steps in one glass panel with arrows (step 3 in system blue), quieter grey hints. No text changed, so all 31 languages still fit the same strings.
 - `ui/theme/Theme.kt`: dark theme is now Apple's neutral greys + system blue (was Android's purple-tinted dynamic colours); letter spacing tightened app-wide; focused cards turn white like Apple TV tiles (paywall). Settings picks up the colours too.
