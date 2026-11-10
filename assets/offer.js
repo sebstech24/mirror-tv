@@ -1762,7 +1762,7 @@
       var offers = (status.offers || []).filter(function (o, i, all) {
         if (!o || KINDS.indexOf(o.id) < 0) return false;
         if (all.findIndex(function (x) { return x && x.id === o.id; }) !== i) return false; // each gift once
-        return o.id === "free_month" || (o.percent > 0 && o.percent < 100);
+        return o.id === "free_month" || (o.percent > 0 && o.percent < 100); // never a free Lifetime (Sebastian, 9 Nov 2026)
       }).sort(function (a, b) { return KINDS.indexOf(a.id) - KINDS.indexOf(b.id); });
       if (offers.length) mount(status, offers);
     });

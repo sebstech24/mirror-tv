@@ -226,3 +226,10 @@
     })(rails[r]);
   }
 })();
+
+/* Sale strip (app.json "deal"): gone once its end date has passed, even before the site is rebuilt. */
+(function () {
+  var bar = document.querySelector(".deal-bar[data-deal-end]");
+  var end = bar && Date.parse(bar.getAttribute("data-deal-end"));
+  if (end && Date.now() > end) bar.remove();
+})();

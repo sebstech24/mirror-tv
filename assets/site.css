@@ -1452,3 +1452,8 @@ a.get-soon[href]:hover{border-color:var(--accent);background:color-mix(in srgb,v
 .hero-cap-below .hs-stage .phone,.hero-cap-none .hs-stage .phone{right:auto;left:50%;translate:-50% 0}
 .hero-cap-below .hs-stage .watch,.hero-cap-none .hs-stage .watch{right:auto;left:calc(50% + 8%)}
 .hero-cap-below .hs-stage .phone.land + .watch,.hero-cap-none .hs-stage .phone.land + .watch{left:calc(50% + 21%)}
+/* Sale strip above the header (app.json "deal"; site.js removes it after its end date) */
+.deal-bar{display:block;padding:10px var(--sp-l);background:var(--grad);color:#fff;text-align:center;
+  font-weight:700;font-size:15px;line-height:1.35;text-decoration:none}
+.deal-bar:hover{text-decoration:underline}
+.deal-bar:focus-visible{outline:3px solid #fff;outline-offset:-5px}
