@@ -70,7 +70,9 @@
       linkLY: "Get {percent}% off Lifetime or {ypercent}% off your first year",
       linkMY: "Get a free month or {ypercent}% off your first year",
       headingCode: "Where should I send your code?",
-      fineDiscount: "Nothing is paid on this site. With a discount code, you pay the lower price in the App Store. You can unsubscribe from updates at any time."
+      fineDiscount: "Nothing is paid on this site. With a discount code, you pay the lower price in the App Store. You can unsubscribe from updates at any time.",
+      finePlay: "Nothing is paid on this site. If you pick {percent}% off Lifetime, you pay the discounted price in Google Play. You can unsubscribe from updates at any time.",
+      fineDiscountPlay: "Nothing is paid on this site. With a discount code, you pay the lower price in Google Play. You can unsubscribe from updates at any time."
     },
     de: {
       link: "Hol dir einen Gratismonat oder {plan} auf Lebenszeit {percent} % günstiger",
@@ -125,7 +127,9 @@
       linkLY: "Hol dir {percent} % Rabatt auf Lebenszeit oder {ypercent} % aufs erste Jahr",
       linkMY: "Hol dir einen Gratismonat oder {ypercent} % Rabatt aufs erste Jahr",
       headingCode: "Wohin soll ich deinen Code schicken?",
-      fineDiscount: "Auf dieser Website wird nichts bezahlt. Mit einem Rabattcode zahlst du den reduzierten Preis im App Store. Du kannst Updates jederzeit abbestellen."
+      fineDiscount: "Auf dieser Website wird nichts bezahlt. Mit einem Rabattcode zahlst du den reduzierten Preis im App Store. Du kannst Updates jederzeit abbestellen.",
+      finePlay: "Auf dieser Website wird nichts bezahlt. Wenn du {percent} % Rabatt auf den Kauf auf Lebenszeit wählst, zahlst du den reduzierten Preis bei Google Play. Du kannst Updates jederzeit abbestellen.",
+      fineDiscountPlay: "Auf dieser Website wird nichts bezahlt. Mit einem Rabattcode zahlst du den reduzierten Preis bei Google Play. Du kannst Updates jederzeit abbestellen."
     },
     fr: {
       link: "Obtenez un mois gratuit ou {percent} % de réduction sur l’achat à vie",
@@ -180,7 +184,9 @@
       linkLY: "Obtenez {percent} % de réduction sur l’achat à vie ou {ypercent} % sur la première année",
       linkMY: "Obtenez un mois gratuit ou {ypercent} % de réduction sur la première année",
       headingCode: "Où dois-je envoyer votre code ?",
-      fineDiscount: "Aucun paiement sur ce site. Avec un code de réduction, vous payez le prix réduit dans l’App Store. Vous pouvez vous désabonner des mises à jour à tout moment."
+      fineDiscount: "Aucun paiement sur ce site. Avec un code de réduction, vous payez le prix réduit dans l’App Store. Vous pouvez vous désabonner des mises à jour à tout moment.",
+      finePlay: "Aucun paiement sur ce site. Si vous choisissez {percent} % de réduction sur l’achat à vie, vous payez le prix réduit sur Google Play. Vous pouvez vous désabonner des mises à jour à tout moment.",
+      fineDiscountPlay: "Aucun paiement sur ce site. Avec un code de réduction, vous payez le prix réduit sur Google Play. Vous pouvez vous désabonner des mises à jour à tout moment."
     },
     it: {
       link: "Ottieni un mese gratis o il {percent}% di sconto sull’acquisto a vita",
@@ -235,7 +241,9 @@
       linkLY: "Ottieni il {percent}% di sconto sull’acquisto a vita o il {ypercent}% sul primo anno",
       linkMY: "Ottieni un mese gratis o il {ypercent}% di sconto sul primo anno",
       headingCode: "Dove ti mando il codice?",
-      fineDiscount: "Su questo sito non si paga nulla. Con un codice sconto paghi il prezzo scontato nell’App Store. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento."
+      fineDiscount: "Su questo sito non si paga nulla. Con un codice sconto paghi il prezzo scontato nell’App Store. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento.",
+      finePlay: "Su questo sito non si paga nulla. Se scegli il {percent}% di sconto sull’acquisto a vita, paghi il prezzo scontato su Google Play. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento.",
+      fineDiscountPlay: "Su questo sito non si paga nulla. Con un codice sconto paghi il prezzo scontato su Google Play. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento."
     },
     es: {
       link: "Consigue un mes gratis o un {percent} % de descuento en la compra de por vida",
@@ -290,7 +298,9 @@
       linkLY: "Consigue un {percent} % de descuento en la compra de por vida o un {ypercent} % en el primer año",
       linkMY: "Consigue un mes gratis o un {ypercent} % de descuento en el primer año",
       headingCode: "¿Adónde te envío el código?",
-      fineDiscount: "En este sitio no se paga nada. Con un código de descuento, pagas el precio rebajado en el App Store. Puedes darte de baja de las novedades en cualquier momento."
+      fineDiscount: "En este sitio no se paga nada. Con un código de descuento, pagas el precio rebajado en el App Store. Puedes darte de baja de las novedades en cualquier momento.",
+      finePlay: "En este sitio no se paga nada. Si eliges el {percent} % de descuento en la compra de por vida, pagas el precio con descuento en Google Play. Puedes darte de baja de las novedades en cualquier momento.",
+      fineDiscountPlay: "En este sitio no se paga nada. Con un código de descuento, pagas el precio rebajado en Google Play. Puedes darte de baja de las novedades en cualquier momento."
     },
     pt: {
       link: "Ganhe um mês grátis ou {percent}% de desconto na compra vitalícia",
@@ -345,7 +355,9 @@
       linkLY: "Ganhe {percent}% de desconto na compra vitalícia ou {ypercent}% no primeiro ano",
       linkMY: "Ganhe um mês grátis ou {ypercent}% de desconto no primeiro ano",
       headingCode: "Para onde devo enviar seu código?",
-      fineDiscount: "Nenhum pagamento neste site. Com um código de desconto, você paga o preço reduzido na App Store. Você pode cancelar a inscrição nas novidades a qualquer momento."
+      fineDiscount: "Nenhum pagamento neste site. Com um código de desconto, você paga o preço reduzido na App Store. Você pode cancelar a inscrição nas novidades a qualquer momento.",
+      finePlay: "Nenhum pagamento neste site. Se você escolher {percent}% de desconto na compra vitalícia, paga o preço com desconto no Google Play. Você pode cancelar a inscrição nas novidades a qualquer momento.",
+      fineDiscountPlay: "Nenhum pagamento neste site. Com um código de desconto, você paga o preço reduzido no Google Play. Você pode cancelar a inscrição nas novidades a qualquer momento."
     },
     nl: {
       link: "Krijg een gratis maand of {percent}% korting op de levenslange aankoop",
@@ -400,7 +412,9 @@
       linkLY: "Krijg {percent}% korting op de levenslange aankoop of {ypercent}% op het eerste jaar",
       linkMY: "Krijg een gratis maand of {ypercent}% korting op het eerste jaar",
       headingCode: "Waar mag ik je code naartoe sturen?",
-      fineDiscount: "Op deze site betaal je niets. Met een kortingscode betaal je de lagere prijs in de App Store. Je kunt je altijd afmelden voor updates."
+      fineDiscount: "Op deze site betaal je niets. Met een kortingscode betaal je de lagere prijs in de App Store. Je kunt je altijd afmelden voor updates.",
+      finePlay: "Op deze site betaal je niets. Kies je {percent}% korting op de levenslange aankoop, dan betaal je de kortingsprijs in Google Play. Je kunt je altijd afmelden voor updates.",
+      fineDiscountPlay: "Op deze site betaal je niets. Met een kortingscode betaal je de lagere prijs in Google Play. Je kunt je altijd afmelden voor updates."
     },
     ja: {
       link: "{plan}の無料1か月か、買い切り{percent}%オフを受け取る",
@@ -455,7 +469,9 @@
       linkLY: "買い切り{percent}%オフか、年額プラン初年度{ypercent}%オフを受け取る",
       linkMY: "{plan}の無料1か月か、年額プラン初年度{ypercent}%オフを受け取る",
       headingCode: "コードをどちらにお送りしましょうか？",
-      fineDiscount: "このサイトでのお支払いはありません。割引コードを使うと、割引価格をApp Storeでお支払いいただきます。お知らせの配信はいつでも停止できます。"
+      fineDiscount: "このサイトでのお支払いはありません。割引コードを使うと、割引価格をApp Storeでお支払いいただきます。お知らせの配信はいつでも停止できます。",
+      finePlay: "このサイトでのお支払いはありません。買い切り{percent}%オフを選んだ場合は、割引価格をGoogle Playでお支払いいただきます。お知らせの配信はいつでも停止できます。",
+      fineDiscountPlay: "このサイトでのお支払いはありません。割引コードを使うと、割引価格をGoogle Playでお支払いいただきます。お知らせの配信はいつでも停止できます。"
     },
     zh: {
       link: "免费领取一个月，或终身买断立减 {percent}%",
@@ -510,7 +526,9 @@
       linkLY: "终身买断立减 {percent}%，或年度订阅首年立减 {ypercent}%",
       linkMY: "免费领取一个月，或年度订阅首年立减 {ypercent}%",
       headingCode: "我该把代码发送到哪里？",
-      fineDiscount: "本网站不收取任何费用。使用折扣代码后，需在 App Store 支付优惠后的价格。你可以随时退订更新。"
+      fineDiscount: "本网站不收取任何费用。使用折扣代码后，需在 App Store 支付优惠后的价格。你可以随时退订更新。",
+      finePlay: "本网站不收取任何费用。如果你选择终身买断立减 {percent}%，需在 Google Play 支付优惠后的价格。你可以随时退订更新。",
+      fineDiscountPlay: "本网站不收取任何费用。使用折扣代码后，需在 Google Play 支付优惠后的价格。你可以随时退订更新。"
     },
     ko: {
       link: "{plan} 무료 한 달 또는 평생 구매 {percent}% 할인 받기",
@@ -565,7 +583,9 @@
       linkLY: "평생 구매 {percent}% 할인 또는 연간 구독 첫해 {ypercent}% 할인 받기",
       linkMY: "{plan} 무료 한 달 또는 연간 구독 첫해 {ypercent}% 할인 받기",
       headingCode: "코드를 어디로 보내 드릴까요?",
-      fineDiscount: "이 사이트에서는 결제하지 않습니다. 할인 코드를 사용하면 할인된 가격을 App Store에서 결제합니다. 소식 수신은 언제든지 취소할 수 있습니다."
+      fineDiscount: "이 사이트에서는 결제하지 않습니다. 할인 코드를 사용하면 할인된 가격을 App Store에서 결제합니다. 소식 수신은 언제든지 취소할 수 있습니다.",
+      finePlay: "이 사이트에서는 결제하지 않습니다. 평생 구매 {percent}% 할인을 선택하면 할인된 가격을 Google Play에서 결제합니다. 소식 수신은 언제든지 취소할 수 있습니다.",
+      fineDiscountPlay: "이 사이트에서는 결제하지 않습니다. 할인 코드를 사용하면 할인된 가격을 Google Play에서 결제합니다. 소식 수신은 언제든지 취소할 수 있습니다."
     },
     ru: {
       link: "Получите бесплатный месяц или скидку {percent}% на пожизненный доступ",
@@ -620,7 +640,9 @@
       linkLY: "Получите скидку {percent}% на пожизненный доступ или {ypercent}% на первый год",
       linkMY: "Получите бесплатный месяц или скидку {ypercent}% на первый год",
       headingCode: "Куда отправить ваш код?",
-      fineDiscount: "На этом сайте ничего не нужно оплачивать. С кодом скидки вы заплатите сниженную цену в App Store. Отписаться от новостей можно в любой момент."
+      fineDiscount: "На этом сайте ничего не нужно оплачивать. С кодом скидки вы заплатите сниженную цену в App Store. Отписаться от новостей можно в любой момент.",
+      finePlay: "На этом сайте ничего не нужно оплачивать. Если вы выберете скидку {percent}% на пожизненный доступ, цену со скидкой вы заплатите в Google Play. Отписаться от новостей можно в любой момент.",
+      fineDiscountPlay: "На этом сайте ничего не нужно оплачивать. С кодом скидки вы заплатите сниженную цену в Google Play. Отписаться от новостей можно в любой момент."
     },
     pl: {
       link: "Odbierz darmowy miesiąc lub {percent} % zniżki na Lifetime",
@@ -675,7 +697,9 @@
       linkLY: "Odbierz {percent} % zniżki na Lifetime lub {ypercent} % na pierwszy rok",
       linkMY: "Odbierz darmowy miesiąc lub {ypercent} % zniżki na pierwszy rok",
       headingCode: "Gdzie mam wysłać Twój kod?",
-      fineDiscount: "Na tej stronie nic nie płacisz. Z kodem rabatowym zapłacisz niższą cenę w App Store. Z aktualizacji możesz się wypisać w każdej chwili."
+      fineDiscount: "Na tej stronie nic nie płacisz. Z kodem rabatowym zapłacisz niższą cenę w App Store. Z aktualizacji możesz się wypisać w każdej chwili.",
+      finePlay: "Na tej stronie nic nie płacisz. Jeśli wybierzesz {percent} % zniżki na Lifetime, obniżoną cenę zapłacisz w Google Play. Z aktualizacji możesz się wypisać w każdej chwili.",
+      fineDiscountPlay: "Na tej stronie nic nie płacisz. Z kodem rabatowym zapłacisz niższą cenę w Google Play. Z aktualizacji możesz się wypisać w każdej chwili."
     },
     tr: {
       link: "Ücretsiz bir ay ya da ömür boyu {plan}’te %{percent} indirim al",
@@ -730,7 +754,9 @@
       linkLY: "Ömür boyu %{percent} ya da ilk yıl %{ypercent} indirim al",
       linkMY: "Ücretsiz bir ay ya da ilk yıl %{ypercent} indirim al",
       headingCode: "Kodunu nereye göndereyim?",
-      fineDiscount: "Bu sitede ödeme yapılmaz. İndirim koduyla indirimli fiyatı App Store’da ödersin. Güncellemelerden istediğin zaman çıkabilirsin."
+      fineDiscount: "Bu sitede ödeme yapılmaz. İndirim koduyla indirimli fiyatı App Store’da ödersin. Güncellemelerden istediğin zaman çıkabilirsin.",
+      finePlay: "Bu sitede ödeme yapılmaz. Ömür boyu {plan}’te %{percent} indirimi seçersen indirimli fiyatı Google Play’de ödersin. Güncellemelerden istediğin zaman çıkabilirsin.",
+      fineDiscountPlay: "Bu sitede ödeme yapılmaz. İndirim koduyla indirimli fiyatı Google Play’de ödersin. Güncellemelerden istediğin zaman çıkabilirsin."
     },
     "zh-hant": {
       link: "免費一個月，或永久版現省 {percent}%",
@@ -785,7 +811,9 @@
       linkLY: "永久版現省 {percent}%，或年度方案首年現省 {ypercent}%",
       linkMY: "免費一個月，或年度方案首年現省 {ypercent}%",
       headingCode: "我該把代碼寄到哪裡？",
-      fineDiscount: "本網站不會收取任何費用。使用折扣代碼時，優惠後的價格是在 App Store 支付。你可以隨時取消訂閱最新消息。"
+      fineDiscount: "本網站不會收取任何費用。使用折扣代碼時，優惠後的價格是在 App Store 支付。你可以隨時取消訂閱最新消息。",
+      finePlay: "本網站不會收取任何費用。如果你選擇永久版現省 {percent}%，優惠後的價格是在 Google Play 支付。你可以隨時取消訂閱最新消息。",
+      fineDiscountPlay: "本網站不會收取任何費用。使用折扣代碼時，優惠後的價格是在 Google Play 支付。你可以隨時取消訂閱最新消息。"
     },
     uk: {
       link: "Отримати безкоштовний місяць або знижку {percent}% на довічний доступ",
@@ -840,7 +868,9 @@
       linkLY: "Отримати знижку {percent}% на довічний доступ або {ypercent}% на перший рік",
       linkMY: "Отримати безкоштовний місяць або знижку {ypercent}% на перший рік",
       headingCode: "Куди надіслати ваш код?",
-      fineDiscount: "На цьому сайті нічого платити не потрібно. З кодом знижки ви сплатите нижчу ціну в App Store. Від новин можна відписатися будь-коли."
+      fineDiscount: "На цьому сайті нічого платити не потрібно. З кодом знижки ви сплатите нижчу ціну в App Store. Від новин можна відписатися будь-коли.",
+      finePlay: "На цьому сайті нічого платити не потрібно. Якщо ви оберете знижку {percent}% на довічний доступ, ціну зі знижкою ви сплатите у Google Play. Від новин можна відписатися будь-коли.",
+      fineDiscountPlay: "На цьому сайті нічого платити не потрібно. З кодом знижки ви сплатите нижчу ціну у Google Play. Від новин можна відписатися будь-коли."
     },
     sl: {
       link: "Pridobite brezplačen mesec ali {percent} % popusta za Lifetime",
@@ -895,7 +925,9 @@
       linkLY: "Pridobite {percent} % popusta za Lifetime ali {ypercent} % za prvo leto",
       linkMY: "Pridobite brezplačen mesec ali {ypercent} % popusta za prvo leto",
       headingCode: "Kam naj vam pošljem kodo?",
-      fineDiscount: "Na tem spletnem mestu ne plačate ničesar. S kodo za popust plačate znižano ceno v trgovini App Store. Od novic se lahko kadar koli odjavite."
+      fineDiscount: "Na tem spletnem mestu ne plačate ničesar. S kodo za popust plačate znižano ceno v trgovini App Store. Od novic se lahko kadar koli odjavite.",
+      finePlay: "Na tem spletnem mestu ne plačate ničesar. Če izberete {percent} % popusta za Lifetime, znižano ceno plačate v trgovini Google Play. Od novic se lahko kadar koli odjavite.",
+      fineDiscountPlay: "Na tem spletnem mestu ne plačate ničesar. S kodo za popust plačate znižano ceno v trgovini Google Play. Od novic se lahko kadar koli odjavite."
     },
     cs: {
       link: "Získejte měsíc zdarma nebo slevu {percent} % na Lifetime",
@@ -950,7 +982,9 @@
       linkLY: "Získejte slevu {percent} % na Lifetime nebo {ypercent} % na první rok",
       linkMY: "Získejte měsíc zdarma nebo slevu {ypercent} % na první rok",
       headingCode: "Kam vám mám poslat kód?",
-      fineDiscount: "Na tomto webu se nic neplatí. Se slevovým kódem zaplatíte nižší cenu v App Storu. Odběr novinek můžete kdykoli zrušit."
+      fineDiscount: "Na tomto webu se nic neplatí. Se slevovým kódem zaplatíte nižší cenu v App Storu. Odběr novinek můžete kdykoli zrušit.",
+      finePlay: "Na tomto webu se nic neplatí. Pokud si vyberete slevu {percent} % na Lifetime, zlevněnou cenu zaplatíte v Google Play. Odběr novinek můžete kdykoli zrušit.",
+      fineDiscountPlay: "Na tomto webu se nic neplatí. Se slevovým kódem zaplatíte nižší cenu v Google Play. Odběr novinek můžete kdykoli zrušit."
     },
     sk: {
       link: "Získajte mesiac zadarmo alebo zľavu {percent} % na Lifetime",
@@ -1005,7 +1039,9 @@
       linkLY: "Získajte zľavu {percent} % na Lifetime alebo {ypercent} % na prvý rok",
       linkMY: "Získajte mesiac zadarmo alebo zľavu {ypercent} % na prvý rok",
       headingCode: "Kam vám mám poslať kód?",
-      fineDiscount: "Na tejto stránke sa nič neplatí. So zľavovým kódom zaplatíte nižšiu cenu v App Store. Z odberu noviniek sa môžete odhlásiť kedykoľvek."
+      fineDiscount: "Na tejto stránke sa nič neplatí. So zľavovým kódom zaplatíte nižšiu cenu v App Store. Z odberu noviniek sa môžete odhlásiť kedykoľvek.",
+      finePlay: "Na tejto stránke sa nič neplatí. Ak si vyberiete zľavu {percent} % na Lifetime, zľavnenú cenu zaplatíte v Google Play. Z odberu noviniek sa môžete odhlásiť kedykoľvek.",
+      fineDiscountPlay: "Na tejto stránke sa nič neplatí. So zľavovým kódom zaplatíte nižšiu cenu v Google Play. Z odberu noviniek sa môžete odhlásiť kedykoľvek."
     },
     sv: {
       link: "Få en gratis månad eller {percent} % rabatt på livstidsköpet",
@@ -1060,7 +1096,9 @@
       linkLY: "Få {percent} % rabatt på livstidsköpet eller {ypercent} % på första året",
       linkMY: "Få en gratis månad eller {ypercent} % rabatt på första året",
       headingCode: "Vart ska jag skicka din kod?",
-      fineDiscount: "Ingen betalning sker på den här webbplatsen. Med en rabattkod betalar du det lägre priset i App Store. Du kan avsluta prenumerationen på uppdateringar när du vill."
+      fineDiscount: "Ingen betalning sker på den här webbplatsen. Med en rabattkod betalar du det lägre priset i App Store. Du kan avsluta prenumerationen på uppdateringar när du vill.",
+      finePlay: "Ingen betalning sker på den här webbplatsen. Om du väljer {percent} % rabatt på livstidsköpet betalar du det rabatterade priset i Google Play. Du kan avsluta prenumerationen på uppdateringar när du vill.",
+      fineDiscountPlay: "Ingen betalning sker på den här webbplatsen. Med en rabattkod betalar du det lägre priset i Google Play. Du kan avsluta prenumerationen på uppdateringar när du vill."
     },
     no: {
       link: "Få en gratis måned eller {percent} % rabatt på livstidskjøpet",
@@ -1115,7 +1153,9 @@
       linkLY: "Få {percent} % rabatt på livstidskjøpet eller {ypercent} % på første år",
       linkMY: "Få en gratis måned eller {ypercent} % rabatt på første år",
       headingCode: "Hvor skal jeg sende koden din?",
-      fineDiscount: "Ingen betaling på dette nettstedet. Med en rabattkode betaler du den lavere prisen i App Store. Du kan melde deg av oppdateringer når som helst."
+      fineDiscount: "Ingen betaling på dette nettstedet. Med en rabattkode betaler du den lavere prisen i App Store. Du kan melde deg av oppdateringer når som helst.",
+      finePlay: "Ingen betaling på dette nettstedet. Hvis du velger {percent} % rabatt på livstidskjøpet, betaler du den rabatterte prisen i Google Play. Du kan melde deg av oppdateringer når som helst.",
+      fineDiscountPlay: "Ingen betaling på dette nettstedet. Med en rabattkode betaler du den lavere prisen i Google Play. Du kan melde deg av oppdateringer når som helst."
     },
     da: {
       link: "Få en gratis måned eller {percent} % rabat på Lifetime",
@@ -1170,7 +1210,9 @@
       linkLY: "Få {percent} % rabat på Lifetime eller {ypercent} % på første år",
       linkMY: "Få en gratis måned eller {ypercent} % rabat på første år",
       headingCode: "Hvor skal jeg sende din kode hen?",
-      fineDiscount: "Der betales ikke noget på dette websted. Med en rabatkode betaler du den lavere pris i App Store. Du kan afmelde opdateringer når som helst."
+      fineDiscount: "Der betales ikke noget på dette websted. Med en rabatkode betaler du den lavere pris i App Store. Du kan afmelde opdateringer når som helst.",
+      finePlay: "Der betales ikke noget på dette websted. Hvis du vælger {percent} % rabat på Lifetime, betaler du den nedsatte pris i Google Play. Du kan afmelde opdateringer når som helst.",
+      fineDiscountPlay: "Der betales ikke noget på dette websted. Med en rabatkode betaler du den lavere pris i Google Play. Du kan afmelde opdateringer når som helst."
     },
     fi: {
       link: "Hanki ilmainen kuukausi tai {percent} %:n alennus Lifetimesta",
@@ -1225,7 +1267,9 @@
       linkLY: "Hanki {percent} %:n alennus Lifetimesta tai {ypercent} %:n alennus ensimmäisestä vuodesta",
       linkMY: "Hanki ilmainen kuukausi tai {ypercent} %:n alennus ensimmäisestä vuodesta",
       headingCode: "Mihin lähetän koodisi?",
-      fineDiscount: "Tällä sivustolla ei makseta mitään. Alennuskoodilla maksat alennetun hinnan App Storessa. Voit perua päivitysten tilauksen milloin tahansa."
+      fineDiscount: "Tällä sivustolla ei makseta mitään. Alennuskoodilla maksat alennetun hinnan App Storessa. Voit perua päivitysten tilauksen milloin tahansa.",
+      finePlay: "Tällä sivustolla ei makseta mitään. Jos valitset {percent} %:n alennuksen Lifetimesta, maksat alennetun hinnan Google Playssa. Voit perua päivitysten tilauksen milloin tahansa.",
+      fineDiscountPlay: "Tällä sivustolla ei makseta mitään. Alennuskoodilla maksat alennetun hinnan Google Playssa. Voit perua päivitysten tilauksen milloin tahansa."
     },
     hu: {
       link: "Egy ingyenes hónap vagy {percent}% kedvezmény a Lifetime árából",
@@ -1280,7 +1324,9 @@
       linkLY: "{percent}% kedvezmény a Lifetime árából vagy {ypercent}% az első évre",
       linkMY: "Egy ingyenes hónap vagy {ypercent}% kedvezmény az első évre",
       headingCode: "Hová küldjem a kódját?",
-      fineDiscount: "Ezen az oldalon nincs fizetés. Kedvezménykóddal a kedvezményes árat az App Store-ban fizeti ki. A hírlevelekről bármikor leiratkozhat."
+      fineDiscount: "Ezen az oldalon nincs fizetés. Kedvezménykóddal a kedvezményes árat az App Store-ban fizeti ki. A hírlevelekről bármikor leiratkozhat.",
+      finePlay: "Ezen az oldalon nincs fizetés. Ha a Lifetime {percent}%-os kedvezményét választja, a kedvezményes árat a Google Playen fizeti ki. A hírlevelekről bármikor leiratkozhat.",
+      fineDiscountPlay: "Ezen az oldalon nincs fizetés. Kedvezménykóddal a kedvezményes árat a Google Playen fizeti ki. A hírlevelekről bármikor leiratkozhat."
     },
     ro: {
       link: "Primiți o lună gratuită sau o reducere de {percent}% la Lifetime",
@@ -1335,7 +1381,9 @@
       linkLY: "Primiți o reducere de {percent}% la Lifetime sau de {ypercent}% la primul an",
       linkMY: "Primiți o lună gratuită sau o reducere de {ypercent}% la primul an",
       headingCode: "Unde să vă trimit codul?",
-      fineDiscount: "Pe acest site nu se plătește nimic. Cu un cod de reducere, plătiți prețul redus în App Store. Vă puteți dezabona de la noutăți oricând."
+      fineDiscount: "Pe acest site nu se plătește nimic. Cu un cod de reducere, plătiți prețul redus în App Store. Vă puteți dezabona de la noutăți oricând.",
+      finePlay: "Pe acest site nu se plătește nimic. Dacă alegeți reducerea de {percent}% la Lifetime, prețul redus îl plătiți în Google Play. Vă puteți dezabona de la noutăți oricând.",
+      fineDiscountPlay: "Pe acest site nu se plătește nimic. Cu un cod de reducere, plătiți prețul redus în Google Play. Vă puteți dezabona de la noutăți oricând."
     },
     el: {
       link: "Αποκτήστε έναν δωρεάν μήνα ή έκπτωση {percent}% στο {plan} εφ’ όρου ζωής",
@@ -1390,7 +1438,9 @@
       linkLY: "Αποκτήστε έκπτωση {percent}% στο {plan} εφ’ όρου ζωής ή {ypercent}% στον πρώτο χρόνο",
       linkMY: "Αποκτήστε έναν δωρεάν μήνα ή έκπτωση {ypercent}% στον πρώτο χρόνο",
       headingCode: "Πού να σας στείλω τον κωδικό;",
-      fineDiscount: "Δεν γίνεται καμία πληρωμή σε αυτόν τον ιστότοπο. Με έναν κωδικό έκπτωσης, πληρώνετε τη μειωμένη τιμή στο App Store. Μπορείτε να διαγραφείτε από τις ενημερώσεις όποτε θέλετε."
+      fineDiscount: "Δεν γίνεται καμία πληρωμή σε αυτόν τον ιστότοπο. Με έναν κωδικό έκπτωσης, πληρώνετε τη μειωμένη τιμή στο App Store. Μπορείτε να διαγραφείτε από τις ενημερώσεις όποτε θέλετε.",
+      finePlay: "Δεν γίνεται καμία πληρωμή σε αυτόν τον ιστότοπο. Αν επιλέξετε την έκπτωση {percent}% στο {plan} εφ’ όρου ζωής, πληρώνετε τη μειωμένη τιμή στο Google Play. Μπορείτε να διαγραφείτε από τις ενημερώσεις όποτε θέλετε.",
+      fineDiscountPlay: "Δεν γίνεται καμία πληρωμή σε αυτόν τον ιστότοπο. Με έναν κωδικό έκπτωσης, πληρώνετε τη μειωμένη τιμή στο Google Play. Μπορείτε να διαγραφείτε από τις ενημερώσεις όποτε θέλετε."
     }
   };
 
@@ -1487,13 +1537,14 @@
     var choiceMode = offers.length > 1;
     var only = choiceMode ? null : offers[0].id;
     var monthOnly = only === "free_month";
+    var play = STORE === "Google Play"; // a Play app's Lifetime code is typed into the app, the price paid in Google Play
     var w = {
       link: choiceMode ? (month && lifetime && !yearly ? t.link : month && !lifetime ? t.linkMY : t.linkLY)
         : monthOnly ? t.linkOne : only === "lifetime_discount" ? t.choiceLifetime : t.choiceYearly,
       note: choiceMode ? t.note : monthOnly ? t.noteOne : t.noteGift,
       heading: choiceMode ? t.heading : monthOnly ? t.headingOne : t.headingCode,
       detail: monthOnly ? t.detailOne : t.detail,
-      fine: monthOnly ? t.fineOne : month && lifetime && !yearly ? t.fine : t.fineDiscount,
+      fine: monthOnly ? t.fineOne : month && lifetime && !yearly ? (play ? t.finePlay : t.fine) : (play ? t.fineDiscountPlay : t.fineDiscount),
       errUnavailable: monthOnly ? t.errUnavailableOne : t.errUnavailable,
       errClaimed: monthOnly ? t.errClaimedOne : t.errClaimed,
       okQueued: monthOnly ? t.okQueuedOne : t.okQueued,
