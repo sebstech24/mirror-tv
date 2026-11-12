@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://telebeam.app/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/"/>
@@ -802,7 +802,7 @@
   </url>
   <url>
     <loc>https://telebeam.app/privacy</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/privacy"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/privacy"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/privacy"/>
@@ -1602,13 +1602,13 @@
   </url>
   <url>
     <loc>https://telebeam.app/terms</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/terms"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/terms"/>
   </url>
   <url>
     <loc>https://telebeam.app/support</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/support"/>
     <xhtml:link rel="alternate" hreflang="cs" href="https://telebeam.app/cs/support"/>
     <xhtml:link rel="alternate" hreflang="da" href="https://telebeam.app/da/support"/>
@@ -2408,66 +2408,84 @@
   </url>
   <url>
     <loc>https://telebeam.app/accessibility</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/accessibility"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/accessibility"/>
   </url>
   <url>
     <loc>https://telebeam.app/press</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/press"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/press"/>
   </url>
   <url>
     <loc>https://telebeam.app/mirror-mac-to-google-tv</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-google-tv"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mirror-mac-to-google-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-google-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/de/mirror-mac-to-google-tv</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-google-tv"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mirror-mac-to-google-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-google-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/mac-doesnt-see-my-tv</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mac-doesnt-see-my-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/de/mac-doesnt-see-my-tv</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://telebeam.app/de/mac-doesnt-see-my-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mac-doesnt-see-my-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/mirror-mac-to-sony-tv</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-sony-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-sony-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/mirror-mac-to-tcl-tv</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-tcl-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-tcl-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/mirror-mac-to-philips-tv</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-philips-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-philips-tv"/>
   </url>
   <url>
     <loc>https://telebeam.app/mirror-mac-to-hisense-tv</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-hisense-tv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-hisense-tv"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/mirror-mac-to-nvidia-shield</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-nvidia-shield"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-nvidia-shield"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/iphone-screen-mirroring-to-android-tv</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/iphone-screen-mirroring-to-android-tv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/iphone-screen-mirroring-to-android-tv"/>
+  </url>
+  <url>
+    <loc>https://telebeam.app/mac-to-android-tv-compared</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://telebeam.app/mac-to-android-tv-compared"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://telebeam.app/mac-to-android-tv-compared"/>
   </url>
 </urlset>
