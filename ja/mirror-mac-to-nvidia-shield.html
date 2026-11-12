@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>MacをNvidia Shieldにミラーリングする方法 | Telebeam</title>
+<meta name="description" content="Apple TVなしで、Wi-Fi経由でMacをNvidia Shieldにミラーリングする方法：ShieldにTelebeamをインストールし、Macのコントロールセンターで選ぶだけです。">
+<link rel="canonical" href="https://telebeam.app/ja/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="de" href="https://telebeam.app/de/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="es" href="https://telebeam.app/es/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-nvidia-shield">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Telebeam">
+<meta property="og:title" content="MacをNvidia Shieldにミラーリングする方法 | Telebeam">
+<meta property="og:description" content="Apple TVなしで、Wi-Fi経由でMacをNvidia Shieldにミラーリングする方法：ShieldにTelebeamをインストールし、Macのコントロールセンターで選ぶだけです。">
+<meta property="og:url" content="https://telebeam.app/ja/mirror-mac-to-nvidia-shield">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://telebeam.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Telebeam：すりガラスのようなノートパソコンが青と紫の光の波をテレビに送る画像と、「Screen Mirroring for your TV」の文字">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MacをNvidia Shieldにミラーリングする方法 | Telebeam">
+<meta name="twitter:description" content="Apple TVなしで、Wi-Fi経由でMacをNvidia Shieldにミラーリングする方法：ShieldにTelebeamをインストールし、Macのコントロールセンターで選ぶだけです。">
+<meta name="twitter:image" content="https://telebeam.app/img/og.jpg">
+<meta name="theme-color" content="#0b0e2a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7ff" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/theme.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://telebeam.app/ja/"},{"@type":"ListItem","position":2,"name":"Nvidia Shield","item":"https://telebeam.app/ja/mirror-mac-to-nvidia-shield"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nvidia ShieldはMacの画面ミラーリングを受信できますか？","acceptedAnswer":{"@type":"Answer","text":"Telebeamがあれば受信できます。Macに内蔵された画面ミラーリングはAppleのAirPlay技術を使っていて、TelebeamがShield上の受信側になるので、ShieldがMacの一覧に表示されます。"}},{"@type":"Question","name":"Apple TVなしで、MacBookをNvidia Shieldにミラーリングできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ShieldにTelebeamをインストールして開き、Macの「コントロールセンター」→「画面ミラーリング」で選びます。"}},{"@type":"Question","name":"テレビはスマートテレビでなければいけませんか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。TelebeamはShield上で動くので、Shieldをつないだテレビなら、どのテレビにもMacが映ります。"}},{"@type":"Question","name":"TelebeamはNvidia Shieldで動作確認されていますか？","acceptedAnswer":{"@type":"Answer","text":"まだです。Google TVとAndroid TV（Shieldを含む）向けに作られていて、現時点ではPhilipsのGoogle TVで動作確認しています。お使いのShieldでうまく動かない場合は、無料トライアル期間中にsupport@telebeam.appまでご連絡ください。"}},{"@type":"Question","name":"Shieldが画面ミラーリングに表示されないのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"ShieldでTelebeamが開いていること、MacとShieldが同じWi-Fiにつながっていることを確認してください。ゲストネットワーク、ホテルのネットワーク、多くの会社や学校のネットワークでは、端末同士が互いを見つけられません。"}},{"@type":"Question","name":"Macに何かインストールする必要はありますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。画面ミラーリングはmacOSに内蔵されていて、TelebeamはShield上だけで動きます。"}}]}
+</script>
+</head>
+<body data-app="Telebeam" data-plan="Telebeam" data-store="Google Play" data-code-api="https://api.telebeam.app" data-privacy="/ja/privacy" data-preview-offers="[{&quot;id&quot;:&quot;free_month&quot;}]">
+<a class="skip-link" href="#main">コンテンツへスキップ</a>
+<a class="deal-bar" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web" data-deal-end="2026-12-01T08:00:00Z">ブラックフライデー（11月30日まで）：Telebeamの買い切りが47%オフ <span aria-hidden="true">→</span></a>
+
+<header class="site-header">
+  <nav class="nav glass" aria-label="メイン">
+    <a class="brand" href="/ja/"><span class="logo" aria-hidden="true"></span>Telebeam</a>
+    <div class="nav-links">
+      <div class="lang-switch" data-i18n-switch data-label="言語を選択" hidden></div>
+
+      <a href="/ja/support">サポート</a>
+      <a class="btn btn-primary btn-small" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web">アプリを入手</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <p class="pill">Nvidia Shieldガイド · 2026年11月更新</p>
+    <h1>Macを<span class="grad">Nvidia Shield</span>にミラーリングする方法。</h1>
+    <p class="sub">Macに内蔵された「画面ミラーリング」を使えば、Apple TVがなくても、Wi-Fi経由でMacの画面をNvidia Shieldに映せます。TelebeamはShield上で動くので、ShieldをつないだテレビにMacが映ります。確認、インストール、接続の手順をご紹介します。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web">アプリを入手</a>
+    </div>
+    <p class="cta-note">Google TVとAndroid TV向け · 7日間無料トライアル · 広告なし · オープンソース（GPL-3.0）</p>
+  </section>
+
+  <section id="qualify">
+    <div class="wrap">
+      <h2 class="h2">ShieldにMacを映せる？</h2>
+      <div class="prose">
+        <p>Macの画面ミラーリングはAppleのAirPlay技術を使っていて、その受信機能を持つ機器しか一覧に表示されません。Telebeamは、その受信機能をGoogle TVやAndroid TVの機器に追加します。Nvidia Shieldも対応機器のひとつで、Chromecast with Google TV、Google TV Streamer、そのほかのAndroid TVボックスと並んで使えます。Android 7以降が必要です。</p><p>TelebeamはShield本体で動くので、Shieldをつないだテレビなら、スマートテレビでなくてもMacが映ります。</p><h3>すでにMacの一覧に表示されている？</h3><p>まず確認してみましょう。Shieldの電源を入れた状態で、Macの「コントロールセンター」→「画面ミラーリング」を開きます。Shieldがすでに表示されていれば、Shield自体に受信機能があるので、Telebeamは不要かもしれません。表示されていなければ、Telebeamが追加します。両方が動いている場合は、Telebeamが「名前 (2)」という名前で表示されるので、使いやすいほうを選んでください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="steps">
+    <div class="wrap">
+      <h2 class="h2">セットアップ</h2>
+      <p class="lead">最初に数分かけるだけ。あとはMacで3クリックです。</p>
+      <div class="prose">
+        <h3>1. ShieldにTelebeamをインストール</h3><p>リモコンのホームボタンを押し、Google Playストアを開いてTelebeamを検索します。ほかのアプリと同じようにインストールしてください。</p><h3>2. ShieldでTelebeamを開く</h3><p>テレビに、Macに表示される名前と手順が映ります。Telebeamの設定で、「リビング」など分かりやすい名前を付けておくと便利です。</p><h3>3. Macで「コントロールセンター」→「画面ミラーリング」</h3><p>メニューバー右上のコントロールセンターのアイコンをクリックし、「画面ミラーリング」をクリックします。MacとShieldは同じWi-Fiにつながっている必要があります。</p><h3>4. Shieldを選ぶ</h3><p>Macの画面が、音声付きでテレビに映ります。数秒たっても映らないときは、もう一度選び直してください。映ったのが空のデスクトップなら、「システム設定」→「ディスプレイ」→「テレビに接続されているとき」→「画面全体をミラーリング」を選びます。</p><h3>画質</h3><p>「自動」は1080p・60fpsで、Macからいちばん滑らかに映ります。Telebeamの設定で、720p、1080p、4Kと、60fps、120fpsを選べます。4Kと120fpsはベータです。4Kはより鮮明ですが、カクつくことがあり、120fpsには120HzのProMotionディスプレイを搭載したMacが必要です。</p><p>Shieldが一覧に表示されないときは、<a href="/mac-doesnt-see-my-tv">Macからテレビが見えないとき</a>をご覧ください。現時点ではPhilipsのGoogle TVで動作確認しています。お使いのShieldでうまく動かない場合は、無料トライアル期間中に<a href="mailto:support@telebeam.app">support@telebeam.app</a>までご連絡ください。</p>
+      </div>
+      <div class="shot-row">
+        <figure class="shot">
+          <img src="/img/shots/tv-settings.jpg" loading="lazy" width="960" height="540" alt="テレビに表示されたTelebeamの設定：テレビの名前「Bedroom TV」と、画質（自動、720p、1080p、4K ベータ）">
+          <figcaption>Telebeamの設定：Macに表示される名前と、画質。</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2 class="h2">よくある質問</h2>
+      <div class="prose faq">
+        <details>
+          <summary>Nvidia ShieldはMacの画面ミラーリングを受信できますか？</summary>
+          <p>Telebeamがあれば受信できます。Macに内蔵された画面ミラーリングはAppleのAirPlay技術を使っていて、TelebeamがShield上の受信側になるので、ShieldがMacの一覧に表示されます。</p>
+        </details>
+        <details>
+          <summary>Apple TVなしで、MacBookをNvidia Shieldにミラーリングできますか？</summary>
+          <p>はい。ShieldにTelebeamをインストールして開き、Macの「コントロールセンター」→「画面ミラーリング」で選びます。</p>
+        </details>
+        <details>
+          <summary>テレビはスマートテレビでなければいけませんか？</summary>
+          <p>いいえ。TelebeamはShield上で動くので、Shieldをつないだテレビなら、どのテレビにもMacが映ります。</p>
+        </details>
+        <details>
+          <summary>TelebeamはNvidia Shieldで動作確認されていますか？</summary>
+          <p>まだです。Google TVとAndroid TV（Shieldを含む）向けに作られていて、現時点ではPhilipsのGoogle TVで動作確認しています。お使いのShieldでうまく動かない場合は、無料トライアル期間中にsupport@telebeam.appまでご連絡ください。</p>
+        </details>
+        <details>
+          <summary>Shieldが画面ミラーリングに表示されないのはなぜですか？</summary>
+          <p>ShieldでTelebeamが開いていること、MacとShieldが同じWi-Fiにつながっていることを確認してください。ゲストネットワーク、ホテルのネットワーク、多くの会社や学校のネットワークでは、端末同士が互いを見つけられません。</p>
+        </details>
+        <details>
+          <summary>Macに何かインストールする必要はありますか？</summary>
+          <p>いいえ。画面ミラーリングはmacOSに内蔵されていて、TelebeamはShield上だけで動きます。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="h2">Telebeamのその他のガイド</h2>
+      <div class="grid-uses">
+        <a class="card use" href="/mirror-mac-to-google-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Mirror a Mac to Google TV</h3>
+          <p>The full setup, without an Apple TV.</p>
+        </a>
+        <a class="card use" href="/mac-doesnt-see-my-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+          <h3>Mac doesn’t see my TV</h3>
+          <p>Checklist when the TV is missing from Screen Mirroring.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-sony-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Sony Bravia</h3>
+          <p>Android TV and Google TV models.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-tcl-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>TCL</h3>
+          <p>Which TCL models can run it.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-philips-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Philips</h3>
+          <p>Android TV and Google TV models.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-hisense-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Hisense</h3>
+          <p>Google TV vs. VIDAA models.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="final">
+        <h2 class="h2">Shieldを通して、Macをテレビに</h2>
+        <p class="lead">ShieldにTelebeamをインストールして、画面ミラーリングで選ぶだけです。</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web">アプリを入手</a>
+        </div>
+        <p class="cta-note">NvidiaとShieldは、NVIDIA Corporationの商標です。TelebeamはNVIDIAとは提携していません。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="frow">
+      <div>© 2026 Telebeam</div>
+      <nav class="flinks" aria-label="フッター">
+        <a href="/ja/">概要</a>
+        <a href="/ja/privacy">プライバシー</a>
+        <a href="/terms">利用規約</a>
+        <a href="/ja/support">サポート</a>
+        <a href="/accessibility">アクセシビリティ</a>
+        <a href="/press">プレス</a>
+        <a href="mailto:support@telebeam.app">お問い合わせ</a>
+      </nav>
+    </div>
+    <p class="fnote">Google TVとAndroid TV向けです。Macとテレビを同じWi-Fiにつないでください。ミラーリングした映像はご家庭のネットワーク内にとどまります。</p>
+  </div>
+<div class="wrap fextra">
+  <nav class="flangs" aria-label="言語"><a href="/mirror-mac-to-nvidia-shield" lang="en" hreflang="en" data-code="en">English</a> <a href="/de/mirror-mac-to-nvidia-shield" lang="de" hreflang="de" data-code="de">Deutsch</a> <a href="/es/mirror-mac-to-nvidia-shield" lang="es" hreflang="es" data-code="es">Español</a> <a href="/fr/mirror-mac-to-nvidia-shield" lang="fr" hreflang="fr" data-code="fr">Français</a> <a href="/pt/mirror-mac-to-nvidia-shield" lang="pt-BR" hreflang="pt-BR" data-code="pt">Português</a> <a href="/ja/mirror-mac-to-nvidia-shield" lang="ja" hreflang="ja" data-code="ja" aria-current="page">日本語</a></nav>
+  <nav class="fguides" aria-label="ガイド"><a href="/mirror-mac-to-google-tv">Mirror a Mac to Google TV</a> <a href="/mac-doesnt-see-my-tv">Mac doesn’t see my TV</a> <a href="/mirror-mac-to-sony-tv">Sony Bravia</a> <a href="/mirror-mac-to-tcl-tv">TCL</a> <a href="/mirror-mac-to-philips-tv">Philips</a> <a href="/mirror-mac-to-hisense-tv">Hisense</a> <a href="/ja/mirror-mac-to-nvidia-shield">Nvidia Shield</a> <a href="/ja/iphone-screen-mirroring-to-android-tv">iPhoneとiPad</a> <a href="/ja/mac-to-android-tv-compared">HDMI、キャスト、Apple TV？</a></nav>
+  <p class="fmade">制作: <a href="https://linktr.ee/sebs_tech" rel="me noopener">Sebs_Tech</a> · <a href="https://www.tiktok.com/@sebs_tech" rel="me noopener">TikTok</a> · <a href="https://www.instagram.com/sebs_tech" rel="me noopener">Instagram</a> · <a href="https://www.youtube.com/@Sebs_tech" rel="me noopener">YouTube</a></p>
+  <!-- family:start --><p class="fmade ffamily"><a href="https://play.google.com/store/apps/developer?id=Sebastian+%C5%A0koi%C4%87" rel="me noopener">Sebastian Škoić のほかのアプリ</a>: <a href="https://www.controlmymac.com/ja">Control My Mac</a> · <a href="https://controlmypc.app/ja/">Control My PC</a> · <a href="https://localdictation.net/ja/">Local Dictation</a> · <a href="https://diskbeam.app/ja/">DiskBeam</a> · <a href="https://velvetalarm.com/ja/">Velvet Alarm</a> · <a href="https://camstalgia.com/ja/">Camstalgia</a> · <a href="https://stereocam.app/ja/">StereoCam</a></p><!-- family:end -->
+  <!-- tm:start --><p class="fmade ftm">Telebeamは独立したアプリであり、Apple Inc.が製造、後援、または承認したものではありません。Mac、macOS、iPhone、iPad、AirPlayは、米国およびその他の国で登録されたApple Inc.の商標です。Google TV、Android TV、Google PlayはGoogle LLCの商標です。</p><!-- tm:end -->
+</div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+<script defer src="/assets/i18n.js"></script>
+</body>
+</html>

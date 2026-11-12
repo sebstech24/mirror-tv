@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Mac auf Nvidia Shield spiegeln: so geht’s | Telebeam</title>
+<meta name="description" content="Mac per WLAN auf eine Nvidia Shield spiegeln, mit der Bildschirmsynchronisierung des Mac und ohne Apple TV: Telebeam auf der Shield installieren und im Kontrollzentrum wählen.">
+<link rel="canonical" href="https://telebeam.app/de/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="en" href="https://telebeam.app/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="de" href="https://telebeam.app/de/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="es" href="https://telebeam.app/es/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="fr" href="https://telebeam.app/fr/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="pt-BR" href="https://telebeam.app/pt/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="pt" href="https://telebeam.app/pt/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="ja" href="https://telebeam.app/ja/mirror-mac-to-nvidia-shield">
+<link rel="alternate" hreflang="x-default" href="https://telebeam.app/mirror-mac-to-nvidia-shield">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Telebeam">
+<meta property="og:title" content="Mac auf Nvidia Shield spiegeln: so geht’s | Telebeam">
+<meta property="og:description" content="Mac per WLAN auf eine Nvidia Shield spiegeln, mit der Bildschirmsynchronisierung des Mac und ohne Apple TV: Telebeam auf der Shield installieren und im Kontrollzentrum wählen.">
+<meta property="og:url" content="https://telebeam.app/de/mirror-mac-to-nvidia-shield">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://telebeam.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Telebeam: ein Laptop aus Milchglas strahlt eine Welle aus blauem und violettem Licht auf einen Fernseher, dazu die Worte Screen Mirroring for your TV">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mac auf Nvidia Shield spiegeln: so geht’s | Telebeam">
+<meta name="twitter:description" content="Mac per WLAN auf eine Nvidia Shield spiegeln, mit der Bildschirmsynchronisierung des Mac und ohne Apple TV: Telebeam auf der Shield installieren und im Kontrollzentrum wählen.">
+<meta name="twitter:image" content="https://telebeam.app/img/og.jpg">
+<meta name="theme-color" content="#0b0e2a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f7ff" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/icon-180.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/theme.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://telebeam.app/de/"},{"@type":"ListItem","position":2,"name":"Nvidia Shield","item":"https://telebeam.app/de/mirror-mac-to-nvidia-shield"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kann eine Nvidia Shield die Bildschirmsynchronisierung meines Mac empfangen?","acceptedAnswer":{"@type":"Answer","text":"Mit Telebeam ja. Die eingebaute Bildschirmsynchronisierung des Mac nutzt Apples AirPlay-Technik; Telebeam ist der Empfänger auf der Shield, also erscheint die Shield in der Liste deines Mac."}},{"@type":"Question","name":"Kann ich mein MacBook ohne Apple TV auf eine Nvidia Shield spiegeln?","acceptedAnswer":{"@type":"Answer","text":"Ja. Installiere Telebeam auf der Shield, öffne es und wähle sie auf dem Mac unter Kontrollzentrum → Bildschirmsynchronisierung."}},{"@type":"Question","name":"Muss der Fernseher ein Smart-TV sein?","acceptedAnswer":{"@type":"Answer","text":"Nein. Telebeam läuft auf der Shield, also zeigt jeder Fernseher, an dem sie steckt, deinen Mac."}},{"@type":"Question","name":"Wurde Telebeam auf der Nvidia Shield getestet?","acceptedAnswer":{"@type":"Answer","text":"Noch nicht. Es ist für Google TV und Android TV gemacht, die Shield eingeschlossen, und wurde bisher auf einem Philips-Google-TV getestet. Läuft es auf deiner Shield nicht gut, schreib während der Testphase an support@telebeam.app."}},{"@type":"Question","name":"Warum erscheint meine Shield nicht in der Bildschirmsynchronisierung?","acceptedAnswer":{"@type":"Answer","text":"Prüf, ob Telebeam auf der Shield geöffnet ist und ob Mac und Shield im selben WLAN sind. Gast-, Hotel- und viele Büro- oder Schulnetze verhindern, dass sich Geräte sehen."}},{"@type":"Question","name":"Muss ich etwas auf dem Mac installieren?","acceptedAnswer":{"@type":"Answer","text":"Nein. Die Bildschirmsynchronisierung ist Teil von macOS; Telebeam läuft nur auf der Shield."}}]}
+</script>
+</head>
+<body data-app="Telebeam" data-plan="Telebeam" data-store="Google Play" data-code-api="https://api.telebeam.app" data-privacy="/de/privacy" data-preview-offers="[{&quot;id&quot;:&quot;free_month&quot;}]">
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<a class="deal-bar" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web" data-deal-end="2026-12-01T08:00:00Z">Black Friday, bis 30. November: Telebeam auf Lebenszeit 47 % günstiger <span aria-hidden="true">→</span></a>
+
+<header class="site-header">
+  <nav class="nav glass" aria-label="Primär">
+    <a class="brand" href="/de/"><span class="logo" aria-hidden="true"></span>Telebeam</a>
+    <div class="nav-links">
+      <div class="lang-switch" data-i18n-switch data-label="Sprache wählen" hidden></div>
+
+      <a href="/de/support">Support</a>
+      <a class="btn btn-primary btn-small" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web">App laden</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero wrap">
+    <p class="pill">Nvidia-Shield-Anleitung · Stand November 2026</p>
+    <h1>Mac auf Nvidia Shield spiegeln, <span class="grad">ganz ohne Apple TV</span>.</h1>
+    <p class="sub">Dein Mac kann seinen Bildschirm per WLAN über eine Nvidia Shield zeigen, mit der eingebauten Bildschirmsynchronisierung und ohne Apple TV. Telebeam läuft auf der Shield, also zeigt der Fernseher, an dem sie steckt, deinen Mac. So prüfst du es, installierst die App und verbindest dich.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web">App laden</a>
+    </div>
+    <p class="cta-note">Für Google TV und Android TV · 7 Tage kostenlos testen · Keine Werbung · Open Source (GPL-3.0)</p>
+  </section>
+
+  <section id="qualify">
+    <div class="wrap">
+      <h2 class="h2">Kann deine Shield deinen Mac zeigen?</h2>
+      <div class="prose">
+        <p>Die Bildschirmsynchronisierung des Mac nutzt Apples AirPlay-Technik und listet nur Geräte auf, die einen passenden Empfänger haben. Telebeam bringt diesen Empfänger auf Google TV und Android TV. Die Nvidia Shield gehört zu den Geräten, für die es gemacht ist, neben Chromecast mit Google TV, Google TV Streamer und anderen Android-TV-Boxen. Es braucht Android 7 oder neuer.</p><p>Telebeam läuft auf der Shield selbst, also zeigt jeder Fernseher, an dem sie steckt, deinen Mac, auch einer ohne Smart-TV-Funktionen.</p><h3>Schon in der Liste deines Mac?</h3><p>Prüf es zuerst: Öffne bei eingeschalteter Shield auf dem Mac das Kontrollzentrum → Bildschirmsynchronisierung. Steht die Shield schon dort, hat sie einen eigenen Empfänger und du brauchst Telebeam vielleicht nicht. Steht sie nicht da, ergänzt Telebeam sie. Laufen beide, nennt sich Telebeam „Name (2)“, damit beide erscheinen; wähle den, der bei dir besser funktioniert.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="steps">
+    <div class="wrap">
+      <h2 class="h2">Einrichten</h2>
+      <p class="lead">Ein paar Minuten, einmal. Danach sind es drei Klicks auf dem Mac.</p>
+      <div class="prose">
+        <h3>1. Telebeam auf der Shield installieren</h3><p>Drück auf der Fernbedienung die Home-Taste, öffne den Google Play Store und such nach Telebeam. Installiere die App wie jede andere.</p><h3>2. Telebeam auf der Shield öffnen</h3><p>Der Fernseher zeigt den Namen, den dein Mac sieht, und die Schritte. Gib ihm in den Einstellungen von Telebeam einen Namen, den du wiedererkennst, etwa „Wohnzimmer“.</p><h3>3. Auf dem Mac: Kontrollzentrum → Bildschirmsynchronisierung</h3><p>Klick oben rechts in der Menüleiste auf das Kontrollzentrum, dann auf Bildschirmsynchronisierung. Mac und Shield müssen im selben WLAN sein.</p><h3>4. Shield wählen</h3><p>Der Bildschirm deines Mac erscheint auf dem Fernseher, mit Ton. Erscheint nach ein paar Sekunden nichts, wähle sie noch einmal. Stattdessen ein leerer Schreibtisch? Systemeinstellungen → Displays → „Wenn mit TV-Gerät verbunden“ → „Ganzen Bildschirm synchronisieren“.</p><h3>Bildqualität</h3><p>Auto nutzt 1080p mit 60 fps, das flüssigste von einem Mac. In den Einstellungen von Telebeam kannst du 720p, 1080p oder 4K sowie 60 oder 120 fps wählen. 4K und 120 fps sind als Beta markiert: 4K ist schärfer, kann aber ruckeln, und 120 fps braucht einen Mac mit 120-Hz-ProMotion-Display.</p><p>Shield nicht in der Liste? Siehe <a href="/de/mac-doesnt-see-my-tv">Mac findet den Fernseher nicht</a>. Bisher auf einem Philips-Google-TV getestet; läuft es auf deiner Shield nicht gut, schreib während der Testphase an <a href="mailto:support@telebeam.app">support@telebeam.app</a>.</p>
+      </div>
+      <div class="shot-row">
+        <figure class="shot">
+          <img src="/img/shots/tv-settings.jpg" loading="lazy" width="960" height="540" alt="Die Einstellungen von Telebeam auf einem Fernseher: der Fernsehername Bedroom TV und die Bildqualität Auto, 720p, 1080p oder 4K Beta">
+          <figcaption>Die Einstellungen von Telebeam: der Name, den dein Mac sieht, und die Bildqualität.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2 class="h2">Häufige Fragen</h2>
+      <div class="prose faq">
+        <details>
+          <summary>Kann eine Nvidia Shield die Bildschirmsynchronisierung meines Mac empfangen?</summary>
+          <p>Mit Telebeam ja. Die eingebaute Bildschirmsynchronisierung des Mac nutzt Apples AirPlay-Technik; Telebeam ist der Empfänger auf der Shield, also erscheint die Shield in der Liste deines Mac.</p>
+        </details>
+        <details>
+          <summary>Kann ich mein MacBook ohne Apple TV auf eine Nvidia Shield spiegeln?</summary>
+          <p>Ja. Installiere Telebeam auf der Shield, öffne es und wähle sie auf dem Mac unter Kontrollzentrum → Bildschirmsynchronisierung.</p>
+        </details>
+        <details>
+          <summary>Muss der Fernseher ein Smart-TV sein?</summary>
+          <p>Nein. Telebeam läuft auf der Shield, also zeigt jeder Fernseher, an dem sie steckt, deinen Mac.</p>
+        </details>
+        <details>
+          <summary>Wurde Telebeam auf der Nvidia Shield getestet?</summary>
+          <p>Noch nicht. Es ist für Google TV und Android TV gemacht, die Shield eingeschlossen, und wurde bisher auf einem Philips-Google-TV getestet. Läuft es auf deiner Shield nicht gut, schreib während der Testphase an support@telebeam.app.</p>
+        </details>
+        <details>
+          <summary>Warum erscheint meine Shield nicht in der Bildschirmsynchronisierung?</summary>
+          <p>Prüf, ob Telebeam auf der Shield geöffnet ist und ob Mac und Shield im selben WLAN sind. Gast-, Hotel- und viele Büro- oder Schulnetze verhindern, dass sich Geräte sehen.</p>
+        </details>
+        <details>
+          <summary>Muss ich etwas auf dem Mac installieren?</summary>
+          <p>Nein. Die Bildschirmsynchronisierung ist Teil von macOS; Telebeam läuft nur auf der Shield.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="h2">Weitere Telebeam-Anleitungen</h2>
+      <div class="grid-uses">
+        <a class="card use" href="/de/mirror-mac-to-google-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M8 12h8M8 16h5"/></svg></div>
+          <h3>Mac auf Google TV spiegeln</h3>
+          <p>Die ganze Einrichtung, ohne Apple TV.</p>
+        </a>
+        <a class="card use" href="/de/mac-doesnt-see-my-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h10l4 4v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M8 12h8M8 16h5"/></svg></div>
+          <h3>Mac findet den Fernseher nicht</h3>
+          <p>Checkliste, wenn der TV in der Bildschirmsynchronisierung fehlt.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-sony-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Sony Bravia</h3>
+          <p>Android TV and Google TV models.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-tcl-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>TCL</h3>
+          <p>Which TCL models can run it.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-philips-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Philips</h3>
+          <p>Android TV and Google TV models.</p>
+        </a>
+        <a class="card use" href="/mirror-mac-to-hisense-tv">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="12.5" rx="2"/><path d="M8 20h8"/></svg></div>
+          <h3>Hisense</h3>
+          <p>Google TV vs. VIDAA models.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="final">
+        <h2 class="h2">Dein Mac auf dem Fernseher, über die Shield</h2>
+        <p class="lead">Installiere Telebeam auf der Shield und wähle sie dann in der Bildschirmsynchronisierung.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.sebstech.telebeam&utm_source=telebeam.app&utm_medium=web">App laden</a>
+        </div>
+        <p class="cta-note">Nvidia und Shield sind Marken der NVIDIA Corporation. Telebeam steht in keiner Verbindung zu NVIDIA.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="frow">
+      <div>© 2026 Telebeam</div>
+      <nav class="flinks" aria-label="Fußzeile">
+        <a href="/de/">Überblick</a>
+        <a href="/de/privacy">Datenschutz</a>
+        <a href="/terms">Nutzungsbedingungen</a>
+        <a href="/de/support">Support</a>
+        <a href="/accessibility">Barrierefreiheit</a>
+        <a href="/press">Presse</a>
+        <a href="mailto:support@telebeam.app">Kontakt</a>
+      </nav>
+    </div>
+    <p class="fnote">Für Google TV und Android TV. Mac und Fernseher müssen im selben WLAN sein; das gespiegelte Bild bleibt in deinem Heimnetz.</p>
+  </div>
+<div class="wrap fextra">
+  <nav class="flangs" aria-label="Sprachen"><a href="/mirror-mac-to-nvidia-shield" lang="en" hreflang="en" data-code="en">English</a> <a href="/de/mirror-mac-to-nvidia-shield" lang="de" hreflang="de" data-code="de" aria-current="page">Deutsch</a> <a href="/es/mirror-mac-to-nvidia-shield" lang="es" hreflang="es" data-code="es">Español</a> <a href="/fr/mirror-mac-to-nvidia-shield" lang="fr" hreflang="fr" data-code="fr">Français</a> <a href="/pt/mirror-mac-to-nvidia-shield" lang="pt-BR" hreflang="pt-BR" data-code="pt">Português</a> <a href="/ja/mirror-mac-to-nvidia-shield" lang="ja" hreflang="ja" data-code="ja">日本語</a></nav>
+  <nav class="fguides" aria-label="Ratgeber"><a href="/de/mirror-mac-to-google-tv">Mac auf Google TV spiegeln</a> <a href="/de/mac-doesnt-see-my-tv">Mac findet den Fernseher nicht</a> <a href="/mirror-mac-to-sony-tv">Sony Bravia</a> <a href="/mirror-mac-to-tcl-tv">TCL</a> <a href="/mirror-mac-to-philips-tv">Philips</a> <a href="/mirror-mac-to-hisense-tv">Hisense</a> <a href="/de/mirror-mac-to-nvidia-shield">Nvidia Shield</a> <a href="/de/iphone-screen-mirroring-to-android-tv">iPhone und iPad</a> <a href="/de/mac-to-android-tv-compared">HDMI, Cast oder Apple TV?</a></nav>
+  <p class="fmade">Gemacht von <a href="https://linktr.ee/sebs_tech" rel="me noopener">Sebs_Tech</a> · <a href="https://www.tiktok.com/@sebs_tech" rel="me noopener">TikTok</a> · <a href="https://www.instagram.com/sebs_tech" rel="me noopener">Instagram</a> · <a href="https://www.youtube.com/@Sebs_tech" rel="me noopener">YouTube</a></p>
+  <!-- family:start --><p class="fmade ffamily"><a href="https://play.google.com/store/apps/developer?id=Sebastian+%C5%A0koi%C4%87" rel="me noopener">Weitere Apps von Sebastian Škoić</a>: <a href="https://www.controlmymac.com/de">Control My Mac</a> · <a href="https://controlmypc.app/de/">Control My PC</a> · <a href="https://localdictation.net/de/">Local Dictation</a> · <a href="https://diskbeam.app/de/">DiskBeam</a> · <a href="https://velvetalarm.com/de/">Velvet Alarm</a> · <a href="https://camstalgia.com/de/">Camstalgia</a> · <a href="https://stereocam.app/de/">StereoCam</a></p><!-- family:end -->
+  <!-- tm:start --><p class="fmade ftm">Telebeam ist eine unabhängige App und wird nicht von Apple Inc. hergestellt, gesponsert oder genehmigt. Mac, macOS, iPhone, iPad und AirPlay sind Marken der Apple Inc., eingetragen in den USA und anderen Ländern. Google TV, Android TV und Google Play sind Marken von Google LLC.</p><!-- tm:end -->
+</div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+<script defer src="/assets/i18n.js"></script>
+</body>
+</html>
