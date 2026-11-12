@@ -15,6 +15,8 @@
    Lifetime + Yearly and ?offer-preview=3 all three gifts, with a sample 47 %, for design review. */
 (function () {
   "use strict";
+  // Visitor statistics (stats.js, PostHog cookieless): event names only, never what was typed.
+  function track(name, props) { if (window.posthog && window.posthog.capture) window.posthog.capture(name, props || {}); }
 
   var COPY = {
     en: {
@@ -25,6 +27,7 @@
       choiceLegend: "Pick your gift",
       choiceMonth: "One free month of {plan}",
       choiceMonthNote: "No payment, does not renew",
+      choiceMonthNotePlay: "Free for a month, then renews at the normal monthly price unless you cancel in Google Play",
       choiceLifetime: "{percent}% off {plan} Lifetime",
       choiceLifetimeNote: "Pay once, keep it forever",
       emailLabel: "Email address",
@@ -60,6 +63,9 @@
       headingOne: "Where should I send your free month of {app}?",
       detailOne: "Your email includes the free-month code and simple steps to redeem it. You’ll also get occasional app news and promo codes for small tools designed to make everyday life easier and better. Unsubscribe anytime.",
       fineOne: "No payment on this site. You can unsubscribe from updates at any time.",
+      noteOnePlay: "Subscriber welcome gift · Renews after the free month unless you cancel · Unsubscribe anytime",
+      fineOnePlay: "No payment on this site. After the free month, the subscription renews at the normal monthly price in Google Play unless you cancel it there. You can unsubscribe from updates at any time.",
+      dealNote: "Black Friday: until 30 November everyone already gets about this price in the store, no code needed. Your code stays valid for later.",
       errUnavailableOne: "The free-month gift isn't available right now. Please try again later.",
       errClaimedOne: "This email address has already received its free-month code. Each address can claim the gift once.",
       okQueuedOne: "We accepted the request for {email}. Your free-month code will be emailed as soon as it is ready.",
@@ -82,6 +88,7 @@
       choiceLegend: "Wähle dein Geschenk",
       choiceMonth: "Ein Gratismonat {plan}",
       choiceMonthNote: "Keine Zahlung, keine automatische Verlängerung",
+      choiceMonthNotePlay: "Einen Monat gratis, danach verlängert es sich zum normalen Monatspreis, solange du nicht in Google Play kündigst",
       choiceLifetime: "{plan} auf Lebenszeit {percent} % günstiger",
       choiceLifetimeNote: "Einmal zahlen, für immer behalten",
       emailLabel: "E-Mail-Adresse",
@@ -117,6 +124,9 @@
       headingOne: "Wohin soll ich deinen Gratismonat von {app} schicken?",
       detailOne: "Deine E-Mail enthält den Code für den Gratismonat und einfache Schritte zum Einlösen. Außerdem bekommst du gelegentlich App-Neuigkeiten und Aktionscodes für kleine Tools, die den Alltag einfacher und besser machen. Jederzeit abmelden.",
       fineOne: "Auf dieser Website wird nichts bezahlt. Du kannst Updates jederzeit abbestellen.",
+      noteOnePlay: "Willkommensgeschenk für Abonnenten · Verlängert sich nach dem Gratismonat, solange du nicht kündigst · Jederzeit abmelden",
+      fineOnePlay: "Auf dieser Website wird nichts bezahlt. Nach dem Gratismonat verlängert sich das Abo in Google Play zum normalen Monatspreis, solange du es dort nicht kündigst. Du kannst Updates jederzeit abbestellen.",
+      dealNote: "Black Friday: Bis 30. November zahlt im Store ohnehin jeder ungefähr diesen Preis, ganz ohne Code. Dein Code bleibt für später gültig.",
       errUnavailableOne: "Der Gratismonat ist gerade nicht verfügbar. Bitte versuche es später erneut.",
       errClaimedOne: "An diese E-Mail-Adresse wurde der Code für den Gratismonat bereits geschickt. Jede Adresse kann das Geschenk nur einmal erhalten.",
       okQueuedOne: "Wir haben die Anfrage für {email} angenommen. Dein Code für den Gratismonat kommt per E-Mail, sobald er bereit ist.",
@@ -139,6 +149,7 @@
       choiceLegend: "Choisissez votre cadeau",
       choiceMonth: "Un mois gratuit de {plan}",
       choiceMonthNote: "Aucun paiement, sans renouvellement",
+      choiceMonthNotePlay: "Gratuit pendant un mois, puis renouvelé au tarif mensuel normal sauf si vous résiliez dans Google Play",
       choiceLifetime: "{percent} % de réduction sur {plan} à vie",
       choiceLifetimeNote: "Un seul paiement, à vous pour toujours",
       emailLabel: "Adresse e-mail",
@@ -174,6 +185,9 @@
       headingOne: "Où dois-je envoyer votre mois gratuit de {app} ?",
       detailOne: "Votre e-mail contient le code du mois gratuit et des étapes simples pour l’utiliser. Vous recevrez aussi de temps en temps des nouvelles d’apps et des codes promo pour de petits outils conçus pour simplifier et améliorer le quotidien. Désabonnement à tout moment.",
       fineOne: "Aucun paiement sur ce site. Vous pouvez vous désabonner des mises à jour à tout moment.",
+      noteOnePlay: "Cadeau de bienvenue pour les abonnés · Se renouvelle après le mois gratuit sauf résiliation · Désabonnement à tout moment",
+      fineOnePlay: "Aucun paiement sur ce site. Après le mois gratuit, l’abonnement se renouvelle au tarif mensuel normal dans Google Play, sauf si vous le résiliez là-bas. Vous pouvez vous désabonner des mises à jour à tout moment.",
+      dealNote: "Black Friday : jusqu’au 30 novembre, tout le monde profite déjà d’environ ce prix dans la boutique, sans code. Votre code reste valable pour plus tard.",
       errUnavailableOne: "Le mois gratuit n’est pas disponible pour le moment. Veuillez réessayer plus tard.",
       errClaimedOne: "Cette adresse e-mail a déjà reçu son code pour le mois gratuit. Chaque adresse ne peut profiter du cadeau qu’une seule fois.",
       okQueuedOne: "Nous avons accepté la demande pour {email}. Votre code du mois gratuit vous sera envoyé par e-mail dès qu’il sera prêt.",
@@ -196,6 +210,7 @@
       choiceLegend: "Scegli il tuo regalo",
       choiceMonth: "Un mese gratis di {plan}",
       choiceMonthNote: "Nessun pagamento, non si rinnova",
+      choiceMonthNotePlay: "Gratis per un mese, poi si rinnova al normale prezzo mensile a meno che tu non annulli su Google Play",
       choiceLifetime: "{percent}% di sconto su {plan} a vita",
       choiceLifetimeNote: "Paghi una volta, è tuo per sempre",
       emailLabel: "Indirizzo email",
@@ -231,6 +246,9 @@
       headingOne: "Dove ti mando il tuo mese gratis di {app}?",
       detailOne: "La tua email contiene il codice del mese gratis e semplici passaggi per riscattarlo. Di tanto in tanto riceverai anche novità sulle app e codici promozionali per piccoli strumenti pensati per rendere la vita di tutti i giorni più semplice e migliore. Disiscriviti quando vuoi.",
       fineOne: "Nessun pagamento su questo sito. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento.",
+      noteOnePlay: "Regalo di benvenuto per gli iscritti · Si rinnova dopo il mese gratuito se non annulli · Disiscriviti quando vuoi",
+      fineOnePlay: "Nessun pagamento su questo sito. Dopo il mese gratuito, l’abbonamento si rinnova al normale prezzo mensile su Google Play, a meno che tu non lo annulli lì. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento.",
+      dealNote: "Black Friday: fino al 30 novembre tutti hanno già circa questo prezzo nello store, senza bisogno di codice. Il tuo codice resta valido per dopo.",
       errUnavailableOne: "Il mese gratis non è disponibile al momento. Riprova più tardi.",
       errClaimedOne: "Questo indirizzo email ha già ricevuto il codice del mese gratis. Ogni indirizzo può ricevere il regalo una sola volta.",
       okQueuedOne: "Abbiamo accettato la richiesta per {email}. Il codice del mese gratis ti arriverà via email non appena sarà pronto.",
@@ -253,6 +271,7 @@
       choiceLegend: "Elige tu regalo",
       choiceMonth: "Un mes gratis de {plan}",
       choiceMonthNote: "Sin pago, no se renueva",
+      choiceMonthNotePlay: "Gratis durante un mes; después se renueva al precio mensual normal a menos que canceles en Google Play",
       choiceLifetime: "{percent} % de descuento en {plan} de por vida",
       choiceLifetimeNote: "Pagas una vez y es tuyo para siempre",
       emailLabel: "Correo electrónico",
@@ -288,6 +307,9 @@
       headingOne: "¿A dónde te envío tu mes gratis de {app}?",
       detailOne: "Tu correo incluye el código del mes gratis y unos pasos sencillos para canjearlo. También recibirás de vez en cuando novedades de apps y códigos promocionales de pequeñas herramientas pensadas para hacer el día a día más fácil y mejor. Date de baja cuando quieras.",
       fineOne: "En este sitio no se paga nada. Puedes darte de baja de las novedades en cualquier momento.",
+      noteOnePlay: "Regalo de bienvenida para suscriptores · Se renueva tras el mes gratis salvo que canceles · Date de baja cuando quieras",
+      fineOnePlay: "En este sitio no se paga nada. Después del mes gratis, la suscripción se renueva al precio mensual normal en Google Play, a menos que la canceles allí. Puedes darte de baja de las novedades en cualquier momento.",
+      dealNote: "Black Friday: hasta el 30 de noviembre todo el mundo ya obtiene aproximadamente este precio en la tienda, sin necesidad de código. Tu código sigue siendo válido para más adelante.",
       errUnavailableOne: "El mes gratis no está disponible ahora mismo. Inténtalo más tarde.",
       errClaimedOne: "Esta dirección de correo ya recibió su código del mes gratis. Cada dirección puede recibir el regalo una sola vez.",
       okQueuedOne: "Hemos aceptado la solicitud para {email}. Te enviaremos el código del mes gratis por correo en cuanto esté listo.",
@@ -310,6 +332,7 @@
       choiceLegend: "Escolha seu presente",
       choiceMonth: "Um mês grátis do {plan}",
       choiceMonthNote: "Sem pagamento, não é renovado",
+      choiceMonthNotePlay: "Grátis por um mês, depois renova pelo preço mensal normal, a menos que você cancele no Google Play",
       choiceLifetime: "{percent}% de desconto no {plan} vitalício",
       choiceLifetimeNote: "Pague uma vez, é seu para sempre",
       emailLabel: "Endereço de e-mail",
@@ -345,6 +368,9 @@
       headingOne: "Para onde devo enviar seu mês grátis do {app}?",
       detailOne: "Seu e-mail traz o código do mês grátis e passos simples para resgatá-lo. De vez em quando, você também vai receber novidades de apps e códigos promocionais de pequenas ferramentas feitas para deixar o dia a dia mais fácil e melhor. Cancele a inscrição quando quiser.",
       fineOne: "Nenhum pagamento neste site. Você pode cancelar a inscrição nas novidades a qualquer momento.",
+      noteOnePlay: "Presente de boas-vindas para inscritos · Renova após o mês grátis, a menos que você cancele · Cancele quando quiser",
+      fineOnePlay: "Nenhum pagamento neste site. Após o mês grátis, a assinatura renova pelo preço mensal normal no Google Play, a menos que você a cancele lá. Você pode cancelar a inscrição nas novidades a qualquer momento.",
+      dealNote: "Black Friday: até 30 de novembro todo mundo já paga cerca deste preço na loja, sem precisar de código. Seu código continua válido para depois.",
       errUnavailableOne: "O mês grátis não está disponível no momento. Tente novamente mais tarde.",
       errClaimedOne: "Este endereço de e-mail já recebeu o código do mês grátis. Cada endereço pode receber o presente uma única vez.",
       okQueuedOne: "Aceitamos o pedido para {email}. Seu código do mês grátis será enviado por e-mail assim que estiver pronto.",
@@ -367,6 +393,7 @@
       choiceLegend: "Kies je cadeau",
       choiceMonth: "Een gratis maand {plan}",
       choiceMonthNote: "Geen betaling, wordt niet verlengd",
+      choiceMonthNotePlay: "Een maand gratis, daarna wordt het verlengd tegen de normale maandprijs, tenzij je opzegt in Google Play",
       choiceLifetime: "{percent}% korting op {plan} levenslang",
       choiceLifetimeNote: "Eén keer betalen, voor altijd van jou",
       emailLabel: "E-mailadres",
@@ -402,6 +429,9 @@
       headingOne: "Waar mag ik je gratis maand {app} naartoe sturen?",
       detailOne: "Je e-mail bevat de code voor de gratis maand en eenvoudige stappen om hem in te wisselen. Je krijgt ook af en toe app-nieuws en promocodes voor kleine tools die het dagelijks leven makkelijker en beter maken. Altijd afmelden.",
       fineOne: "Op deze site betaal je niets. Je kunt je altijd afmelden voor updates.",
+      noteOnePlay: "Welkomstcadeau voor abonnees · Wordt na de gratis maand verlengd tenzij je opzegt · Altijd afmelden",
+      fineOnePlay: "Op deze site betaal je niets. Na de gratis maand wordt het abonnement in Google Play verlengd tegen de normale maandprijs, tenzij je het daar opzegt. Je kunt je altijd afmelden voor updates.",
+      dealNote: "Black Friday: tot en met 30 november betaalt iedereen in de store al ongeveer deze prijs, zonder code. Je code blijft geldig voor later.",
       errUnavailableOne: "De gratis maand is nu niet beschikbaar. Probeer het later opnieuw.",
       errClaimedOne: "Dit e-mailadres heeft de code voor de gratis maand al ontvangen. Elk adres kan het cadeau maar één keer krijgen.",
       okQueuedOne: "We hebben de aanvraag voor {email} geaccepteerd. Je code voor de gratis maand wordt gemaild zodra hij klaar is.",
@@ -424,6 +454,7 @@
       choiceLegend: "特典を選んでください",
       choiceMonth: "{plan}の無料1か月",
       choiceMonthNote: "お支払い不要、自動更新なし",
+      choiceMonthNotePlay: "1か月無料。その後は通常の月額料金で更新されます（Google Playで解約しない限り）",
       choiceLifetime: "{plan}の買い切りが{percent}%オフ",
       choiceLifetimeNote: "一度の購入でずっと使える",
       emailLabel: "メールアドレス",
@@ -459,6 +490,9 @@
       headingOne: "{app}の無料1か月をどこに送りましょうか？",
       detailOne: "メールには無料1か月のコードと、かんたんな利用手順が記載されています。毎日の暮らしをもっと簡単で快適にする小さなツールについて、アプリのお知らせやプロモーションコードもときどきお届けします。いつでも配信停止できます。",
       fineOne: "このサイトでのお支払いはありません。お知らせの配信はいつでも停止できます。",
+      noteOnePlay: "登録特典 · 無料期間のあとに更新（解約しない場合） · いつでも配信停止可能",
+      fineOnePlay: "このサイトでのお支払いはありません。無料期間の終了後、Google Playで解約しない限り、サブスクリプションは通常の月額料金で自動更新されます。お知らせの配信はいつでも停止できます。",
+      dealNote: "ブラックフライデー：11月30日まで、ストアではどなたでもすでにこの価格に近い金額でご購入いただけます（コード不要）。お客様のコードは後日もそのままお使いいただけます。",
       errUnavailableOne: "無料1か月は現在ご利用いただけません。しばらくしてからもう一度お試しください。",
       errClaimedOne: "このメールアドレスには、無料1か月のコードをすでにお送りしています。特典は1つのアドレスにつき1回限りです。",
       okQueuedOne: "{email} へのリクエストを受け付けました。無料1か月のコードは準備ができ次第メールでお送りします。",
@@ -481,6 +515,7 @@
       choiceLegend: "选择你的礼物",
       choiceMonth: "{plan} 免费一个月",
       choiceMonthNote: "无需付款，不会续订",
+      choiceMonthNotePlay: "免费一个月，之后按正常月费续订，除非你在 Google Play 中取消",
       choiceLifetime: "{plan} 终身买断立减 {percent}%",
       choiceLifetimeNote: "一次付款，永久使用",
       emailLabel: "电子邮件地址",
@@ -516,6 +551,9 @@
       headingOne: "我该把你的 {app} 免费月发送到哪里？",
       detailOne: "你的邮件包含免费月代码和简单的兑换步骤。你还会不定期收到 App 新闻，以及一些让日常生活更轻松、更美好的小工具的优惠代码。可随时退订。",
       fineOne: "本网站不收取任何费用。你可以随时退订更新。",
+      noteOnePlay: "订阅欢迎礼 · 免费月后自动续订，除非你取消 · 可随时退订",
+      fineOnePlay: "本网站不收取任何费用。免费月结束后，订阅会在 Google Play 中按正常月费续订，除非你在那里取消。你可以随时退订更新。",
+      dealNote: "黑色星期五：11月30日前，所有人在商店里本来就能以大约这个价格购买，无需优惠码。你的优惠码之后仍然有效。",
       errUnavailableOne: "免费月目前无法领取。请稍后再试。",
       errClaimedOne: "这个邮箱已经领取过免费月代码。每个邮箱只能领取一次。",
       okQueuedOne: "我们已接受 {email} 的请求。免费月代码准备好后会立即通过邮件发送给你。",
@@ -538,6 +576,7 @@
       choiceLegend: "선물을 선택하세요",
       choiceMonth: "{plan} 무료 한 달",
       choiceMonthNote: "결제 없음, 자동 갱신 없음",
+      choiceMonthNotePlay: "한 달 무료, 이후 Google Play에서 해지하지 않으면 일반 월 요금으로 갱신됩니다",
       choiceLifetime: "{plan} 평생 구매 {percent}% 할인",
       choiceLifetimeNote: "한 번 결제로 평생 사용",
       emailLabel: "이메일 주소",
@@ -573,6 +612,9 @@
       headingOne: "{app} 무료 한 달을 어디로 보내 드릴까요?",
       detailOne: "이메일에는 무료 한 달 코드와 간단한 사용 방법이 들어 있습니다. 일상을 더 쉽고 좋게 만드는 작은 도구에 대한 앱 소식과 프로모션 코드도 가끔 보내 드립니다. 언제든지 구독을 취소할 수 있습니다.",
       fineOne: "이 사이트에서는 결제하지 않습니다. 소식 수신은 언제든지 취소할 수 있습니다.",
+      noteOnePlay: "구독자 환영 선물 · 무료 기간 후 해지하지 않으면 갱신 · 언제든지 구독 취소",
+      fineOnePlay: "이 사이트에서는 결제하지 않습니다. 무료 기간이 끝나면 Google Play에서 해지하지 않는 한 구독이 일반 월 요금으로 갱신됩니다. 소식 수신은 언제든지 취소할 수 있습니다.",
+      dealNote: "블랙 프라이데이: 11월 30일까지는 누구나 스토어에서 이미 이 가격에 가깝게 구매할 수 있으며 코드는 필요 없습니다. 코드는 이후에도 계속 유효합니다.",
       errUnavailableOne: "지금은 무료 한 달을 받을 수 없습니다. 나중에 다시 시도하세요.",
       errClaimedOne: "이 이메일 주소로는 이미 무료 한 달 코드를 보내 드렸습니다. 선물은 주소당 한 번만 받을 수 있습니다.",
       okQueuedOne: "{email}에 대한 요청을 접수했습니다. 무료 한 달 코드가 준비되는 대로 이메일로 보내 드립니다.",
@@ -595,6 +637,7 @@
       choiceLegend: "Выберите подарок",
       choiceMonth: "Бесплатный месяц {plan}",
       choiceMonthNote: "Без оплаты, не продлевается",
+      choiceMonthNotePlay: "Месяц бесплатно, затем продлевается по обычной месячной цене, если вы не отмените подписку в Google Play",
       choiceLifetime: "Скидка {percent}% на пожизненный доступ к {plan}",
       choiceLifetimeNote: "Платите один раз, пользуйтесь всегда",
       emailLabel: "Адрес эл. почты",
@@ -630,6 +673,9 @@
       headingOne: "Куда отправить ваш бесплатный месяц {app}?",
       detailOne: "В письме будут код бесплатного месяца и простые шаги для активации. Также мы будем иногда присылать новости приложений и промокоды на небольшие инструменты, которые делают повседневную жизнь проще и лучше. Отписаться можно в любой момент.",
       fineOne: "На этом сайте ничего не нужно оплачивать. Отписаться от новостей можно в любой момент.",
+      noteOnePlay: "Приветственный подарок подписчикам · Продлевается после бесплатного месяца, если не отменить · Отписаться можно в любой момент",
+      fineOnePlay: "На этом сайте ничего не нужно оплачивать. После бесплатного месяца подписка продлевается по обычной месячной цене в Google Play, если вы не отмените её там. Отписаться от новостей можно в любой момент.",
+      dealNote: "Чёрная пятница: до 30 ноября все и так получают в магазине примерно такую цену, без кода. Ваш код остаётся действительным на потом.",
       errUnavailableOne: "Бесплатный месяц сейчас недоступен. Попробуйте позже.",
       errClaimedOne: "На этот адрес уже отправлен код бесплатного месяца. Каждый адрес может получить подарок только один раз.",
       okQueuedOne: "Мы приняли запрос для {email}. Код бесплатного месяца придёт на почту, как только будет готов.",
@@ -652,6 +698,7 @@
       choiceLegend: "Wybierz prezent",
       choiceMonth: "Darmowy miesiąc {plan}",
       choiceMonthNote: "Bez płatności, nie odnawia się",
+      choiceMonthNotePlay: "Miesiąc za darmo, potem odnawia się w zwykłej cenie miesięcznej, chyba że anulujesz w Google Play",
       choiceLifetime: "{percent} % zniżki na {plan} Lifetime",
       choiceLifetimeNote: "Płacisz raz, masz na zawsze",
       emailLabel: "Adres e-mail",
@@ -687,6 +734,9 @@
       headingOne: "Gdzie mam wysłać Twój darmowy miesiąc {app}?",
       detailOne: "Twój e-mail zawiera kod na darmowy miesiąc i proste kroki jego realizacji. Od czasu do czasu otrzymasz też nowości o aplikacjach i kody promocyjne na małe narzędzia, które ułatwiają i umilają codzienne życie. Wypisz się w każdej chwili.",
       fineOne: "Na tej stronie nic nie płacisz. Z aktualizacji możesz się wypisać w każdej chwili.",
+      noteOnePlay: "Prezent powitalny dla subskrybentów · Odnawia się po darmowym miesiącu, jeśli nie anulujesz · Wypisz się w każdej chwili",
+      fineOnePlay: "Na tej stronie nic nie płacisz. Po darmowym miesiącu subskrypcja odnawia się w Google Play w zwykłej cenie miesięcznej, chyba że anulujesz ją tam. Z aktualizacji możesz się wypisać w każdej chwili.",
+      dealNote: "Black Friday: do 30 listopada każdy już w sklepie płaci mniej więcej tyle, bez żadnego kodu. Twój kod pozostaje ważny na później.",
       errUnavailableOne: "Darmowy miesiąc jest teraz niedostępny. Spróbuj ponownie później.",
       errClaimedOne: "Ten adres e-mail otrzymał już kod na darmowy miesiąc. Każdy adres może odebrać prezent tylko raz.",
       okQueuedOne: "Przyjęliśmy prośbę dla {email}. Kod na darmowy miesiąc wyślemy e-mailem, gdy tylko będzie gotowy.",
@@ -709,6 +759,7 @@
       choiceLegend: "Hediyeni seç",
       choiceMonth: "Bir ay ücretsiz {plan}",
       choiceMonthNote: "Ödeme yok, yenilenmez",
+      choiceMonthNotePlay: "Bir ay ücretsiz, sonra Google Play’de iptal etmezsen normal aylık fiyattan yenilenir",
       choiceLifetime: "Ömür boyu {plan}’te %{percent} indirim",
       choiceLifetimeNote: "Bir kez öde, sonsuza dek kullan",
       emailLabel: "E-posta adresi",
@@ -744,6 +795,9 @@
       headingOne: "{app} ücretsiz ayını nereye göndereyim?",
       detailOne: "E-postanda ücretsiz ay kodu ve kodu kullanmak için basit adımlar bulunur. Ayrıca ara sıra uygulama haberleri ve günlük hayatı daha kolay ve daha iyi hâle getiren küçük araçlar için promosyon kodları alırsın. İstediğin zaman aboneliği bırakabilirsin.",
       fineOne: "Bu sitede ödeme yapılmaz. Güncellemelerden istediğin zaman çıkabilirsin.",
+      noteOnePlay: "Abonelere hoş geldin hediyesi · Ücretsiz aydan sonra iptal etmezsen yenilenir · İstediğin zaman aboneliği bırak",
+      fineOnePlay: "Bu sitede ödeme yapılmaz. Ücretsiz aydan sonra abonelik, Google Play’de iptal etmezsen normal aylık fiyattan yenilenir. Güncellemelerden istediğin zaman çıkabilirsin.",
+      dealNote: "Black Friday: 30 Kasım’a kadar mağazada herkes zaten yaklaşık bu fiyatı görüyor, kod gerekmez. Kodun daha sonrası için geçerli kalır.",
       errUnavailableOne: "Ücretsiz ay şu anda kullanılamıyor. Lütfen daha sonra tekrar dene.",
       errClaimedOne: "Bu e-posta adresine ücretsiz ay kodu zaten gönderildi. Her adres hediyeyi yalnızca bir kez alabilir.",
       okQueuedOne: "{email} için isteği kabul ettik. Ücretsiz ay kodun hazır olur olmaz e-postayla gönderilecek.",
@@ -766,6 +820,7 @@
       choiceLegend: "選擇你的贈禮",
       choiceMonth: "{plan} 免費一個月",
       choiceMonthNote: "不需付款，不會續訂",
+      choiceMonthNotePlay: "免費一個月，之後依正常月費續訂，除非你在 Google Play 中取消",
       choiceLifetime: "{plan} 永久版現省 {percent}%",
       choiceLifetimeNote: "一次付清，永久使用",
       emailLabel: "電子郵件地址",
@@ -801,6 +856,9 @@
       headingOne: "你的 {app} 免費一個月，我該寄到哪裡？",
       detailOne: "寄給你的電子郵件內含免費一個月的代碼和簡單的兌換步驟。你也會不定期收到 App 的最新消息，以及一些能讓日常生活更輕鬆、更美好的小工具優惠代碼。可隨時取消訂閱。",
       fineOne: "本網站不會收取任何費用。你可以隨時取消訂閱最新消息。",
+      noteOnePlay: "訂閱歡迎禮 · 免費月後自動續訂，除非你取消 · 可隨時取消訂閱",
+      fineOnePlay: "本網站不會收取任何費用。免費月結束後，訂閱會在 Google Play 中依正常月費續訂，除非你在那裡取消。你可以隨時取消訂閱最新消息。",
+      dealNote: "黑色星期五：11月30日前，所有人在商店裡本來就能以大約這個價格購買，不需要優惠碼。你的優惠碼之後仍然有效。",
       errUnavailableOne: "目前無法領取免費一個月的贈禮。請稍後再試。",
       errClaimedOne: "這個電子郵件地址已經領取過免費一個月的代碼。每個地址只能領取一次。",
       okQueuedOne: "我們已受理 {email} 的申請。免費一個月的代碼準備好後，會立即以電子郵件寄給你。",
@@ -823,6 +881,7 @@
       choiceLegend: "Оберіть подарунок",
       choiceMonth: "Безкоштовний місяць {plan}",
       choiceMonthNote: "Без оплати, не поновлюється",
+      choiceMonthNotePlay: "Місяць безкоштовно, потім поновлюється за звичайною місячною ціною, якщо ви не скасуєте підписку в Google Play",
       choiceLifetime: "Знижка {percent}% на довічний доступ до {plan}",
       choiceLifetimeNote: "Платите один раз, користуєтеся завжди",
       emailLabel: "Адреса е-пошти",
@@ -858,6 +917,9 @@
       headingOne: "Куди мені надіслати ваш безкоштовний місяць {app}?",
       detailOne: "У листі буде код на безкоштовний місяць і прості кроки, як його використати. Час від часу ви також отримуватимете новини про програми й промокоди на невеликі інструменти, створені, щоб робити повсякденне життя простішим і кращим. Відписатися можна будь-коли.",
       fineOne: "На цьому сайті нічого платити не потрібно. Від новин можна відписатися будь-коли.",
+      noteOnePlay: "Вітальний подарунок для підписників · Поновлюється після безкоштовного місяця, якщо не скасувати · Відписатися можна будь-коли",
+      fineOnePlay: "На цьому сайті нічого платити не потрібно. Після безкоштовного місяця підписка поновлюється за звичайною місячною ціною в Google Play, якщо ви не скасуєте її там. Від новин можна відписатися будь-коли.",
+      dealNote: "Чорна п’ятниця: до 30 листопада всі й так отримують у магазині приблизно таку ціну, без коду. Ваш код залишається дійсним на потім.",
       errUnavailableOne: "Безкоштовний місяць у подарунок зараз недоступний. Спробуйте пізніше.",
       errClaimedOne: "На цю адресу е-пошти вже надіслано код на безкоштовний місяць. Кожна адреса може отримати подарунок лише один раз.",
       okQueuedOne: "Ми прийняли запит для адреси {email}. Код на безкоштовний місяць надішлемо е-поштою, щойно він буде готовий.",
@@ -880,6 +942,7 @@
       choiceLegend: "Izberite darilo",
       choiceMonth: "Brezplačen mesec {plan}",
       choiceMonthNote: "Brez plačila, se ne podaljša",
+      choiceMonthNotePlay: "Mesec brezplačno, nato se podaljša po običajni mesečni ceni, razen če v Google Play prekličete naročnino",
       choiceLifetime: "{percent} % popusta za {plan} Lifetime",
       choiceLifetimeNote: "Plačate enkrat, imate za vedno",
       emailLabel: "E-poštni naslov",
@@ -915,6 +978,9 @@
       headingOne: "Kam naj pošljem vaš brezplačni mesec aplikacije {app}?",
       detailOne: "E-poštno sporočilo, ki ga boste prejeli, vsebuje kodo za brezplačni mesec in preprosta navodila za unovčenje. Občasno boste prejemali tudi novice o aplikacijah in promocijske kode za majhna orodja, zasnovana za lažje in boljše vsakdanje življenje. Odjavite se lahko kadar koli.",
       fineOne: "Na tem spletnem mestu ne plačate ničesar. Od novic se lahko kadar koli odjavite.",
+      noteOnePlay: "Darilo za dobrodošlico naročnikom e-novic · Po brezplačnem mesecu se podaljša, če ne prekličete · Odjava kadar koli",
+      fineOnePlay: "Na tem spletnem mestu ne plačate ničesar. Po brezplačnem mesecu se naročnina v Google Play podaljša po običajni mesečni ceni, razen če jo tam prekličete. Od novic se lahko kadar koli odjavite.",
+      dealNote: "Črni petek: do 30. novembra vsi v trgovini že dobijo približno to ceno, kode ne potrebujete. Vaša koda ostane veljavna za pozneje.",
       errUnavailableOne: "Brezplačni mesec trenutno ni na voljo. Poskusite znova pozneje.",
       errClaimedOne: "Na ta e-poštni naslov je bila koda za brezplačni mesec že poslana. Vsak naslov lahko darilo prejme samo enkrat.",
       okQueuedOne: "Zahtevo za naslov {email} smo sprejeli. Kodo za brezplačni mesec vam bomo poslali po e-pošti, takoj ko bo pripravljena.",
@@ -937,6 +1003,7 @@
       choiceLegend: "Vyberte si dárek",
       choiceMonth: "Měsíc {plan} zdarma",
       choiceMonthNote: "Bez platby, neobnovuje se",
+      choiceMonthNotePlay: "Měsíc zdarma, poté se obnoví za běžnou měsíční cenu, pokud v Google Play nezrušíte předplatné",
       choiceLifetime: "Sleva {percent} % na {plan} Lifetime",
       choiceLifetimeNote: "Jednou zaplatíte, máte navždy",
       emailLabel: "E-mailová adresa",
@@ -972,6 +1039,9 @@
       headingOne: "Kam mám poslat váš měsíc {app} zdarma?",
       detailOne: "E-mail obsahuje kód na měsíc zdarma a jednoduchý postup, jak ho uplatnit. Občas vám také pošleme novinky o aplikacích a promo kódy na malé nástroje, které mají usnadnit a zlepšit každodenní život. Odhlásit se můžete kdykoli.",
       fineOne: "Na tomto webu se nic neplatí. Odběr novinek můžete kdykoli zrušit.",
+      noteOnePlay: "Uvítací dárek pro odběratele · Po bezplatném měsíci se obnoví, pokud nezrušíte · Odhlášení kdykoli",
+      fineOnePlay: "Na tomto webu se nic neplatí. Po bezplatném měsíci se předplatné v Google Play obnoví za běžnou měsíční cenu, pokud ho tam nezrušíte. Odběr novinek můžete kdykoli zrušit.",
+      dealNote: "Black Friday: do 30. listopadu už v obchodě všichni dostanou přibližně tuto cenu, bez kódu. Váš kód zůstává platný na později.",
       errUnavailableOne: "Měsíc zdarma teď není k dispozici. Zkuste to prosím později.",
       errClaimedOne: "Na tuto e-mailovou adresu už byl kód na měsíc zdarma odeslán. Každá adresa může dárek získat jen jednou.",
       okQueuedOne: "Žádost pro adresu {email} jsme přijali. Kód na měsíc zdarma vám pošleme e-mailem, jakmile bude připraven.",
@@ -994,6 +1064,7 @@
       choiceLegend: "Vyberte si darček",
       choiceMonth: "Mesiac {plan} zadarmo",
       choiceMonthNote: "Bez platby, neobnovuje sa",
+      choiceMonthNotePlay: "Mesiac zadarmo, potom sa obnoví za bežnú mesačnú cenu, ak v Google Play nezrušíte predplatné",
       choiceLifetime: "Zľava {percent} % na {plan} Lifetime",
       choiceLifetimeNote: "Zaplatíte raz, máte navždy",
       emailLabel: "E-mailová adresa",
@@ -1029,6 +1100,9 @@
       headingOne: "Kam mám poslať váš bezplatný mesiac {app}?",
       detailOne: "Váš e-mail bude obsahovať kód na bezplatný mesiac a jednoduchý postup, ako ho uplatniť. Občas dostanete aj novinky o aplikáciách a promo kódy na malé nástroje, ktoré majú uľahčiť a zlepšiť každodenný život. Odhlásiť sa môžete kedykoľvek.",
       fineOne: "Na tejto stránke sa nič neplatí. Z odberu noviniek sa môžete odhlásiť kedykoľvek.",
+      noteOnePlay: "Uvítací darček pre odberateľov · Po bezplatnom mesiaci sa obnoví, ak nezrušíte · Odhlásiť sa môžete kedykoľvek",
+      fineOnePlay: "Na tejto stránke sa nič neplatí. Po bezplatnom mesiaci sa predplatné v Google Play obnoví za bežnú mesačnú cenu, ak ho tam nezrušíte. Z odberu noviniek sa môžete odhlásiť kedykoľvek.",
+      dealNote: "Black Friday: do 30. novembra už v obchode všetci dostanú približne túto cenu, bez kódu. Váš kód zostáva platný na neskôr.",
       errUnavailableOne: "Darček s bezplatným mesiacom teraz nie je dostupný. Skúste to, prosím, neskôr.",
       errClaimedOne: "Táto e-mailová adresa už kód na bezplatný mesiac dostala. Každá adresa si môže darček vyžiadať iba raz.",
       okQueuedOne: "Žiadosť pre adresu {email} sme prijali. Kód na bezplatný mesiac vám pošleme e-mailom hneď, ako bude pripravený.",
@@ -1051,6 +1125,7 @@
       choiceLegend: "Välj din gåva",
       choiceMonth: "En gratis månad av {plan}",
       choiceMonthNote: "Ingen betalning, förnyas inte",
+      choiceMonthNotePlay: "Gratis i en månad, därefter förnyas det till ordinarie månadspris om du inte avslutar i Google Play",
       choiceLifetime: "{percent} % rabatt på {plan} för livstid",
       choiceLifetimeNote: "Betala en gång, behåll den för alltid",
       emailLabel: "E-postadress",
@@ -1086,6 +1161,9 @@
       headingOne: "Vart ska jag skicka din gratis månad av {app}?",
       detailOne: "Mejlet du får innehåller koden för den gratis månaden och enkla steg för att lösa in den. Du får också då och då appnyheter och kampanjkoder för små verktyg som är gjorda för att göra vardagen enklare och bättre. Avsluta prenumerationen när du vill.",
       fineOne: "Ingen betalning sker på den här webbplatsen. Du kan avsluta prenumerationen på uppdateringar när du vill.",
+      noteOnePlay: "Välkomstgåva till prenumeranter · Förnyas efter gratismånaden om du inte avslutar · Avsluta prenumerationen när du vill",
+      fineOnePlay: "Ingen betalning sker på den här webbplatsen. Efter gratismånaden förnyas prenumerationen till ordinarie månadspris i Google Play om du inte avslutar den där. Du kan avsluta prenumerationen på uppdateringar när du vill.",
+      dealNote: "Black Friday: till och med 30 november får alla redan ungefär det här priset i butiken, utan kod. Din kod gäller fortfarande senare.",
       errUnavailableOne: "Den gratis månaden är inte tillgänglig just nu. Försök igen senare.",
       errClaimedOne: "Den här e-postadressen har redan fått sin kod för en gratis månad. Varje adress kan hämta gåvan en gång.",
       okQueuedOne: "Vi har tagit emot begäran för {email}. Din kod för en gratis månad skickas med e-post så fort den är klar.",
@@ -1108,6 +1186,7 @@
       choiceLegend: "Velg gaven din",
       choiceMonth: "En gratis måned med {plan}",
       choiceMonthNote: "Ingen betaling, fornyes ikke",
+      choiceMonthNotePlay: "Gratis i én måned, deretter fornyes det til vanlig månedspris hvis du ikke sier opp i Google Play",
       choiceLifetime: "{percent} % rabatt på {plan} for livstid",
       choiceLifetimeNote: "Betal én gang, behold den for alltid",
       emailLabel: "E-postadresse",
@@ -1143,6 +1222,9 @@
       headingOne: "Hvor skal jeg sende den gratis måneden din med {app}?",
       detailOne: "E-posten inneholder koden for den gratis måneden og enkle trinn for å løse den inn. Du får også av og til appnyheter og kampanjekoder for små verktøy som skal gjøre hverdagen enklere og bedre. Meld deg av når som helst.",
       fineOne: "Ingen betaling på dette nettstedet. Du kan melde deg av oppdateringer når som helst.",
+      noteOnePlay: "Velkomstgave til abonnenter · Fornyes etter gratismåneden hvis du ikke sier opp · Meld deg av når som helst",
+      fineOnePlay: "Ingen betaling på dette nettstedet. Etter gratismåneden fornyes abonnementet til vanlig månedspris i Google Play, med mindre du sier det opp der. Du kan melde deg av oppdateringer når som helst.",
+      dealNote: "Black Friday: til og med 30. november får alle allerede omtrent denne prisen i butikken, uten kode. Koden din er fortsatt gyldig senere.",
       errUnavailableOne: "Gaven med gratis måned er ikke tilgjengelig akkurat nå. Prøv igjen senere.",
       errClaimedOne: "Denne e-postadressen har allerede fått koden for gratis måned. Hver adresse kan hente gaven én gang.",
       okQueuedOne: "Vi har godtatt forespørselen for {email}. Koden for den gratis måneden sendes på e-post så snart den er klar.",
@@ -1165,6 +1247,7 @@
       choiceLegend: "Vælg din gave",
       choiceMonth: "En gratis måned med {plan}",
       choiceMonthNote: "Ingen betaling, fornyes ikke",
+      choiceMonthNotePlay: "Gratis i en måned, derefter fornyes det til normal månedspris, medmindre du opsiger i Google Play",
       choiceLifetime: "{percent} % rabat på {plan} Lifetime",
       choiceLifetimeNote: "Betal én gang, behold den for altid",
       emailLabel: "E-mailadresse",
@@ -1200,6 +1283,9 @@
       headingOne: "Hvor skal jeg sende din gratis måned med {app} hen?",
       detailOne: "Din e-mail indeholder koden til den gratis måned og enkle trin til at indløse den. Du får også en gang imellem nyheder om appen og tilbudskoder til små værktøjer, der skal gøre hverdagen lettere og bedre. Afmeld når som helst.",
       fineOne: "Der betales ikke noget på dette websted. Du kan afmelde opdateringer når som helst.",
+      noteOnePlay: "Velkomstgave til abonnenter · Fornyes efter den gratis måned, medmindre du opsiger · Afmeld når som helst",
+      fineOnePlay: "Der betales ikke noget på dette websted. Efter den gratis måned fornyes abonnementet til normal månedspris i Google Play, medmindre du opsiger det dér. Du kan afmelde opdateringer når som helst.",
+      dealNote: "Black Friday: til og med 30. november får alle allerede omtrent denne pris i butikken, uden kode. Din kode er stadig gyldig senere.",
       errUnavailableOne: "Den gratis måned er ikke tilgængelig lige nu. Prøv igen senere.",
       errClaimedOne: "Denne e-mailadresse har allerede fået sin kode til den gratis måned. Hver adresse kan kun få gaven én gang.",
       okQueuedOne: "Vi har accepteret anmodningen for {email}. Din kode til den gratis måned sendes på e-mail, så snart den er klar.",
@@ -1222,6 +1308,7 @@
       choiceLegend: "Valitse lahjasi",
       choiceMonth: "Ilmainen kuukausi {plan}ia",
       choiceMonthNote: "Ei maksua, ei uusiudu",
+      choiceMonthNotePlay: "Kuukausi ilmaiseksi, sen jälkeen uusiutuu normaaliin kuukausihintaan, ellet peru tilausta Google Playssa",
       choiceLifetime: "{percent} %:n alennus {plan} Lifetimesta",
       choiceLifetimeNote: "Maksa kerran, pidä ikuisesti",
       emailLabel: "Sähköpostiosoite",
@@ -1257,6 +1344,9 @@
       headingOne: "Minne lähetän ilmaisen {app} -kuukautesi?",
       detailOne: "Saamassasi viestissä on ilmaisen kuukauden koodi ja yksinkertaiset ohjeet sen lunastamiseen. Saat myös silloin tällöin sovellusuutisia ja tarjouskoodeja pieniin työkaluihin, jotka tekevät arjesta helpompaa ja parempaa. Voit perua tilauksen milloin tahansa.",
       fineOne: "Tällä sivustolla ei makseta mitään. Voit perua päivitysten tilauksen milloin tahansa.",
+      noteOnePlay: "Tervetuliaislahja tilaajille · Uusiutuu ilmaisen kuukauden jälkeen, ellet peru · Tilauksen voi perua milloin tahansa",
+      fineOnePlay: "Tällä sivustolla ei makseta mitään. Ilmaisen kuukauden jälkeen tilaus uusiutuu Google Playssa normaaliin kuukausihintaan, ellet peru sitä siellä. Voit perua päivitysten tilauksen milloin tahansa.",
+      dealNote: "Black Friday: 30. marraskuuta asti kaikki saavat kaupassa jo suunnilleen tämän hinnan, ilman koodia. Koodisi pysyy voimassa myöhemmäksi.",
       errUnavailableOne: "Ilmainen kuukausi ei ole juuri nyt saatavilla. Yritä myöhemmin uudelleen.",
       errClaimedOne: "Tähän sähköpostiosoitteeseen on jo lähetetty ilmaisen kuukauden koodi. Jokainen osoite voi hakea lahjan vain kerran.",
       okQueuedOne: "Pyyntö osoitteelle {email} on vastaanotettu. Ilmaisen kuukauden koodi lähetetään sähköpostiisi heti, kun se on valmis.",
@@ -1279,6 +1369,7 @@
       choiceLegend: "Válassza ki az ajándékát",
       choiceMonth: "Egy hónap ingyenes {plan}",
       choiceMonthNote: "Fizetés nélkül, nem újul meg",
+      choiceMonthNotePlay: "Egy hónap ingyen, utána a szokásos havi áron megújul, hacsak nem mondja le a Google Playben",
       choiceLifetime: "{percent}% kedvezmény a {plan} Lifetime árából",
       choiceLifetimeNote: "Egyszer fizet, örökre az Öné",
       emailLabel: "E-mail-cím",
@@ -1314,6 +1405,9 @@
       headingOne: "Hová küldjem a {app} egy ingyenes hónapját?",
       detailOne: "Az e-mailben megtalálja az ingyenes hónap kódját és a beváltás egyszerű lépéseit. Időnként app-híreket és promóciós kódokat is kap olyan apró eszközökhöz, amelyek megkönnyítik és jobbá teszik a mindennapokat. Bármikor leiratkozhat.",
       fineOne: "Ezen az oldalon nincs fizetés. A hírlevelekről bármikor leiratkozhat.",
+      noteOnePlay: "Üdvözlőajándék feliratkozóknak · Az ingyenes hónap után megújul, hacsak nem mondja le · Bármikor leiratkozhat",
+      fineOnePlay: "Ezen az oldalon nincs fizetés. Az ingyenes hónap után az előfizetés a Google Playben a szokásos havi áron megújul, hacsak ott nem mondja le. A hírlevelekről bármikor leiratkozhat.",
+      dealNote: "Black Friday: november 30-ig mindenki már most nagyjából ezen az áron kapja az áruházban, kód nélkül. A kódja később is érvényes marad.",
       errUnavailableOne: "Az ingyenes hónap ajándéka jelenleg nem érhető el. Próbálja újra később.",
       errClaimedOne: "Erre az e-mail-címre már elküldtük az ingyenes hónap kódját. Minden cím egyszer igényelheti az ajándékot.",
       okQueuedOne: "A kérést elfogadtuk a következő címre: {email}. Az ingyenes hónap kódját e-mailben küldjük el, amint elkészül.",
@@ -1336,6 +1430,7 @@
       choiceLegend: "Alegeți cadoul",
       choiceMonth: "O lună gratuită de {plan}",
       choiceMonthNote: "Fără plată, nu se reînnoiește",
+      choiceMonthNotePlay: "O lună gratuit, apoi se reînnoiește la prețul lunar normal, dacă nu anulați în Google Play",
       choiceLifetime: "Reducere de {percent}% la {plan} Lifetime",
       choiceLifetimeNote: "Plătiți o dată, păstrați pentru totdeauna",
       emailLabel: "Adresă de e-mail",
@@ -1371,6 +1466,9 @@
       headingOne: "Unde să vă trimit luna gratuită de {app}?",
       detailOne: "E-mailul pe care îl primiți conține codul pentru luna gratuită și pași simpli pentru a-l valorifica. Veți primi, de asemenea, din când în când noutăți despre aplicații și coduri promoționale pentru mici instrumente create să facă viața de zi cu zi mai simplă și mai bună. Vă puteți dezabona oricând.",
       fineOne: "Pe acest site nu se plătește nimic. Vă puteți dezabona de la noutăți oricând.",
+      noteOnePlay: "Cadou de bun venit pentru abonați · Se reînnoiește după luna gratuită dacă nu anulați · Dezabonare oricând",
+      fineOnePlay: "Pe acest site nu se plătește nimic. După luna gratuită, abonamentul se reînnoiește în Google Play la prețul lunar normal, dacă nu îl anulați acolo. Vă puteți dezabona de la noutăți oricând.",
+      dealNote: "Black Friday: până pe 30 noiembrie toată lumea primește deja în magazin aproximativ acest preț, fără cod. Codul dvs. rămâne valabil pentru mai târziu.",
       errUnavailableOne: "Luna gratuită nu este disponibilă în acest moment. Încercați din nou mai târziu.",
       errClaimedOne: "Această adresă de e-mail a primit deja codul pentru luna gratuită. Fiecare adresă poate primi cadoul o singură dată.",
       okQueuedOne: "Am acceptat cererea pentru {email}. Codul pentru luna gratuită vă va fi trimis prin e-mail imediat ce este gata.",
@@ -1393,6 +1491,7 @@
       choiceLegend: "Επιλέξτε το δώρο σας",
       choiceMonth: "Ένας δωρεάν μήνας {plan}",
       choiceMonthNote: "Χωρίς πληρωμή, χωρίς ανανέωση",
+      choiceMonthNotePlay: "Δωρεάν για έναν μήνα, μετά ανανεώνεται στην κανονική μηνιαία τιμή, εκτός αν ακυρώσετε στο Google Play",
       choiceLifetime: "Έκπτωση {percent}% στο {plan} εφ’ όρου ζωής",
       choiceLifetimeNote: "Πληρώνετε μία φορά, το κρατάτε για πάντα",
       emailLabel: "Διεύθυνση email",
@@ -1428,6 +1527,9 @@
       headingOne: "Πού να στείλω τον δωρεάν μήνα σας για το {app};",
       detailOne: "Το email σας περιλαμβάνει τον κωδικό για τον δωρεάν μήνα και απλά βήματα για την εξαργύρωσή του. Θα λαμβάνετε επίσης περιστασιακά νέα εφαρμογών και κωδικούς προσφοράς για μικρά εργαλεία που φτιάχνονται ώστε η καθημερινότητα να γίνεται πιο εύκολη και καλύτερη. Μπορείτε να διαγραφείτε από τη λίστα όποτε θέλετε.",
       fineOne: "Δεν γίνεται καμία πληρωμή σε αυτόν τον ιστότοπο. Μπορείτε να διαγραφείτε από τις ενημερώσεις όποτε θέλετε.",
+      noteOnePlay: "Δώρο καλωσορίσματος για εγγεγραμμένους · Ανανεώνεται μετά τον δωρεάν μήνα εκτός αν ακυρώσετε · Διαγραφή από τη λίστα όποτε θέλετε",
+      fineOnePlay: "Δεν γίνεται καμία πληρωμή σε αυτόν τον ιστότοπο. Μετά τον δωρεάν μήνα, η συνδρομή ανανεώνεται στην κανονική μηνιαία τιμή στο Google Play, εκτός αν την ακυρώσετε εκεί. Μπορείτε να διαγραφείτε από τις ενημερώσεις όποτε θέλετε.",
+      dealNote: "Black Friday: έως τις 30 Νοεμβρίου όλοι παίρνουν ήδη περίπου αυτή την τιμή στο κατάστημα, χωρίς κωδικό. Ο κωδικός σας παραμένει έγκυρος για αργότερα.",
       errUnavailableOne: "Το δώρο του δωρεάν μήνα δεν είναι διαθέσιμο αυτή τη στιγμή. Δοκιμάστε ξανά αργότερα.",
       errClaimedOne: "Σε αυτή τη διεύθυνση email έχει ήδη σταλεί ο κωδικός για τον δωρεάν μήνα. Κάθε διεύθυνση μπορεί να λάβει το δώρο μία φορά.",
       okQueuedOne: "Δεχτήκαμε το αίτημα για τη διεύθυνση {email}. Ο κωδικός για τον δωρεάν μήνα θα σταλεί με email μόλις είναι έτοιμος.",
@@ -1447,7 +1549,8 @@
   var LANG_MAP = { "pt-br": "pt", "zh-hans": "zh", "zh-hant": "zh-hant", "nb": "no" };
   var pageLang = (document.documentElement.lang || "en").toLowerCase();
   var locale = LANG_MAP[pageLang] || pageLang.split("-")[0];
-  var raw = COPY[locale] || COPY.en;
+  var raw = {}; // a word missing in this language falls back to English
+  [COPY.en, COPY[locale] || {}].forEach(function (src) { Object.keys(src).forEach(function (k) { raw[k] = src[k]; }); });
   var body = document.body;
   var APP = body.getAttribute("data-app") || "";
   var PLAN = body.getAttribute("data-plan") || APP;
@@ -1541,15 +1644,23 @@
     var w = {
       link: choiceMode ? (month && lifetime && !yearly ? t.link : month && !lifetime ? t.linkMY : t.linkLY)
         : monthOnly ? t.linkOne : only === "lifetime_discount" ? t.choiceLifetime : t.choiceYearly,
-      note: choiceMode ? t.note : monthOnly ? t.noteOne : t.noteGift,
+      note: choiceMode ? t.note : monthOnly ? (play ? t.noteOnePlay : t.noteOne) : t.noteGift,
       heading: choiceMode ? t.heading : monthOnly ? t.headingOne : t.headingCode,
       detail: monthOnly ? t.detailOne : t.detail,
-      fine: monthOnly ? t.fineOne : month && lifetime && !yearly ? (play ? t.finePlay : t.fine) : (play ? t.fineDiscountPlay : t.fineDiscount),
+      fine: monthOnly ? (play ? t.fineOnePlay : t.fineOne) : month && lifetime && !yearly ? (play ? t.finePlay : t.fine) : (play ? t.fineDiscountPlay : t.fineDiscount),
       errUnavailable: monthOnly ? t.errUnavailableOne : t.errUnavailable,
       errClaimed: monthOnly ? t.errClaimedOne : t.errClaimed,
       okQueued: monthOnly ? t.okQueuedOne : t.okQueued,
       okCopy: STORE === "App Store" ? t.okCopy : t.okCopyNoStore
     };
+    // During a store sale of the same plan (the Black Friday strip), the code is worth no more than the public price:
+    // say so, so nobody signs up thinking the code beats it (legal check, 12 Nov 2026).
+    var bar = document.querySelector(".deal-bar[data-deal-kind]");
+    var dealKind = bar && bar.getAttribute("data-deal-kind");
+    var dealEnd = bar && Date.parse(bar.getAttribute("data-deal-end"));
+    if (dealKind && !(dealEnd && Date.now() >= dealEnd) && ((dealKind === "lifetime" && lifetime) || (dealKind === "yearly" && yearly))) {
+      w.fine = w.fine + " " + t.dealNote;
+    }
     function say(key) { return Object.prototype.hasOwnProperty.call(w, key) ? w[key] : t[key]; }
 
     var trigger = el("button", "offer-link");
@@ -1626,6 +1737,7 @@
     }
 
     function open() {
+      track("gift_open");
       previousOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       scrim = el("div", "offer-scrim");
@@ -1703,7 +1815,7 @@
       if (choiceMode) {
         var choice = el("fieldset", "offer-choice");
         choice.appendChild(text("legend", "offer-label", t.choiceLegend));
-        var rows = { free_month: [t.choiceMonth, t.choiceMonthNote], lifetime_discount: [t.choiceLifetime, t.choiceLifetimeNote],
+        var rows = { free_month: [t.choiceMonth, play ? t.choiceMonthNotePlay : t.choiceMonthNote], lifetime_discount: [t.choiceLifetime, t.choiceLifetimeNote],
                      yearly_discount: [t.choiceYearly, t.choiceYearlyNote] };
         offers.map(function (o) { return [o.id, rows[o.id][0], rows[o.id][1]]; }).forEach(function (item, i) {
           var row = el("label", "offer-option");
@@ -1759,11 +1871,12 @@
         submitBtn.disabled = true;
         submitBtn.textContent = t.sending;
 
+        var picked = choiceMode ? ((form.querySelector("input[name=offer]:checked") || {}).value || offers[0].id) : only;
+        track("gift_submit", { offer: picked });
         if (localPreview) {
           window.setTimeout(function () { showSuccess(email, "preview"); }, 400);
           return;
         }
-        var picked = choiceMode ? ((form.querySelector("input[name=offer]:checked") || {}).value || offers[0].id) : only;
         fetch(API + "/request-code", {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
@@ -1778,12 +1891,14 @@
         }).then(function (response) {
           return response.json().catch(function () { return {}; }).then(function (result) {
             if (response.ok && result.ok) {
+              track("gift_sent", { offer: picked });
               showSuccess(email, result.preview ? "preview" : (result.queued ? "queued" : "sent"));
               return;
             }
             // The API names the matching message (errEmail, errClaimed, ...); fall back to the
             // status code for older responses.
             var key = result && result.errorKey;
+            track("gift_error", { offer: picked, reason: String(key || response.status) });
             var msg = (typeof key === "string" && /^err[A-Z]\w*$/.test(key) &&
                 Object.prototype.hasOwnProperty.call(t, key)) ? say(key)
               : response.status === 409 ? say("errClaimed")
