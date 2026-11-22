@@ -11,8 +11,8 @@
 .pk-copy{display:flex;flex-direction:column;gap:var(--sp-m)}
 .pk-copy-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-m)}
 .pk-copy-head h3{margin:0}
-.pk-count{flex:none;font-size:12.5px;color:var(--muted)}
-.pk-copy .pk-copy-text{flex:1;color:var(--text);font-size:15.5px;line-height:1.6;text-wrap:pretty}
+.pk-count{flex:none;font-size:12px;color:var(--muted)}
+.pk-copy .pk-copy-text{flex:1;color:var(--text);font-size:16px;line-height:1.6;text-wrap:pretty}
 .pk-copy-btn{align-self:flex-start;min-width:96px}
 .pk-copy-btn.is-done{border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
 @media(max-width:760px){.pk-copies{grid-template-columns:1fr}}
@@ -26,8 +26,8 @@
 .pk-wide .pk-thumb img{width:100%;height:auto;border-radius:var(--r-card);border:1px solid var(--line);box-shadow:var(--shadow-float)}
 .pk-tall a.pk-thumb{aspect-ratio:6/13;display:flex;align-items:center;justify-content:center}
 .pk-tall .pk-thumb img{width:auto;height:auto;max-width:100%;max-height:100%;border-radius:14px;border:1px solid var(--line)}
-.pk-img figcaption{color:var(--muted);font-size:13px;margin-top:var(--sp-s);text-wrap:pretty}
-.pk-img figcaption strong{display:block;font-size:14px;font-weight:650}
+.pk-img figcaption{color:var(--muted);font-size:14px;margin-top:var(--sp-s);text-wrap:pretty}
+.pk-img figcaption strong{display:block;font-size:14px;font-weight:600}
 .pk-img figcaption a{display:block;color:var(--accent)}
 .pk-img figcaption a:hover{text-decoration:underline}
 @media(max-width:900px){.pk-tall{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -51,11 +51,11 @@
 .pk-maker .prose{margin:0;flex:1}
 .pk-photo{flex:none;display:block;border-radius:50%}
 .pk-photo img{width:184px;height:184px;border-radius:50%;border:1px solid var(--line);box-shadow:var(--shadow-float)}
-.pk-sub{font-size:18px;letter-spacing:-.01em;text-align:center;margin:var(--sp-3xl) 0 var(--sp-l)}
+.pk-sub{font-size:18px;letter-spacing:0;text-align:center;margin:var(--sp-3xl) 0 var(--sp-l)}
 .pk-quotes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp-l)}
 .pk-quote{margin:0}
 .pk-quote:first-child{grid-column:1 / -1}
-.pk-quote blockquote.pk-copy-text{font-size:16.5px}
+.pk-quote blockquote.pk-copy-text{font-size:16px}
 @media(max-width:760px){
   .pk-maker{flex-direction:column;text-align:center;gap:var(--sp-xl)}
   .pk-maker .pk-links{justify-content:center}
@@ -75,11 +75,11 @@
 /* Coverage */
 .pk-cover{list-style:none;padding:0;max-width:720px;margin:0 auto;display:grid;gap:var(--sp-m)}
 .pk-cover li{background:var(--card);border:1px solid var(--line);border-radius:var(--r-card);padding:var(--sp-l) var(--sp-xl)}
-.pk-cover .pk-src{display:block;font-size:13px;color:var(--muted)}
-.pk-cover a{color:var(--text);font-weight:650}
+.pk-cover .pk-src{display:block;font-size:14px;color:var(--muted)}
+.pk-cover a{color:var(--text);font-weight:600}
 .pk-cover a:hover{text-decoration:underline}
 
-.pk-notes{max-width:720px;margin:var(--sp-2xl) auto 0;color:var(--muted);font-size:13px;text-wrap:pretty;text-align:center}
+.pk-notes{max-width:720px;margin:var(--sp-2xl) auto 0;color:var(--muted);font-size:14px;text-wrap:pretty;text-align:center}
 .pk-notes p + p{margin-top:var(--sp-s)}
 .pk-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 

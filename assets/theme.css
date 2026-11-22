@@ -21,7 +21,7 @@
   --shadow-btn:0 6px 20px rgba(63,75,224,.40);
   --font-body:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --font-display:var(--font-body);
-  --font-display-weight:800;
+  --font-display-weight:600;
 }
 @media (prefers-color-scheme: light){
   :root{
